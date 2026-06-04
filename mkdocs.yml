@@ -1,0 +1,67 @@
+site_name: Azure Einstiegstraining
+site_description: Praxis-Einführung in Microsoft Azure für Einsteiger
+site_url: https://libsman.github.io/azuretraining
+repo_url: https://github.com/libsman/azuretraining
+repo_name: libsman/azuretraining
+docs_dir: docs
+
+theme:
+  name: material
+  language: de
+  palette:
+    - scheme: default
+      primary: blue
+      accent: light blue
+      toggle:
+        icon: material/brightness-7
+        name: Dunkelmodus aktivieren
+    - scheme: slate
+      primary: blue
+      accent: light blue
+      toggle:
+        icon: material/brightness-4
+        name: Hellmodus aktivieren
+  features:
+    - navigation.tabs
+    - navigation.sections
+    - navigation.top
+    - search.suggest
+    - search.highlight
+    - content.code.copy
+    - content.code.annotate
+    - content.tabs.link
+  icon:
+    repo: fontawesome/brands/github
+
+plugins:
+  - search:
+      lang: de
+
+markdown_extensions:
+  - admonition
+  - pymdownx.details
+  - pymdownx.superfences
+  - pymdownx.highlight:
+      anchor_linenums: true
+  - pymdownx.inlinehilite
+  - pymdownx.tabbed:
+      alternate_style: true
+  - attr_list
+  - md_in_html
+  - tables
+  - pymdownx.emoji:
+      emoji_index: !!python/name:material.extensions.emoji.twemoji
+      emoji_generator: !!python/name:material.extensions.emoji.to_svg
+
+nav:
+  - Willkommen: index.md
+  - Modul 0 – Orientierung: modul-0-orientierung.md
+  - Modul 1 – Erste VM: modul-1-vm.md
+  - Modul 2 – Storage & Website: modul-2-storage.md
+  - Modul 3 – Azure KI: modul-3-ai.md
+  - Modul 4 – Monitoring & Kosten: modul-4-monitoring.md
+
+extra:
+  social:
+    - icon: fontawesome/brands/github
+      link: https://github.com/libsman/azuretraining
