@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+    <url>
+         <loc>https://libsman.github.io/azuretraining/</loc>
+         <lastmod>2026-06-04</lastmod>
+    </url>
+    <url>
+         <loc>https://libsman.github.io/azuretraining/modul-0-orientierung/</loc>
+         <lastmod>2026-06-04</lastmod>
+    </url>
+    <url>
+         <loc>https://libsman.github.io/azuretraining/modul-1-vm/</loc>
+         <lastmod>2026-06-04</lastmod>
+    </url>
+    <url>
+         <loc>https://libsman.github.io/azuretraining/modul-2-storage/</loc>
+         <lastmod>2026-06-04</lastmod>
+    </url>
+    <url>
+         <loc>https://libsman.github.io/azuretraining/modul-3-ai/</loc>
+         <lastmod>2026-06-04</lastmod>
+    </url>
+    <url>
+         <loc>https://libsman.github.io/azuretraining/modul-4-monitoring/</loc>
+         <lastmod>2026-06-04</lastmod>
+    </url>
+</urlset>

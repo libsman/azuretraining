@@ -1,0 +1,1681 @@
+
+<!doctype html>
+<html lang="de" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+        <meta name="description" content="Praxis-Einführung in Microsoft Azure für Einsteiger">
+      
+      
+      
+        <link rel="canonical" href="https://libsman.github.io/azuretraining/modul-1-vm/">
+      
+      
+        <link rel="prev" href="../modul-0-orientierung/">
+      
+      
+        <link rel="next" href="../modul-2-storage/">
+      
+      
+        
+      
+      
+      <link rel="icon" href="../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.6">
+    
+    
+      
+        <title>Modul 1 – Erste VM - Azure Einstiegstraining</title>
+      
+    
+    
+      <link rel="stylesheet" href="../assets/stylesheets/main.484c7ddc.min.css">
+      
+        
+        <link rel="stylesheet" href="../assets/stylesheets/palette.ab4e12ef.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+    <script>__md_scope=new URL("..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+  </head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="blue" data-md-color-accent="light-blue">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#modul-1-erste-vm-in-azure" class="md-skip">
+          Zum Inhalt
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+<header class="md-header" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Kopfzeile">
+    <a href=".." title="Azure Einstiegstraining" class="md-header__button md-logo" aria-label="Azure Einstiegstraining" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Azure Einstiegstraining
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Modul 1 – Erste VM
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+        <form class="md-header__option" data-md-component="palette">
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="default" data-md-color-primary="blue" data-md-color-accent="light-blue"  aria-label="Dunkelmodus aktivieren"  type="radio" name="__palette" id="__palette_0">
+    
+      <label class="md-header__button md-icon" title="Dunkelmodus aktivieren" for="__palette_1" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a4 4 0 0 0-4 4 4 4 0 0 0 4 4 4 4 0 0 0 4-4 4 4 0 0 0-4-4m0 10a6 6 0 0 1-6-6 6 6 0 0 1 6-6 6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12z"/></svg>
+      </label>
+    
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="slate" data-md-color-primary="blue" data-md-color-accent="light-blue"  aria-label="Hellmodus aktivieren"  type="radio" name="__palette" id="__palette_1">
+    
+      <label class="md-header__button md-icon" title="Hellmodus aktivieren" for="__palette_0" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 18c-.89 0-1.74-.2-2.5-.55C11.56 16.5 13 14.42 13 12s-1.44-4.5-3.5-5.45C10.26 6.2 11.11 6 12 6a6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12z"/></svg>
+      </label>
+    
+  
+</form>
+      
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Suche" placeholder="Suche" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Suche">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Zurücksetzen" aria-label="Zurücksetzen" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+        <div class="md-search__suggest" data-md-component="search-suggest"></div>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Suche wird initialisiert
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      
+    
+    
+      <div class="md-header__source">
+        <a href="https://github.com/libsman/azuretraining" title="Zum Repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M173.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6m-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3m44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9M252.8 8C114.1 8 8 113.3 8 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C436.2 457.8 504 362.9 504 252 504 113.3 391.5 8 252.8 8M105.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1m-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7m32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1m-11.4-14.7c-1.6 1-1.6 3.6 0 5.9s4.3 3.3 5.6 2.3c1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2"/></svg>
+  </div>
+  <div class="md-source__repository">
+    libsman/azuretraining
+  </div>
+</a>
+      </div>
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+            
+<nav class="md-tabs" aria-label="Hauptnavigation" data-md-component="tabs">
+  <div class="md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href=".." class="md-tabs__link">
+        
+  
+  
+    
+  
+  Willkommen
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../modul-0-orientierung/" class="md-tabs__link">
+        
+  
+  
+    
+  
+  Modul 0 – Orientierung
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+    
+  
+  
+    <li class="md-tabs__item md-tabs__item--active">
+      <a href="./" class="md-tabs__link">
+        
+  
+  
+    
+  
+  Modul 1 – Erste VM
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../modul-2-storage/" class="md-tabs__link">
+        
+  
+  
+    
+  
+  Modul 2 – Storage & Website
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../modul-3-ai/" class="md-tabs__link">
+        
+  
+  
+    
+  
+  Modul 3 – Azure KI
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../modul-4-monitoring/" class="md-tabs__link">
+        
+  
+  
+    
+  
+  Modul 4 – Monitoring & Kosten
+
+      </a>
+    </li>
+  
+
+      
+    </ul>
+  </div>
+</nav>
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+  
+
+
+<nav class="md-nav md-nav--primary md-nav--lifted" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href=".." title="Azure Einstiegstraining" class="md-nav__button md-logo" aria-label="Azure Einstiegstraining" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    Azure Einstiegstraining
+  </label>
+  
+    <div class="md-nav__source">
+      <a href="https://github.com/libsman/azuretraining" title="Zum Repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M173.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6m-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3m44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9M252.8 8C114.1 8 8 113.3 8 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C436.2 457.8 504 362.9 504 252 504 113.3 391.5 8 252.8 8M105.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1m-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7m32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1m-11.4-14.7c-1.6 1-1.6 3.6 0 5.9s4.3 3.3 5.6 2.3c1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2"/></svg>
+  </div>
+  <div class="md-source__repository">
+    libsman/azuretraining
+  </div>
+</a>
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href=".." class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Willkommen
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../modul-0-orientierung/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Modul 0 – Orientierung
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Modul 1 – Erste VM
+  
+
+    
+  </span>
+  
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Modul 1 – Erste VM
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Inhaltsverzeichnis">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Inhaltsverzeichnis
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#lernziele" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Lernziele
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#hintergrund-vm-in-azure-vs-hyper-v" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Hintergrund: VM in Azure vs. Hyper-V
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#vm-erstellen" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        VM erstellen
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="VM erstellen">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#schritt-1-zum-vm-dienst-navigieren" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Schritt 1: Zum VM-Dienst navigieren
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#schritt-2-basics-tab-konfigurieren" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Schritt 2: Basics-Tab konfigurieren
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#schritt-3-disks-tab" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Schritt 3: Disks-Tab
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#schritt-4-networking-tab" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Schritt 4: Networking-Tab
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#schritt-5-management-tab" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Schritt 5: Management-Tab
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#schritt-6-review-create" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Schritt 6: Review + Create
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#schritt-7-deployment-abwarten" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Schritt 7: Deployment abwarten
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#mit-der-vm-verbinden-per-ssh-im-browser" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Mit der VM verbinden (per SSH im Browser)
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Mit der VM verbinden (per SSH im Browser)">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#schritt-1-public-ip-adresse-kopieren" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Schritt 1: Public IP-Adresse kopieren
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#schritt-2-azure-cloud-shell-offnen" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Schritt 2: Azure Cloud Shell öffnen
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#schritt-3-per-ssh-verbinden" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Schritt 3: Per SSH verbinden
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#nginx-installieren" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        nginx installieren
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="nginx installieren">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#schritt-1-paketliste-aktualisieren" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Schritt 1: Paketliste aktualisieren
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#schritt-2-nginx-installieren" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Schritt 2: nginx installieren
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#schritt-3-status-prufen" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Schritt 3: Status prüfen
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#schritt-4-eigene-startseite-erstellen" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Schritt 4: Eigene Startseite erstellen
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#port-80-in-der-azure-firewall-offnen" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Port 80 in der Azure-Firewall öffnen
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Port 80 in der Azure-Firewall öffnen">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#schritt-1-zuruck-zum-portal" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Schritt 1: Zurück zum Portal
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#schritt-2-zur-vm-netzwerkkonfiguration-navigieren" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Schritt 2: Zur VM-Netzwerkkonfiguration navigieren
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#schritt-3-http-regel-hinzufugen" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Schritt 3: HTTP-Regel hinzufügen
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#schritt-4-webseite-aufrufen" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Schritt 4: Webseite aufrufen
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#challenge" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Challenge
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../modul-2-storage/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Modul 2 – Storage & Website
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../modul-3-ai/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Modul 3 – Azure KI
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../modul-4-monitoring/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Modul 4 – Monitoring & Kosten
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Inhaltsverzeichnis">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Inhaltsverzeichnis
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#lernziele" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Lernziele
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#hintergrund-vm-in-azure-vs-hyper-v" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Hintergrund: VM in Azure vs. Hyper-V
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#vm-erstellen" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        VM erstellen
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="VM erstellen">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#schritt-1-zum-vm-dienst-navigieren" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Schritt 1: Zum VM-Dienst navigieren
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#schritt-2-basics-tab-konfigurieren" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Schritt 2: Basics-Tab konfigurieren
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#schritt-3-disks-tab" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Schritt 3: Disks-Tab
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#schritt-4-networking-tab" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Schritt 4: Networking-Tab
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#schritt-5-management-tab" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Schritt 5: Management-Tab
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#schritt-6-review-create" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Schritt 6: Review + Create
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#schritt-7-deployment-abwarten" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Schritt 7: Deployment abwarten
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#mit-der-vm-verbinden-per-ssh-im-browser" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Mit der VM verbinden (per SSH im Browser)
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Mit der VM verbinden (per SSH im Browser)">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#schritt-1-public-ip-adresse-kopieren" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Schritt 1: Public IP-Adresse kopieren
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#schritt-2-azure-cloud-shell-offnen" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Schritt 2: Azure Cloud Shell öffnen
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#schritt-3-per-ssh-verbinden" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Schritt 3: Per SSH verbinden
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#nginx-installieren" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        nginx installieren
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="nginx installieren">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#schritt-1-paketliste-aktualisieren" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Schritt 1: Paketliste aktualisieren
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#schritt-2-nginx-installieren" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Schritt 2: nginx installieren
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#schritt-3-status-prufen" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Schritt 3: Status prüfen
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#schritt-4-eigene-startseite-erstellen" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Schritt 4: Eigene Startseite erstellen
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#port-80-in-der-azure-firewall-offnen" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Port 80 in der Azure-Firewall öffnen
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Port 80 in der Azure-Firewall öffnen">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#schritt-1-zuruck-zum-portal" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Schritt 1: Zurück zum Portal
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#schritt-2-zur-vm-netzwerkkonfiguration-navigieren" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Schritt 2: Zur VM-Netzwerkkonfiguration navigieren
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#schritt-3-http-regel-hinzufugen" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Schritt 3: HTTP-Regel hinzufügen
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#schritt-4-webseite-aufrufen" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Schritt 4: Webseite aufrufen
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#challenge" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Challenge
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+  
+  
+
+
+<h1 id="modul-1-erste-vm-in-azure">Modul 1 – Erste VM in Azure</h1>
+<h2 id="lernziele">Lernziele</h2>
+<p>Nach diesem Modul kannst du:</p>
+<ul>
+<li>Eine Linux-VM in Azure erstellen</li>
+<li>Dich per SSH mit der VM verbinden (direkt im Browser mit Azure Cloud Shell)</li>
+<li>Einen nginx Webserver installieren und die Seite live im Internet aufrufen</li>
+</ul>
+<hr />
+<h2 id="hintergrund-vm-in-azure-vs-hyper-v">Hintergrund: VM in Azure vs. Hyper-V</h2>
+<p>In Hyper-V erstellst du eine VM, indem du eine ISO einbindest, das Betriebssystem installierst, Netzwerkkarten konfigurierst – das dauert eine Weile. In Azure läuft das deutlich schneller:</p>
+<ul>
+<li>Du wählst ein <strong>Image</strong> aus einer Bibliothek fertiger Betriebssysteme</li>
+<li>Azure startet die VM in <strong>unter 2 Minuten</strong></li>
+<li>Netzwerk, IP-Adresse und Firewall werden automatisch mitkonfiguriert</li>
+<li>Du zahlst nur für die Zeit, in der die VM <strong>läuft</strong> – ca. 0,009 €/Stunde für die kleinste Größe</li>
+</ul>
+<hr />
+<h2 id="vm-erstellen">VM erstellen</h2>
+<h3 id="schritt-1-zum-vm-dienst-navigieren">Schritt 1: Zum VM-Dienst navigieren</h3>
+<ol>
+<li>Öffne das Azure Portal: <a href="https://portal.azure.com">portal.azure.com</a></li>
+<li>Tippe in der Suchleiste <strong><code>Virtual machines</code></strong> und klicke auf den Dienst</li>
+<li>Klicke auf <strong>+ Create</strong> → <strong>Azure virtual machine</strong></li>
+</ol>
+<h3 id="schritt-2-basics-tab-konfigurieren">Schritt 2: Basics-Tab konfigurieren</h3>
+<p>Du siehst jetzt einen Wizard mit mehreren Tabs. Fange mit <strong>Basics</strong> an:</p>
+<p><strong>Projektdetails:</strong></p>
+<table>
+<thead>
+<tr>
+<th>Feld</th>
+<th>Wert</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Subscription</td>
+<td>deine Subscription</td>
+</tr>
+<tr>
+<td>Resource group</td>
+<td><code>rg-praktikum</code></td>
+</tr>
+</tbody>
+</table>
+<p><strong>Instanzdetails:</strong></p>
+<table>
+<thead>
+<tr>
+<th>Feld</th>
+<th>Wert</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Virtual machine name</td>
+<td><code>vm-training</code></td>
+</tr>
+<tr>
+<td>Region</td>
+<td>dieselbe Region wie deine Resource Group (z.B. <code>Germany West Central</code>)</td>
+</tr>
+<tr>
+<td>Availability options</td>
+<td><code>No infrastructure redundancy required</code></td>
+</tr>
+<tr>
+<td>Security type</td>
+<td><code>Standard</code></td>
+</tr>
+<tr>
+<td>Image</td>
+<td><code>Ubuntu Server 24.04 LTS - x64 Gen2</code></td>
+</tr>
+<tr>
+<td>Size</td>
+<td><code>Standard_B1s</code> (1 vCPU, 1 GiB RAM)</td>
+</tr>
+</tbody>
+</table>
+<div class="admonition tip">
+<p class="admonition-title">Image auswählen</p>
+<p>Falls Ubuntu 24.04 LTS beim Feld <strong>Image</strong> nicht direkt sichtbar ist, klicke auf <strong>See all images</strong>, suche nach <code>Ubuntu</code> und wähle <strong>Ubuntu Server 24.04 LTS</strong> von Canonical.</p>
+</div>
+<div class="admonition tip">
+<p class="admonition-title">VM-Größe auswählen</p>
+<p>Beim Feld <strong>Size</strong> klicke auf <strong>See all sizes</strong>. Suche in der Suchleiste nach <code>B1s</code> und wähle <strong>Standard_B1s</strong>. Diese Größe kostet ca. 7 €/Monat und ist für unsere Zwecke mehr als ausreichend.</p>
+</div>
+<p><strong>Administrator-Konto:</strong></p>
+<table>
+<thead>
+<tr>
+<th>Feld</th>
+<th>Wert</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Authentication type</td>
+<td><code>Password</code></td>
+</tr>
+<tr>
+<td>Username</td>
+<td><code>azureuser</code></td>
+</tr>
+<tr>
+<td>Password</td>
+<td>Ein sicheres Passwort (min. 12 Zeichen, Groß-/Kleinbuchstaben, Zahl, Sonderzeichen)</td>
+</tr>
+<tr>
+<td>Confirm password</td>
+<td>dasselbe Passwort nochmal</td>
+</tr>
+</tbody>
+</table>
+<div class="admonition warning">
+<p class="admonition-title">Passwort merken!</p>
+<p>Schreibe dir das Passwort auf – du brauchst es gleich für die SSH-Verbindung.</p>
+</div>
+<p><strong>Inbound port rules:</strong></p>
+<table>
+<thead>
+<tr>
+<th>Feld</th>
+<th>Wert</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Public inbound ports</td>
+<td><code>Allow selected ports</code></td>
+</tr>
+<tr>
+<td>Select inbound ports</td>
+<td><code>SSH (22)</code></td>
+</tr>
+</tbody>
+</table>
+<h3 id="schritt-3-disks-tab">Schritt 3: Disks-Tab</h3>
+<p>Klicke oben auf den Tab <strong>Disks</strong>:</p>
+<table>
+<thead>
+<tr>
+<th>Feld</th>
+<th>Wert</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>OS disk type</td>
+<td><code>Standard SSD (locally-redundant storage)</code></td>
+</tr>
+</tbody>
+</table>
+<p>Alle anderen Einstellungen auf diesem Tab bleiben unverändert.</p>
+<h3 id="schritt-4-networking-tab">Schritt 4: Networking-Tab</h3>
+<p>Klicke auf den Tab <strong>Networking</strong>:</p>
+<p>Azure erstellt automatisch ein <strong>Virtual Network (VNet)</strong> und ein <strong>Subnet</strong> für dich – das ist dein virtuelles Netzwerk in der Cloud, vergleichbar mit einem VLAN in Hyper-V.</p>
+<p>Prüfe folgendes:</p>
+<ul>
+<li><strong>Virtual network</strong>: <code>(new) vm-training-vnet</code> ← automatisch erstellt, passt so</li>
+<li><strong>Subnet</strong>: <code>(new) default</code> ← passt so</li>
+<li><strong>Public IP</strong>: <code>(new) vm-training-ip</code> ← das ist deine öffentliche IP-Adresse</li>
+</ul>
+<p>Alle anderen Einstellungen bleiben Standard.</p>
+<h3 id="schritt-5-management-tab">Schritt 5: Management-Tab</h3>
+<p>Klicke auf den Tab <strong>Management</strong> und aktiviere <strong>Auto-shutdown</strong>:</p>
+<ol>
+<li>Setze <strong>Enable auto-shutdown</strong> auf <strong>On</strong></li>
+<li><strong>Shutdown time</strong>: z.B. <code>19:00</code></li>
+<li><strong>Time zone</strong>: <code>(UTC+01:00) Amsterdam, Berlin, Bern, Rome, Stockholm, Vienna</code></li>
+</ol>
+<div class="admonition tip">
+<p class="admonition-title">Warum Auto-Shutdown?</p>
+<p>In Azure läuft die Uhr solange eine VM eingeschaltet ist. Auto-Shutdown sorgt dafür, dass die VM abends automatisch ausgeht – egal ob man es vergisst. Das ist eine gute Gewohnheit.</p>
+</div>
+<h3 id="schritt-6-review-create">Schritt 6: Review + Create</h3>
+<ol>
+<li>Klicke auf den Tab <strong>Review + create</strong></li>
+<li>Azure prüft alle Einstellungen – du siehst oben <strong>Validation passed</strong> in grün</li>
+<li>Oben auf der Seite siehst du die geschätzten <strong>Kosten pro Monat</strong> für diese VM</li>
+<li>Klicke auf <strong>Create</strong></li>
+</ol>
+<p>Die VM wird jetzt bereitgestellt – das dauert ca. 1–2 Minuten.</p>
+<h3 id="schritt-7-deployment-abwarten">Schritt 7: Deployment abwarten</h3>
+<p>Du siehst die Seite "Deployment in progress" mit einem Fortschrittsbalken. Warte bis "Your deployment is complete" erscheint.</p>
+<p>Klicke dann auf <strong>Go to resource</strong>.</p>
+<hr />
+<h2 id="mit-der-vm-verbinden-per-ssh-im-browser">Mit der VM verbinden (per SSH im Browser)</h2>
+<p>Du verbindest dich jetzt per SSH mit deiner VM. Dafür nutzen wir <strong>Azure Cloud Shell</strong> – ein vollwertiges Linux-Terminal direkt im Browser, ohne dass du irgendetwas auf deinem Computer installieren musst.</p>
+<h3 id="schritt-1-public-ip-adresse-kopieren">Schritt 1: Public IP-Adresse kopieren</h3>
+<ol>
+<li>Auf der Übersichtsseite deiner VM <code>vm-training</code> findest du rechts die <strong>Public IP address</strong> (z.B. <code>20.123.45.67</code>)</li>
+<li>Klicke auf die IP-Adresse um sie zu kopieren</li>
+</ol>
+<h3 id="schritt-2-azure-cloud-shell-offnen">Schritt 2: Azure Cloud Shell öffnen</h3>
+<ol>
+<li>Klicke auf das <strong>Terminal-Symbol</strong> <code>&gt;_</code> in der oberen Menüleiste des Azure Portals (links neben dem Notifications-Symbol)</li>
+<li>Beim ersten Öffnen erscheint eine Auswahl – wähle <strong>Bash</strong></li>
+<li>Es erscheint der Dialog "You have no storage mounted" – klicke auf <strong>Create storage</strong></li>
+<li>Azure erstellt automatisch einen kleinen Storage Account für die Cloud Shell (kostet wenige Cent/Monat)</li>
+<li>Nach einigen Sekunden öffnet sich ein Terminal am unteren Bildschirmrand</li>
+</ol>
+<div class="admonition info">
+<p class="admonition-title">Was ist Azure Cloud Shell?</p>
+<p>Cloud Shell ist ein vollwertiges Linux-Terminal (Bash), das direkt in deinem Browser läuft. Azure hat alle wichtigen Tools vorinstalliert: SSH, Python, Azure CLI (<code>az</code>), git und mehr. Kein lokales Setup notwendig.</p>
+</div>
+<h3 id="schritt-3-per-ssh-verbinden">Schritt 3: Per SSH verbinden</h3>
+<p>Tippe im Cloud Shell Terminal den folgenden Befehl. Ersetze <code>DEINE_PUBLIC_IP</code> mit der kopierten IP-Adresse deiner VM:</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a>ssh<span class="w"> </span>azureuser@DEINE_PUBLIC_IP
+</code></pre></div>
+<p>Beim ersten Verbinden erscheint diese Sicherheitsabfrage:</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a>Are you sure you want to continue connecting (yes/no/[fingerprint])?
+</code></pre></div>
+<p>Tippe <code>yes</code> und drücke Enter.</p>
+<p>Dann fragt SSH nach dem Passwort. Gib das Passwort ein, das du bei der VM-Erstellung gesetzt hast. Das Passwort wird beim Tippen nicht angezeigt – das ist normal und so gewollt.</p>
+<p>Wenn alles geklappt hat, siehst du:</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a>Welcome to Ubuntu 24.04.2 LTS (GNU/Linux 6.8.0-1021-azure x86_64)
+<a id="__codelineno-2-2" name="__codelineno-2-2" href="#__codelineno-2-2"></a>...
+<a id="__codelineno-2-3" name="__codelineno-2-3" href="#__codelineno-2-3"></a>azureuser@vm-training:~$
+</code></pre></div>
+<p><strong>Du bist jetzt auf deiner Azure-VM!</strong> Was du ab jetzt eintippst, läuft direkt auf einem Server in Microsofts Rechenzentrum.</p>
+<hr />
+<h2 id="nginx-installieren">nginx installieren</h2>
+<p>nginx ist ein weit verbreiteter Webserver. Wir installieren ihn jetzt auf der VM, damit sie Webseiten an Besucher ausliefern kann.</p>
+<h3 id="schritt-1-paketliste-aktualisieren">Schritt 1: Paketliste aktualisieren</h3>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a>sudo<span class="w"> </span>apt<span class="w"> </span>update
+</code></pre></div>
+<p>Warte bis die Ausgabe fertig ist (ca. 15–30 Sekunden). Du siehst am Ende in etwa:</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-4-1" name="__codelineno-4-1" href="#__codelineno-4-1"></a>Reading package lists... Done
+</code></pre></div>
+<h3 id="schritt-2-nginx-installieren">Schritt 2: nginx installieren</h3>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-5-1" name="__codelineno-5-1" href="#__codelineno-5-1"></a>sudo<span class="w"> </span>apt<span class="w"> </span>install<span class="w"> </span>-y<span class="w"> </span>nginx
+</code></pre></div>
+<p>Der <code>-y</code> Parameter beantwortet die Bestätigungsfrage automatisch mit "Ja". Das dauert ca. 30 Sekunden.</p>
+<h3 id="schritt-3-status-prufen">Schritt 3: Status prüfen</h3>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-6-1" name="__codelineno-6-1" href="#__codelineno-6-1"></a>sudo<span class="w"> </span>systemctl<span class="w"> </span>status<span class="w"> </span>nginx
+</code></pre></div>
+<p>Du solltest <code>active (running)</code> in grüner Schrift sehen. Drücke <code>q</code> um die Anzeige zu verlassen.</p>
+<h3 id="schritt-4-eigene-startseite-erstellen">Schritt 4: Eigene Startseite erstellen</h3>
+<p>Ersetze die nginx-Standardseite durch deine eigene. Ersetze <code>DEIN NAME</code> mit deinem echten Namen:</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-7-1" name="__codelineno-7-1" href="#__codelineno-7-1"></a><span class="nb">echo</span><span class="w"> </span><span class="s2">&quot;&lt;h1&gt;Hallo Azure! Ich bin DEIN NAME&lt;/h1&gt;&lt;p&gt;Diese Seite läuft auf meiner VM in Microsofts Rechenzentrum.&lt;/p&gt;&quot;</span><span class="w"> </span><span class="p">|</span><span class="w"> </span>sudo<span class="w"> </span>tee<span class="w"> </span>/var/www/html/index.html
+</code></pre></div>
+<hr />
+<h2 id="port-80-in-der-azure-firewall-offnen">Port 80 in der Azure-Firewall öffnen</h2>
+<p>Aktuell blockiert die Azure-Firewall (<strong>Network Security Group</strong>) noch alle Verbindungen auf Port 80 (HTTP). Wir öffnen ihn jetzt im Azure Portal.</p>
+<h3 id="schritt-1-zuruck-zum-portal">Schritt 1: Zurück zum Portal</h3>
+<p>Öffne einen neuen Browser-Tab und gehe zum Azure Portal. Die Cloud Shell bleibt unten geöffnet.</p>
+<h3 id="schritt-2-zur-vm-netzwerkkonfiguration-navigieren">Schritt 2: Zur VM-Netzwerkkonfiguration navigieren</h3>
+<ol>
+<li>Suche im Portal nach <code>vm-training</code> und klicke auf deine VM</li>
+<li>Klicke links im Menü auf <strong>Networking</strong> → <strong>Network settings</strong></li>
+<li>Du siehst die aktuellen Regeln der Network Security Group – momentan ist nur SSH (Port 22) erlaubt</li>
+</ol>
+<h3 id="schritt-3-http-regel-hinzufugen">Schritt 3: HTTP-Regel hinzufügen</h3>
+<ol>
+<li>Klicke auf <strong>+ Create port rule</strong> → <strong>Inbound port rule</strong></li>
+<li>Fülle das Formular aus:</li>
+</ol>
+<table>
+<thead>
+<tr>
+<th>Feld</th>
+<th>Wert</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Source</td>
+<td><code>Any</code></td>
+</tr>
+<tr>
+<td>Source port ranges</td>
+<td><code>*</code></td>
+</tr>
+<tr>
+<td>Destination</td>
+<td><code>Any</code></td>
+</tr>
+<tr>
+<td>Service</td>
+<td><code>HTTP</code></td>
+</tr>
+<tr>
+<td>Action</td>
+<td><code>Allow</code></td>
+</tr>
+<tr>
+<td>Priority</td>
+<td><code>310</code></td>
+</tr>
+<tr>
+<td>Name</td>
+<td><code>Allow-HTTP</code></td>
+</tr>
+</tbody>
+</table>
+<ol>
+<li>Klicke auf <strong>Add</strong></li>
+</ol>
+<h3 id="schritt-4-webseite-aufrufen">Schritt 4: Webseite aufrufen</h3>
+<ol>
+<li>Kopiere die <strong>Public IP address</strong> deiner VM (steht auf der VM-Übersichtsseite)</li>
+<li>Öffne einen neuen Browser-Tab</li>
+<li>Gib in die Adressleiste ein: <code>http://DEINE_PUBLIC_IP</code> – <strong>wichtig: http, nicht https!</strong></li>
+<li>Drücke Enter</li>
+</ol>
+<p>Du solltest deine Seite sehen: "Hallo Azure! Ich bin [Dein Name]"</p>
+<div class="admonition success">
+<p class="admonition-title">Deine erste Azure-VM ist live!</p>
+<p>Du hast eine Linux-VM in der Microsoft Cloud gestartet, dich per SSH verbunden, einen Webserver installiert, die Firewall konfiguriert – und deine Seite ist jetzt im Internet erreichbar. Das ist Cloud Computing in der Praxis.</p>
+</div>
+<hr />
+<h2 id="challenge">Challenge</h2>
+<div class="admonition question">
+<p class="admonition-title">Challenge: Eigene HTML-Seite gestalten</p>
+<p>Die aktuelle Seite ist sehr simpel. Gestalte sie mit richtigem HTML. Sie soll mindestens enthalten:</p>
+<ul>
+<li>Eine Überschrift (<code>&lt;h1&gt;</code>)</li>
+<li>Einen Absatz mit Text (<code>&lt;p&gt;</code>)</li>
+<li>Eine Liste mit mindestens 3 Punkten (<code>&lt;ul&gt;</code> und <code>&lt;li&gt;</code>)</li>
+<li>Ein bisschen CSS-Styling (Farbe, Schriftart – was du möchtest)</li>
+</ul>
+</div>
+<details class="success">
+<summary>Lösung anzeigen</summary>
+<p>Verbinde dich per SSH mit deiner VM (der SSH-Befehl von vorhin). Öffne dann den Texteditor nano:</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-8-1" name="__codelineno-8-1" href="#__codelineno-8-1"></a>sudo<span class="w"> </span>nano<span class="w"> </span>/var/www/html/index.html
+</code></pre></div>
+<p>Lösche den alten Inhalt (<code>Ctrl+K</code> mehrmals drücken) und schreibe folgendes. Ersetze <code>[Dein Name]</code> mit deinem Namen:</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-9-1" name="__codelineno-9-1" href="#__codelineno-9-1"></a><span class="cp">&lt;!DOCTYPE html&gt;</span>
+<a id="__codelineno-9-2" name="__codelineno-9-2" href="#__codelineno-9-2"></a><span class="p">&lt;</span><span class="nt">html</span> <span class="na">lang</span><span class="o">=</span><span class="s">&quot;de&quot;</span><span class="p">&gt;</span>
+<a id="__codelineno-9-3" name="__codelineno-9-3" href="#__codelineno-9-3"></a><span class="p">&lt;</span><span class="nt">head</span><span class="p">&gt;</span>
+<a id="__codelineno-9-4" name="__codelineno-9-4" href="#__codelineno-9-4"></a>    <span class="p">&lt;</span><span class="nt">meta</span> <span class="na">charset</span><span class="o">=</span><span class="s">&quot;UTF-8&quot;</span><span class="p">&gt;</span>
+<a id="__codelineno-9-5" name="__codelineno-9-5" href="#__codelineno-9-5"></a>    <span class="p">&lt;</span><span class="nt">title</span><span class="p">&gt;</span>Meine Azure VM<span class="p">&lt;/</span><span class="nt">title</span><span class="p">&gt;</span>
+<a id="__codelineno-9-6" name="__codelineno-9-6" href="#__codelineno-9-6"></a>    <span class="p">&lt;</span><span class="nt">style</span><span class="p">&gt;</span>
+<a id="__codelineno-9-7" name="__codelineno-9-7" href="#__codelineno-9-7"></a><span class="w">        </span><span class="nt">body</span><span class="w"> </span><span class="p">{</span>
+<a id="__codelineno-9-8" name="__codelineno-9-8" href="#__codelineno-9-8"></a><span class="w">            </span><span class="k">font-family</span><span class="p">:</span><span class="w"> </span><span class="s1">&#39;Segoe UI&#39;</span><span class="p">,</span><span class="w"> </span><span class="n">Arial</span><span class="p">,</span><span class="w"> </span><span class="kc">sans-serif</span><span class="p">;</span>
+<a id="__codelineno-9-9" name="__codelineno-9-9" href="#__codelineno-9-9"></a><span class="w">            </span><span class="k">background</span><span class="p">:</span><span class="w"> </span><span class="mh">#0078d4</span><span class="p">;</span>
+<a id="__codelineno-9-10" name="__codelineno-9-10" href="#__codelineno-9-10"></a><span class="w">            </span><span class="k">color</span><span class="p">:</span><span class="w"> </span><span class="kc">white</span><span class="p">;</span>
+<a id="__codelineno-9-11" name="__codelineno-9-11" href="#__codelineno-9-11"></a><span class="w">            </span><span class="k">padding</span><span class="p">:</span><span class="w"> </span><span class="mi">40</span><span class="kt">px</span><span class="p">;</span>
+<a id="__codelineno-9-12" name="__codelineno-9-12" href="#__codelineno-9-12"></a><span class="w">            </span><span class="k">max-width</span><span class="p">:</span><span class="w"> </span><span class="mi">700</span><span class="kt">px</span><span class="p">;</span>
+<a id="__codelineno-9-13" name="__codelineno-9-13" href="#__codelineno-9-13"></a><span class="w">            </span><span class="k">margin</span><span class="p">:</span><span class="w"> </span><span class="mi">0</span><span class="w"> </span><span class="kc">auto</span><span class="p">;</span>
+<a id="__codelineno-9-14" name="__codelineno-9-14" href="#__codelineno-9-14"></a><span class="w">        </span><span class="p">}</span>
+<a id="__codelineno-9-15" name="__codelineno-9-15" href="#__codelineno-9-15"></a><span class="w">        </span><span class="nt">h1</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="k">font-size</span><span class="p">:</span><span class="w"> </span><span class="mf">2.5</span><span class="kt">em</span><span class="p">;</span><span class="w"> </span><span class="p">}</span>
+<a id="__codelineno-9-16" name="__codelineno-9-16" href="#__codelineno-9-16"></a><span class="w">        </span><span class="nt">ul</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="k">font-size</span><span class="p">:</span><span class="w"> </span><span class="mf">1.2</span><span class="kt">em</span><span class="p">;</span><span class="w"> </span><span class="k">line-height</span><span class="p">:</span><span class="w"> </span><span class="mf">1.8</span><span class="p">;</span><span class="w"> </span><span class="p">}</span>
+<a id="__codelineno-9-17" name="__codelineno-9-17" href="#__codelineno-9-17"></a><span class="w">    </span><span class="p">&lt;/</span><span class="nt">style</span><span class="p">&gt;</span>
+<a id="__codelineno-9-18" name="__codelineno-9-18" href="#__codelineno-9-18"></a><span class="p">&lt;/</span><span class="nt">head</span><span class="p">&gt;</span>
+<a id="__codelineno-9-19" name="__codelineno-9-19" href="#__codelineno-9-19"></a><span class="p">&lt;</span><span class="nt">body</span><span class="p">&gt;</span>
+<a id="__codelineno-9-20" name="__codelineno-9-20" href="#__codelineno-9-20"></a>    <span class="p">&lt;</span><span class="nt">h1</span><span class="p">&gt;</span>Hallo von [Dein Name]!<span class="p">&lt;/</span><span class="nt">h1</span><span class="p">&gt;</span>
+<a id="__codelineno-9-21" name="__codelineno-9-21" href="#__codelineno-9-21"></a>    <span class="p">&lt;</span><span class="nt">p</span><span class="p">&gt;</span>Diese Seite läuft auf meiner Azure VM in Microsofts Rechenzentrum Frankfurt.<span class="p">&lt;/</span><span class="nt">p</span><span class="p">&gt;</span>
+<a id="__codelineno-9-22" name="__codelineno-9-22" href="#__codelineno-9-22"></a>    <span class="p">&lt;</span><span class="nt">ul</span><span class="p">&gt;</span>
+<a id="__codelineno-9-23" name="__codelineno-9-23" href="#__codelineno-9-23"></a>        <span class="p">&lt;</span><span class="nt">li</span><span class="p">&gt;</span>Azure VMs starten in unter 2 Minuten<span class="p">&lt;/</span><span class="nt">li</span><span class="p">&gt;</span>
+<a id="__codelineno-9-24" name="__codelineno-9-24" href="#__codelineno-9-24"></a>        <span class="p">&lt;</span><span class="nt">li</span><span class="p">&gt;</span>Ich zahle nur wenn die VM läuft (ca. 0,009 €/Stunde)<span class="p">&lt;/</span><span class="nt">li</span><span class="p">&gt;</span>
+<a id="__codelineno-9-25" name="__codelineno-9-25" href="#__codelineno-9-25"></a>        <span class="p">&lt;</span><span class="nt">li</span><span class="p">&gt;</span>Die Firewall heißt in Azure &quot;Network Security Group&quot;<span class="p">&lt;/</span><span class="nt">li</span><span class="p">&gt;</span>
+<a id="__codelineno-9-26" name="__codelineno-9-26" href="#__codelineno-9-26"></a>    <span class="p">&lt;/</span><span class="nt">ul</span><span class="p">&gt;</span>
+<a id="__codelineno-9-27" name="__codelineno-9-27" href="#__codelineno-9-27"></a><span class="p">&lt;/</span><span class="nt">body</span><span class="p">&gt;</span>
+<a id="__codelineno-9-28" name="__codelineno-9-28" href="#__codelineno-9-28"></a><span class="p">&lt;/</span><span class="nt">html</span><span class="p">&gt;</span>
+</code></pre></div>
+<p>Speichern: <code>Ctrl+O</code> → <code>Enter</code> → <code>Ctrl+X</code></p>
+<p>Lade die Seite im Browser neu – die Änderungen sind sofort sichtbar!</p>
+</details>
+<hr />
+<p>Weiter zu <a href="../modul-2-storage/">Modul 2 – Storage &amp; Website</a> →</p>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+  <script>var tabs=__md_get("__tabs");if(Array.isArray(tabs))e:for(var set of document.querySelectorAll(".tabbed-set")){var labels=set.querySelector(".tabbed-labels");for(var tab of tabs)for(var label of labels.getElementsByTagName("label"))if(label.innerText.trim()===tab){var input=document.getElementById(label.htmlFor);input.checked=!0;continue e}}</script>
+
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+          <button type="button" class="md-top md-icon" data-md-component="top" hidden>
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8z"/></svg>
+  Zurück zum Seitenanfang
+</button>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+        
+<div class="md-social">
+  
+    
+    
+    
+    
+      
+      
+    
+    <a href="https://github.com/libsman/azuretraining" target="_blank" rel="noopener" title="github.com" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M173.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6m-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3m44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9M252.8 8C114.1 8 8 113.3 8 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C436.2 457.8 504 362.9 504 252 504 113.3 391.5 8 252.8 8M105.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1m-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7m32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1m-11.4-14.7c-1.6 1-1.6 3.6 0 5.9s4.3 3.3 5.6 2.3c1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2"/></svg>
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    
+      
+      
+      <script id="__config" type="application/json">{"annotate": null, "base": "..", "features": ["navigation.tabs", "navigation.sections", "navigation.top", "search.suggest", "search.highlight", "content.code.copy", "content.code.annotate", "content.tabs.link"], "search": "../assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "In Zwischenablage kopiert", "clipboard.copy": "In Zwischenablage kopieren", "search.result.more.one": "1 weiteres Suchergebnis auf dieser Seite", "search.result.more.other": "# weitere Suchergebnisse auf dieser Seite", "search.result.none": "Keine Suchergebnisse", "search.result.one": "1 Suchergebnis", "search.result.other": "# Suchergebnisse", "search.result.placeholder": "Suchbegriff eingeben", "search.result.term.missing": "Es fehlt", "select.version": "Version ausw\u00e4hlen"}, "version": null}</script>
+    
+    
+      <script src="../assets/javascripts/bundle.79ae519e.min.js"></script>
+      
+    
+  </body>
+</html>

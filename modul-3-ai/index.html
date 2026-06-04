@@ -1,0 +1,1442 @@
+
+<!doctype html>
+<html lang="de" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+        <meta name="description" content="Praxis-Einführung in Microsoft Azure für Einsteiger">
+      
+      
+      
+        <link rel="canonical" href="https://libsman.github.io/azuretraining/modul-3-ai/">
+      
+      
+        <link rel="prev" href="../modul-2-storage/">
+      
+      
+        <link rel="next" href="../modul-4-monitoring/">
+      
+      
+        
+      
+      
+      <link rel="icon" href="../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.6">
+    
+    
+      
+        <title>Modul 3 – Azure KI - Azure Einstiegstraining</title>
+      
+    
+    
+      <link rel="stylesheet" href="../assets/stylesheets/main.484c7ddc.min.css">
+      
+        
+        <link rel="stylesheet" href="../assets/stylesheets/palette.ab4e12ef.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+    <script>__md_scope=new URL("..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+  </head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="blue" data-md-color-accent="light-blue">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#modul-3-azure-ki-bilderkennung" class="md-skip">
+          Zum Inhalt
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+<header class="md-header" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Kopfzeile">
+    <a href=".." title="Azure Einstiegstraining" class="md-header__button md-logo" aria-label="Azure Einstiegstraining" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Azure Einstiegstraining
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Modul 3 – Azure KI
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+        <form class="md-header__option" data-md-component="palette">
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="default" data-md-color-primary="blue" data-md-color-accent="light-blue"  aria-label="Dunkelmodus aktivieren"  type="radio" name="__palette" id="__palette_0">
+    
+      <label class="md-header__button md-icon" title="Dunkelmodus aktivieren" for="__palette_1" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a4 4 0 0 0-4 4 4 4 0 0 0 4 4 4 4 0 0 0 4-4 4 4 0 0 0-4-4m0 10a6 6 0 0 1-6-6 6 6 0 0 1 6-6 6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12z"/></svg>
+      </label>
+    
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="slate" data-md-color-primary="blue" data-md-color-accent="light-blue"  aria-label="Hellmodus aktivieren"  type="radio" name="__palette" id="__palette_1">
+    
+      <label class="md-header__button md-icon" title="Hellmodus aktivieren" for="__palette_0" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 18c-.89 0-1.74-.2-2.5-.55C11.56 16.5 13 14.42 13 12s-1.44-4.5-3.5-5.45C10.26 6.2 11.11 6 12 6a6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12z"/></svg>
+      </label>
+    
+  
+</form>
+      
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Suche" placeholder="Suche" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Suche">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Zurücksetzen" aria-label="Zurücksetzen" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+        <div class="md-search__suggest" data-md-component="search-suggest"></div>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Suche wird initialisiert
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      
+    
+    
+      <div class="md-header__source">
+        <a href="https://github.com/libsman/azuretraining" title="Zum Repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M173.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6m-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3m44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9M252.8 8C114.1 8 8 113.3 8 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C436.2 457.8 504 362.9 504 252 504 113.3 391.5 8 252.8 8M105.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1m-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7m32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1m-11.4-14.7c-1.6 1-1.6 3.6 0 5.9s4.3 3.3 5.6 2.3c1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2"/></svg>
+  </div>
+  <div class="md-source__repository">
+    libsman/azuretraining
+  </div>
+</a>
+      </div>
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+            
+<nav class="md-tabs" aria-label="Hauptnavigation" data-md-component="tabs">
+  <div class="md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href=".." class="md-tabs__link">
+        
+  
+  
+    
+  
+  Willkommen
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../modul-0-orientierung/" class="md-tabs__link">
+        
+  
+  
+    
+  
+  Modul 0 – Orientierung
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../modul-1-vm/" class="md-tabs__link">
+        
+  
+  
+    
+  
+  Modul 1 – Erste VM
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../modul-2-storage/" class="md-tabs__link">
+        
+  
+  
+    
+  
+  Modul 2 – Storage & Website
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+    
+  
+  
+    <li class="md-tabs__item md-tabs__item--active">
+      <a href="./" class="md-tabs__link">
+        
+  
+  
+    
+  
+  Modul 3 – Azure KI
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../modul-4-monitoring/" class="md-tabs__link">
+        
+  
+  
+    
+  
+  Modul 4 – Monitoring & Kosten
+
+      </a>
+    </li>
+  
+
+      
+    </ul>
+  </div>
+</nav>
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+  
+
+
+<nav class="md-nav md-nav--primary md-nav--lifted" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href=".." title="Azure Einstiegstraining" class="md-nav__button md-logo" aria-label="Azure Einstiegstraining" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    Azure Einstiegstraining
+  </label>
+  
+    <div class="md-nav__source">
+      <a href="https://github.com/libsman/azuretraining" title="Zum Repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M173.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6m-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3m44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9M252.8 8C114.1 8 8 113.3 8 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C436.2 457.8 504 362.9 504 252 504 113.3 391.5 8 252.8 8M105.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1m-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7m32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1m-11.4-14.7c-1.6 1-1.6 3.6 0 5.9s4.3 3.3 5.6 2.3c1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2"/></svg>
+  </div>
+  <div class="md-source__repository">
+    libsman/azuretraining
+  </div>
+</a>
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href=".." class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Willkommen
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../modul-0-orientierung/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Modul 0 – Orientierung
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../modul-1-vm/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Modul 1 – Erste VM
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../modul-2-storage/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Modul 2 – Storage & Website
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Modul 3 – Azure KI
+  
+
+    
+  </span>
+  
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Modul 3 – Azure KI
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Inhaltsverzeichnis">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Inhaltsverzeichnis
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#lernziele" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Lernziele
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#hintergrund-ki-als-dienst" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Hintergrund: KI als Dienst
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#computer-vision-ressource-erstellen" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Computer Vision Ressource erstellen
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Computer Vision Ressource erstellen">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#schritt-1-zum-dienst-navigieren" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Schritt 1: Zum Dienst navigieren
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#schritt-2-konfigurieren" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Schritt 2: Konfigurieren
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#schritt-3-review-create" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Schritt 3: Review + Create
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#api-schlussel-und-endpoint-kopieren" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        API-Schlüssel und Endpoint kopieren
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="API-Schlüssel und Endpoint kopieren">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#schlussel-und-endpoint-finden" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Schlüssel und Endpoint finden
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#vision-studio-ki-ohne-code-ausprobieren" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Vision Studio: KI ohne Code ausprobieren
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Vision Studio: KI ohne Code ausprobieren">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#schritt-1-vision-studio-offnen" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Schritt 1: Vision Studio öffnen
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#schritt-2-mit-deiner-ressource-verbinden" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Schritt 2: Mit deiner Ressource verbinden
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#schritt-3-bild-analysieren" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Schritt 3: Bild analysieren
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#python-script-die-api-direkt-aufrufen" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Python-Script: Die API direkt aufrufen
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Python-Script: Die API direkt aufrufen">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#schritt-1-cloud-shell-offnen" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Schritt 1: Cloud Shell öffnen
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#schritt-2-neue-python-datei-erstellen" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Schritt 2: Neue Python-Datei erstellen
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#schritt-3-datei-speichern" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Schritt 3: Datei speichern
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#schritt-4-script-ausfuhren" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Schritt 4: Script ausführen
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#eigenes-bild-analysieren" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Eigenes Bild analysieren
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#challenge" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Challenge
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../modul-4-monitoring/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Modul 4 – Monitoring & Kosten
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Inhaltsverzeichnis">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Inhaltsverzeichnis
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#lernziele" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Lernziele
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#hintergrund-ki-als-dienst" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Hintergrund: KI als Dienst
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#computer-vision-ressource-erstellen" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Computer Vision Ressource erstellen
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Computer Vision Ressource erstellen">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#schritt-1-zum-dienst-navigieren" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Schritt 1: Zum Dienst navigieren
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#schritt-2-konfigurieren" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Schritt 2: Konfigurieren
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#schritt-3-review-create" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Schritt 3: Review + Create
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#api-schlussel-und-endpoint-kopieren" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        API-Schlüssel und Endpoint kopieren
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="API-Schlüssel und Endpoint kopieren">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#schlussel-und-endpoint-finden" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Schlüssel und Endpoint finden
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#vision-studio-ki-ohne-code-ausprobieren" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Vision Studio: KI ohne Code ausprobieren
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Vision Studio: KI ohne Code ausprobieren">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#schritt-1-vision-studio-offnen" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Schritt 1: Vision Studio öffnen
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#schritt-2-mit-deiner-ressource-verbinden" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Schritt 2: Mit deiner Ressource verbinden
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#schritt-3-bild-analysieren" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Schritt 3: Bild analysieren
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#python-script-die-api-direkt-aufrufen" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Python-Script: Die API direkt aufrufen
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Python-Script: Die API direkt aufrufen">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#schritt-1-cloud-shell-offnen" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Schritt 1: Cloud Shell öffnen
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#schritt-2-neue-python-datei-erstellen" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Schritt 2: Neue Python-Datei erstellen
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#schritt-3-datei-speichern" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Schritt 3: Datei speichern
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#schritt-4-script-ausfuhren" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Schritt 4: Script ausführen
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#eigenes-bild-analysieren" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Eigenes Bild analysieren
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#challenge" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Challenge
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+  
+  
+
+
+<h1 id="modul-3-azure-ki-bilderkennung">Modul 3 – Azure KI: Bilderkennung</h1>
+<h2 id="lernziele">Lernziele</h2>
+<p>Nach diesem Modul kannst du:</p>
+<ul>
+<li>Einen Azure Computer Vision Dienst erstellen</li>
+<li>Bilder im Azure Vision Studio ohne Code analysieren</li>
+<li>Ein Python-Script schreiben, das die Computer Vision API aufruft und Bilder beschreibt</li>
+</ul>
+<hr />
+<h2 id="hintergrund-ki-als-dienst">Hintergrund: KI als Dienst</h2>
+<p>Machine Learning und künstliche Intelligenz klingen kompliziert – und die Forschung dahinter ist es auch. Aber <strong>Azure AI Services</strong> ermöglichen es dir, fertig trainierte KI-Modelle mit wenigen Zeilen Code zu nutzen:</p>
+<ul>
+<li>Du schickst ein Bild an eine URL (API)</li>
+<li>Azure gibt dir zurück, was auf dem Bild zu sehen ist</li>
+<li>Du brauchst kein Wissen über Machine Learning oder neuronale Netze</li>
+</ul>
+<p>Das Modell hinter Azure Computer Vision wurde von Microsoft mit Hunderten von Millionen Bildern trainiert. Du nutzt es mit einer einzigen HTTP-Anfrage.</p>
+<hr />
+<h2 id="computer-vision-ressource-erstellen">Computer Vision Ressource erstellen</h2>
+<h3 id="schritt-1-zum-dienst-navigieren">Schritt 1: Zum Dienst navigieren</h3>
+<ol>
+<li>Öffne das Azure Portal: <a href="https://portal.azure.com">portal.azure.com</a></li>
+<li>Tippe in der Suchleiste <strong><code>Computer Vision</code></strong> und klicke auf den Dienst (Kategorie: AI + machine learning)</li>
+<li>Klicke auf <strong>+ Create</strong></li>
+</ol>
+<h3 id="schritt-2-konfigurieren">Schritt 2: Konfigurieren</h3>
+<table>
+<thead>
+<tr>
+<th>Feld</th>
+<th>Wert</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Subscription</td>
+<td>deine Subscription</td>
+</tr>
+<tr>
+<td>Resource group</td>
+<td><code>rg-praktikum</code></td>
+</tr>
+<tr>
+<td>Region</td>
+<td><code>West Europe</code></td>
+</tr>
+<tr>
+<td>Name</td>
+<td><code>cv-praktikum</code></td>
+</tr>
+<tr>
+<td>Pricing tier</td>
+<td><code>Free F0</code></td>
+</tr>
+</tbody>
+</table>
+<div class="admonition warning">
+<p class="admonition-title">Region: West Europe wählen</p>
+<p>Computer Vision ist nicht in allen Regionen verfügbar. Wähle hier <strong>West Europe</strong> (Amsterdam), auch wenn du vorhin Germany West Central genutzt hast.</p>
+</div>
+<div class="admonition info">
+<p class="admonition-title">Free Tier F0</p>
+<p>Der Free Tier erlaubt <strong>5.000 Analysen pro Monat</strong> und 20 pro Minute. Für heute mehr als genug – und es entstehen <strong>keine Kosten</strong>.</p>
+</div>
+<h3 id="schritt-3-review-create">Schritt 3: Review + Create</h3>
+<ol>
+<li>Klicke auf <strong>Review + create</strong></li>
+<li>Klicke auf <strong>Create</strong></li>
+<li>Nach dem Deployment: <strong>Go to resource</strong></li>
+</ol>
+<hr />
+<h2 id="api-schlussel-und-endpoint-kopieren">API-Schlüssel und Endpoint kopieren</h2>
+<p>Du brauchst zwei Dinge um die API aufzurufen: einen <strong>Schlüssel</strong> (API-Key) und den <strong>Endpoint</strong> (URL deiner Ressource).</p>
+<h3 id="schlussel-und-endpoint-finden">Schlüssel und Endpoint finden</h3>
+<ol>
+<li>Links im Menü deiner Computer Vision Ressource: <strong>Resource Management</strong> → <strong>Keys and Endpoint</strong></li>
+<li>Du siehst:<ul>
+<li><strong>KEY 1</strong> und <strong>KEY 2</strong>: zwei gleichwertige API-Schlüssel (du brauchst nur einen)</li>
+<li><strong>Endpoint</strong>: die URL deiner Ressource (z.B. <code>https://cv-praktikum.cognitiveservices.azure.com/</code>)</li>
+</ul>
+</li>
+</ol>
+<p>Kopiere <strong>KEY 1</strong> und den <strong>Endpoint</strong> – du brauchst beide gleich. Lass diesen Tab offen.</p>
+<div class="admonition warning">
+<p class="admonition-title">API-Key geheim halten</p>
+<p>Dein API-Key ist wie ein Passwort. Wer ihn kennt, kann deinen Dienst aufrufen. Teile ihn nicht mit anderen und lade ihn nicht in öffentliche Git-Repositories hoch.</p>
+</div>
+<hr />
+<h2 id="vision-studio-ki-ohne-code-ausprobieren">Vision Studio: KI ohne Code ausprobieren</h2>
+<p>Bevor wir programmieren, testen wir die KI direkt im Browser.</p>
+<h3 id="schritt-1-vision-studio-offnen">Schritt 1: Vision Studio öffnen</h3>
+<p>Öffne in einem neuen Tab:</p>
+<p><strong><a href="https://portal.vision.cognitive.azure.com">portal.vision.cognitive.azure.com</a></strong></p>
+<h3 id="schritt-2-mit-deiner-ressource-verbinden">Schritt 2: Mit deiner Ressource verbinden</h3>
+<ol>
+<li>Klicke oben rechts auf <strong>View all resources</strong></li>
+<li>Deine Ressource <code>cv-praktikum</code> sollte in der Liste erscheinen – klicke darauf</li>
+<li>Klicke auf <strong>Select as default resource</strong> und dann <strong>Done</strong></li>
+</ol>
+<h3 id="schritt-3-bild-analysieren">Schritt 3: Bild analysieren</h3>
+<ol>
+<li>Auf der Startseite: klicke auf die Kachel <strong>Image analysis</strong> (oder "Analyze images")</li>
+<li>Wähle <strong>Add captions to images</strong></li>
+<li>Du siehst eine Demo-Oberfläche mit Beispielbildern</li>
+<li>Lade ein eigenes Bild hoch (Button "Browse for a file") – oder wähle eines der Beispielbilder</li>
+<li>Aktiviere die Checkbox <strong>"I acknowledge..."</strong> (Nutzungsbedingungen)</li>
+<li>Klicke auf <strong>Run</strong></li>
+</ol>
+<p>Azure zeigt dir:
+- Eine <strong>Beschreibung</strong> des Bildinhalts in natürlicher Sprache
+- Erkannte <strong>Objekte</strong> mit Markierungen
+- Erkannte <strong>Tags</strong> (Kategorien)</p>
+<p>Probiere mehrere Bilder aus – Fotos von draußen, Leute, Tiere, Gegenstände.</p>
+<div class="admonition success">
+<p class="admonition-title">Das ist echte KI!</p>
+<p>Was du siehst, sind die Ausgaben eines neuronalen Netzes. Microsoft hat dieses Modell mit Milliarden von Bildern trainiert. Du hast es gerade mit einem Klick genutzt – ohne eine einzige Zeile Code.</p>
+</div>
+<hr />
+<h2 id="python-script-die-api-direkt-aufrufen">Python-Script: Die API direkt aufrufen</h2>
+<p>Jetzt rufen wir dieselbe KI selbst mit einem Python-Script auf. Wir nutzen dafür <strong>Azure Cloud Shell</strong> – kein lokales Setup nötig.</p>
+<h3 id="schritt-1-cloud-shell-offnen">Schritt 1: Cloud Shell öffnen</h3>
+<ol>
+<li>Gehe zurück zum Azure Portal</li>
+<li>Klicke auf das Terminal-Symbol <code>&gt;_</code> in der oberen Menüleiste</li>
+<li>Die Cloud Shell aus Modul 1 sollte noch da sein – falls nicht, wähle <strong>Bash</strong></li>
+</ol>
+<h3 id="schritt-2-neue-python-datei-erstellen">Schritt 2: Neue Python-Datei erstellen</h3>
+<p>Öffne den eingebauten Cloud Shell Editor:</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a>code<span class="w"> </span>analyse.py
+</code></pre></div>
+<p>Ein Editor öffnet sich im oberen Teil der Cloud Shell. Füge jetzt folgenden Code ein.</p>
+<p><strong>Ersetze in Zeile 5 den Platzhalter mit deinem KEY 1:</strong></p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a><span class="kn">import</span><span class="w"> </span><span class="nn">requests</span>
+<a id="__codelineno-1-2" name="__codelineno-1-2" href="#__codelineno-1-2"></a>
+<a id="__codelineno-1-3" name="__codelineno-1-3" href="#__codelineno-1-3"></a><span class="c1"># ─── Deine Zugangsdaten ───────────────────────────────────────────────────────</span>
+<a id="__codelineno-1-4" name="__codelineno-1-4" href="#__codelineno-1-4"></a><span class="n">endpoint</span> <span class="o">=</span> <span class="s2">&quot;https://cv-praktikum.cognitiveservices.azure.com&quot;</span>
+<a id="__codelineno-1-5" name="__codelineno-1-5" href="#__codelineno-1-5"></a><span class="n">key</span>      <span class="o">=</span> <span class="s2">&quot;ERSETZE_MICH_MIT_DEINEM_KEY_1&quot;</span>
+<a id="__codelineno-1-6" name="__codelineno-1-6" href="#__codelineno-1-6"></a><span class="c1"># ─────────────────────────────────────────────────────────────────────────────</span>
+<a id="__codelineno-1-7" name="__codelineno-1-7" href="#__codelineno-1-7"></a>
+<a id="__codelineno-1-8" name="__codelineno-1-8" href="#__codelineno-1-8"></a><span class="c1"># Sicherheit: trailing slash entfernen falls vorhanden</span>
+<a id="__codelineno-1-9" name="__codelineno-1-9" href="#__codelineno-1-9"></a><span class="n">endpoint</span> <span class="o">=</span> <span class="n">endpoint</span><span class="o">.</span><span class="n">rstrip</span><span class="p">(</span><span class="s2">&quot;/&quot;</span><span class="p">)</span>
+<a id="__codelineno-1-10" name="__codelineno-1-10" href="#__codelineno-1-10"></a>
+<a id="__codelineno-1-11" name="__codelineno-1-11" href="#__codelineno-1-11"></a><span class="c1"># API-URL für Image Analysis</span>
+<a id="__codelineno-1-12" name="__codelineno-1-12" href="#__codelineno-1-12"></a><span class="n">url</span> <span class="o">=</span> <span class="sa">f</span><span class="s2">&quot;</span><span class="si">{</span><span class="n">endpoint</span><span class="si">}</span><span class="s2">/vision/v3.2/analyze&quot;</span>
+<a id="__codelineno-1-13" name="__codelineno-1-13" href="#__codelineno-1-13"></a>
+<a id="__codelineno-1-14" name="__codelineno-1-14" href="#__codelineno-1-14"></a><span class="n">headers</span> <span class="o">=</span> <span class="p">{</span>
+<a id="__codelineno-1-15" name="__codelineno-1-15" href="#__codelineno-1-15"></a>    <span class="s2">&quot;Ocp-Apim-Subscription-Key&quot;</span><span class="p">:</span> <span class="n">key</span><span class="p">,</span>
+<a id="__codelineno-1-16" name="__codelineno-1-16" href="#__codelineno-1-16"></a>    <span class="s2">&quot;Content-Type&quot;</span><span class="p">:</span> <span class="s2">&quot;application/json&quot;</span>
+<a id="__codelineno-1-17" name="__codelineno-1-17" href="#__codelineno-1-17"></a><span class="p">}</span>
+<a id="__codelineno-1-18" name="__codelineno-1-18" href="#__codelineno-1-18"></a>
+<a id="__codelineno-1-19" name="__codelineno-1-19" href="#__codelineno-1-19"></a><span class="n">params</span> <span class="o">=</span> <span class="p">{</span>
+<a id="__codelineno-1-20" name="__codelineno-1-20" href="#__codelineno-1-20"></a>    <span class="s2">&quot;visualFeatures&quot;</span><span class="p">:</span> <span class="s2">&quot;Description,Objects,Tags&quot;</span>
+<a id="__codelineno-1-21" name="__codelineno-1-21" href="#__codelineno-1-21"></a><span class="p">}</span>
+<a id="__codelineno-1-22" name="__codelineno-1-22" href="#__codelineno-1-22"></a>
+<a id="__codelineno-1-23" name="__codelineno-1-23" href="#__codelineno-1-23"></a><span class="c1"># Bild-URL – jede öffentliche Bild-URL funktioniert!</span>
+<a id="__codelineno-1-24" name="__codelineno-1-24" href="#__codelineno-1-24"></a><span class="n">body</span> <span class="o">=</span> <span class="p">{</span>
+<a id="__codelineno-1-25" name="__codelineno-1-25" href="#__codelineno-1-25"></a>    <span class="s2">&quot;url&quot;</span><span class="p">:</span> <span class="s2">&quot;https://upload.wikimedia.org/wikipedia/commons/thumb/1/14/Gatto_europeo4.jpg/800px-Gatto_europeo4.jpg&quot;</span>
+<a id="__codelineno-1-26" name="__codelineno-1-26" href="#__codelineno-1-26"></a><span class="p">}</span>
+<a id="__codelineno-1-27" name="__codelineno-1-27" href="#__codelineno-1-27"></a>
+<a id="__codelineno-1-28" name="__codelineno-1-28" href="#__codelineno-1-28"></a><span class="c1"># API aufrufen</span>
+<a id="__codelineno-1-29" name="__codelineno-1-29" href="#__codelineno-1-29"></a><span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Sende Anfrage an Azure Computer Vision...&quot;</span><span class="p">)</span>
+<a id="__codelineno-1-30" name="__codelineno-1-30" href="#__codelineno-1-30"></a><span class="n">response</span> <span class="o">=</span> <span class="n">requests</span><span class="o">.</span><span class="n">post</span><span class="p">(</span><span class="n">url</span><span class="p">,</span> <span class="n">headers</span><span class="o">=</span><span class="n">headers</span><span class="p">,</span> <span class="n">params</span><span class="o">=</span><span class="n">params</span><span class="p">,</span> <span class="n">json</span><span class="o">=</span><span class="n">body</span><span class="p">)</span>
+<a id="__codelineno-1-31" name="__codelineno-1-31" href="#__codelineno-1-31"></a><span class="n">result</span>   <span class="o">=</span> <span class="n">response</span><span class="o">.</span><span class="n">json</span><span class="p">()</span>
+<a id="__codelineno-1-32" name="__codelineno-1-32" href="#__codelineno-1-32"></a>
+<a id="__codelineno-1-33" name="__codelineno-1-33" href="#__codelineno-1-33"></a><span class="c1"># Fehlerprüfung</span>
+<a id="__codelineno-1-34" name="__codelineno-1-34" href="#__codelineno-1-34"></a><span class="k">if</span> <span class="s2">&quot;error&quot;</span> <span class="ow">in</span> <span class="n">result</span><span class="p">:</span>
+<a id="__codelineno-1-35" name="__codelineno-1-35" href="#__codelineno-1-35"></a>    <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Fehler: </span><span class="si">{</span><span class="n">result</span><span class="p">[</span><span class="s1">&#39;error&#39;</span><span class="p">][</span><span class="s1">&#39;message&#39;</span><span class="p">]</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+<a id="__codelineno-1-36" name="__codelineno-1-36" href="#__codelineno-1-36"></a>    <span class="n">exit</span><span class="p">(</span><span class="mi">1</span><span class="p">)</span>
+<a id="__codelineno-1-37" name="__codelineno-1-37" href="#__codelineno-1-37"></a>
+<a id="__codelineno-1-38" name="__codelineno-1-38" href="#__codelineno-1-38"></a><span class="c1"># Ergebnis anzeigen</span>
+<a id="__codelineno-1-39" name="__codelineno-1-39" href="#__codelineno-1-39"></a><span class="nb">print</span><span class="p">(</span><span class="s2">&quot;</span><span class="se">\n</span><span class="s2">=== Azure Computer Vision Ergebnis ===</span><span class="se">\n</span><span class="s2">&quot;</span><span class="p">)</span>
+<a id="__codelineno-1-40" name="__codelineno-1-40" href="#__codelineno-1-40"></a>
+<a id="__codelineno-1-41" name="__codelineno-1-41" href="#__codelineno-1-41"></a><span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Bildbeschreibung:&quot;</span><span class="p">)</span>
+<a id="__codelineno-1-42" name="__codelineno-1-42" href="#__codelineno-1-42"></a><span class="k">for</span> <span class="n">caption</span> <span class="ow">in</span> <span class="n">result</span><span class="p">[</span><span class="s2">&quot;description&quot;</span><span class="p">][</span><span class="s2">&quot;captions&quot;</span><span class="p">]:</span>
+<a id="__codelineno-1-43" name="__codelineno-1-43" href="#__codelineno-1-43"></a>    <span class="n">confidence</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="n">caption</span><span class="p">[</span><span class="s2">&quot;confidence&quot;</span><span class="p">]</span> <span class="o">*</span> <span class="mi">100</span><span class="p">)</span>
+<a id="__codelineno-1-44" name="__codelineno-1-44" href="#__codelineno-1-44"></a>    <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;  → </span><span class="si">{</span><span class="n">caption</span><span class="p">[</span><span class="s1">&#39;text&#39;</span><span class="p">]</span><span class="si">}</span><span class="s2">  (</span><span class="si">{</span><span class="n">confidence</span><span class="si">}</span><span class="s2">% sicher)&quot;</span><span class="p">)</span>
+<a id="__codelineno-1-45" name="__codelineno-1-45" href="#__codelineno-1-45"></a>
+<a id="__codelineno-1-46" name="__codelineno-1-46" href="#__codelineno-1-46"></a><span class="nb">print</span><span class="p">(</span><span class="s2">&quot;</span><span class="se">\n</span><span class="s2">Erkannte Tags:&quot;</span><span class="p">)</span>
+<a id="__codelineno-1-47" name="__codelineno-1-47" href="#__codelineno-1-47"></a><span class="n">tags</span> <span class="o">=</span> <span class="n">result</span><span class="p">[</span><span class="s2">&quot;description&quot;</span><span class="p">][</span><span class="s2">&quot;tags&quot;</span><span class="p">][:</span><span class="mi">8</span><span class="p">]</span>
+<a id="__codelineno-1-48" name="__codelineno-1-48" href="#__codelineno-1-48"></a><span class="nb">print</span><span class="p">(</span><span class="s2">&quot;  &quot;</span> <span class="o">+</span> <span class="s2">&quot;, &quot;</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="n">tags</span><span class="p">))</span>
+<a id="__codelineno-1-49" name="__codelineno-1-49" href="#__codelineno-1-49"></a>
+<a id="__codelineno-1-50" name="__codelineno-1-50" href="#__codelineno-1-50"></a><span class="nb">print</span><span class="p">(</span><span class="s2">&quot;</span><span class="se">\n</span><span class="s2">Erkannte Objekte:&quot;</span><span class="p">)</span>
+<a id="__codelineno-1-51" name="__codelineno-1-51" href="#__codelineno-1-51"></a><span class="k">if</span> <span class="n">result</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s2">&quot;objects&quot;</span><span class="p">):</span>
+<a id="__codelineno-1-52" name="__codelineno-1-52" href="#__codelineno-1-52"></a>    <span class="k">for</span> <span class="n">obj</span> <span class="ow">in</span> <span class="n">result</span><span class="p">[</span><span class="s2">&quot;objects&quot;</span><span class="p">]:</span>
+<a id="__codelineno-1-53" name="__codelineno-1-53" href="#__codelineno-1-53"></a>        <span class="n">confidence</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="n">obj</span><span class="p">[</span><span class="s2">&quot;confidence&quot;</span><span class="p">]</span> <span class="o">*</span> <span class="mi">100</span><span class="p">)</span>
+<a id="__codelineno-1-54" name="__codelineno-1-54" href="#__codelineno-1-54"></a>        <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;  • </span><span class="si">{</span><span class="n">obj</span><span class="p">[</span><span class="s1">&#39;object&#39;</span><span class="p">]</span><span class="si">}</span><span class="s2">  (</span><span class="si">{</span><span class="n">confidence</span><span class="si">}</span><span class="s2">% sicher)&quot;</span><span class="p">)</span>
+<a id="__codelineno-1-55" name="__codelineno-1-55" href="#__codelineno-1-55"></a><span class="k">else</span><span class="p">:</span>
+<a id="__codelineno-1-56" name="__codelineno-1-56" href="#__codelineno-1-56"></a>    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;  (keine spezifischen Objekte erkannt)&quot;</span><span class="p">)</span>
+<a id="__codelineno-1-57" name="__codelineno-1-57" href="#__codelineno-1-57"></a>
+<a id="__codelineno-1-58" name="__codelineno-1-58" href="#__codelineno-1-58"></a><span class="nb">print</span><span class="p">(</span><span class="s2">&quot;</span><span class="se">\n</span><span class="s2">✓ Fertig!&quot;</span><span class="p">)</span>
+</code></pre></div>
+<h3 id="schritt-3-datei-speichern">Schritt 3: Datei speichern</h3>
+<p>Klicke im Editor oben rechts auf <strong>Save</strong> (oder drücke <code>Ctrl+S</code>). Dann schließe den Editor mit dem X.</p>
+<h3 id="schritt-4-script-ausfuhren">Schritt 4: Script ausführen</h3>
+<p>Im Cloud Shell Terminal:</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a>python3<span class="w"> </span>analyse.py
+</code></pre></div>
+<p>Du solltest eine Ausgabe wie diese sehen:</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a>Sende Anfrage an Azure Computer Vision...
+<a id="__codelineno-3-2" name="__codelineno-3-2" href="#__codelineno-3-2"></a>
+<a id="__codelineno-3-3" name="__codelineno-3-3" href="#__codelineno-3-3"></a>=== Azure Computer Vision Ergebnis ===
+<a id="__codelineno-3-4" name="__codelineno-3-4" href="#__codelineno-3-4"></a>
+<a id="__codelineno-3-5" name="__codelineno-3-5" href="#__codelineno-3-5"></a>Bildbeschreibung:
+<a id="__codelineno-3-6" name="__codelineno-3-6" href="#__codelineno-3-6"></a>  → a cat sitting on a surface  (91% sicher)
+<a id="__codelineno-3-7" name="__codelineno-3-7" href="#__codelineno-3-7"></a>
+<a id="__codelineno-3-8" name="__codelineno-3-8" href="#__codelineno-3-8"></a>Erkannte Tags:
+<a id="__codelineno-3-9" name="__codelineno-3-9" href="#__codelineno-3-9"></a>  cat, mammal, animal, domestic, indoor, sitting, whiskers, looking
+<a id="__codelineno-3-10" name="__codelineno-3-10" href="#__codelineno-3-10"></a>
+<a id="__codelineno-3-11" name="__codelineno-3-11" href="#__codelineno-3-11"></a>Erkannte Objekte:
+<a id="__codelineno-3-12" name="__codelineno-3-12" href="#__codelineno-3-12"></a>  • cat  (90% sicher)
+<a id="__codelineno-3-13" name="__codelineno-3-13" href="#__codelineno-3-13"></a>
+<a id="__codelineno-3-14" name="__codelineno-3-14" href="#__codelineno-3-14"></a>✓ Fertig!
+</code></pre></div>
+<div class="admonition success">
+<p class="admonition-title">Du hast gerade KI programmiert!</p>
+<p>Mit etwa 20 Zeilen Python hast du ein trainiertes KI-Modell aufgerufen, das Bilder in natürlicher Sprache beschreiben kann. Genau so bauen Entwickler bei Microsoft Features wie automatische Bildbeschriftung, Barrierefreiheitsfunktionen oder Suchindizes über Fotos.</p>
+</div>
+<hr />
+<h2 id="eigenes-bild-analysieren">Eigenes Bild analysieren</h2>
+<p>Du kannst jede öffentliche Bild-URL verwenden. Tausche einfach die URL in Zeile <code>body = {...}</code> aus.</p>
+<p><strong>Gute Quellen für Bild-URLs:</strong></p>
+<ul>
+<li><a href="https://commons.wikimedia.org">Wikipedia Commons</a> → Rechtsklick auf ein Bild → "Bild-Adresse kopieren"</li>
+<li>Jede andere Website: Rechtsklick auf ein Bild → "Bild-Adresse kopieren" → URL muss direkt auf <code>.jpg</code> oder <code>.png</code> enden</li>
+</ul>
+<p><strong>Datei bearbeiten:</strong></p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-4-1" name="__codelineno-4-1" href="#__codelineno-4-1"></a>code<span class="w"> </span>analyse.py
+</code></pre></div>
+<p>Ändere die URL, speichere, und führe das Script erneut aus:</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-5-1" name="__codelineno-5-1" href="#__codelineno-5-1"></a>python3<span class="w"> </span>analyse.py
+</code></pre></div>
+<hr />
+<h2 id="challenge">Challenge</h2>
+<div class="admonition question">
+<p class="admonition-title">Challenge: Mehrere Bilder vergleichen</p>
+<p>Analysiere drei verschiedene Bilder (z.B. eine Landschaft, ein Tier, eine Stadtansicht) und vergleiche:</p>
+<ul>
+<li>Wie hoch ist die Konfidenz bei verschiedenen Bilden?</li>
+<li>Was erkennt die KI gut, was schlechter?</li>
+<li>Gibt es ein Bild das die KI falsch beschreibt?</li>
+</ul>
+</div>
+<details class="success">
+<summary>Hinweis</summary>
+<p>Ändere im Script einfach die <code>body</code>-Variable und führe das Script jedes Mal neu aus:</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-6-1" name="__codelineno-6-1" href="#__codelineno-6-1"></a><span class="n">body</span> <span class="o">=</span> <span class="p">{</span>
+<a id="__codelineno-6-2" name="__codelineno-6-2" href="#__codelineno-6-2"></a>    <span class="s2">&quot;url&quot;</span><span class="p">:</span> <span class="s2">&quot;HIER_NEUE_BILD_URL&quot;</span>
+<a id="__codelineno-6-3" name="__codelineno-6-3" href="#__codelineno-6-3"></a><span class="p">}</span>
+</code></pre></div>
+<p>Interessante Testbilder:</p>
+<ul>
+<li>Sehr einfaches Bild (einzelner Gegenstand) → hohe Konfidenz erwartet</li>
+<li>Sehr komplexes Bild (Menschenmenge, viele Objekte) → niedrigere Konfidenz</li>
+<li>Kunstgemälde oder abstrakte Kunst → was erkennt die KI hier?</li>
+</ul>
+</details>
+<hr />
+<p>Weiter zu <a href="../modul-4-monitoring/">Modul 4 – Monitoring &amp; Kosten</a> →</p>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+  <script>var tabs=__md_get("__tabs");if(Array.isArray(tabs))e:for(var set of document.querySelectorAll(".tabbed-set")){var labels=set.querySelector(".tabbed-labels");for(var tab of tabs)for(var label of labels.getElementsByTagName("label"))if(label.innerText.trim()===tab){var input=document.getElementById(label.htmlFor);input.checked=!0;continue e}}</script>
+
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+          <button type="button" class="md-top md-icon" data-md-component="top" hidden>
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8z"/></svg>
+  Zurück zum Seitenanfang
+</button>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+        
+<div class="md-social">
+  
+    
+    
+    
+    
+      
+      
+    
+    <a href="https://github.com/libsman/azuretraining" target="_blank" rel="noopener" title="github.com" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M173.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6m-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3m44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9M252.8 8C114.1 8 8 113.3 8 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C436.2 457.8 504 362.9 504 252 504 113.3 391.5 8 252.8 8M105.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1m-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7m32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1m-11.4-14.7c-1.6 1-1.6 3.6 0 5.9s4.3 3.3 5.6 2.3c1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2"/></svg>
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    
+      
+      
+      <script id="__config" type="application/json">{"annotate": null, "base": "..", "features": ["navigation.tabs", "navigation.sections", "navigation.top", "search.suggest", "search.highlight", "content.code.copy", "content.code.annotate", "content.tabs.link"], "search": "../assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "In Zwischenablage kopiert", "clipboard.copy": "In Zwischenablage kopieren", "search.result.more.one": "1 weiteres Suchergebnis auf dieser Seite", "search.result.more.other": "# weitere Suchergebnisse auf dieser Seite", "search.result.none": "Keine Suchergebnisse", "search.result.one": "1 Suchergebnis", "search.result.other": "# Suchergebnisse", "search.result.placeholder": "Suchbegriff eingeben", "search.result.term.missing": "Es fehlt", "select.version": "Version ausw\u00e4hlen"}, "version": null}</script>
+    
+    
+      <script src="../assets/javascripts/bundle.79ae519e.min.js"></script>
+      
+    
+  </body>
+</html>
