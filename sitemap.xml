@@ -2,26 +2,38 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
     <url>
          <loc>https://libsman.github.io/azuretraining/</loc>
-         <lastmod>2026-06-04</lastmod>
+         <lastmod>2026-06-05</lastmod>
     </url>
     <url>
          <loc>https://libsman.github.io/azuretraining/modul-0-orientierung/</loc>
-         <lastmod>2026-06-04</lastmod>
+         <lastmod>2026-06-05</lastmod>
     </url>
     <url>
          <loc>https://libsman.github.io/azuretraining/modul-1-vm/</loc>
-         <lastmod>2026-06-04</lastmod>
+         <lastmod>2026-06-05</lastmod>
     </url>
     <url>
          <loc>https://libsman.github.io/azuretraining/modul-2-storage/</loc>
-         <lastmod>2026-06-04</lastmod>
+         <lastmod>2026-06-05</lastmod>
     </url>
     <url>
          <loc>https://libsman.github.io/azuretraining/modul-3-ai/</loc>
-         <lastmod>2026-06-04</lastmod>
+         <lastmod>2026-06-05</lastmod>
     </url>
     <url>
          <loc>https://libsman.github.io/azuretraining/modul-4-monitoring/</loc>
-         <lastmod>2026-06-04</lastmod>
+         <lastmod>2026-06-05</lastmod>
+    </url>
+    <url>
+         <loc>https://libsman.github.io/azuretraining/modul-5-appservice/</loc>
+         <lastmod>2026-06-05</lastmod>
+    </url>
+    <url>
+         <loc>https://libsman.github.io/azuretraining/modul-6-functions/</loc>
+         <lastmod>2026-06-05</lastmod>
+    </url>
+    <url>
+         <loc>https://libsman.github.io/azuretraining/modul-7-aufr%C3%A4umen/</loc>
+         <lastmod>2026-06-05</lastmod>
     </url>
 </urlset>

@@ -10,13 +10,13 @@
       
       
       
-        <link rel="canonical" href="https://libsman.github.io/azuretraining/modul-4-monitoring/">
+        <link rel="canonical" href="https://libsman.github.io/azuretraining/modul-5-appservice/">
       
       
-        <link rel="prev" href="../modul-3-ai/">
+        <link rel="prev" href="../modul-4-monitoring/">
       
       
-        <link rel="next" href="../modul-5-appservice/">
+        <link rel="next" href="../modul-6-functions/">
       
       
         
@@ -27,7 +27,7 @@
     
     
       
-        <title>Modul 4 – Monitoring & Kosten - Azure Einstiegstraining</title>
+        <title>Modul 5 – App Service - Azure Einstiegstraining</title>
       
     
     
@@ -78,7 +78,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#modul-4-monitoring-kosten" class="md-skip">
+        <a href="#modul-5-azure-app-service-web-app-ohne-vm" class="md-skip">
           Zum Inhalt
         </a>
       
@@ -112,7 +112,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Modul 4 – Monitoring & Kosten
+              Modul 5 – App Service
             
           </span>
         </div>
@@ -318,11 +318,9 @@
   
   
   
-    
   
-  
-    <li class="md-tabs__item md-tabs__item--active">
-      <a href="./" class="md-tabs__link">
+    <li class="md-tabs__item">
+      <a href="../modul-4-monitoring/" class="md-tabs__link">
         
   
   
@@ -339,9 +337,11 @@
   
   
   
+    
   
-    <li class="md-tabs__item">
-      <a href="../modul-5-appservice/" class="md-tabs__link">
+  
+    <li class="md-tabs__item md-tabs__item--active">
+      <a href="./" class="md-tabs__link">
         
   
   
@@ -576,6 +576,33 @@
       
   
   
+  
+  
+    <li class="md-nav__item">
+      <a href="../modul-4-monitoring/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Modul 4 – Monitoring & Kosten
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
     
   
   
@@ -595,7 +622,7 @@
   <span class="md-ellipsis">
     
   
-    Modul 4 – Monitoring & Kosten
+    Modul 5 – App Service
   
 
     
@@ -613,7 +640,7 @@
   <span class="md-ellipsis">
     
   
-    Modul 4 – Monitoring & Kosten
+    Modul 5 – App Service
   
 
     
@@ -650,10 +677,10 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#hintergrund-warum-monitoring-in-der-cloud-wichtig-ist" class="md-nav__link">
+  <a href="#hintergrund-iaas-vs-paas" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Hintergrund: Warum Monitoring in der Cloud wichtig ist
+        Hintergrund: IaaS vs. PaaS
       
     </span>
   </a>
@@ -661,22 +688,22 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#cost-analysis-was-kostet-mein-training" class="md-nav__link">
+  <a href="#web-app-erstellen" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Cost Analysis: Was kostet mein Training?
+        Web App erstellen
       
     </span>
   </a>
   
-    <nav class="md-nav" aria-label="Cost Analysis: Was kostet mein Training?">
+    <nav class="md-nav" aria-label="Web App erstellen">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#schritt-1-cost-management-offnen" class="md-nav__link">
+  <a href="#schritt-1-zum-dienst-navigieren" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Schritt 1: Cost Management öffnen
+        Schritt 1: Zum Dienst navigieren
       
     </span>
   </a>
@@ -684,10 +711,32 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#schritt-2-kosten-ansehen" class="md-nav__link">
+  <a href="#schritt-2-grundkonfiguration" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Schritt 2: Kosten ansehen
+        Schritt 2: Grundkonfiguration
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#schritt-3-pricing-plan-auswahlen" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Schritt 3: Pricing Plan auswählen
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#schritt-4-review-create" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Schritt 4: Review + Create
       
     </span>
   </a>
@@ -700,22 +749,22 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#budget-alert-einrichten" class="md-nav__link">
+  <a href="#app-code-in-der-cloud-shell-erstellen" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Budget Alert einrichten
+        App-Code in der Cloud Shell erstellen
       
     </span>
   </a>
   
-    <nav class="md-nav" aria-label="Budget Alert einrichten">
+    <nav class="md-nav" aria-label="App-Code in der Cloud Shell erstellen">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#schritt-1-budgets-offnen" class="md-nav__link">
+  <a href="#schritt-1-cloud-shell-offnen" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Schritt 1: Budgets öffnen
+        Schritt 1: Cloud Shell öffnen
       
     </span>
   </a>
@@ -723,10 +772,10 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#schritt-2-budget-konfigurieren" class="md-nav__link">
+  <a href="#schritt-2-projektverzeichnis-und-dateien-anlegen" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Schritt 2: Budget konfigurieren
+        Schritt 2: Projektverzeichnis und Dateien anlegen
       
     </span>
   </a>
@@ -734,10 +783,21 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#schritt-3-alert-bedingung-hinzufugen" class="md-nav__link">
+  <a href="#schritt-3-abhangigkeiten-definieren" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Schritt 3: Alert-Bedingung hinzufügen
+        Schritt 3: Abhängigkeiten definieren
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#schritt-4-zip-archiv-erstellen" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Schritt 4: ZIP-Archiv erstellen
       
     </span>
   </a>
@@ -750,22 +810,22 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#tags-ressourcen-beschriften" class="md-nav__link">
+  <a href="#app-deployen" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Tags: Ressourcen beschriften
+        App deployen
       
     </span>
   </a>
   
-    <nav class="md-nav" aria-label="Tags: Ressourcen beschriften">
+    <nav class="md-nav" aria-label="App deployen">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#schritt-1-resource-group-offnen" class="md-nav__link">
+  <a href="#schritt-1-code-hochladen" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Schritt 1: Resource Group öffnen
+        Schritt 1: Code hochladen
       
     </span>
   </a>
@@ -773,10 +833,21 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#schritt-2-tags-hinzufugen" class="md-nav__link">
+  <a href="#schritt-2-startup-befehl-setzen" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Schritt 2: Tags hinzufügen
+        Schritt 2: Startup-Befehl setzen
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#schritt-3-app-aufrufen" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Schritt 3: App aufrufen
       
     </span>
   </a>
@@ -789,60 +860,32 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#vm-metriken-cpu-und-netzwerk-live-sehen" class="md-nav__link">
+  <a href="#app-anpassen-und-neu-deployen" class="md-nav__link">
     <span class="md-ellipsis">
       
-        VM-Metriken: CPU und Netzwerk live sehen
+        App anpassen und neu deployen
       
     </span>
   </a>
-  
-    <nav class="md-nav" aria-label="VM-Metriken: CPU und Netzwerk live sehen">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#schritt-1-zur-vm-navigieren" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Schritt 1: Zur VM navigieren
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#schritt-2-metriken-hinzufugen" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Schritt 2: Metriken hinzufügen
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#schritt-3-cpu-alert-erstellen" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Schritt 3: CPU-Alert erstellen
-      
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#abschluss-was-du-heute-gebaut-hast" class="md-nav__link">
+  <a href="#logs-ansehen" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Abschluss: Was du heute gebaut hast
+        Logs ansehen
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#challenge" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Challenge
       
     </span>
   </a>
@@ -853,33 +896,6 @@
   
 </nav>
       
-    </li>
-  
-
-    
-      
-      
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../modul-5-appservice/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    
-  
-    Modul 5 – App Service
-  
-
-    
-  </span>
-  
-  
-
-      </a>
     </li>
   
 
@@ -976,10 +992,10 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#hintergrund-warum-monitoring-in-der-cloud-wichtig-ist" class="md-nav__link">
+  <a href="#hintergrund-iaas-vs-paas" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Hintergrund: Warum Monitoring in der Cloud wichtig ist
+        Hintergrund: IaaS vs. PaaS
       
     </span>
   </a>
@@ -987,22 +1003,22 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#cost-analysis-was-kostet-mein-training" class="md-nav__link">
+  <a href="#web-app-erstellen" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Cost Analysis: Was kostet mein Training?
+        Web App erstellen
       
     </span>
   </a>
   
-    <nav class="md-nav" aria-label="Cost Analysis: Was kostet mein Training?">
+    <nav class="md-nav" aria-label="Web App erstellen">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#schritt-1-cost-management-offnen" class="md-nav__link">
+  <a href="#schritt-1-zum-dienst-navigieren" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Schritt 1: Cost Management öffnen
+        Schritt 1: Zum Dienst navigieren
       
     </span>
   </a>
@@ -1010,10 +1026,32 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#schritt-2-kosten-ansehen" class="md-nav__link">
+  <a href="#schritt-2-grundkonfiguration" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Schritt 2: Kosten ansehen
+        Schritt 2: Grundkonfiguration
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#schritt-3-pricing-plan-auswahlen" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Schritt 3: Pricing Plan auswählen
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#schritt-4-review-create" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Schritt 4: Review + Create
       
     </span>
   </a>
@@ -1026,22 +1064,22 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#budget-alert-einrichten" class="md-nav__link">
+  <a href="#app-code-in-der-cloud-shell-erstellen" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Budget Alert einrichten
+        App-Code in der Cloud Shell erstellen
       
     </span>
   </a>
   
-    <nav class="md-nav" aria-label="Budget Alert einrichten">
+    <nav class="md-nav" aria-label="App-Code in der Cloud Shell erstellen">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#schritt-1-budgets-offnen" class="md-nav__link">
+  <a href="#schritt-1-cloud-shell-offnen" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Schritt 1: Budgets öffnen
+        Schritt 1: Cloud Shell öffnen
       
     </span>
   </a>
@@ -1049,10 +1087,10 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#schritt-2-budget-konfigurieren" class="md-nav__link">
+  <a href="#schritt-2-projektverzeichnis-und-dateien-anlegen" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Schritt 2: Budget konfigurieren
+        Schritt 2: Projektverzeichnis und Dateien anlegen
       
     </span>
   </a>
@@ -1060,10 +1098,21 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#schritt-3-alert-bedingung-hinzufugen" class="md-nav__link">
+  <a href="#schritt-3-abhangigkeiten-definieren" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Schritt 3: Alert-Bedingung hinzufügen
+        Schritt 3: Abhängigkeiten definieren
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#schritt-4-zip-archiv-erstellen" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Schritt 4: ZIP-Archiv erstellen
       
     </span>
   </a>
@@ -1076,22 +1125,22 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#tags-ressourcen-beschriften" class="md-nav__link">
+  <a href="#app-deployen" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Tags: Ressourcen beschriften
+        App deployen
       
     </span>
   </a>
   
-    <nav class="md-nav" aria-label="Tags: Ressourcen beschriften">
+    <nav class="md-nav" aria-label="App deployen">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#schritt-1-resource-group-offnen" class="md-nav__link">
+  <a href="#schritt-1-code-hochladen" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Schritt 1: Resource Group öffnen
+        Schritt 1: Code hochladen
       
     </span>
   </a>
@@ -1099,10 +1148,21 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#schritt-2-tags-hinzufugen" class="md-nav__link">
+  <a href="#schritt-2-startup-befehl-setzen" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Schritt 2: Tags hinzufügen
+        Schritt 2: Startup-Befehl setzen
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#schritt-3-app-aufrufen" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Schritt 3: App aufrufen
       
     </span>
   </a>
@@ -1115,60 +1175,32 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#vm-metriken-cpu-und-netzwerk-live-sehen" class="md-nav__link">
+  <a href="#app-anpassen-und-neu-deployen" class="md-nav__link">
     <span class="md-ellipsis">
       
-        VM-Metriken: CPU und Netzwerk live sehen
+        App anpassen und neu deployen
       
     </span>
   </a>
-  
-    <nav class="md-nav" aria-label="VM-Metriken: CPU und Netzwerk live sehen">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#schritt-1-zur-vm-navigieren" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Schritt 1: Zur VM navigieren
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#schritt-2-metriken-hinzufugen" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Schritt 2: Metriken hinzufügen
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#schritt-3-cpu-alert-erstellen" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Schritt 3: CPU-Alert erstellen
-      
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#abschluss-was-du-heute-gebaut-hast" class="md-nav__link">
+  <a href="#logs-ansehen" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Abschluss: Was du heute gebaut hast
+        Logs ansehen
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#challenge" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Challenge
       
     </span>
   </a>
@@ -1195,53 +1227,69 @@
   
 
 
-<h1 id="modul-4-monitoring-kosten">Modul 4 – Monitoring &amp; Kosten</h1>
+<h1 id="modul-5-azure-app-service-web-app-ohne-vm">Modul 5 – Azure App Service: Web App ohne VM</h1>
 <h2 id="lernziele">Lernziele</h2>
 <p>Nach diesem Modul kannst du:</p>
 <ul>
-<li>Deine aktuellen Azure-Kosten in der Cost Analysis einsehen</li>
-<li>Einen Budget-Alert einrichten, der dich per E-Mail warnt</li>
-<li>Ressourcen mit Tags beschriften</li>
-<li>VM-Metriken (CPU, Netzwerk) in einem Diagramm ansehen</li>
+<li>Den Unterschied zwischen IaaS (VM) und PaaS (App Service) erklären</li>
+<li>Eine Web App auf Azure App Service erstellen</li>
+<li>Eine einfache Python-Webanwendung über die Cloud Shell deployen</li>
 </ul>
 <hr />
-<h2 id="hintergrund-warum-monitoring-in-der-cloud-wichtig-ist">Hintergrund: Warum Monitoring in der Cloud wichtig ist</h2>
-<p>On-Prem läuft ein Server so lange bis er kaputt geht – egal ob du ihn benutzt oder nicht, die Kosten (Strom, Miete, Abschreibung) fallen immer an.</p>
-<p>In der Cloud ist das anders: <strong>Du zahlst nur für das, was gerade läuft.</strong> Das ist ein Vorteil – aber auch eine Gefahr. Wenn du vergisst, eine VM auszuschalten oder ein teuren Dienst versehentlich startest, läuft die Uhr weiter.</p>
-<p>Gutes Cloud-Monitoring bedeutet:</p>
-<ul>
-<li><strong>Transparenz</strong>: Ich weiß, was gerade läuft und was es kostet</li>
-<li><strong>Frühwarnung</strong>: Ich bekomme eine Benachrichtigung bevor die Kosten aus dem Ruder laufen</li>
-<li><strong>Ordnung</strong>: Ich kann Ressourcen bestimmten Projekten oder Teams zuordnen</li>
-</ul>
+<h2 id="hintergrund-iaas-vs-paas">Hintergrund: IaaS vs. PaaS</h2>
+<p>In Modul 1 hast du eine VM erstellt und darauf manuell nginx installiert. Das ist <strong>IaaS (Infrastructure as a Service)</strong>: du bekommst eine leere Maschine und musst alles selbst einrichten – Betriebssystem-Updates, Webserver, Sicherheitspatches, und so weiter.</p>
+<p><strong>PaaS (Platform as a Service)</strong> geht einen Schritt weiter: du übergibst Azure nur deinen Code, und Azure kümmert sich um alles andere.</p>
+<table>
+<thead>
+<tr>
+<th></th>
+<th>IaaS – VM (Modul 1)</th>
+<th>PaaS – App Service</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Betriebssystem pflegen</td>
+<td>Du</td>
+<td>Microsoft</td>
+</tr>
+<tr>
+<td>Webserver installieren</td>
+<td>Du (nginx)</td>
+<td>Automatisch</td>
+</tr>
+<tr>
+<td>HTTPS-Zertifikat</td>
+<td>Du konfigurierst es</td>
+<td>Automatisch</td>
+</tr>
+<tr>
+<td>Skalierung</td>
+<td>Neue VM manuell erstellen</td>
+<td>Ein Klick</td>
+</tr>
+<tr>
+<td>Sicherheitspatches</td>
+<td>Deine Verantwortung</td>
+<td>Microsofts Verantwortung</td>
+</tr>
+<tr>
+<td>Kosten</td>
+<td>VM läuft 24/7</td>
+<td>Skaliert mit Nutzung</td>
+</tr>
+</tbody>
+</table>
+<p>In der Praxis nutzen Unternehmen App Service für Web-Anwendungen und APIs, wenn sie sich nicht um Serveradministration kümmern wollen.</p>
 <hr />
-<h2 id="cost-analysis-was-kostet-mein-training">Cost Analysis: Was kostet mein Training?</h2>
-<h3 id="schritt-1-cost-management-offnen">Schritt 1: Cost Management öffnen</h3>
+<h2 id="web-app-erstellen">Web App erstellen</h2>
+<h3 id="schritt-1-zum-dienst-navigieren">Schritt 1: Zum Dienst navigieren</h3>
 <ol>
-<li>Tippe in der Suchleiste <strong><code>Cost Management</code></strong> und klicke auf den Dienst</li>
-<li>Klicke links im Menü auf <strong>Cost analysis</strong></li>
+<li>Öffne das Azure Portal: <a href="https://portal.azure.com">portal.azure.com</a></li>
+<li>Tippe in der Suchleiste <strong><code>App Service</code></strong> und klicke auf den Dienst</li>
+<li>Klicke auf <strong>+ Create</strong> → <strong>Web App</strong></li>
 </ol>
-<h3 id="schritt-2-kosten-ansehen">Schritt 2: Kosten ansehen</h3>
-<p>Du siehst ein Diagramm mit den Kosten der aktuellen Periode.</p>
-<ol>
-<li>Stelle oben rechts den Zeitraum auf <strong>This month</strong></li>
-<li>Klicke auf <strong>Group by</strong> → wähle <strong>Service name</strong></li>
-</ol>
-<p>Jetzt siehst du aufgeschlüsselt, welcher Azure-Dienst wie viel kostet.</p>
-<div class="admonition info">
-<p class="admonition-title">Heute noch fast 0 €</p>
-<p>Da du heute alles frisch erstellt hast, sind die Kosten bisher minimal. Erst nach 24h werden die Ressourcen sichtbar im Cost Dashboard. Ein Standard_B1s VM kostet ca. <strong>0,009 €/Stunde</strong> – das sind weniger als 10 Cent pro Tag.</p>
-</div>
-<hr />
-<h2 id="budget-alert-einrichten">Budget Alert einrichten</h2>
-<p>Ein Budget Alert schickt dir automatisch eine E-Mail, wenn deine Ausgaben einen Schwellenwert erreichen. Das ist dein Sicherheitsnetz.</p>
-<h3 id="schritt-1-budgets-offnen">Schritt 1: Budgets öffnen</h3>
-<ol>
-<li>Bleibe im <strong>Cost Management</strong> Bereich</li>
-<li>Klicke links auf <strong>Budgets</strong></li>
-<li>Klicke oben auf <strong>+ Add</strong></li>
-</ol>
-<h3 id="schritt-2-budget-konfigurieren">Schritt 2: Budget konfigurieren</h3>
+<h3 id="schritt-2-grundkonfiguration">Schritt 2: Grundkonfiguration</h3>
 <table>
 <thead>
 <tr>
@@ -1251,253 +1299,189 @@
 </thead>
 <tbody>
 <tr>
-<td>Name</td>
-<td><code>budget-praktikum</code></td>
-</tr>
-<tr>
-<td>Reset period</td>
-<td><code>Monthly</code></td>
-</tr>
-<tr>
-<td>Creation date</td>
-<td>(heute, bereits eingetragen)</td>
-</tr>
-<tr>
-<td>Expiration date</td>
-<td>(Ende nächsten Monats)</td>
-</tr>
-<tr>
-<td>Amount</td>
-<td><code>20</code></td>
-</tr>
-</tbody>
-</table>
-<p>Klicke auf <strong>Next: Alerts &gt;</strong></p>
-<h3 id="schritt-3-alert-bedingung-hinzufugen">Schritt 3: Alert-Bedingung hinzufügen</h3>
-<ol>
-<li>Klicke auf <strong>+ Add alert condition</strong></li>
-<li>Konfiguriere:</li>
-</ol>
-<table>
-<thead>
-<tr>
-<th>Feld</th>
-<th>Wert</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>Alert condition</td>
-<td><code>Actual</code></td>
-</tr>
-<tr>
-<td>% of budget</td>
-<td><code>80</code></td>
-</tr>
-<tr>
-<td>Alert recipients (email)</td>
-<td>deine E-Mail-Adresse</td>
-</tr>
-</tbody>
-</table>
-<ol>
-<li>Klicke auf <strong>Create</strong></li>
-</ol>
-<div class="admonition success">
-<p class="admonition-title">Sicherheitsnetz aktiv</p>
-<p>Du bekommst ab jetzt eine E-Mail sobald 80% von 20 € (= 16 €) verbraucht sind. So kannst du keine Überraschungen erleben.</p>
-</div>
-<hr />
-<h2 id="tags-ressourcen-beschriften">Tags: Ressourcen beschriften</h2>
-<p>Tags sind Schlüssel-Wert-Paare, die du an Azure-Ressourcen anhängen kannst. Sie helfen dir:</p>
-<ul>
-<li>Ressourcen nach Projekt oder Team zu gruppieren</li>
-<li>Kosten nach Tags aufzuschlüsseln (z.B. "Was hat Projekt X insgesamt gekostet?")</li>
-<li>Ordnung zu halten wenn man viele Ressourcen hat</li>
-</ul>
-<p>In echten Unternehmen sind Tags Pflicht – die IT-Abteilung kann so sehen, welches Team welche Kosten verursacht.</p>
-<h3 id="schritt-1-resource-group-offnen">Schritt 1: Resource Group öffnen</h3>
-<ol>
-<li>Suche im Portal nach <code>rg-praktikum</code> und klicke auf die Resource Group</li>
-<li>Klicke links im Menü auf <strong>Tags</strong></li>
-</ol>
-<h3 id="schritt-2-tags-hinzufugen">Schritt 2: Tags hinzufügen</h3>
-<p>Klicke jeweils in die Felder Name und Wert und füge folgende Tags hinzu:</p>
-<table>
-<thead>
-<tr>
-<th>Name</th>
-<th>Wert</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td><code>owner</code></td>
-<td>dein Name</td>
-</tr>
-<tr>
-<td><code>projekt</code></td>
-<td><code>azure-training</code></td>
-</tr>
-<tr>
-<td><code>umgebung</code></td>
-<td><code>dev</code></td>
-</tr>
-</tbody>
-</table>
-<p>Klicke auf <strong>Apply</strong>.</p>
-<div class="admonition tip">
-<p class="admonition-title">Tags auf Resource Group = Tags auf allen Ressourcen</p>
-<p>Wenn du Tags auf einer Resource Group setzt, werden sie in Cost Analysis auf alle enthaltenen Ressourcen angewendet. Du musst nicht jede VM, jeden Storage Account etc. einzeln taggen.</p>
-</div>
-<hr />
-<h2 id="vm-metriken-cpu-und-netzwerk-live-sehen">VM-Metriken: CPU und Netzwerk live sehen</h2>
-<p>Azure sammelt automatisch Metriken für alle laufenden Ressourcen: CPU-Auslastung, Speicher, Netzwerkdurchsatz, Festplatten-I/O und mehr.</p>
-<h3 id="schritt-1-zur-vm-navigieren">Schritt 1: Zur VM navigieren</h3>
-<ol>
-<li>Suche im Portal nach <code>vm-training</code> und klicke auf deine VM</li>
-<li>Links im Menü: <strong>Monitoring</strong> → <strong>Metrics</strong></li>
-</ol>
-<h3 id="schritt-2-metriken-hinzufugen">Schritt 2: Metriken hinzufügen</h3>
-<ol>
-<li>Im Diagramm-Editor:<ul>
-<li><strong>Scope</strong>: <code>vm-training</code> (bereits ausgewählt)</li>
-<li><strong>Metric Namespace</strong>: <code>Virtual Machine Host</code></li>
-<li><strong>Metric</strong>: wähle <code>Percentage CPU</code></li>
-</ul>
-</li>
-<li>Du siehst ein Diagramm der CPU-Auslastung der letzten Zeit</li>
-</ol>
-<p>Füge weitere Metriken hinzu:</p>
-<ol>
-<li>Klicke auf <strong>+ Add metric</strong></li>
-<li>Wähle <code>Network In Total</code> → Add</li>
-<li>Klicke nochmal auf <strong>+ Add metric</strong></li>
-<li>Wähle <code>Network Out Total</code> → Add</li>
-</ol>
-<p>Jetzt siehst du drei Kurven im selben Diagramm.</p>
-<h3 id="schritt-3-cpu-alert-erstellen">Schritt 3: CPU-Alert erstellen</h3>
-<p>Jetzt richten wir einen automatischen Alert ein, der sich meldet wenn die VM unter Last kommt.</p>
-<ol>
-<li>Klicke oben im Metrics-Bereich auf <strong>+ New alert rule</strong></li>
-<li>Das Formular öffnet sich, die Ressource <code>vm-training</code> ist bereits eingetragen</li>
-<li>Klicke auf <strong>+ Add condition</strong></li>
-<li>Wähle <strong>Percentage CPU</strong> aus der Liste</li>
-<li>Scrolle im Konfigurations-Bereich nach unten und stelle ein:</li>
-</ol>
-<table>
-<thead>
-<tr>
-<th>Feld</th>
-<th>Wert</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>Threshold type</td>
-<td><code>Static</code></td>
-</tr>
-<tr>
-<td>Aggregation type</td>
-<td><code>Average</code></td>
-</tr>
-<tr>
-<td>Operator</td>
-<td><code>Greater than</code></td>
-</tr>
-<tr>
-<td>Threshold value</td>
-<td><code>80</code></td>
-</tr>
-</tbody>
-</table>
-<ol>
-<li>Klicke auf <strong>Done</strong></li>
-</ol>
-<p><strong>Action Group erstellen</strong> (wer bekommt die E-Mail?):</p>
-<ol>
-<li>Scrolle nach unten zum Abschnitt <strong>Actions</strong></li>
-<li>Klicke auf <strong>+ Create action group</strong></li>
-<li>Fülle aus:</li>
-</ol>
-<table>
-<thead>
-<tr>
-<th>Feld</th>
-<th>Wert</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>Action group name</td>
-<td><code>ag-praktikum</code></td>
-</tr>
-<tr>
-<td>Display name</td>
-<td><code>praktikum</code></td>
+<td>Subscription</td>
+<td>deine Subscription</td>
 </tr>
 <tr>
 <td>Resource group</td>
 <td><code>rg-praktikum</code></td>
 </tr>
+<tr>
+<td>Name</td>
+<td><code>webapp-praktikum-XXXX</code> (XXXX durch 4 zufällige Zahlen ersetzen)</td>
+</tr>
+<tr>
+<td>Publish</td>
+<td><code>Code</code></td>
+</tr>
+<tr>
+<td>Runtime stack</td>
+<td><code>Python 3.12</code></td>
+</tr>
+<tr>
+<td>Operating System</td>
+<td><code>Linux</code></td>
+</tr>
+<tr>
+<td>Region</td>
+<td><code>West Europe</code></td>
+</tr>
 </tbody>
 </table>
+<div class="admonition tip">
+<p class="admonition-title">Eindeutiger Name erforderlich</p>
+<p>App Service Namen müssen weltweit eindeutig sein, weil deine App unter <code>dein-name.azurewebsites.net</code> erreichbar ist. Füge z.B. deine Initialen und das Datum ein: <code>webapp-praktikum-ms0605</code></p>
+</div>
+<h3 id="schritt-3-pricing-plan-auswahlen">Schritt 3: Pricing Plan auswählen</h3>
+<p>Im Abschnitt <strong>Pricing plans</strong>:</p>
 <ol>
-<li>Klicke auf den Tab <strong>Notifications</strong></li>
-<li>Wähle bei <strong>Notification type</strong>: <code>Email/SMS message/Push/Voice</code></li>
-<li>Trage deine E-Mail-Adresse ein und klicke <strong>OK</strong></li>
-<li>Gib einen Namen ein, z.B. <code>email-benachrichtigung</code></li>
-<li>Klicke durch bis <strong>Review + create</strong> → <strong>Create</strong></li>
+<li>Klicke auf <strong>Explore pricing plans</strong></li>
+<li>Wähle den Tab <strong>Dev / Test</strong></li>
+<li>Wähle <strong>F1 (Free)</strong> – 60 Minuten CPU/Tag, kostenlos</li>
 </ol>
-<p><strong>Alert Rule abschließen:</strong></p>
+<div class="admonition info">
+<p class="admonition-title">Free Tier F1</p>
+<p>Der Free Tier reicht für unser Training völlig aus. Die App schläft nach kurzer Inaktivität ein (~10 Sekunden Aufwachen beim ersten Aufruf) – das ist im kostenpflichtigen Tier nicht der Fall.</p>
+</div>
+<h3 id="schritt-4-review-create">Schritt 4: Review + Create</h3>
 <ol>
-<li>Zurück im Alert Rule Formular: trage unter <strong>Alert rule name</strong> ein: <code>alert-hohe-cpu</code></li>
+<li>Klicke auf <strong>Review + create</strong></li>
 <li>Klicke auf <strong>Create</strong></li>
+<li>Warte ~1–2 Minuten</li>
+<li>Klicke auf <strong>Go to resource</strong></li>
+</ol>
+<hr />
+<h2 id="app-code-in-der-cloud-shell-erstellen">App-Code in der Cloud Shell erstellen</h2>
+<h3 id="schritt-1-cloud-shell-offnen">Schritt 1: Cloud Shell öffnen</h3>
+<p>Klicke im Azure Portal auf das Terminal-Symbol <code>&gt;_</code> in der oberen Menüleiste. Wähle <strong>Bash</strong> falls gefragt.</p>
+<h3 id="schritt-2-projektverzeichnis-und-dateien-anlegen">Schritt 2: Projektverzeichnis und Dateien anlegen</h3>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a>mkdir<span class="w"> </span>~/webapp<span class="w"> </span><span class="o">&amp;&amp;</span><span class="w"> </span><span class="nb">cd</span><span class="w"> </span>~/webapp
+</code></pre></div>
+<p>Öffne den Editor für die Hauptdatei:</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a>code<span class="w"> </span>app.py
+</code></pre></div>
+<p>Füge folgenden Code ein:</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a><span class="kn">from</span><span class="w"> </span><span class="nn">flask</span><span class="w"> </span><span class="kn">import</span> <span class="n">Flask</span>
+<a id="__codelineno-2-2" name="__codelineno-2-2" href="#__codelineno-2-2"></a>
+<a id="__codelineno-2-3" name="__codelineno-2-3" href="#__codelineno-2-3"></a><span class="n">app</span> <span class="o">=</span> <span class="n">Flask</span><span class="p">(</span><span class="vm">__name__</span><span class="p">)</span>
+<a id="__codelineno-2-4" name="__codelineno-2-4" href="#__codelineno-2-4"></a>
+<a id="__codelineno-2-5" name="__codelineno-2-5" href="#__codelineno-2-5"></a><span class="nd">@app</span><span class="o">.</span><span class="n">route</span><span class="p">(</span><span class="s2">&quot;/&quot;</span><span class="p">)</span>
+<a id="__codelineno-2-6" name="__codelineno-2-6" href="#__codelineno-2-6"></a><span class="k">def</span><span class="w"> </span><span class="nf">home</span><span class="p">():</span>
+<a id="__codelineno-2-7" name="__codelineno-2-7" href="#__codelineno-2-7"></a>    <span class="k">return</span> <span class="s2">&quot;&quot;&quot;</span>
+<a id="__codelineno-2-8" name="__codelineno-2-8" href="#__codelineno-2-8"></a><span class="s2">    &lt;html&gt;</span>
+<a id="__codelineno-2-9" name="__codelineno-2-9" href="#__codelineno-2-9"></a><span class="s2">    &lt;head&gt;</span>
+<a id="__codelineno-2-10" name="__codelineno-2-10" href="#__codelineno-2-10"></a><span class="s2">        &lt;title&gt;Meine Azure Web App&lt;/title&gt;</span>
+<a id="__codelineno-2-11" name="__codelineno-2-11" href="#__codelineno-2-11"></a><span class="s2">        &lt;style&gt;</span>
+<a id="__codelineno-2-12" name="__codelineno-2-12" href="#__codelineno-2-12"></a><span class="s2">            body { font-family: Arial, sans-serif; max-width: 640px;</span>
+<a id="__codelineno-2-13" name="__codelineno-2-13" href="#__codelineno-2-13"></a><span class="s2">                   margin: 80px auto; padding: 20px; }</span>
+<a id="__codelineno-2-14" name="__codelineno-2-14" href="#__codelineno-2-14"></a><span class="s2">            h1   { color: #0078d4; }</span>
+<a id="__codelineno-2-15" name="__codelineno-2-15" href="#__codelineno-2-15"></a><span class="s2">            .box { background: #f0f8ff; border-left: 4px solid #0078d4;</span>
+<a id="__codelineno-2-16" name="__codelineno-2-16" href="#__codelineno-2-16"></a><span class="s2">                   padding: 16px; border-radius: 4px; margin: 20px 0; }</span>
+<a id="__codelineno-2-17" name="__codelineno-2-17" href="#__codelineno-2-17"></a><span class="s2">        &lt;/style&gt;</span>
+<a id="__codelineno-2-18" name="__codelineno-2-18" href="#__codelineno-2-18"></a><span class="s2">    &lt;/head&gt;</span>
+<a id="__codelineno-2-19" name="__codelineno-2-19" href="#__codelineno-2-19"></a><span class="s2">    &lt;body&gt;</span>
+<a id="__codelineno-2-20" name="__codelineno-2-20" href="#__codelineno-2-20"></a><span class="s2">        &lt;h1&gt;Hallo Azure! 👋&lt;/h1&gt;</span>
+<a id="__codelineno-2-21" name="__codelineno-2-21" href="#__codelineno-2-21"></a><span class="s2">        &lt;p&gt;Diese Seite läuft auf &lt;strong&gt;Azure App Service&lt;/strong&gt;.&lt;/p&gt;</span>
+<a id="__codelineno-2-22" name="__codelineno-2-22" href="#__codelineno-2-22"></a><span class="s2">        &lt;div class=&quot;box&quot;&gt;</span>
+<a id="__codelineno-2-23" name="__codelineno-2-23" href="#__codelineno-2-23"></a><span class="s2">            &lt;p&gt;Kein Webserver installiert. Kein Betriebssystem konfiguriert.&lt;br&gt;</span>
+<a id="__codelineno-2-24" name="__codelineno-2-24" href="#__codelineno-2-24"></a><span class="s2">            Nur Code – Azure kümmert sich um den Rest.&lt;/p&gt;</span>
+<a id="__codelineno-2-25" name="__codelineno-2-25" href="#__codelineno-2-25"></a><span class="s2">        &lt;/div&gt;</span>
+<a id="__codelineno-2-26" name="__codelineno-2-26" href="#__codelineno-2-26"></a><span class="s2">        &lt;p&gt;Hosting-Modell: &lt;strong&gt;PaaS (Platform as a Service)&lt;/strong&gt;&lt;/p&gt;</span>
+<a id="__codelineno-2-27" name="__codelineno-2-27" href="#__codelineno-2-27"></a><span class="s2">    &lt;/body&gt;</span>
+<a id="__codelineno-2-28" name="__codelineno-2-28" href="#__codelineno-2-28"></a><span class="s2">    &lt;/html&gt;</span>
+<a id="__codelineno-2-29" name="__codelineno-2-29" href="#__codelineno-2-29"></a><span class="s2">    &quot;&quot;&quot;</span>
+<a id="__codelineno-2-30" name="__codelineno-2-30" href="#__codelineno-2-30"></a>
+<a id="__codelineno-2-31" name="__codelineno-2-31" href="#__codelineno-2-31"></a><span class="nd">@app</span><span class="o">.</span><span class="n">route</span><span class="p">(</span><span class="s2">&quot;/status&quot;</span><span class="p">)</span>
+<a id="__codelineno-2-32" name="__codelineno-2-32" href="#__codelineno-2-32"></a><span class="k">def</span><span class="w"> </span><span class="nf">status</span><span class="p">():</span>
+<a id="__codelineno-2-33" name="__codelineno-2-33" href="#__codelineno-2-33"></a>    <span class="k">return</span> <span class="p">{</span><span class="s2">&quot;status&quot;</span><span class="p">:</span> <span class="s2">&quot;ok&quot;</span><span class="p">,</span> <span class="s2">&quot;dienst&quot;</span><span class="p">:</span> <span class="s2">&quot;Azure App Service&quot;</span><span class="p">,</span> <span class="s2">&quot;modell&quot;</span><span class="p">:</span> <span class="s2">&quot;PaaS&quot;</span><span class="p">}</span>
+</code></pre></div>
+<p>Klicke im Editor oben auf <strong>Save</strong>, dann schließe den Editor.</p>
+<h3 id="schritt-3-abhangigkeiten-definieren">Schritt 3: Abhängigkeiten definieren</h3>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a><span class="nb">echo</span><span class="w"> </span><span class="s2">&quot;flask&quot;</span><span class="w"> </span>&gt;<span class="w"> </span>requirements.txt
+<a id="__codelineno-3-2" name="__codelineno-3-2" href="#__codelineno-3-2"></a><span class="nb">echo</span><span class="w"> </span><span class="s2">&quot;gunicorn&quot;</span><span class="w"> </span>&gt;&gt;<span class="w"> </span>requirements.txt
+</code></pre></div>
+<h3 id="schritt-4-zip-archiv-erstellen">Schritt 4: ZIP-Archiv erstellen</h3>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-4-1" name="__codelineno-4-1" href="#__codelineno-4-1"></a>zip<span class="w"> </span>app.zip<span class="w"> </span>app.py<span class="w"> </span>requirements.txt
+</code></pre></div>
+<hr />
+<h2 id="app-deployen">App deployen</h2>
+<h3 id="schritt-1-code-hochladen">Schritt 1: Code hochladen</h3>
+<p>Ersetze <code>webapp-praktikum-XXXX</code> mit deinem App-Namen aus Schritt 2 oben:</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-5-1" name="__codelineno-5-1" href="#__codelineno-5-1"></a>az<span class="w"> </span>webapp<span class="w"> </span>deploy<span class="w"> </span><span class="se">\</span>
+<a id="__codelineno-5-2" name="__codelineno-5-2" href="#__codelineno-5-2"></a><span class="w">  </span>--resource-group<span class="w"> </span>rg-praktikum<span class="w"> </span><span class="se">\</span>
+<a id="__codelineno-5-3" name="__codelineno-5-3" href="#__codelineno-5-3"></a><span class="w">  </span>--name<span class="w"> </span>webapp-praktikum-XXXX<span class="w"> </span><span class="se">\</span>
+<a id="__codelineno-5-4" name="__codelineno-5-4" href="#__codelineno-5-4"></a><span class="w">  </span>--src-path<span class="w"> </span>app.zip<span class="w"> </span><span class="se">\</span>
+<a id="__codelineno-5-5" name="__codelineno-5-5" href="#__codelineno-5-5"></a><span class="w">  </span>--type<span class="w"> </span>zip
+</code></pre></div>
+<div class="admonition tip">
+<p class="admonition-title">Deployment dauert ~1–2 Minuten</p>
+<p>Azure lädt den Code hoch, führt <code>pip install -r requirements.txt</code> aus und startet den Webserver. Du siehst den Fortschritt im Terminal.</p>
+</div>
+<h3 id="schritt-2-startup-befehl-setzen">Schritt 2: Startup-Befehl setzen</h3>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-6-1" name="__codelineno-6-1" href="#__codelineno-6-1"></a>az<span class="w"> </span>webapp<span class="w"> </span>config<span class="w"> </span><span class="nb">set</span><span class="w"> </span><span class="se">\</span>
+<a id="__codelineno-6-2" name="__codelineno-6-2" href="#__codelineno-6-2"></a><span class="w">  </span>--resource-group<span class="w"> </span>rg-praktikum<span class="w"> </span><span class="se">\</span>
+<a id="__codelineno-6-3" name="__codelineno-6-3" href="#__codelineno-6-3"></a><span class="w">  </span>--name<span class="w"> </span>webapp-praktikum-XXXX<span class="w"> </span><span class="se">\</span>
+<a id="__codelineno-6-4" name="__codelineno-6-4" href="#__codelineno-6-4"></a><span class="w">  </span>--startup-file<span class="w"> </span><span class="s2">&quot;gunicorn --bind=0.0.0.0 --timeout 600 app:app&quot;</span>
+</code></pre></div>
+<h3 id="schritt-3-app-aufrufen">Schritt 3: App aufrufen</h3>
+<ol>
+<li>Gehe im Portal auf deine Web App (<code>webapp-praktikum-XXXX</code>)</li>
+<li>Oben siehst du die <strong>Default domain</strong> – z.B. <code>https://webapp-praktikum-xxxx.azurewebsites.net</code></li>
+<li>Klicke darauf – deine App öffnet sich im Browser</li>
 </ol>
 <div class="admonition success">
-<p class="admonition-title">Alles überwacht!</p>
-<p>Du bekommst jetzt eine E-Mail wenn die CPU deiner VM über 80% steigt. In echten Produktionsumgebungen würde man auf solche Alerts z.B. automatisch weitere VMs starten (Auto-Scaling).</p>
+<p class="admonition-title">Web App live!</p>
+<p>Du hast eine Python-Webanwendung in der Cloud deployed – ohne einen einzigen Server zu konfigurieren. App Service hat Python installiert, den Webserver gestartet, HTTPS eingerichtet und die App öffentlich erreichbar gemacht.</p>
 </div>
 <hr />
-<h2 id="abschluss-was-du-heute-gebaut-hast">Abschluss: Was du heute gebaut hast</h2>
-<p>Herzlichen Glückwunsch! Du hast heute in Azure Folgendes erstellt und in Betrieb genommen:</p>
-<table>
-<thead>
-<tr>
-<th>Ressource</th>
-<th>Was es macht</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td><strong>Resource Group</strong> <code>rg-praktikum</code></td>
-<td>Ordner für alle heutigen Ressourcen</td>
-</tr>
-<tr>
-<td><strong>VM</strong> <code>vm-training</code></td>
-<td>Ubuntu Linux-Server mit nginx, im Internet erreichbar</td>
-</tr>
-<tr>
-<td><strong>Storage Account</strong> + Static Website</td>
-<td>HTML-Seite ohne Server im Internet</td>
-</tr>
-<tr>
-<td><strong>Computer Vision</strong> <code>cv-praktikum</code></td>
-<td>KI-Dienst der Bilder analysiert</td>
-</tr>
-<tr>
-<td><strong>Budget Alert</strong></td>
-<td>Warnt per E-Mail bei hohen Kosten</td>
-</tr>
-<tr>
-<td><strong>CPU Alert</strong></td>
-<td>Warnt bei hoher VM-Auslastung</td>
-</tr>
-</tbody>
-</table>
-<p>Das entspricht dem, wofür ein Unternehmen früher eigene Server, Netzwerktechnik, Hardware-Investitionen und viel Vorlaufzeit gebraucht hätte. Du hast das alles an einem Tag, über einen Browser, in Microsofts Cloud aufgebaut.</p>
+<h2 id="app-anpassen-und-neu-deployen">App anpassen und neu deployen</h2>
+<p>Öffne die Datei in der Cloud Shell:</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-7-1" name="__codelineno-7-1" href="#__codelineno-7-1"></a><span class="nb">cd</span><span class="w"> </span>~/webapp
+<a id="__codelineno-7-2" name="__codelineno-7-2" href="#__codelineno-7-2"></a>code<span class="w"> </span>app.py
+</code></pre></div>
+<p>Ändere den Text in der <code>home()</code>-Funktion. Speichere, dann neu deployen:</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-8-1" name="__codelineno-8-1" href="#__codelineno-8-1"></a>zip<span class="w"> </span>app.zip<span class="w"> </span>app.py<span class="w"> </span>requirements.txt
+<a id="__codelineno-8-2" name="__codelineno-8-2" href="#__codelineno-8-2"></a>az<span class="w"> </span>webapp<span class="w"> </span>deploy<span class="w"> </span><span class="se">\</span>
+<a id="__codelineno-8-3" name="__codelineno-8-3" href="#__codelineno-8-3"></a><span class="w">  </span>--resource-group<span class="w"> </span>rg-praktikum<span class="w"> </span><span class="se">\</span>
+<a id="__codelineno-8-4" name="__codelineno-8-4" href="#__codelineno-8-4"></a><span class="w">  </span>--name<span class="w"> </span>webapp-praktikum-XXXX<span class="w"> </span><span class="se">\</span>
+<a id="__codelineno-8-5" name="__codelineno-8-5" href="#__codelineno-8-5"></a><span class="w">  </span>--src-path<span class="w"> </span>app.zip<span class="w"> </span><span class="se">\</span>
+<a id="__codelineno-8-6" name="__codelineno-8-6" href="#__codelineno-8-6"></a><span class="w">  </span>--type<span class="w"> </span>zip
+</code></pre></div>
+<p>Lade die Seite im Browser neu und sieh die Änderung.</p>
 <hr />
-<p>Weiter zu <a href="../modul-5-appservice/">Modul 5 – Azure App Service</a> →</p>
+<h2 id="logs-ansehen">Logs ansehen</h2>
+<p>Falls etwas nicht funktioniert:</p>
+<ol>
+<li>Gehe zu deiner Web App im Portal</li>
+<li>Links: <strong>Deployment</strong> → <strong>Deployment Center</strong> → Tab <strong>Logs</strong></li>
+<li>Oder: <strong>Monitoring</strong> → <strong>Log stream</strong> für Live-Ausgabe der App</li>
+</ol>
+<hr />
+<h2 id="challenge">Challenge</h2>
+<div class="admonition question">
+<p class="admonition-title">Challenge: API-Endpunkte hinzufügen</p>
+<p>Deine App hat schon einen <code>/status</code>-Endpunkt. Füge einen weiteren Endpunkt <code>/info</code> hinzu, der als JSON zurückgibt:
+- deinen Namen
+- das heutige Datum
+- eine Liste der Azure-Services, die du heute genutzt hast</p>
+</div>
+<details class="success">
+<summary>Hinweis</summary>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-9-1" name="__codelineno-9-1" href="#__codelineno-9-1"></a><span class="kn">from</span><span class="w"> </span><span class="nn">datetime</span><span class="w"> </span><span class="kn">import</span> <span class="n">date</span>
+<a id="__codelineno-9-2" name="__codelineno-9-2" href="#__codelineno-9-2"></a>
+<a id="__codelineno-9-3" name="__codelineno-9-3" href="#__codelineno-9-3"></a><span class="nd">@app</span><span class="o">.</span><span class="n">route</span><span class="p">(</span><span class="s2">&quot;/info&quot;</span><span class="p">)</span>
+<a id="__codelineno-9-4" name="__codelineno-9-4" href="#__codelineno-9-4"></a><span class="k">def</span><span class="w"> </span><span class="nf">info</span><span class="p">():</span>
+<a id="__codelineno-9-5" name="__codelineno-9-5" href="#__codelineno-9-5"></a>    <span class="k">return</span> <span class="p">{</span>
+<a id="__codelineno-9-6" name="__codelineno-9-6" href="#__codelineno-9-6"></a>        <span class="s2">&quot;name&quot;</span><span class="p">:</span> <span class="s2">&quot;Dein Name&quot;</span><span class="p">,</span>
+<a id="__codelineno-9-7" name="__codelineno-9-7" href="#__codelineno-9-7"></a>        <span class="s2">&quot;datum&quot;</span><span class="p">:</span> <span class="nb">str</span><span class="p">(</span><span class="n">date</span><span class="o">.</span><span class="n">today</span><span class="p">()),</span>
+<a id="__codelineno-9-8" name="__codelineno-9-8" href="#__codelineno-9-8"></a>        <span class="s2">&quot;azure_services&quot;</span><span class="p">:</span> <span class="p">[</span><span class="s2">&quot;VM&quot;</span><span class="p">,</span> <span class="s2">&quot;Storage&quot;</span><span class="p">,</span> <span class="s2">&quot;Computer Vision&quot;</span><span class="p">,</span>
+<a id="__codelineno-9-9" name="__codelineno-9-9" href="#__codelineno-9-9"></a>                           <span class="s2">&quot;Cost Management&quot;</span><span class="p">,</span> <span class="s2">&quot;App Service&quot;</span><span class="p">]</span>
+<a id="__codelineno-9-10" name="__codelineno-9-10" href="#__codelineno-9-10"></a>    <span class="p">}</span>
+</code></pre></div>
+<p>Aufruf im Browser: <code>https://deine-app.azurewebsites.net/info</code></p>
+</details>
+<hr />
+<p>Weiter zu <a href="../modul-6-functions/">Modul 6 – Azure Functions: Serverless</a> →</p>
 
 
 
