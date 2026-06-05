@@ -87,6 +87,15 @@ Nach Abschluss von Lernpfad 1 hast du folgendes in Azure selbst gebaut:
 | ⚡ | Event-getriebene Architektur mit Functions + Service Bus + Cosmos DB | Abschlussprojekt 2 |
 | 🚀 | Containerisierte App mit vollautomatischer CI/CD-Pipeline | Abschlussprojekt 3 |
 
+## Was du in Lernpfad 9 lernst
+
+| | Was | Wo |
+|---|---|---|
+| 📂 | Dateiserver in der Cloud: SMB-Freigaben erstellen und einbinden | Azure Files |
+| 🔄 | Lokalen Windows-Server automatisch mit Azure synchronisieren | Azure File Sync |
+| 💾 | VMs sichern, Backup-Policies einrichten und Dateien wiederherstellen | Azure Backup |
+| 🖥️ | Virtuellen Desktop-Pool aufbauen und per Browser nutzen | Azure Virtual Desktop |
+
 ---
 
 ## Übersicht der Module
@@ -141,6 +150,10 @@ Nach Abschluss von Lernpfad 1 hast du folgendes in Azure selbst gebaut:
 | [Modul 45](modul-45-projekt-webapp.md) | Abschlussprojekt 1: Dreischichtige Web-App | 120 Min |
 | [Modul 46](modul-46-projekt-eventdriven.md) | Abschlussprojekt 2: Event-Driven Architektur | 120 Min |
 | [Modul 47](modul-47-projekt-cicd.md) | Abschlussprojekt 3: Container-App mit CI/CD | 120 Min |
+| [Modul 48](modul-48-azure-files.md) | Azure Files & File Sync: Dateiserver in der Cloud | 60 Min |
+| [Modul 49](modul-49-backup.md) | Azure Backup & Recovery: VM-Backup und File Recovery | 75 Min |
+| [Modul 50](modul-50-avd.md) | Azure Virtual Desktop: Virtueller Desktop in der Cloud | 90 Min |
+| [Modul 51](modul-51-aufräumen.md) | Aufräumen Lernpfad 9 | 10 Min |
 
 !!! tip "Kein Stress mit der Zeit"
     Die Zeitangaben sind Orientierungshilfen, kein Zwang. Nimm dir so lange wie du brauchst. Wenn du nicht weiterkommst, hilft oft ein Blick in die offizielle [Microsoft Learn Dokumentation](https://learn.microsoft.com/de-de/azure/).

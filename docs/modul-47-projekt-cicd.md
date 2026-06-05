@@ -422,9 +422,12 @@ Du hast alle drei Abschlussprojekte abgeschlossen und damit das gesamte Azure Ei
 | LP 6 – DevOps & IaC | Azure DevOps, GitHub Actions, ARM, Bicep, Terraform, Policy |
 | LP 7 – Monitoring | Log Analytics, App Insights, Defender for Cloud, Sentinel |
 | LP 8 – Projekte | 3-Tier-App, Event-Driven, Container + CI/CD |
+| LP 9 – Hybrid & Windows Admin | Azure Files, File Sync, Backup, Recovery, AVD |
 
 !!! tip "Nächste Schritte"
     - [AZ-900: Azure Fundamentals](https://learn.microsoft.com/de-de/certifications/azure-fundamentals/) – Zertifizierung für Azure-Grundlagen
     - [AZ-104: Azure Administrator](https://learn.microsoft.com/de-de/certifications/azure-administrator/) – Vertiefung für Administratoren
     - [AZ-204: Azure Developer](https://learn.microsoft.com/de-de/certifications/azure-developer/) – Vertiefung für Entwickler
     - [Microsoft Learn](https://learn.microsoft.com/de-de/training/) – Kostenlose offizielle Lernpfade
+
+Weiter zu [Modul 48 – Azure Files & File Sync](modul-48-azure-files.md) →

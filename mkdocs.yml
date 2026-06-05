@@ -112,6 +112,11 @@ nav:
     - "Modul 45 – Projekt 1: 3-Tier-Web-App": modul-45-projekt-webapp.md
     - "Modul 46 – Projekt 2: Event-Driven": modul-46-projekt-eventdriven.md
     - "Modul 47 – Projekt 3: Container + CI/CD": modul-47-projekt-cicd.md
+  - Lernpfad 9 – Hybrid & Windows Admin:
+    - Modul 48 – Azure Files & File Sync: modul-48-azure-files.md
+    - Modul 49 – Azure Backup & Recovery: modul-49-backup.md
+    - Modul 50 – Azure Virtual Desktop: modul-50-avd.md
+    - Modul 51 – Aufräumen: modul-51-aufräumen.md
 
 extra:
   social:

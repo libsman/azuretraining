@@ -16,6 +16,7 @@ Selbstgeführtes Azure-Training für IT-Profis im Microsoft-Umfeld – Azubis, P
 | LP 6 | 33–39 | DevOps & IaC (Azure DevOps, GitHub Actions, ARM, Bicep, Terraform, Policy) |
 | LP 7 | 40–44 | Monitoring & Security (Log Analytics, App Insights, Defender for Cloud, Sentinel) |
 | LP 8 | 45–47 | Abschlussprojekte (3-Tier-App, Event-Driven, Container + CI/CD) |
+| LP 9 | 48–51 | Hybrid & Windows Admin (Azure Files, Backup, Azure Virtual Desktop) |
 
 ## Alle Module
 
@@ -107,14 +108,29 @@ Selbstgeführtes Azure-Training für IT-Profis im Microsoft-Umfeld – Azubis, P
 | 46 | Abschlussprojekt 2: Event-Driven Architektur (Functions + Service Bus + Cosmos DB) |
 | 47 | Abschlussprojekt 3: Container-App mit CI/CD-Pipeline (ACR + Container Apps + GitHub Actions) |
 
+### Lernpfad 9 – Hybrid & Windows Admin
+
+| Modul | Thema |
+|-------|-------|
+| 48 | Azure Files & File Sync: Dateiserver in der Cloud |
+| 49 | Azure Backup & Recovery: Recovery Services Vault, VM-Backup, File Recovery |
+| 50 | Azure Virtual Desktop: Host Pools, Session Hosts, RemoteApp |
+| 51 | Aufräumen Lernpfad 9 |
+
 ## Lokale Vorschau
 
-```bash
+```powershell
 pip install -r requirements.txt
+python -m mkdocs serve
+```
+
+Oder kürzer (falls `mkdocs` im PATH ist):
+
+```powershell
 mkdocs serve
 ```
 
-Öffne http://localhost:8000 im Browser.
+Oeffne http://localhost:8000 im Browser.
 
 ## GitHub Pages Deployment
 

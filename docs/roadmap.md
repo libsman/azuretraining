@@ -113,5 +113,16 @@ Hier findest du eine Übersicht über alle geplanten Lernpfade und Module des Az
 
 ---
 
+## Lernpfad 9 – Hybrid & Windows Admin (Module 48–51) ✅
+
+| Modul | Thema |
+|-------|-------|
+| [Modul 48](modul-48-azure-files.md) | Azure Files & File Sync: Dateiserver in der Cloud |
+| [Modul 49](modul-49-backup.md) | Azure Backup & Recovery: Recovery Services Vault, VM-Backup, File Recovery |
+| [Modul 50](modul-50-avd.md) | Azure Virtual Desktop: Host Pools, Session Hosts, RemoteApp |
+| [Modul 51](modul-51-aufräumen.md) | Aufräumen Lernpfad 9 |
+
+---
+
 !!! info "Beiträge willkommen"
     Dieses Training ist Open Source. Wenn du ein Modul verbessern oder ein neues schreiben möchtest, öffne einen Pull Request auf [GitHub](https://github.com/libsman/azuretraining).
