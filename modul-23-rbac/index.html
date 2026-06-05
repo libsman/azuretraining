@@ -10,13 +10,13 @@
       
       
       
-        <link rel="canonical" href="https://libsman.github.io/azuretraining/modul-20-aufr%C3%A4umen/">
+        <link rel="canonical" href="https://libsman.github.io/azuretraining/modul-23-rbac/">
       
       
-        <link rel="prev" href="../modul-19-app-datenbank/">
+        <link rel="prev" href="../modul-22-managed-identity/">
       
       
-        <link rel="next" href="../modul-21-entra/">
+        <link rel="next" href="../modul-24-conditional-access/">
       
       
         
@@ -27,7 +27,7 @@
     
     
       
-        <title>Modul 20 – Aufräumen - Azure Einstiegstraining</title>
+        <title>Modul 23 – RBAC vertieft - Azure Einstiegstraining</title>
       
     
     
@@ -78,7 +78,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#modul-20-aufraumen-lernpfad-3-abschlieen" class="md-skip">
+        <a href="#modul-23-azure-rbac-vertieft-eigene-rollen-und-scopes" class="md-skip">
           Zum Inhalt
         </a>
       
@@ -114,7 +114,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Modul 20 – Aufräumen
+              Modul 23 – RBAC vertieft
             
           </span>
         </div>
@@ -841,20 +841,18 @@
       
   
   
-    
   
   
-  
     
     
     
     
     
-    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5" checked>
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5" >
         
           
           <label class="md-nav__link" for="__nav_5" id="__nav_5_label" tabindex="0">
@@ -875,7 +873,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_5_label" aria-expanded="true">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_5_label" aria-expanded="false">
           <label class="md-nav__title" for="__nav_5">
             <span class="md-nav__icon md-icon"></span>
             
@@ -1030,37 +1028,10 @@
                 
   
   
-    
   
   
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
-      
-      
-        
-      
-      
-        <label class="md-nav__link md-nav__link--active" for="__toc">
-          
-  
-  
-  <span class="md-ellipsis">
-    
-  
-    Modul 20 – Aufräumen
-  
-
-    
-  </span>
-  
-  
-
-          <span class="md-nav__icon md-icon"></span>
-        </label>
-      
-      <a href="./" class="md-nav__link md-nav__link--active">
+    <li class="md-nav__item">
+      <a href="../modul-20-aufr%C3%A4umen/" class="md-nav__link">
         
   
   
@@ -1076,148 +1047,6 @@
   
 
       </a>
-      
-        
-
-<nav class="md-nav md-nav--secondary" aria-label="Inhaltsverzeichnis">
-  
-  
-  
-    
-  
-  
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      Inhaltsverzeichnis
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#was-du-in-lernpfad-3-gebaut-hast" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Was du in Lernpfad 3 gebaut hast
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#lernpfad-3-abschlieen-resource-group-loschen" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Lernpfad 3 abschließen: Resource Group löschen
-      
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="Lernpfad 3 abschließen: Resource Group löschen">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#option-a-resource-group-komplett-loschen-empfohlen" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Option A: Resource Group komplett löschen (empfohlen)
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#option-b-einzelne-ressourcen-stoppen" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Option B: Einzelne Ressourcen stoppen
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#option-c-nur-postgresql-und-redis-loschen" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Option C: Nur PostgreSQL und Redis löschen
-      
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#loschung-bestatigen" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Löschung bestätigen
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#was-du-in-lernpfad-3-gelernt-hast" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Was du in Lernpfad 3 gelernt hast
-      
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="Was du in Lernpfad 3 gelernt hast">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#konzepte-die-du-jetzt-kennst" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Konzepte die du jetzt kennst
-      
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#vergleich-welche-datenbank-fur-welchen-anwendungsfall" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Vergleich: Welche Datenbank für welchen Anwendungsfall?
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#lernpfad-3-checkliste" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Lernpfad 3 – Checkliste
-      
-    </span>
-  </a>
-  
-</li>
-      
-    </ul>
-  
-</nav>
-      
     </li>
   
 
@@ -1234,18 +1063,20 @@
       
   
   
+    
   
   
+  
     
     
     
     
     
-    <li class="md-nav__item md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_6" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_6" checked>
         
           
           <label class="md-nav__link" for="__nav_6" id="__nav_6_label" tabindex="0">
@@ -1266,7 +1097,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_6_label" aria-expanded="false">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_6_label" aria-expanded="true">
           <label class="md-nav__title" for="__nav_6">
             <span class="md-nav__icon md-icon"></span>
             
@@ -1337,10 +1168,37 @@
                 
   
   
+    
   
   
-    <li class="md-nav__item">
-      <a href="../modul-23-rbac/" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Modul 23 – RBAC vertieft
+  
+
+    
+  </span>
+  
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
         
   
   
@@ -1356,6 +1214,214 @@
   
 
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Inhaltsverzeichnis">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Inhaltsverzeichnis
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#lernziele" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Lernziele
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#hintergrund-was-ist-rbac" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Hintergrund: Was ist RBAC?
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#die-scope-hierarchie" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Die Scope-Hierarchie
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#bestehende-rollenzuweisungen-anzeigen" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Bestehende Rollenzuweisungen anzeigen
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Bestehende Rollenzuweisungen anzeigen">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#auf-einer-resource-group" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Auf einer Resource Group
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#alle-eigenen-rollen-anzeigen" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Alle eigenen Rollen anzeigen
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#built-in-roles-die-wichtigsten-im-uberblick" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Built-in Roles – die wichtigsten im Überblick
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#custom-role-erstellen" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Custom Role erstellen
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Custom Role erstellen">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#schritt-1-permissions-recherchieren" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Schritt 1: Permissions recherchieren
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#schritt-2-json-definition-erstellen" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Schritt 2: JSON-Definition erstellen
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#schritt-3-custom-role-erstellen" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Schritt 3: Custom Role erstellen
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#schritt-4-rolle-zuweisen" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Schritt 4: Rolle zuweisen
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#custom-role-loschen-aufraumen" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Custom Role löschen (Aufräumen)
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#azure-rbac-vs-entra-id-rollen" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Azure RBAC vs. Entra ID-Rollen
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#access-review-wer-hat-noch-zugang" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Access Review: Wer hat noch Zugang?
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#challenge" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Challenge
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
     </li>
   
 
@@ -1451,10 +1517,10 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#was-du-in-lernpfad-3-gebaut-hast" class="md-nav__link">
+  <a href="#lernziele" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Was du in Lernpfad 3 gebaut hast
+        Lernziele
       
     </span>
   </a>
@@ -1462,22 +1528,44 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#lernpfad-3-abschlieen-resource-group-loschen" class="md-nav__link">
+  <a href="#hintergrund-was-ist-rbac" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Lernpfad 3 abschließen: Resource Group löschen
+        Hintergrund: Was ist RBAC?
       
     </span>
   </a>
   
-    <nav class="md-nav" aria-label="Lernpfad 3 abschließen: Resource Group löschen">
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#die-scope-hierarchie" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Die Scope-Hierarchie
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#bestehende-rollenzuweisungen-anzeigen" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Bestehende Rollenzuweisungen anzeigen
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Bestehende Rollenzuweisungen anzeigen">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#option-a-resource-group-komplett-loschen-empfohlen" class="md-nav__link">
+  <a href="#auf-einer-resource-group" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Option A: Resource Group komplett löschen (empfohlen)
+        Auf einer Resource Group
       
     </span>
   </a>
@@ -1485,21 +1573,10 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#option-b-einzelne-ressourcen-stoppen" class="md-nav__link">
+  <a href="#alle-eigenen-rollen-anzeigen" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Option B: Einzelne Ressourcen stoppen
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#option-c-nur-postgresql-und-redis-loschen" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Option C: Nur PostgreSQL und Redis löschen
+        Alle eigenen Rollen anzeigen
       
     </span>
   </a>
@@ -1512,10 +1589,10 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#loschung-bestatigen" class="md-nav__link">
+  <a href="#built-in-roles-die-wichtigsten-im-uberblick" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Löschung bestätigen
+        Built-in Roles – die wichtigsten im Überblick
       
     </span>
   </a>
@@ -1523,22 +1600,66 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#was-du-in-lernpfad-3-gelernt-hast" class="md-nav__link">
+  <a href="#custom-role-erstellen" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Was du in Lernpfad 3 gelernt hast
+        Custom Role erstellen
       
     </span>
   </a>
   
-    <nav class="md-nav" aria-label="Was du in Lernpfad 3 gelernt hast">
+    <nav class="md-nav" aria-label="Custom Role erstellen">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#konzepte-die-du-jetzt-kennst" class="md-nav__link">
+  <a href="#schritt-1-permissions-recherchieren" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Konzepte die du jetzt kennst
+        Schritt 1: Permissions recherchieren
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#schritt-2-json-definition-erstellen" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Schritt 2: JSON-Definition erstellen
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#schritt-3-custom-role-erstellen" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Schritt 3: Custom Role erstellen
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#schritt-4-rolle-zuweisen" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Schritt 4: Rolle zuweisen
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#custom-role-loschen-aufraumen" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Custom Role löschen (Aufräumen)
       
     </span>
   </a>
@@ -1551,10 +1672,10 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#vergleich-welche-datenbank-fur-welchen-anwendungsfall" class="md-nav__link">
+  <a href="#azure-rbac-vs-entra-id-rollen" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Vergleich: Welche Datenbank für welchen Anwendungsfall?
+        Azure RBAC vs. Entra ID-Rollen
       
     </span>
   </a>
@@ -1562,10 +1683,21 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#lernpfad-3-checkliste" class="md-nav__link">
+  <a href="#access-review-wer-hat-noch-zugang" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Lernpfad 3 – Checkliste
+        Access Review: Wer hat noch Zugang?
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#challenge" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Challenge
       
     </span>
   </a>
@@ -1592,212 +1724,251 @@
   
 
 
-<h1 id="modul-20-aufraumen-lernpfad-3-abschlieen">Modul 20 – Aufräumen: Lernpfad 3 abschließen</h1>
-<h2 id="was-du-in-lernpfad-3-gebaut-hast">Was du in Lernpfad 3 gebaut hast</h2>
+<h1 id="modul-23-azure-rbac-vertieft-eigene-rollen-und-scopes">Modul 23 – Azure RBAC vertieft: Eigene Rollen und Scopes</h1>
+<h2 id="lernziele">Lernziele</h2>
+<p>Nach diesem Modul kannst du:</p>
+<ul>
+<li>Die RBAC-Scope-Hierarchie (Management Group → Subscription → Resource Group → Ressource) erklären</li>
+<li>Bestehende Rollenzuweisungen im Portal auslesen und analysieren</li>
+<li>Eigene Custom Roles erstellen wenn Built-in Roles nicht passen</li>
+<li>Den Unterschied zwischen Azure RBAC und Entra ID-Rollen (Directory Roles) erklären</li>
+<li>Privilege Access Reviews als Sicherheitspraxis beschreiben</li>
+</ul>
+<hr />
+<h2 id="hintergrund-was-ist-rbac">Hintergrund: Was ist RBAC?</h2>
+<p><strong>On-Prem-Vergleich:</strong> Im Active Directory gibt es Gruppen und Berechtigungen: Wer darf auf welchen Fileserver-Ordner zugreifen, wer kann GPOs ändern, wer ist Domain Admin. Das funktioniert über Gruppenrichtlinien und ACLs.</p>
+<p>In Azure heißt das Konzept <strong>RBAC (Role-Based Access Control)</strong>: Wer darf auf welcher Azure-Ressource was tun?</p>
+<p><strong>Drei Grundelemente:</strong></p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a>WER      +    WELCHE ROLLE    +    AUF WELCHEM SCOPE
+<a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a>(Identität)   (Berechtigung)       (Ressourcenebene)
+<a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a>
+<a id="__codelineno-0-4" name="__codelineno-0-4" href="#__codelineno-0-4"></a>Beispiel:
+<a id="__codelineno-0-5" name="__codelineno-0-5" href="#__codelineno-0-5"></a>Anna     +    Reader           +    Resource Group &quot;rg-aztraining&quot;
+</code></pre></div>
+<hr />
+<h2 id="die-scope-hierarchie">Die Scope-Hierarchie</h2>
+<p>Azure RBAC hat vier Ebenen – Berechtigungen vererben sich nach unten:</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a>Management Group       (Organisationsebene – mehrere Subscriptions)
+<a id="__codelineno-1-2" name="__codelineno-1-2" href="#__codelineno-1-2"></a>    └── Subscription   (Abrechnungseinheit)
+<a id="__codelineno-1-3" name="__codelineno-1-3" href="#__codelineno-1-3"></a>            └── Resource Group   (logische Containergruppe)
+<a id="__codelineno-1-4" name="__codelineno-1-4" href="#__codelineno-1-4"></a>                    └── Ressource   (einzelne VM, Storage, etc.)
+</code></pre></div>
+<p><strong>Vererbungsprinzip:</strong> Eine Rolle auf Subscription-Ebene gilt automatisch für alle Resource Groups und Ressourcen darin.</p>
+<p><strong>Best Practice:</strong> Rollen so tief wie möglich vergeben (<strong>Least Privilege</strong>). Wenn jemand nur Zugriff auf eine Resource Group braucht, keine Subscription-Rolle vergeben.</p>
+<div class="admonition tip">
+<p class="admonition-title">Scope in der Praxis</p>
+<p>In kleinen Umgebungen (1 Subscription, 2–3 Resource Groups) ist das einfach. In Unternehmen mit 10+ Subscriptions und hunderten Resource Groups wird RBAC über Management Groups und Azure Policy gesteuert – das ist Modul 23 already Level "Senior Cloud Engineer".</p>
+</div>
+<hr />
+<h2 id="bestehende-rollenzuweisungen-anzeigen">Bestehende Rollenzuweisungen anzeigen</h2>
+<h3 id="auf-einer-resource-group">Auf einer Resource Group</h3>
+<ol>
+<li>Navigiere zu einer Resource Group (z.B. <code>rg-aztraining</code>)</li>
+<li>Links im Menü: <strong>Access control (IAM)</strong></li>
+<li>Tab <strong>Role assignments</strong></li>
+</ol>
+<p>Du siehst: Wer hat welche Rolle auf dieser Ressource? Die Spalten sind:
+- <strong>Name</strong>: Benutzer, Gruppe oder Service Principal
+- <strong>Type</strong>: User / Group / Service Principal / Managed Identity
+- <strong>Role</strong>: die zugewiesene Rolle
+- <strong>Scope</strong>: auf welchem Scope die Rolle vergeben wurde (ggf. höher als diese RG)</p>
+<div class="admonition info">
+<p class="admonition-title">Inherited vs. Direct</p>
+<p>Rollen können direkt oder geerbt sein. Wenn du auf Subscription-Ebene <code>Owner</code> bist, erscheint das auch bei jeder Resource Group als Rolle – als "Inherited".</p>
+</div>
+<h3 id="alle-eigenen-rollen-anzeigen">Alle eigenen Rollen anzeigen</h3>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a><span class="c1"># Alle Rollenzuweisungen für den eingeloggten Benutzer</span>
+<a id="__codelineno-2-2" name="__codelineno-2-2" href="#__codelineno-2-2"></a>az<span class="w"> </span>role<span class="w"> </span>assignment<span class="w"> </span>list<span class="w"> </span>--assignee<span class="w"> </span><span class="k">$(</span>az<span class="w"> </span>account<span class="w"> </span>show<span class="w"> </span>--query<span class="w"> </span>user.name<span class="w"> </span>-o<span class="w"> </span>tsv<span class="k">)</span><span class="w"> </span>--all<span class="w"> </span>--output<span class="w"> </span>table
+</code></pre></div>
+<hr />
+<h2 id="built-in-roles-die-wichtigsten-im-uberblick">Built-in Roles – die wichtigsten im Überblick</h2>
+<p>Azure hat über 100 vordefinierte Rollen. Diese kennst du am häufigsten:</p>
 <table>
 <thead>
 <tr>
-<th>Ressource</th>
-<th>Typ</th>
-<th>Modul</th>
-<th>Kosten/Monat</th>
+<th>Rolle</th>
+<th>Beschreibung</th>
+<th>Typischer Use Case</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td><code>rg-datenbanken</code></td>
-<td>Resource Group</td>
-<td>alle</td>
-<td>kostenlos</td>
+<td><strong>Owner</strong></td>
+<td>Alles, inkl. RBAC verwalten</td>
+<td>Subscription-Besitzer</td>
 </tr>
 <tr>
-<td><code>sql-aztraining-XXXX</code></td>
-<td>Azure SQL Server (logisch)</td>
-<td>15</td>
-<td>kostenlos</td>
+<td><strong>Contributor</strong></td>
+<td>Ressourcen erstellen/ändern/löschen, aber kein RBAC</td>
+<td>Entwickler, DevOps</td>
 </tr>
 <tr>
-<td><code>db-aztraining</code></td>
-<td>Azure SQL Database (Serverless)</td>
-<td>15</td>
-<td>~0–3 €</td>
+<td><strong>Reader</strong></td>
+<td>Alles lesen, nichts ändern</td>
+<td>Auditoren, Monitoring-Tools</td>
 </tr>
 <tr>
-<td><code>cosmos-aztraining-XXXX</code></td>
-<td>Azure Cosmos DB (Serverless)</td>
-<td>16</td>
-<td>~0–1 €</td>
+<td><strong>User Access Administrator</strong></td>
+<td>Nur RBAC-Zuweisungen verwalten</td>
+<td>Zugriffsverwaltung delegieren</td>
 </tr>
 <tr>
-<td><code>psql-aztraining-XXXX</code></td>
-<td>PostgreSQL Flexible Server</td>
-<td>17</td>
-<td>~10 €/Monat</td>
+<td><strong>Storage Blob Data Contributor</strong></td>
+<td>Blobs lesen/schreiben</td>
+<td>Apps mit Managed Identity</td>
 </tr>
 <tr>
-<td><code>redis-aztraining-XXXX</code></td>
-<td>Azure Cache for Redis (C0 Basic)</td>
-<td>18</td>
-<td>~14 €/Monat</td>
+<td><strong>Key Vault Secrets User</strong></td>
+<td>Secrets lesen</td>
+<td>Apps die Secrets aus KV lesen</td>
+</tr>
+<tr>
+<td><strong>Virtual Machine Contributor</strong></td>
+<td>VMs verwalten (nicht Netzwerk)</td>
+<td>VM-Admins</td>
 </tr>
 </tbody>
 </table>
 <div class="admonition warning">
-<p class="admonition-title">Wichtig: Kosten stoppen</p>
-<p><strong>PostgreSQL Flexible Server</strong> (~10 €/Monat) und <strong>Redis C0</strong> (~14 €/Monat) laufen kontinuierlich. Wenn du nicht weitermachst, lösche die Resource Group oder stoppe die Dienste.</p>
-<p>Azure SQL Serverless pausiert automatisch nach Inaktivität → 0 € wenn nicht genutzt.<br />
-Cosmos DB Serverless → 0 € wenn nicht genutzt.</p>
+<p class="admonition-title">Owner-Rolle sparsam vergeben</p>
+<p><code>Owner</code> darf auch RBAC verwalten – also weitere Personen zu Ownern machen. In Produktion: <code>Contributor</code> für Entwickler, <code>Owner</code> nur für Cloud-Admins.</p>
 </div>
 <hr />
-<h2 id="lernpfad-3-abschlieen-resource-group-loschen">Lernpfad 3 abschließen: Resource Group löschen</h2>
-<h3 id="option-a-resource-group-komplett-loschen-empfohlen">Option A: Resource Group komplett löschen (empfohlen)</h3>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a>az<span class="w"> </span>group<span class="w"> </span>delete<span class="w"> </span>--name<span class="w"> </span>rg-datenbanken<span class="w"> </span>--yes<span class="w"> </span>--no-wait
+<h2 id="custom-role-erstellen">Custom Role erstellen</h2>
+<p>Wenn keine Built-in Role passt, kannst du eigene Rollen definieren. Beispiel: du willst dass jemand VMs <strong>starten und stoppen</strong> darf, aber nicht erstellen oder löschen.</p>
+<h3 id="schritt-1-permissions-recherchieren">Schritt 1: Permissions recherchieren</h3>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a><span class="c1"># Alle Actions für Virtual Machines anzeigen</span>
+<a id="__codelineno-3-2" name="__codelineno-3-2" href="#__codelineno-3-2"></a>az<span class="w"> </span>provider<span class="w"> </span>operation<span class="w"> </span>show<span class="w"> </span>--namespace<span class="w"> </span>Microsoft.Compute<span class="w"> </span><span class="se">\</span>
+<a id="__codelineno-3-3" name="__codelineno-3-3" href="#__codelineno-3-3"></a><span class="w">  </span>--query<span class="w"> </span><span class="s2">&quot;resourceTypes[?name==&#39;virtualMachines&#39;].operations[].name&quot;</span><span class="w"> </span><span class="se">\</span>
+<a id="__codelineno-3-4" name="__codelineno-3-4" href="#__codelineno-3-4"></a><span class="w">  </span>-o<span class="w"> </span>tsv<span class="w"> </span><span class="p">|</span><span class="w"> </span>grep<span class="w"> </span>-i<span class="w"> </span><span class="s2">&quot;start\|deallocate\|powerOff&quot;</span>
 </code></pre></div>
-<p>Das löscht alle Ressourcen in <code>rg-datenbanken</code> asynchron. Dauert 5–15 Minuten.</p>
-<h3 id="option-b-einzelne-ressourcen-stoppen">Option B: Einzelne Ressourcen stoppen</h3>
-<p>Wenn du die Ressourcen behalten willst aber Kosten sparen möchtest:</p>
-<p><strong>PostgreSQL Flexible Server stoppen:</strong></p>
-<ol>
-<li><code>psql-aztraining-XXXX</code> → <strong>Overview</strong> → <strong>Stop</strong> oben in der Menüleiste</li>
-<li>Gestoppter Server: 0 € für Compute, aber Storage (~2 €/Monat) läuft weiter</li>
-<li>Azure stoppt den Server nach 7 Tagen automatisch-restart – dann manuell wieder stoppen</li>
-</ol>
-<p><strong>Redis löschen (kein "Stop"):</strong></p>
-<p>Redis Cache hat keine Stop-Funktion. Entweder komplett löschen oder weiterlaufen lassen.</p>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a>az<span class="w"> </span>redis<span class="w"> </span>delete<span class="w"> </span>--name<span class="w"> </span>redis-aztraining-XXXX<span class="w"> </span>--resource-group<span class="w"> </span>rg-datenbanken<span class="w"> </span>--yes
+<p>Du findest:
+- <code>Microsoft.Compute/virtualMachines/start/action</code>
+- <code>Microsoft.Compute/virtualMachines/deallocate/action</code>
+- <code>Microsoft.Compute/virtualMachines/powerOff/action</code>
+- <code>Microsoft.Compute/virtualMachines/read</code></p>
+<h3 id="schritt-2-json-definition-erstellen">Schritt 2: JSON-Definition erstellen</h3>
+<p>Öffne in der Cloud Shell:</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-4-1" name="__codelineno-4-1" href="#__codelineno-4-1"></a>code<span class="w"> </span>vm-operator-role.json
 </code></pre></div>
-<h3 id="option-c-nur-postgresql-und-redis-loschen">Option C: Nur PostgreSQL und Redis löschen</h3>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a><span class="c1"># PostgreSQL löschen</span>
-<a id="__codelineno-2-2" name="__codelineno-2-2" href="#__codelineno-2-2"></a>az<span class="w"> </span>postgres<span class="w"> </span>flexible-server<span class="w"> </span>delete<span class="w"> </span><span class="se">\</span>
-<a id="__codelineno-2-3" name="__codelineno-2-3" href="#__codelineno-2-3"></a><span class="w">  </span>--name<span class="w"> </span>psql-aztraining-XXXX<span class="w"> </span><span class="se">\</span>
-<a id="__codelineno-2-4" name="__codelineno-2-4" href="#__codelineno-2-4"></a><span class="w">  </span>--resource-group<span class="w"> </span>rg-datenbanken<span class="w"> </span><span class="se">\</span>
-<a id="__codelineno-2-5" name="__codelineno-2-5" href="#__codelineno-2-5"></a><span class="w">  </span>--yes
-<a id="__codelineno-2-6" name="__codelineno-2-6" href="#__codelineno-2-6"></a>
-<a id="__codelineno-2-7" name="__codelineno-2-7" href="#__codelineno-2-7"></a><span class="c1"># Redis löschen</span>
-<a id="__codelineno-2-8" name="__codelineno-2-8" href="#__codelineno-2-8"></a>az<span class="w"> </span>redis<span class="w"> </span>delete<span class="w"> </span><span class="se">\</span>
-<a id="__codelineno-2-9" name="__codelineno-2-9" href="#__codelineno-2-9"></a><span class="w">  </span>--name<span class="w"> </span>redis-aztraining-XXXX<span class="w"> </span><span class="se">\</span>
-<a id="__codelineno-2-10" name="__codelineno-2-10" href="#__codelineno-2-10"></a><span class="w">  </span>--resource-group<span class="w"> </span>rg-datenbanken<span class="w"> </span><span class="se">\</span>
-<a id="__codelineno-2-11" name="__codelineno-2-11" href="#__codelineno-2-11"></a><span class="w">  </span>--yes
+<div class="highlight"><pre><span></span><code><a id="__codelineno-5-1" name="__codelineno-5-1" href="#__codelineno-5-1"></a><span class="p">{</span>
+<a id="__codelineno-5-2" name="__codelineno-5-2" href="#__codelineno-5-2"></a><span class="w">  </span><span class="nt">&quot;Name&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;VM Operator&quot;</span><span class="p">,</span>
+<a id="__codelineno-5-3" name="__codelineno-5-3" href="#__codelineno-5-3"></a><span class="w">  </span><span class="nt">&quot;Description&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;Darf VMs starten, stoppen und den Status lesen. Keine Erstellungs- oder Löschrechte.&quot;</span><span class="p">,</span>
+<a id="__codelineno-5-4" name="__codelineno-5-4" href="#__codelineno-5-4"></a><span class="w">  </span><span class="nt">&quot;Actions&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">[</span>
+<a id="__codelineno-5-5" name="__codelineno-5-5" href="#__codelineno-5-5"></a><span class="w">    </span><span class="s2">&quot;Microsoft.Compute/virtualMachines/read&quot;</span><span class="p">,</span>
+<a id="__codelineno-5-6" name="__codelineno-5-6" href="#__codelineno-5-6"></a><span class="w">    </span><span class="s2">&quot;Microsoft.Compute/virtualMachines/start/action&quot;</span><span class="p">,</span>
+<a id="__codelineno-5-7" name="__codelineno-5-7" href="#__codelineno-5-7"></a><span class="w">    </span><span class="s2">&quot;Microsoft.Compute/virtualMachines/deallocate/action&quot;</span><span class="p">,</span>
+<a id="__codelineno-5-8" name="__codelineno-5-8" href="#__codelineno-5-8"></a><span class="w">    </span><span class="s2">&quot;Microsoft.Compute/virtualMachines/powerOff/action&quot;</span><span class="p">,</span>
+<a id="__codelineno-5-9" name="__codelineno-5-9" href="#__codelineno-5-9"></a><span class="w">    </span><span class="s2">&quot;Microsoft.Compute/virtualMachines/restart/action&quot;</span><span class="p">,</span>
+<a id="__codelineno-5-10" name="__codelineno-5-10" href="#__codelineno-5-10"></a><span class="w">    </span><span class="s2">&quot;Microsoft.Resources/subscriptions/resourceGroups/read&quot;</span>
+<a id="__codelineno-5-11" name="__codelineno-5-11" href="#__codelineno-5-11"></a><span class="w">  </span><span class="p">],</span>
+<a id="__codelineno-5-12" name="__codelineno-5-12" href="#__codelineno-5-12"></a><span class="w">  </span><span class="nt">&quot;NotActions&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">[],</span>
+<a id="__codelineno-5-13" name="__codelineno-5-13" href="#__codelineno-5-13"></a><span class="w">  </span><span class="nt">&quot;AssignableScopes&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">[</span>
+<a id="__codelineno-5-14" name="__codelineno-5-14" href="#__codelineno-5-14"></a><span class="w">    </span><span class="s2">&quot;/subscriptions/DEINE-SUBSCRIPTION-ID&quot;</span>
+<a id="__codelineno-5-15" name="__codelineno-5-15" href="#__codelineno-5-15"></a><span class="w">  </span><span class="p">]</span>
+<a id="__codelineno-5-16" name="__codelineno-5-16" href="#__codelineno-5-16"></a><span class="p">}</span>
 </code></pre></div>
-<p>SQL und Cosmos DB (Serverless) können bleiben – kosten nichts wenn inaktiv.</p>
+<p>Subscription-ID holen:</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-6-1" name="__codelineno-6-1" href="#__codelineno-6-1"></a>az<span class="w"> </span>account<span class="w"> </span>show<span class="w"> </span>--query<span class="w"> </span>id<span class="w"> </span>-o<span class="w"> </span>tsv
+</code></pre></div>
+<p>Trage sie in <code>AssignableScopes</code> ein (ersetze <code>DEINE-SUBSCRIPTION-ID</code>).</p>
+<h3 id="schritt-3-custom-role-erstellen">Schritt 3: Custom Role erstellen</h3>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-7-1" name="__codelineno-7-1" href="#__codelineno-7-1"></a>az<span class="w"> </span>role<span class="w"> </span>definition<span class="w"> </span>create<span class="w"> </span>--role-definition<span class="w"> </span>vm-operator-role.json
+</code></pre></div>
+<h3 id="schritt-4-rolle-zuweisen">Schritt 4: Rolle zuweisen</h3>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-8-1" name="__codelineno-8-1" href="#__codelineno-8-1"></a><span class="c1"># Rolle dem Testbenutzer zuweisen (auf Resource Group)</span>
+<a id="__codelineno-8-2" name="__codelineno-8-2" href="#__codelineno-8-2"></a>az<span class="w"> </span>role<span class="w"> </span>assignment<span class="w"> </span>create<span class="w"> </span><span class="se">\</span>
+<a id="__codelineno-8-3" name="__codelineno-8-3" href="#__codelineno-8-3"></a><span class="w">  </span>--assignee<span class="w"> </span>testuser@XXXX.onmicrosoft.com<span class="w"> </span><span class="se">\</span>
+<a id="__codelineno-8-4" name="__codelineno-8-4" href="#__codelineno-8-4"></a><span class="w">  </span>--role<span class="w"> </span><span class="s2">&quot;VM Operator&quot;</span><span class="w"> </span><span class="se">\</span>
+<a id="__codelineno-8-5" name="__codelineno-8-5" href="#__codelineno-8-5"></a><span class="w">  </span>--resource-group<span class="w"> </span>rg-aztraining
+</code></pre></div>
+<p>Die Rolle erscheint jetzt in <strong>Access control (IAM)</strong> → <strong>Role assignments</strong> der Resource Group.</p>
+<h3 id="custom-role-loschen-aufraumen">Custom Role löschen (Aufräumen)</h3>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-9-1" name="__codelineno-9-1" href="#__codelineno-9-1"></a>az<span class="w"> </span>role<span class="w"> </span>definition<span class="w"> </span>delete<span class="w"> </span>--name<span class="w"> </span><span class="s2">&quot;VM Operator&quot;</span>
+</code></pre></div>
 <hr />
-<h2 id="loschung-bestatigen">Löschung bestätigen</h2>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a><span class="c1"># Verbleibende Ressourcen prüfen</span>
-<a id="__codelineno-3-2" name="__codelineno-3-2" href="#__codelineno-3-2"></a>az<span class="w"> </span>resource<span class="w"> </span>list<span class="w"> </span>--resource-group<span class="w"> </span>rg-datenbanken<span class="w"> </span>--output<span class="w"> </span>table
-</code></pre></div>
-<p>Falls die Resource Group komplett gelöscht ist:</p>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-4-1" name="__codelineno-4-1" href="#__codelineno-4-1"></a>az<span class="w"> </span>group<span class="w"> </span>list<span class="w"> </span>--output<span class="w"> </span>table<span class="w"> </span><span class="p">|</span><span class="w"> </span>findstr<span class="w"> </span>datenbanken
-<a id="__codelineno-4-2" name="__codelineno-4-2" href="#__codelineno-4-2"></a><span class="c1"># Keine Ausgabe = Resource Group ist weg</span>
-</code></pre></div>
-<hr />
-<h2 id="was-du-in-lernpfad-3-gelernt-hast">Was du in Lernpfad 3 gelernt hast</h2>
+<h2 id="azure-rbac-vs-entra-id-rollen">Azure RBAC vs. Entra ID-Rollen</h2>
+<p>Ein häufiger Verwechslungspunkt:</p>
 <table>
 <thead>
 <tr>
-<th>Modul</th>
-<th>Thema</th>
-<th>Schlüsselkonzept</th>
+<th></th>
+<th>Azure RBAC</th>
+<th>Entra ID Directory Roles</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td>15 – Azure SQL</td>
-<td>Managed relationale DB</td>
-<td>Serverless, Free Tier, Query Editor, pyodbc</td>
+<td><strong>Steuert Zugriff auf</strong></td>
+<td>Azure-Ressourcen (VMs, Storage, ...)</td>
+<td>Entra ID selbst (Benutzer verwalten, Apps registrieren)</td>
 </tr>
 <tr>
-<td>16 – Cosmos DB</td>
-<td>NoSQL Dokumentendb</td>
-<td>Partition Key, Serverless RU/s, Change Feed</td>
+<td><strong>Beispiele</strong></td>
+<td>Owner, Contributor, Reader</td>
+<td>Global Administrator, User Administrator</td>
 </tr>
 <tr>
-<td>17 – PostgreSQL</td>
-<td>Open-Source DB als Service</td>
-<td>Flexible Server, psql, Schemas, Trigger</td>
+<td><strong>Vergeben in</strong></td>
+<td>Azure Portal → IAM</td>
+<td>Entra ID-Portal → Roles</td>
 </tr>
 <tr>
-<td>18 – Redis Cache</td>
-<td>In-Memory Key-Value Store</td>
-<td>Cache-Aside, TTL, Rate Limiting, Session Store</td>
-</tr>
-<tr>
-<td>19 – App + DB</td>
-<td>Sichere Verbindung</td>
-<td>Managed Identity, Key Vault Reference, Health Check</td>
+<td><strong>Scope</strong></td>
+<td>Subscription / RG / Ressource</td>
+<td>Tenant-weit (oder Administrative Unit)</td>
 </tr>
 </tbody>
 </table>
-<h3 id="konzepte-die-du-jetzt-kennst">Konzepte die du jetzt kennst</h3>
-<p><strong>Datenbankentscheidungen:</strong></p>
-<ul>
-<li>✅ Du weißt wann SQL (strukturierte Daten, ACID) vs. NoSQL (flexibles Schema, horizontale Skalierung) sinnvoll ist</li>
-<li>✅ Du kennst drei Azure DB-Dienste: SQL Database, Cosmos DB, PostgreSQL</li>
-<li>✅ Du verstehst Managed Service Vorteile: kein Patching, automatische Backups, integriertes HA</li>
-</ul>
-<p><strong>Sicherheit:</strong></p>
-<ul>
-<li>✅ Kein Passwort im Code – Managed Identity + Key Vault References</li>
-<li>✅ Firewall-Regeln für Datenbankzugriff</li>
-<li>✅ SSL/TLS für alle Datenbankverbindungen</li>
-</ul>
-<p><strong>Performance:</strong></p>
-<ul>
-<li>✅ Cache-Aside Pattern mit Redis</li>
-<li>✅ Serverless-Tarife für unregelmäßige Last (SQL Serverless, Cosmos DB Serverless)</li>
-</ul>
+<p><strong>Faustregel:</strong> 
+- Wer Azure-Ressourcen verwalten soll → <strong>Azure RBAC</strong>
+- Wer Entra ID-Benutzer oder -Apps verwalten soll → <strong>Entra ID Directory Role</strong></p>
 <hr />
-<h2 id="vergleich-welche-datenbank-fur-welchen-anwendungsfall">Vergleich: Welche Datenbank für welchen Anwendungsfall?</h2>
-<table>
-<thead>
-<tr>
-<th>Anwendungsfall</th>
-<th>Empfehlung</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>.NET-App mit fixem Schema, Transaktionen</td>
-<td>Azure SQL Database</td>
-</tr>
-<tr>
-<td>Migration von SQL Server on-premises</td>
-<td>SQL Managed Instance</td>
-</tr>
-<tr>
-<td>Produktkatalog mit variablen Attributen</td>
-<td>Cosmos DB (NoSQL)</td>
-</tr>
-<tr>
-<td>Open-Source-Stack, PostgreSQL-Erweiterungen</td>
-<td>Azure DB for PostgreSQL</td>
-</tr>
-<tr>
-<td>Session-Daten, API-Caching, Rate Limiting</td>
-<td>Azure Cache for Redis</td>
-</tr>
-<tr>
-<td>Kombination aus DB + Cache</td>
-<td>PostgreSQL/SQL + Redis</td>
-</tr>
-</tbody>
-</table>
+<h2 id="access-review-wer-hat-noch-zugang">Access Review: Wer hat noch Zugang?</h2>
+<p>In Unternehmen wächst RBAC schnell unkontrolliert. Access Reviews (benötigt <strong>Entra ID P2</strong>) erlauben periodische Überprüfungen: jeder Manager bestätigt ob seine Mitarbeiter noch die Zugriffsrechte brauchen.</p>
+<p>Auch ohne P2 kannst du manuell prüfen:</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-10-1" name="__codelineno-10-1" href="#__codelineno-10-1"></a><span class="c1"># Alle Rollenzuweisungen in einer Subscription ausgeben</span>
+<a id="__codelineno-10-2" name="__codelineno-10-2" href="#__codelineno-10-2"></a>az<span class="w"> </span>role<span class="w"> </span>assignment<span class="w"> </span>list<span class="w"> </span>--all<span class="w"> </span>--output<span class="w"> </span>table<span class="w"> </span><span class="se">\</span>
+<a id="__codelineno-10-3" name="__codelineno-10-3" href="#__codelineno-10-3"></a><span class="w">  </span>--query<span class="w"> </span><span class="s2">&quot;[].{Benutzer:principalName, Rolle:roleDefinitionName, Scope:scope}&quot;</span>
+</code></pre></div>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-11-1" name="__codelineno-11-1" href="#__codelineno-11-1"></a><span class="c1"># Besonders kritisch: wer hat Owner-Rechte?</span>
+<a id="__codelineno-11-2" name="__codelineno-11-2" href="#__codelineno-11-2"></a>az<span class="w"> </span>role<span class="w"> </span>assignment<span class="w"> </span>list<span class="w"> </span>--all<span class="w"> </span><span class="se">\</span>
+<a id="__codelineno-11-3" name="__codelineno-11-3" href="#__codelineno-11-3"></a><span class="w">  </span>--query<span class="w"> </span><span class="s2">&quot;[?roleDefinitionName==&#39;Owner&#39;].{Benutzer:principalName, Scope:scope}&quot;</span><span class="w"> </span><span class="se">\</span>
+<a id="__codelineno-11-4" name="__codelineno-11-4" href="#__codelineno-11-4"></a><span class="w">  </span>--output<span class="w"> </span>table
+</code></pre></div>
 <hr />
-<h2 id="lernpfad-3-checkliste">Lernpfad 3 – Checkliste</h2>
-<p>Bevor du weitermachst, stelle sicher dass du folgende Dinge kannst:</p>
+<h2 id="challenge">Challenge</h2>
+<div class="admonition question">
+<p class="admonition-title">Challenge: Eigene Rolle für Storage</p>
+<p>Erstelle eine Custom Role <code>Storage Readonly Plus</code> die folgendes darf:</p>
 <ul>
-<li>[ ] Azure SQL Database (Serverless) erstellen und Query Editor nutzen</li>
-<li>[ ] Cosmos DB-Container mit sinnvollem Partition Key anlegen</li>
-<li>[ ] PostgreSQL Flexible Server mit psql verbinden und Schemas anlegen</li>
-<li>[ ] Redis HSET/GET/TTL in der Console ausführen</li>
-<li>[ ] Cache-Aside Pattern erklären und implementieren</li>
-<li>[ ] Verbindungsstring sicher in Key Vault speichern und per App Setting referenzieren</li>
+<li>Blobs lesen (<code>Microsoft.Storage/storageAccounts/blobServices/containers/blobs/read</code>)</li>
+<li>Container auflisten (<code>Microsoft.Storage/storageAccounts/blobServices/containers/read</code>)</li>
+<li>Storage Account Metadaten lesen (<code>Microsoft.Storage/storageAccounts/read</code>)</li>
+<li><strong>Aber nicht</strong>: Blobs schreiben, löschen, oder Storage Account ändern</li>
 </ul>
-<hr />
-<p>Weiter zu <a href="../modul-21-entra/">Lernpfad 4 – Identity &amp; Access Management</a> →</p>
-<div class="admonition info">
-<p class="admonition-title">Lernpfad 4 – Identity &amp; Access</p>
-<p>In Lernpfad 4 geht es um Microsoft Entra ID (ehemals Azure AD), Managed Identities, RBAC und Conditional Access – also wie du steuert <em>wer</em> auf <em>was</em> in Azure zugreifen darf.</p>
+<p>Weise die Rolle dem Testbenutzer auf dem Storage Account aus Modul 22 zu.</p>
 </div>
+<details class="success">
+<summary>Hinweis</summary>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-12-1" name="__codelineno-12-1" href="#__codelineno-12-1"></a><span class="p">{</span>
+<a id="__codelineno-12-2" name="__codelineno-12-2" href="#__codelineno-12-2"></a><span class="w">  </span><span class="nt">&quot;Name&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;Storage Readonly Plus&quot;</span><span class="p">,</span>
+<a id="__codelineno-12-3" name="__codelineno-12-3" href="#__codelineno-12-3"></a><span class="w">  </span><span class="nt">&quot;Description&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;Liest Blobs und listet Container auf&quot;</span><span class="p">,</span>
+<a id="__codelineno-12-4" name="__codelineno-12-4" href="#__codelineno-12-4"></a><span class="w">  </span><span class="nt">&quot;Actions&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">[</span>
+<a id="__codelineno-12-5" name="__codelineno-12-5" href="#__codelineno-12-5"></a><span class="w">    </span><span class="s2">&quot;Microsoft.Storage/storageAccounts/read&quot;</span><span class="p">,</span>
+<a id="__codelineno-12-6" name="__codelineno-12-6" href="#__codelineno-12-6"></a><span class="w">    </span><span class="s2">&quot;Microsoft.Storage/storageAccounts/blobServices/read&quot;</span><span class="p">,</span>
+<a id="__codelineno-12-7" name="__codelineno-12-7" href="#__codelineno-12-7"></a><span class="w">    </span><span class="s2">&quot;Microsoft.Storage/storageAccounts/blobServices/containers/read&quot;</span><span class="p">,</span>
+<a id="__codelineno-12-8" name="__codelineno-12-8" href="#__codelineno-12-8"></a><span class="w">    </span><span class="s2">&quot;Microsoft.Storage/storageAccounts/blobServices/containers/blobs/read&quot;</span>
+<a id="__codelineno-12-9" name="__codelineno-12-9" href="#__codelineno-12-9"></a><span class="w">  </span><span class="p">],</span>
+<a id="__codelineno-12-10" name="__codelineno-12-10" href="#__codelineno-12-10"></a><span class="w">  </span><span class="nt">&quot;NotActions&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">[],</span>
+<a id="__codelineno-12-11" name="__codelineno-12-11" href="#__codelineno-12-11"></a><span class="w">  </span><span class="nt">&quot;AssignableScopes&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="s2">&quot;/subscriptions/DEINE-SUBSCRIPTION-ID&quot;</span><span class="p">]</span>
+<a id="__codelineno-12-12" name="__codelineno-12-12" href="#__codelineno-12-12"></a><span class="p">}</span>
+</code></pre></div>
+<p>Dann: <code>az role definition create --role-definition storage-readonly-plus.json</code></p>
+<p>Und zuweisen: <code>az role assignment create --assignee testuser@... --role "Storage Readonly Plus" --scope /subscriptions/.../resourceGroups/.../providers/Microsoft.Storage/storageAccounts/staztraining-XXXX</code></p>
+</details>
+<hr />
+<p>Weiter zu <a href="../modul-24-conditional-access/">Modul 24 – Conditional Access: Bedingter Zugriff und MFA</a> →</p>
 
 
 
@@ -1835,7 +2006,7 @@ Cosmos DB Serverless → 0 € wenn nicht genutzt.</p>
       <nav class="md-footer__inner md-grid" aria-label="Fußzeile" >
         
           
-          <a href="../modul-19-app-datenbank/" class="md-footer__link md-footer__link--prev" aria-label="Zurück: Modul 19 – App + Datenbank">
+          <a href="../modul-22-managed-identity/" class="md-footer__link md-footer__link--prev" aria-label="Zurück: Modul 22 – Managed Identity">
             <div class="md-footer__button md-icon">
               
               <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
@@ -1845,20 +2016,20 @@ Cosmos DB Serverless → 0 € wenn nicht genutzt.</p>
                 Zurück
               </span>
               <div class="md-ellipsis">
-                Modul 19 – App + Datenbank
+                Modul 22 – Managed Identity
               </div>
             </div>
           </a>
         
         
           
-          <a href="../modul-21-entra/" class="md-footer__link md-footer__link--next" aria-label="Weiter: Modul 21 – Microsoft Entra ID">
+          <a href="../modul-24-conditional-access/" class="md-footer__link md-footer__link--next" aria-label="Weiter: Modul 24 – Conditional Access">
             <div class="md-footer__title">
               <span class="md-footer__direction">
                 Weiter
               </span>
               <div class="md-ellipsis">
-                Modul 21 – Microsoft Entra ID
+                Modul 24 – Conditional Access
               </div>
             </div>
             <div class="md-footer__button md-icon">

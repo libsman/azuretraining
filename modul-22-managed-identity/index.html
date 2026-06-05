@@ -10,13 +10,13 @@
       
       
       
-        <link rel="canonical" href="https://libsman.github.io/azuretraining/modul-20-aufr%C3%A4umen/">
+        <link rel="canonical" href="https://libsman.github.io/azuretraining/modul-22-managed-identity/">
       
       
-        <link rel="prev" href="../modul-19-app-datenbank/">
+        <link rel="prev" href="../modul-21-entra/">
       
       
-        <link rel="next" href="../modul-21-entra/">
+        <link rel="next" href="../modul-23-rbac/">
       
       
         
@@ -27,7 +27,7 @@
     
     
       
-        <title>Modul 20 – Aufräumen - Azure Einstiegstraining</title>
+        <title>Modul 22 – Managed Identity - Azure Einstiegstraining</title>
       
     
     
@@ -78,7 +78,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#modul-20-aufraumen-lernpfad-3-abschlieen" class="md-skip">
+        <a href="#modul-22-managed-identity-apps-ohne-passworter-authentifizieren" class="md-skip">
           Zum Inhalt
         </a>
       
@@ -114,7 +114,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Modul 20 – Aufräumen
+              Modul 22 – Managed Identity
             
           </span>
         </div>
@@ -841,20 +841,18 @@
       
   
   
-    
   
   
-  
     
     
     
     
     
-    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5" checked>
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5" >
         
           
           <label class="md-nav__link" for="__nav_5" id="__nav_5_label" tabindex="0">
@@ -875,7 +873,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_5_label" aria-expanded="true">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_5_label" aria-expanded="false">
           <label class="md-nav__title" for="__nav_5">
             <span class="md-nav__icon md-icon"></span>
             
@@ -1030,37 +1028,10 @@
                 
   
   
-    
   
   
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
-      
-      
-        
-      
-      
-        <label class="md-nav__link md-nav__link--active" for="__toc">
-          
-  
-  
-  <span class="md-ellipsis">
-    
-  
-    Modul 20 – Aufräumen
-  
-
-    
-  </span>
-  
-  
-
-          <span class="md-nav__icon md-icon"></span>
-        </label>
-      
-      <a href="./" class="md-nav__link md-nav__link--active">
+    <li class="md-nav__item">
+      <a href="../modul-20-aufr%C3%A4umen/" class="md-nav__link">
         
   
   
@@ -1076,148 +1047,6 @@
   
 
       </a>
-      
-        
-
-<nav class="md-nav md-nav--secondary" aria-label="Inhaltsverzeichnis">
-  
-  
-  
-    
-  
-  
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      Inhaltsverzeichnis
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#was-du-in-lernpfad-3-gebaut-hast" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Was du in Lernpfad 3 gebaut hast
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#lernpfad-3-abschlieen-resource-group-loschen" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Lernpfad 3 abschließen: Resource Group löschen
-      
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="Lernpfad 3 abschließen: Resource Group löschen">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#option-a-resource-group-komplett-loschen-empfohlen" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Option A: Resource Group komplett löschen (empfohlen)
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#option-b-einzelne-ressourcen-stoppen" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Option B: Einzelne Ressourcen stoppen
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#option-c-nur-postgresql-und-redis-loschen" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Option C: Nur PostgreSQL und Redis löschen
-      
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#loschung-bestatigen" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Löschung bestätigen
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#was-du-in-lernpfad-3-gelernt-hast" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Was du in Lernpfad 3 gelernt hast
-      
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="Was du in Lernpfad 3 gelernt hast">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#konzepte-die-du-jetzt-kennst" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Konzepte die du jetzt kennst
-      
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#vergleich-welche-datenbank-fur-welchen-anwendungsfall" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Vergleich: Welche Datenbank für welchen Anwendungsfall?
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#lernpfad-3-checkliste" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Lernpfad 3 – Checkliste
-      
-    </span>
-  </a>
-  
-</li>
-      
-    </ul>
-  
-</nav>
-      
     </li>
   
 
@@ -1234,18 +1063,20 @@
       
   
   
+    
   
   
+  
     
     
     
     
     
-    <li class="md-nav__item md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_6" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_6" checked>
         
           
           <label class="md-nav__link" for="__nav_6" id="__nav_6_label" tabindex="0">
@@ -1266,7 +1097,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_6_label" aria-expanded="false">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_6_label" aria-expanded="true">
           <label class="md-nav__title" for="__nav_6">
             <span class="md-nav__icon md-icon"></span>
             
@@ -1309,10 +1140,37 @@
                 
   
   
+    
   
   
-    <li class="md-nav__item">
-      <a href="../modul-22-managed-identity/" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Modul 22 – Managed Identity
+  
+
+    
+  </span>
+  
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
         
   
   
@@ -1328,6 +1186,265 @@
   
 
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Inhaltsverzeichnis">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Inhaltsverzeichnis
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#lernziele" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Lernziele
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#hintergrund-das-problem-mit-passwortern-in-apps" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Hintergrund: Das Problem mit Passwörtern in Apps
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#system-assigned-vs-user-assigned" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        System-assigned vs. User-assigned
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#managed-identity-aktivieren-app-service" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Managed Identity aktivieren (App Service)
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Managed Identity aktivieren (App Service)">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#schritt-1-app-service-offnen" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Schritt 1: App Service öffnen
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#schritt-2-system-assigned-identity-aktivieren" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Schritt 2: System-assigned Identity aktivieren
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#storage-account-fur-managed-identity-vorbereiten" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Storage Account für Managed Identity vorbereiten
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Storage Account für Managed Identity vorbereiten">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#schritt-1-storage-account-erstellen" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Schritt 1: Storage Account erstellen
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#schritt-2-blob-container-erstellen" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Schritt 2: Blob Container erstellen
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#schritt-3-rbac-rolle-fur-die-managed-identity-vergeben" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Schritt 3: RBAC-Rolle für die Managed Identity vergeben
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#python-code-mit-managed-identity-auf-storage-zugreifen" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Python-Code: Mit Managed Identity auf Storage zugreifen
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Python-Code: Mit Managed Identity auf Storage zugreifen">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#in-der-cloud-shell" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        In der Cloud Shell
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#managed-identity-fur-key-vault" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Managed Identity für Key Vault
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Managed Identity für Key Vault">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#rolle-vergeben" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Rolle vergeben
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#code-keine-passworter" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Code (keine Passwörter!)
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#user-assigned-managed-identity" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        User-assigned Managed Identity
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="User-assigned Managed Identity">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#erstellen" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Erstellen
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#zuweisen" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Zuweisen
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#challenge" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Challenge
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
     </li>
   
 
@@ -1451,10 +1568,10 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#was-du-in-lernpfad-3-gebaut-hast" class="md-nav__link">
+  <a href="#lernziele" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Was du in Lernpfad 3 gebaut hast
+        Lernziele
       
     </span>
   </a>
@@ -1462,22 +1579,44 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#lernpfad-3-abschlieen-resource-group-loschen" class="md-nav__link">
+  <a href="#hintergrund-das-problem-mit-passwortern-in-apps" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Lernpfad 3 abschließen: Resource Group löschen
+        Hintergrund: Das Problem mit Passwörtern in Apps
       
     </span>
   </a>
   
-    <nav class="md-nav" aria-label="Lernpfad 3 abschließen: Resource Group löschen">
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#system-assigned-vs-user-assigned" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        System-assigned vs. User-assigned
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#managed-identity-aktivieren-app-service" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Managed Identity aktivieren (App Service)
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Managed Identity aktivieren (App Service)">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#option-a-resource-group-komplett-loschen-empfohlen" class="md-nav__link">
+  <a href="#schritt-1-app-service-offnen" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Option A: Resource Group komplett löschen (empfohlen)
+        Schritt 1: App Service öffnen
       
     </span>
   </a>
@@ -1485,21 +1624,10 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#option-b-einzelne-ressourcen-stoppen" class="md-nav__link">
+  <a href="#schritt-2-system-assigned-identity-aktivieren" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Option B: Einzelne Ressourcen stoppen
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#option-c-nur-postgresql-und-redis-loschen" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Option C: Nur PostgreSQL und Redis löschen
+        Schritt 2: System-assigned Identity aktivieren
       
     </span>
   </a>
@@ -1512,33 +1640,44 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#loschung-bestatigen" class="md-nav__link">
+  <a href="#storage-account-fur-managed-identity-vorbereiten" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Löschung bestätigen
+        Storage Account für Managed Identity vorbereiten
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Storage Account für Managed Identity vorbereiten">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#schritt-1-storage-account-erstellen" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Schritt 1: Storage Account erstellen
       
     </span>
   </a>
   
 </li>
-      
-        <li class="md-nav__item">
-  <a href="#was-du-in-lernpfad-3-gelernt-hast" class="md-nav__link">
+        
+          <li class="md-nav__item">
+  <a href="#schritt-2-blob-container-erstellen" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Was du in Lernpfad 3 gelernt hast
+        Schritt 2: Blob Container erstellen
       
     </span>
   </a>
   
-    <nav class="md-nav" aria-label="Was du in Lernpfad 3 gelernt hast">
-      <ul class="md-nav__list">
+</li>
         
           <li class="md-nav__item">
-  <a href="#konzepte-die-du-jetzt-kennst" class="md-nav__link">
+  <a href="#schritt-3-rbac-rolle-fur-die-managed-identity-vergeben" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Konzepte die du jetzt kennst
+        Schritt 3: RBAC-Rolle für die Managed Identity vergeben
       
     </span>
   </a>
@@ -1551,21 +1690,116 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#vergleich-welche-datenbank-fur-welchen-anwendungsfall" class="md-nav__link">
+  <a href="#python-code-mit-managed-identity-auf-storage-zugreifen" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Vergleich: Welche Datenbank für welchen Anwendungsfall?
+        Python-Code: Mit Managed Identity auf Storage zugreifen
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Python-Code: Mit Managed Identity auf Storage zugreifen">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#in-der-cloud-shell" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        In der Cloud Shell
       
     </span>
   </a>
   
 </li>
+        
+      </ul>
+    </nav>
+  
+</li>
       
         <li class="md-nav__item">
-  <a href="#lernpfad-3-checkliste" class="md-nav__link">
+  <a href="#managed-identity-fur-key-vault" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Lernpfad 3 – Checkliste
+        Managed Identity für Key Vault
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Managed Identity für Key Vault">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#rolle-vergeben" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Rolle vergeben
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#code-keine-passworter" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Code (keine Passwörter!)
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#user-assigned-managed-identity" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        User-assigned Managed Identity
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="User-assigned Managed Identity">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#erstellen" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Erstellen
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#zuweisen" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Zuweisen
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#challenge" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Challenge
       
     </span>
   </a>
@@ -1592,212 +1826,314 @@
   
 
 
-<h1 id="modul-20-aufraumen-lernpfad-3-abschlieen">Modul 20 – Aufräumen: Lernpfad 3 abschließen</h1>
-<h2 id="was-du-in-lernpfad-3-gebaut-hast">Was du in Lernpfad 3 gebaut hast</h2>
+<h1 id="modul-22-managed-identity-apps-ohne-passworter-authentifizieren">Modul 22 – Managed Identity: Apps ohne Passwörter authentifizieren</h1>
+<h2 id="lernziele">Lernziele</h2>
+<p>Nach diesem Modul kannst du:</p>
+<ul>
+<li>Erklären was Managed Identity ist und warum man sie braucht</li>
+<li>System-assigned und User-assigned Managed Identity unterscheiden</li>
+<li>Einer App Service Web-App eine Managed Identity geben</li>
+<li>Der Identity eine RBAC-Rolle auf eine Azure-Ressource zuweisen</li>
+<li>Aus einer Azure-App ohne Passwort auf Blob Storage und Key Vault zugreifen</li>
+</ul>
+<hr />
+<h2 id="hintergrund-das-problem-mit-passwortern-in-apps">Hintergrund: Das Problem mit Passwörtern in Apps</h2>
+<p>Stell dir vor: deine Web-App muss auf einen Storage Account zugreifen. Die naheliegende Lösung:</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="c1"># ❌ So macht man es NICHT</span>
+<a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a><span class="n">STORAGE_KEY</span> <span class="o">=</span> <span class="s2">&quot;abcdef123456...&quot;</span>  <span class="c1"># im Code gespeichert</span>
+</code></pre></div>
+<p>Was passiert wenn dieser Code in Git landet? Der Key ist öffentlich. Was wenn der Key rotiert werden muss? Code ändern und neu deployen. Was wenn jemand den Code klaut? Alle Ressourcen mit diesem Key sind kompromittiert.</p>
+<p><strong>Managed Identity löst dieses Problem grundlegend:</strong></p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a>App Service  →  &quot;Wer bist du?&quot;  →  Managed Identity  →  Microsoft Entra ID
+<a id="__codelineno-1-2" name="__codelineno-1-2" href="#__codelineno-1-2"></a>                                                               ↓
+<a id="__codelineno-1-3" name="__codelineno-1-3" href="#__codelineno-1-3"></a>                                                    Token ausstellen
+<a id="__codelineno-1-4" name="__codelineno-1-4" href="#__codelineno-1-4"></a>                                                               ↓
+<a id="__codelineno-1-5" name="__codelineno-1-5" href="#__codelineno-1-5"></a>App Service  →  Azure Storage  →  Token prüfen  →  Zugriff erlaubt
+</code></pre></div>
+<p>Die App hat eine <strong>Identität in Entra ID</strong> – genau wie ein Benutzer. Azure stellt automatisch kurzlebige Tokens aus, ohne dass du ein Passwort speichern musst. <strong>Kein Secret im Code, kein Ablaufdatum verwalten, kein Rotations-Problem.</strong></p>
+<hr />
+<h2 id="system-assigned-vs-user-assigned">System-assigned vs. User-assigned</h2>
 <table>
 <thead>
 <tr>
-<th>Ressource</th>
-<th>Typ</th>
-<th>Modul</th>
-<th>Kosten/Monat</th>
+<th></th>
+<th>System-assigned</th>
+<th>User-assigned</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td><code>rg-datenbanken</code></td>
-<td>Resource Group</td>
-<td>alle</td>
-<td>kostenlos</td>
+<td>Lebensdauer</td>
+<td>An die Ressource gebunden</td>
+<td>Unabhängige Ressource</td>
 </tr>
 <tr>
-<td><code>sql-aztraining-XXXX</code></td>
-<td>Azure SQL Server (logisch)</td>
-<td>15</td>
-<td>kostenlos</td>
+<td>Wird gelöscht wenn</td>
+<td>Ressource gelöscht wird</td>
+<td>Du sie löschst</td>
 </tr>
 <tr>
-<td><code>db-aztraining</code></td>
-<td>Azure SQL Database (Serverless)</td>
-<td>15</td>
-<td>~0–3 €</td>
+<td>Kann mehreren Ressourcen zugewiesen werden</td>
+<td>❌ Nur einer</td>
+<td>✅ Beliebig vielen</td>
 </tr>
 <tr>
-<td><code>cosmos-aztraining-XXXX</code></td>
-<td>Azure Cosmos DB (Serverless)</td>
-<td>16</td>
-<td>~0–1 €</td>
-</tr>
-<tr>
-<td><code>psql-aztraining-XXXX</code></td>
-<td>PostgreSQL Flexible Server</td>
-<td>17</td>
-<td>~10 €/Monat</td>
-</tr>
-<tr>
-<td><code>redis-aztraining-XXXX</code></td>
-<td>Azure Cache for Redis (C0 Basic)</td>
-<td>18</td>
-<td>~14 €/Monat</td>
+<td>Typischer Use Case</td>
+<td>Einfache 1:1-Beziehung</td>
+<td>Mehrere Apps teilen dieselbe Identity</td>
 </tr>
 </tbody>
 </table>
-<div class="admonition warning">
-<p class="admonition-title">Wichtig: Kosten stoppen</p>
-<p><strong>PostgreSQL Flexible Server</strong> (~10 €/Monat) und <strong>Redis C0</strong> (~14 €/Monat) laufen kontinuierlich. Wenn du nicht weitermachst, lösche die Resource Group oder stoppe die Dienste.</p>
-<p>Azure SQL Serverless pausiert automatisch nach Inaktivität → 0 € wenn nicht genutzt.<br />
-Cosmos DB Serverless → 0 € wenn nicht genutzt.</p>
-</div>
+<p>Für den Anfang ist <strong>System-assigned</strong> einfacher – du aktivierst sie direkt auf der Ressource.</p>
 <hr />
-<h2 id="lernpfad-3-abschlieen-resource-group-loschen">Lernpfad 3 abschließen: Resource Group löschen</h2>
-<h3 id="option-a-resource-group-komplett-loschen-empfohlen">Option A: Resource Group komplett löschen (empfohlen)</h3>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a>az<span class="w"> </span>group<span class="w"> </span>delete<span class="w"> </span>--name<span class="w"> </span>rg-datenbanken<span class="w"> </span>--yes<span class="w"> </span>--no-wait
-</code></pre></div>
-<p>Das löscht alle Ressourcen in <code>rg-datenbanken</code> asynchron. Dauert 5–15 Minuten.</p>
-<h3 id="option-b-einzelne-ressourcen-stoppen">Option B: Einzelne Ressourcen stoppen</h3>
-<p>Wenn du die Ressourcen behalten willst aber Kosten sparen möchtest:</p>
-<p><strong>PostgreSQL Flexible Server stoppen:</strong></p>
+<h2 id="managed-identity-aktivieren-app-service">Managed Identity aktivieren (App Service)</h2>
+<h3 id="schritt-1-app-service-offnen">Schritt 1: App Service öffnen</h3>
+<p>Navigiere zu deiner Web App <code>webapp-aztraining-XXXX</code> (aus Lernpfad 1, Modul 5).</p>
+<p>Falls du die Ressourcen aus LP1 bereits gelöscht hast, erstelle eine neue Web App:</p>
+<details class="info">
+<summary>Neue Web App erstellen (optional)</summary>
+<p><strong>App Services</strong> → <strong>+ Create</strong> → <strong>Web App</strong></p>
+<table>
+<thead>
+<tr>
+<th>Feld</th>
+<th>Wert</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Resource group</td>
+<td><code>rg-identity</code></td>
+</tr>
+<tr>
+<td>Name</td>
+<td><code>app-identity-XXXX</code></td>
+</tr>
+<tr>
+<td>Runtime stack</td>
+<td><code>Python 3.12</code></td>
+</tr>
+<tr>
+<td>OS</td>
+<td><code>Linux</code></td>
+</tr>
+<tr>
+<td>Region</td>
+<td><code>West Europe</code></td>
+</tr>
+<tr>
+<td>Plan</td>
+<td><code>Free F1</code></td>
+</tr>
+</tbody>
+</table>
+</details>
+<h3 id="schritt-2-system-assigned-identity-aktivieren">Schritt 2: System-assigned Identity aktivieren</h3>
 <ol>
-<li><code>psql-aztraining-XXXX</code> → <strong>Overview</strong> → <strong>Stop</strong> oben in der Menüleiste</li>
-<li>Gestoppter Server: 0 € für Compute, aber Storage (~2 €/Monat) läuft weiter</li>
-<li>Azure stoppt den Server nach 7 Tagen automatisch-restart – dann manuell wieder stoppen</li>
+<li>Links im App Service-Menü: <strong>Settings</strong> → <strong>Identity</strong></li>
+<li>Tab <strong>System assigned</strong></li>
+<li>Status von <strong>Off</strong> auf <strong>On</strong> setzen</li>
+<li>Klicke <strong>Save</strong> → <strong>Yes</strong> bestätigen</li>
 </ol>
-<p><strong>Redis löschen (kein "Stop"):</strong></p>
-<p>Redis Cache hat keine Stop-Funktion. Entweder komplett löschen oder weiterlaufen lassen.</p>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a>az<span class="w"> </span>redis<span class="w"> </span>delete<span class="w"> </span>--name<span class="w"> </span>redis-aztraining-XXXX<span class="w"> </span>--resource-group<span class="w"> </span>rg-datenbanken<span class="w"> </span>--yes
-</code></pre></div>
-<h3 id="option-c-nur-postgresql-und-redis-loschen">Option C: Nur PostgreSQL und Redis löschen</h3>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a><span class="c1"># PostgreSQL löschen</span>
-<a id="__codelineno-2-2" name="__codelineno-2-2" href="#__codelineno-2-2"></a>az<span class="w"> </span>postgres<span class="w"> </span>flexible-server<span class="w"> </span>delete<span class="w"> </span><span class="se">\</span>
-<a id="__codelineno-2-3" name="__codelineno-2-3" href="#__codelineno-2-3"></a><span class="w">  </span>--name<span class="w"> </span>psql-aztraining-XXXX<span class="w"> </span><span class="se">\</span>
-<a id="__codelineno-2-4" name="__codelineno-2-4" href="#__codelineno-2-4"></a><span class="w">  </span>--resource-group<span class="w"> </span>rg-datenbanken<span class="w"> </span><span class="se">\</span>
-<a id="__codelineno-2-5" name="__codelineno-2-5" href="#__codelineno-2-5"></a><span class="w">  </span>--yes
-<a id="__codelineno-2-6" name="__codelineno-2-6" href="#__codelineno-2-6"></a>
-<a id="__codelineno-2-7" name="__codelineno-2-7" href="#__codelineno-2-7"></a><span class="c1"># Redis löschen</span>
-<a id="__codelineno-2-8" name="__codelineno-2-8" href="#__codelineno-2-8"></a>az<span class="w"> </span>redis<span class="w"> </span>delete<span class="w"> </span><span class="se">\</span>
-<a id="__codelineno-2-9" name="__codelineno-2-9" href="#__codelineno-2-9"></a><span class="w">  </span>--name<span class="w"> </span>redis-aztraining-XXXX<span class="w"> </span><span class="se">\</span>
-<a id="__codelineno-2-10" name="__codelineno-2-10" href="#__codelineno-2-10"></a><span class="w">  </span>--resource-group<span class="w"> </span>rg-datenbanken<span class="w"> </span><span class="se">\</span>
-<a id="__codelineno-2-11" name="__codelineno-2-11" href="#__codelineno-2-11"></a><span class="w">  </span>--yes
-</code></pre></div>
-<p>SQL und Cosmos DB (Serverless) können bleiben – kosten nichts wenn inaktiv.</p>
-<hr />
-<h2 id="loschung-bestatigen">Löschung bestätigen</h2>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a><span class="c1"># Verbleibende Ressourcen prüfen</span>
-<a id="__codelineno-3-2" name="__codelineno-3-2" href="#__codelineno-3-2"></a>az<span class="w"> </span>resource<span class="w"> </span>list<span class="w"> </span>--resource-group<span class="w"> </span>rg-datenbanken<span class="w"> </span>--output<span class="w"> </span>table
-</code></pre></div>
-<p>Falls die Resource Group komplett gelöscht ist:</p>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-4-1" name="__codelineno-4-1" href="#__codelineno-4-1"></a>az<span class="w"> </span>group<span class="w"> </span>list<span class="w"> </span>--output<span class="w"> </span>table<span class="w"> </span><span class="p">|</span><span class="w"> </span>findstr<span class="w"> </span>datenbanken
-<a id="__codelineno-4-2" name="__codelineno-4-2" href="#__codelineno-4-2"></a><span class="c1"># Keine Ausgabe = Resource Group ist weg</span>
-</code></pre></div>
-<hr />
-<h2 id="was-du-in-lernpfad-3-gelernt-hast">Was du in Lernpfad 3 gelernt hast</h2>
-<table>
-<thead>
-<tr>
-<th>Modul</th>
-<th>Thema</th>
-<th>Schlüsselkonzept</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>15 – Azure SQL</td>
-<td>Managed relationale DB</td>
-<td>Serverless, Free Tier, Query Editor, pyodbc</td>
-</tr>
-<tr>
-<td>16 – Cosmos DB</td>
-<td>NoSQL Dokumentendb</td>
-<td>Partition Key, Serverless RU/s, Change Feed</td>
-</tr>
-<tr>
-<td>17 – PostgreSQL</td>
-<td>Open-Source DB als Service</td>
-<td>Flexible Server, psql, Schemas, Trigger</td>
-</tr>
-<tr>
-<td>18 – Redis Cache</td>
-<td>In-Memory Key-Value Store</td>
-<td>Cache-Aside, TTL, Rate Limiting, Session Store</td>
-</tr>
-<tr>
-<td>19 – App + DB</td>
-<td>Sichere Verbindung</td>
-<td>Managed Identity, Key Vault Reference, Health Check</td>
-</tr>
-</tbody>
-</table>
-<h3 id="konzepte-die-du-jetzt-kennst">Konzepte die du jetzt kennst</h3>
-<p><strong>Datenbankentscheidungen:</strong></p>
-<ul>
-<li>✅ Du weißt wann SQL (strukturierte Daten, ACID) vs. NoSQL (flexibles Schema, horizontale Skalierung) sinnvoll ist</li>
-<li>✅ Du kennst drei Azure DB-Dienste: SQL Database, Cosmos DB, PostgreSQL</li>
-<li>✅ Du verstehst Managed Service Vorteile: kein Patching, automatische Backups, integriertes HA</li>
-</ul>
-<p><strong>Sicherheit:</strong></p>
-<ul>
-<li>✅ Kein Passwort im Code – Managed Identity + Key Vault References</li>
-<li>✅ Firewall-Regeln für Datenbankzugriff</li>
-<li>✅ SSL/TLS für alle Datenbankverbindungen</li>
-</ul>
-<p><strong>Performance:</strong></p>
-<ul>
-<li>✅ Cache-Aside Pattern mit Redis</li>
-<li>✅ Serverless-Tarife für unregelmäßige Last (SQL Serverless, Cosmos DB Serverless)</li>
-</ul>
-<hr />
-<h2 id="vergleich-welche-datenbank-fur-welchen-anwendungsfall">Vergleich: Welche Datenbank für welchen Anwendungsfall?</h2>
-<table>
-<thead>
-<tr>
-<th>Anwendungsfall</th>
-<th>Empfehlung</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>.NET-App mit fixem Schema, Transaktionen</td>
-<td>Azure SQL Database</td>
-</tr>
-<tr>
-<td>Migration von SQL Server on-premises</td>
-<td>SQL Managed Instance</td>
-</tr>
-<tr>
-<td>Produktkatalog mit variablen Attributen</td>
-<td>Cosmos DB (NoSQL)</td>
-</tr>
-<tr>
-<td>Open-Source-Stack, PostgreSQL-Erweiterungen</td>
-<td>Azure DB for PostgreSQL</td>
-</tr>
-<tr>
-<td>Session-Daten, API-Caching, Rate Limiting</td>
-<td>Azure Cache for Redis</td>
-</tr>
-<tr>
-<td>Kombination aus DB + Cache</td>
-<td>PostgreSQL/SQL + Redis</td>
-</tr>
-</tbody>
-</table>
-<hr />
-<h2 id="lernpfad-3-checkliste">Lernpfad 3 – Checkliste</h2>
-<p>Bevor du weitermachst, stelle sicher dass du folgende Dinge kannst:</p>
-<ul>
-<li>[ ] Azure SQL Database (Serverless) erstellen und Query Editor nutzen</li>
-<li>[ ] Cosmos DB-Container mit sinnvollem Partition Key anlegen</li>
-<li>[ ] PostgreSQL Flexible Server mit psql verbinden und Schemas anlegen</li>
-<li>[ ] Redis HSET/GET/TTL in der Console ausführen</li>
-<li>[ ] Cache-Aside Pattern erklären und implementieren</li>
-<li>[ ] Verbindungsstring sicher in Key Vault speichern und per App Setting referenzieren</li>
-</ul>
-<hr />
-<p>Weiter zu <a href="../modul-21-entra/">Lernpfad 4 – Identity &amp; Access Management</a> →</p>
-<div class="admonition info">
-<p class="admonition-title">Lernpfad 4 – Identity &amp; Access</p>
-<p>In Lernpfad 4 geht es um Microsoft Entra ID (ehemals Azure AD), Managed Identities, RBAC und Conditional Access – also wie du steuert <em>wer</em> auf <em>was</em> in Azure zugreifen darf.</p>
+<p>Azure erstellt jetzt einen Service Principal in Entra ID. Die angezeigte <strong>Object ID</strong> ist die Identität deiner App.</p>
+<div class="admonition success">
+<p class="admonition-title">App hat jetzt eine Identität</p>
+<p>Du kannst die neue Identität in Entra ID sehen: <strong>Microsoft Entra ID</strong> → <strong>Enterprise applications</strong> → Filter: <code>Managed Identities</code> → deine App erscheint in der Liste.</p>
 </div>
+<hr />
+<h2 id="storage-account-fur-managed-identity-vorbereiten">Storage Account für Managed Identity vorbereiten</h2>
+<h3 id="schritt-1-storage-account-erstellen">Schritt 1: Storage Account erstellen</h3>
+<ol>
+<li><strong>Storage accounts</strong> → <strong>+ Create</strong></li>
+</ol>
+<table>
+<thead>
+<tr>
+<th>Feld</th>
+<th>Wert</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Resource group</td>
+<td><code>rg-identity</code> (oder deine vorhandene)</td>
+</tr>
+<tr>
+<td>Storage account name</td>
+<td><code>staztraining-XXXX</code></td>
+</tr>
+<tr>
+<td>Region</td>
+<td><code>West Europe</code></td>
+</tr>
+<tr>
+<td>Redundancy</td>
+<td><code>LRS</code></td>
+</tr>
+</tbody>
+</table>
+<p><strong>Review + create</strong> → <strong>Create</strong></p>
+<h3 id="schritt-2-blob-container-erstellen">Schritt 2: Blob Container erstellen</h3>
+<ol>
+<li>Gehe zu <code>staztraining-XXXX</code> → <strong>Containers</strong> → <strong>+ Container</strong></li>
+<li>Name: <code>daten</code></li>
+<li>Public access level: <code>Private</code></li>
+<li><strong>Create</strong></li>
+</ol>
+<h3 id="schritt-3-rbac-rolle-fur-die-managed-identity-vergeben">Schritt 3: RBAC-Rolle für die Managed Identity vergeben</h3>
+<p>Jetzt gibst du der Identität deiner App Zugriff auf den Storage:</p>
+<ol>
+<li>Gehe zu <code>staztraining-XXXX</code> → <strong>Access control (IAM)</strong></li>
+<li>Klicke oben auf <strong>+ Add</strong> → <strong>Add role assignment</strong></li>
+<li>Wähle die Rolle: <strong>Storage Blob Data Contributor</strong></li>
+<li>Klicke auf <strong>Next</strong></li>
+<li>Assign access to: <strong>Managed identity</strong></li>
+<li>Klicke auf <strong>+ Select members</strong></li>
+<li>Managed identity: <strong>App Service</strong></li>
+<li>Wähle deine App aus der Liste</li>
+<li><strong>Select</strong> → <strong>Review + assign</strong> → <strong>Review + assign</strong></li>
+</ol>
+<div class="admonition info">
+<p class="admonition-title">Warum Storage Blob Data Contributor?</p>
+<p>Die Rolle <code>Storage Blob Data Contributor</code> erlaubt Lesen, Schreiben und Löschen von Blobs. Es gibt auch:
+- <code>Storage Blob Data Reader</code>: nur Lesen
+- <code>Storage Blob Data Owner</code>: alles inkl. ACL-Management</p>
+<p><strong>Least Privilege</strong>: immer die minimale Rolle wählen die ausreicht.</p>
+</div>
+<hr />
+<h2 id="python-code-mit-managed-identity-auf-storage-zugreifen">Python-Code: Mit Managed Identity auf Storage zugreifen</h2>
+<h3 id="in-der-cloud-shell">In der Cloud Shell</h3>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a>pip<span class="w"> </span>install<span class="w"> </span>azure-storage-blob<span class="w"> </span>azure-identity<span class="w"> </span>--quiet
+<a id="__codelineno-2-2" name="__codelineno-2-2" href="#__codelineno-2-2"></a>code<span class="w"> </span>managed_identity_demo.py
+</code></pre></div>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a><span class="kn">from</span><span class="w"> </span><span class="nn">azure.identity</span><span class="w"> </span><span class="kn">import</span> <span class="n">DefaultAzureCredential</span>
+<a id="__codelineno-3-2" name="__codelineno-3-2" href="#__codelineno-3-2"></a><span class="kn">from</span><span class="w"> </span><span class="nn">azure.storage.blob</span><span class="w"> </span><span class="kn">import</span> <span class="n">BlobServiceClient</span>
+<a id="__codelineno-3-3" name="__codelineno-3-3" href="#__codelineno-3-3"></a>
+<a id="__codelineno-3-4" name="__codelineno-3-4" href="#__codelineno-3-4"></a><span class="c1"># Kein Passwort, kein Key – nur die Identität der Umgebung</span>
+<a id="__codelineno-3-5" name="__codelineno-3-5" href="#__codelineno-3-5"></a><span class="n">credential</span> <span class="o">=</span> <span class="n">DefaultAzureCredential</span><span class="p">()</span>
+<a id="__codelineno-3-6" name="__codelineno-3-6" href="#__codelineno-3-6"></a>
+<a id="__codelineno-3-7" name="__codelineno-3-7" href="#__codelineno-3-7"></a><span class="c1"># Storage Account URL (kein Key!)</span>
+<a id="__codelineno-3-8" name="__codelineno-3-8" href="#__codelineno-3-8"></a><span class="n">account_url</span> <span class="o">=</span> <span class="s2">&quot;https://staztraining-XXXX.blob.core.windows.net&quot;</span>
+<a id="__codelineno-3-9" name="__codelineno-3-9" href="#__codelineno-3-9"></a><span class="n">client</span> <span class="o">=</span> <span class="n">BlobServiceClient</span><span class="p">(</span><span class="n">account_url</span><span class="o">=</span><span class="n">account_url</span><span class="p">,</span> <span class="n">credential</span><span class="o">=</span><span class="n">credential</span><span class="p">)</span>
+<a id="__codelineno-3-10" name="__codelineno-3-10" href="#__codelineno-3-10"></a>
+<a id="__codelineno-3-11" name="__codelineno-3-11" href="#__codelineno-3-11"></a><span class="n">container_name</span> <span class="o">=</span> <span class="s2">&quot;daten&quot;</span>
+<a id="__codelineno-3-12" name="__codelineno-3-12" href="#__codelineno-3-12"></a>
+<a id="__codelineno-3-13" name="__codelineno-3-13" href="#__codelineno-3-13"></a><span class="c1"># Datei hochladen</span>
+<a id="__codelineno-3-14" name="__codelineno-3-14" href="#__codelineno-3-14"></a><span class="n">inhalt</span> <span class="o">=</span> <span class="sa">b</span><span class="s2">&quot;Hallo von Managed Identity! Kein Passwort im Code.&quot;</span>
+<a id="__codelineno-3-15" name="__codelineno-3-15" href="#__codelineno-3-15"></a><span class="n">blob_client</span> <span class="o">=</span> <span class="n">client</span><span class="o">.</span><span class="n">get_blob_client</span><span class="p">(</span><span class="n">container</span><span class="o">=</span><span class="n">container_name</span><span class="p">,</span> <span class="n">blob</span><span class="o">=</span><span class="s2">&quot;test.txt&quot;</span><span class="p">)</span>
+<a id="__codelineno-3-16" name="__codelineno-3-16" href="#__codelineno-3-16"></a><span class="n">blob_client</span><span class="o">.</span><span class="n">upload_blob</span><span class="p">(</span><span class="n">inhalt</span><span class="p">,</span> <span class="n">overwrite</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
+<a id="__codelineno-3-17" name="__codelineno-3-17" href="#__codelineno-3-17"></a><span class="nb">print</span><span class="p">(</span><span class="s2">&quot;✅ Datei hochgeladen&quot;</span><span class="p">)</span>
+<a id="__codelineno-3-18" name="__codelineno-3-18" href="#__codelineno-3-18"></a>
+<a id="__codelineno-3-19" name="__codelineno-3-19" href="#__codelineno-3-19"></a><span class="c1"># Datei herunterladen und anzeigen</span>
+<a id="__codelineno-3-20" name="__codelineno-3-20" href="#__codelineno-3-20"></a><span class="n">download</span> <span class="o">=</span> <span class="n">blob_client</span><span class="o">.</span><span class="n">download_blob</span><span class="p">()</span>
+<a id="__codelineno-3-21" name="__codelineno-3-21" href="#__codelineno-3-21"></a><span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;✅ Inhalt: </span><span class="si">{</span><span class="n">download</span><span class="o">.</span><span class="n">readall</span><span class="p">()</span><span class="o">.</span><span class="n">decode</span><span class="p">()</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+</code></pre></div>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-4-1" name="__codelineno-4-1" href="#__codelineno-4-1"></a>python3<span class="w"> </span>managed_identity_demo.py
+</code></pre></div>
+<div class="admonition info">
+<p class="admonition-title">DefaultAzureCredential – wie das funktioniert</p>
+<p><code>DefaultAzureCredential</code> probiert der Reihe nach verschiedene Authentifizierungsmethoden:</p>
+<ol>
+<li>Umgebungsvariablen (für CI/CD-Pipelines)</li>
+<li><strong>Managed Identity</strong> (wenn in Azure ausgeführt) ← das nutzen wir</li>
+<li>Azure CLI Login (lokal auf deinem PC)</li>
+<li>Visual Studio Code-Login</li>
+<li>Interactive Browser</li>
+</ol>
+<p>In der Cloud Shell und in einer App Service-App greift Methode 2 automatisch. Lokal auf deinem PC greift Methode 3 oder 4 – du brauchst keine Codeänderung für lokale Entwicklung!</p>
+</div>
+<hr />
+<h2 id="managed-identity-fur-key-vault">Managed Identity für Key Vault</h2>
+<p>Das kennst du schon aus Modul 12 und Modul 19. Hier die Kurzfassung als Referenz:</p>
+<h3 id="rolle-vergeben">Rolle vergeben</h3>
+<p>Auf dem Key Vault: <strong>Access control (IAM)</strong> → <strong>+ Add</strong> → <strong>Add role assignment</strong>
+- Rolle: <strong>Key Vault Secrets User</strong>
+- Managed identity: deine App</p>
+<h3 id="code-keine-passworter">Code (keine Passwörter!)</h3>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-5-1" name="__codelineno-5-1" href="#__codelineno-5-1"></a><span class="kn">from</span><span class="w"> </span><span class="nn">azure.identity</span><span class="w"> </span><span class="kn">import</span> <span class="n">DefaultAzureCredential</span>
+<a id="__codelineno-5-2" name="__codelineno-5-2" href="#__codelineno-5-2"></a><span class="kn">from</span><span class="w"> </span><span class="nn">azure.keyvault.secrets</span><span class="w"> </span><span class="kn">import</span> <span class="n">SecretClient</span>
+<a id="__codelineno-5-3" name="__codelineno-5-3" href="#__codelineno-5-3"></a>
+<a id="__codelineno-5-4" name="__codelineno-5-4" href="#__codelineno-5-4"></a><span class="n">credential</span> <span class="o">=</span> <span class="n">DefaultAzureCredential</span><span class="p">()</span>
+<a id="__codelineno-5-5" name="__codelineno-5-5" href="#__codelineno-5-5"></a><span class="n">client</span> <span class="o">=</span> <span class="n">SecretClient</span><span class="p">(</span>
+<a id="__codelineno-5-6" name="__codelineno-5-6" href="#__codelineno-5-6"></a>    <span class="n">vault_url</span><span class="o">=</span><span class="s2">&quot;https://kv-aztraining-XXXX.vault.azure.net&quot;</span><span class="p">,</span>
+<a id="__codelineno-5-7" name="__codelineno-5-7" href="#__codelineno-5-7"></a>    <span class="n">credential</span><span class="o">=</span><span class="n">credential</span>
+<a id="__codelineno-5-8" name="__codelineno-5-8" href="#__codelineno-5-8"></a><span class="p">)</span>
+<a id="__codelineno-5-9" name="__codelineno-5-9" href="#__codelineno-5-9"></a>
+<a id="__codelineno-5-10" name="__codelineno-5-10" href="#__codelineno-5-10"></a><span class="n">geheimnis</span> <span class="o">=</span> <span class="n">client</span><span class="o">.</span><span class="n">get_secret</span><span class="p">(</span><span class="s2">&quot;mein-secret&quot;</span><span class="p">)</span>
+<a id="__codelineno-5-11" name="__codelineno-5-11" href="#__codelineno-5-11"></a><span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Secret: </span><span class="si">{</span><span class="n">geheimnis</span><span class="o">.</span><span class="n">value</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+</code></pre></div>
+<hr />
+<h2 id="user-assigned-managed-identity">User-assigned Managed Identity</h2>
+<p>Für Szenarien wo mehrere Apps dieselbe Identity teilen sollen:</p>
+<h3 id="erstellen">Erstellen</h3>
+<ol>
+<li>Suche im Portal nach <strong><code>Managed Identities</code></strong> → <strong>+ Create</strong></li>
+</ol>
+<table>
+<thead>
+<tr>
+<th>Feld</th>
+<th>Wert</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Resource group</td>
+<td><code>rg-identity</code></td>
+</tr>
+<tr>
+<td>Region</td>
+<td><code>West Europe</code></td>
+</tr>
+<tr>
+<td>Name</td>
+<td><code>id-shared-apps</code></td>
+</tr>
+</tbody>
+</table>
+<p><strong>Review + create</strong> → <strong>Create</strong></p>
+<h3 id="zuweisen">Zuweisen</h3>
+<ol>
+<li>App Service → <strong>Identity</strong> → Tab <strong>User assigned</strong> → <strong>+ Add</strong></li>
+<li>Wähle <code>id-shared-apps</code></li>
+<li><strong>Add</strong></li>
+</ol>
+<p>Jetzt können mehrere App Services dieselbe Identity nutzen – und RBAC-Rollen nur einmal vergeben werden.</p>
+<hr />
+<h2 id="challenge">Challenge</h2>
+<div class="admonition question">
+<p class="admonition-title">Challenge: Managed Identity für Cosmos DB</p>
+<p>Azure Cosmos DB unterstützt ebenfalls Managed Identity (via RBAC auf Datenebene).</p>
+<ol>
+<li>Weise deiner App-Managed Identity die Cosmos DB-Rolle <strong>Cosmos DB Built-in Data Reader</strong> zu</li>
+<li>Schreibe ein Python-Script das mit <code>DefaultAzureCredential</code> auf einen Cosmos DB-Container zugreift und Dokumente liest</li>
+</ol>
+<p>Dokumentation: <a href="https://learn.microsoft.com/de-de/azure/cosmos-db/how-to-setup-rbac">Cosmos DB RBAC</a></p>
+</div>
+<details class="success">
+<summary>Hinweis</summary>
+<p>Cosmos DB RBAC wird anders vergeben als normales Azure RBAC – über den <strong>Data plane</strong>-Bereich:</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-6-1" name="__codelineno-6-1" href="#__codelineno-6-1"></a><span class="c1"># Rolle in Cosmos DB vergeben (CLI)</span>
+<a id="__codelineno-6-2" name="__codelineno-6-2" href="#__codelineno-6-2"></a>az<span class="w"> </span>cosmosdb<span class="w"> </span>sql<span class="w"> </span>role<span class="w"> </span>assignment<span class="w"> </span>create<span class="w"> </span><span class="se">\</span>
+<a id="__codelineno-6-3" name="__codelineno-6-3" href="#__codelineno-6-3"></a><span class="w">  </span>--account-name<span class="w"> </span>cosmos-aztraining-XXXX<span class="w"> </span><span class="se">\</span>
+<a id="__codelineno-6-4" name="__codelineno-6-4" href="#__codelineno-6-4"></a><span class="w">  </span>--resource-group<span class="w"> </span>rg-datenbanken<span class="w"> </span><span class="se">\</span>
+<a id="__codelineno-6-5" name="__codelineno-6-5" href="#__codelineno-6-5"></a><span class="w">  </span>--role-definition-name<span class="w"> </span><span class="s2">&quot;Cosmos DB Built-in Data Reader&quot;</span><span class="w"> </span><span class="se">\</span>
+<a id="__codelineno-6-6" name="__codelineno-6-6" href="#__codelineno-6-6"></a><span class="w">  </span>--principal-id<span class="w"> </span>&lt;Object-ID<span class="w"> </span>deiner<span class="w"> </span>Managed<span class="w"> </span>Identity&gt;<span class="w"> </span><span class="se">\</span>
+<a id="__codelineno-6-7" name="__codelineno-6-7" href="#__codelineno-6-7"></a><span class="w">  </span>--scope<span class="w"> </span><span class="s2">&quot;/&quot;</span>
+</code></pre></div>
+<p>Im Python-Code:
+<div class="highlight"><pre><span></span><code><a id="__codelineno-7-1" name="__codelineno-7-1" href="#__codelineno-7-1"></a><span class="kn">from</span><span class="w"> </span><span class="nn">azure.identity</span><span class="w"> </span><span class="kn">import</span> <span class="n">DefaultAzureCredential</span>
+<a id="__codelineno-7-2" name="__codelineno-7-2" href="#__codelineno-7-2"></a><span class="kn">from</span><span class="w"> </span><span class="nn">azure.cosmos</span><span class="w"> </span><span class="kn">import</span> <span class="n">CosmosClient</span>
+<a id="__codelineno-7-3" name="__codelineno-7-3" href="#__codelineno-7-3"></a>
+<a id="__codelineno-7-4" name="__codelineno-7-4" href="#__codelineno-7-4"></a><span class="n">credential</span> <span class="o">=</span> <span class="n">DefaultAzureCredential</span><span class="p">()</span>
+<a id="__codelineno-7-5" name="__codelineno-7-5" href="#__codelineno-7-5"></a><span class="n">client</span> <span class="o">=</span> <span class="n">CosmosClient</span><span class="p">(</span>
+<a id="__codelineno-7-6" name="__codelineno-7-6" href="#__codelineno-7-6"></a>    <span class="n">url</span><span class="o">=</span><span class="s2">&quot;https://cosmos-aztraining-XXXX.documents.azure.com:443/&quot;</span><span class="p">,</span>
+<a id="__codelineno-7-7" name="__codelineno-7-7" href="#__codelineno-7-7"></a>    <span class="n">credential</span><span class="o">=</span><span class="n">credential</span>  <span class="c1"># kein Key mehr!</span>
+<a id="__codelineno-7-8" name="__codelineno-7-8" href="#__codelineno-7-8"></a><span class="p">)</span>
+</code></pre></div></p>
+</details>
+<hr />
+<p>Weiter zu <a href="../modul-23-rbac/">Modul 23 – Azure RBAC vertieft: Eigene Rollen und Scopes</a> →</p>
 
 
 
@@ -1835,7 +2171,7 @@ Cosmos DB Serverless → 0 € wenn nicht genutzt.</p>
       <nav class="md-footer__inner md-grid" aria-label="Fußzeile" >
         
           
-          <a href="../modul-19-app-datenbank/" class="md-footer__link md-footer__link--prev" aria-label="Zurück: Modul 19 – App + Datenbank">
+          <a href="../modul-21-entra/" class="md-footer__link md-footer__link--prev" aria-label="Zurück: Modul 21 – Microsoft Entra ID">
             <div class="md-footer__button md-icon">
               
               <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
@@ -1845,20 +2181,20 @@ Cosmos DB Serverless → 0 € wenn nicht genutzt.</p>
                 Zurück
               </span>
               <div class="md-ellipsis">
-                Modul 19 – App + Datenbank
+                Modul 21 – Microsoft Entra ID
               </div>
             </div>
           </a>
         
         
           
-          <a href="../modul-21-entra/" class="md-footer__link md-footer__link--next" aria-label="Weiter: Modul 21 – Microsoft Entra ID">
+          <a href="../modul-23-rbac/" class="md-footer__link md-footer__link--next" aria-label="Weiter: Modul 23 – RBAC vertieft">
             <div class="md-footer__title">
               <span class="md-footer__direction">
                 Weiter
               </span>
               <div class="md-ellipsis">
-                Modul 21 – Microsoft Entra ID
+                Modul 23 – RBAC vertieft
               </div>
             </div>
             <div class="md-footer__button md-icon">

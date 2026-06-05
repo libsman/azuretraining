@@ -10,13 +10,13 @@
       
       
       
-        <link rel="canonical" href="https://libsman.github.io/azuretraining/modul-20-aufr%C3%A4umen/">
+        <link rel="canonical" href="https://libsman.github.io/azuretraining/modul-24-conditional-access/">
       
       
-        <link rel="prev" href="../modul-19-app-datenbank/">
+        <link rel="prev" href="../modul-23-rbac/">
       
       
-        <link rel="next" href="../modul-21-entra/">
+        <link rel="next" href="../modul-25-aufr%C3%A4umen/">
       
       
         
@@ -27,7 +27,7 @@
     
     
       
-        <title>Modul 20 – Aufräumen - Azure Einstiegstraining</title>
+        <title>Modul 24 – Conditional Access - Azure Einstiegstraining</title>
       
     
     
@@ -78,7 +78,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#modul-20-aufraumen-lernpfad-3-abschlieen" class="md-skip">
+        <a href="#modul-24-conditional-access-bedingter-zugriff-und-mfa" class="md-skip">
           Zum Inhalt
         </a>
       
@@ -114,7 +114,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Modul 20 – Aufräumen
+              Modul 24 – Conditional Access
             
           </span>
         </div>
@@ -841,20 +841,18 @@
       
   
   
-    
   
   
-  
     
     
     
     
     
-    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5" checked>
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5" >
         
           
           <label class="md-nav__link" for="__nav_5" id="__nav_5_label" tabindex="0">
@@ -875,7 +873,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_5_label" aria-expanded="true">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_5_label" aria-expanded="false">
           <label class="md-nav__title" for="__nav_5">
             <span class="md-nav__icon md-icon"></span>
             
@@ -1030,37 +1028,10 @@
                 
   
   
-    
   
   
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
-      
-      
-        
-      
-      
-        <label class="md-nav__link md-nav__link--active" for="__toc">
-          
-  
-  
-  <span class="md-ellipsis">
-    
-  
-    Modul 20 – Aufräumen
-  
-
-    
-  </span>
-  
-  
-
-          <span class="md-nav__icon md-icon"></span>
-        </label>
-      
-      <a href="./" class="md-nav__link md-nav__link--active">
+    <li class="md-nav__item">
+      <a href="../modul-20-aufr%C3%A4umen/" class="md-nav__link">
         
   
   
@@ -1076,148 +1047,6 @@
   
 
       </a>
-      
-        
-
-<nav class="md-nav md-nav--secondary" aria-label="Inhaltsverzeichnis">
-  
-  
-  
-    
-  
-  
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      Inhaltsverzeichnis
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#was-du-in-lernpfad-3-gebaut-hast" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Was du in Lernpfad 3 gebaut hast
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#lernpfad-3-abschlieen-resource-group-loschen" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Lernpfad 3 abschließen: Resource Group löschen
-      
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="Lernpfad 3 abschließen: Resource Group löschen">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#option-a-resource-group-komplett-loschen-empfohlen" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Option A: Resource Group komplett löschen (empfohlen)
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#option-b-einzelne-ressourcen-stoppen" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Option B: Einzelne Ressourcen stoppen
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#option-c-nur-postgresql-und-redis-loschen" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Option C: Nur PostgreSQL und Redis löschen
-      
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#loschung-bestatigen" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Löschung bestätigen
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#was-du-in-lernpfad-3-gelernt-hast" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Was du in Lernpfad 3 gelernt hast
-      
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="Was du in Lernpfad 3 gelernt hast">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#konzepte-die-du-jetzt-kennst" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Konzepte die du jetzt kennst
-      
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#vergleich-welche-datenbank-fur-welchen-anwendungsfall" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Vergleich: Welche Datenbank für welchen Anwendungsfall?
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#lernpfad-3-checkliste" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Lernpfad 3 – Checkliste
-      
-    </span>
-  </a>
-  
-</li>
-      
-    </ul>
-  
-</nav>
-      
     </li>
   
 
@@ -1234,18 +1063,20 @@
       
   
   
+    
   
   
+  
     
     
     
     
     
-    <li class="md-nav__item md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_6" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_6" checked>
         
           
           <label class="md-nav__link" for="__nav_6" id="__nav_6_label" tabindex="0">
@@ -1266,7 +1097,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_6_label" aria-expanded="false">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_6_label" aria-expanded="true">
           <label class="md-nav__title" for="__nav_6">
             <span class="md-nav__icon md-icon"></span>
             
@@ -1365,10 +1196,37 @@
                 
   
   
+    
   
   
-    <li class="md-nav__item">
-      <a href="../modul-24-conditional-access/" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Modul 24 – Conditional Access
+  
+
+    
+  </span>
+  
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
         
   
   
@@ -1384,6 +1242,215 @@
   
 
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Inhaltsverzeichnis">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Inhaltsverzeichnis
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#lernziele" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Lernziele
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#hintergrund-zero-trust-never-trust-always-verify" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Hintergrund: Zero Trust – "Never Trust, Always Verify"
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#was-ist-conditional-access" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Was ist Conditional Access?
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#security-defaults-mindestschutz-ohne-p1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Security Defaults: Mindestschutz ohne P1
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Security Defaults: Mindestschutz ohne P1">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#security-defaults-prufen" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Security Defaults prüfen
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#mfa-fur-benutzer-konfigurieren" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        MFA für Benutzer konfigurieren
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="MFA für Benutzer konfigurieren">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#per-user-mfa-legacy-methode-fur-kleine-tenants" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Per-User MFA (Legacy-Methode, für kleine Tenants)
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#erste-conditional-access-policy-report-only" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Erste Conditional Access-Policy (Report-only)
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Erste Conditional Access-Policy (Report-only)">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#schritt-1-policy-bereich-offnen" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Schritt 1: Policy-Bereich öffnen
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#schritt-2-neue-policy-erstellen" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Schritt 2: Neue Policy erstellen
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#schritt-3-ergebnis-analysieren" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Schritt 3: Ergebnis analysieren
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#named-locations-trusted-ips-definieren" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Named Locations: Trusted IPs definieren
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Named Locations: Trusted IPs definieren">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#unternehmens-ip-als-vertrauenswurdig-markieren" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Unternehmens-IP als vertrauenswürdig markieren
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#sign-in-risk-ki-basierter-schutz" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Sign-in Risk: KI-basierter Schutz
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#challenge" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Challenge
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
     </li>
   
 
@@ -1451,10 +1518,10 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#was-du-in-lernpfad-3-gebaut-hast" class="md-nav__link">
+  <a href="#lernziele" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Was du in Lernpfad 3 gebaut hast
+        Lernziele
       
     </span>
   </a>
@@ -1462,44 +1529,44 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#lernpfad-3-abschlieen-resource-group-loschen" class="md-nav__link">
+  <a href="#hintergrund-zero-trust-never-trust-always-verify" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Lernpfad 3 abschließen: Resource Group löschen
+        Hintergrund: Zero Trust – "Never Trust, Always Verify"
       
     </span>
   </a>
   
-    <nav class="md-nav" aria-label="Lernpfad 3 abschließen: Resource Group löschen">
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#was-ist-conditional-access" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Was ist Conditional Access?
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#security-defaults-mindestschutz-ohne-p1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Security Defaults: Mindestschutz ohne P1
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Security Defaults: Mindestschutz ohne P1">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#option-a-resource-group-komplett-loschen-empfohlen" class="md-nav__link">
+  <a href="#security-defaults-prufen" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Option A: Resource Group komplett löschen (empfohlen)
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#option-b-einzelne-ressourcen-stoppen" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Option B: Einzelne Ressourcen stoppen
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#option-c-nur-postgresql-und-redis-loschen" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Option C: Nur PostgreSQL und Redis löschen
+        Security Defaults prüfen
       
     </span>
   </a>
@@ -1512,33 +1579,22 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#loschung-bestatigen" class="md-nav__link">
+  <a href="#mfa-fur-benutzer-konfigurieren" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Löschung bestätigen
+        MFA für Benutzer konfigurieren
       
     </span>
   </a>
   
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#was-du-in-lernpfad-3-gelernt-hast" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Was du in Lernpfad 3 gelernt hast
-      
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="Was du in Lernpfad 3 gelernt hast">
+    <nav class="md-nav" aria-label="MFA für Benutzer konfigurieren">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#konzepte-die-du-jetzt-kennst" class="md-nav__link">
+  <a href="#per-user-mfa-legacy-methode-fur-kleine-tenants" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Konzepte die du jetzt kennst
+        Per-User MFA (Legacy-Methode, für kleine Tenants)
       
     </span>
   </a>
@@ -1551,10 +1607,88 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#vergleich-welche-datenbank-fur-welchen-anwendungsfall" class="md-nav__link">
+  <a href="#erste-conditional-access-policy-report-only" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Vergleich: Welche Datenbank für welchen Anwendungsfall?
+        Erste Conditional Access-Policy (Report-only)
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Erste Conditional Access-Policy (Report-only)">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#schritt-1-policy-bereich-offnen" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Schritt 1: Policy-Bereich öffnen
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#schritt-2-neue-policy-erstellen" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Schritt 2: Neue Policy erstellen
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#schritt-3-ergebnis-analysieren" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Schritt 3: Ergebnis analysieren
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#named-locations-trusted-ips-definieren" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Named Locations: Trusted IPs definieren
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Named Locations: Trusted IPs definieren">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#unternehmens-ip-als-vertrauenswurdig-markieren" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Unternehmens-IP als vertrauenswürdig markieren
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#sign-in-risk-ki-basierter-schutz" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Sign-in Risk: KI-basierter Schutz
       
     </span>
   </a>
@@ -1562,10 +1696,10 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#lernpfad-3-checkliste" class="md-nav__link">
+  <a href="#challenge" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Lernpfad 3 – Checkliste
+        Challenge
       
     </span>
   </a>
@@ -1592,212 +1726,231 @@
   
 
 
-<h1 id="modul-20-aufraumen-lernpfad-3-abschlieen">Modul 20 – Aufräumen: Lernpfad 3 abschließen</h1>
-<h2 id="was-du-in-lernpfad-3-gebaut-hast">Was du in Lernpfad 3 gebaut hast</h2>
-<table>
-<thead>
-<tr>
-<th>Ressource</th>
-<th>Typ</th>
-<th>Modul</th>
-<th>Kosten/Monat</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td><code>rg-datenbanken</code></td>
-<td>Resource Group</td>
-<td>alle</td>
-<td>kostenlos</td>
-</tr>
-<tr>
-<td><code>sql-aztraining-XXXX</code></td>
-<td>Azure SQL Server (logisch)</td>
-<td>15</td>
-<td>kostenlos</td>
-</tr>
-<tr>
-<td><code>db-aztraining</code></td>
-<td>Azure SQL Database (Serverless)</td>
-<td>15</td>
-<td>~0–3 €</td>
-</tr>
-<tr>
-<td><code>cosmos-aztraining-XXXX</code></td>
-<td>Azure Cosmos DB (Serverless)</td>
-<td>16</td>
-<td>~0–1 €</td>
-</tr>
-<tr>
-<td><code>psql-aztraining-XXXX</code></td>
-<td>PostgreSQL Flexible Server</td>
-<td>17</td>
-<td>~10 €/Monat</td>
-</tr>
-<tr>
-<td><code>redis-aztraining-XXXX</code></td>
-<td>Azure Cache for Redis (C0 Basic)</td>
-<td>18</td>
-<td>~14 €/Monat</td>
-</tr>
-</tbody>
-</table>
-<div class="admonition warning">
-<p class="admonition-title">Wichtig: Kosten stoppen</p>
-<p><strong>PostgreSQL Flexible Server</strong> (~10 €/Monat) und <strong>Redis C0</strong> (~14 €/Monat) laufen kontinuierlich. Wenn du nicht weitermachst, lösche die Resource Group oder stoppe die Dienste.</p>
-<p>Azure SQL Serverless pausiert automatisch nach Inaktivität → 0 € wenn nicht genutzt.<br />
-Cosmos DB Serverless → 0 € wenn nicht genutzt.</p>
-</div>
+<h1 id="modul-24-conditional-access-bedingter-zugriff-und-mfa">Modul 24 – Conditional Access: Bedingter Zugriff und MFA</h1>
+<h2 id="lernziele">Lernziele</h2>
+<p>Nach diesem Modul kannst du:</p>
+<ul>
+<li>Das Konzept von Conditional Access (Zero Trust) erklären</li>
+<li>Den Unterschied zwischen MFA-erzwingen und Conditional Access beschreiben</li>
+<li>Eine einfache Conditional Access-Policy im Portal erstellen und analysieren</li>
+<li>Security Defaults als Mindestschutz für Tenants erklären</li>
+<li>Named Locations und Sign-in Risk als Policy-Bedingungen beschreiben</li>
+</ul>
 <hr />
-<h2 id="lernpfad-3-abschlieen-resource-group-loschen">Lernpfad 3 abschließen: Resource Group löschen</h2>
-<h3 id="option-a-resource-group-komplett-loschen-empfohlen">Option A: Resource Group komplett löschen (empfohlen)</h3>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a>az<span class="w"> </span>group<span class="w"> </span>delete<span class="w"> </span>--name<span class="w"> </span>rg-datenbanken<span class="w"> </span>--yes<span class="w"> </span>--no-wait
-</code></pre></div>
-<p>Das löscht alle Ressourcen in <code>rg-datenbanken</code> asynchron. Dauert 5–15 Minuten.</p>
-<h3 id="option-b-einzelne-ressourcen-stoppen">Option B: Einzelne Ressourcen stoppen</h3>
-<p>Wenn du die Ressourcen behalten willst aber Kosten sparen möchtest:</p>
-<p><strong>PostgreSQL Flexible Server stoppen:</strong></p>
+<h2 id="hintergrund-zero-trust-never-trust-always-verify">Hintergrund: Zero Trust – "Never Trust, Always Verify"</h2>
+<p><strong>On-Prem-Vergleich:</strong> Im klassischen Sicherheitsmodell war das Unternehmensnetzwerk ein "sicheres Inneres" (Büro, VPN) und das Internet "gefährlich außen". Wer im Büronetz war, durfte auf Ressourcen zugreifen. <strong>Zero Trust</strong> dreht das um: Jeder Zugriff wird geprüft – egal ob aus dem Büro, aus dem Homeoffice oder vom Mobilgerät.</p>
+<p>Microsoft beschreibt Zero Trust mit drei Prinzipien:</p>
 <ol>
-<li><code>psql-aztraining-XXXX</code> → <strong>Overview</strong> → <strong>Stop</strong> oben in der Menüleiste</li>
-<li>Gestoppter Server: 0 € für Compute, aber Storage (~2 €/Monat) läuft weiter</li>
-<li>Azure stoppt den Server nach 7 Tagen automatisch-restart – dann manuell wieder stoppen</li>
+<li><strong>Verify explicitly</strong> – Immer authentifizieren und autorisieren, alle verfügbaren Datenpunkte nutzen</li>
+<li><strong>Use least privilege access</strong> – Nur minimale Rechte, Just-in-Time-Zugriff</li>
+<li><strong>Assume breach</strong> – Immer davon ausgehen, dass Angreifer schon im Netz sind → Segmentierung, Monitoring</li>
 </ol>
-<p><strong>Redis löschen (kein "Stop"):</strong></p>
-<p>Redis Cache hat keine Stop-Funktion. Entweder komplett löschen oder weiterlaufen lassen.</p>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a>az<span class="w"> </span>redis<span class="w"> </span>delete<span class="w"> </span>--name<span class="w"> </span>redis-aztraining-XXXX<span class="w"> </span>--resource-group<span class="w"> </span>rg-datenbanken<span class="w"> </span>--yes
-</code></pre></div>
-<h3 id="option-c-nur-postgresql-und-redis-loschen">Option C: Nur PostgreSQL und Redis löschen</h3>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a><span class="c1"># PostgreSQL löschen</span>
-<a id="__codelineno-2-2" name="__codelineno-2-2" href="#__codelineno-2-2"></a>az<span class="w"> </span>postgres<span class="w"> </span>flexible-server<span class="w"> </span>delete<span class="w"> </span><span class="se">\</span>
-<a id="__codelineno-2-3" name="__codelineno-2-3" href="#__codelineno-2-3"></a><span class="w">  </span>--name<span class="w"> </span>psql-aztraining-XXXX<span class="w"> </span><span class="se">\</span>
-<a id="__codelineno-2-4" name="__codelineno-2-4" href="#__codelineno-2-4"></a><span class="w">  </span>--resource-group<span class="w"> </span>rg-datenbanken<span class="w"> </span><span class="se">\</span>
-<a id="__codelineno-2-5" name="__codelineno-2-5" href="#__codelineno-2-5"></a><span class="w">  </span>--yes
-<a id="__codelineno-2-6" name="__codelineno-2-6" href="#__codelineno-2-6"></a>
-<a id="__codelineno-2-7" name="__codelineno-2-7" href="#__codelineno-2-7"></a><span class="c1"># Redis löschen</span>
-<a id="__codelineno-2-8" name="__codelineno-2-8" href="#__codelineno-2-8"></a>az<span class="w"> </span>redis<span class="w"> </span>delete<span class="w"> </span><span class="se">\</span>
-<a id="__codelineno-2-9" name="__codelineno-2-9" href="#__codelineno-2-9"></a><span class="w">  </span>--name<span class="w"> </span>redis-aztraining-XXXX<span class="w"> </span><span class="se">\</span>
-<a id="__codelineno-2-10" name="__codelineno-2-10" href="#__codelineno-2-10"></a><span class="w">  </span>--resource-group<span class="w"> </span>rg-datenbanken<span class="w"> </span><span class="se">\</span>
-<a id="__codelineno-2-11" name="__codelineno-2-11" href="#__codelineno-2-11"></a><span class="w">  </span>--yes
-</code></pre></div>
-<p>SQL und Cosmos DB (Serverless) können bleiben – kosten nichts wenn inaktiv.</p>
+<p><strong>Conditional Access</strong> ist das technische Werkzeug dafür in Entra ID.</p>
 <hr />
-<h2 id="loschung-bestatigen">Löschung bestätigen</h2>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a><span class="c1"># Verbleibende Ressourcen prüfen</span>
-<a id="__codelineno-3-2" name="__codelineno-3-2" href="#__codelineno-3-2"></a>az<span class="w"> </span>resource<span class="w"> </span>list<span class="w"> </span>--resource-group<span class="w"> </span>rg-datenbanken<span class="w"> </span>--output<span class="w"> </span>table
-</code></pre></div>
-<p>Falls die Resource Group komplett gelöscht ist:</p>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-4-1" name="__codelineno-4-1" href="#__codelineno-4-1"></a>az<span class="w"> </span>group<span class="w"> </span>list<span class="w"> </span>--output<span class="w"> </span>table<span class="w"> </span><span class="p">|</span><span class="w"> </span>findstr<span class="w"> </span>datenbanken
-<a id="__codelineno-4-2" name="__codelineno-4-2" href="#__codelineno-4-2"></a><span class="c1"># Keine Ausgabe = Resource Group ist weg</span>
-</code></pre></div>
-<hr />
-<h2 id="was-du-in-lernpfad-3-gelernt-hast">Was du in Lernpfad 3 gelernt hast</h2>
+<h2 id="was-ist-conditional-access">Was ist Conditional Access?</h2>
+<p>Conditional Access ist ein <strong>Policy-Engine</strong>: "Wenn Bedingung X zutrifft, dann Anforderung Y."</p>
+<p><strong>Bedingungen (Conditions):</strong></p>
 <table>
 <thead>
 <tr>
-<th>Modul</th>
-<th>Thema</th>
-<th>Schlüsselkonzept</th>
+<th>Signal</th>
+<th>Beispiel</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td>15 – Azure SQL</td>
-<td>Managed relationale DB</td>
-<td>Serverless, Free Tier, Query Editor, pyodbc</td>
+<td>Benutzer / Gruppe</td>
+<td>Nur für Admins</td>
 </tr>
 <tr>
-<td>16 – Cosmos DB</td>
-<td>NoSQL Dokumentendb</td>
-<td>Partition Key, Serverless RU/s, Change Feed</td>
+<td>Anwendung</td>
+<td>Nur beim Zugriff auf Azure Portal</td>
 </tr>
 <tr>
-<td>17 – PostgreSQL</td>
-<td>Open-Source DB als Service</td>
-<td>Flexible Server, psql, Schemas, Trigger</td>
+<td>Standort</td>
+<td>Nur aus Deutschland</td>
 </tr>
 <tr>
-<td>18 – Redis Cache</td>
-<td>In-Memory Key-Value Store</td>
-<td>Cache-Aside, TTL, Rate Limiting, Session Store</td>
+<td>Gerätezustand</td>
+<td>Nur Intune-verwaltete Geräte</td>
 </tr>
 <tr>
-<td>19 – App + DB</td>
-<td>Sichere Verbindung</td>
-<td>Managed Identity, Key Vault Reference, Health Check</td>
+<td>Sign-in Risk</td>
+<td>Wenn Login-Risikolevel "High"</td>
+</tr>
+<tr>
+<td>Client App</td>
+<td>Nur moderne Auth-Clients</td>
 </tr>
 </tbody>
 </table>
-<h3 id="konzepte-die-du-jetzt-kennst">Konzepte die du jetzt kennst</h3>
-<p><strong>Datenbankentscheidungen:</strong></p>
+<p><strong>Aktionen (Grant/Block):</strong></p>
 <ul>
-<li>✅ Du weißt wann SQL (strukturierte Daten, ACID) vs. NoSQL (flexibles Schema, horizontale Skalierung) sinnvoll ist</li>
-<li>✅ Du kennst drei Azure DB-Dienste: SQL Database, Cosmos DB, PostgreSQL</li>
-<li>✅ Du verstehst Managed Service Vorteile: kein Patching, automatische Backups, integriertes HA</li>
+<li>Zugriff blockieren</li>
+<li>Zugriff erlauben wenn MFA bestanden</li>
+<li>Zugriff erlauben wenn Gerät compliant</li>
+<li>Zugriff erlauben wenn Terms of Use akzeptiert</li>
 </ul>
-<p><strong>Sicherheit:</strong></p>
-<ul>
-<li>✅ Kein Passwort im Code – Managed Identity + Key Vault References</li>
-<li>✅ Firewall-Regeln für Datenbankzugriff</li>
-<li>✅ SSL/TLS für alle Datenbankverbindungen</li>
-</ul>
-<p><strong>Performance:</strong></p>
-<ul>
-<li>✅ Cache-Aside Pattern mit Redis</li>
-<li>✅ Serverless-Tarife für unregelmäßige Last (SQL Serverless, Cosmos DB Serverless)</li>
-</ul>
-<hr />
-<h2 id="vergleich-welche-datenbank-fur-welchen-anwendungsfall">Vergleich: Welche Datenbank für welchen Anwendungsfall?</h2>
-<table>
-<thead>
-<tr>
-<th>Anwendungsfall</th>
-<th>Empfehlung</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>.NET-App mit fixem Schema, Transaktionen</td>
-<td>Azure SQL Database</td>
-</tr>
-<tr>
-<td>Migration von SQL Server on-premises</td>
-<td>SQL Managed Instance</td>
-</tr>
-<tr>
-<td>Produktkatalog mit variablen Attributen</td>
-<td>Cosmos DB (NoSQL)</td>
-</tr>
-<tr>
-<td>Open-Source-Stack, PostgreSQL-Erweiterungen</td>
-<td>Azure DB for PostgreSQL</td>
-</tr>
-<tr>
-<td>Session-Daten, API-Caching, Rate Limiting</td>
-<td>Azure Cache for Redis</td>
-</tr>
-<tr>
-<td>Kombination aus DB + Cache</td>
-<td>PostgreSQL/SQL + Redis</td>
-</tr>
-</tbody>
-</table>
-<hr />
-<h2 id="lernpfad-3-checkliste">Lernpfad 3 – Checkliste</h2>
-<p>Bevor du weitermachst, stelle sicher dass du folgende Dinge kannst:</p>
-<ul>
-<li>[ ] Azure SQL Database (Serverless) erstellen und Query Editor nutzen</li>
-<li>[ ] Cosmos DB-Container mit sinnvollem Partition Key anlegen</li>
-<li>[ ] PostgreSQL Flexible Server mit psql verbinden und Schemas anlegen</li>
-<li>[ ] Redis HSET/GET/TTL in der Console ausführen</li>
-<li>[ ] Cache-Aside Pattern erklären und implementieren</li>
-<li>[ ] Verbindungsstring sicher in Key Vault speichern und per App Setting referenzieren</li>
-</ul>
-<hr />
-<p>Weiter zu <a href="../modul-21-entra/">Lernpfad 4 – Identity &amp; Access Management</a> →</p>
 <div class="admonition info">
-<p class="admonition-title">Lernpfad 4 – Identity &amp; Access</p>
-<p>In Lernpfad 4 geht es um Microsoft Entra ID (ehemals Azure AD), Managed Identities, RBAC und Conditional Access – also wie du steuert <em>wer</em> auf <em>was</em> in Azure zugreifen darf.</p>
+<p class="admonition-title">Entra ID P1 benötigt</p>
+<p>Conditional Access-Richtlinien benötigen <strong>Microsoft Entra ID P1</strong> (oder P2). In vielen Microsoft 365 Business Premium / E3-Lizenzen ist P1 enthalten. Mit einem reinen Azure Free Account steht nur die grundlegende Version zur Verfügung.</p>
+<p>Für dieses Modul: schaue dir die Oberfläche an und erstelle eine Richtlinie im <strong>Report-only</strong>-Modus (kein Einfluss auf echte Logins).</p>
 </div>
+<hr />
+<h2 id="security-defaults-mindestschutz-ohne-p1">Security Defaults: Mindestschutz ohne P1</h2>
+<p>Falls kein P1 vorhanden ist, bietet Microsoft <strong>Security Defaults</strong> – ein vordefiniertes Sicherheitspaket:</p>
+<ul>
+<li>MFA für alle Admins erzwingen</li>
+<li>MFA für alle Benutzer registrieren</li>
+<li>Ältere Authentifizierungsprotokolle (Legacy Auth) blockieren</li>
+<li>Privilegierte Aktionen immer mit MFA schützen</li>
+</ul>
+<h3 id="security-defaults-prufen">Security Defaults prüfen</h3>
+<ol>
+<li><strong>Microsoft Entra ID</strong> → <strong>Properties</strong> (ganz unten im linken Menü)</li>
+<li>Scrolle nach unten: <strong>Manage Security defaults</strong></li>
+<li>Du siehst ob Security Defaults aktiviert oder deaktiviert sind</li>
+</ol>
+<div class="admonition warning">
+<p class="admonition-title">Security Defaults vs. Conditional Access</p>
+<p>Beides gleichzeitig zu aktivieren ist nicht möglich (bzw. führt zu Konflikten). Wenn du Conditional Access nutzt, deaktivierst du Security Defaults – dafür musst du aber eigene Richtlinien erstellen die denselben Schutz bieten.</p>
+</div>
+<hr />
+<h2 id="mfa-fur-benutzer-konfigurieren">MFA für Benutzer konfigurieren</h2>
+<h3 id="per-user-mfa-legacy-methode-fur-kleine-tenants">Per-User MFA (Legacy-Methode, für kleine Tenants)</h3>
+<ol>
+<li><strong>Microsoft Entra ID</strong> → <strong>Users</strong> → <strong>All users</strong></li>
+<li>Klicke oben auf <strong>Per-user MFA</strong> (Link erscheint im oberen Bereich)</li>
+<li>Du siehst die MFA-Status aller Benutzer: Disabled / Enabled / Enforced</li>
+<li>Wähle einen Benutzer → klicke rechts auf <strong>Enable</strong></li>
+</ol>
+<p>Der Benutzer wird beim nächsten Login aufgefordert MFA einzurichten (Authenticator App, SMS oder Anruf).</p>
+<div class="admonition info">
+<p class="admonition-title">Per-user MFA vs. Conditional Access MFA</p>
+<ul>
+<li><strong>Per-user MFA</strong>: einfach, aber unflexibel – MFA immer, egal von wo oder womit</li>
+<li><strong>Conditional Access MFA</strong>: flexibel – MFA nur unter bestimmten Bedingungen (z.B. nicht im Firmennetz)</li>
+</ul>
+<p>Für neue Deployments: Conditional Access bevorzugen.</p>
+</div>
+<hr />
+<h2 id="erste-conditional-access-policy-report-only">Erste Conditional Access-Policy (Report-only)</h2>
+<h3 id="schritt-1-policy-bereich-offnen">Schritt 1: Policy-Bereich öffnen</h3>
+<ol>
+<li><strong>Microsoft Entra ID</strong> → <strong>Protection</strong> → <strong>Conditional Access</strong></li>
+<li>Tab <strong>Policies</strong></li>
+</ol>
+<p>Du siehst eine Liste der vorhandenen Policies (meist leer in Test-Tenants).</p>
+<h3 id="schritt-2-neue-policy-erstellen">Schritt 2: Neue Policy erstellen</h3>
+<p>Klicke <strong>+ New policy</strong>. Gib der Policy einen Namen: <code>MFA für Azure Portal (Report-only)</code></p>
+<p><strong>Assignments – Users:</strong>
+- Klicke auf <strong>Users</strong> → <strong>Include</strong> → <strong>Select users and groups</strong>
+- Wähle deinen Testbenutzer <code>testuser@...</code> (nicht deinen eigenen Admin-Account – Gefahr der Aussperrung!)</p>
+<p><strong>Assignments – Target resources:</strong>
+- Klicke auf <strong>Target resources</strong> → <strong>Include</strong> → <strong>Select resources</strong>
+- Suche nach <strong><code>Microsoft Azure Management</code></strong> und wähle es aus</p>
+<p>Dies umfasst: Azure Portal, Azure CLI, Azure PowerShell, ARM-API.</p>
+<p><strong>Access controls – Grant:</strong>
+- Klicke auf <strong>Grant</strong>
+- Wähle <strong>Require multifactor authentication</strong>
+- Klicke <strong>Select</strong></p>
+<p><strong>Enable policy:</strong>
+- Stelle sicher: <strong>Report-only</strong> (nicht "On"!)
+- Klicke <strong>Create</strong></p>
+<div class="admonition warning">
+<p class="admonition-title">Report-only ist sicher</p>
+<p>Im <strong>Report-only</strong>-Modus wird die Policy ausgewertet aber nicht durchgesetzt. Du siehst im Sign-in Log was passiert wäre – ohne echte Auswirkungen. Das ist ideal zum Testen.</p>
+</div>
+<h3 id="schritt-3-ergebnis-analysieren">Schritt 3: Ergebnis analysieren</h3>
+<p>Nachdem sich jemand einloggt, kannst du unter <strong>Sign-in logs</strong> sehen was die Policy ausgewertet hat:</p>
+<ol>
+<li><strong>Microsoft Entra ID</strong> → <strong>Monitoring</strong> → <strong>Sign-in logs</strong></li>
+<li>Klicke auf einen Login-Eintrag</li>
+<li>Tab <strong>Conditional Access</strong> – du siehst welche Policies ausgewertet wurden und was das Ergebnis wäre</li>
+</ol>
+<hr />
+<h2 id="named-locations-trusted-ips-definieren">Named Locations: Trusted IPs definieren</h2>
+<p>Conditional Access kann auf Basis des Standorts (IP-Adresse oder GPS-Koordinate) entscheiden.</p>
+<h3 id="unternehmens-ip-als-vertrauenswurdig-markieren">Unternehmens-IP als vertrauenswürdig markieren</h3>
+<ol>
+<li><strong>Microsoft Entra ID</strong> → <strong>Protection</strong> → <strong>Conditional Access</strong> → <strong>Named locations</strong></li>
+<li><strong>+ IP ranges location</strong></li>
+</ol>
+<table>
+<thead>
+<tr>
+<th>Feld</th>
+<th>Wert</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Name</td>
+<td><code>Büro Berlin</code></td>
+</tr>
+<tr>
+<td>Mark as trusted location</td>
+<td>✅</td>
+</tr>
+<tr>
+<td>IP ranges</td>
+<td>deine externe IP-Adresse (CIDR, z.B. <code>203.0.113.0/24</code>)</td>
+</tr>
+</tbody>
+</table>
+<p>Jetzt kannst du in einer Conditional Access-Policy sagen: MFA erzwingen, AUSSER wenn der Login von der vertrauenswürdigen Location kommt.</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a>WENN:  Benutzer: Alle
+<a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a>       App: Azure Portal
+<a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a>       Standort: NOT &quot;Büro Berlin&quot;
+<a id="__codelineno-0-4" name="__codelineno-0-4" href="#__codelineno-0-4"></a>DANN:  MFA erzwingen
+</code></pre></div>
+<hr />
+<h2 id="sign-in-risk-ki-basierter-schutz">Sign-in Risk: KI-basierter Schutz</h2>
+<p>Entra ID <strong>Identity Protection</strong> (benötigt P2) analysiert jeden Login mit Machine Learning:</p>
+<ul>
+<li>Unbekanntes Gerät</li>
+<li>Ungewöhnlicher Standort</li>
+<li>Login aus zwei Ländern in kurzer Zeit ("impossible travel")</li>
+<li>Credentials in geleakten Datensätzen gefunden</li>
+</ul>
+<p>Das Ergebnis ist ein <strong>Risk Level</strong>: Low / Medium / High</p>
+<p>In einer Conditional Access-Policy:
+<div class="highlight"><pre><span></span><code><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a>WENN: Sign-in risk: High
+<a id="__codelineno-1-2" name="__codelineno-1-2" href="#__codelineno-1-2"></a>DANN: Zugriff blockieren
+</code></pre></div></p>
+<p>Oder:
+<div class="highlight"><pre><span></span><code><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a>WENN: User risk: Medium oder höher
+<a id="__codelineno-2-2" name="__codelineno-2-2" href="#__codelineno-2-2"></a>DANN: Passwort-Reset erzwingen
+</code></pre></div></p>
+<div class="admonition info">
+<p class="admonition-title">Identity Protection – Entra ID P2</p>
+<p>Risk-basiertes Conditional Access benötigt Entra ID P2. Mit P1 nur: Block, MFA, compliant device. Mit P2: zusätzlich Risk Level als Bedingung.</p>
+</div>
+<hr />
+<h2 id="challenge">Challenge</h2>
+<div class="admonition question">
+<p class="admonition-title">Challenge: Policy für externe Logins</p>
+<p>Erstelle eine Conditional Access-Policy (Report-only) mit folgender Logik:</p>
+<ul>
+<li><strong>Gilt für</strong>: Alle Benutzer</li>
+<li><strong>Bedingung</strong>: Login NICHT von einer Named Location "Vertrauenswürdige IPs"</li>
+<li><strong>Aktion</strong>: MFA erzwingen</li>
+</ul>
+<p>Erstelle zuerst eine Named Location mit deiner aktuellen IP (findest du unter <a href="https://ifconfig.me">ifconfig.me</a>). Aktiviere die Policy im Report-only-Modus und analysiere im Sign-in Log ob dein eigener Login die Policy ausgelöst hätte.</p>
+</div>
+<details class="success">
+<summary>Hinweis</summary>
+<ol>
+<li><strong>Named locations</strong> → <strong>+ IP ranges location</strong> → deine IP/32 → Mark as trusted</li>
+<li><strong>New policy</strong> → Users: Alle → Target resources: Azure Management</li>
+<li><strong>Conditions</strong> → <strong>Locations</strong> → Include: Any location / Exclude: deine Named Location</li>
+<li><strong>Grant</strong> → Require MFA</li>
+<li><strong>Report-only</strong> → Create</li>
+</ol>
+<p>Im Sign-in Log siehst du den Status <code>Conditional Access: Report-only: Would not apply</code> (weil du von der trusted IP kommst) oder <code>Would apply</code> (wäre von außen).</p>
+</details>
+<hr />
+<p>Weiter zu <a href="../modul-25-aufr%C3%A4umen/">Modul 25 – Aufräumen Lernpfad 4</a> →</p>
 
 
 
@@ -1835,7 +1988,7 @@ Cosmos DB Serverless → 0 € wenn nicht genutzt.</p>
       <nav class="md-footer__inner md-grid" aria-label="Fußzeile" >
         
           
-          <a href="../modul-19-app-datenbank/" class="md-footer__link md-footer__link--prev" aria-label="Zurück: Modul 19 – App + Datenbank">
+          <a href="../modul-23-rbac/" class="md-footer__link md-footer__link--prev" aria-label="Zurück: Modul 23 – RBAC vertieft">
             <div class="md-footer__button md-icon">
               
               <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
@@ -1845,20 +1998,20 @@ Cosmos DB Serverless → 0 € wenn nicht genutzt.</p>
                 Zurück
               </span>
               <div class="md-ellipsis">
-                Modul 19 – App + Datenbank
+                Modul 23 – RBAC vertieft
               </div>
             </div>
           </a>
         
         
           
-          <a href="../modul-21-entra/" class="md-footer__link md-footer__link--next" aria-label="Weiter: Modul 21 – Microsoft Entra ID">
+          <a href="../modul-25-aufr%C3%A4umen/" class="md-footer__link md-footer__link--next" aria-label="Weiter: Modul 25 – Aufräumen">
             <div class="md-footer__title">
               <span class="md-footer__direction">
                 Weiter
               </span>
               <div class="md-ellipsis">
-                Modul 21 – Microsoft Entra ID
+                Modul 25 – Aufräumen
               </div>
             </div>
             <div class="md-footer__button md-icon">
