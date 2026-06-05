@@ -296,6 +296,7 @@ Azure Functions: Create Function...
 | Frage | Antwort |
 |-------|---------|
 | Template | `Timer trigger` |
+| How would you like to open your project? | `Append to current project` |
 | Function name | `TaeglicheBegruessung` |
 | Cron expression | `0 0 8 * * *` (täglich um 8:00 Uhr UTC) |
 

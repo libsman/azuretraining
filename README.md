@@ -12,7 +12,7 @@ Selbstgeführtes Azure-Training für IT-Profis im Microsoft-Umfeld – Azubis, P
 | LP 2 | 8–14 | Netzwerk & Sicherheit (VNet, NSG, Bastion, Load Balancer, Key Vault) |
 | LP 3 | 15–20 | Datenbanken (SQL, Cosmos DB, PostgreSQL, Redis) |
 | LP 4 | 21–25 | Identity & Access (Entra ID, Managed Identity, RBAC, Conditional Access) |
-| LP 5 | 26–32 | Container (Docker, ACR, ACI, Container Apps, AKS) – geplant |
+| LP 5 | 26–32 | Container (Docker, ACR, ACI, Container Apps, AKS) |
 | LP 6 | 33–39 | DevOps & IaC (Azure DevOps, GitHub Actions, Bicep, Terraform) – geplant |
 | LP 7 | 40–44 | Monitoring & Security (Log Analytics, App Insights, Defender) – geplant |
 | LP 8 | 45–47 | Abschlussprojekte – geplant |
@@ -64,6 +64,18 @@ Selbstgeführtes Azure-Training für IT-Profis im Microsoft-Umfeld – Azubis, P
 | 23 | Azure RBAC vertieft: Custom Roles und Scopes |
 | 24 | Conditional Access: Bedingter Zugriff und MFA |
 | 25 | Aufräumen Lernpfad 4 |
+
+### Lernpfad 5 – Container
+
+| Modul | Thema |
+|-------|-------|
+| 26 | Docker Grundlagen: Images, Container, Dockerfile |
+| 27 | Azure Container Registry: Eigene Images speichern |
+| 28 | Azure Container Instances: Container ohne Server |
+| 29 | Azure Container Apps: Serverless Container mit Autoscaling |
+| 30 | AKS Überblick: Kubernetes-Konzepte und Cluster erstellen |
+| 31 | AKS Workload: Deployen, skalieren, Rolling Updates |
+| 32 | Aufräumen Lernpfad 5 |
 
 ## Lokale Vorschau
 

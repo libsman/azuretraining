@@ -49,6 +49,16 @@ Nach Abschluss von Lernpfad 1 hast du folgendes in Azure selbst gebaut:
 | 🎭 | Eigene RBAC-Rollen und Scope-Hierarchien | Azure RBAC |
 | 🚦 | Bedingten Zugriff mit MFA erzwingen | Conditional Access |
 
+## Was du in Lernpfad 5 lernst
+
+| | Was | Wo |
+|---|---|---|
+| 🐳 | Images bauen und Container lokal starten | Docker |
+| 🗄️ | Eigene Images privat speichern | Azure Container Registry |
+| ⚡ | Container ohne Server in Azure starten | Azure Container Instances |
+| 🚀 | Serverlose Container mit Autoscaling betreiben | Azure Container Apps |
+| ⎈️ | Workloads auf Kubernetes deployen und skalieren | Azure Kubernetes Service |
+
 ---
 
 ## Übersicht der Module
@@ -81,6 +91,13 @@ Nach Abschluss von Lernpfad 1 hast du folgendes in Azure selbst gebaut:
 | [Modul 23](modul-23-rbac.md) | Azure RBAC vertieft: Custom Roles und Scopes | 60 Min |
 | [Modul 24](modul-24-conditional-access.md) | Conditional Access: Bedingter Zugriff und MFA | 45 Min |
 | [Modul 25](modul-25-aufräumen.md) | Aufräumen Lernpfad 4 | 10 Min |
+| [Modul 26](modul-26-docker.md) | Docker Grundlagen: Images, Container, Dockerfile | 75 Min |
+| [Modul 27](modul-27-acr.md) | Azure Container Registry: Eigene Images speichern | 45 Min |
+| [Modul 28](modul-28-aci.md) | Azure Container Instances: Container ohne Server | 45 Min |
+| [Modul 29](modul-29-containerapps.md) | Azure Container Apps: Serverless Container mit Autoscaling | 60 Min |
+| [Modul 30](modul-30-aks-ueberblick.md) | AKS Überblick: Kubernetes-Konzepte und Cluster erstellen | 60 Min |
+| [Modul 31](modul-31-aks-workload.md) | AKS Workload: Deployen, skalieren, Rolling Updates | 75 Min |
+| [Modul 32](modul-32-aufräumen.md) | Aufräumen Lernpfad 5 | 10 Min |
 
 !!! tip "Kein Stress mit der Zeit"
     Die Zeitangaben sind Orientierungshilfen, kein Zwang. Nimm dir so lange wie du brauchst. Wenn du nicht weiterkommst, hilft oft ein Blick in die offizielle [Microsoft Learn Dokumentation](https://learn.microsoft.com/de-de/azure/).

@@ -137,7 +137,7 @@ Bevor du weitermachst:
 
 ---
 
-Weiter zu [Lernpfad 5 – Container: Modul 26 – Docker Grundlagen](modul-26-docker.md) →
+Weiter zu [Modul 26 – Docker Grundlagen](modul-26-docker.md) →
 
 !!! info "Lernpfad 5 – Container"
     In Lernpfad 5 geht es um Container-Technologien: Docker, Azure Container Registry, Azure Container Instances, Container Apps und ein Einstieg in AKS (Kubernetes).

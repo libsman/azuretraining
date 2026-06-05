@@ -86,6 +86,14 @@ nav:
     - Modul 23 – RBAC vertieft: modul-23-rbac.md
     - Modul 24 – Conditional Access: modul-24-conditional-access.md
     - Modul 25 – Aufräumen: modul-25-aufräumen.md
+  - Lernpfad 5 – Container:
+    - Modul 26 – Docker Grundlagen: modul-26-docker.md
+    - Modul 27 – Azure Container Registry: modul-27-acr.md
+    - Modul 28 – Azure Container Instances: modul-28-aci.md
+    - Modul 29 – Container Apps: modul-29-containerapps.md
+    - Modul 30 – AKS Überblick: modul-30-aks-ueberblick.md
+    - Modul 31 – AKS Workload: modul-31-aks-workload.md
+    - Modul 32 – Aufräumen: modul-32-aufräumen.md
 
 extra:
   social:

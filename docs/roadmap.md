@@ -63,17 +63,17 @@ Hier findest du eine Übersicht über alle geplanten Lernpfade und Module des Az
 
 ---
 
-## Lernpfad 5 – Container (Module 26–32) 📋
+## Lernpfad 5 – Container (Module 26–32) ✅
 
 | Modul | Thema |
 |-------|-------|
-| Modul 26 | Docker Grundlagen: Images, Container, Registry |
-| Modul 27 | Azure Container Registry (ACR): Eigene Images speichern |
-| Modul 28 | Azure Container Instances (ACI): Container ohne Kubernetes |
-| Modul 29 | Azure Container Apps: Serverless Container mit Autoscaling |
-| Modul 30 | Azure Kubernetes Service (AKS): Überblick und Konzepte |
-| Modul 31 | AKS: Ersten Workload deployen und skalieren |
-| Modul 32 | Aufräumen Lernpfad 5 |
+| [Modul 26](modul-26-docker.md) | Docker Grundlagen: Images, Container, Dockerfile |
+| [Modul 27](modul-27-acr.md) | Azure Container Registry (ACR): Eigene Images speichern |
+| [Modul 28](modul-28-aci.md) | Azure Container Instances (ACI): Container ohne Kubernetes |
+| [Modul 29](modul-29-containerapps.md) | Azure Container Apps: Serverless Container mit Autoscaling |
+| [Modul 30](modul-30-aks-ueberblick.md) | Azure Kubernetes Service (AKS): Überblick und Konzepte |
+| [Modul 31](modul-31-aks-workload.md) | AKS: Ersten Workload deployen und skalieren |
+| [Modul 32](modul-32-aufräumen.md) | Aufräumen Lernpfad 5 |
 
 ---
 
