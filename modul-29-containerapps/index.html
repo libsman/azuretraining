@@ -1483,6 +1483,34 @@
     </span>
   </a>
   
+    <nav class="md-nav" aria-label="Container Apps Environment erstellen">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#im-portal" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Im Portal
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#per-cli-cloud-shell" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Per CLI (Cloud Shell)
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
 </li>
       
         <li class="md-nav__item">
@@ -1498,6 +1526,29 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
+  <a href="#im-portal_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Im Portal
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#per-cli-cloud-shell_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Per CLI (Cloud Shell)
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Per CLI (Cloud Shell)">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
   <a href="#offentliches-beispiel-image-ohne-acr" class="md-nav__link">
     <span class="md-ellipsis">
       
@@ -1505,6 +1556,11 @@
       
     </span>
   </a>
+  
+</li>
+        
+      </ul>
+    </nav>
   
 </li>
         
@@ -1537,7 +1593,7 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#im-portal" class="md-nav__link">
+  <a href="#im-portal_2" class="md-nav__link">
     <span class="md-ellipsis">
       
         Im Portal
@@ -2540,6 +2596,34 @@
     </span>
   </a>
   
+    <nav class="md-nav" aria-label="Container Apps Environment erstellen">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#im-portal" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Im Portal
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#per-cli-cloud-shell" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Per CLI (Cloud Shell)
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
 </li>
       
         <li class="md-nav__item">
@@ -2555,6 +2639,29 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
+  <a href="#im-portal_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Im Portal
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#per-cli-cloud-shell_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Per CLI (Cloud Shell)
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Per CLI (Cloud Shell)">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
   <a href="#offentliches-beispiel-image-ohne-acr" class="md-nav__link">
     <span class="md-ellipsis">
       
@@ -2562,6 +2669,11 @@
       
     </span>
   </a>
+  
+</li>
+        
+      </ul>
+    </nav>
   
 </li>
         
@@ -2594,7 +2706,7 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#im-portal" class="md-nav__link">
+  <a href="#im-portal_2" class="md-nav__link">
     <span class="md-ellipsis">
       
         Im Portal
@@ -2744,6 +2856,22 @@
 <hr />
 <h2 id="container-apps-environment-erstellen">Container Apps Environment erstellen</h2>
 <p>Container Apps laufen in einer <strong>Environment</strong> (Laufzeitumgebung, geteilt über mehrere Container Apps):</p>
+<h3 id="im-portal">Im Portal</h3>
+<ol>
+<li>Suche nach <strong>Container Apps</strong> → <strong>+ Create</strong></li>
+<li>Im Schritt <strong>Basics</strong>: Resource group <code>rg-container</code>, App name und Region auswählen</li>
+<li>Im Schritt <strong>Container</strong>: Image-Quelle und Konfiguration angeben</li>
+<li>Eine neue <strong>Environment</strong> wird beim ersten Mal automatisch im Assistenten erstellt:</li>
+<li>Klicke auf <strong>Create new</strong> neben dem Environment-Feld</li>
+<li>Name: <code>env-container</code>, Region: <code>West Europe</code></li>
+<li>Logs: <strong>Azure Log Analytics</strong> → <strong>Create new</strong> (Portal erstellt automatisch einen Workspace)</li>
+<li><strong>Create</strong> bestätigen</li>
+</ol>
+<div class="admonition tip">
+<p class="admonition-title">Environment wiederverwenden</p>
+<p>Wenn die Environment einmal erstellt ist, wählst du sie bei jeder weiteren Container App einfach aus dem Dropdown aus.</p>
+</div>
+<h3 id="per-cli-cloud-shell">Per CLI (Cloud Shell)</h3>
 <div class="highlight"><pre><span></span><code><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a><span class="c1"># Log Analytics Workspace für Logs</span>
 <a id="__codelineno-1-2" name="__codelineno-1-2" href="#__codelineno-1-2"></a>az<span class="w"> </span>monitor<span class="w"> </span>log-analytics<span class="w"> </span>workspace<span class="w"> </span>create<span class="w"> </span><span class="se">\</span>
 <a id="__codelineno-1-3" name="__codelineno-1-3" href="#__codelineno-1-3"></a><span class="w">  </span>--resource-group<span class="w"> </span>rg-container<span class="w"> </span><span class="se">\</span>
@@ -2769,7 +2897,90 @@
 </code></pre></div>
 <hr />
 <h2 id="erste-container-app-erstellen">Erste Container App erstellen</h2>
-<h3 id="offentliches-beispiel-image-ohne-acr">Öffentliches Beispiel-Image (ohne ACR)</h3>
+<h3 id="im-portal_1">Im Portal</h3>
+<ol>
+<li>Suche nach <strong>Container Apps</strong> → <strong>+ Create</strong></li>
+<li>Tab <strong>Basics</strong>:</li>
+</ol>
+<table>
+<thead>
+<tr>
+<th>Feld</th>
+<th>Wert</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Resource group</td>
+<td><code>rg-container</code></td>
+</tr>
+<tr>
+<td>Container app name</td>
+<td><code>meine-container-app</code></td>
+</tr>
+<tr>
+<td>Region</td>
+<td><code>West Europe</code></td>
+</tr>
+<tr>
+<td>Container Apps Environment</td>
+<td><code>env-container</code></td>
+</tr>
+</tbody>
+</table>
+<ol>
+<li>Tab <strong>Container</strong>:</li>
+</ol>
+<table>
+<thead>
+<tr>
+<th>Feld</th>
+<th>Wert</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Image source</td>
+<td><code>Docker Hub or other registries</code></td>
+</tr>
+<tr>
+<td>Image and tag</td>
+<td><code>mcr.microsoft.com/azuredocs/containerapps-helloworld:latest</code></td>
+</tr>
+</tbody>
+</table>
+<p>Für eigene ACR-Images: Image source → <strong>Azure Container Registry</strong> → ACR und Image auswählen.</p>
+<ol>
+<li>Tab <strong>Ingress</strong> (damit die App öffentlich erreichbar ist):</li>
+</ol>
+<table>
+<thead>
+<tr>
+<th>Feld</th>
+<th>Wert</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Ingress</td>
+<td>Aktiviert</td>
+</tr>
+<tr>
+<td>Ingress traffic</td>
+<td><code>Accepting traffic from anywhere</code></td>
+</tr>
+<tr>
+<td>Target port</td>
+<td><code>80</code></td>
+</tr>
+</tbody>
+</table>
+<ol>
+<li><strong>Review + create</strong> → <strong>Create</strong></li>
+</ol>
+<p>Nach der Erstellung siehst du die App-URL in der Übersichtsseite unter <strong>Application URL</strong>.</p>
+<h3 id="per-cli-cloud-shell_1">Per CLI (Cloud Shell)</h3>
+<h4 id="offentliches-beispiel-image-ohne-acr">Öffentliches Beispiel-Image (ohne ACR)</h4>
 <div class="highlight"><pre><span></span><code><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a>az<span class="w"> </span>containerapp<span class="w"> </span>create<span class="w"> </span><span class="se">\</span>
 <a id="__codelineno-2-2" name="__codelineno-2-2" href="#__codelineno-2-2"></a><span class="w">  </span>--name<span class="w"> </span>meine-container-app<span class="w"> </span><span class="se">\</span>
 <a id="__codelineno-2-3" name="__codelineno-2-3" href="#__codelineno-2-3"></a><span class="w">  </span>--resource-group<span class="w"> </span>rg-container<span class="w"> </span><span class="se">\</span>
@@ -2807,7 +3018,7 @@
 <hr />
 <h2 id="autoscaling-konfigurieren">Autoscaling konfigurieren</h2>
 <p>Container Apps skaliert automatisch basierend auf Regeln. Standardmäßig: <strong>HTTP-basiertes Scaling</strong>.</p>
-<h3 id="im-portal">Im Portal</h3>
+<h3 id="im-portal_2">Im Portal</h3>
 <ol>
 <li>Öffne die Container App im Portal</li>
 <li>Links: <strong>Scale and replicas</strong></li>
