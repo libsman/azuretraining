@@ -22,9 +22,9 @@ theme:
         icon: material/brightness-4
         name: Hellmodus aktivieren
   features:
-    - navigation.tabs
-    - navigation.sections
     - navigation.top
+    - navigation.footer
+    - toc.follow
     - search.suggest
     - search.highlight
     - content.code.copy

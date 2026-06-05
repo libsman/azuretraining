@@ -106,6 +106,8 @@ Wenn ein neues Modul `modul-{N}-{name}.md` erstellt wird, **immer alle folgenden
 
 ### mkdocs.yml – nav-Abschnitt
 
+Die nav-Struktur verwendet eine **zweistufige Hierarchie**: Willkommen (direkte Seite) + Module (aufklappbare Gruppe in der Sidebar). Alle Module kommen als Unterelemente von `Module:`.
+
 ```yaml
 nav:
   - Willkommen: index.md
@@ -115,6 +117,14 @@ nav:
     - Modul {N} – {Titel}: modul-{N}-{kurzname}.md
     - Modul 7 – Aufräumen: modul-7-aufräumen.md   # immer letztes Modul
 ```
+
+**Wichtig – MkDocs Material Features:** Die folgenden Features sind aktiv (und sollen NICHT geändert werden):
+- `navigation.footer` – zeigt Vorherige/Nächste-Seite am Seitenende
+- `navigation.top` – Zurück-nach-oben-Button
+- `toc.follow` – Inhaltsverzeichnis folgt der Scrollposition
+- `search.suggest`, `search.highlight`, `content.code.copy` etc.
+
+**Nicht verwenden:** `navigation.tabs` und `navigation.sections` – diese verursachen entweder Overflow in der Tab-Leiste oder auto-generierte Listen im Body.
 
 Neues Modul **vor** Modul 7 (Aufräumen) einfügen. Aufräumen bleibt immer das letzte Modul.
 

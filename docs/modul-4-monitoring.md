@@ -191,21 +191,4 @@ Jetzt richten wir einen automatischen Alert ein, der sich meldet wenn die VM unt
 
 ---
 
-## Abschluss: Was du heute gebaut hast
-
-Herzlichen Glückwunsch! Du hast heute in Azure Folgendes erstellt und in Betrieb genommen:
-
-| Ressource | Was es macht |
-|-----------|-------------|
-| **Resource Group** `rg-praktikum` | Ordner für alle heutigen Ressourcen |
-| **VM** `vm-training` | Ubuntu Linux-Server mit nginx, im Internet erreichbar |
-| **Storage Account** + Static Website | HTML-Seite ohne Server im Internet |
-| **Computer Vision** `cv-praktikum` | KI-Dienst der Bilder analysiert |
-| **Budget Alert** | Warnt per E-Mail bei hohen Kosten |
-| **CPU Alert** | Warnt bei hoher VM-Auslastung |
-
-Das entspricht dem, wofür ein Unternehmen früher eigene Server, Netzwerktechnik, Hardware-Investitionen und viel Vorlaufzeit gebraucht hätte. Du hast das alles an einem Tag, über einen Browser, in Microsofts Cloud aufgebaut.
-
----
-
 Weiter zu [Modul 5 – Azure App Service](modul-5-appservice.md) →
