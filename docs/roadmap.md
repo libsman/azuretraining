@@ -51,15 +51,15 @@ Hier findest du eine Übersicht über alle geplanten Lernpfade und Module des Az
 
 ---
 
-## Lernpfad 4 – Identity & Access (Module 21–25) 📋
+## Lernpfad 4 – Identity & Access (Module 21–25) ✅
 
 | Modul | Thema |
 |-------|-------|
-| Modul 21 | Azure Entra ID: Benutzer, Gruppen und Organisationsstruktur |
-| Modul 22 | Managed Identity: Apps authentifizieren ohne Passwörter |
-| Modul 23 | Azure RBAC vertieft: Eigene Rollen und Scopes |
-| Modul 24 | Conditional Access: Bedingter Zugriff und MFA |
-| Modul 25 | Aufräumen Lernpfad 4 |
+| [Modul 21](modul-21-entra.md) | Azure Entra ID: Benutzer, Gruppen und Organisationsstruktur |
+| [Modul 22](modul-22-managed-identity.md) | Managed Identity: Apps authentifizieren ohne Passwörter |
+| [Modul 23](modul-23-rbac.md) | Azure RBAC vertieft: Eigene Rollen und Scopes |
+| [Modul 24](modul-24-conditional-access.md) | Conditional Access: Bedingter Zugriff und MFA |
+| [Modul 25](modul-25-aufräumen.md) | Aufräumen Lernpfad 4 |
 
 ---
 

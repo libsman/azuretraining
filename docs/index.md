@@ -40,6 +40,15 @@ Nach Abschluss von Lernpfad 1 hast du folgendes in Azure selbst gebaut:
 | ⚡ | Millisekundenanfragen mit In-Memory-Cache | Azure Cache for Redis |
 | 🔒 | App mit Datenbank sicher verbinden | App Service + Key Vault + SQL |
 
+## Was du in Lernpfad 4 lernst
+
+| | Was | Wo |
+|---|---|---|
+| 👤 | Benutzer, Gruppen und Gastbenutzer verwalten | Microsoft Entra ID |
+| 🤖 | Apps ohne Passwörter authentifizieren | Managed Identity |
+| 🎭 | Eigene RBAC-Rollen und Scope-Hierarchien | Azure RBAC |
+| 🚦 | Bedingten Zugriff mit MFA erzwingen | Conditional Access |
+
 ---
 
 ## Übersicht der Module
@@ -67,6 +76,11 @@ Nach Abschluss von Lernpfad 1 hast du folgendes in Azure selbst gebaut:
 | [Modul 18](modul-18-redis.md) | Azure Cache for Redis: In-Memory-Cache für schnelle Apps | 45 Min |
 | [Modul 19](modul-19-app-datenbank.md) | App + Datenbank sicher verbinden | 60 Min |
 | [Modul 20](modul-20-aufräumen.md) | Aufräumen Lernpfad 3 | 10 Min |
+| [Modul 21](modul-21-entra.md) | Microsoft Entra ID: Benutzer, Gruppen, B2B | 60 Min |
+| [Modul 22](modul-22-managed-identity.md) | Managed Identity: Apps ohne Passwörter | 60 Min |
+| [Modul 23](modul-23-rbac.md) | Azure RBAC vertieft: Custom Roles und Scopes | 60 Min |
+| [Modul 24](modul-24-conditional-access.md) | Conditional Access: Bedingter Zugriff und MFA | 45 Min |
+| [Modul 25](modul-25-aufräumen.md) | Aufräumen Lernpfad 4 | 10 Min |
 
 !!! tip "Kein Stress mit der Zeit"
     Die Zeitangaben sind Orientierungshilfen, kein Zwang. Nimm dir so lange wie du brauchst. Wenn du nicht weiterkommst, hilft oft ein Blick in die offizielle [Microsoft Learn Dokumentation](https://learn.microsoft.com/de-de/azure/).

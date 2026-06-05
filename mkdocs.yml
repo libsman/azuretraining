@@ -80,6 +80,12 @@ nav:
     - Modul 18 – Redis Cache: modul-18-redis.md
     - Modul 19 – App + Datenbank: modul-19-app-datenbank.md
     - Modul 20 – Aufräumen: modul-20-aufräumen.md
+  - Lernpfad 4 – Identity & Access:
+    - Modul 21 – Microsoft Entra ID: modul-21-entra.md
+    - Modul 22 – Managed Identity: modul-22-managed-identity.md
+    - Modul 23 – RBAC vertieft: modul-23-rbac.md
+    - Modul 24 – Conditional Access: modul-24-conditional-access.md
+    - Modul 25 – Aufräumen: modul-25-aufräumen.md
 
 extra:
   social:
