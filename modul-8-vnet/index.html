@@ -10,13 +10,13 @@
       
       
       
-        <link rel="canonical" href="https://libsman.github.io/azuretraining/modul-4-monitoring/">
+        <link rel="canonical" href="https://libsman.github.io/azuretraining/modul-8-vnet/">
       
       
-        <link rel="prev" href="../modul-3-ai/">
+        <link rel="prev" href="../modul-7-aufr%C3%A4umen/">
       
       
-        <link rel="next" href="../modul-5-appservice/">
+        <link rel="next" href="../modul-9-nsg/">
       
       
         
@@ -27,7 +27,7 @@
     
     
       
-        <title>Modul 4 – Monitoring & Kosten - Azure Einstiegstraining</title>
+        <title>Modul 8 – Virtual Network - Azure Einstiegstraining</title>
       
     
     
@@ -78,7 +78,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#modul-4-monitoring-kosten" class="md-skip">
+        <a href="#modul-8-azure-virtual-network-dein-privates-netzwerk-in-der-cloud" class="md-skip">
           Zum Inhalt
         </a>
       
@@ -114,7 +114,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Modul 4 – Monitoring & Kosten
+              Modul 8 – Virtual Network
             
           </span>
         </div>
@@ -313,20 +313,18 @@
       
   
   
-    
   
   
-  
     
     
     
     
     
-    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" checked>
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" >
         
           
           <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="0">
@@ -347,7 +345,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="true">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="false">
           <label class="md-nav__title" for="__nav_3">
             <span class="md-nav__icon md-icon"></span>
             
@@ -474,37 +472,10 @@
                 
   
   
-    
   
   
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
-      
-      
-        
-      
-      
-        <label class="md-nav__link md-nav__link--active" for="__toc">
-          
-  
-  
-  <span class="md-ellipsis">
-    
-  
-    Modul 4 – Monitoring & Kosten
-  
-
-    
-  </span>
-  
-  
-
-          <span class="md-nav__icon md-icon"></span>
-        </label>
-      
-      <a href="./" class="md-nav__link md-nav__link--active">
+    <li class="md-nav__item">
+      <a href="../modul-4-monitoring/" class="md-nav__link">
         
   
   
@@ -520,226 +491,6 @@
   
 
       </a>
-      
-        
-
-<nav class="md-nav md-nav--secondary" aria-label="Inhaltsverzeichnis">
-  
-  
-  
-    
-  
-  
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      Inhaltsverzeichnis
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#lernziele" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Lernziele
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#hintergrund-warum-monitoring-in-der-cloud-wichtig-ist" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Hintergrund: Warum Monitoring in der Cloud wichtig ist
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#cost-analysis-was-kostet-mein-training" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Cost Analysis: Was kostet mein Training?
-      
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="Cost Analysis: Was kostet mein Training?">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#schritt-1-cost-management-offnen" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Schritt 1: Cost Management öffnen
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#schritt-2-kosten-ansehen" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Schritt 2: Kosten ansehen
-      
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#budget-alert-einrichten" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Budget Alert einrichten
-      
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="Budget Alert einrichten">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#schritt-1-budgets-offnen" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Schritt 1: Budgets öffnen
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#schritt-2-budget-konfigurieren" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Schritt 2: Budget konfigurieren
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#schritt-3-alert-bedingung-hinzufugen" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Schritt 3: Alert-Bedingung hinzufügen
-      
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#tags-ressourcen-beschriften" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Tags: Ressourcen beschriften
-      
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="Tags: Ressourcen beschriften">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#schritt-1-resource-group-offnen" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Schritt 1: Resource Group öffnen
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#schritt-2-tags-hinzufugen" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Schritt 2: Tags hinzufügen
-      
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#vm-metriken-cpu-und-netzwerk-live-sehen" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        VM-Metriken: CPU und Netzwerk live sehen
-      
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="VM-Metriken: CPU und Netzwerk live sehen">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#schritt-1-zur-vm-navigieren" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Schritt 1: Zur VM navigieren
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#schritt-2-metriken-hinzufugen" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Schritt 2: Metriken hinzufügen
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#schritt-3-cpu-alert-erstellen" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Schritt 3: CPU-Alert erstellen
-      
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-    </ul>
-  
-</nav>
-      
     </li>
   
 
@@ -840,18 +591,20 @@
       
   
   
+    
   
   
+  
     
     
     
     
     
-    <li class="md-nav__item md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4" checked>
         
           
           <label class="md-nav__link" for="__nav_4" id="__nav_4_label" tabindex="0">
@@ -872,7 +625,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="false">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="true">
           <label class="md-nav__title" for="__nav_4">
             <span class="md-nav__icon md-icon"></span>
             
@@ -887,10 +640,37 @@
                 
   
   
+    
   
   
-    <li class="md-nav__item">
-      <a href="../modul-8-vnet/" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Modul 8 – Virtual Network
+  
+
+    
+  </span>
+  
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
         
   
   
@@ -906,6 +686,220 @@
   
 
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Inhaltsverzeichnis">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Inhaltsverzeichnis
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#lernziele" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Lernziele
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#hintergrund-was-ist-ein-virtual-network" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Hintergrund: Was ist ein Virtual Network?
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#neue-resource-group-erstellen" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Neue Resource Group erstellen
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#virtual-network-erstellen" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Virtual Network erstellen
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Virtual Network erstellen">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#schritt-1-dienst-offnen" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Schritt 1: Dienst öffnen
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#schritt-2-basics" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Schritt 2: Basics
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#schritt-3-ip-adressen-konfigurieren" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Schritt 3: IP-Adressen konfigurieren
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#schritt-4-review-create" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Schritt 4: Review + Create
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#zwei-vms-in-verschiedenen-subnetzen-erstellen" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Zwei VMs in verschiedenen Subnetzen erstellen
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Zwei VMs in verschiedenen Subnetzen erstellen">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#vm-1-vm-web1-frontend" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        VM 1: vm-web1 (Frontend)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#vm-2-vm-web2-backend" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        VM 2: vm-web2 (Backend)
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#interne-kommunikation-zwischen-subnetzen-testen" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Interne Kommunikation zwischen Subnetzen testen
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Interne Kommunikation zwischen Subnetzen testen">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#schritt-1-private-ip-von-vm-web2-notieren" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Schritt 1: Private IP von vm-web2 notieren
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#schritt-2-ssh-in-vm-web1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Schritt 2: SSH in vm-web1
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#schritt-3-vm-web2-anpingen" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Schritt 3: vm-web2 anpingen
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#challenge" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Challenge
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
     </li>
   
 
@@ -1346,10 +1340,10 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#hintergrund-warum-monitoring-in-der-cloud-wichtig-ist" class="md-nav__link">
+  <a href="#hintergrund-was-ist-ein-virtual-network" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Hintergrund: Warum Monitoring in der Cloud wichtig ist
+        Hintergrund: Was ist ein Virtual Network?
       
     </span>
   </a>
@@ -1357,22 +1351,33 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#cost-analysis-was-kostet-mein-training" class="md-nav__link">
+  <a href="#neue-resource-group-erstellen" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Cost Analysis: Was kostet mein Training?
+        Neue Resource Group erstellen
       
     </span>
   </a>
   
-    <nav class="md-nav" aria-label="Cost Analysis: Was kostet mein Training?">
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#virtual-network-erstellen" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Virtual Network erstellen
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Virtual Network erstellen">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#schritt-1-cost-management-offnen" class="md-nav__link">
+  <a href="#schritt-1-dienst-offnen" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Schritt 1: Cost Management öffnen
+        Schritt 1: Dienst öffnen
       
     </span>
   </a>
@@ -1380,10 +1385,32 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#schritt-2-kosten-ansehen" class="md-nav__link">
+  <a href="#schritt-2-basics" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Schritt 2: Kosten ansehen
+        Schritt 2: Basics
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#schritt-3-ip-adressen-konfigurieren" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Schritt 3: IP-Adressen konfigurieren
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#schritt-4-review-create" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Schritt 4: Review + Create
       
     </span>
   </a>
@@ -1396,22 +1423,22 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#budget-alert-einrichten" class="md-nav__link">
+  <a href="#zwei-vms-in-verschiedenen-subnetzen-erstellen" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Budget Alert einrichten
+        Zwei VMs in verschiedenen Subnetzen erstellen
       
     </span>
   </a>
   
-    <nav class="md-nav" aria-label="Budget Alert einrichten">
+    <nav class="md-nav" aria-label="Zwei VMs in verschiedenen Subnetzen erstellen">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#schritt-1-budgets-offnen" class="md-nav__link">
+  <a href="#vm-1-vm-web1-frontend" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Schritt 1: Budgets öffnen
+        VM 1: vm-web1 (Frontend)
       
     </span>
   </a>
@@ -1419,21 +1446,10 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#schritt-2-budget-konfigurieren" class="md-nav__link">
+  <a href="#vm-2-vm-web2-backend" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Schritt 2: Budget konfigurieren
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#schritt-3-alert-bedingung-hinzufugen" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Schritt 3: Alert-Bedingung hinzufügen
+        VM 2: vm-web2 (Backend)
       
     </span>
   </a>
@@ -1446,22 +1462,22 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#tags-ressourcen-beschriften" class="md-nav__link">
+  <a href="#interne-kommunikation-zwischen-subnetzen-testen" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Tags: Ressourcen beschriften
+        Interne Kommunikation zwischen Subnetzen testen
       
     </span>
   </a>
   
-    <nav class="md-nav" aria-label="Tags: Ressourcen beschriften">
+    <nav class="md-nav" aria-label="Interne Kommunikation zwischen Subnetzen testen">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#schritt-1-resource-group-offnen" class="md-nav__link">
+  <a href="#schritt-1-private-ip-von-vm-web2-notieren" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Schritt 1: Resource Group öffnen
+        Schritt 1: Private IP von vm-web2 notieren
       
     </span>
   </a>
@@ -1469,10 +1485,21 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#schritt-2-tags-hinzufugen" class="md-nav__link">
+  <a href="#schritt-2-ssh-in-vm-web1" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Schritt 2: Tags hinzufügen
+        Schritt 2: SSH in vm-web1
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#schritt-3-vm-web2-anpingen" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Schritt 3: vm-web2 anpingen
       
     </span>
   </a>
@@ -1485,52 +1512,13 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#vm-metriken-cpu-und-netzwerk-live-sehen" class="md-nav__link">
+  <a href="#challenge" class="md-nav__link">
     <span class="md-ellipsis">
       
-        VM-Metriken: CPU und Netzwerk live sehen
+        Challenge
       
     </span>
   </a>
-  
-    <nav class="md-nav" aria-label="VM-Metriken: CPU und Netzwerk live sehen">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#schritt-1-zur-vm-navigieren" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Schritt 1: Zur VM navigieren
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#schritt-2-metriken-hinzufugen" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Schritt 2: Metriken hinzufügen
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#schritt-3-cpu-alert-erstellen" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Schritt 3: CPU-Alert erstellen
-      
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
   
 </li>
       
@@ -1554,53 +1542,137 @@
   
 
 
-<h1 id="modul-4-monitoring-kosten">Modul 4 – Monitoring &amp; Kosten</h1>
+<h1 id="modul-8-azure-virtual-network-dein-privates-netzwerk-in-der-cloud">Modul 8 – Azure Virtual Network: Dein privates Netzwerk in der Cloud</h1>
 <h2 id="lernziele">Lernziele</h2>
 <p>Nach diesem Modul kannst du:</p>
 <ul>
-<li>Deine aktuellen Azure-Kosten in der Cost Analysis einsehen</li>
-<li>Einen Budget-Alert einrichten, der dich per E-Mail warnt</li>
-<li>Ressourcen mit Tags beschriften</li>
-<li>VM-Metriken (CPU, Netzwerk) in einem Diagramm ansehen</li>
+<li>Ein Azure Virtual Network (VNet) mit mehreren Subnetzen erstellen</li>
+<li>VMs in verschiedene Subnetze deployen</li>
+<li>Interne Kommunikation zwischen Subnetzen testen und erklären</li>
+<li>Den Unterschied zwischen privaten und öffentlichen IP-Adressen in Azure beschreiben</li>
 </ul>
 <hr />
-<h2 id="hintergrund-warum-monitoring-in-der-cloud-wichtig-ist">Hintergrund: Warum Monitoring in der Cloud wichtig ist</h2>
-<p>On-Prem läuft ein Server so lange bis er kaputt geht – egal ob du ihn benutzt oder nicht, die Kosten (Strom, Miete, Abschreibung) fallen immer an.</p>
-<p>In der Cloud ist das anders: <strong>Du zahlst nur für das, was gerade läuft.</strong> Das ist ein Vorteil – aber auch eine Gefahr. Wenn du vergisst, eine VM auszuschalten oder ein teuren Dienst versehentlich startest, läuft die Uhr weiter.</p>
-<p>Gutes Cloud-Monitoring bedeutet:</p>
+<h2 id="hintergrund-was-ist-ein-virtual-network">Hintergrund: Was ist ein Virtual Network?</h2>
+<p><strong>On-Prem-Vergleich:</strong> Ein Azure VNet ist das Cloud-Äquivalent zu einem <strong>lokalen VLAN-Segment</strong>. In einem On-Prem-Rechenzentrum gibt es physische Switches, die Server in Netzwerkbereiche aufteilen – z.B. ein VLAN für Webserver, eines für Datenbankserver, eines für die Management-Ebene. In Azure übernimmt das VNet exakt diese Aufgabe, vollständig softwarebasiert.</p>
+<table>
+<thead>
+<tr>
+<th>On-Prem</th>
+<th>Azure</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>LAN / VLAN</td>
+<td>Virtual Network (VNet)</td>
+</tr>
+<tr>
+<td>IP-Subnetz</td>
+<td>Subnet</td>
+</tr>
+<tr>
+<td>Inter-VLAN-Routing (L3-Switch)</td>
+<td>Automatisches System-Routing im VNet</td>
+</tr>
+<tr>
+<td>VLAN-Peering</td>
+<td>VNet Peering</td>
+</tr>
+<tr>
+<td>Site-to-Site VPN</td>
+<td>Azure VPN Gateway</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Warum eigene VNets?</strong></p>
+<p>In Modul 1 hast du eine VM erstellt – die bekam automatisch ein Standard-VNet zugewiesen. Das reicht für den Einstieg. In realen Projekten willst du:</p>
 <ul>
-<li><strong>Transparenz</strong>: Ich weiß, was gerade läuft und was es kostet</li>
-<li><strong>Frühwarnung</strong>: Ich bekomme eine Benachrichtigung bevor die Kosten aus dem Ruder laufen</li>
-<li><strong>Ordnung</strong>: Ich kann Ressourcen bestimmten Projekten oder Teams zuordnen</li>
+<li><strong>Trennung nach Funktion</strong>: Webserver im Frontend-Subnet, Datenbanken im Backend-Subnet</li>
+<li><strong>Interne Kommunikation</strong>: VMs kommunizieren direkt ohne Umweg über das Internet</li>
+<li><strong>Sicherheit</strong>: Backend-Ressourcen ohne öffentliche IP</li>
+<li><strong>Unterschiedliche Firewall-Regeln</strong> pro Subnet (folgt in Modul 9)</li>
 </ul>
+<p>Ein VNet ist immer auf eine <strong>Region</strong> beschränkt – du kannst aber mehrere VNets per <strong>Peering</strong> verbinden.</p>
 <hr />
-<h2 id="cost-analysis-was-kostet-mein-training">Cost Analysis: Was kostet mein Training?</h2>
-<h3 id="schritt-1-cost-management-offnen">Schritt 1: Cost Management öffnen</h3>
+<h2 id="neue-resource-group-erstellen">Neue Resource Group erstellen</h2>
+<p>Lernpfad 2 bekommt eine eigene Resource Group.</p>
 <ol>
-<li>Tippe in der Suchleiste <strong><code>Cost Management</code></strong> und klicke auf den Dienst</li>
-<li>Klicke links im Menü auf <strong>Cost analysis</strong></li>
+<li>Suche im Portal nach <strong>Resource groups</strong> → <strong>+ Create</strong></li>
 </ol>
-<h3 id="schritt-2-kosten-ansehen">Schritt 2: Kosten ansehen</h3>
-<p>Du siehst ein Diagramm mit den Kosten der aktuellen Periode.</p>
+<table>
+<thead>
+<tr>
+<th>Feld</th>
+<th>Wert</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Subscription</td>
+<td>deine Subscription</td>
+</tr>
+<tr>
+<td>Resource group</td>
+<td><code>rg-netzwerk</code></td>
+</tr>
+<tr>
+<td>Region</td>
+<td><code>West Europe</code></td>
+</tr>
+</tbody>
+</table>
 <ol>
-<li>Stelle oben rechts den Zeitraum auf <strong>This month</strong></li>
-<li>Klicke auf <strong>Group by</strong> → wähle <strong>Service name</strong></li>
+<li><strong>Review + create</strong> → <strong>Create</strong></li>
 </ol>
-<p>Jetzt siehst du aufgeschlüsselt, welcher Azure-Dienst wie viel kostet.</p>
+<hr />
+<h2 id="virtual-network-erstellen">Virtual Network erstellen</h2>
+<h3 id="schritt-1-dienst-offnen">Schritt 1: Dienst öffnen</h3>
+<ol>
+<li>Tippe in der Suchleiste <strong><code>Virtual networks</code></strong> → klicke auf den Dienst</li>
+<li>Klicke auf <strong>+ Create</strong></li>
+</ol>
+<h3 id="schritt-2-basics">Schritt 2: Basics</h3>
+<table>
+<thead>
+<tr>
+<th>Feld</th>
+<th>Wert</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Subscription</td>
+<td>deine Subscription</td>
+</tr>
+<tr>
+<td>Resource group</td>
+<td><code>rg-netzwerk</code></td>
+</tr>
+<tr>
+<td>Name</td>
+<td><code>vnet-training</code></td>
+</tr>
+<tr>
+<td>Region</td>
+<td><code>West Europe</code></td>
+</tr>
+</tbody>
+</table>
+<h3 id="schritt-3-ip-adressen-konfigurieren">Schritt 3: IP-Adressen konfigurieren</h3>
+<p>Wechsle zum Tab <strong>IP addresses</strong>.</p>
 <div class="admonition info">
-<p class="admonition-title">Noch kaum Kosten</p>
-<p>Frisch erstellte Ressourcen erscheinen erst nach 24h im Cost Dashboard. Ein Standard_B1s VM kostet ca. <strong>0,009 €/Stunde</strong> – das sind weniger als 10 Cent pro Tag.</p>
+<p class="admonition-title">Private IP-Adressbereiche (RFC 1918)</p>
+<p>Azure VNets nutzen private IP-Bereiche:
+- <code>10.0.0.0/8</code> – z.B. <code>10.0.0.0/16</code> für ein VNet
+- <code>172.16.0.0/12</code>
+- <code>192.168.0.0/16</code></p>
+<p><strong>Tipp für die Praxis:</strong> Wähle einen Bereich der nicht mit deinem On-Prem-Netzwerk überschneidet – sonst gibt es Routing-Konflikte wenn du später eine VPN-Verbindung aufbauen willst.</p>
 </div>
-<hr />
-<h2 id="budget-alert-einrichten">Budget Alert einrichten</h2>
-<p>Ein Budget Alert schickt dir automatisch eine E-Mail, wenn deine Ausgaben einen Schwellenwert erreichen. Das ist dein Sicherheitsnetz.</p>
-<h3 id="schritt-1-budgets-offnen">Schritt 1: Budgets öffnen</h3>
 <ol>
-<li>Bleibe im <strong>Cost Management</strong> Bereich</li>
-<li>Klicke links auf <strong>Budgets</strong></li>
-<li>Klicke oben auf <strong>+ Add</strong></li>
+<li>Standardadressraum <code>10.0.0.0/16</code> belassen (65.534 nutzbare Adressen)</li>
+<li>Vorhandenes Default-Subnet löschen (Mülleimer-Symbol)</li>
+<li>Klicke auf <strong>+ Add a subnet</strong>:</li>
 </ol>
-<h3 id="schritt-2-budget-konfigurieren">Schritt 2: Budget konfigurieren</h3>
 <table>
 <thead>
 <tr>
@@ -1611,32 +1683,19 @@
 <tbody>
 <tr>
 <td>Name</td>
-<td><code>budget-aztraining</code></td>
+<td><code>frontend-subnet</code></td>
 </tr>
 <tr>
-<td>Reset period</td>
-<td><code>Monthly</code></td>
+<td>Starting address</td>
+<td><code>10.0.1.0</code></td>
 </tr>
 <tr>
-<td>Creation date</td>
-<td>(bereits eingetragen)</td>
-</tr>
-<tr>
-<td>Expiration date</td>
-<td>(Ende nächsten Monats)</td>
-</tr>
-<tr>
-<td>Amount</td>
-<td><code>20</code></td>
+<td>Size</td>
+<td><code>/24</code> (256 Adressen)</td>
 </tr>
 </tbody>
 </table>
-<p>Klicke auf <strong>Next: Alerts &gt;</strong></p>
-<h3 id="schritt-3-alert-bedingung-hinzufugen">Schritt 3: Alert-Bedingung hinzufügen</h3>
-<ol>
-<li>Klicke auf <strong>+ Add alert condition</strong></li>
-<li>Konfiguriere:</li>
-</ol>
+<p>Klicke <strong>Add</strong>, dann erneut <strong>+ Add a subnet</strong>:</p>
 <table>
 <thead>
 <tr>
@@ -1646,104 +1705,34 @@
 </thead>
 <tbody>
 <tr>
-<td>Alert condition</td>
-<td><code>Actual</code></td>
+<td>Name</td>
+<td><code>backend-subnet</code></td>
 </tr>
 <tr>
-<td>% of budget</td>
-<td><code>80</code></td>
+<td>Starting address</td>
+<td><code>10.0.2.0</code></td>
 </tr>
 <tr>
-<td>Alert recipients (email)</td>
-<td>deine E-Mail-Adresse</td>
+<td>Size</td>
+<td><code>/24</code></td>
 </tr>
 </tbody>
 </table>
-<ol>
-<li>Klicke auf <strong>Create</strong></li>
-</ol>
+<p>Klicke <strong>Add</strong>.</p>
+<h3 id="schritt-4-review-create">Schritt 4: Review + Create</h3>
+<p><strong>Review + create</strong> → <strong>Create</strong>.</p>
 <div class="admonition success">
-<p class="admonition-title">Sicherheitsnetz aktiv</p>
-<p>Du bekommst ab jetzt eine E-Mail sobald 80% von 20 € (= 16 €) verbraucht sind. So kannst du keine Überraschungen erleben.</p>
+<p class="admonition-title">VNet mit zwei Subnetzen erstellt</p>
+<p><code>frontend-subnet</code> für öffentlich erreichbare Ressourcen (Webserver), <code>backend-subnet</code> für interne Ressourcen (Datenbanken, Backend-Services).</p>
 </div>
 <hr />
-<h2 id="tags-ressourcen-beschriften">Tags: Ressourcen beschriften</h2>
-<p>Tags sind Schlüssel-Wert-Paare, die du an Azure-Ressourcen anhängen kannst. Sie helfen dir:</p>
-<ul>
-<li>Ressourcen nach Projekt oder Team zu gruppieren</li>
-<li>Kosten nach Tags aufzuschlüsseln (z.B. "Was hat Projekt X insgesamt gekostet?")</li>
-<li>Ordnung zu halten wenn man viele Ressourcen hat</li>
-</ul>
-<p>In echten Unternehmen sind Tags Pflicht – die IT-Abteilung kann so sehen, welches Team welche Kosten verursacht.</p>
-<h3 id="schritt-1-resource-group-offnen">Schritt 1: Resource Group öffnen</h3>
+<h2 id="zwei-vms-in-verschiedenen-subnetzen-erstellen">Zwei VMs in verschiedenen Subnetzen erstellen</h2>
+<p>Wir deployen eine VM ins Frontend- und eine ins Backend-Subnet.</p>
+<h3 id="vm-1-vm-web1-frontend">VM 1: vm-web1 (Frontend)</h3>
 <ol>
-<li>Suche im Portal nach <code>rg-aztraining</code> und klicke auf die Resource Group</li>
-<li>Klicke links im Menü auf <strong>Tags</strong></li>
+<li>Suche nach <strong>Virtual machines</strong> → <strong>+ Create</strong> → <strong>Azure virtual machine</strong></li>
 </ol>
-<h3 id="schritt-2-tags-hinzufugen">Schritt 2: Tags hinzufügen</h3>
-<p>Klicke jeweils in die Felder Name und Wert und füge folgende Tags hinzu:</p>
-<table>
-<thead>
-<tr>
-<th>Name</th>
-<th>Wert</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td><code>owner</code></td>
-<td>dein Name</td>
-</tr>
-<tr>
-<td><code>projekt</code></td>
-<td><code>azure-training</code></td>
-</tr>
-<tr>
-<td><code>umgebung</code></td>
-<td><code>dev</code></td>
-</tr>
-</tbody>
-</table>
-<p>Klicke auf <strong>Apply</strong>.</p>
-<div class="admonition tip">
-<p class="admonition-title">Tags auf Resource Group = Tags auf allen Ressourcen</p>
-<p>Wenn du Tags auf einer Resource Group setzt, werden sie in Cost Analysis auf alle enthaltenen Ressourcen angewendet. Du musst nicht jede VM, jeden Storage Account etc. einzeln taggen.</p>
-</div>
-<hr />
-<h2 id="vm-metriken-cpu-und-netzwerk-live-sehen">VM-Metriken: CPU und Netzwerk live sehen</h2>
-<p>Azure sammelt automatisch Metriken für alle laufenden Ressourcen: CPU-Auslastung, Speicher, Netzwerkdurchsatz, Festplatten-I/O und mehr.</p>
-<h3 id="schritt-1-zur-vm-navigieren">Schritt 1: Zur VM navigieren</h3>
-<ol>
-<li>Suche im Portal nach <code>vm-training</code> und klicke auf deine VM</li>
-<li>Links im Menü: <strong>Monitoring</strong> → <strong>Metrics</strong></li>
-</ol>
-<h3 id="schritt-2-metriken-hinzufugen">Schritt 2: Metriken hinzufügen</h3>
-<ol>
-<li>Im Diagramm-Editor:<ul>
-<li><strong>Scope</strong>: <code>vm-training</code> (bereits ausgewählt)</li>
-<li><strong>Metric Namespace</strong>: <code>Virtual Machine Host</code></li>
-<li><strong>Metric</strong>: wähle <code>Percentage CPU</code></li>
-</ul>
-</li>
-<li>Du siehst ein Diagramm der CPU-Auslastung der letzten Zeit</li>
-</ol>
-<p>Füge weitere Metriken hinzu:</p>
-<ol>
-<li>Klicke auf <strong>+ Add metric</strong></li>
-<li>Wähle <code>Network In Total</code> → Add</li>
-<li>Klicke nochmal auf <strong>+ Add metric</strong></li>
-<li>Wähle <code>Network Out Total</code> → Add</li>
-</ol>
-<p>Jetzt siehst du drei Kurven im selben Diagramm.</p>
-<h3 id="schritt-3-cpu-alert-erstellen">Schritt 3: CPU-Alert erstellen</h3>
-<p>Jetzt richten wir einen automatischen Alert ein, der sich meldet wenn die VM unter Last kommt.</p>
-<ol>
-<li>Klicke oben im Metrics-Bereich auf <strong>+ New alert rule</strong></li>
-<li>Das Formular öffnet sich, die Ressource <code>vm-training</code> ist bereits eingetragen</li>
-<li>Klicke auf <strong>+ Add condition</strong></li>
-<li>Wähle <strong>Percentage CPU</strong> aus der Liste</li>
-<li>Scrolle im Konfigurations-Bereich nach unten und stelle ein:</li>
-</ol>
+<p><strong>Basics:</strong></p>
 <table>
 <thead>
 <tr>
@@ -1752,73 +1741,151 @@
 </tr>
 </thead>
 <tbody>
-<tr>
-<td>Threshold type</td>
-<td><code>Static</code></td>
-</tr>
-<tr>
-<td>Aggregation type</td>
-<td><code>Average</code></td>
-</tr>
-<tr>
-<td>Operator</td>
-<td><code>Greater than</code></td>
-</tr>
-<tr>
-<td>Threshold value</td>
-<td><code>80</code></td>
-</tr>
-</tbody>
-</table>
-<ol>
-<li>Klicke auf <strong>Done</strong></li>
-</ol>
-<p><strong>Action Group erstellen</strong> (wer bekommt die E-Mail?):</p>
-<ol>
-<li>Scrolle nach unten zum Abschnitt <strong>Actions</strong></li>
-<li>Klicke auf <strong>+ Create action group</strong></li>
-<li>Fülle aus:</li>
-</ol>
-<table>
-<thead>
-<tr>
-<th>Feld</th>
-<th>Wert</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>Action group name</td>
-<td><code>ag-aztraining</code></td>
-</tr>
-<tr>
-<td>Display name</td>
-<td><code>aztraining</code></td>
-</tr>
 <tr>
 <td>Resource group</td>
-<td><code>rg-aztraining</code></td>
+<td><code>rg-netzwerk</code></td>
+</tr>
+<tr>
+<td>Virtual machine name</td>
+<td><code>vm-web1</code></td>
+</tr>
+<tr>
+<td>Region</td>
+<td><code>West Europe</code></td>
+</tr>
+<tr>
+<td>Availability options</td>
+<td><code>No infrastructure redundancy required</code></td>
+</tr>
+<tr>
+<td>Image</td>
+<td><code>Ubuntu Server 24.04 LTS</code></td>
+</tr>
+<tr>
+<td>Size</td>
+<td><code>Standard_B1s</code></td>
+</tr>
+<tr>
+<td>Authentication type</td>
+<td><code>Password</code></td>
+</tr>
+<tr>
+<td>Username</td>
+<td><code>azureuser</code></td>
+</tr>
+<tr>
+<td>Password</td>
+<td>Sicheres Passwort (notiere es!)</td>
 </tr>
 </tbody>
 </table>
+<p><strong>Networking:</strong></p>
+<table>
+<thead>
+<tr>
+<th>Feld</th>
+<th>Wert</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Virtual network</td>
+<td><code>vnet-training</code></td>
+</tr>
+<tr>
+<td>Subnet</td>
+<td><code>frontend-subnet (10.0.1.0/24)</code></td>
+</tr>
+<tr>
+<td>Public IP</td>
+<td><code>(new) vm-web1-ip</code></td>
+</tr>
+<tr>
+<td>NIC network security group</td>
+<td><code>Basic</code></td>
+</tr>
+<tr>
+<td>Public inbound ports</td>
+<td><code>SSH (22)</code></td>
+</tr>
+</tbody>
+</table>
+<p><strong>Review + create</strong> → <strong>Create</strong></p>
+<h3 id="vm-2-vm-web2-backend">VM 2: vm-web2 (Backend)</h3>
+<p>Wiederhole den Vorgang mit diesen Änderungen:</p>
+<table>
+<thead>
+<tr>
+<th>Feld</th>
+<th>Wert</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Virtual machine name</td>
+<td><code>vm-web2</code></td>
+</tr>
+<tr>
+<td>Subnet</td>
+<td><code>backend-subnet (10.0.2.0/24)</code></td>
+</tr>
+<tr>
+<td>Public IP</td>
+<td><code>(new) vm-web2-ip</code></td>
+</tr>
+<tr>
+<td>Public inbound ports</td>
+<td><code>SSH (22)</code></td>
+</tr>
+</tbody>
+</table>
+<p>Warte bis beide VMs den Status <strong>Running</strong> haben (~2 Minuten).</p>
+<hr />
+<h2 id="interne-kommunikation-zwischen-subnetzen-testen">Interne Kommunikation zwischen Subnetzen testen</h2>
+<p>In Azure können Subnetze desselben VNets standardmäßig miteinander kommunizieren – anders als bei echten VLANs wo du Inter-VLAN-Routing explizit konfigurieren musst.</p>
+<h3 id="schritt-1-private-ip-von-vm-web2-notieren">Schritt 1: Private IP von vm-web2 notieren</h3>
 <ol>
-<li>Klicke auf den Tab <strong>Notifications</strong></li>
-<li>Wähle bei <strong>Notification type</strong>: <code>Email/SMS message/Push/Voice</code></li>
-<li>Trage deine E-Mail-Adresse ein und klicke <strong>OK</strong></li>
-<li>Gib einen Namen ein, z.B. <code>email-benachrichtigung</code></li>
-<li>Klicke durch bis <strong>Review + create</strong> → <strong>Create</strong></li>
+<li>Navigiere im Portal zu <code>vm-web2</code> → <strong>Networking</strong> → <strong>Network interface</strong></li>
+<li>Klicke auf den Interface-Namen → <strong>IP configurations</strong></li>
+<li>Notiere die <strong>Private IP address</strong> (sollte <code>10.0.2.4</code> oder ähnlich sein)</li>
 </ol>
-<p><strong>Alert Rule abschließen:</strong></p>
-<ol>
-<li>Zurück im Alert Rule Formular: trage unter <strong>Alert rule name</strong> ein: <code>alert-hohe-cpu</code></li>
-<li>Klicke auf <strong>Create</strong></li>
-</ol>
+<h3 id="schritt-2-ssh-in-vm-web1">Schritt 2: SSH in vm-web1</h3>
+<p>Öffne die Cloud Shell (<code>&gt;_</code> in der Menüleiste):</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a>ssh<span class="w"> </span>azureuser@&lt;Public-IP-von-vm-web1&gt;
+</code></pre></div>
+<h3 id="schritt-3-vm-web2-anpingen">Schritt 3: vm-web2 anpingen</h3>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a>ping<span class="w"> </span><span class="m">10</span>.0.2.4<span class="w"> </span>-c<span class="w"> </span><span class="m">4</span>
+</code></pre></div>
+<p>Du siehst 4 erfolgreiche Antworten – beide VMs sehen sich direkt.</p>
 <div class="admonition success">
-<p class="admonition-title">Alles überwacht!</p>
-<p>Du bekommst jetzt eine E-Mail wenn die CPU deiner VM über 80% steigt. In echten Produktionsumgebungen würde man auf solche Alerts z.B. automatisch weitere VMs starten (Auto-Scaling).</p>
+<p class="admonition-title">Subnetz-Kommunikation funktioniert!</p>
+<p>Die VMs kommunizieren über ihre privaten IPs, ohne das Internet zu berühren. Azure fügt automatisch eine <strong>System Route</strong> ein die Traffic zwischen allen Subnetzen eines VNets erlaubt.</p>
+</div>
+<div class="admonition tip">
+<p class="admonition-title">Effektive Routen anzeigen</p>
+<p>Gehe zu <code>vm-web1</code> → <strong>Networking</strong> → <strong>Network interface</strong> → <strong>Effective routes</strong> um alle aktiven Routen zu sehen. Du erkennst die automatischen System Routes für VNet-internes Routing.</p>
 </div>
 <hr />
-<p>Weiter zu <a href="../modul-5-appservice/">Modul 5 – Azure App Service</a> →</p>
+<h2 id="challenge">Challenge</h2>
+<div class="admonition question">
+<p class="admonition-title">Challenge: VNet Peering einrichten</p>
+<p>Erstelle ein zweites VNet <code>vnet-training-2</code> mit Adressraum <code>10.1.0.0/16</code> und einem Subnet <code>default-subnet</code> (<code>10.1.1.0/24</code>). Verbinde beide VNets über <strong>VNet Peering</strong> und überprüfe ob eine VM in <code>vnet-training</code> eine VM in <code>vnet-training-2</code> erreichen kann.</p>
+<p><strong>Wo?</strong> <code>vnet-training</code> → <strong>Peerings</strong> → <strong>+ Add</strong></p>
+</div>
+<details class="success">
+<summary>Hinweis</summary>
+<ol>
+<li><code>vnet-training-2</code> in <code>rg-netzwerk</code> erstellen (Adressraum <code>10.1.0.0/16</code>)</li>
+<li><code>vnet-training</code> → <strong>Peerings</strong> → <strong>+ Add</strong></li>
+<li>Peering Name (diese Seite): <code>to-vnet2</code></li>
+<li>Remote Virtual Network: <code>vnet-training-2</code></li>
+<li><strong>Aktiviere</strong> „Allow traffic to remote virtual network" auf beiden Seiten</li>
+<li>Azure erstellt automatisch das symmetrische Gegenstück</li>
+</ol>
+<p>Nach dem Peering können VMs beider VNets über private IPs kommunizieren. VNet Peering ist <strong>nicht transitiv</strong> – wenn A ↔ B und B ↔ C, sehen A und C sich trotzdem nicht direkt.</p>
+</details>
+<hr />
+<p>Weiter zu <a href="../modul-9-nsg/">Modul 9 – Network Security Groups: Traffic filtern</a> →</p>
 
 
 
@@ -1856,7 +1923,7 @@
       <nav class="md-footer__inner md-grid" aria-label="Fußzeile" >
         
           
-          <a href="../modul-3-ai/" class="md-footer__link md-footer__link--prev" aria-label="Zurück: Modul 3 – Azure KI">
+          <a href="../modul-7-aufr%C3%A4umen/" class="md-footer__link md-footer__link--prev" aria-label="Zurück: Modul 7 – Aufräumen">
             <div class="md-footer__button md-icon">
               
               <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
@@ -1866,20 +1933,20 @@
                 Zurück
               </span>
               <div class="md-ellipsis">
-                Modul 3 – Azure KI
+                Modul 7 – Aufräumen
               </div>
             </div>
           </a>
         
         
           
-          <a href="../modul-5-appservice/" class="md-footer__link md-footer__link--next" aria-label="Weiter: Modul 5 – App Service">
+          <a href="../modul-9-nsg/" class="md-footer__link md-footer__link--next" aria-label="Weiter: Modul 9 – Network Security Groups">
             <div class="md-footer__title">
               <span class="md-footer__direction">
                 Weiter
               </span>
               <div class="md-ellipsis">
-                Modul 5 – App Service
+                Modul 9 – Network Security Groups
               </div>
             </div>
             <div class="md-footer__button md-icon">

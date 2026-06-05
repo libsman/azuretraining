@@ -13,7 +13,51 @@
          <lastmod>2026-06-05</lastmod>
     </url>
     <url>
+         <loc>https://libsman.github.io/azuretraining/modul-10-bastion/</loc>
+         <lastmod>2026-06-05</lastmod>
+    </url>
+    <url>
+         <loc>https://libsman.github.io/azuretraining/modul-11-loadbalancer/</loc>
+         <lastmod>2026-06-05</lastmod>
+    </url>
+    <url>
+         <loc>https://libsman.github.io/azuretraining/modul-12-keyvault/</loc>
+         <lastmod>2026-06-05</lastmod>
+    </url>
+    <url>
+         <loc>https://libsman.github.io/azuretraining/modul-13-privateendpoints/</loc>
+         <lastmod>2026-06-05</lastmod>
+    </url>
+    <url>
+         <loc>https://libsman.github.io/azuretraining/modul-14-aufr%C3%A4umen/</loc>
+         <lastmod>2026-06-05</lastmod>
+    </url>
+    <url>
+         <loc>https://libsman.github.io/azuretraining/modul-15-sql/</loc>
+         <lastmod>2026-06-05</lastmod>
+    </url>
+    <url>
+         <loc>https://libsman.github.io/azuretraining/modul-16-cosmosdb/</loc>
+         <lastmod>2026-06-05</lastmod>
+    </url>
+    <url>
+         <loc>https://libsman.github.io/azuretraining/modul-17-postgresql/</loc>
+         <lastmod>2026-06-05</lastmod>
+    </url>
+    <url>
+         <loc>https://libsman.github.io/azuretraining/modul-18-redis/</loc>
+         <lastmod>2026-06-05</lastmod>
+    </url>
+    <url>
+         <loc>https://libsman.github.io/azuretraining/modul-19-app-datenbank/</loc>
+         <lastmod>2026-06-05</lastmod>
+    </url>
+    <url>
          <loc>https://libsman.github.io/azuretraining/modul-2-storage/</loc>
+         <lastmod>2026-06-05</lastmod>
+    </url>
+    <url>
+         <loc>https://libsman.github.io/azuretraining/modul-20-aufr%C3%A4umen/</loc>
          <lastmod>2026-06-05</lastmod>
     </url>
     <url>
@@ -34,6 +78,18 @@
     </url>
     <url>
          <loc>https://libsman.github.io/azuretraining/modul-7-aufr%C3%A4umen/</loc>
+         <lastmod>2026-06-05</lastmod>
+    </url>
+    <url>
+         <loc>https://libsman.github.io/azuretraining/modul-8-vnet/</loc>
+         <lastmod>2026-06-05</lastmod>
+    </url>
+    <url>
+         <loc>https://libsman.github.io/azuretraining/modul-9-nsg/</loc>
+         <lastmod>2026-06-05</lastmod>
+    </url>
+    <url>
+         <loc>https://libsman.github.io/azuretraining/roadmap/</loc>
          <lastmod>2026-06-05</lastmod>
     </url>
 </urlset>

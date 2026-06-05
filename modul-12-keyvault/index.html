@@ -10,13 +10,13 @@
       
       
       
-        <link rel="canonical" href="https://libsman.github.io/azuretraining/modul-4-monitoring/">
+        <link rel="canonical" href="https://libsman.github.io/azuretraining/modul-12-keyvault/">
       
       
-        <link rel="prev" href="../modul-3-ai/">
+        <link rel="prev" href="../modul-11-loadbalancer/">
       
       
-        <link rel="next" href="../modul-5-appservice/">
+        <link rel="next" href="../modul-13-privateendpoints/">
       
       
         
@@ -27,7 +27,7 @@
     
     
       
-        <title>Modul 4 – Monitoring & Kosten - Azure Einstiegstraining</title>
+        <title>Modul 12 – Key Vault - Azure Einstiegstraining</title>
       
     
     
@@ -78,7 +78,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#modul-4-monitoring-kosten" class="md-skip">
+        <a href="#modul-12-azure-key-vault-secrets-und-api-keys-sicher-speichern" class="md-skip">
           Zum Inhalt
         </a>
       
@@ -114,7 +114,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Modul 4 – Monitoring & Kosten
+              Modul 12 – Key Vault
             
           </span>
         </div>
@@ -313,20 +313,18 @@
       
   
   
-    
   
   
-  
     
     
     
     
     
-    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" checked>
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" >
         
           
           <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="0">
@@ -347,7 +345,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="true">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="false">
           <label class="md-nav__title" for="__nav_3">
             <span class="md-nav__icon md-icon"></span>
             
@@ -474,37 +472,10 @@
                 
   
   
-    
   
   
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
-      
-      
-        
-      
-      
-        <label class="md-nav__link md-nav__link--active" for="__toc">
-          
-  
-  
-  <span class="md-ellipsis">
-    
-  
-    Modul 4 – Monitoring & Kosten
-  
-
-    
-  </span>
-  
-  
-
-          <span class="md-nav__icon md-icon"></span>
-        </label>
-      
-      <a href="./" class="md-nav__link md-nav__link--active">
+    <li class="md-nav__item">
+      <a href="../modul-4-monitoring/" class="md-nav__link">
         
   
   
@@ -520,226 +491,6 @@
   
 
       </a>
-      
-        
-
-<nav class="md-nav md-nav--secondary" aria-label="Inhaltsverzeichnis">
-  
-  
-  
-    
-  
-  
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      Inhaltsverzeichnis
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#lernziele" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Lernziele
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#hintergrund-warum-monitoring-in-der-cloud-wichtig-ist" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Hintergrund: Warum Monitoring in der Cloud wichtig ist
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#cost-analysis-was-kostet-mein-training" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Cost Analysis: Was kostet mein Training?
-      
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="Cost Analysis: Was kostet mein Training?">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#schritt-1-cost-management-offnen" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Schritt 1: Cost Management öffnen
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#schritt-2-kosten-ansehen" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Schritt 2: Kosten ansehen
-      
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#budget-alert-einrichten" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Budget Alert einrichten
-      
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="Budget Alert einrichten">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#schritt-1-budgets-offnen" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Schritt 1: Budgets öffnen
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#schritt-2-budget-konfigurieren" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Schritt 2: Budget konfigurieren
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#schritt-3-alert-bedingung-hinzufugen" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Schritt 3: Alert-Bedingung hinzufügen
-      
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#tags-ressourcen-beschriften" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Tags: Ressourcen beschriften
-      
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="Tags: Ressourcen beschriften">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#schritt-1-resource-group-offnen" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Schritt 1: Resource Group öffnen
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#schritt-2-tags-hinzufugen" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Schritt 2: Tags hinzufügen
-      
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#vm-metriken-cpu-und-netzwerk-live-sehen" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        VM-Metriken: CPU und Netzwerk live sehen
-      
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="VM-Metriken: CPU und Netzwerk live sehen">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#schritt-1-zur-vm-navigieren" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Schritt 1: Zur VM navigieren
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#schritt-2-metriken-hinzufugen" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Schritt 2: Metriken hinzufügen
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#schritt-3-cpu-alert-erstellen" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Schritt 3: CPU-Alert erstellen
-      
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-    </ul>
-  
-</nav>
-      
     </li>
   
 
@@ -840,18 +591,20 @@
       
   
   
+    
   
   
+  
     
     
     
     
     
-    <li class="md-nav__item md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4" checked>
         
           
           <label class="md-nav__link" for="__nav_4" id="__nav_4_label" tabindex="0">
@@ -872,7 +625,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="false">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="true">
           <label class="md-nav__title" for="__nav_4">
             <span class="md-nav__icon md-icon"></span>
             
@@ -999,10 +752,37 @@
                 
   
   
+    
   
   
-    <li class="md-nav__item">
-      <a href="../modul-12-keyvault/" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Modul 12 – Key Vault
+  
+
+    
+  </span>
+  
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
         
   
   
@@ -1018,6 +798,231 @@
   
 
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Inhaltsverzeichnis">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Inhaltsverzeichnis
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#lernziele" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Lernziele
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#hintergrund-das-problem-mit-gespeicherten-passwortern" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Hintergrund: Das Problem mit gespeicherten Passwörtern
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#key-vault-erstellen" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Key Vault erstellen
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Key Vault erstellen">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#schritt-1-dienst-offnen" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Schritt 1: Dienst öffnen
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#schritt-2-basics" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Schritt 2: Basics
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#schritt-3-access-configuration" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Schritt 3: Access Configuration
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#schritt-4-review-create" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Schritt 4: Review + Create
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#rbac-dir-selbst-zugriff-gewahren" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        RBAC: Dir selbst Zugriff gewähren
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#secrets-erstellen" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Secrets erstellen
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Secrets erstellen">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#im-portal" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Im Portal
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#secrets-uber-die-azure-cli-abfragen" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Secrets über die Azure CLI abfragen
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Secrets über die Azure CLI abfragen">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#alle-secrets-auflisten" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Alle Secrets auflisten
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#secret-wert-abrufen" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Secret-Wert abrufen
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#secret-in-variable-speichern-fur-skripte" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Secret in Variable speichern (für Skripte)
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#secret-in-python-abfragen" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Secret in Python abfragen
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#audit-log-ansehen" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Audit Log ansehen
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#challenge" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Challenge
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
     </li>
   
 
@@ -1346,10 +1351,10 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#hintergrund-warum-monitoring-in-der-cloud-wichtig-ist" class="md-nav__link">
+  <a href="#hintergrund-das-problem-mit-gespeicherten-passwortern" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Hintergrund: Warum Monitoring in der Cloud wichtig ist
+        Hintergrund: Das Problem mit gespeicherten Passwörtern
       
     </span>
   </a>
@@ -1357,22 +1362,22 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#cost-analysis-was-kostet-mein-training" class="md-nav__link">
+  <a href="#key-vault-erstellen" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Cost Analysis: Was kostet mein Training?
+        Key Vault erstellen
       
     </span>
   </a>
   
-    <nav class="md-nav" aria-label="Cost Analysis: Was kostet mein Training?">
+    <nav class="md-nav" aria-label="Key Vault erstellen">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#schritt-1-cost-management-offnen" class="md-nav__link">
+  <a href="#schritt-1-dienst-offnen" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Schritt 1: Cost Management öffnen
+        Schritt 1: Dienst öffnen
       
     </span>
   </a>
@@ -1380,10 +1385,32 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#schritt-2-kosten-ansehen" class="md-nav__link">
+  <a href="#schritt-2-basics" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Schritt 2: Kosten ansehen
+        Schritt 2: Basics
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#schritt-3-access-configuration" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Schritt 3: Access Configuration
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#schritt-4-review-create" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Schritt 4: Review + Create
       
     </span>
   </a>
@@ -1396,44 +1423,33 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#budget-alert-einrichten" class="md-nav__link">
+  <a href="#rbac-dir-selbst-zugriff-gewahren" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Budget Alert einrichten
+        RBAC: Dir selbst Zugriff gewähren
       
     </span>
   </a>
   
-    <nav class="md-nav" aria-label="Budget Alert einrichten">
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#secrets-erstellen" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Secrets erstellen
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Secrets erstellen">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#schritt-1-budgets-offnen" class="md-nav__link">
+  <a href="#im-portal" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Schritt 1: Budgets öffnen
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#schritt-2-budget-konfigurieren" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Schritt 2: Budget konfigurieren
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#schritt-3-alert-bedingung-hinzufugen" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Schritt 3: Alert-Bedingung hinzufügen
+        Im Portal
       
     </span>
   </a>
@@ -1446,22 +1462,22 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#tags-ressourcen-beschriften" class="md-nav__link">
+  <a href="#secrets-uber-die-azure-cli-abfragen" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Tags: Ressourcen beschriften
+        Secrets über die Azure CLI abfragen
       
     </span>
   </a>
   
-    <nav class="md-nav" aria-label="Tags: Ressourcen beschriften">
+    <nav class="md-nav" aria-label="Secrets über die Azure CLI abfragen">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#schritt-1-resource-group-offnen" class="md-nav__link">
+  <a href="#alle-secrets-auflisten" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Schritt 1: Resource Group öffnen
+        Alle Secrets auflisten
       
     </span>
   </a>
@@ -1469,10 +1485,21 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#schritt-2-tags-hinzufugen" class="md-nav__link">
+  <a href="#secret-wert-abrufen" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Schritt 2: Tags hinzufügen
+        Secret-Wert abrufen
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#secret-in-variable-speichern-fur-skripte" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Secret in Variable speichern (für Skripte)
       
     </span>
   </a>
@@ -1485,52 +1512,35 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#vm-metriken-cpu-und-netzwerk-live-sehen" class="md-nav__link">
+  <a href="#secret-in-python-abfragen" class="md-nav__link">
     <span class="md-ellipsis">
       
-        VM-Metriken: CPU und Netzwerk live sehen
-      
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="VM-Metriken: CPU und Netzwerk live sehen">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#schritt-1-zur-vm-navigieren" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Schritt 1: Zur VM navigieren
+        Secret in Python abfragen
       
     </span>
   </a>
   
 </li>
-        
-          <li class="md-nav__item">
-  <a href="#schritt-2-metriken-hinzufugen" class="md-nav__link">
+      
+        <li class="md-nav__item">
+  <a href="#audit-log-ansehen" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Schritt 2: Metriken hinzufügen
+        Audit Log ansehen
       
     </span>
   </a>
   
 </li>
-        
-          <li class="md-nav__item">
-  <a href="#schritt-3-cpu-alert-erstellen" class="md-nav__link">
+      
+        <li class="md-nav__item">
+  <a href="#challenge" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Schritt 3: CPU-Alert erstellen
+        Challenge
       
     </span>
   </a>
-  
-</li>
-        
-      </ul>
-    </nav>
   
 </li>
       
@@ -1554,53 +1564,69 @@
   
 
 
-<h1 id="modul-4-monitoring-kosten">Modul 4 – Monitoring &amp; Kosten</h1>
+<h1 id="modul-12-azure-key-vault-secrets-und-api-keys-sicher-speichern">Modul 12 – Azure Key Vault: Secrets und API-Keys sicher speichern</h1>
 <h2 id="lernziele">Lernziele</h2>
 <p>Nach diesem Modul kannst du:</p>
 <ul>
-<li>Deine aktuellen Azure-Kosten in der Cost Analysis einsehen</li>
-<li>Einen Budget-Alert einrichten, der dich per E-Mail warnt</li>
-<li>Ressourcen mit Tags beschriften</li>
-<li>VM-Metriken (CPU, Netzwerk) in einem Diagramm ansehen</li>
+<li>Einen Azure Key Vault erstellen und mit RBAC absichern</li>
+<li>Secrets, Schlüssel und Zertifikate im Key Vault anlegen</li>
+<li>Secrets über das Portal, die CLI und Python abfragen</li>
+<li>Erklären warum Key Vault besser ist als <code>.env</code>-Dateien oder hartcodierte Passwörter</li>
 </ul>
 <hr />
-<h2 id="hintergrund-warum-monitoring-in-der-cloud-wichtig-ist">Hintergrund: Warum Monitoring in der Cloud wichtig ist</h2>
-<p>On-Prem läuft ein Server so lange bis er kaputt geht – egal ob du ihn benutzt oder nicht, die Kosten (Strom, Miete, Abschreibung) fallen immer an.</p>
-<p>In der Cloud ist das anders: <strong>Du zahlst nur für das, was gerade läuft.</strong> Das ist ein Vorteil – aber auch eine Gefahr. Wenn du vergisst, eine VM auszuschalten oder ein teuren Dienst versehentlich startest, läuft die Uhr weiter.</p>
-<p>Gutes Cloud-Monitoring bedeutet:</p>
+<h2 id="hintergrund-das-problem-mit-gespeicherten-passwortern">Hintergrund: Das Problem mit gespeicherten Passwörtern</h2>
+<p><strong>On-Prem-Vergleich:</strong> Jeder kennt es: Passwörter in Batch-Skripten, Verbindungsstrings in <code>web.config</code>, API-Keys in <code>.env</code>-Dateien. Das ist Alltag – und ein Sicherheitsrisiko. Azure Key Vault ist das Cloud-Äquivalent zu einem <strong>zentralen Passwort-Manager</strong> (KeePass, CyberArk, HashiCorp Vault) – vollständig von Microsoft verwaltet.</p>
+<p><strong>Das Problem in der Praxis:</strong></p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="c1"># ❌ So nicht:</span>
+<a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a><span class="n">DB_PASSWORD</span> <span class="o">=</span> <span class="s2">&quot;MeinPasswort123&quot;</span>
+<a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a><span class="n">API_KEY</span> <span class="o">=</span> <span class="s2">&quot;sk-abc123...&quot;</span>
+<a id="__codelineno-0-4" name="__codelineno-0-4" href="#__codelineno-0-4"></a>
+<a id="__codelineno-0-5" name="__codelineno-0-5" href="#__codelineno-0-5"></a><span class="c1"># ✅ So:</span>
+<a id="__codelineno-0-6" name="__codelineno-0-6" href="#__codelineno-0-6"></a><span class="n">DB_PASSWORD</span> <span class="o">=</span> <span class="n">get_from_keyvault</span><span class="p">(</span><span class="s2">&quot;db-password&quot;</span><span class="p">)</span>
+</code></pre></div>
+<p>Hartcodierte Secrets tauchen früher oder später in Git-Repositories auf, in Logfiles oder Screenshots. Ein einziger Leak kann teure Folgen haben.</p>
+<p><strong>Was kann Key Vault speichern?</strong></p>
+<table>
+<thead>
+<tr>
+<th>Typ</th>
+<th>Beschreibung</th>
+<th>Beispiel</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Secrets</strong></td>
+<td>Beliebige Text-Strings</td>
+<td>Passwörter, API-Keys, Verbindungsstrings</td>
+</tr>
+<tr>
+<td><strong>Keys</strong></td>
+<td>Kryptografische Schlüssel</td>
+<td>RSA, EC – für Ver-/Entschlüsselung</td>
+</tr>
+<tr>
+<td><strong>Certificates</strong></td>
+<td>TLS/SSL-Zertifikate</td>
+<td>Mit automatischer Erneuerung</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Warum Key Vault statt Umgebungsvariablen?</strong></p>
 <ul>
-<li><strong>Transparenz</strong>: Ich weiß, was gerade läuft und was es kostet</li>
-<li><strong>Frühwarnung</strong>: Ich bekomme eine Benachrichtigung bevor die Kosten aus dem Ruder laufen</li>
-<li><strong>Ordnung</strong>: Ich kann Ressourcen bestimmten Projekten oder Teams zuordnen</li>
+<li>Secrets leben <strong>nie im Code</strong> oder in Git</li>
+<li>Vollständiges <strong>Audit Log</strong>: Wer hat wann welches Secret abgerufen?</li>
+<li><strong>RBAC</strong>: Nur autorisierte Identitäten können lesen</li>
+<li><strong>Versionierung</strong>: Alte Versionen bleiben für Rollbacks erhalten</li>
+<li><strong>Managed Identity</strong>: Apps holen Secrets ohne eigene Anmeldedaten (Lernpfad 4)</li>
 </ul>
 <hr />
-<h2 id="cost-analysis-was-kostet-mein-training">Cost Analysis: Was kostet mein Training?</h2>
-<h3 id="schritt-1-cost-management-offnen">Schritt 1: Cost Management öffnen</h3>
+<h2 id="key-vault-erstellen">Key Vault erstellen</h2>
+<h3 id="schritt-1-dienst-offnen">Schritt 1: Dienst öffnen</h3>
 <ol>
-<li>Tippe in der Suchleiste <strong><code>Cost Management</code></strong> und klicke auf den Dienst</li>
-<li>Klicke links im Menü auf <strong>Cost analysis</strong></li>
+<li>Tippe im Portal <strong><code>Key vaults</code></strong> → <strong>+ Create</strong></li>
 </ol>
-<h3 id="schritt-2-kosten-ansehen">Schritt 2: Kosten ansehen</h3>
-<p>Du siehst ein Diagramm mit den Kosten der aktuellen Periode.</p>
-<ol>
-<li>Stelle oben rechts den Zeitraum auf <strong>This month</strong></li>
-<li>Klicke auf <strong>Group by</strong> → wähle <strong>Service name</strong></li>
-</ol>
-<p>Jetzt siehst du aufgeschlüsselt, welcher Azure-Dienst wie viel kostet.</p>
-<div class="admonition info">
-<p class="admonition-title">Noch kaum Kosten</p>
-<p>Frisch erstellte Ressourcen erscheinen erst nach 24h im Cost Dashboard. Ein Standard_B1s VM kostet ca. <strong>0,009 €/Stunde</strong> – das sind weniger als 10 Cent pro Tag.</p>
-</div>
-<hr />
-<h2 id="budget-alert-einrichten">Budget Alert einrichten</h2>
-<p>Ein Budget Alert schickt dir automatisch eine E-Mail, wenn deine Ausgaben einen Schwellenwert erreichen. Das ist dein Sicherheitsnetz.</p>
-<h3 id="schritt-1-budgets-offnen">Schritt 1: Budgets öffnen</h3>
-<ol>
-<li>Bleibe im <strong>Cost Management</strong> Bereich</li>
-<li>Klicke links auf <strong>Budgets</strong></li>
-<li>Klicke oben auf <strong>+ Add</strong></li>
-</ol>
-<h3 id="schritt-2-budget-konfigurieren">Schritt 2: Budget konfigurieren</h3>
+<h3 id="schritt-2-basics">Schritt 2: Basics</h3>
 <table>
 <thead>
 <tr>
@@ -1609,216 +1635,242 @@
 </tr>
 </thead>
 <tbody>
+<tr>
+<td>Subscription</td>
+<td>deine Subscription</td>
+</tr>
+<tr>
+<td>Resource group</td>
+<td><code>rg-netzwerk</code></td>
+</tr>
+<tr>
+<td>Key vault name</td>
+<td><code>kv-aztraining-XXXX</code> (XXXX = deine Initialen + Datum, z.B. <code>kv-aztraining-ms0605</code>)</td>
+</tr>
+<tr>
+<td>Region</td>
+<td><code>West Europe</code></td>
+</tr>
+<tr>
+<td>Pricing tier</td>
+<td><code>Standard</code></td>
+</tr>
+</tbody>
+</table>
+<div class="admonition info">
+<p class="admonition-title">Name muss weltweit eindeutig sein</p>
+<p>Key Vault Namen sind Teil der URL <code>https://kv-aztraining-XXXX.vault.azure.net</code> – sie müssen global eindeutig sein.</p>
+</div>
+<div class="admonition tip">
+<p class="admonition-title">Standard vs. Premium</p>
+<p>Standard: Software-geschützte Schlüssel – ausreichend für fast alle Anwendungen. Premium: Hardware Security Module (HSM) – für hochsensible, regulierte Umgebungen. Für dieses Training: Standard.</p>
+</div>
+<h3 id="schritt-3-access-configuration">Schritt 3: Access Configuration</h3>
+<ol>
+<li>Wechsle zum Tab <strong>Access configuration</strong></li>
+<li>Permission model: <strong>Azure role-based access control (RBAC)</strong> ✅ (Haken setzen)</li>
+</ol>
+<div class="admonition info">
+<p class="admonition-title">RBAC vs. Vault Access Policies</p>
+<p>Key Vault unterstützt zwei Zugriffsmodelle:
+- <strong>RBAC</strong> (empfohlen): Berechtigungen über Azure-Rollen – konsistent mit dem Rest von Azure
+- <strong>Access Policies</strong> (legacy): Key-Vault-spezifisches Modell, wird noch unterstützt aber nicht empfohlen</p>
+<p>Neue Vaults sollten immer RBAC nutzen.</p>
+</div>
+<h3 id="schritt-4-review-create">Schritt 4: Review + Create</h3>
+<p><strong>Review + create</strong> → <strong>Create</strong></p>
+<hr />
+<h2 id="rbac-dir-selbst-zugriff-gewahren">RBAC: Dir selbst Zugriff gewähren</h2>
+<p>Mit RBAC-Modell musst du dir explizit die Berechtigung geben, Secrets zu verwalten.</p>
+<ol>
+<li>Navigiere zu deinem Key Vault → <strong>Access control (IAM)</strong></li>
+<li>Klicke <strong>+ Add</strong> → <strong>Add role assignment</strong></li>
+<li>Suche und wähle die Rolle: <strong>Key Vault Secrets Officer</strong></li>
+<li>Tab <strong>Members</strong> → <strong>+ Select members</strong> → suche deinen Benutzernamen</li>
+<li><strong>Review + assign</strong> → <strong>Assign</strong></li>
+</ol>
+<div class="admonition info">
+<p class="admonition-title">Key Vault Rollen im Überblick</p>
+<table>
+<thead>
+<tr>
+<th>Rolle</th>
+<th>Darf</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Key Vault Secrets User</td>
+<td>Secrets <strong>lesen</strong></td>
+</tr>
+<tr>
+<td>Key Vault Secrets Officer</td>
+<td>Secrets <strong>lesen, erstellen, aktualisieren, löschen</strong></td>
+</tr>
+<tr>
+<td>Key Vault Administrator</td>
+<td>Alles + RBAC-Konfiguration ändern</td>
+</tr>
+</tbody>
+</table>
+</div>
+<hr />
+<h2 id="secrets-erstellen">Secrets erstellen</h2>
+<h3 id="im-portal">Im Portal</h3>
+<ol>
+<li>Navigiere zu <code>kv-aztraining-XXXX</code> → klicke links auf <strong>Secrets</strong></li>
+<li>Klicke <strong>+ Generate/Import</strong></li>
+</ol>
+<p><strong>Secret 1: Datenbankpasswort</strong></p>
+<table>
+<thead>
+<tr>
+<th>Feld</th>
+<th>Wert</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Upload options</td>
+<td><code>Manual</code></td>
+</tr>
 <tr>
 <td>Name</td>
-<td><code>budget-aztraining</code></td>
+<td><code>db-password</code></td>
 </tr>
 <tr>
-<td>Reset period</td>
-<td><code>Monthly</code></td>
-</tr>
-<tr>
-<td>Creation date</td>
-<td>(bereits eingetragen)</td>
-</tr>
-<tr>
-<td>Expiration date</td>
-<td>(Ende nächsten Monats)</td>
-</tr>
-<tr>
-<td>Amount</td>
-<td><code>20</code></td>
+<td>Secret value</td>
+<td><code>P@ssw0rd-Datenbank-2026!</code></td>
 </tr>
 </tbody>
 </table>
-<p>Klicke auf <strong>Next: Alerts &gt;</strong></p>
-<h3 id="schritt-3-alert-bedingung-hinzufugen">Schritt 3: Alert-Bedingung hinzufügen</h3>
-<ol>
-<li>Klicke auf <strong>+ Add alert condition</strong></li>
-<li>Konfiguriere:</li>
-</ol>
-<table>
-<thead>
-<tr>
-<th>Feld</th>
-<th>Wert</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>Alert condition</td>
-<td><code>Actual</code></td>
-</tr>
-<tr>
-<td>% of budget</td>
-<td><code>80</code></td>
-</tr>
-<tr>
-<td>Alert recipients (email)</td>
-<td>deine E-Mail-Adresse</td>
-</tr>
-</tbody>
-</table>
-<ol>
-<li>Klicke auf <strong>Create</strong></li>
-</ol>
-<div class="admonition success">
-<p class="admonition-title">Sicherheitsnetz aktiv</p>
-<p>Du bekommst ab jetzt eine E-Mail sobald 80% von 20 € (= 16 €) verbraucht sind. So kannst du keine Überraschungen erleben.</p>
-</div>
-<hr />
-<h2 id="tags-ressourcen-beschriften">Tags: Ressourcen beschriften</h2>
-<p>Tags sind Schlüssel-Wert-Paare, die du an Azure-Ressourcen anhängen kannst. Sie helfen dir:</p>
-<ul>
-<li>Ressourcen nach Projekt oder Team zu gruppieren</li>
-<li>Kosten nach Tags aufzuschlüsseln (z.B. "Was hat Projekt X insgesamt gekostet?")</li>
-<li>Ordnung zu halten wenn man viele Ressourcen hat</li>
-</ul>
-<p>In echten Unternehmen sind Tags Pflicht – die IT-Abteilung kann so sehen, welches Team welche Kosten verursacht.</p>
-<h3 id="schritt-1-resource-group-offnen">Schritt 1: Resource Group öffnen</h3>
-<ol>
-<li>Suche im Portal nach <code>rg-aztraining</code> und klicke auf die Resource Group</li>
-<li>Klicke links im Menü auf <strong>Tags</strong></li>
-</ol>
-<h3 id="schritt-2-tags-hinzufugen">Schritt 2: Tags hinzufügen</h3>
-<p>Klicke jeweils in die Felder Name und Wert und füge folgende Tags hinzu:</p>
+<p>Klicke <strong>Create</strong>.</p>
+<p><strong>Secret 2: API-Key</strong></p>
 <table>
 <thead>
 <tr>
 <th>Name</th>
-<th>Wert</th>
+<th>Secret value</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td><code>owner</code></td>
-<td>dein Name</td>
-</tr>
-<tr>
-<td><code>projekt</code></td>
-<td><code>azure-training</code></td>
-</tr>
-<tr>
-<td><code>umgebung</code></td>
-<td><code>dev</code></td>
+<td><code>external-api-key</code></td>
+<td><code>sk-beispiel-apikey-abc123</code></td>
 </tr>
 </tbody>
 </table>
-<p>Klicke auf <strong>Apply</strong>.</p>
-<div class="admonition tip">
-<p class="admonition-title">Tags auf Resource Group = Tags auf allen Ressourcen</p>
-<p>Wenn du Tags auf einer Resource Group setzt, werden sie in Cost Analysis auf alle enthaltenen Ressourcen angewendet. Du musst nicht jede VM, jeden Storage Account etc. einzeln taggen.</p>
+<div class="admonition warning">
+<p class="admonition-title">Echte Secrets nie öffentlich</p>
+<p>Für dieses Training nutzt du Platzhalter-Werte. In der Praxis kommen hier echte Passwörter rein – die du natürlich <strong>nicht</strong> in Screenshots oder Dokus zeigst.</p>
 </div>
 <hr />
-<h2 id="vm-metriken-cpu-und-netzwerk-live-sehen">VM-Metriken: CPU und Netzwerk live sehen</h2>
-<p>Azure sammelt automatisch Metriken für alle laufenden Ressourcen: CPU-Auslastung, Speicher, Netzwerkdurchsatz, Festplatten-I/O und mehr.</p>
-<h3 id="schritt-1-zur-vm-navigieren">Schritt 1: Zur VM navigieren</h3>
-<ol>
-<li>Suche im Portal nach <code>vm-training</code> und klicke auf deine VM</li>
-<li>Links im Menü: <strong>Monitoring</strong> → <strong>Metrics</strong></li>
-</ol>
-<h3 id="schritt-2-metriken-hinzufugen">Schritt 2: Metriken hinzufügen</h3>
-<ol>
-<li>Im Diagramm-Editor:<ul>
-<li><strong>Scope</strong>: <code>vm-training</code> (bereits ausgewählt)</li>
-<li><strong>Metric Namespace</strong>: <code>Virtual Machine Host</code></li>
-<li><strong>Metric</strong>: wähle <code>Percentage CPU</code></li>
-</ul>
-</li>
-<li>Du siehst ein Diagramm der CPU-Auslastung der letzten Zeit</li>
-</ol>
-<p>Füge weitere Metriken hinzu:</p>
-<ol>
-<li>Klicke auf <strong>+ Add metric</strong></li>
-<li>Wähle <code>Network In Total</code> → Add</li>
-<li>Klicke nochmal auf <strong>+ Add metric</strong></li>
-<li>Wähle <code>Network Out Total</code> → Add</li>
-</ol>
-<p>Jetzt siehst du drei Kurven im selben Diagramm.</p>
-<h3 id="schritt-3-cpu-alert-erstellen">Schritt 3: CPU-Alert erstellen</h3>
-<p>Jetzt richten wir einen automatischen Alert ein, der sich meldet wenn die VM unter Last kommt.</p>
-<ol>
-<li>Klicke oben im Metrics-Bereich auf <strong>+ New alert rule</strong></li>
-<li>Das Formular öffnet sich, die Ressource <code>vm-training</code> ist bereits eingetragen</li>
-<li>Klicke auf <strong>+ Add condition</strong></li>
-<li>Wähle <strong>Percentage CPU</strong> aus der Liste</li>
-<li>Scrolle im Konfigurations-Bereich nach unten und stelle ein:</li>
-</ol>
-<table>
-<thead>
-<tr>
-<th>Feld</th>
-<th>Wert</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>Threshold type</td>
-<td><code>Static</code></td>
-</tr>
-<tr>
-<td>Aggregation type</td>
-<td><code>Average</code></td>
-</tr>
-<tr>
-<td>Operator</td>
-<td><code>Greater than</code></td>
-</tr>
-<tr>
-<td>Threshold value</td>
-<td><code>80</code></td>
-</tr>
-</tbody>
-</table>
-<ol>
-<li>Klicke auf <strong>Done</strong></li>
-</ol>
-<p><strong>Action Group erstellen</strong> (wer bekommt die E-Mail?):</p>
-<ol>
-<li>Scrolle nach unten zum Abschnitt <strong>Actions</strong></li>
-<li>Klicke auf <strong>+ Create action group</strong></li>
-<li>Fülle aus:</li>
-</ol>
-<table>
-<thead>
-<tr>
-<th>Feld</th>
-<th>Wert</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>Action group name</td>
-<td><code>ag-aztraining</code></td>
-</tr>
-<tr>
-<td>Display name</td>
-<td><code>aztraining</code></td>
-</tr>
-<tr>
-<td>Resource group</td>
-<td><code>rg-aztraining</code></td>
-</tr>
-</tbody>
-</table>
-<ol>
-<li>Klicke auf den Tab <strong>Notifications</strong></li>
-<li>Wähle bei <strong>Notification type</strong>: <code>Email/SMS message/Push/Voice</code></li>
-<li>Trage deine E-Mail-Adresse ein und klicke <strong>OK</strong></li>
-<li>Gib einen Namen ein, z.B. <code>email-benachrichtigung</code></li>
-<li>Klicke durch bis <strong>Review + create</strong> → <strong>Create</strong></li>
-</ol>
-<p><strong>Alert Rule abschließen:</strong></p>
-<ol>
-<li>Zurück im Alert Rule Formular: trage unter <strong>Alert rule name</strong> ein: <code>alert-hohe-cpu</code></li>
-<li>Klicke auf <strong>Create</strong></li>
-</ol>
+<h2 id="secrets-uber-die-azure-cli-abfragen">Secrets über die Azure CLI abfragen</h2>
+<p>Öffne die <strong>Cloud Shell</strong> im Azure Portal.</p>
+<h3 id="alle-secrets-auflisten">Alle Secrets auflisten</h3>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a>az<span class="w"> </span>keyvault<span class="w"> </span>secret<span class="w"> </span>list<span class="w"> </span><span class="se">\</span>
+<a id="__codelineno-1-2" name="__codelineno-1-2" href="#__codelineno-1-2"></a><span class="w">  </span>--vault-name<span class="w"> </span>kv-aztraining-XXXX<span class="w"> </span><span class="se">\</span>
+<a id="__codelineno-1-3" name="__codelineno-1-3" href="#__codelineno-1-3"></a><span class="w">  </span>--query<span class="w"> </span><span class="s2">&quot;[].name&quot;</span><span class="w"> </span><span class="se">\</span>
+<a id="__codelineno-1-4" name="__codelineno-1-4" href="#__codelineno-1-4"></a><span class="w">  </span>-o<span class="w"> </span>table
+</code></pre></div>
+<h3 id="secret-wert-abrufen">Secret-Wert abrufen</h3>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a>az<span class="w"> </span>keyvault<span class="w"> </span>secret<span class="w"> </span>show<span class="w"> </span><span class="se">\</span>
+<a id="__codelineno-2-2" name="__codelineno-2-2" href="#__codelineno-2-2"></a><span class="w">  </span>--vault-name<span class="w"> </span>kv-aztraining-XXXX<span class="w"> </span><span class="se">\</span>
+<a id="__codelineno-2-3" name="__codelineno-2-3" href="#__codelineno-2-3"></a><span class="w">  </span>--name<span class="w"> </span>db-password<span class="w"> </span><span class="se">\</span>
+<a id="__codelineno-2-4" name="__codelineno-2-4" href="#__codelineno-2-4"></a><span class="w">  </span>--query<span class="w"> </span><span class="s2">&quot;value&quot;</span><span class="w"> </span><span class="se">\</span>
+<a id="__codelineno-2-5" name="__codelineno-2-5" href="#__codelineno-2-5"></a><span class="w">  </span>--output<span class="w"> </span>tsv
+</code></pre></div>
+<h3 id="secret-in-variable-speichern-fur-skripte">Secret in Variable speichern (für Skripte)</h3>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a><span class="nv">DB_PASS</span><span class="o">=</span><span class="k">$(</span>az<span class="w"> </span>keyvault<span class="w"> </span>secret<span class="w"> </span>show<span class="w"> </span><span class="se">\</span>
+<a id="__codelineno-3-2" name="__codelineno-3-2" href="#__codelineno-3-2"></a><span class="w">  </span>--vault-name<span class="w"> </span>kv-aztraining-XXXX<span class="w"> </span><span class="se">\</span>
+<a id="__codelineno-3-3" name="__codelineno-3-3" href="#__codelineno-3-3"></a><span class="w">  </span>--name<span class="w"> </span>db-password<span class="w"> </span><span class="se">\</span>
+<a id="__codelineno-3-4" name="__codelineno-3-4" href="#__codelineno-3-4"></a><span class="w">  </span>--query<span class="w"> </span><span class="s2">&quot;value&quot;</span><span class="w"> </span><span class="se">\</span>
+<a id="__codelineno-3-5" name="__codelineno-3-5" href="#__codelineno-3-5"></a><span class="w">  </span>--output<span class="w"> </span>tsv<span class="k">)</span>
+<a id="__codelineno-3-6" name="__codelineno-3-6" href="#__codelineno-3-6"></a>
+<a id="__codelineno-3-7" name="__codelineno-3-7" href="#__codelineno-3-7"></a><span class="nb">echo</span><span class="w"> </span><span class="s2">&quot;Passwort geladen: </span><span class="si">${#</span><span class="nv">DB_PASS</span><span class="si">}</span><span class="s2"> Zeichen&quot;</span>
+</code></pre></div>
 <div class="admonition success">
-<p class="admonition-title">Alles überwacht!</p>
-<p>Du bekommst jetzt eine E-Mail wenn die CPU deiner VM über 80% steigt. In echten Produktionsumgebungen würde man auf solche Alerts z.B. automatisch weitere VMs starten (Auto-Scaling).</p>
+<p class="admonition-title">Kein Passwort im Code!</p>
+<p>Genau so würde ein echtes Skript das Passwort laden – ohne es im Code zu hinterlegen.</p>
 </div>
 <hr />
-<p>Weiter zu <a href="../modul-5-appservice/">Modul 5 – Azure App Service</a> →</p>
+<h2 id="secret-in-python-abfragen">Secret in Python abfragen</h2>
+<p>Öffne die Cloud Shell und erstelle eine neue Python-Datei:</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-4-1" name="__codelineno-4-1" href="#__codelineno-4-1"></a>code<span class="w"> </span>keyvault_demo.py
+</code></pre></div>
+<p>Füge folgenden Code ein:</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-5-1" name="__codelineno-5-1" href="#__codelineno-5-1"></a><span class="kn">import</span><span class="w"> </span><span class="nn">subprocess</span>
+<a id="__codelineno-5-2" name="__codelineno-5-2" href="#__codelineno-5-2"></a>
+<a id="__codelineno-5-3" name="__codelineno-5-3" href="#__codelineno-5-3"></a><span class="n">VAULT_NAME</span> <span class="o">=</span> <span class="s2">&quot;kv-aztraining-XXXX&quot;</span>  <span class="c1"># Deinen Vault-Namen einsetzen</span>
+<a id="__codelineno-5-4" name="__codelineno-5-4" href="#__codelineno-5-4"></a>
+<a id="__codelineno-5-5" name="__codelineno-5-5" href="#__codelineno-5-5"></a><span class="k">def</span><span class="w"> </span><span class="nf">get_secret</span><span class="p">(</span><span class="n">name</span><span class="p">:</span> <span class="nb">str</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="nb">str</span><span class="p">:</span>
+<a id="__codelineno-5-6" name="__codelineno-5-6" href="#__codelineno-5-6"></a><span class="w">    </span><span class="sd">&quot;&quot;&quot;Secret aus Azure Key Vault über die CLI laden.&quot;&quot;&quot;</span>
+<a id="__codelineno-5-7" name="__codelineno-5-7" href="#__codelineno-5-7"></a>    <span class="n">result</span> <span class="o">=</span> <span class="n">subprocess</span><span class="o">.</span><span class="n">run</span><span class="p">(</span>
+<a id="__codelineno-5-8" name="__codelineno-5-8" href="#__codelineno-5-8"></a>        <span class="p">[</span><span class="s2">&quot;az&quot;</span><span class="p">,</span> <span class="s2">&quot;keyvault&quot;</span><span class="p">,</span> <span class="s2">&quot;secret&quot;</span><span class="p">,</span> <span class="s2">&quot;show&quot;</span><span class="p">,</span>
+<a id="__codelineno-5-9" name="__codelineno-5-9" href="#__codelineno-5-9"></a>         <span class="s2">&quot;--vault-name&quot;</span><span class="p">,</span> <span class="n">VAULT_NAME</span><span class="p">,</span>
+<a id="__codelineno-5-10" name="__codelineno-5-10" href="#__codelineno-5-10"></a>         <span class="s2">&quot;--name&quot;</span><span class="p">,</span> <span class="n">name</span><span class="p">,</span>
+<a id="__codelineno-5-11" name="__codelineno-5-11" href="#__codelineno-5-11"></a>         <span class="s2">&quot;--query&quot;</span><span class="p">,</span> <span class="s2">&quot;value&quot;</span><span class="p">,</span>
+<a id="__codelineno-5-12" name="__codelineno-5-12" href="#__codelineno-5-12"></a>         <span class="s2">&quot;--output&quot;</span><span class="p">,</span> <span class="s2">&quot;tsv&quot;</span><span class="p">],</span>
+<a id="__codelineno-5-13" name="__codelineno-5-13" href="#__codelineno-5-13"></a>        <span class="n">capture_output</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span> <span class="n">text</span><span class="o">=</span><span class="kc">True</span>
+<a id="__codelineno-5-14" name="__codelineno-5-14" href="#__codelineno-5-14"></a>    <span class="p">)</span>
+<a id="__codelineno-5-15" name="__codelineno-5-15" href="#__codelineno-5-15"></a>    <span class="k">if</span> <span class="n">result</span><span class="o">.</span><span class="n">returncode</span> <span class="o">!=</span> <span class="mi">0</span><span class="p">:</span>
+<a id="__codelineno-5-16" name="__codelineno-5-16" href="#__codelineno-5-16"></a>        <span class="k">raise</span> <span class="ne">RuntimeError</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Secret &#39;</span><span class="si">{</span><span class="n">name</span><span class="si">}</span><span class="s2">&#39; nicht gefunden: </span><span class="si">{</span><span class="n">result</span><span class="o">.</span><span class="n">stderr</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+<a id="__codelineno-5-17" name="__codelineno-5-17" href="#__codelineno-5-17"></a>    <span class="k">return</span> <span class="n">result</span><span class="o">.</span><span class="n">stdout</span><span class="o">.</span><span class="n">strip</span><span class="p">()</span>
+<a id="__codelineno-5-18" name="__codelineno-5-18" href="#__codelineno-5-18"></a>
+<a id="__codelineno-5-19" name="__codelineno-5-19" href="#__codelineno-5-19"></a><span class="c1"># Secrets laden und nutzen</span>
+<a id="__codelineno-5-20" name="__codelineno-5-20" href="#__codelineno-5-20"></a><span class="n">db_password</span>   <span class="o">=</span> <span class="n">get_secret</span><span class="p">(</span><span class="s2">&quot;db-password&quot;</span><span class="p">)</span>
+<a id="__codelineno-5-21" name="__codelineno-5-21" href="#__codelineno-5-21"></a><span class="n">api_key</span>       <span class="o">=</span> <span class="n">get_secret</span><span class="p">(</span><span class="s2">&quot;external-api-key&quot;</span><span class="p">)</span>
+<a id="__codelineno-5-22" name="__codelineno-5-22" href="#__codelineno-5-22"></a>
+<a id="__codelineno-5-23" name="__codelineno-5-23" href="#__codelineno-5-23"></a><span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;✅ db-password geladen (</span><span class="si">{</span><span class="nb">len</span><span class="p">(</span><span class="n">db_password</span><span class="p">)</span><span class="si">}</span><span class="s2"> Zeichen)&quot;</span><span class="p">)</span>
+<a id="__codelineno-5-24" name="__codelineno-5-24" href="#__codelineno-5-24"></a><span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;✅ external-api-key geladen: </span><span class="si">{</span><span class="n">api_key</span><span class="p">[:</span><span class="mi">8</span><span class="p">]</span><span class="si">}</span><span class="s2">...&quot;</span><span class="p">)</span>
+<a id="__codelineno-5-25" name="__codelineno-5-25" href="#__codelineno-5-25"></a><span class="nb">print</span><span class="p">()</span>
+<a id="__codelineno-5-26" name="__codelineno-5-26" href="#__codelineno-5-26"></a><span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Verbindung zur Datenbank wird mit geladenen Credentials aufgebaut...&quot;</span><span class="p">)</span>
+</code></pre></div>
+<p>Speichern und ausführen:</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-6-1" name="__codelineno-6-1" href="#__codelineno-6-1"></a>python<span class="w"> </span>keyvault_demo.py
+</code></pre></div>
+<div class="admonition info">
+<p class="admonition-title">In Produktionsumgebungen</p>
+<p>In echten Anwendungen nutzt man das <strong>Azure SDK</strong> (<code>azure-keyvault-secrets</code> + <code>azure-identity</code>) zusammen mit <strong>Managed Identity</strong> – dann braucht die App gar keine eigenen Anmeldedaten. Das kommt in Lernpfad 4 (Identity &amp; Access).</p>
+</div>
+<hr />
+<h2 id="audit-log-ansehen">Audit Log ansehen</h2>
+<p>Jeder Zugriff auf einen Secret wird protokolliert.</p>
+<ol>
+<li>Navigiere zu deinem Key Vault → <strong>Monitoring</strong> → <strong>Diagnostic settings</strong></li>
+<li>Klicke <strong>+ Add diagnostic setting</strong></li>
+<li>Aktiviere: <code>AuditEvent</code> → Ziel: <strong>Send to Log Analytics workspace</strong> (oder einfach anschauen unter <strong>Activity log</strong>)</li>
+</ol>
+<p>Unter <strong>Activity log</strong> siehst du alle Aktionen: Wer hat wann welches Secret abgerufen, erstellt oder geändert.</p>
+<div class="admonition tip">
+<p class="admonition-title">Compliance-Anforderung</p>
+<p>In regulierten Umgebungen (DSGVO, ISO 27001, BSI IT-Grundschutz) ist ein lückenloses Audit-Log für Secret-Zugriffe oft Pflicht. Key Vault erfüllt diese Anforderung direkt.</p>
+</div>
+<hr />
+<h2 id="challenge">Challenge</h2>
+<div class="admonition question">
+<p class="admonition-title">Challenge: Secret-Rotation</p>
+<ol>
+<li>Erstelle eine neue Version von <code>db-password</code>:</li>
+<li>Navigiere zu <code>db-password</code> im Key Vault → <strong>New version</strong></li>
+<li>Trage einen neuen Wert ein: <code>NeuesP@ssw0rd-2026!</code></li>
+<li>Frage das Secret via CLI ab – welchen Wert bekommst du? (immer die neueste Version)</li>
+<li>Liste alle Versionen des Secrets auf</li>
+</ol>
+</div>
+<details class="success">
+<summary>Hinweis</summary>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-7-1" name="__codelineno-7-1" href="#__codelineno-7-1"></a><span class="c1"># Alle Versionen eines Secrets anzeigen</span>
+<a id="__codelineno-7-2" name="__codelineno-7-2" href="#__codelineno-7-2"></a>az<span class="w"> </span>keyvault<span class="w"> </span>secret<span class="w"> </span>list-versions<span class="w"> </span><span class="se">\</span>
+<a id="__codelineno-7-3" name="__codelineno-7-3" href="#__codelineno-7-3"></a><span class="w">  </span>--vault-name<span class="w"> </span>kv-aztraining-XXXX<span class="w"> </span><span class="se">\</span>
+<a id="__codelineno-7-4" name="__codelineno-7-4" href="#__codelineno-7-4"></a><span class="w">  </span>--name<span class="w"> </span>db-password<span class="w"> </span><span class="se">\</span>
+<a id="__codelineno-7-5" name="__codelineno-7-5" href="#__codelineno-7-5"></a><span class="w">  </span>--query<span class="w"> </span><span class="s2">&quot;[].{version: id, created: attributes.created, enabled: attributes.enabled}&quot;</span><span class="w"> </span><span class="se">\</span>
+<a id="__codelineno-7-6" name="__codelineno-7-6" href="#__codelineno-7-6"></a><span class="w">  </span>-o<span class="w"> </span>table
+</code></pre></div>
+<p>Key Vault behält alle Versionen – nur die aktuellste aktivierte Version wird bei <code>secret show</code> zurückgegeben. Ältere Versionen bleiben für Audits erhalten (können aber deaktiviert werden).</p>
+</details>
+<hr />
+<p>Weiter zu <a href="../modul-13-privateendpoints/">Modul 13 – Private Endpoints: Dienste intern erreichbar machen</a> →</p>
 
 
 
@@ -1856,7 +1908,7 @@
       <nav class="md-footer__inner md-grid" aria-label="Fußzeile" >
         
           
-          <a href="../modul-3-ai/" class="md-footer__link md-footer__link--prev" aria-label="Zurück: Modul 3 – Azure KI">
+          <a href="../modul-11-loadbalancer/" class="md-footer__link md-footer__link--prev" aria-label="Zurück: Modul 11 – Load Balancer">
             <div class="md-footer__button md-icon">
               
               <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
@@ -1866,20 +1918,20 @@
                 Zurück
               </span>
               <div class="md-ellipsis">
-                Modul 3 – Azure KI
+                Modul 11 – Load Balancer
               </div>
             </div>
           </a>
         
         
           
-          <a href="../modul-5-appservice/" class="md-footer__link md-footer__link--next" aria-label="Weiter: Modul 5 – App Service">
+          <a href="../modul-13-privateendpoints/" class="md-footer__link md-footer__link--next" aria-label="Weiter: Modul 13 – Private Endpoints">
             <div class="md-footer__title">
               <span class="md-footer__direction">
                 Weiter
               </span>
               <div class="md-ellipsis">
-                Modul 5 – App Service
+                Modul 13 – Private Endpoints
               </div>
             </div>
             <div class="md-footer__button md-icon">

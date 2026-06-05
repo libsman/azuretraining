@@ -10,13 +10,13 @@
       
       
       
-        <link rel="canonical" href="https://libsman.github.io/azuretraining/modul-4-monitoring/">
+        <link rel="canonical" href="https://libsman.github.io/azuretraining/modul-13-privateendpoints/">
       
       
-        <link rel="prev" href="../modul-3-ai/">
+        <link rel="prev" href="../modul-12-keyvault/">
       
       
-        <link rel="next" href="../modul-5-appservice/">
+        <link rel="next" href="../modul-14-aufr%C3%A4umen/">
       
       
         
@@ -27,7 +27,7 @@
     
     
       
-        <title>Modul 4 – Monitoring & Kosten - Azure Einstiegstraining</title>
+        <title>Modul 13 – Private Endpoints - Azure Einstiegstraining</title>
       
     
     
@@ -78,7 +78,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#modul-4-monitoring-kosten" class="md-skip">
+        <a href="#modul-13-private-endpoints-azure-dienste-aus-dem-internet-nehmen" class="md-skip">
           Zum Inhalt
         </a>
       
@@ -114,7 +114,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Modul 4 – Monitoring & Kosten
+              Modul 13 – Private Endpoints
             
           </span>
         </div>
@@ -313,20 +313,18 @@
       
   
   
-    
   
   
-  
     
     
     
     
     
-    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" checked>
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" >
         
           
           <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="0">
@@ -347,7 +345,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="true">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="false">
           <label class="md-nav__title" for="__nav_3">
             <span class="md-nav__icon md-icon"></span>
             
@@ -474,37 +472,10 @@
                 
   
   
-    
   
   
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
-      
-      
-        
-      
-      
-        <label class="md-nav__link md-nav__link--active" for="__toc">
-          
-  
-  
-  <span class="md-ellipsis">
-    
-  
-    Modul 4 – Monitoring & Kosten
-  
-
-    
-  </span>
-  
-  
-
-          <span class="md-nav__icon md-icon"></span>
-        </label>
-      
-      <a href="./" class="md-nav__link md-nav__link--active">
+    <li class="md-nav__item">
+      <a href="../modul-4-monitoring/" class="md-nav__link">
         
   
   
@@ -520,226 +491,6 @@
   
 
       </a>
-      
-        
-
-<nav class="md-nav md-nav--secondary" aria-label="Inhaltsverzeichnis">
-  
-  
-  
-    
-  
-  
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      Inhaltsverzeichnis
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#lernziele" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Lernziele
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#hintergrund-warum-monitoring-in-der-cloud-wichtig-ist" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Hintergrund: Warum Monitoring in der Cloud wichtig ist
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#cost-analysis-was-kostet-mein-training" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Cost Analysis: Was kostet mein Training?
-      
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="Cost Analysis: Was kostet mein Training?">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#schritt-1-cost-management-offnen" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Schritt 1: Cost Management öffnen
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#schritt-2-kosten-ansehen" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Schritt 2: Kosten ansehen
-      
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#budget-alert-einrichten" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Budget Alert einrichten
-      
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="Budget Alert einrichten">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#schritt-1-budgets-offnen" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Schritt 1: Budgets öffnen
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#schritt-2-budget-konfigurieren" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Schritt 2: Budget konfigurieren
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#schritt-3-alert-bedingung-hinzufugen" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Schritt 3: Alert-Bedingung hinzufügen
-      
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#tags-ressourcen-beschriften" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Tags: Ressourcen beschriften
-      
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="Tags: Ressourcen beschriften">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#schritt-1-resource-group-offnen" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Schritt 1: Resource Group öffnen
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#schritt-2-tags-hinzufugen" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Schritt 2: Tags hinzufügen
-      
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#vm-metriken-cpu-und-netzwerk-live-sehen" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        VM-Metriken: CPU und Netzwerk live sehen
-      
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="VM-Metriken: CPU und Netzwerk live sehen">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#schritt-1-zur-vm-navigieren" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Schritt 1: Zur VM navigieren
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#schritt-2-metriken-hinzufugen" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Schritt 2: Metriken hinzufügen
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#schritt-3-cpu-alert-erstellen" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Schritt 3: CPU-Alert erstellen
-      
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-    </ul>
-  
-</nav>
-      
     </li>
   
 
@@ -840,18 +591,20 @@
       
   
   
+    
   
   
+  
     
     
     
     
     
-    <li class="md-nav__item md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4" checked>
         
           
           <label class="md-nav__link" for="__nav_4" id="__nav_4_label" tabindex="0">
@@ -872,7 +625,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="false">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="true">
           <label class="md-nav__title" for="__nav_4">
             <span class="md-nav__icon md-icon"></span>
             
@@ -1027,10 +780,37 @@
                 
   
   
+    
   
   
-    <li class="md-nav__item">
-      <a href="../modul-13-privateendpoints/" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Modul 13 – Private Endpoints
+  
+
+    
+  </span>
+  
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
         
   
   
@@ -1046,6 +826,225 @@
   
 
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Inhaltsverzeichnis">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Inhaltsverzeichnis
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#lernziele" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Lernziele
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#hintergrund-das-problem-mit-public-endpoints" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Hintergrund: Das Problem mit Public Endpoints
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#subnet-fur-private-endpoint-vorbereiten" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Subnet für Private Endpoint vorbereiten
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#private-endpoint-fur-key-vault-erstellen" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Private Endpoint für Key Vault erstellen
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Private Endpoint für Key Vault erstellen">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#schritt-1-uber-den-key-vault-navigieren" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Schritt 1: Über den Key Vault navigieren
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#schritt-2-basics" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Schritt 2: Basics
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#schritt-3-resource" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Schritt 3: Resource
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#schritt-4-virtual-network" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Schritt 4: Virtual Network
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#schritt-5-dns-integration" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Schritt 5: DNS Integration
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#schritt-6-review-create" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Schritt 6: Review + Create
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#offentlichen-zugriff-auf-key-vault-deaktivieren" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Öffentlichen Zugriff auf Key Vault deaktivieren
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#private-endpoint-testen" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Private Endpoint testen
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Private Endpoint testen">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#dns-auflosung-testen-soll-private-ip-zeigen" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        DNS-Auflösung testen (soll private IP zeigen)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#erreichbarkeit-testen-soll-http-200401-liefern" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Erreichbarkeit testen (soll HTTP 200/401 liefern)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#von-auen-testen-soll-scheitern" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Von außen testen (soll scheitern)
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#private-dns-zone-anzeigen" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Private DNS Zone anzeigen
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#challenge" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Challenge
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
     </li>
   
 
@@ -1346,10 +1345,10 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#hintergrund-warum-monitoring-in-der-cloud-wichtig-ist" class="md-nav__link">
+  <a href="#hintergrund-das-problem-mit-public-endpoints" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Hintergrund: Warum Monitoring in der Cloud wichtig ist
+        Hintergrund: Das Problem mit Public Endpoints
       
     </span>
   </a>
@@ -1357,22 +1356,33 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#cost-analysis-was-kostet-mein-training" class="md-nav__link">
+  <a href="#subnet-fur-private-endpoint-vorbereiten" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Cost Analysis: Was kostet mein Training?
+        Subnet für Private Endpoint vorbereiten
       
     </span>
   </a>
   
-    <nav class="md-nav" aria-label="Cost Analysis: Was kostet mein Training?">
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#private-endpoint-fur-key-vault-erstellen" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Private Endpoint für Key Vault erstellen
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Private Endpoint für Key Vault erstellen">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#schritt-1-cost-management-offnen" class="md-nav__link">
+  <a href="#schritt-1-uber-den-key-vault-navigieren" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Schritt 1: Cost Management öffnen
+        Schritt 1: Über den Key Vault navigieren
       
     </span>
   </a>
@@ -1380,10 +1390,54 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#schritt-2-kosten-ansehen" class="md-nav__link">
+  <a href="#schritt-2-basics" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Schritt 2: Kosten ansehen
+        Schritt 2: Basics
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#schritt-3-resource" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Schritt 3: Resource
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#schritt-4-virtual-network" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Schritt 4: Virtual Network
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#schritt-5-dns-integration" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Schritt 5: DNS Integration
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#schritt-6-review-create" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Schritt 6: Review + Create
       
     </span>
   </a>
@@ -1396,22 +1450,33 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#budget-alert-einrichten" class="md-nav__link">
+  <a href="#offentlichen-zugriff-auf-key-vault-deaktivieren" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Budget Alert einrichten
+        Öffentlichen Zugriff auf Key Vault deaktivieren
       
     </span>
   </a>
   
-    <nav class="md-nav" aria-label="Budget Alert einrichten">
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#private-endpoint-testen" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Private Endpoint testen
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Private Endpoint testen">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#schritt-1-budgets-offnen" class="md-nav__link">
+  <a href="#dns-auflosung-testen-soll-private-ip-zeigen" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Schritt 1: Budgets öffnen
+        DNS-Auflösung testen (soll private IP zeigen)
       
     </span>
   </a>
@@ -1419,10 +1484,10 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#schritt-2-budget-konfigurieren" class="md-nav__link">
+  <a href="#erreichbarkeit-testen-soll-http-200401-liefern" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Schritt 2: Budget konfigurieren
+        Erreichbarkeit testen (soll HTTP 200/401 liefern)
       
     </span>
   </a>
@@ -1430,10 +1495,10 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#schritt-3-alert-bedingung-hinzufugen" class="md-nav__link">
+  <a href="#von-auen-testen-soll-scheitern" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Schritt 3: Alert-Bedingung hinzufügen
+        Von außen testen (soll scheitern)
       
     </span>
   </a>
@@ -1446,91 +1511,24 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#tags-ressourcen-beschriften" class="md-nav__link">
+  <a href="#private-dns-zone-anzeigen" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Tags: Ressourcen beschriften
+        Private DNS Zone anzeigen
       
     </span>
   </a>
-  
-    <nav class="md-nav" aria-label="Tags: Ressourcen beschriften">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#schritt-1-resource-group-offnen" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Schritt 1: Resource Group öffnen
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#schritt-2-tags-hinzufugen" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Schritt 2: Tags hinzufügen
-      
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#vm-metriken-cpu-und-netzwerk-live-sehen" class="md-nav__link">
+  <a href="#challenge" class="md-nav__link">
     <span class="md-ellipsis">
       
-        VM-Metriken: CPU und Netzwerk live sehen
+        Challenge
       
     </span>
   </a>
-  
-    <nav class="md-nav" aria-label="VM-Metriken: CPU und Netzwerk live sehen">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#schritt-1-zur-vm-navigieren" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Schritt 1: Zur VM navigieren
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#schritt-2-metriken-hinzufugen" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Schritt 2: Metriken hinzufügen
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#schritt-3-cpu-alert-erstellen" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Schritt 3: CPU-Alert erstellen
-      
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
   
 </li>
       
@@ -1554,196 +1552,82 @@
   
 
 
-<h1 id="modul-4-monitoring-kosten">Modul 4 – Monitoring &amp; Kosten</h1>
+<h1 id="modul-13-private-endpoints-azure-dienste-aus-dem-internet-nehmen">Modul 13 – Private Endpoints: Azure-Dienste aus dem Internet nehmen</h1>
 <h2 id="lernziele">Lernziele</h2>
 <p>Nach diesem Modul kannst du:</p>
 <ul>
-<li>Deine aktuellen Azure-Kosten in der Cost Analysis einsehen</li>
-<li>Einen Budget-Alert einrichten, der dich per E-Mail warnt</li>
-<li>Ressourcen mit Tags beschriften</li>
-<li>VM-Metriken (CPU, Netzwerk) in einem Diagramm ansehen</li>
+<li>Erklären warum Public Endpoints ein Sicherheitsrisiko darstellen</li>
+<li>Einen Private Endpoint für Azure Key Vault erstellen</li>
+<li>Eine Private DNS Zone erstellen und mit dem VNet verknüpfen</li>
+<li>Öffentlichen Zugriff auf einen Azure-Dienst deaktivieren</li>
+<li>Den Unterschied zwischen Private Endpoint und Service Endpoint erklären</li>
 </ul>
 <hr />
-<h2 id="hintergrund-warum-monitoring-in-der-cloud-wichtig-ist">Hintergrund: Warum Monitoring in der Cloud wichtig ist</h2>
-<p>On-Prem läuft ein Server so lange bis er kaputt geht – egal ob du ihn benutzt oder nicht, die Kosten (Strom, Miete, Abschreibung) fallen immer an.</p>
-<p>In der Cloud ist das anders: <strong>Du zahlst nur für das, was gerade läuft.</strong> Das ist ein Vorteil – aber auch eine Gefahr. Wenn du vergisst, eine VM auszuschalten oder ein teuren Dienst versehentlich startest, läuft die Uhr weiter.</p>
-<p>Gutes Cloud-Monitoring bedeutet:</p>
-<ul>
-<li><strong>Transparenz</strong>: Ich weiß, was gerade läuft und was es kostet</li>
-<li><strong>Frühwarnung</strong>: Ich bekomme eine Benachrichtigung bevor die Kosten aus dem Ruder laufen</li>
-<li><strong>Ordnung</strong>: Ich kann Ressourcen bestimmten Projekten oder Teams zuordnen</li>
-</ul>
-<hr />
-<h2 id="cost-analysis-was-kostet-mein-training">Cost Analysis: Was kostet mein Training?</h2>
-<h3 id="schritt-1-cost-management-offnen">Schritt 1: Cost Management öffnen</h3>
-<ol>
-<li>Tippe in der Suchleiste <strong><code>Cost Management</code></strong> und klicke auf den Dienst</li>
-<li>Klicke links im Menü auf <strong>Cost analysis</strong></li>
-</ol>
-<h3 id="schritt-2-kosten-ansehen">Schritt 2: Kosten ansehen</h3>
-<p>Du siehst ein Diagramm mit den Kosten der aktuellen Periode.</p>
-<ol>
-<li>Stelle oben rechts den Zeitraum auf <strong>This month</strong></li>
-<li>Klicke auf <strong>Group by</strong> → wähle <strong>Service name</strong></li>
-</ol>
-<p>Jetzt siehst du aufgeschlüsselt, welcher Azure-Dienst wie viel kostet.</p>
-<div class="admonition info">
-<p class="admonition-title">Noch kaum Kosten</p>
-<p>Frisch erstellte Ressourcen erscheinen erst nach 24h im Cost Dashboard. Ein Standard_B1s VM kostet ca. <strong>0,009 €/Stunde</strong> – das sind weniger als 10 Cent pro Tag.</p>
-</div>
-<hr />
-<h2 id="budget-alert-einrichten">Budget Alert einrichten</h2>
-<p>Ein Budget Alert schickt dir automatisch eine E-Mail, wenn deine Ausgaben einen Schwellenwert erreichen. Das ist dein Sicherheitsnetz.</p>
-<h3 id="schritt-1-budgets-offnen">Schritt 1: Budgets öffnen</h3>
-<ol>
-<li>Bleibe im <strong>Cost Management</strong> Bereich</li>
-<li>Klicke links auf <strong>Budgets</strong></li>
-<li>Klicke oben auf <strong>+ Add</strong></li>
-</ol>
-<h3 id="schritt-2-budget-konfigurieren">Schritt 2: Budget konfigurieren</h3>
+<h2 id="hintergrund-das-problem-mit-public-endpoints">Hintergrund: Das Problem mit Public Endpoints</h2>
+<p><strong>On-Prem-Vergleich:</strong> Stell dir vor, dein Datenbankserver ist aus dem Internet erreichbar – obwohl nur interne Server darauf zugreifen sollen. Das würde kein Admin so konfigurieren. In Azure ist das aber oft der Standard: Key Vault, Storage Accounts, SQL-Datenbanken – alle haben standardmäßig eine <strong>öffentliche IP</strong> und sind weltweit aufrufbar (mit Authentifizierung, aber trotzdem angreifbar).</p>
+<p><strong>Private Endpoints</strong> lösen dieses Problem strukturell:</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a>Ohne Private Endpoint:
+<a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a>VM in VNet  →  Internet  →  kv-aztraining.vault.azure.net (Public IP 20.x.x.x)
+<a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a>
+<a id="__codelineno-0-4" name="__codelineno-0-4" href="#__codelineno-0-4"></a>Mit Private Endpoint:
+<a id="__codelineno-0-5" name="__codelineno-0-5" href="#__codelineno-0-5"></a>VM in VNet  →  VNet-intern  →  10.0.2.5 (Private IP)  →  Key Vault
+<a id="__codelineno-0-6" name="__codelineno-0-6" href="#__codelineno-0-6"></a>                                          ↑
+<a id="__codelineno-0-7" name="__codelineno-0-7" href="#__codelineno-0-7"></a>                                  Kein Internet-Hop
+</code></pre></div>
+<p>Der Traffic bleibt <strong>vollständig im Microsoft-Backbone-Netzwerk</strong>. Der Azure-Dienst bekommt eine private IP direkt in deinem VNet.</p>
+<p><strong>Private Endpoint vs. Service Endpoint</strong></p>
 <table>
 <thead>
 <tr>
-<th>Feld</th>
-<th>Wert</th>
+<th></th>
+<th>Private Endpoint</th>
+<th>Service Endpoint</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td>Name</td>
-<td><code>budget-aztraining</code></td>
+<td>Eigene private IP im VNet?</td>
+<td>✅ Ja</td>
+<td>❌ Nein</td>
 </tr>
 <tr>
-<td>Reset period</td>
-<td><code>Monthly</code></td>
+<td>Traffic über öffentliches Internet?</td>
+<td>❌ Nein</td>
+<td>❌ Nein</td>
 </tr>
 <tr>
-<td>Creation date</td>
-<td>(bereits eingetragen)</td>
+<td>Von On-Prem über VPN erreichbar?</td>
+<td>✅ Ja</td>
+<td>❌ Nein</td>
 </tr>
 <tr>
-<td>Expiration date</td>
-<td>(Ende nächsten Monats)</td>
+<td>DNS-Konfiguration nötig?</td>
+<td>Ja (Automatisch)</td>
+<td>Nein</td>
 </tr>
 <tr>
-<td>Amount</td>
-<td><code>20</code></td>
+<td>Empfohlen für neue Projekte?</td>
+<td>✅ Ja</td>
+<td>Nicht mehr bevorzugt</td>
 </tr>
 </tbody>
 </table>
-<p>Klicke auf <strong>Next: Alerts &gt;</strong></p>
-<h3 id="schritt-3-alert-bedingung-hinzufugen">Schritt 3: Alert-Bedingung hinzufügen</h3>
-<ol>
-<li>Klicke auf <strong>+ Add alert condition</strong></li>
-<li>Konfiguriere:</li>
-</ol>
-<table>
-<thead>
-<tr>
-<th>Feld</th>
-<th>Wert</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>Alert condition</td>
-<td><code>Actual</code></td>
-</tr>
-<tr>
-<td>% of budget</td>
-<td><code>80</code></td>
-</tr>
-<tr>
-<td>Alert recipients (email)</td>
-<td>deine E-Mail-Adresse</td>
-</tr>
-</tbody>
-</table>
-<ol>
-<li>Klicke auf <strong>Create</strong></li>
-</ol>
-<div class="admonition success">
-<p class="admonition-title">Sicherheitsnetz aktiv</p>
-<p>Du bekommst ab jetzt eine E-Mail sobald 80% von 20 € (= 16 €) verbraucht sind. So kannst du keine Überraschungen erleben.</p>
-</div>
 <hr />
-<h2 id="tags-ressourcen-beschriften">Tags: Ressourcen beschriften</h2>
-<p>Tags sind Schlüssel-Wert-Paare, die du an Azure-Ressourcen anhängen kannst. Sie helfen dir:</p>
-<ul>
-<li>Ressourcen nach Projekt oder Team zu gruppieren</li>
-<li>Kosten nach Tags aufzuschlüsseln (z.B. "Was hat Projekt X insgesamt gekostet?")</li>
-<li>Ordnung zu halten wenn man viele Ressourcen hat</li>
-</ul>
-<p>In echten Unternehmen sind Tags Pflicht – die IT-Abteilung kann so sehen, welches Team welche Kosten verursacht.</p>
-<h3 id="schritt-1-resource-group-offnen">Schritt 1: Resource Group öffnen</h3>
-<ol>
-<li>Suche im Portal nach <code>rg-aztraining</code> und klicke auf die Resource Group</li>
-<li>Klicke links im Menü auf <strong>Tags</strong></li>
-</ol>
-<h3 id="schritt-2-tags-hinzufugen">Schritt 2: Tags hinzufügen</h3>
-<p>Klicke jeweils in die Felder Name und Wert und füge folgende Tags hinzu:</p>
-<table>
-<thead>
-<tr>
-<th>Name</th>
-<th>Wert</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td><code>owner</code></td>
-<td>dein Name</td>
-</tr>
-<tr>
-<td><code>projekt</code></td>
-<td><code>azure-training</code></td>
-</tr>
-<tr>
-<td><code>umgebung</code></td>
-<td><code>dev</code></td>
-</tr>
-</tbody>
-</table>
-<p>Klicke auf <strong>Apply</strong>.</p>
+<h2 id="subnet-fur-private-endpoint-vorbereiten">Subnet für Private Endpoint vorbereiten</h2>
+<p>Wir nutzen das <code>backend-subnet</code> aus Modul 8. Private Endpoints können in jedem bestehenden Subnet liegen.</p>
 <div class="admonition tip">
-<p class="admonition-title">Tags auf Resource Group = Tags auf allen Ressourcen</p>
-<p>Wenn du Tags auf einer Resource Group setzt, werden sie in Cost Analysis auf alle enthaltenen Ressourcen angewendet. Du musst nicht jede VM, jeden Storage Account etc. einzeln taggen.</p>
+<p class="admonition-title">Eigenes Subnet für Übersicht?</p>
+<p>In großen Projekten legt man oft ein eigenes <code>private-endpoints-subnet</code> an um alle Private Endpoints gebündelt zu haben. Für dieses Training nutzen wir das <code>backend-subnet</code>.</p>
 </div>
 <hr />
-<h2 id="vm-metriken-cpu-und-netzwerk-live-sehen">VM-Metriken: CPU und Netzwerk live sehen</h2>
-<p>Azure sammelt automatisch Metriken für alle laufenden Ressourcen: CPU-Auslastung, Speicher, Netzwerkdurchsatz, Festplatten-I/O und mehr.</p>
-<h3 id="schritt-1-zur-vm-navigieren">Schritt 1: Zur VM navigieren</h3>
+<h2 id="private-endpoint-fur-key-vault-erstellen">Private Endpoint für Key Vault erstellen</h2>
+<h3 id="schritt-1-uber-den-key-vault-navigieren">Schritt 1: Über den Key Vault navigieren</h3>
 <ol>
-<li>Suche im Portal nach <code>vm-training</code> und klicke auf deine VM</li>
-<li>Links im Menü: <strong>Monitoring</strong> → <strong>Metrics</strong></li>
+<li>Gehe zu <code>kv-aztraining-XXXX</code> im Portal</li>
+<li>Klicke links auf <strong>Networking</strong> → Tab <strong>Private endpoint connections</strong></li>
+<li>Klicke <strong>+ Create private endpoint</strong></li>
 </ol>
-<h3 id="schritt-2-metriken-hinzufugen">Schritt 2: Metriken hinzufügen</h3>
-<ol>
-<li>Im Diagramm-Editor:<ul>
-<li><strong>Scope</strong>: <code>vm-training</code> (bereits ausgewählt)</li>
-<li><strong>Metric Namespace</strong>: <code>Virtual Machine Host</code></li>
-<li><strong>Metric</strong>: wähle <code>Percentage CPU</code></li>
-</ul>
-</li>
-<li>Du siehst ein Diagramm der CPU-Auslastung der letzten Zeit</li>
-</ol>
-<p>Füge weitere Metriken hinzu:</p>
-<ol>
-<li>Klicke auf <strong>+ Add metric</strong></li>
-<li>Wähle <code>Network In Total</code> → Add</li>
-<li>Klicke nochmal auf <strong>+ Add metric</strong></li>
-<li>Wähle <code>Network Out Total</code> → Add</li>
-</ol>
-<p>Jetzt siehst du drei Kurven im selben Diagramm.</p>
-<h3 id="schritt-3-cpu-alert-erstellen">Schritt 3: CPU-Alert erstellen</h3>
-<p>Jetzt richten wir einen automatischen Alert ein, der sich meldet wenn die VM unter Last kommt.</p>
-<ol>
-<li>Klicke oben im Metrics-Bereich auf <strong>+ New alert rule</strong></li>
-<li>Das Formular öffnet sich, die Ressource <code>vm-training</code> ist bereits eingetragen</li>
-<li>Klicke auf <strong>+ Add condition</strong></li>
-<li>Wähle <strong>Percentage CPU</strong> aus der Liste</li>
-<li>Scrolle im Konfigurations-Bereich nach unten und stelle ein:</li>
-</ol>
+<h3 id="schritt-2-basics">Schritt 2: Basics</h3>
 <table>
 <thead>
 <tr>
@@ -1753,72 +1637,181 @@
 </thead>
 <tbody>
 <tr>
-<td>Threshold type</td>
-<td><code>Static</code></td>
-</tr>
-<tr>
-<td>Aggregation type</td>
-<td><code>Average</code></td>
-</tr>
-<tr>
-<td>Operator</td>
-<td><code>Greater than</code></td>
-</tr>
-<tr>
-<td>Threshold value</td>
-<td><code>80</code></td>
-</tr>
-</tbody>
-</table>
-<ol>
-<li>Klicke auf <strong>Done</strong></li>
-</ol>
-<p><strong>Action Group erstellen</strong> (wer bekommt die E-Mail?):</p>
-<ol>
-<li>Scrolle nach unten zum Abschnitt <strong>Actions</strong></li>
-<li>Klicke auf <strong>+ Create action group</strong></li>
-<li>Fülle aus:</li>
-</ol>
-<table>
-<thead>
-<tr>
-<th>Feld</th>
-<th>Wert</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>Action group name</td>
-<td><code>ag-aztraining</code></td>
-</tr>
-<tr>
-<td>Display name</td>
-<td><code>aztraining</code></td>
+<td>Subscription</td>
+<td>deine Subscription</td>
 </tr>
 <tr>
 <td>Resource group</td>
-<td><code>rg-aztraining</code></td>
+<td><code>rg-netzwerk</code></td>
+</tr>
+<tr>
+<td>Name</td>
+<td><code>pe-keyvault</code></td>
+</tr>
+<tr>
+<td>Region</td>
+<td><code>West Europe</code></td>
 </tr>
 </tbody>
 </table>
+<h3 id="schritt-3-resource">Schritt 3: Resource</h3>
+<table>
+<thead>
+<tr>
+<th>Feld</th>
+<th>Wert</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Connection method</td>
+<td><code>Connect to an Azure resource in my directory</code></td>
+</tr>
+<tr>
+<td>Resource type</td>
+<td><code>Microsoft.KeyVault/vaults</code></td>
+</tr>
+<tr>
+<td>Resource</td>
+<td><code>kv-aztraining-XXXX</code></td>
+</tr>
+<tr>
+<td>Target sub-resource</td>
+<td><code>vault</code></td>
+</tr>
+</tbody>
+</table>
+<h3 id="schritt-4-virtual-network">Schritt 4: Virtual Network</h3>
+<table>
+<thead>
+<tr>
+<th>Feld</th>
+<th>Wert</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Virtual network</td>
+<td><code>vnet-training</code></td>
+</tr>
+<tr>
+<td>Subnet</td>
+<td><code>backend-subnet</code></td>
+</tr>
+<tr>
+<td>Private IP configuration</td>
+<td><code>Dynamically allocate IP address</code></td>
+</tr>
+</tbody>
+</table>
+<h3 id="schritt-5-dns-integration">Schritt 5: DNS Integration</h3>
+<table>
+<thead>
+<tr>
+<th>Feld</th>
+<th>Wert</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Integrate with private DNS zone</td>
+<td><code>Yes</code></td>
+</tr>
+<tr>
+<td>Private DNS Zone</td>
+<td><code>(new) privatelink.vaultcore.azure.net</code></td>
+</tr>
+</tbody>
+</table>
+<div class="admonition info">
+<p class="admonition-title">Was ist eine Private DNS Zone?</p>
+<p>Azure erstellt automatisch eine DNS-Zone <code>privatelink.vaultcore.azure.net</code> und fügt einen A-Record ein:</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a>kv-aztraining-XXXX.vault.azure.net → 10.0.2.5  (private IP im VNet)
+</code></pre></div>
+<p>VMs <strong>im VNet</strong> lösen den Key Vault auf die private IP auf.
+Anfragen <strong>von außen</strong> sehen weiterhin die öffentliche IP – bis wir den Public Access deaktivieren.</p>
+</div>
+<h3 id="schritt-6-review-create">Schritt 6: Review + Create</h3>
+<p><strong>Review + create</strong> → <strong>Create</strong> (dauert ~1 Minute)</p>
+<hr />
+<h2 id="offentlichen-zugriff-auf-key-vault-deaktivieren">Öffentlichen Zugriff auf Key Vault deaktivieren</h2>
+<p>Jetzt wo der Private Endpoint existiert, sperren wir den öffentlichen Zugang.</p>
 <ol>
-<li>Klicke auf den Tab <strong>Notifications</strong></li>
-<li>Wähle bei <strong>Notification type</strong>: <code>Email/SMS message/Push/Voice</code></li>
-<li>Trage deine E-Mail-Adresse ein und klicke <strong>OK</strong></li>
-<li>Gib einen Namen ein, z.B. <code>email-benachrichtigung</code></li>
-<li>Klicke durch bis <strong>Review + create</strong> → <strong>Create</strong></li>
+<li>Gehe zu <code>kv-aztraining-XXXX</code> → <strong>Networking</strong></li>
+<li>Tab <strong>Firewalls and virtual networks</strong></li>
+<li>Setze <strong>Public network access</strong> auf <strong>Disable</strong></li>
+<li>Klicke <strong>Apply</strong></li>
 </ol>
-<p><strong>Alert Rule abschließen:</strong></p>
-<ol>
-<li>Zurück im Alert Rule Formular: trage unter <strong>Alert rule name</strong> ein: <code>alert-hohe-cpu</code></li>
-<li>Klicke auf <strong>Create</strong></li>
-</ol>
-<div class="admonition success">
-<p class="admonition-title">Alles überwacht!</p>
-<p>Du bekommst jetzt eine E-Mail wenn die CPU deiner VM über 80% steigt. In echten Produktionsumgebungen würde man auf solche Alerts z.B. automatisch weitere VMs starten (Auto-Scaling).</p>
+<div class="admonition warning">
+<p class="admonition-title">Cloud Shell hat keinen Zugriff mehr</p>
+<p>Nach dieser Änderung ist der Key Vault <strong>nur noch aus dem VNet</strong> erreichbar. Die Cloud Shell läuft nicht im VNet – du kannst also nicht mehr direkt von dort abfragen.</p>
+<p><strong>Ausnahme hinzufügen</strong> (optional): Klicke auf <strong>Add your client IP</strong> um deine aktuelle IP-Adresse der Ausnahmeliste hinzuzufügen. Dann funktioniert der Cloud Shell-Zugriff noch.</p>
 </div>
 <hr />
-<p>Weiter zu <a href="../modul-5-appservice/">Modul 5 – Azure App Service</a> →</p>
+<h2 id="private-endpoint-testen">Private Endpoint testen</h2>
+<p>Verbinde dich via <strong>Bastion</strong> (Modul 10) mit <code>vm-web1</code> (im <code>frontend-subnet</code>, das mit der Private DNS Zone verknüpft ist).</p>
+<h3 id="dns-auflosung-testen-soll-private-ip-zeigen">DNS-Auflösung testen (soll private IP zeigen)</h3>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a>nslookup<span class="w"> </span>kv-aztraining-XXXX.vault.azure.net
+</code></pre></div>
+<p>Erwartete Ausgabe:</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a>Non-authoritative answer:
+<a id="__codelineno-3-2" name="__codelineno-3-2" href="#__codelineno-3-2"></a>Name:    kv-aztraining-XXXX.privatelink.vaultcore.azure.net
+<a id="__codelineno-3-3" name="__codelineno-3-3" href="#__codelineno-3-3"></a>Address: 10.0.2.5    ← Private IP aus deinem VNet!
+</code></pre></div>
+<div class="admonition success">
+<p class="admonition-title">Private DNS-Auflösung funktioniert</p>
+<p>Die VM löst den Key Vault auf eine private IP auf – kein Internet-Hop.</p>
+</div>
+<h3 id="erreichbarkeit-testen-soll-http-200401-liefern">Erreichbarkeit testen (soll HTTP 200/401 liefern)</h3>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-4-1" name="__codelineno-4-1" href="#__codelineno-4-1"></a>curl<span class="w"> </span>-I<span class="w"> </span>https://kv-aztraining-XXXX.vault.azure.net
+</code></pre></div>
+<p>Du siehst HTTP 401 (Unauthorized) – der Key Vault ist erreichbar, aber du bist nicht authentifiziert. Das ist das gewünschte Verhalten.</p>
+<h3 id="von-auen-testen-soll-scheitern">Von außen testen (soll scheitern)</h3>
+<p>In der Cloud Shell (außerhalb des VNets):</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-5-1" name="__codelineno-5-1" href="#__codelineno-5-1"></a>az<span class="w"> </span>keyvault<span class="w"> </span>secret<span class="w"> </span>list<span class="w"> </span>--vault-name<span class="w"> </span>kv-aztraining-XXXX
+</code></pre></div>
+<p>Fehler: <code>Public network access is disabled for this key vault.</code></p>
+<div class="admonition success">
+<p class="admonition-title">Vollständige Netzwerkisolation</p>
+<p>Der Key Vault ist aus dem Internet nicht mehr erreichbar. Nur Ressourcen im <code>vnet-training</code> können ihn über die private IP ansprechen.</p>
+</div>
+<hr />
+<h2 id="private-dns-zone-anzeigen">Private DNS Zone anzeigen</h2>
+<ol>
+<li>Suche im Portal nach <strong>Private DNS zones</strong></li>
+<li>Klicke auf <code>privatelink.vaultcore.azure.net</code></li>
+<li>Klicke links auf <strong>Recordsets</strong></li>
+</ol>
+<p>Du siehst den A-Record der von <code>kv-aztraining-XXXX</code> auf die private IP zeigt.</p>
+<ol>
+<li>Klicke auf <strong>Virtual network links</strong></li>
+</ol>
+<p>Du siehst die Verknüpfung mit <code>vnet-training</code> – deswegen funktioniert die DNS-Auflösung von innen.</p>
+<hr />
+<h2 id="challenge">Challenge</h2>
+<div class="admonition question">
+<p class="admonition-title">Challenge: Private Endpoint für Storage Account</p>
+<p>Erstelle einen Private Endpoint für den Storage Account aus Lernpfad 1 (oder erstelle einen neuen in <code>rg-netzwerk</code>):</p>
+<ol>
+<li>Target sub-resource: <code>blob</code></li>
+<li>Private DNS Zone: <code>privatelink.blob.core.windows.net</code></li>
+<li>Deaktiviere Public Access auf dem Storage Account</li>
+<li>Teste per <code>nslookup</code> aus vm-web1: zeigt die Auflösung auf eine private IP?</li>
+</ol>
+</div>
+<details class="success">
+<summary>Hinweis</summary>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-6-1" name="__codelineno-6-1" href="#__codelineno-6-1"></a><span class="c1"># Aus vm-web1 (im VNet):</span>
+<a id="__codelineno-6-2" name="__codelineno-6-2" href="#__codelineno-6-2"></a>nslookup<span class="w"> </span>&lt;dein-storageaccount&gt;.blob.core.windows.net
+<a id="__codelineno-6-3" name="__codelineno-6-3" href="#__codelineno-6-3"></a><span class="c1"># Soll auflösen auf 10.0.x.x (private IP)</span>
+<a id="__codelineno-6-4" name="__codelineno-6-4" href="#__codelineno-6-4"></a>
+<a id="__codelineno-6-5" name="__codelineno-6-5" href="#__codelineno-6-5"></a><span class="c1"># URL-Aufbau für Blob Private Endpoint DNS:</span>
+<a id="__codelineno-6-6" name="__codelineno-6-6" href="#__codelineno-6-6"></a><span class="c1"># &lt;account&gt;.blob.core.windows.net → &lt;account&gt;.privatelink.blob.core.windows.net → 10.x.x.x</span>
+</code></pre></div>
+<p><strong>Wichtig beim Deaktivieren von Public Access:</strong> Wenn du Cloud Shell-Zugriff auf den Storage Account brauchst, füge zuerst deine aktuelle IP unter <strong>Networking → Firewalls and virtual networks → Add your client IP</strong> hinzu.</p>
+</details>
+<hr />
+<p>Weiter zu <a href="../modul-14-aufr%C3%A4umen/">Modul 14 – Aufräumen Lernpfad 2</a> →</p>
 
 
 
@@ -1856,7 +1849,7 @@
       <nav class="md-footer__inner md-grid" aria-label="Fußzeile" >
         
           
-          <a href="../modul-3-ai/" class="md-footer__link md-footer__link--prev" aria-label="Zurück: Modul 3 – Azure KI">
+          <a href="../modul-12-keyvault/" class="md-footer__link md-footer__link--prev" aria-label="Zurück: Modul 12 – Key Vault">
             <div class="md-footer__button md-icon">
               
               <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
@@ -1866,20 +1859,20 @@
                 Zurück
               </span>
               <div class="md-ellipsis">
-                Modul 3 – Azure KI
+                Modul 12 – Key Vault
               </div>
             </div>
           </a>
         
         
           
-          <a href="../modul-5-appservice/" class="md-footer__link md-footer__link--next" aria-label="Weiter: Modul 5 – App Service">
+          <a href="../modul-14-aufr%C3%A4umen/" class="md-footer__link md-footer__link--next" aria-label="Weiter: Modul 14 – Aufräumen">
             <div class="md-footer__title">
               <span class="md-footer__direction">
                 Weiter
               </span>
               <div class="md-ellipsis">
-                Modul 5 – App Service
+                Modul 14 – Aufräumen
               </div>
             </div>
             <div class="md-footer__button md-icon">
