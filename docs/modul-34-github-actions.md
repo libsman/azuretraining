@@ -140,6 +140,25 @@ git push
 
 ### Schritt 1: App Service vorbereiten
 
+#### Im Portal
+
+1. Suche nach **App Services** → **+ Create** → **Web App**
+
+| Feld | Wert |
+|------|------|
+| Resource group | `rg-devops` (neu erstellen) |
+| Name | `app-devops-XXXXX` (eindeutig) |
+| Runtime stack | `Python 3.12` |
+| Operating System | `Linux` |
+| Region | `West Europe` |
+| Pricing plan | `Free F1` |
+
+2. **Review + create** → **Create**
+3. Den generierten App-Namen notieren (brauchst du später als GitHub Secret)
+4. Publish Profile herunterladen: Web App → **Overview** → **Get publish profile** (Download-Schaltfläche)
+
+#### Per CLI (Cloud Shell)
+
 ```bash
 az group create --name rg-devops --location westeurope
 
@@ -160,6 +179,13 @@ az webapp list --resource-group rg-devops --query "[0].name" -o tsv
 ```
 
 ### Schritt 2: Publish Profile als GitHub Secret hinterlegen
+
+#### Im Portal
+
+1. Web App → **Overview** → **Get publish profile** – die XML-Datei wird heruntergeladen
+2. Öffne die Datei in einem Texteditor und kopiere den gesamten Inhalt
+
+#### Per CLI
 
 ```bash
 # Publish Profile herunterladen

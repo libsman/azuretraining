@@ -130,7 +130,7 @@ Oder kürzer (falls `mkdocs` im PATH ist):
 mkdocs serve
 ```
 
-Oeffne http://localhost:8000 im Browser.
+Öffne http://localhost:8000 im Browser.
 
 ## GitHub Pages Deployment
 

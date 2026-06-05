@@ -52,6 +52,25 @@ Bei **AKS** verwaltet Azure den Control Plane kostenlos. Du zahlst nur für die 
 !!! warning "Kosten beachten"
     AKS-Worker Nodes sind VMs die dauerhaft laufen (solange der Cluster existiert). Ein `Standard_B2s` (2 vCPU, 4 GB RAM) kostet ca. **30–35 €/Monat**. Lösche den Cluster nach dem Training!
 
+### Im Portal
+
+1. Suche nach **Kubernetes services** → **+ Create** → **Kubernetes cluster**
+2. Tab **Basics**:
+
+| Feld | Wert |
+|------|------|
+| Resource group | `rg-container` |
+| Cluster name | `aks-training` |
+| Region | `West Europe` |
+| Kubernetes version | neueste stabile |
+| Automatic upgrade | `Patch (recommended)` |
+
+3. Tab **Node pools**: Standardpool auf 1 Node setzen, Größe `Standard_B2s`
+4. Tab **Integrations**: Container registry → deine ACR auswählen (verbindet automatisch per Managed Identity)
+5. **Review + create** → **Create** (dauert 3–5 Minuten)
+
+### Per CLI (Cloud Shell)
+
 ```bash
 # Cluster erstellen (dauert 3–5 Minuten)
 az aks create \
