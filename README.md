@@ -13,7 +13,7 @@ Selbstgeführtes Azure-Training für IT-Profis im Microsoft-Umfeld – Azubis, P
 | LP 3 | 15–20 | Datenbanken (SQL, Cosmos DB, PostgreSQL, Redis) |
 | LP 4 | 21–25 | Identity & Access (Entra ID, Managed Identity, RBAC, Conditional Access) |
 | LP 5 | 26–32 | Container (Docker, ACR, ACI, Container Apps, AKS) |
-| LP 6 | 33–39 | DevOps & IaC (Azure DevOps, GitHub Actions, Bicep, Terraform) – geplant |
+| LP 6 | 33–39 | DevOps & IaC (Azure DevOps, GitHub Actions, ARM, Bicep, Terraform, Policy) |
 | LP 7 | 40–44 | Monitoring & Security (Log Analytics, App Insights, Defender) – geplant |
 | LP 8 | 45–47 | Abschlussprojekte – geplant |
 
@@ -76,6 +76,18 @@ Selbstgeführtes Azure-Training für IT-Profis im Microsoft-Umfeld – Azubis, P
 | 30 | AKS Überblick: Kubernetes-Konzepte und Cluster erstellen |
 | 31 | AKS Workload: Deployen, skalieren, Rolling Updates |
 | 32 | Aufräumen Lernpfad 5 |
+
+### Lernpfad 6 – DevOps & IaC
+
+| Modul | Thema |
+|-------|-------|
+| 33 | Azure DevOps: Repos, Boards und YAML-Pipelines |
+| 34 | GitHub Actions: CI/CD direkt aus GitHub nach Azure |
+| 35 | ARM Templates: Infrastruktur als JSON |
+| 36 | Bicep: Modernes IaC für Azure |
+| 37 | Terraform: Plattformunabhängiges IaC |
+| 38 | Azure Policy & Resource Locks: Compliance automatisieren |
+| 39 | Aufräumen Lernpfad 6 |
 
 ## Lokale Vorschau
 

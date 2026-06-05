@@ -77,17 +77,17 @@ Hier findest du eine Übersicht über alle geplanten Lernpfade und Module des Az
 
 ---
 
-## Lernpfad 6 – DevOps & IaC (Module 33–39) 📋
+## Lernpfad 6 – DevOps & IaC (Module 33–39) ✅
 
 | Modul | Thema |
 |-------|-------|
-| Modul 33 | Azure DevOps: Repos, Boards und Pipelines |
-| Modul 34 | GitHub Actions: CI/CD direkt aus GitHub nach Azure |
-| Modul 35 | ARM Templates: Infrastruktur als JSON verstehen |
-| Modul 36 | Bicep: Infrastruktur als Code – modern und lesbar |
-| Modul 37 | Terraform mit Azure: Plattformunabhängiges IaC |
-| Modul 38 | Azure Policy & Resource Locks: Compliance automatisieren |
-| Modul 39 | Aufräumen Lernpfad 6 |
+| [Modul 33](modul-33-devops.md) | Azure DevOps: Repos, Boards und Pipelines |
+| [Modul 34](modul-34-github-actions.md) | GitHub Actions: CI/CD direkt aus GitHub nach Azure |
+| [Modul 35](modul-35-arm.md) | ARM Templates: Infrastruktur als JSON verstehen |
+| [Modul 36](modul-36-bicep.md) | Bicep: Infrastruktur als Code – modern und lesbar |
+| [Modul 37](modul-37-terraform.md) | Terraform mit Azure: Plattformunabhängiges IaC |
+| [Modul 38](modul-38-policy.md) | Azure Policy & Resource Locks: Compliance automatisieren |
+| [Modul 39](modul-39-aufräumen.md) | Aufräumen Lernpfad 6 |
 
 ---
 

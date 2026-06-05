@@ -94,6 +94,14 @@ nav:
     - Modul 30 – AKS Überblick: modul-30-aks-ueberblick.md
     - Modul 31 – AKS Workload: modul-31-aks-workload.md
     - Modul 32 – Aufräumen: modul-32-aufräumen.md
+  - Lernpfad 6 – DevOps & IaC:
+    - Modul 33 – Azure DevOps: modul-33-devops.md
+    - Modul 34 – GitHub Actions: modul-34-github-actions.md
+    - Modul 35 – ARM Templates: modul-35-arm.md
+    - Modul 36 – Bicep: modul-36-bicep.md
+    - Modul 37 – Terraform: modul-37-terraform.md
+    - Modul 38 – Azure Policy: modul-38-policy.md
+    - Modul 39 – Aufräumen: modul-39-aufräumen.md
 
 extra:
   social:

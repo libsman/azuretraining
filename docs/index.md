@@ -59,6 +59,17 @@ Nach Abschluss von Lernpfad 1 hast du folgendes in Azure selbst gebaut:
 | 🚀 | Serverlose Container mit Autoscaling betreiben | Azure Container Apps |
 | ⎈️ | Workloads auf Kubernetes deployen und skalieren | Azure Kubernetes Service |
 
+## Was du in Lernpfad 6 lernst
+
+| | Was | Wo |
+|---|---|---|
+| 🔄 | CI/CD-Pipeline mit automatischen Tests aufbauen | Azure DevOps |
+| 🐙 | GitHub-Code automatisch nach Azure deployen | GitHub Actions |
+| 📄 | Infrastruktur als JSON beschreiben | ARM Templates |
+| 🦾 | Lesbare IaC mit Bicep schreiben | Bicep |
+| 🌍 | Plattformübergreifende Infrastruktur verwalten | Terraform |
+| 🔒 | Compliance-Regeln und Sperren erzwingen | Azure Policy |
+
 ---
 
 ## Übersicht der Module
@@ -98,6 +109,13 @@ Nach Abschluss von Lernpfad 1 hast du folgendes in Azure selbst gebaut:
 | [Modul 30](modul-30-aks-ueberblick.md) | AKS Überblick: Kubernetes-Konzepte und Cluster erstellen | 60 Min |
 | [Modul 31](modul-31-aks-workload.md) | AKS Workload: Deployen, skalieren, Rolling Updates | 75 Min |
 | [Modul 32](modul-32-aufräumen.md) | Aufräumen Lernpfad 5 | 10 Min |
+| [Modul 33](modul-33-devops.md) | Azure DevOps: Repos, Boards, Pipelines | 90 Min |
+| [Modul 34](modul-34-github-actions.md) | GitHub Actions: CI/CD direkt aus GitHub | 75 Min |
+| [Modul 35](modul-35-arm.md) | ARM Templates: Infrastruktur als JSON | 60 Min |
+| [Modul 36](modul-36-bicep.md) | Bicep: Modernes IaC für Azure | 60 Min |
+| [Modul 37](modul-37-terraform.md) | Terraform: Plattformunabhängiges IaC | 75 Min |
+| [Modul 38](modul-38-policy.md) | Azure Policy & Resource Locks | 45 Min |
+| [Modul 39](modul-39-aufräumen.md) | Aufräumen Lernpfad 6 | 15 Min |
 
 !!! tip "Kein Stress mit der Zeit"
     Die Zeitangaben sind Orientierungshilfen, kein Zwang. Nimm dir so lange wie du brauchst. Wenn du nicht weiterkommst, hilft oft ein Blick in die offizielle [Microsoft Learn Dokumentation](https://learn.microsoft.com/de-de/azure/).
