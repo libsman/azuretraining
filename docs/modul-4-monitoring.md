@@ -208,27 +208,4 @@ Das entspricht dem, wofür ein Unternehmen früher eigene Server, Netzwerktechni
 
 ---
 
-## Aufräumen nach dem Training
-
-!!! warning "Ressourcen löschen wenn du fertig bist"
-    Am Ende des Praktikums sollten alle Ressourcen gelöscht werden. Auch wenn die Kosten gering sind, ist das gute Cloud-Hygiene.
-
-    **So löschst du alles auf einmal:**
-
-    1. Öffne die Resource Group **`rg-praktikum`** im Portal
-    2. Klicke oben auf **Delete resource group**
-    3. Tippe zur Bestätigung den Namen `rg-praktikum` in das Textfeld ein
-    4. Klicke auf **Delete**
-
-    Damit werden **alle** Ressourcen in der Gruppe auf einmal gelöscht – VM, Storage, Computer Vision, Netzwerk, alles.
-
----
-
-## Was kommt als nächstes?
-
-Falls du mehr über Azure lernen möchtest:
-
-- [**Microsoft Learn – Azure Fundamentals**](https://learn.microsoft.com/de-de/training/paths/azure-fundamentals/) – kostenloser, interaktiver Kurs direkt von Microsoft
-- [**AZ-900 Zertifizierung**](https://learn.microsoft.com/de-de/certifications/azure-fundamentals/) – die Azure Grundlagenzertifizierung, gut für den Einstieg
-- [**Azure Architecture Center**](https://learn.microsoft.com/de-de/azure/architecture/) – wie bauen echte Unternehmen ihre Cloud-Architekturen?
-- [**Azure Pricing Calculator**](https://azure.microsoft.com/de-de/pricing/calculator/) – berechne die Kosten für eigene Architekturen
+Weiter zu [Modul 5 – Azure App Service](modul-5-appservice.md) →

@@ -60,6 +60,9 @@ nav:
   - Modul 2 – Storage & Website: modul-2-storage.md
   - Modul 3 – Azure KI: modul-3-ai.md
   - Modul 4 – Monitoring & Kosten: modul-4-monitoring.md
+  - Modul 5 – App Service: modul-5-appservice.md
+  - Modul 6 – Azure Functions: modul-6-functions.md
+  - Modul 7 – Aufräumen: modul-7-aufräumen.md
 
 extra:
   social:
