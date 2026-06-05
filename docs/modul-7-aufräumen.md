@@ -2,16 +2,16 @@
 
 ## Was macht dieser Schritt?
 
-Du hast heute folgende Ressourcen in Azure erstellt – alle in der Resource Group **`rg-praktikum`**:
+Du hast in diesem Lernpfad folgende Ressourcen in Azure erstellt – alle in der Resource Group **`rg-aztraining`**:
 
 | Ressource | Erstellt in | Monatliche Kosten (ca.) |
 |-----------|-------------|------------------------|
 | VM `vm-training` + Netzwerk | Modul 1 | ~7 € (wenn läuft) |
 | Storage Account + Static Website | Modul 2 | < 1 € |
-| Computer Vision `cv-praktikum` | Modul 3 | 0 € (Free F0) |
+| Computer Vision `cv-aztraining` | Modul 3 | 0 € (Free F0) |
 | Budget Alert, CPU Alert | Modul 4 | 0 € |
-| Web App `webapp-praktikum-XXXX` | Modul 5 | 0 € (Free F1) |
-| Function App `func-praktikum-XXXX` | Modul 6 | 0 € (Consumption) |
+| Web App `webapp-aztraining-XXXX` | Modul 5 | 0 € (Free F1) |
+| Function App `func-aztraining-XXXX` | Modul 6 | 0 € (Consumption) |
 
 Die VM kostet ~0,009 €/Stunde solange sie läuft. Da du Auto-Shutdown in Modul 1 aktiviert hast, schaltet sie sich automatisch ab – aber gelöscht ist sie noch nicht. Die anderen Ressourcen sind im Free Tier und kosten nichts, sollten aber trotzdem bereinigt werden.
 
@@ -22,12 +22,12 @@ Die VM kostet ~0,009 €/Stunde solange sie läuft. Da du Auto-Shutdown in Modul
 
 ## Alles auf einmal löschen
 
-Da alle Ressourcen in einer gemeinsamen Resource Group `rg-praktikum` liegen, reicht ein einziger Klick um alles zu entfernen.
+Da alle Ressourcen in einer gemeinsamen Resource Group `rg-aztraining` liegen, reicht ein einziger Klick um alles zu entfernen.
 
 ### Schritt 1: Resource Group öffnen
 
-1. Tippe in der Suchleiste **`rg-praktikum`** und klicke auf die Resource Group
-2. Du siehst die Übersicht mit allen enthaltenen Ressourcen – das ist alles, was du heute gebaut hast
+1. Tippe in der Suchleiste **`rg-aztraining`** und klicke auf die Resource Group
+2. Du siehst die Übersicht mit allen enthaltenen Ressourcen – das ist alles, was du in diesem Lernpfad gebaut hast
 
 ### Schritt 2: Löschen starten
 
@@ -36,7 +36,7 @@ Da alle Ressourcen in einer gemeinsamen Resource Group `rg-praktikum` liegen, re
 
 ### Schritt 3: Bestätigen
 
-1. Tippe den Namen der Resource Group zur Bestätigung ein: **`rg-praktikum`**
+1. Tippe den Namen der Resource Group zur Bestätigung ein: **`rg-aztraining`**
 2. Klicke auf **Delete**
 
 !!! warning "Dieser Schritt ist endgültig"
@@ -47,7 +47,7 @@ Azure löscht nun alle Ressourcen im Hintergrund. Das dauert je nach Anzahl der 
 ### Schritt 4: Bestätigung prüfen
 
 1. Tippe in der Suchleiste **`Resource groups`** und klicke darauf
-2. `rg-praktikum` sollte nicht mehr in der Liste erscheinen
+2. `rg-aztraining` sollte nicht mehr in der Liste erscheinen
 
 ✅ Fertig – keine laufenden Ressourcen, keine weiteren Kosten.
 
@@ -55,7 +55,7 @@ Azure löscht nun alle Ressourcen im Hintergrund. Das dauert je nach Anzahl der 
 
 ## 🎉 Herzlichen Glückwunsch!
 
-Du hast heute in einem Tag alle wichtigen Konzepte des Cloud Computings in der Praxis umgesetzt:
+Du hast alle wichtigen Konzepte des Cloud Computings in der Praxis umgesetzt:
 
 | Was du gebaut hast | Technologie | Konzept |
 |--------------------|------------|---------|
@@ -80,3 +80,7 @@ Falls du mehr über Azure lernen möchtest:
 - [**AZ-900 Zertifizierung**](https://learn.microsoft.com/de-de/certifications/azure-fundamentals/) – die Azure Grundlagenzertifizierung, perfekt für den Einstieg
 - [**Azure Architecture Center**](https://learn.microsoft.com/de-de/azure/architecture/) – wie bauen echte Unternehmen ihre Cloud-Architekturen?
 - [**Azure Pricing Calculator**](https://azure.microsoft.com/de-de/pricing/calculator/) – berechne die Kosten für eigene Architekturen
+
+---
+
+Weiter zu [Lernpfad 2 – Netzwerk & Sicherheit: Modul 8 – Azure Virtual Network](modul-8-vnet.md) →

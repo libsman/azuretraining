@@ -41,8 +41,8 @@ Du siehst ein Diagramm mit den Kosten der aktuellen Periode.
 
 Jetzt siehst du aufgeschlüsselt, welcher Azure-Dienst wie viel kostet.
 
-!!! info "Heute noch fast 0 €"
-    Da du heute alles frisch erstellt hast, sind die Kosten bisher minimal. Erst nach 24h werden die Ressourcen sichtbar im Cost Dashboard. Ein Standard_B1s VM kostet ca. **0,009 €/Stunde** – das sind weniger als 10 Cent pro Tag.
+!!! info "Noch kaum Kosten"
+    Frisch erstellte Ressourcen erscheinen erst nach 24h im Cost Dashboard. Ein Standard_B1s VM kostet ca. **0,009 €/Stunde** – das sind weniger als 10 Cent pro Tag.
 
 ---
 
@@ -60,9 +60,9 @@ Ein Budget Alert schickt dir automatisch eine E-Mail, wenn deine Ausgaben einen 
 
 | Feld | Wert |
 |------|------|
-| Name | `budget-praktikum` |
+| Name | `budget-aztraining` |
 | Reset period | `Monthly` |
-| Creation date | (heute, bereits eingetragen) |
+| Creation date | (bereits eingetragen) |
 | Expiration date | (Ende nächsten Monats) |
 | Amount | `20` |
 
@@ -98,7 +98,7 @@ In echten Unternehmen sind Tags Pflicht – die IT-Abteilung kann so sehen, welc
 
 ### Schritt 1: Resource Group öffnen
 
-1. Suche im Portal nach `rg-praktikum` und klicke auf die Resource Group
+1. Suche im Portal nach `rg-aztraining` und klicke auf die Resource Group
 2. Klicke links im Menü auf **Tags**
 
 ### Schritt 2: Tags hinzufügen
@@ -171,9 +171,9 @@ Jetzt richten wir einen automatischen Alert ein, der sich meldet wenn die VM unt
 
 | Feld | Wert |
 |------|------|
-| Action group name | `ag-praktikum` |
-| Display name | `praktikum` |
-| Resource group | `rg-praktikum` |
+| Action group name | `ag-aztraining` |
+| Display name | `aztraining` |
+| Resource group | `rg-aztraining` |
 
 10. Klicke auf den Tab **Notifications**
 11. Wähle bei **Notification type**: `Email/SMS message/Push/Voice`

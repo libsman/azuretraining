@@ -38,7 +38,7 @@ Du siehst jetzt einen Wizard mit mehreren Tabs. Fange mit **Basics** an:
 | Feld | Wert |
 |------|------|
 | Subscription | deine Subscription |
-| Resource group | `rg-praktikum` |
+| Resource group | `rg-aztraining` |
 
 **Instanzdetails:**
 

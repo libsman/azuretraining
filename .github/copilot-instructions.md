@@ -1,7 +1,7 @@
 # Copilot Instructions – Azure Einstiegstraining
 
-Dieses Repository ist eine MkDocs-Material-Dokumentation für ein Azure-Praktikum.
-Zielgruppe: Praktikanten ohne Azure-Erfahrung, aber mit Hyper-V / On-Prem-Kenntnissen.
+Dieses Repository ist eine MkDocs-Material-Dokumentation für ein selbstgeführtes Azure-Training.
+Zielgruppe: IT-Profis im Microsoft-Umfeld (Windows-Admins, Azubis, Praktikanten) ohne Azure-Erfahrung.
 Sprache: **Deutsch** (duzen, direkte Ansprache, keine Fachbegriffe ohne Erklärung).
 
 ---
@@ -92,11 +92,11 @@ Immer als Markdown-Tabelle mit `Feld | Wert`:
 ```markdown
 | Feld | Wert |
 |------|------|
-| Resource group | `rg-praktikum` |
+| Resource group | `rg-aztraining` |
 | Region | `West Europe` |
 ```
 
-Ressource-Namen immer in Backticks: `` `rg-praktikum` ``, `` `vm-training` ``
+Ressource-Namen immer in Backticks: `` `rg-aztraining` ``, `` `vm-training` ``
 
 ---
 
@@ -106,16 +106,20 @@ Wenn ein neues Modul `modul-{N}-{name}.md` erstellt wird, **immer alle folgenden
 
 ### mkdocs.yml – nav-Abschnitt
 
-Die nav-Struktur verwendet eine **zweistufige Hierarchie**: Willkommen (direkte Seite) + Module (aufklappbare Gruppe in der Sidebar). Alle Module kommen als Unterelemente von `Module:`.
+Die nav-Struktur verwendet **Lernpfad-Gruppen**: Willkommen (direkte Seite) + Lernpfade (aufklappbare Gruppen in der Sidebar). Alle Module eines Lernpfads kommen als Unterelemente der jeweiligen Lernpfad-Gruppe.
 
 ```yaml
 nav:
   - Willkommen: index.md
-  - Module:
+  - Lernpfad 1 – Grundlagen:
     - Modul 0 – Orientierung: modul-0-orientierung.md
     # ... bestehende Module ...
     - Modul {N} – {Titel}: modul-{N}-{kurzname}.md
-    - Modul 7 – Aufräumen: modul-7-aufräumen.md   # immer letztes Modul
+    - Modul 7 – Aufräumen: modul-7-aufräumen.md   # immer letztes Modul im Lernpfad
+  - Lernpfad 2 – {Thema}:
+    - Modul 8 – ...
+    # ...
+    - Modul {M} – Aufräumen: modul-{M}-aufräumen.md
 ```
 
 **Wichtig – MkDocs Material Features:** Die folgenden Features sind aktiv (und sollen NICHT geändert werden):
@@ -126,11 +130,11 @@ nav:
 
 **Nicht verwenden:** `navigation.tabs` und `navigation.sections` – diese verursachen entweder Overflow in der Tab-Leiste oder auto-generierte Listen im Body.
 
-Neues Modul **vor** Modul 7 (Aufräumen) einfügen. Aufräumen bleibt immer das letzte Modul.
+Neues Modul **vor** dem letzten Aufräumen-Modul des aktuellen Lernpfads einfügen. Jeder Lernpfad hat sein eigenes Aufräumen-Modul als letztes.
 
 ### docs/index.md – zwei Stellen
 
-**1. Tabelle "Was wirst du heute bauen?" (Emoji + Was + Wo)**
+**1. Tabelle "Was du in Lernpfad 1 lernst" (Emoji + Was + Wo)**
 
 ```markdown
 | 🔑 | {Kurzbeschreibung was gebaut wird} | {wo es erreichbar ist} |
@@ -160,10 +164,10 @@ Am Ende von Modul `{N-1}` den Link anpassen:
 Weiter zu [Modul {N} – {Titel}](modul-{N}-{kurzname}.md) →
 ```
 
-### Modul 7 (Aufräumen) – Ressourcentabelle
+### Letztes Modul des Lernpfads (Aufräumen) – Ressourcentabelle
 
-In `modul-7-aufräumen.md` die Tabelle am Anfang um die neue Ressource ergänzen.
-Ebenso in der Abschluss-Tabelle "Was du heute gebaut hast" am Ende.
+In `modul-{M}-aufräumen.md` die Tabelle am Anfang um die neue Ressource ergänzen.
+Ebenso in der Abschluss-Tabelle "Was du gebaut hast" am Ende.
 
 ---
 
@@ -179,11 +183,15 @@ Ebenso in der Abschluss-Tabelle "Was du heute gebaut hast" am Ende.
 
 ---
 
-## Themenideen für weitere Module (Vorschläge)
+## Themenideen für weitere Module (vollständiger Trainingsplan)
 
-| Modul | Mögliches Thema |
-|-------|----------------|
-| 8 | Azure Key Vault: Secrets und Verbindungsstrings sicher speichern |
-| 9 | Azure Container Instances: Docker-Container ohne Kubernetes starten |
-| 10 | Azure SQL Database: Managed Datenbank erstellen und abfragen |
-| 11 | Azure Entra ID: Benutzer und Gruppen verwalten |
+Siehe [docs/roadmap.md](../docs/roadmap.md) für den vollständigen Plan. Kurzfassung:
+
+| Lernpfad | Module | Thema |
+|----------|--------|-------|
+| LP 3 | 15–20 | Datenbanken (Azure SQL, Cosmos DB, PostgreSQL, Redis) |
+| LP 4 | 21–25 | Identity & Access (Entra ID, Managed Identity, RBAC, Conditional Access) |
+| LP 5 | 26–32 | Container (Docker, ACR, ACI, Container Apps, AKS) |
+| LP 6 | 33–39 | DevOps & IaC (Azure DevOps, GitHub Actions, ARM, Bicep, Terraform) |
+| LP 7 | 40–44 | Monitoring & Security (Log Analytics, App Insights, Defender, Policy) |
+| LP 8 | 45–47 | Abschlussprojekte (3-Tier-App, Event-Driven, Container+CI/CD) |

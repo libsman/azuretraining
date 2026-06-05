@@ -13,9 +13,9 @@ Nach diesem Modul kannst du:
 
 ## Hintergrund: Der nächste Abstraktionsschritt
 
-Schaue auf die Abstraktionsebenen, die du heute kennengelernt hast:
+Schaue auf die Abstraktionsebenen aus diesem Lernpfad:
 
-| Modell | Was du verwaltest | Beispiel heute |
+| Modell | Was du verwaltest | Beispiel (Lernpfad 1) |
 |--------|------------------|----------------|
 | **IaaS** | VM, OS, Software, Webserver | Azure VM + nginx (Modul 1) |
 | **PaaS** | Nur deinen Code, kein Server | Azure App Service (Modul 5) |
@@ -51,8 +51,8 @@ Das klingt unscheinbar, ist aber ein Paradigmenwechsel: Früher musste ein Serve
 | Feld | Wert |
 |------|------|
 | Subscription | deine Subscription |
-| Resource group | `rg-praktikum` |
-| Function App name | `func-praktikum-XXXX` (XXXX durch Zahlen ersetzen – weltweit eindeutig) |
+| Resource group | `rg-aztraining` |
+| Function App name | `func-aztraining-XXXX` (XXXX durch Zahlen ersetzen – weltweit eindeutig) |
 | Runtime stack | `Python` |
 | Version | `3.12` |
 | Region | `West Europe` |
@@ -137,14 +137,14 @@ Klicke oben auf **Test/Run**:
 1. Stelle sicher, dass **HTTP method** auf `GET` steht
 2. Füge unter **Query** einen Parameter hinzu:
     - Name: `name`
-    - Wert: `Azure-Praktikant`
+    - Wert: `Azure-Einsteiger`
 3. Klicke auf **Run**
 
 Im Bereich **Output** siehst du die JSON-Antwort:
 
 ```json
 {
-  "nachricht": "Hallo, Azure-Praktikant! 👋",
+  "nachricht": "Hallo, Azure-Einsteiger! 👋",
   "dienst": "Azure Functions (Serverless)",
   "serverzeit": "05.06.2026 14:30 UTC",
   "kosten_pro_aufruf": "~0,0000002 €"
@@ -168,7 +168,7 @@ Im Bereich **Output** siehst du die JSON-Antwort:
 Öffne die URL in einem neuen Tab. Füge deinen Namen als Parameter an:
 
 ```
-https://func-praktikum-xxxx.azurewebsites.net/api/HalloAzure?name=DeinName
+https://func-aztraining-xxxx.azurewebsites.net/api/HalloAzure?name=DeinName
 ```
 
 Du siehst die JSON-Antwort direkt im Browser.
@@ -224,7 +224,7 @@ Diese Funktion läuft jeden Tag automatisch um 8 Uhr morgens und schreibt einen 
 
 ---
 
-## Überblick: Was hast du heute kennengelernt?
+## Vergleich: Die drei Hosting-Modelle
 
 | | VM (Modul 1) | App Service (Modul 5) | Functions (dieses Modul) |
 |---|---|---|---|
@@ -267,7 +267,7 @@ Diese Funktion läuft jeden Tag automatisch um 8 Uhr morgens und schreibt einen 
         )
     ```
 
-    Teste im Browser: `https://func-praktikum-xxxx.azurewebsites.net/api/Rechner?a=7&b=3`
+    Teste im Browser: `https://func-aztraining-xxxx.azurewebsites.net/api/Rechner?a=7&b=3`
 
 ---
 

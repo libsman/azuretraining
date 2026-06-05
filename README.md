@@ -1,6 +1,6 @@
 # Azure Einstiegstraining
 
-Praxis-Einführung in Microsoft Azure für Einsteiger mit Hyper-V / On-Prem Erfahrung.
+Selbstgeführtes Azure-Training für IT-Profis im Microsoft-Umfeld – Azubis, Praktikanten und Windows-Admins.
 
 📖 **Dokumentation:** https://libsman.github.io/azuretraining
 

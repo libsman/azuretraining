@@ -35,16 +35,16 @@ Das Modell hinter Azure Computer Vision wurde von Microsoft mit Hunderten von Mi
 | Feld | Wert |
 |------|------|
 | Subscription | deine Subscription |
-| Resource group | `rg-praktikum` |
+| Resource group | `rg-aztraining` |
 | Region | `West Europe` |
-| Name | `cv-praktikum` |
+| Name | `cv-aztraining` |
 | Pricing tier | `Free F0` |
 
 !!! warning "Region: West Europe wählen"
     Computer Vision ist nicht in allen Regionen verfügbar. Wähle hier **West Europe** (Amsterdam), auch wenn du vorhin Germany West Central genutzt hast.
 
 !!! info "Free Tier F0"
-    Der Free Tier erlaubt **5.000 Analysen pro Monat** und 20 pro Minute. Für heute mehr als genug – und es entstehen **keine Kosten**.
+    Der Free Tier erlaubt **5.000 Analysen pro Monat** und 20 pro Minute. Für dieses Training mehr als genug – und es entstehen **keine Kosten**.
 
 ### Schritt 3: Review + Create
 
@@ -63,7 +63,7 @@ Du brauchst zwei Dinge um die API aufzurufen: einen **Schlüssel** (API-Key) und
 1. Links im Menü deiner Computer Vision Ressource: **Resource Management** → **Keys and Endpoint**
 2. Du siehst:
     - **KEY 1** und **KEY 2**: zwei gleichwertige API-Schlüssel (du brauchst nur einen)
-    - **Endpoint**: die URL deiner Ressource (z.B. `https://cv-praktikum.cognitiveservices.azure.com/`)
+    - **Endpoint**: die URL deiner Ressource (z.B. `https://cv-aztraining.cognitiveservices.azure.com/`)
 
 Kopiere **KEY 1** und den **Endpoint** – du brauchst beide gleich. Lass diesen Tab offen.
 
@@ -85,7 +85,7 @@ Bevor wir programmieren, testen wir die KI direkt im Browser.
 ### Schritt 2: Mit deiner Ressource verbinden
 
 1. Klicke oben rechts auf **View all resources**
-2. Deine Ressource `cv-praktikum` sollte in der Liste erscheinen – klicke darauf
+2. Deine Ressource `cv-aztraining` sollte in der Liste erscheinen – klicke darauf
 3. Klicke auf **Select as default resource** und dann **Done**
 
 ### Schritt 3: Bild analysieren
@@ -135,7 +135,7 @@ Ein Editor öffnet sich im oberen Teil der Cloud Shell. Füge jetzt folgenden Co
 import requests
 
 # ─── Deine Zugangsdaten ───────────────────────────────────────────────────────
-endpoint = "https://cv-praktikum.cognitiveservices.azure.com"
+endpoint = "https://cv-aztraining.cognitiveservices.azure.com"
 key      = "ERSETZE_MICH_MIT_DEINEM_KEY_1"
 # ─────────────────────────────────────────────────────────────────────────────
 

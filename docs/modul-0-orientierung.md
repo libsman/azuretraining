@@ -68,7 +68,7 @@ Für dieses Training nutzt du eine Subscription, die bereits vorbereitet wurde.
 
 ### 2. Resource Group (Ressourcengruppe)
 
-Eine Resource Group ist ein **Ordner für deine Azure-Ressourcen**. Alles, was du heute baust, kommt in eine Resource Group. Das hat zwei große Vorteile:
+Eine Resource Group ist ein **Ordner für deine Azure-Ressourcen**. Alles, was du in diesem Lernpfad baust, kommt in eine Resource Group. Das hat zwei große Vorteile:
 
 - Du siehst auf einen Blick, welche Ressourcen zusammengehören
 - Du kannst mit einem Klick alle Ressourcen auf einmal löschen (wichtig am Ende!)
@@ -79,10 +79,10 @@ Eine Resource ist ein **konkreter Azure-Dienst**: eine VM, ein Storage Account, 
 
 ```
 Subscription  (Abrechnungskonto)
-└── Resource Group: rg-praktikum  (dein "Ordner" für heute)
+└── Resource Group: rg-aztraining  (dein "Ordner" für diesen Lernpfad)
     ├── Virtual Machine: vm-training
-    ├── Storage Account: stpraktikum123
-    └── Computer Vision: cv-praktikum
+    ├── Storage Account: staztraining123
+    └── Computer Vision: cv-aztraining
 ```
 
 ### Region
@@ -93,7 +93,7 @@ Azure hat weltweit über 60 **Regionen** – das sind physische Rechenzentren. B
 - **West Europe** (Amsterdam) – gut erreichbar, viele Dienste verfügbar
 
 !!! warning "Alle Ressourcen in die gleiche Region"
-    Erstelle heute alle Ressourcen in derselben Region. Das vermeidet unnötige Übertragungskosten und sorgt für die beste Performance.
+    Erstelle alle Ressourcen in derselben Region. Das vermeidet unnötige Übertragungskosten und sorgt für die beste Performance.
 
 ---
 
@@ -115,7 +115,7 @@ Jetzt legst du deinen "Arbeitsordner" für den heutigen Tag an.
 | Feld | Wert |
 |------|------|
 | Subscription | die bereitgestellte Subscription (bereits ausgewählt) |
-| Resource group | `rg-praktikum` |
+| Resource group | `rg-aztraining` |
 | Region | `(Europe) Germany West Central` oder `(Europe) West Europe` |
 
 3. Klicke auf **Review + create**
@@ -124,7 +124,7 @@ Jetzt legst du deinen "Arbeitsordner" für den heutigen Tag an.
 
 ### Schritt 3: Überprüfen
 
-Nach wenigen Sekunden erscheint oben rechts eine Erfolgsmeldung. Klicke auf **Go to resource group** (oder suche erneut nach `rg-praktikum`).
+Nach wenigen Sekunden erscheint oben rechts eine Erfolgsmeldung. Klicke auf **Go to resource group** (oder suche erneut nach `rg-aztraining`).
 
 Du siehst deine leere Resource Group. Oben links steht der Name, rechts davon die Region und die Subscription.
 

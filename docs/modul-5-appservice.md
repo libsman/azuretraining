@@ -42,15 +42,15 @@ In der Praxis nutzen Unternehmen App Service für Web-Anwendungen und APIs, wenn
 | Feld | Wert |
 |------|------|
 | Subscription | deine Subscription |
-| Resource group | `rg-praktikum` |
-| Name | `webapp-praktikum-XXXX` (XXXX durch 4 zufällige Zahlen ersetzen) |
+| Resource group | `rg-aztraining` |
+| Name | `webapp-aztraining-XXXX` (XXXX durch 4 zufällige Zahlen ersetzen) |
 | Publish | `Code` |
 | Runtime stack | `Python 3.12` |
 | Operating System | `Linux` |
 | Region | `West Europe` |
 
 !!! tip "Eindeutiger Name erforderlich"
-    App Service Namen müssen weltweit eindeutig sein, weil deine App unter `dein-name.azurewebsites.net` erreichbar ist. Füge z.B. deine Initialen und das Datum ein: `webapp-praktikum-ms0605`
+    App Service Namen müssen weltweit eindeutig sein, weil deine App unter `dein-name.azurewebsites.net` erreichbar ist. Füge z.B. deine Initialen und das Datum ein: `webapp-aztraining-ms0605`
 
 ### Schritt 3: Pricing Plan auswählen
 
@@ -149,12 +149,12 @@ zip app.zip app.py requirements.txt
 
 ### Schritt 1: Code hochladen
 
-Ersetze `webapp-praktikum-XXXX` mit deinem App-Namen aus Schritt 2 oben:
+Ersetze `webapp-aztraining-XXXX` mit deinem App-Namen aus Schritt 2 oben:
 
 ```bash
 az webapp deploy \
-  --resource-group rg-praktikum \
-  --name webapp-praktikum-XXXX \
+  --resource-group rg-aztraining \
+  --name webapp-aztraining-XXXX \
   --src-path app.zip \
   --type zip
 ```
@@ -166,15 +166,15 @@ az webapp deploy \
 
 ```bash
 az webapp config set \
-  --resource-group rg-praktikum \
-  --name webapp-praktikum-XXXX \
+  --resource-group rg-aztraining \
+  --name webapp-aztraining-XXXX \
   --startup-file "gunicorn --bind=0.0.0.0 --timeout 600 app:app"
 ```
 
 ### Schritt 3: App aufrufen
 
-1. Gehe im Portal auf deine Web App (`webapp-praktikum-XXXX`)
-2. Oben siehst du die **Default domain** – z.B. `https://webapp-praktikum-xxxx.azurewebsites.net`
+1. Gehe im Portal auf deine Web App (`webapp-aztraining-XXXX`)
+2. Oben siehst du die **Default domain** – z.B. `https://webapp-aztraining-xxxx.azurewebsites.net`
 3. Klicke darauf – deine App öffnet sich im Browser
 
 !!! success "Web App live!"
@@ -196,8 +196,8 @@ code app.py
 ```bash
 zip app.zip app.py requirements.txt
 az webapp deploy \
-  --resource-group rg-praktikum \
-  --name webapp-praktikum-XXXX \
+  --resource-group rg-aztraining \
+  --name webapp-aztraining-XXXX \
   --src-path app.zip \
   --type zip
 ```
@@ -222,7 +222,7 @@ Falls etwas nicht funktioniert:
     Deine App hat schon einen `/status`-Endpunkt. Füge einen weiteren Endpunkt `/info` hinzu, der als JSON zurückgibt:
     - deinen Namen
     - das heutige Datum
-    - eine Liste der Azure-Services, die du heute genutzt hast
+    - eine Liste der Azure-Services, die du in diesem Lernpfad genutzt hast
 
 ??? success "Hinweis"
     ```python

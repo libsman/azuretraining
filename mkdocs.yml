@@ -1,5 +1,5 @@
 site_name: Azure Einstiegstraining
-site_description: Praxis-Einführung in Microsoft Azure für Einsteiger
+site_description: Selbstgeführtes Azure-Training für IT-Profis im Microsoft-Umfeld
 site_url: https://libsman.github.io/azuretraining
 repo_url: https://github.com/libsman/azuretraining
 repo_name: libsman/azuretraining
@@ -55,7 +55,8 @@ markdown_extensions:
 
 nav:
   - Willkommen: index.md
-  - Module:
+  - Trainingsplan: roadmap.md
+  - Lernpfad 1 – Grundlagen:
     - Modul 0 – Orientierung: modul-0-orientierung.md
     - Modul 1 – Erste VM: modul-1-vm.md
     - Modul 2 – Storage & Website: modul-2-storage.md
@@ -64,6 +65,21 @@ nav:
     - Modul 5 – App Service: modul-5-appservice.md
     - Modul 6 – Azure Functions: modul-6-functions.md
     - Modul 7 – Aufräumen: modul-7-aufräumen.md
+  - Lernpfad 2 – Netzwerk & Sicherheit:
+    - Modul 8 – Virtual Network: modul-8-vnet.md
+    - Modul 9 – Network Security Groups: modul-9-nsg.md
+    - Modul 10 – Azure Bastion: modul-10-bastion.md
+    - Modul 11 – Load Balancer: modul-11-loadbalancer.md
+    - Modul 12 – Key Vault: modul-12-keyvault.md
+    - Modul 13 – Private Endpoints: modul-13-privateendpoints.md
+    - Modul 14 – Aufräumen: modul-14-aufräumen.md
+  - Lernpfad 3 – Datenbanken:
+    - Modul 15 – Azure SQL Database: modul-15-sql.md
+    - Modul 16 – Cosmos DB: modul-16-cosmosdb.md
+    - Modul 17 – PostgreSQL: modul-17-postgresql.md
+    - Modul 18 – Redis Cache: modul-18-redis.md
+    - Modul 19 – App + Datenbank: modul-19-app-datenbank.md
+    - Modul 20 – Aufräumen: modul-20-aufräumen.md
 
 extra:
   social:

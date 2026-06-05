@@ -38,8 +38,8 @@ Für eine einfache Website aus HTML, CSS und Bildern gibt es einen viel schlanke
 | Feld | Wert |
 |------|------|
 | Subscription | deine Subscription |
-| Resource group | `rg-praktikum` |
-| Storage account name | `stpraktikum` + deine Initialen oder eine Zahl (z.B. `stpraktikummax1`) |
+| Resource group | `rg-aztraining` |
+| Storage account name | `staztraining` + deine Initialen oder eine Zahl (z.B. `staztrainingmax1`) |
 | Region | dieselbe Region wie deine VM |
 | Performance | `Standard` |
 | Redundancy | `Locally-redundant storage (LRS)` |
@@ -76,7 +76,7 @@ Das Deployment dauert ca. 20–30 Sekunden. Danach auf **Go to resource** klicke
 Nach dem Speichern erscheinen zwei wichtige Informationen:
 
 - **Primary endpoint**: Die öffentliche URL deiner Website – sieht ungefähr so aus:
-  `https://stpraktikummax1.z6.web.core.windows.net/`
+  `https://staztrainingmax1.z6.web.core.windows.net/`
 - **$web**: Ein neuer Container (Ordner) wurde angelegt – dort kommen deine Dateien rein
 
 !!! info "Kopiere die Primary Endpoint URL!"
@@ -193,7 +193,7 @@ Du solltest deine blaue Website sehen!
 !!! question "Challenge: Zweite Seite hinzufügen"
     Erweitere deine Website:
 
-    1. Erstelle eine zweite Seite `about.html` mit ein paar Infos über dich (Name, Praktikum, was du heute gelernt hast)
+    1. Erstelle eine zweite Seite `about.html` mit ein paar Infos über dich (Name, was du in diesem Training lernst)
     2. Füge auf der `index.html` einen Link ein, der zu `about.html` führt
     3. Lade beide Dateien in den `$web` Container hoch und teste die Links
 
@@ -221,8 +221,8 @@ Du solltest deine blaue Website sehen!
     <body>
         <h1>Über mich</h1>
         <p>Mein Name ist [DEIN NAME].</p>
-        <p>Ich mache gerade ein Praktikum bei Microsoft und lerne Azure kennen.</p>
-        <p>Heute habe ich meine erste VM und meine erste serverlose Website gebaut.</p>
+        <p>Ich lerne gerade Azure kennen und baue erste Cloud-Ressourcen.</p>
+        <p>In diesem Training habe ich meine erste VM und meine erste serverlose Website gebaut.</p>
         <br>
         <a href="index.html">← Zurück zur Startseite</a>
     </body>
