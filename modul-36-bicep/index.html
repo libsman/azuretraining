@@ -10,13 +10,13 @@
       
       
       
-        <link rel="canonical" href="https://libsman.github.io/azuretraining/modul-25-aufr%C3%A4umen/">
+        <link rel="canonical" href="https://libsman.github.io/azuretraining/modul-36-bicep/">
       
       
-        <link rel="prev" href="../modul-24-conditional-access/">
+        <link rel="prev" href="../modul-35-arm/">
       
       
-        <link rel="next" href="../modul-26-docker/">
+        <link rel="next" href="../modul-37-terraform/">
       
       
         
@@ -27,7 +27,7 @@
     
     
       
-        <title>Modul 25 – Aufräumen - Azure Einstiegstraining</title>
+        <title>Modul 36 – Bicep - Azure Einstiegstraining</title>
       
     
     
@@ -78,7 +78,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#modul-25-aufraumen-lernpfad-4-abschlieen" class="md-skip">
+        <a href="#modul-36-bicep-infrastruktur-als-code-modern-und-lesbar" class="md-skip">
           Zum Inhalt
         </a>
       
@@ -114,7 +114,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Modul 25 – Aufräumen
+              Modul 36 – Bicep
             
           </span>
         </div>
@@ -1063,20 +1063,18 @@
       
   
   
-    
   
   
-  
     
     
     
     
     
-    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_6" checked>
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_6" >
         
           
           <label class="md-nav__link" for="__nav_6" id="__nav_6_label" tabindex="0">
@@ -1097,7 +1095,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_6_label" aria-expanded="true">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_6_label" aria-expanded="false">
           <label class="md-nav__title" for="__nav_6">
             <span class="md-nav__icon md-icon"></span>
             
@@ -1224,37 +1222,10 @@
                 
   
   
-    
   
   
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
-      
-      
-        
-      
-      
-        <label class="md-nav__link md-nav__link--active" for="__toc">
-          
-  
-  
-  <span class="md-ellipsis">
-    
-  
-    Modul 25 – Aufräumen
-  
-
-    
-  </span>
-  
-  
-
-          <span class="md-nav__icon md-icon"></span>
-        </label>
-      
-      <a href="./" class="md-nav__link md-nav__link--active">
+    <li class="md-nav__item">
+      <a href="../modul-25-aufr%C3%A4umen/" class="md-nav__link">
         
   
   
@@ -1270,187 +1241,6 @@
   
 
       </a>
-      
-        
-
-<nav class="md-nav md-nav--secondary" aria-label="Inhaltsverzeichnis">
-  
-  
-  
-    
-  
-  
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      Inhaltsverzeichnis
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#was-du-in-lernpfad-4-gebaut-hast" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Was du in Lernpfad 4 gebaut hast
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#azure-ressourcen-loschen" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Azure-Ressourcen löschen
-      
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="Azure-Ressourcen löschen">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#option-a-resource-group-loschen" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Option A: Resource Group löschen
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#option-b-einzelne-ressourcen-loschen" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Option B: Einzelne Ressourcen löschen
-      
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#custom-roles-loschen" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Custom Roles löschen
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#entra-id-objekte-aufraumen" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Entra ID-Objekte aufräumen
-      
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="Entra ID-Objekte aufräumen">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#testbenutzer-loschen" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Testbenutzer löschen
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#gruppen-loschen" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Gruppen löschen
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#conditional-access-policies-deaktivierenloschen" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Conditional Access Policies deaktivieren/löschen
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#named-locations-loschen" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Named Locations löschen
-      
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#was-du-in-lernpfad-4-gelernt-hast" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Was du in Lernpfad 4 gelernt hast
-      
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="Was du in Lernpfad 4 gelernt hast">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#konzepte-die-du-jetzt-kennst" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Konzepte die du jetzt kennst
-      
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#lernpfad-4-checkliste" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Lernpfad 4 – Checkliste
-      
-    </span>
-  </a>
-  
-</li>
-      
-    </ul>
-  
-</nav>
-      
     </li>
   
 
@@ -1717,18 +1507,20 @@
       
   
   
+    
   
   
+  
     
     
     
     
     
-    <li class="md-nav__item md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_8" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_8" checked>
         
           
           <label class="md-nav__link" for="__nav_8" id="__nav_8_label" tabindex="0">
@@ -1749,7 +1541,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_8_label" aria-expanded="false">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_8_label" aria-expanded="true">
           <label class="md-nav__title" for="__nav_8">
             <span class="md-nav__icon md-icon"></span>
             
@@ -1848,10 +1640,37 @@
                 
   
   
+    
   
   
-    <li class="md-nav__item">
-      <a href="../modul-36-bicep/" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Modul 36 – Bicep
+  
+
+    
+  </span>
+  
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
         
   
   
@@ -1867,6 +1686,153 @@
   
 
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Inhaltsverzeichnis">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Inhaltsverzeichnis
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#lernziele" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Lernziele
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#hintergrund-warum-bicep-statt-arm" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Hintergrund: Warum Bicep statt ARM?
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#bicep-installieren" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Bicep installieren
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#erste-bicep-datei" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Erste Bicep-Datei
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Erste Bicep-Datei">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#deployen" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Deployen
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#komplette-infrastruktur-app-service-key-vault" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Komplette Infrastruktur: App Service + Key Vault
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#bicep-module-wiederverwendbarkeit" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Bicep Module: Wiederverwendbarkeit
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#arm-bicep-konvertieren" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        ARM ↔ Bicep konvertieren
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#what-if-mit-bicep" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        What-If mit Bicep
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#bicep-in-github-actions" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Bicep in GitHub Actions
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#challenge" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Challenge
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
     </li>
   
 
@@ -1990,10 +1956,10 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#was-du-in-lernpfad-4-gebaut-hast" class="md-nav__link">
+  <a href="#lernziele" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Was du in Lernpfad 4 gebaut hast
+        Lernziele
       
     </span>
   </a>
@@ -2001,33 +1967,44 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#azure-ressourcen-loschen" class="md-nav__link">
+  <a href="#hintergrund-warum-bicep-statt-arm" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Azure-Ressourcen löschen
-      
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="Azure-Ressourcen löschen">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#option-a-resource-group-loschen" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Option A: Resource Group löschen
+        Hintergrund: Warum Bicep statt ARM?
       
     </span>
   </a>
   
 </li>
-        
-          <li class="md-nav__item">
-  <a href="#option-b-einzelne-ressourcen-loschen" class="md-nav__link">
+      
+        <li class="md-nav__item">
+  <a href="#bicep-installieren" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Option B: Einzelne Ressourcen löschen
+        Bicep installieren
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#erste-bicep-datei" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Erste Bicep-Datei
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Erste Bicep-Datei">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#deployen" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Deployen
       
     </span>
   </a>
@@ -2040,10 +2017,10 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#custom-roles-loschen" class="md-nav__link">
+  <a href="#komplette-infrastruktur-app-service-key-vault" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Custom Roles löschen
+        Komplette Infrastruktur: App Service + Key Vault
       
     </span>
   </a>
@@ -2051,99 +2028,54 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#entra-id-objekte-aufraumen" class="md-nav__link">
+  <a href="#bicep-module-wiederverwendbarkeit" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Entra ID-Objekte aufräumen
+        Bicep Module: Wiederverwendbarkeit
       
     </span>
   </a>
-  
-    <nav class="md-nav" aria-label="Entra ID-Objekte aufräumen">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#testbenutzer-loschen" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Testbenutzer löschen
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#gruppen-loschen" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Gruppen löschen
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#conditional-access-policies-deaktivierenloschen" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Conditional Access Policies deaktivieren/löschen
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#named-locations-loschen" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Named Locations löschen
-      
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#was-du-in-lernpfad-4-gelernt-hast" class="md-nav__link">
+  <a href="#arm-bicep-konvertieren" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Was du in Lernpfad 4 gelernt hast
+        ARM ↔ Bicep konvertieren
       
     </span>
   </a>
-  
-    <nav class="md-nav" aria-label="Was du in Lernpfad 4 gelernt hast">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#konzepte-die-du-jetzt-kennst" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Konzepte die du jetzt kennst
-      
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#lernpfad-4-checkliste" class="md-nav__link">
+  <a href="#what-if-mit-bicep" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Lernpfad 4 – Checkliste
+        What-If mit Bicep
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#bicep-in-github-actions" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Bicep in GitHub Actions
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#challenge" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Challenge
       
     </span>
   </a>
@@ -2170,201 +2102,295 @@
   
 
 
-<h1 id="modul-25-aufraumen-lernpfad-4-abschlieen">Modul 25 – Aufräumen: Lernpfad 4 abschließen</h1>
-<h2 id="was-du-in-lernpfad-4-gebaut-hast">Was du in Lernpfad 4 gebaut hast</h2>
-<table>
-<thead>
-<tr>
-<th>Ressource</th>
-<th>Typ</th>
-<th>Modul</th>
-<th>Kosten/Monat</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td><code>rg-identity</code></td>
-<td>Resource Group</td>
-<td>alle</td>
-<td>kostenlos</td>
-</tr>
-<tr>
-<td><code>app-identity-XXXX</code></td>
-<td>App Service (Free F1)</td>
-<td>22</td>
-<td>0 €</td>
-</tr>
-<tr>
-<td><code>staztraining-XXXX</code></td>
-<td>Storage Account</td>
-<td>22</td>
-<td>&lt; 1 €</td>
-</tr>
-<tr>
-<td><code>id-shared-apps</code></td>
-<td>User-assigned Managed Identity</td>
-<td>22</td>
-<td>0 €</td>
-</tr>
-<tr>
-<td>Custom Role <code>VM Operator</code></td>
-<td>RBAC Custom Role</td>
-<td>23</td>
-<td>0 €</td>
-</tr>
-<tr>
-<td>Custom Role <code>Storage Readonly Plus</code></td>
-<td>RBAC Custom Role</td>
-<td>23</td>
-<td>0 €</td>
-</tr>
-<tr>
-<td>Testbenutzer <code>testuser@...</code></td>
-<td>Entra ID User</td>
-<td>21</td>
-<td>0 €</td>
-</tr>
-<tr>
-<td>Gruppe <code>grp-azure-leser</code></td>
-<td>Entra ID Group</td>
-<td>21</td>
-<td>0 €</td>
-</tr>
-<tr>
-<td>Conditional Access Policies</td>
-<td>Entra ID Policy</td>
-<td>24</td>
-<td>0 €</td>
-</tr>
-</tbody>
-</table>
-<div class="admonition info">
-<p class="admonition-title">Entra ID-Objekte kosten nichts</p>
-<p>Benutzer, Gruppen, Managed Identities und Conditional Access-Policies verursachen keine direkten Azure-Kosten (außer bei Entra ID P1/P2-Lizenzen). Du kannst sie länger behalten – aber für Ordnung trotzdem aufräumen.</p>
-</div>
-<hr />
-<h2 id="azure-ressourcen-loschen">Azure-Ressourcen löschen</h2>
-<h3 id="option-a-resource-group-loschen">Option A: Resource Group löschen</h3>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a>az<span class="w"> </span>group<span class="w"> </span>delete<span class="w"> </span>--name<span class="w"> </span>rg-identity<span class="w"> </span>--yes<span class="w"> </span>--no-wait
-</code></pre></div>
-<h3 id="option-b-einzelne-ressourcen-loschen">Option B: Einzelne Ressourcen löschen</h3>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a><span class="c1"># Storage Account löschen</span>
-<a id="__codelineno-1-2" name="__codelineno-1-2" href="#__codelineno-1-2"></a>az<span class="w"> </span>storage<span class="w"> </span>account<span class="w"> </span>delete<span class="w"> </span><span class="se">\</span>
-<a id="__codelineno-1-3" name="__codelineno-1-3" href="#__codelineno-1-3"></a><span class="w">  </span>--name<span class="w"> </span>staztraining-XXXX<span class="w"> </span><span class="se">\</span>
-<a id="__codelineno-1-4" name="__codelineno-1-4" href="#__codelineno-1-4"></a><span class="w">  </span>--resource-group<span class="w"> </span>rg-identity<span class="w"> </span><span class="se">\</span>
-<a id="__codelineno-1-5" name="__codelineno-1-5" href="#__codelineno-1-5"></a><span class="w">  </span>--yes
-<a id="__codelineno-1-6" name="__codelineno-1-6" href="#__codelineno-1-6"></a>
-<a id="__codelineno-1-7" name="__codelineno-1-7" href="#__codelineno-1-7"></a><span class="c1"># App Service löschen</span>
-<a id="__codelineno-1-8" name="__codelineno-1-8" href="#__codelineno-1-8"></a>az<span class="w"> </span>webapp<span class="w"> </span>delete<span class="w"> </span><span class="se">\</span>
-<a id="__codelineno-1-9" name="__codelineno-1-9" href="#__codelineno-1-9"></a><span class="w">  </span>--name<span class="w"> </span>app-identity-XXXX<span class="w"> </span><span class="se">\</span>
-<a id="__codelineno-1-10" name="__codelineno-1-10" href="#__codelineno-1-10"></a><span class="w">  </span>--resource-group<span class="w"> </span>rg-identity
-<a id="__codelineno-1-11" name="__codelineno-1-11" href="#__codelineno-1-11"></a>
-<a id="__codelineno-1-12" name="__codelineno-1-12" href="#__codelineno-1-12"></a><span class="c1"># User-assigned Managed Identity löschen</span>
-<a id="__codelineno-1-13" name="__codelineno-1-13" href="#__codelineno-1-13"></a>az<span class="w"> </span>identity<span class="w"> </span>delete<span class="w"> </span><span class="se">\</span>
-<a id="__codelineno-1-14" name="__codelineno-1-14" href="#__codelineno-1-14"></a><span class="w">  </span>--name<span class="w"> </span>id-shared-apps<span class="w"> </span><span class="se">\</span>
-<a id="__codelineno-1-15" name="__codelineno-1-15" href="#__codelineno-1-15"></a><span class="w">  </span>--resource-group<span class="w"> </span>rg-identity
-</code></pre></div>
-<hr />
-<h2 id="custom-roles-loschen">Custom Roles löschen</h2>
-<p>Custom Roles existieren auf Subscription-Ebene und werden nicht durch RG-Löschung entfernt:</p>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a>az<span class="w"> </span>role<span class="w"> </span>definition<span class="w"> </span>delete<span class="w"> </span>--name<span class="w"> </span><span class="s2">&quot;VM Operator&quot;</span>
-<a id="__codelineno-2-2" name="__codelineno-2-2" href="#__codelineno-2-2"></a>az<span class="w"> </span>role<span class="w"> </span>definition<span class="w"> </span>delete<span class="w"> </span>--name<span class="w"> </span><span class="s2">&quot;Storage Readonly Plus&quot;</span>
-</code></pre></div>
-<p>Überprüfen:</p>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a><span class="c1"># Alle Custom Roles in der Subscription</span>
-<a id="__codelineno-3-2" name="__codelineno-3-2" href="#__codelineno-3-2"></a>az<span class="w"> </span>role<span class="w"> </span>definition<span class="w"> </span>list<span class="w"> </span>--custom-role-only<span class="w"> </span><span class="nb">true</span><span class="w"> </span>--output<span class="w"> </span>table
-</code></pre></div>
-<hr />
-<h2 id="entra-id-objekte-aufraumen">Entra ID-Objekte aufräumen</h2>
-<h3 id="testbenutzer-loschen">Testbenutzer löschen</h3>
-<ol>
-<li><strong>Microsoft Entra ID</strong> → <strong>Users</strong> → <strong>All users</strong></li>
-<li>Klicke auf <code>Test User</code></li>
-<li><strong>Delete</strong> oben → Bestätigen</li>
-</ol>
-<div class="admonition info">
-<p class="admonition-title">Soft Delete in Entra ID</p>
-<p>Gelöschte Benutzer landen im <strong>Recycle Bin</strong> und können 30 Tage wiederhergestellt werden:
-<strong>Users</strong> → <strong>Deleted users</strong> → Benutzer auswählen → <strong>Restore</strong></p>
-</div>
-<h3 id="gruppen-loschen">Gruppen löschen</h3>
-<ol>
-<li><strong>Microsoft Entra ID</strong> → <strong>Groups</strong> → <strong>All groups</strong></li>
-<li>Gruppe auswählen → <strong>Delete</strong> → Bestätigen</li>
-</ol>
-<h3 id="conditional-access-policies-deaktivierenloschen">Conditional Access Policies deaktivieren/löschen</h3>
-<ol>
-<li><strong>Microsoft Entra ID</strong> → <strong>Protection</strong> → <strong>Conditional Access</strong> → <strong>Policies</strong></li>
-<li>Policy anklicken → <strong>Delete</strong> (oder auf <strong>Off</strong> setzen)</li>
-</ol>
-<h3 id="named-locations-loschen">Named Locations löschen</h3>
-<ol>
-<li><strong>Conditional Access</strong> → <strong>Named locations</strong></li>
-<li>Location auswählen → <strong>Delete</strong></li>
-</ol>
-<hr />
-<h2 id="was-du-in-lernpfad-4-gelernt-hast">Was du in Lernpfad 4 gelernt hast</h2>
-<table>
-<thead>
-<tr>
-<th>Modul</th>
-<th>Thema</th>
-<th>Schlüsselkonzept</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>21 – Entra ID</td>
-<td>Benutzer, Gruppen, B2B</td>
-<td>Tenant, UPN, Security Groups, Gastbenutzer</td>
-</tr>
-<tr>
-<td>22 – Managed Identity</td>
-<td>Apps ohne Passwörter</td>
-<td>DefaultAzureCredential, System- vs. User-assigned</td>
-</tr>
-<tr>
-<td>23 – RBAC vertieft</td>
-<td>Eigene Rollen &amp; Scopes</td>
-<td>Scope-Hierarchie, Custom Roles, Least Privilege</td>
-</tr>
-<tr>
-<td>24 – Conditional Access</td>
-<td>Bedingter Zugriff</td>
-<td>Zero Trust, MFA, Named Locations, Report-only</td>
-</tr>
-</tbody>
-</table>
-<h3 id="konzepte-die-du-jetzt-kennst">Konzepte die du jetzt kennst</h3>
-<p><strong>Identitäten in Azure:</strong>
-- ✅ Entra ID ist der Identitätsdienst für alle Azure-Zugriffe
-- ✅ Managed Identities ersetzen Passwörter für Apps komplett
-- ✅ <code>DefaultAzureCredential</code> funktioniert lokal (CLI) und in Azure (Managed Identity) ohne Codeänderung</p>
-<p><strong>Zugriffssteuerung:</strong>
-- ✅ RBAC: Wer darf auf welcher Azure-Ressource was tun
-- ✅ Scope-Hierarchie: Rollen vererben sich nach unten
-- ✅ Least Privilege: immer minimale Rechte vergeben
-- ✅ Custom Roles: wenn Built-in Roles nicht passen</p>
-<p><strong>Zero Trust:</strong>
-- ✅ Security Defaults: Mindestschutz für jeden Tenant
-- ✅ Conditional Access: Zugriff basierend auf Kontext (Standort, Gerät, Risiko)
-- ✅ Report-only: Policies testen ohne Auswirkungen</p>
-<hr />
-<h2 id="lernpfad-4-checkliste">Lernpfad 4 – Checkliste</h2>
-<p>Bevor du weitermachst:</p>
+<h1 id="modul-36-bicep-infrastruktur-als-code-modern-und-lesbar">Modul 36 – Bicep: Infrastruktur als Code – modern und lesbar</h1>
+<h2 id="lernziele">Lernziele</h2>
+<p>Nach diesem Modul kannst du:</p>
 <ul>
-<li>[ ] Managed Identity auf einer App Service aktiviert und getestet</li>
-<li>[ ] RBAC-Rolle auf eine Ressource über das Portal vergeben</li>
-<li>[ ] Eine Custom Role erstellt und zugewiesen</li>
-<li>[ ] Den Unterschied zwischen Azure RBAC und Entra ID-Rollen erklären können</li>
-<li>[ ] Eine Conditional Access Policy im Report-only-Modus erstellt</li>
+<li>Bicep als modernere Alternative zu ARM Templates beschreiben</li>
+<li>Die Bicep-Syntax für Ressourcen, Parameter, Variablen und Outputs schreiben</li>
+<li>Eine vollständige Infrastruktur (App Service + Storage + Key Vault) per Bicep deployen</li>
+<li>Module in Bicep für Wiederverwendbarkeit einsetzen</li>
+<li>Bicep und ARM gegenseitig konvertieren</li>
 </ul>
 <hr />
-<p>Weiter zu <a href="../modul-26-docker/">Modul 26 – Docker Grundlagen</a> →</p>
+<h2 id="hintergrund-warum-bicep-statt-arm">Hintergrund: Warum Bicep statt ARM?</h2>
+<p><strong>Direkter Vergleich</strong> – dasselbe Storage Account in beiden Sprachen:</p>
+<p><strong>ARM (JSON, 25 Zeilen):</strong>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="p">{</span>
+<a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a><span class="w">  </span><span class="nt">&quot;$schema&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;...&quot;</span><span class="p">,</span>
+<a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a><span class="w">  </span><span class="nt">&quot;contentVersion&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;1.0.0.0&quot;</span><span class="p">,</span>
+<a id="__codelineno-0-4" name="__codelineno-0-4" href="#__codelineno-0-4"></a><span class="w">  </span><span class="nt">&quot;parameters&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
+<a id="__codelineno-0-5" name="__codelineno-0-5" href="#__codelineno-0-5"></a><span class="w">    </span><span class="nt">&quot;storageAccountName&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="nt">&quot;type&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;string&quot;</span><span class="w"> </span><span class="p">}</span>
+<a id="__codelineno-0-6" name="__codelineno-0-6" href="#__codelineno-0-6"></a><span class="w">  </span><span class="p">},</span>
+<a id="__codelineno-0-7" name="__codelineno-0-7" href="#__codelineno-0-7"></a><span class="w">  </span><span class="nt">&quot;resources&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">[{</span>
+<a id="__codelineno-0-8" name="__codelineno-0-8" href="#__codelineno-0-8"></a><span class="w">    </span><span class="nt">&quot;type&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;Microsoft.Storage/storageAccounts&quot;</span><span class="p">,</span>
+<a id="__codelineno-0-9" name="__codelineno-0-9" href="#__codelineno-0-9"></a><span class="w">    </span><span class="nt">&quot;apiVersion&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;2023-01-01&quot;</span><span class="p">,</span>
+<a id="__codelineno-0-10" name="__codelineno-0-10" href="#__codelineno-0-10"></a><span class="w">    </span><span class="nt">&quot;name&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;[parameters(&#39;storageAccountName&#39;)]&quot;</span><span class="p">,</span>
+<a id="__codelineno-0-11" name="__codelineno-0-11" href="#__codelineno-0-11"></a><span class="w">    </span><span class="nt">&quot;location&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;[resourceGroup().location]&quot;</span><span class="p">,</span>
+<a id="__codelineno-0-12" name="__codelineno-0-12" href="#__codelineno-0-12"></a><span class="w">    </span><span class="nt">&quot;sku&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="nt">&quot;name&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;Standard_LRS&quot;</span><span class="w"> </span><span class="p">},</span>
+<a id="__codelineno-0-13" name="__codelineno-0-13" href="#__codelineno-0-13"></a><span class="w">    </span><span class="nt">&quot;kind&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;StorageV2&quot;</span><span class="p">,</span>
+<a id="__codelineno-0-14" name="__codelineno-0-14" href="#__codelineno-0-14"></a><span class="w">    </span><span class="nt">&quot;properties&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{}</span>
+<a id="__codelineno-0-15" name="__codelineno-0-15" href="#__codelineno-0-15"></a><span class="w">  </span><span class="p">}]</span>
+<a id="__codelineno-0-16" name="__codelineno-0-16" href="#__codelineno-0-16"></a><span class="p">}</span>
+</code></pre></div></p>
+<p><strong>Bicep (7 Zeilen):</strong>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a>param storageAccountName string
+<a id="__codelineno-1-2" name="__codelineno-1-2" href="#__codelineno-1-2"></a>
+<a id="__codelineno-1-3" name="__codelineno-1-3" href="#__codelineno-1-3"></a>resource storageAccount &#39;Microsoft.Storage/storageAccounts@2023-01-01&#39; = {
+<a id="__codelineno-1-4" name="__codelineno-1-4" href="#__codelineno-1-4"></a>  name: storageAccountName
+<a id="__codelineno-1-5" name="__codelineno-1-5" href="#__codelineno-1-5"></a>  location: resourceGroup().location
+<a id="__codelineno-1-6" name="__codelineno-1-6" href="#__codelineno-1-6"></a>  sku: { name: &#39;Standard_LRS&#39; }
+<a id="__codelineno-1-7" name="__codelineno-1-7" href="#__codelineno-1-7"></a>  kind: &#39;StorageV2&#39;
+<a id="__codelineno-1-8" name="__codelineno-1-8" href="#__codelineno-1-8"></a>}
+</code></pre></div></p>
+<p>Bicep kompiliert intern zu ARM – du schreibst weniger, Azure versteht dasselbe.</p>
 <div class="admonition info">
-<p class="admonition-title">Lernpfad 5 – Container</p>
-<p>In Lernpfad 5 geht es um Container-Technologien: Docker, Azure Container Registry, Azure Container Instances, Container Apps und ein Einstieg in AKS (Kubernetes).</p>
+<p class="admonition-title">Bicep ist Microsofts empfohlener IaC-Weg</p>
+<p>Microsoft empfiehlt Bicep für alle neuen Azure-IaC-Projekte. ARM ist weiterhin gültig aber neu anfangen solltest du mit Bicep.</p>
 </div>
+<hr />
+<h2 id="bicep-installieren">Bicep installieren</h2>
+<p>Bicep ist in der Azure CLI integriert:</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a><span class="c1"># Aktuelle Bicep-Version prüfen</span>
+<a id="__codelineno-2-2" name="__codelineno-2-2" href="#__codelineno-2-2"></a>az<span class="w"> </span>bicep<span class="w"> </span>version
+<a id="__codelineno-2-3" name="__codelineno-2-3" href="#__codelineno-2-3"></a>
+<a id="__codelineno-2-4" name="__codelineno-2-4" href="#__codelineno-2-4"></a><span class="c1"># Bicep aktualisieren</span>
+<a id="__codelineno-2-5" name="__codelineno-2-5" href="#__codelineno-2-5"></a>az<span class="w"> </span>bicep<span class="w"> </span>upgrade
+</code></pre></div>
+<p>In der Cloud Shell ist Bicep bereits verfügbar.</p>
+<hr />
+<h2 id="erste-bicep-datei">Erste Bicep-Datei</h2>
+<p>Erstelle <code>storage.bicep</code> in der Cloud Shell (<code>code storage.bicep</code>):</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a>@description(&#39;Name des Storage Accounts&#39;)
+<a id="__codelineno-3-2" name="__codelineno-3-2" href="#__codelineno-3-2"></a>@minLength(3)
+<a id="__codelineno-3-3" name="__codelineno-3-3" href="#__codelineno-3-3"></a>@maxLength(24)
+<a id="__codelineno-3-4" name="__codelineno-3-4" href="#__codelineno-3-4"></a>param storageAccountName string
+<a id="__codelineno-3-5" name="__codelineno-3-5" href="#__codelineno-3-5"></a>
+<a id="__codelineno-3-6" name="__codelineno-3-6" href="#__codelineno-3-6"></a>@description(&#39;Azure-Region&#39;)
+<a id="__codelineno-3-7" name="__codelineno-3-7" href="#__codelineno-3-7"></a>param location string = resourceGroup().location
+<a id="__codelineno-3-8" name="__codelineno-3-8" href="#__codelineno-3-8"></a>
+<a id="__codelineno-3-9" name="__codelineno-3-9" href="#__codelineno-3-9"></a>@allowed([&#39;Standard_LRS&#39;, &#39;Standard_GRS&#39;, &#39;Premium_LRS&#39;])
+<a id="__codelineno-3-10" name="__codelineno-3-10" href="#__codelineno-3-10"></a>param sku string = &#39;Standard_LRS&#39;
+<a id="__codelineno-3-11" name="__codelineno-3-11" href="#__codelineno-3-11"></a>
+<a id="__codelineno-3-12" name="__codelineno-3-12" href="#__codelineno-3-12"></a>resource storageAccount &#39;Microsoft.Storage/storageAccounts@2023-01-01&#39; = {
+<a id="__codelineno-3-13" name="__codelineno-3-13" href="#__codelineno-3-13"></a>  name: storageAccountName
+<a id="__codelineno-3-14" name="__codelineno-3-14" href="#__codelineno-3-14"></a>  location: location
+<a id="__codelineno-3-15" name="__codelineno-3-15" href="#__codelineno-3-15"></a>  sku: {
+<a id="__codelineno-3-16" name="__codelineno-3-16" href="#__codelineno-3-16"></a>    name: sku
+<a id="__codelineno-3-17" name="__codelineno-3-17" href="#__codelineno-3-17"></a>  }
+<a id="__codelineno-3-18" name="__codelineno-3-18" href="#__codelineno-3-18"></a>  kind: &#39;StorageV2&#39;
+<a id="__codelineno-3-19" name="__codelineno-3-19" href="#__codelineno-3-19"></a>  properties: {
+<a id="__codelineno-3-20" name="__codelineno-3-20" href="#__codelineno-3-20"></a>    accessTier: &#39;Hot&#39;
+<a id="__codelineno-3-21" name="__codelineno-3-21" href="#__codelineno-3-21"></a>    allowBlobPublicAccess: false
+<a id="__codelineno-3-22" name="__codelineno-3-22" href="#__codelineno-3-22"></a>  }
+<a id="__codelineno-3-23" name="__codelineno-3-23" href="#__codelineno-3-23"></a>}
+<a id="__codelineno-3-24" name="__codelineno-3-24" href="#__codelineno-3-24"></a>
+<a id="__codelineno-3-25" name="__codelineno-3-25" href="#__codelineno-3-25"></a>output storageAccountId string = storageAccount.id
+<a id="__codelineno-3-26" name="__codelineno-3-26" href="#__codelineno-3-26"></a>output primaryEndpoint string = storageAccount.properties.primaryEndpoints.blob
+</code></pre></div>
+<h3 id="deployen">Deployen</h3>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-4-1" name="__codelineno-4-1" href="#__codelineno-4-1"></a>az<span class="w"> </span>group<span class="w"> </span>create<span class="w"> </span>--name<span class="w"> </span>rg-devops<span class="w"> </span>--location<span class="w"> </span>westeurope
+<a id="__codelineno-4-2" name="__codelineno-4-2" href="#__codelineno-4-2"></a>
+<a id="__codelineno-4-3" name="__codelineno-4-3" href="#__codelineno-4-3"></a>az<span class="w"> </span>deployment<span class="w"> </span>group<span class="w"> </span>create<span class="w"> </span><span class="se">\</span>
+<a id="__codelineno-4-4" name="__codelineno-4-4" href="#__codelineno-4-4"></a><span class="w">  </span>--resource-group<span class="w"> </span>rg-devops<span class="w"> </span><span class="se">\</span>
+<a id="__codelineno-4-5" name="__codelineno-4-5" href="#__codelineno-4-5"></a><span class="w">  </span>--template-file<span class="w"> </span>storage.bicep<span class="w"> </span><span class="se">\</span>
+<a id="__codelineno-4-6" name="__codelineno-4-6" href="#__codelineno-4-6"></a><span class="w">  </span>--parameters<span class="w"> </span><span class="nv">storageAccountName</span><span class="o">=</span>stbicep<span class="nv">$RANDOM</span>
+</code></pre></div>
+<hr />
+<h2 id="komplette-infrastruktur-app-service-key-vault">Komplette Infrastruktur: App Service + Key Vault</h2>
+<p>Erstelle <code>main.bicep</code>:</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-5-1" name="__codelineno-5-1" href="#__codelineno-5-1"></a>@description(&#39;Prefix für alle Ressourcennamen&#39;)
+<a id="__codelineno-5-2" name="__codelineno-5-2" href="#__codelineno-5-2"></a>param prefix string = &#39;bicep&#39;
+<a id="__codelineno-5-3" name="__codelineno-5-3" href="#__codelineno-5-3"></a>
+<a id="__codelineno-5-4" name="__codelineno-5-4" href="#__codelineno-5-4"></a>@description(&#39;Azure-Region&#39;)
+<a id="__codelineno-5-5" name="__codelineno-5-5" href="#__codelineno-5-5"></a>param location string = resourceGroup().location
+<a id="__codelineno-5-6" name="__codelineno-5-6" href="#__codelineno-5-6"></a>
+<a id="__codelineno-5-7" name="__codelineno-5-7" href="#__codelineno-5-7"></a>@description(&#39;Tenant-ID für Key Vault&#39;)
+<a id="__codelineno-5-8" name="__codelineno-5-8" href="#__codelineno-5-8"></a>param tenantId string = tenant().tenantId
+<a id="__codelineno-5-9" name="__codelineno-5-9" href="#__codelineno-5-9"></a>
+<a id="__codelineno-5-10" name="__codelineno-5-10" href="#__codelineno-5-10"></a>// Variables
+<a id="__codelineno-5-11" name="__codelineno-5-11" href="#__codelineno-5-11"></a>var appServicePlanName = &#39;${prefix}-plan&#39;
+<a id="__codelineno-5-12" name="__codelineno-5-12" href="#__codelineno-5-12"></a>var appName = &#39;${prefix}-app-${uniqueString(resourceGroup().id)}&#39;
+<a id="__codelineno-5-13" name="__codelineno-5-13" href="#__codelineno-5-13"></a>var keyVaultName = &#39;kv-${prefix}-${uniqueString(resourceGroup().id)}&#39;
+<a id="__codelineno-5-14" name="__codelineno-5-14" href="#__codelineno-5-14"></a>
+<a id="__codelineno-5-15" name="__codelineno-5-15" href="#__codelineno-5-15"></a>// App Service Plan
+<a id="__codelineno-5-16" name="__codelineno-5-16" href="#__codelineno-5-16"></a>resource appServicePlan &#39;Microsoft.Web/serverfarms@2022-09-01&#39; = {
+<a id="__codelineno-5-17" name="__codelineno-5-17" href="#__codelineno-5-17"></a>  name: appServicePlanName
+<a id="__codelineno-5-18" name="__codelineno-5-18" href="#__codelineno-5-18"></a>  location: location
+<a id="__codelineno-5-19" name="__codelineno-5-19" href="#__codelineno-5-19"></a>  sku: {
+<a id="__codelineno-5-20" name="__codelineno-5-20" href="#__codelineno-5-20"></a>    name: &#39;F1&#39;
+<a id="__codelineno-5-21" name="__codelineno-5-21" href="#__codelineno-5-21"></a>    tier: &#39;Free&#39;
+<a id="__codelineno-5-22" name="__codelineno-5-22" href="#__codelineno-5-22"></a>  }
+<a id="__codelineno-5-23" name="__codelineno-5-23" href="#__codelineno-5-23"></a>  properties: {
+<a id="__codelineno-5-24" name="__codelineno-5-24" href="#__codelineno-5-24"></a>    reserved: true  // Linux
+<a id="__codelineno-5-25" name="__codelineno-5-25" href="#__codelineno-5-25"></a>  }
+<a id="__codelineno-5-26" name="__codelineno-5-26" href="#__codelineno-5-26"></a>}
+<a id="__codelineno-5-27" name="__codelineno-5-27" href="#__codelineno-5-27"></a>
+<a id="__codelineno-5-28" name="__codelineno-5-28" href="#__codelineno-5-28"></a>// App Service
+<a id="__codelineno-5-29" name="__codelineno-5-29" href="#__codelineno-5-29"></a>resource appService &#39;Microsoft.Web/sites@2022-09-01&#39; = {
+<a id="__codelineno-5-30" name="__codelineno-5-30" href="#__codelineno-5-30"></a>  name: appName
+<a id="__codelineno-5-31" name="__codelineno-5-31" href="#__codelineno-5-31"></a>  location: location
+<a id="__codelineno-5-32" name="__codelineno-5-32" href="#__codelineno-5-32"></a>  properties: {
+<a id="__codelineno-5-33" name="__codelineno-5-33" href="#__codelineno-5-33"></a>    serverFarmId: appServicePlan.id
+<a id="__codelineno-5-34" name="__codelineno-5-34" href="#__codelineno-5-34"></a>    siteConfig: {
+<a id="__codelineno-5-35" name="__codelineno-5-35" href="#__codelineno-5-35"></a>      linuxFxVersion: &#39;PYTHON|3.12&#39;
+<a id="__codelineno-5-36" name="__codelineno-5-36" href="#__codelineno-5-36"></a>      appSettings: [
+<a id="__codelineno-5-37" name="__codelineno-5-37" href="#__codelineno-5-37"></a>        {
+<a id="__codelineno-5-38" name="__codelineno-5-38" href="#__codelineno-5-38"></a>          name: &#39;KEY_VAULT_URI&#39;
+<a id="__codelineno-5-39" name="__codelineno-5-39" href="#__codelineno-5-39"></a>          value: keyVault.properties.vaultUri
+<a id="__codelineno-5-40" name="__codelineno-5-40" href="#__codelineno-5-40"></a>        }
+<a id="__codelineno-5-41" name="__codelineno-5-41" href="#__codelineno-5-41"></a>      ]
+<a id="__codelineno-5-42" name="__codelineno-5-42" href="#__codelineno-5-42"></a>    }
+<a id="__codelineno-5-43" name="__codelineno-5-43" href="#__codelineno-5-43"></a>  }
+<a id="__codelineno-5-44" name="__codelineno-5-44" href="#__codelineno-5-44"></a>  identity: {
+<a id="__codelineno-5-45" name="__codelineno-5-45" href="#__codelineno-5-45"></a>    type: &#39;SystemAssigned&#39;
+<a id="__codelineno-5-46" name="__codelineno-5-46" href="#__codelineno-5-46"></a>  }
+<a id="__codelineno-5-47" name="__codelineno-5-47" href="#__codelineno-5-47"></a>}
+<a id="__codelineno-5-48" name="__codelineno-5-48" href="#__codelineno-5-48"></a>
+<a id="__codelineno-5-49" name="__codelineno-5-49" href="#__codelineno-5-49"></a>// Key Vault
+<a id="__codelineno-5-50" name="__codelineno-5-50" href="#__codelineno-5-50"></a>resource keyVault &#39;Microsoft.KeyVault/vaults@2023-07-01&#39; = {
+<a id="__codelineno-5-51" name="__codelineno-5-51" href="#__codelineno-5-51"></a>  name: keyVaultName
+<a id="__codelineno-5-52" name="__codelineno-5-52" href="#__codelineno-5-52"></a>  location: location
+<a id="__codelineno-5-53" name="__codelineno-5-53" href="#__codelineno-5-53"></a>  properties: {
+<a id="__codelineno-5-54" name="__codelineno-5-54" href="#__codelineno-5-54"></a>    tenantId: tenantId
+<a id="__codelineno-5-55" name="__codelineno-5-55" href="#__codelineno-5-55"></a>    sku: {
+<a id="__codelineno-5-56" name="__codelineno-5-56" href="#__codelineno-5-56"></a>      family: &#39;A&#39;
+<a id="__codelineno-5-57" name="__codelineno-5-57" href="#__codelineno-5-57"></a>      name: &#39;standard&#39;
+<a id="__codelineno-5-58" name="__codelineno-5-58" href="#__codelineno-5-58"></a>    }
+<a id="__codelineno-5-59" name="__codelineno-5-59" href="#__codelineno-5-59"></a>    enableRbacAuthorization: true
+<a id="__codelineno-5-60" name="__codelineno-5-60" href="#__codelineno-5-60"></a>  }
+<a id="__codelineno-5-61" name="__codelineno-5-61" href="#__codelineno-5-61"></a>}
+<a id="__codelineno-5-62" name="__codelineno-5-62" href="#__codelineno-5-62"></a>
+<a id="__codelineno-5-63" name="__codelineno-5-63" href="#__codelineno-5-63"></a>// RBAC: App Service darf Secrets lesen
+<a id="__codelineno-5-64" name="__codelineno-5-64" href="#__codelineno-5-64"></a>resource kvSecretUserRole &#39;Microsoft.Authorization/roleAssignments@2022-04-01&#39; = {
+<a id="__codelineno-5-65" name="__codelineno-5-65" href="#__codelineno-5-65"></a>  name: guid(keyVault.id, appService.id, &#39;Key Vault Secrets User&#39;)
+<a id="__codelineno-5-66" name="__codelineno-5-66" href="#__codelineno-5-66"></a>  scope: keyVault
+<a id="__codelineno-5-67" name="__codelineno-5-67" href="#__codelineno-5-67"></a>  properties: {
+<a id="__codelineno-5-68" name="__codelineno-5-68" href="#__codelineno-5-68"></a>    roleDefinitionId: subscriptionResourceId(
+<a id="__codelineno-5-69" name="__codelineno-5-69" href="#__codelineno-5-69"></a>      &#39;Microsoft.Authorization/roleDefinitions&#39;,
+<a id="__codelineno-5-70" name="__codelineno-5-70" href="#__codelineno-5-70"></a>      &#39;4633458b-17de-408a-b874-0445c86b69e6&#39;  // Key Vault Secrets User
+<a id="__codelineno-5-71" name="__codelineno-5-71" href="#__codelineno-5-71"></a>    )
+<a id="__codelineno-5-72" name="__codelineno-5-72" href="#__codelineno-5-72"></a>    principalId: appService.identity.principalId
+<a id="__codelineno-5-73" name="__codelineno-5-73" href="#__codelineno-5-73"></a>    principalType: &#39;ServicePrincipal&#39;
+<a id="__codelineno-5-74" name="__codelineno-5-74" href="#__codelineno-5-74"></a>  }
+<a id="__codelineno-5-75" name="__codelineno-5-75" href="#__codelineno-5-75"></a>}
+<a id="__codelineno-5-76" name="__codelineno-5-76" href="#__codelineno-5-76"></a>
+<a id="__codelineno-5-77" name="__codelineno-5-77" href="#__codelineno-5-77"></a>// Outputs
+<a id="__codelineno-5-78" name="__codelineno-5-78" href="#__codelineno-5-78"></a>output appUrl string = &#39;https://${appService.properties.defaultHostName}&#39;
+<a id="__codelineno-5-79" name="__codelineno-5-79" href="#__codelineno-5-79"></a>output keyVaultUri string = keyVault.properties.vaultUri
+<a id="__codelineno-5-80" name="__codelineno-5-80" href="#__codelineno-5-80"></a>output appIdentityPrincipalId string = appService.identity.principalId
+</code></pre></div>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-6-1" name="__codelineno-6-1" href="#__codelineno-6-1"></a>az<span class="w"> </span>deployment<span class="w"> </span>group<span class="w"> </span>create<span class="w"> </span><span class="se">\</span>
+<a id="__codelineno-6-2" name="__codelineno-6-2" href="#__codelineno-6-2"></a><span class="w">  </span>--resource-group<span class="w"> </span>rg-devops<span class="w"> </span><span class="se">\</span>
+<a id="__codelineno-6-3" name="__codelineno-6-3" href="#__codelineno-6-3"></a><span class="w">  </span>--template-file<span class="w"> </span>main.bicep<span class="w"> </span><span class="se">\</span>
+<a id="__codelineno-6-4" name="__codelineno-6-4" href="#__codelineno-6-4"></a><span class="w">  </span>--parameters<span class="w"> </span><span class="nv">prefix</span><span class="o">=</span>training
+</code></pre></div>
+<div class="admonition success">
+<p class="admonition-title">Managed Identity + Key Vault in einem Schritt</p>
+<p>Das Template erstellt automatisch eine Managed Identity auf dem App Service und weist ihr die <code>Key Vault Secrets User</code>-Rolle zu – alles in einem einzigen Deployment.</p>
+</div>
+<hr />
+<h2 id="bicep-module-wiederverwendbarkeit">Bicep Module: Wiederverwendbarkeit</h2>
+<p>Bicep-Module sind eigenständige <code>.bicep</code>-Dateien die als Bausteine verwendet werden:</p>
+<p>Erstelle <code>modules/storage.bicep</code>:</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-7-1" name="__codelineno-7-1" href="#__codelineno-7-1"></a>param name string
+<a id="__codelineno-7-2" name="__codelineno-7-2" href="#__codelineno-7-2"></a>param location string = resourceGroup().location
+<a id="__codelineno-7-3" name="__codelineno-7-3" href="#__codelineno-7-3"></a>
+<a id="__codelineno-7-4" name="__codelineno-7-4" href="#__codelineno-7-4"></a>resource storage &#39;Microsoft.Storage/storageAccounts@2023-01-01&#39; = {
+<a id="__codelineno-7-5" name="__codelineno-7-5" href="#__codelineno-7-5"></a>  name: name
+<a id="__codelineno-7-6" name="__codelineno-7-6" href="#__codelineno-7-6"></a>  location: location
+<a id="__codelineno-7-7" name="__codelineno-7-7" href="#__codelineno-7-7"></a>  sku: { name: &#39;Standard_LRS&#39; }
+<a id="__codelineno-7-8" name="__codelineno-7-8" href="#__codelineno-7-8"></a>  kind: &#39;StorageV2&#39;
+<a id="__codelineno-7-9" name="__codelineno-7-9" href="#__codelineno-7-9"></a>}
+<a id="__codelineno-7-10" name="__codelineno-7-10" href="#__codelineno-7-10"></a>
+<a id="__codelineno-7-11" name="__codelineno-7-11" href="#__codelineno-7-11"></a>output id string = storage.id
+</code></pre></div>
+<p>In <code>main.bicep</code> verwenden:</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-8-1" name="__codelineno-8-1" href="#__codelineno-8-1"></a>module storageModule &#39;modules/storage.bicep&#39; = {
+<a id="__codelineno-8-2" name="__codelineno-8-2" href="#__codelineno-8-2"></a>  name: &#39;storageDeployment&#39;
+<a id="__codelineno-8-3" name="__codelineno-8-3" href="#__codelineno-8-3"></a>  params: {
+<a id="__codelineno-8-4" name="__codelineno-8-4" href="#__codelineno-8-4"></a>    name: &#39;stmodule${uniqueString(resourceGroup().id)}&#39;
+<a id="__codelineno-8-5" name="__codelineno-8-5" href="#__codelineno-8-5"></a>  }
+<a id="__codelineno-8-6" name="__codelineno-8-6" href="#__codelineno-8-6"></a>}
+<a id="__codelineno-8-7" name="__codelineno-8-7" href="#__codelineno-8-7"></a>
+<a id="__codelineno-8-8" name="__codelineno-8-8" href="#__codelineno-8-8"></a>// Output des Moduls verwenden
+<a id="__codelineno-8-9" name="__codelineno-8-9" href="#__codelineno-8-9"></a>output storageId string = storageModule.outputs.id
+</code></pre></div>
+<hr />
+<h2 id="arm-bicep-konvertieren">ARM ↔ Bicep konvertieren</h2>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-9-1" name="__codelineno-9-1" href="#__codelineno-9-1"></a><span class="c1"># ARM Template → Bicep (Decompile)</span>
+<a id="__codelineno-9-2" name="__codelineno-9-2" href="#__codelineno-9-2"></a>az<span class="w"> </span>bicep<span class="w"> </span>decompile<span class="w"> </span>--file<span class="w"> </span>storage-account.json
+<a id="__codelineno-9-3" name="__codelineno-9-3" href="#__codelineno-9-3"></a><span class="c1"># Erstellt: storage-account.bicep</span>
+<a id="__codelineno-9-4" name="__codelineno-9-4" href="#__codelineno-9-4"></a>
+<a id="__codelineno-9-5" name="__codelineno-9-5" href="#__codelineno-9-5"></a><span class="c1"># Bicep → ARM Template (Build)</span>
+<a id="__codelineno-9-6" name="__codelineno-9-6" href="#__codelineno-9-6"></a>az<span class="w"> </span>bicep<span class="w"> </span>build<span class="w"> </span>--file<span class="w"> </span>main.bicep
+<a id="__codelineno-9-7" name="__codelineno-9-7" href="#__codelineno-9-7"></a><span class="c1"># Erstellt: main.json (ARM Template)</span>
+</code></pre></div>
+<hr />
+<h2 id="what-if-mit-bicep">What-If mit Bicep</h2>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-10-1" name="__codelineno-10-1" href="#__codelineno-10-1"></a>az<span class="w"> </span>deployment<span class="w"> </span>group<span class="w"> </span>what-if<span class="w"> </span><span class="se">\</span>
+<a id="__codelineno-10-2" name="__codelineno-10-2" href="#__codelineno-10-2"></a><span class="w">  </span>--resource-group<span class="w"> </span>rg-devops<span class="w"> </span><span class="se">\</span>
+<a id="__codelineno-10-3" name="__codelineno-10-3" href="#__codelineno-10-3"></a><span class="w">  </span>--template-file<span class="w"> </span>main.bicep<span class="w"> </span><span class="se">\</span>
+<a id="__codelineno-10-4" name="__codelineno-10-4" href="#__codelineno-10-4"></a><span class="w">  </span>--parameters<span class="w"> </span><span class="nv">prefix</span><span class="o">=</span>training
+</code></pre></div>
+<hr />
+<h2 id="bicep-in-github-actions">Bicep in GitHub Actions</h2>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-11-1" name="__codelineno-11-1" href="#__codelineno-11-1"></a><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">name</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">Bicep deployen</span>
+<a id="__codelineno-11-2" name="__codelineno-11-2" href="#__codelineno-11-2"></a><span class="w">  </span><span class="nt">uses</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">azure/login@v2</span>
+<a id="__codelineno-11-3" name="__codelineno-11-3" href="#__codelineno-11-3"></a><span class="w">  </span><span class="nt">with</span><span class="p">:</span>
+<a id="__codelineno-11-4" name="__codelineno-11-4" href="#__codelineno-11-4"></a><span class="w">    </span><span class="nt">creds</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">${{ secrets.AZURE_CREDENTIALS }}</span>
+<a id="__codelineno-11-5" name="__codelineno-11-5" href="#__codelineno-11-5"></a>
+<a id="__codelineno-11-6" name="__codelineno-11-6" href="#__codelineno-11-6"></a><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">name</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">Infrastruktur deployen</span>
+<a id="__codelineno-11-7" name="__codelineno-11-7" href="#__codelineno-11-7"></a><span class="w">  </span><span class="nt">run</span><span class="p">:</span><span class="w"> </span><span class="p p-Indicator">|</span>
+<a id="__codelineno-11-8" name="__codelineno-11-8" href="#__codelineno-11-8"></a><span class="w">    </span><span class="no">az deployment group create \</span>
+<a id="__codelineno-11-9" name="__codelineno-11-9" href="#__codelineno-11-9"></a><span class="w">      </span><span class="no">--resource-group rg-devops \</span>
+<a id="__codelineno-11-10" name="__codelineno-11-10" href="#__codelineno-11-10"></a><span class="w">      </span><span class="no">--template-file main.bicep \</span>
+<a id="__codelineno-11-11" name="__codelineno-11-11" href="#__codelineno-11-11"></a><span class="w">      </span><span class="no">--parameters prefix=training</span>
+</code></pre></div>
+<div class="admonition tip">
+<p class="admonition-title">Azure Credentials für GitHub Actions</p>
+<p>Erstelle einen Service Principal: 
+<code>az ad sp create-for-rbac --name "github-actions" --role Contributor --scopes /subscriptions/SUBSCRIPTION-ID --json-auth</code>
+Den JSON-Output als <code>AZURE_CREDENTIALS</code> Secret in GitHub hinterlegen.</p>
+</div>
+<hr />
+<h2 id="challenge">Challenge</h2>
+<div class="admonition question">
+<p class="admonition-title">Challenge: Vollständige App deployen</p>
+<p>Erstelle ein Bicep-Template das folgendes deployt:</p>
+<ul>
+<li>Storage Account (Standard_LRS)</li>
+<li>Container App Environment</li>
+<li>Eine Container App die das <code>hello-world</code>-Image ausführt</li>
+</ul>
+<p>Nutze Parameter für den Prefix und Outputs für die App-URL.</p>
+</div>
+<details class="success">
+<summary>Hinweis</summary>
+<p>Container App in Bicep:
+<div class="highlight"><pre><span></span><code><a id="__codelineno-12-1" name="__codelineno-12-1" href="#__codelineno-12-1"></a>resource containerApp &#39;Microsoft.App/containerApps@2023-05-01&#39; = {
+<a id="__codelineno-12-2" name="__codelineno-12-2" href="#__codelineno-12-2"></a>  name: &#39;${prefix}-app&#39;
+<a id="__codelineno-12-3" name="__codelineno-12-3" href="#__codelineno-12-3"></a>  location: location
+<a id="__codelineno-12-4" name="__codelineno-12-4" href="#__codelineno-12-4"></a>  properties: {
+<a id="__codelineno-12-5" name="__codelineno-12-5" href="#__codelineno-12-5"></a>    managedEnvironmentId: environment.id
+<a id="__codelineno-12-6" name="__codelineno-12-6" href="#__codelineno-12-6"></a>    configuration: {
+<a id="__codelineno-12-7" name="__codelineno-12-7" href="#__codelineno-12-7"></a>      ingress: {
+<a id="__codelineno-12-8" name="__codelineno-12-8" href="#__codelineno-12-8"></a>        external: true
+<a id="__codelineno-12-9" name="__codelineno-12-9" href="#__codelineno-12-9"></a>        targetPort: 80
+<a id="__codelineno-12-10" name="__codelineno-12-10" href="#__codelineno-12-10"></a>      }
+<a id="__codelineno-12-11" name="__codelineno-12-11" href="#__codelineno-12-11"></a>    }
+<a id="__codelineno-12-12" name="__codelineno-12-12" href="#__codelineno-12-12"></a>    template: {
+<a id="__codelineno-12-13" name="__codelineno-12-13" href="#__codelineno-12-13"></a>      containers: [{
+<a id="__codelineno-12-14" name="__codelineno-12-14" href="#__codelineno-12-14"></a>        name: &#39;hello&#39;
+<a id="__codelineno-12-15" name="__codelineno-12-15" href="#__codelineno-12-15"></a>        image: &#39;mcr.microsoft.com/azuredocs/containerapps-helloworld:latest&#39;
+<a id="__codelineno-12-16" name="__codelineno-12-16" href="#__codelineno-12-16"></a>      }]
+<a id="__codelineno-12-17" name="__codelineno-12-17" href="#__codelineno-12-17"></a>    }
+<a id="__codelineno-12-18" name="__codelineno-12-18" href="#__codelineno-12-18"></a>  }
+<a id="__codelineno-12-19" name="__codelineno-12-19" href="#__codelineno-12-19"></a>}
+</code></pre></div></p>
+</details>
+<hr />
+<p>Weiter zu <a href="../modul-37-terraform/">Modul 37 – Terraform mit Azure: Plattformunabhängiges IaC</a> →</p>
 
 
 
@@ -2402,7 +2428,7 @@
       <nav class="md-footer__inner md-grid" aria-label="Fußzeile" >
         
           
-          <a href="../modul-24-conditional-access/" class="md-footer__link md-footer__link--prev" aria-label="Zurück: Modul 24 – Conditional Access">
+          <a href="../modul-35-arm/" class="md-footer__link md-footer__link--prev" aria-label="Zurück: Modul 35 – ARM Templates">
             <div class="md-footer__button md-icon">
               
               <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
@@ -2412,20 +2438,20 @@
                 Zurück
               </span>
               <div class="md-ellipsis">
-                Modul 24 – Conditional Access
+                Modul 35 – ARM Templates
               </div>
             </div>
           </a>
         
         
           
-          <a href="../modul-26-docker/" class="md-footer__link md-footer__link--next" aria-label="Weiter: Modul 26 – Docker Grundlagen">
+          <a href="../modul-37-terraform/" class="md-footer__link md-footer__link--next" aria-label="Weiter: Modul 37 – Terraform">
             <div class="md-footer__title">
               <span class="md-footer__direction">
                 Weiter
               </span>
               <div class="md-ellipsis">
-                Modul 26 – Docker Grundlagen
+                Modul 37 – Terraform
               </div>
             </div>
             <div class="md-footer__button md-icon">

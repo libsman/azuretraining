@@ -10,13 +10,13 @@
       
       
       
-        <link rel="canonical" href="https://libsman.github.io/azuretraining/modul-25-aufr%C3%A4umen/">
+        <link rel="canonical" href="https://libsman.github.io/azuretraining/modul-38-policy/">
       
       
-        <link rel="prev" href="../modul-24-conditional-access/">
+        <link rel="prev" href="../modul-37-terraform/">
       
       
-        <link rel="next" href="../modul-26-docker/">
+        <link rel="next" href="../modul-39-aufr%C3%A4umen/">
       
       
         
@@ -27,7 +27,7 @@
     
     
       
-        <title>Modul 25 – Aufräumen - Azure Einstiegstraining</title>
+        <title>Modul 38 – Azure Policy - Azure Einstiegstraining</title>
       
     
     
@@ -78,7 +78,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#modul-25-aufraumen-lernpfad-4-abschlieen" class="md-skip">
+        <a href="#modul-38-azure-policy-resource-locks-compliance-automatisieren" class="md-skip">
           Zum Inhalt
         </a>
       
@@ -114,7 +114,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Modul 25 – Aufräumen
+              Modul 38 – Azure Policy
             
           </span>
         </div>
@@ -1063,20 +1063,18 @@
       
   
   
-    
   
   
-  
     
     
     
     
     
-    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_6" checked>
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_6" >
         
           
           <label class="md-nav__link" for="__nav_6" id="__nav_6_label" tabindex="0">
@@ -1097,7 +1095,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_6_label" aria-expanded="true">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_6_label" aria-expanded="false">
           <label class="md-nav__title" for="__nav_6">
             <span class="md-nav__icon md-icon"></span>
             
@@ -1224,37 +1222,10 @@
                 
   
   
-    
   
   
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
-      
-      
-        
-      
-      
-        <label class="md-nav__link md-nav__link--active" for="__toc">
-          
-  
-  
-  <span class="md-ellipsis">
-    
-  
-    Modul 25 – Aufräumen
-  
-
-    
-  </span>
-  
-  
-
-          <span class="md-nav__icon md-icon"></span>
-        </label>
-      
-      <a href="./" class="md-nav__link md-nav__link--active">
+    <li class="md-nav__item">
+      <a href="../modul-25-aufr%C3%A4umen/" class="md-nav__link">
         
   
   
@@ -1270,187 +1241,6 @@
   
 
       </a>
-      
-        
-
-<nav class="md-nav md-nav--secondary" aria-label="Inhaltsverzeichnis">
-  
-  
-  
-    
-  
-  
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      Inhaltsverzeichnis
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#was-du-in-lernpfad-4-gebaut-hast" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Was du in Lernpfad 4 gebaut hast
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#azure-ressourcen-loschen" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Azure-Ressourcen löschen
-      
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="Azure-Ressourcen löschen">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#option-a-resource-group-loschen" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Option A: Resource Group löschen
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#option-b-einzelne-ressourcen-loschen" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Option B: Einzelne Ressourcen löschen
-      
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#custom-roles-loschen" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Custom Roles löschen
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#entra-id-objekte-aufraumen" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Entra ID-Objekte aufräumen
-      
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="Entra ID-Objekte aufräumen">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#testbenutzer-loschen" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Testbenutzer löschen
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#gruppen-loschen" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Gruppen löschen
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#conditional-access-policies-deaktivierenloschen" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Conditional Access Policies deaktivieren/löschen
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#named-locations-loschen" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Named Locations löschen
-      
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#was-du-in-lernpfad-4-gelernt-hast" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Was du in Lernpfad 4 gelernt hast
-      
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="Was du in Lernpfad 4 gelernt hast">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#konzepte-die-du-jetzt-kennst" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Konzepte die du jetzt kennst
-      
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#lernpfad-4-checkliste" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Lernpfad 4 – Checkliste
-      
-    </span>
-  </a>
-  
-</li>
-      
-    </ul>
-  
-</nav>
-      
     </li>
   
 
@@ -1717,18 +1507,20 @@
       
   
   
+    
   
   
+  
     
     
     
     
     
-    <li class="md-nav__item md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_8" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_8" checked>
         
           
           <label class="md-nav__link" for="__nav_8" id="__nav_8_label" tabindex="0">
@@ -1749,7 +1541,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_8_label" aria-expanded="false">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_8_label" aria-expanded="true">
           <label class="md-nav__title" for="__nav_8">
             <span class="md-nav__icon md-icon"></span>
             
@@ -1904,10 +1696,37 @@
                 
   
   
+    
   
   
-    <li class="md-nav__item">
-      <a href="../modul-38-policy/" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Modul 38 – Azure Policy
+  
+
+    
+  </span>
+  
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
         
   
   
@@ -1923,6 +1742,192 @@
   
 
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Inhaltsverzeichnis">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Inhaltsverzeichnis
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#lernziele" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Lernziele
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#hintergrund-governance-in-azure" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Hintergrund: Governance in Azure
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#policy-konzepte" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Policy-Konzepte
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#eingebaute-policies-zuweisen" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Eingebaute Policies zuweisen
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Eingebaute Policies zuweisen">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#im-portal" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Im Portal
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#per-cli" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Per CLI
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#compliance-status-prufen" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Compliance-Status prüfen
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#eigene-policy-schreiben" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Eigene Policy schreiben
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#policy-initiative-mehrere-policies-bundeln" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Policy Initiative: Mehrere Policies bündeln
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#resource-locks-loschen-verhindern" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Resource Locks: Löschen verhindern
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Resource Locks: Löschen verhindern">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#lock-setzen" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Lock setzen
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#lock-im-portal" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Lock im Portal
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#lock-loschen" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Lock löschen
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#challenge" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Challenge
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
     </li>
   
 
@@ -1990,10 +1995,10 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#was-du-in-lernpfad-4-gebaut-hast" class="md-nav__link">
+  <a href="#lernziele" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Was du in Lernpfad 4 gebaut hast
+        Lernziele
       
     </span>
   </a>
@@ -2001,22 +2006,44 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#azure-ressourcen-loschen" class="md-nav__link">
+  <a href="#hintergrund-governance-in-azure" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Azure-Ressourcen löschen
+        Hintergrund: Governance in Azure
       
     </span>
   </a>
   
-    <nav class="md-nav" aria-label="Azure-Ressourcen löschen">
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#policy-konzepte" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Policy-Konzepte
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#eingebaute-policies-zuweisen" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Eingebaute Policies zuweisen
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Eingebaute Policies zuweisen">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#option-a-resource-group-loschen" class="md-nav__link">
+  <a href="#im-portal" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Option A: Resource Group löschen
+        Im Portal
       
     </span>
   </a>
@@ -2024,10 +2051,10 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#option-b-einzelne-ressourcen-loschen" class="md-nav__link">
+  <a href="#per-cli" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Option B: Einzelne Ressourcen löschen
+        Per CLI
       
     </span>
   </a>
@@ -2040,10 +2067,10 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#custom-roles-loschen" class="md-nav__link">
+  <a href="#compliance-status-prufen" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Custom Roles löschen
+        Compliance-Status prüfen
       
     </span>
   </a>
@@ -2051,22 +2078,44 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#entra-id-objekte-aufraumen" class="md-nav__link">
+  <a href="#eigene-policy-schreiben" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Entra ID-Objekte aufräumen
+        Eigene Policy schreiben
       
     </span>
   </a>
   
-    <nav class="md-nav" aria-label="Entra ID-Objekte aufräumen">
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#policy-initiative-mehrere-policies-bundeln" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Policy Initiative: Mehrere Policies bündeln
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#resource-locks-loschen-verhindern" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Resource Locks: Löschen verhindern
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Resource Locks: Löschen verhindern">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#testbenutzer-loschen" class="md-nav__link">
+  <a href="#lock-setzen" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Testbenutzer löschen
+        Lock setzen
       
     </span>
   </a>
@@ -2074,10 +2123,10 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#gruppen-loschen" class="md-nav__link">
+  <a href="#lock-im-portal" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Gruppen löschen
+        Lock im Portal
       
     </span>
   </a>
@@ -2085,21 +2134,10 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#conditional-access-policies-deaktivierenloschen" class="md-nav__link">
+  <a href="#lock-loschen" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Conditional Access Policies deaktivieren/löschen
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#named-locations-loschen" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Named Locations löschen
+        Lock löschen
       
     </span>
   </a>
@@ -2112,38 +2150,10 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#was-du-in-lernpfad-4-gelernt-hast" class="md-nav__link">
+  <a href="#challenge" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Was du in Lernpfad 4 gelernt hast
-      
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="Was du in Lernpfad 4 gelernt hast">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#konzepte-die-du-jetzt-kennst" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Konzepte die du jetzt kennst
-      
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#lernpfad-4-checkliste" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Lernpfad 4 – Checkliste
+        Challenge
       
     </span>
   </a>
@@ -2170,201 +2180,289 @@
   
 
 
-<h1 id="modul-25-aufraumen-lernpfad-4-abschlieen">Modul 25 – Aufräumen: Lernpfad 4 abschließen</h1>
-<h2 id="was-du-in-lernpfad-4-gebaut-hast">Was du in Lernpfad 4 gebaut hast</h2>
-<table>
-<thead>
-<tr>
-<th>Ressource</th>
-<th>Typ</th>
-<th>Modul</th>
-<th>Kosten/Monat</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td><code>rg-identity</code></td>
-<td>Resource Group</td>
-<td>alle</td>
-<td>kostenlos</td>
-</tr>
-<tr>
-<td><code>app-identity-XXXX</code></td>
-<td>App Service (Free F1)</td>
-<td>22</td>
-<td>0 €</td>
-</tr>
-<tr>
-<td><code>staztraining-XXXX</code></td>
-<td>Storage Account</td>
-<td>22</td>
-<td>&lt; 1 €</td>
-</tr>
-<tr>
-<td><code>id-shared-apps</code></td>
-<td>User-assigned Managed Identity</td>
-<td>22</td>
-<td>0 €</td>
-</tr>
-<tr>
-<td>Custom Role <code>VM Operator</code></td>
-<td>RBAC Custom Role</td>
-<td>23</td>
-<td>0 €</td>
-</tr>
-<tr>
-<td>Custom Role <code>Storage Readonly Plus</code></td>
-<td>RBAC Custom Role</td>
-<td>23</td>
-<td>0 €</td>
-</tr>
-<tr>
-<td>Testbenutzer <code>testuser@...</code></td>
-<td>Entra ID User</td>
-<td>21</td>
-<td>0 €</td>
-</tr>
-<tr>
-<td>Gruppe <code>grp-azure-leser</code></td>
-<td>Entra ID Group</td>
-<td>21</td>
-<td>0 €</td>
-</tr>
-<tr>
-<td>Conditional Access Policies</td>
-<td>Entra ID Policy</td>
-<td>24</td>
-<td>0 €</td>
-</tr>
-</tbody>
-</table>
-<div class="admonition info">
-<p class="admonition-title">Entra ID-Objekte kosten nichts</p>
-<p>Benutzer, Gruppen, Managed Identities und Conditional Access-Policies verursachen keine direkten Azure-Kosten (außer bei Entra ID P1/P2-Lizenzen). Du kannst sie länger behalten – aber für Ordnung trotzdem aufräumen.</p>
-</div>
-<hr />
-<h2 id="azure-ressourcen-loschen">Azure-Ressourcen löschen</h2>
-<h3 id="option-a-resource-group-loschen">Option A: Resource Group löschen</h3>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a>az<span class="w"> </span>group<span class="w"> </span>delete<span class="w"> </span>--name<span class="w"> </span>rg-identity<span class="w"> </span>--yes<span class="w"> </span>--no-wait
-</code></pre></div>
-<h3 id="option-b-einzelne-ressourcen-loschen">Option B: Einzelne Ressourcen löschen</h3>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a><span class="c1"># Storage Account löschen</span>
-<a id="__codelineno-1-2" name="__codelineno-1-2" href="#__codelineno-1-2"></a>az<span class="w"> </span>storage<span class="w"> </span>account<span class="w"> </span>delete<span class="w"> </span><span class="se">\</span>
-<a id="__codelineno-1-3" name="__codelineno-1-3" href="#__codelineno-1-3"></a><span class="w">  </span>--name<span class="w"> </span>staztraining-XXXX<span class="w"> </span><span class="se">\</span>
-<a id="__codelineno-1-4" name="__codelineno-1-4" href="#__codelineno-1-4"></a><span class="w">  </span>--resource-group<span class="w"> </span>rg-identity<span class="w"> </span><span class="se">\</span>
-<a id="__codelineno-1-5" name="__codelineno-1-5" href="#__codelineno-1-5"></a><span class="w">  </span>--yes
-<a id="__codelineno-1-6" name="__codelineno-1-6" href="#__codelineno-1-6"></a>
-<a id="__codelineno-1-7" name="__codelineno-1-7" href="#__codelineno-1-7"></a><span class="c1"># App Service löschen</span>
-<a id="__codelineno-1-8" name="__codelineno-1-8" href="#__codelineno-1-8"></a>az<span class="w"> </span>webapp<span class="w"> </span>delete<span class="w"> </span><span class="se">\</span>
-<a id="__codelineno-1-9" name="__codelineno-1-9" href="#__codelineno-1-9"></a><span class="w">  </span>--name<span class="w"> </span>app-identity-XXXX<span class="w"> </span><span class="se">\</span>
-<a id="__codelineno-1-10" name="__codelineno-1-10" href="#__codelineno-1-10"></a><span class="w">  </span>--resource-group<span class="w"> </span>rg-identity
-<a id="__codelineno-1-11" name="__codelineno-1-11" href="#__codelineno-1-11"></a>
-<a id="__codelineno-1-12" name="__codelineno-1-12" href="#__codelineno-1-12"></a><span class="c1"># User-assigned Managed Identity löschen</span>
-<a id="__codelineno-1-13" name="__codelineno-1-13" href="#__codelineno-1-13"></a>az<span class="w"> </span>identity<span class="w"> </span>delete<span class="w"> </span><span class="se">\</span>
-<a id="__codelineno-1-14" name="__codelineno-1-14" href="#__codelineno-1-14"></a><span class="w">  </span>--name<span class="w"> </span>id-shared-apps<span class="w"> </span><span class="se">\</span>
-<a id="__codelineno-1-15" name="__codelineno-1-15" href="#__codelineno-1-15"></a><span class="w">  </span>--resource-group<span class="w"> </span>rg-identity
-</code></pre></div>
-<hr />
-<h2 id="custom-roles-loschen">Custom Roles löschen</h2>
-<p>Custom Roles existieren auf Subscription-Ebene und werden nicht durch RG-Löschung entfernt:</p>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a>az<span class="w"> </span>role<span class="w"> </span>definition<span class="w"> </span>delete<span class="w"> </span>--name<span class="w"> </span><span class="s2">&quot;VM Operator&quot;</span>
-<a id="__codelineno-2-2" name="__codelineno-2-2" href="#__codelineno-2-2"></a>az<span class="w"> </span>role<span class="w"> </span>definition<span class="w"> </span>delete<span class="w"> </span>--name<span class="w"> </span><span class="s2">&quot;Storage Readonly Plus&quot;</span>
-</code></pre></div>
-<p>Überprüfen:</p>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a><span class="c1"># Alle Custom Roles in der Subscription</span>
-<a id="__codelineno-3-2" name="__codelineno-3-2" href="#__codelineno-3-2"></a>az<span class="w"> </span>role<span class="w"> </span>definition<span class="w"> </span>list<span class="w"> </span>--custom-role-only<span class="w"> </span><span class="nb">true</span><span class="w"> </span>--output<span class="w"> </span>table
-</code></pre></div>
-<hr />
-<h2 id="entra-id-objekte-aufraumen">Entra ID-Objekte aufräumen</h2>
-<h3 id="testbenutzer-loschen">Testbenutzer löschen</h3>
-<ol>
-<li><strong>Microsoft Entra ID</strong> → <strong>Users</strong> → <strong>All users</strong></li>
-<li>Klicke auf <code>Test User</code></li>
-<li><strong>Delete</strong> oben → Bestätigen</li>
-</ol>
-<div class="admonition info">
-<p class="admonition-title">Soft Delete in Entra ID</p>
-<p>Gelöschte Benutzer landen im <strong>Recycle Bin</strong> und können 30 Tage wiederhergestellt werden:
-<strong>Users</strong> → <strong>Deleted users</strong> → Benutzer auswählen → <strong>Restore</strong></p>
-</div>
-<h3 id="gruppen-loschen">Gruppen löschen</h3>
-<ol>
-<li><strong>Microsoft Entra ID</strong> → <strong>Groups</strong> → <strong>All groups</strong></li>
-<li>Gruppe auswählen → <strong>Delete</strong> → Bestätigen</li>
-</ol>
-<h3 id="conditional-access-policies-deaktivierenloschen">Conditional Access Policies deaktivieren/löschen</h3>
-<ol>
-<li><strong>Microsoft Entra ID</strong> → <strong>Protection</strong> → <strong>Conditional Access</strong> → <strong>Policies</strong></li>
-<li>Policy anklicken → <strong>Delete</strong> (oder auf <strong>Off</strong> setzen)</li>
-</ol>
-<h3 id="named-locations-loschen">Named Locations löschen</h3>
-<ol>
-<li><strong>Conditional Access</strong> → <strong>Named locations</strong></li>
-<li>Location auswählen → <strong>Delete</strong></li>
-</ol>
-<hr />
-<h2 id="was-du-in-lernpfad-4-gelernt-hast">Was du in Lernpfad 4 gelernt hast</h2>
-<table>
-<thead>
-<tr>
-<th>Modul</th>
-<th>Thema</th>
-<th>Schlüsselkonzept</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>21 – Entra ID</td>
-<td>Benutzer, Gruppen, B2B</td>
-<td>Tenant, UPN, Security Groups, Gastbenutzer</td>
-</tr>
-<tr>
-<td>22 – Managed Identity</td>
-<td>Apps ohne Passwörter</td>
-<td>DefaultAzureCredential, System- vs. User-assigned</td>
-</tr>
-<tr>
-<td>23 – RBAC vertieft</td>
-<td>Eigene Rollen &amp; Scopes</td>
-<td>Scope-Hierarchie, Custom Roles, Least Privilege</td>
-</tr>
-<tr>
-<td>24 – Conditional Access</td>
-<td>Bedingter Zugriff</td>
-<td>Zero Trust, MFA, Named Locations, Report-only</td>
-</tr>
-</tbody>
-</table>
-<h3 id="konzepte-die-du-jetzt-kennst">Konzepte die du jetzt kennst</h3>
-<p><strong>Identitäten in Azure:</strong>
-- ✅ Entra ID ist der Identitätsdienst für alle Azure-Zugriffe
-- ✅ Managed Identities ersetzen Passwörter für Apps komplett
-- ✅ <code>DefaultAzureCredential</code> funktioniert lokal (CLI) und in Azure (Managed Identity) ohne Codeänderung</p>
-<p><strong>Zugriffssteuerung:</strong>
-- ✅ RBAC: Wer darf auf welcher Azure-Ressource was tun
-- ✅ Scope-Hierarchie: Rollen vererben sich nach unten
-- ✅ Least Privilege: immer minimale Rechte vergeben
-- ✅ Custom Roles: wenn Built-in Roles nicht passen</p>
-<p><strong>Zero Trust:</strong>
-- ✅ Security Defaults: Mindestschutz für jeden Tenant
-- ✅ Conditional Access: Zugriff basierend auf Kontext (Standort, Gerät, Risiko)
-- ✅ Report-only: Policies testen ohne Auswirkungen</p>
-<hr />
-<h2 id="lernpfad-4-checkliste">Lernpfad 4 – Checkliste</h2>
-<p>Bevor du weitermachst:</p>
+<h1 id="modul-38-azure-policy-resource-locks-compliance-automatisieren">Modul 38 – Azure Policy &amp; Resource Locks: Compliance automatisieren</h1>
+<h2 id="lernziele">Lernziele</h2>
+<p>Nach diesem Modul kannst du:</p>
 <ul>
-<li>[ ] Managed Identity auf einer App Service aktiviert und getestet</li>
-<li>[ ] RBAC-Rolle auf eine Ressource über das Portal vergeben</li>
-<li>[ ] Eine Custom Role erstellt und zugewiesen</li>
-<li>[ ] Den Unterschied zwischen Azure RBAC und Entra ID-Rollen erklären können</li>
-<li>[ ] Eine Conditional Access Policy im Report-only-Modus erstellt</li>
+<li>Azure Policy als Compliance-Werkzeug erklären und von RBAC abgrenzen</li>
+<li>Eingebaute Policy-Definitionen im Portal finden und zuweisen</li>
+<li>Eine eigene Policy-Definition schreiben (Deny + Audit-Effekte)</li>
+<li>Policy Initiatives (Gruppen von Policies) verstehen</li>
+<li>Resource Locks nutzen um versehentliches Löschen zu verhindern</li>
+<li>Den Unterschied zwischen Policy und Resource Lock beschreiben</li>
 </ul>
 <hr />
-<p>Weiter zu <a href="../modul-26-docker/">Modul 26 – Docker Grundlagen</a> →</p>
-<div class="admonition info">
-<p class="admonition-title">Lernpfad 5 – Container</p>
-<p>In Lernpfad 5 geht es um Container-Technologien: Docker, Azure Container Registry, Azure Container Instances, Container Apps und ein Einstieg in AKS (Kubernetes).</p>
+<h2 id="hintergrund-governance-in-azure">Hintergrund: Governance in Azure</h2>
+<p><strong>On-Prem-Vergleich:</strong> In Active Directory gibt es Gruppenrichtlinien (GPOs) die erzwingen wie Computer und Benutzer konfiguriert sind – z.B. "Bildschirmschoner nach 10 Minuten", "Kein USB erlaubt". Azure Policy ist das Äquivalent für Azure-Ressourcen: "Alle Storage Accounts müssen verschlüsselt sein", "VMs dürfen nur in West Europe erstellt werden".</p>
+<p><strong>Azure Policy vs. RBAC:</strong></p>
+<table>
+<thead>
+<tr>
+<th></th>
+<th>Azure Policy</th>
+<th>Azure RBAC</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Kontrolliert</td>
+<td><strong>Was</strong> Ressourcen konfiguriert sein müssen</td>
+<td><strong>Wer</strong> Ressourcen verwalten darf</td>
+</tr>
+<tr>
+<td>Verhindert</td>
+<td>Falsch konfigurierte Ressourcen</td>
+<td>Unbefugten Zugriff</td>
+</tr>
+<tr>
+<td>Beispiel</td>
+<td>"Storage Accounts müssen HTTPS haben"</td>
+<td>"Anna darf keine VMs erstellen"</td>
+</tr>
+<tr>
+<td>Wirkung</td>
+<td>Auf Ressourcen-Eigenschaften</td>
+<td>Auf Aktionen des Benutzers</td>
+</tr>
+</tbody>
+</table>
+<p>Beide ergänzen sich: RBAC steuert wer etwas tun darf, Policy steuert wie es konfiguriert sein muss.</p>
+<hr />
+<h2 id="policy-konzepte">Policy-Konzepte</h2>
+<p><strong>Policy-Effekte (was passiert bei Verstoß):</strong></p>
+<table>
+<thead>
+<tr>
+<th>Effekt</th>
+<th>Beschreibung</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>Deny</code></td>
+<td>Ressource wird <strong>nicht</strong> erstellt/geändert</td>
+</tr>
+<tr>
+<td><code>Audit</code></td>
+<td>Ressource wird erstellt aber als <strong>non-compliant markiert</strong></td>
+</tr>
+<tr>
+<td><code>Modify</code></td>
+<td>Ressource wird <strong>automatisch angepasst</strong></td>
+</tr>
+<tr>
+<td><code>DeployIfNotExists</code></td>
+<td>Zugehörige Ressource wird <strong>automatisch deployt</strong></td>
+</tr>
+<tr>
+<td><code>Disabled</code></td>
+<td>Policy ist deaktiviert</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Policy-Struktur:</strong>
+1. <strong>Policy Definition</strong>: Was wird geprüft? Was passiert bei Verstoß?
+2. <strong>Policy Assignment</strong>: Auf welchen Scope wird die Policy angewendet?
+3. <strong>Policy Initiative</strong>: Gruppe von mehreren Policy Definitions</p>
+<hr />
+<h2 id="eingebaute-policies-zuweisen">Eingebaute Policies zuweisen</h2>
+<p>Azure hat hunderte vordefinierte Policies. Diese zuzuweisen ist der schnellste Weg:</p>
+<h3 id="im-portal">Im Portal</h3>
+<ol>
+<li>Suche nach <strong>Policy</strong> im Azure Portal</li>
+<li>Links: <strong>Definitions</strong> – alle verfügbaren Policies anzeigen</li>
+<li>Suche nach "storage https" – du findest <strong>"Secure transfer to storage accounts should be enabled"</strong></li>
+<li>Klicke auf die Policy → <strong>Assign</strong></li>
+</ol>
+<table>
+<thead>
+<tr>
+<th>Feld</th>
+<th>Wert</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Scope</td>
+<td>deine Subscription oder Resource Group</td>
+</tr>
+<tr>
+<td>Policy definition</td>
+<td>(vorausgewählt)</td>
+</tr>
+<tr>
+<td>Effect</td>
+<td>Audit</td>
+</tr>
+<tr>
+<td>Assignment name</td>
+<td><code>Storage HTTPS erzwingen</code></td>
+</tr>
+</tbody>
+</table>
+<ol>
+<li>Klicke <strong>Review + create</strong> → <strong>Create</strong></li>
+</ol>
+<h3 id="per-cli">Per CLI</h3>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="c1"># Alle eingebauten Policies mit &quot;tag&quot; im Namen suchen</span>
+<a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a>az<span class="w"> </span>policy<span class="w"> </span>definition<span class="w"> </span>list<span class="w"> </span><span class="se">\</span>
+<a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a><span class="w">  </span>--query<span class="w"> </span><span class="s2">&quot;[?policyType==&#39;BuiltIn&#39; &amp;&amp; contains(displayName,&#39;tag&#39;)].{Name:displayName, ID:name}&quot;</span><span class="w"> </span><span class="se">\</span>
+<a id="__codelineno-0-4" name="__codelineno-0-4" href="#__codelineno-0-4"></a><span class="w">  </span>--output<span class="w"> </span>table<span class="w"> </span><span class="p">|</span><span class="w"> </span>head<span class="w"> </span>-20
+<a id="__codelineno-0-5" name="__codelineno-0-5" href="#__codelineno-0-5"></a>
+<a id="__codelineno-0-6" name="__codelineno-0-6" href="#__codelineno-0-6"></a><span class="c1"># Policy zuweisen (Audit: alle Ressourcen ohne bestimmten Tag melden)</span>
+<a id="__codelineno-0-7" name="__codelineno-0-7" href="#__codelineno-0-7"></a>az<span class="w"> </span>policy<span class="w"> </span>assignment<span class="w"> </span>create<span class="w"> </span><span class="se">\</span>
+<a id="__codelineno-0-8" name="__codelineno-0-8" href="#__codelineno-0-8"></a><span class="w">  </span>--name<span class="w"> </span><span class="s2">&quot;require-environment-tag&quot;</span><span class="w"> </span><span class="se">\</span>
+<a id="__codelineno-0-9" name="__codelineno-0-9" href="#__codelineno-0-9"></a><span class="w">  </span>--display-name<span class="w"> </span><span class="s2">&quot;Environment-Tag erforderlich&quot;</span><span class="w"> </span><span class="se">\</span>
+<a id="__codelineno-0-10" name="__codelineno-0-10" href="#__codelineno-0-10"></a><span class="w">  </span>--policy<span class="w"> </span><span class="s2">&quot;/providers/Microsoft.Authorization/policyDefinitions/871b6d14-10aa-478d-b590-94f262ecfa99&quot;</span><span class="w"> </span><span class="se">\</span>
+<a id="__codelineno-0-11" name="__codelineno-0-11" href="#__codelineno-0-11"></a><span class="w">  </span>--scope<span class="w"> </span><span class="s2">&quot;/subscriptions/</span><span class="k">$(</span>az<span class="w"> </span>account<span class="w"> </span>show<span class="w"> </span>--query<span class="w"> </span>id<span class="w"> </span>-o<span class="w"> </span>tsv<span class="k">)</span><span class="s2">/resourceGroups/rg-devops&quot;</span><span class="w"> </span><span class="se">\</span>
+<a id="__codelineno-0-12" name="__codelineno-0-12" href="#__codelineno-0-12"></a><span class="w">  </span>--params<span class="w"> </span><span class="s1">&#39;{&quot;tagName&quot;: {&quot;value&quot;: &quot;environment&quot;}}&#39;</span>
+</code></pre></div>
+<hr />
+<h2 id="compliance-status-prufen">Compliance-Status prüfen</h2>
+<p>Nach der Zuweisung dauert es 5–15 Minuten bis Azure alle Ressourcen auswertet:</p>
+<ol>
+<li><strong>Policy</strong> → <strong>Compliance</strong></li>
+<li>Du siehst alle Assignments und wie viele Ressourcen compliant/non-compliant sind</li>
+<li>Klicke auf eine Assignment um Details zu sehen (welche Ressourcen verstoßen?)</li>
+</ol>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a><span class="c1"># Compliance per CLI prüfen</span>
+<a id="__codelineno-1-2" name="__codelineno-1-2" href="#__codelineno-1-2"></a>az<span class="w"> </span>policy<span class="w"> </span>state<span class="w"> </span>list<span class="w"> </span><span class="se">\</span>
+<a id="__codelineno-1-3" name="__codelineno-1-3" href="#__codelineno-1-3"></a><span class="w">  </span>--resource-group<span class="w"> </span>rg-devops<span class="w"> </span><span class="se">\</span>
+<a id="__codelineno-1-4" name="__codelineno-1-4" href="#__codelineno-1-4"></a><span class="w">  </span>--query<span class="w"> </span><span class="s2">&quot;[?complianceState==&#39;NonCompliant&#39;].{Ressource:resourceId, Policy:policyDefinitionName}&quot;</span><span class="w"> </span><span class="se">\</span>
+<a id="__codelineno-1-5" name="__codelineno-1-5" href="#__codelineno-1-5"></a><span class="w">  </span>--output<span class="w"> </span>table
+</code></pre></div>
+<hr />
+<h2 id="eigene-policy-schreiben">Eigene Policy schreiben</h2>
+<p>Erstelle <code>deny-public-storage.json</code> – verhindert Storage Accounts mit öffentlichem Blob-Zugriff:</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a><span class="p">{</span>
+<a id="__codelineno-2-2" name="__codelineno-2-2" href="#__codelineno-2-2"></a><span class="w">  </span><span class="nt">&quot;properties&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
+<a id="__codelineno-2-3" name="__codelineno-2-3" href="#__codelineno-2-3"></a><span class="w">    </span><span class="nt">&quot;displayName&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;Öffentlichen Blob-Zugriff auf Storage Accounts verbieten&quot;</span><span class="p">,</span>
+<a id="__codelineno-2-4" name="__codelineno-2-4" href="#__codelineno-2-4"></a><span class="w">    </span><span class="nt">&quot;description&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;Verbietet das Erstellen von Storage Accounts mit allowBlobPublicAccess=true&quot;</span><span class="p">,</span>
+<a id="__codelineno-2-5" name="__codelineno-2-5" href="#__codelineno-2-5"></a><span class="w">    </span><span class="nt">&quot;policyType&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;Custom&quot;</span><span class="p">,</span>
+<a id="__codelineno-2-6" name="__codelineno-2-6" href="#__codelineno-2-6"></a><span class="w">    </span><span class="nt">&quot;mode&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;Indexed&quot;</span><span class="p">,</span>
+<a id="__codelineno-2-7" name="__codelineno-2-7" href="#__codelineno-2-7"></a><span class="w">    </span><span class="nt">&quot;parameters&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{},</span>
+<a id="__codelineno-2-8" name="__codelineno-2-8" href="#__codelineno-2-8"></a><span class="w">    </span><span class="nt">&quot;policyRule&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
+<a id="__codelineno-2-9" name="__codelineno-2-9" href="#__codelineno-2-9"></a><span class="w">      </span><span class="nt">&quot;if&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
+<a id="__codelineno-2-10" name="__codelineno-2-10" href="#__codelineno-2-10"></a><span class="w">        </span><span class="nt">&quot;allOf&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">[</span>
+<a id="__codelineno-2-11" name="__codelineno-2-11" href="#__codelineno-2-11"></a><span class="w">          </span><span class="p">{</span>
+<a id="__codelineno-2-12" name="__codelineno-2-12" href="#__codelineno-2-12"></a><span class="w">            </span><span class="nt">&quot;field&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;type&quot;</span><span class="p">,</span>
+<a id="__codelineno-2-13" name="__codelineno-2-13" href="#__codelineno-2-13"></a><span class="w">            </span><span class="nt">&quot;equals&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;Microsoft.Storage/storageAccounts&quot;</span>
+<a id="__codelineno-2-14" name="__codelineno-2-14" href="#__codelineno-2-14"></a><span class="w">          </span><span class="p">},</span>
+<a id="__codelineno-2-15" name="__codelineno-2-15" href="#__codelineno-2-15"></a><span class="w">          </span><span class="p">{</span>
+<a id="__codelineno-2-16" name="__codelineno-2-16" href="#__codelineno-2-16"></a><span class="w">            </span><span class="nt">&quot;field&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;Microsoft.Storage/storageAccounts/allowBlobPublicAccess&quot;</span><span class="p">,</span>
+<a id="__codelineno-2-17" name="__codelineno-2-17" href="#__codelineno-2-17"></a><span class="w">            </span><span class="nt">&quot;equals&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;true&quot;</span>
+<a id="__codelineno-2-18" name="__codelineno-2-18" href="#__codelineno-2-18"></a><span class="w">          </span><span class="p">}</span>
+<a id="__codelineno-2-19" name="__codelineno-2-19" href="#__codelineno-2-19"></a><span class="w">        </span><span class="p">]</span>
+<a id="__codelineno-2-20" name="__codelineno-2-20" href="#__codelineno-2-20"></a><span class="w">      </span><span class="p">},</span>
+<a id="__codelineno-2-21" name="__codelineno-2-21" href="#__codelineno-2-21"></a><span class="w">      </span><span class="nt">&quot;then&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
+<a id="__codelineno-2-22" name="__codelineno-2-22" href="#__codelineno-2-22"></a><span class="w">        </span><span class="nt">&quot;effect&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;Deny&quot;</span>
+<a id="__codelineno-2-23" name="__codelineno-2-23" href="#__codelineno-2-23"></a><span class="w">      </span><span class="p">}</span>
+<a id="__codelineno-2-24" name="__codelineno-2-24" href="#__codelineno-2-24"></a><span class="w">    </span><span class="p">}</span>
+<a id="__codelineno-2-25" name="__codelineno-2-25" href="#__codelineno-2-25"></a><span class="w">  </span><span class="p">}</span>
+<a id="__codelineno-2-26" name="__codelineno-2-26" href="#__codelineno-2-26"></a><span class="p">}</span>
+</code></pre></div>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a><span class="c1"># Policy Definition erstellen</span>
+<a id="__codelineno-3-2" name="__codelineno-3-2" href="#__codelineno-3-2"></a>az<span class="w"> </span>policy<span class="w"> </span>definition<span class="w"> </span>create<span class="w"> </span><span class="se">\</span>
+<a id="__codelineno-3-3" name="__codelineno-3-3" href="#__codelineno-3-3"></a><span class="w">  </span>--name<span class="w"> </span><span class="s2">&quot;deny-public-blob-access&quot;</span><span class="w"> </span><span class="se">\</span>
+<a id="__codelineno-3-4" name="__codelineno-3-4" href="#__codelineno-3-4"></a><span class="w">  </span>--display-name<span class="w"> </span><span class="s2">&quot;Öffentlichen Blob-Zugriff verbieten&quot;</span><span class="w"> </span><span class="se">\</span>
+<a id="__codelineno-3-5" name="__codelineno-3-5" href="#__codelineno-3-5"></a><span class="w">  </span>--rules<span class="w"> </span>deny-public-storage.json<span class="w"> </span><span class="se">\</span>
+<a id="__codelineno-3-6" name="__codelineno-3-6" href="#__codelineno-3-6"></a><span class="w">  </span>--mode<span class="w"> </span>Indexed
+<a id="__codelineno-3-7" name="__codelineno-3-7" href="#__codelineno-3-7"></a>
+<a id="__codelineno-3-8" name="__codelineno-3-8" href="#__codelineno-3-8"></a><span class="c1"># Policy zuweisen</span>
+<a id="__codelineno-3-9" name="__codelineno-3-9" href="#__codelineno-3-9"></a>az<span class="w"> </span>policy<span class="w"> </span>assignment<span class="w"> </span>create<span class="w"> </span><span class="se">\</span>
+<a id="__codelineno-3-10" name="__codelineno-3-10" href="#__codelineno-3-10"></a><span class="w">  </span>--name<span class="w"> </span><span class="s2">&quot;no-public-storage&quot;</span><span class="w"> </span><span class="se">\</span>
+<a id="__codelineno-3-11" name="__codelineno-3-11" href="#__codelineno-3-11"></a><span class="w">  </span>--policy<span class="w"> </span><span class="s2">&quot;deny-public-blob-access&quot;</span><span class="w"> </span><span class="se">\</span>
+<a id="__codelineno-3-12" name="__codelineno-3-12" href="#__codelineno-3-12"></a><span class="w">  </span>--scope<span class="w"> </span><span class="s2">&quot;/subscriptions/</span><span class="k">$(</span>az<span class="w"> </span>account<span class="w"> </span>show<span class="w"> </span>--query<span class="w"> </span>id<span class="w"> </span>-o<span class="w"> </span>tsv<span class="k">)</span><span class="s2">/resourceGroups/rg-devops&quot;</span>
+</code></pre></div>
+<p>Test: Versuche jetzt einen Storage Account mit <code>--allow-blob-public-access true</code> zu erstellen – du erhältst einen Fehler.</p>
+<hr />
+<h2 id="policy-initiative-mehrere-policies-bundeln">Policy Initiative: Mehrere Policies bündeln</h2>
+<p>Eine <strong>Initiative</strong> (Policy Set) fasst mehrere Policies zusammen:</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-4-1" name="__codelineno-4-1" href="#__codelineno-4-1"></a><span class="c1"># Eingebaute Initiative: Azure Security Benchmark</span>
+<a id="__codelineno-4-2" name="__codelineno-4-2" href="#__codelineno-4-2"></a>az<span class="w"> </span>policy<span class="w"> </span>set-definition<span class="w"> </span>list<span class="w"> </span><span class="se">\</span>
+<a id="__codelineno-4-3" name="__codelineno-4-3" href="#__codelineno-4-3"></a><span class="w">  </span>--query<span class="w"> </span><span class="s2">&quot;[?policyType==&#39;BuiltIn&#39; &amp;&amp; contains(displayName,&#39;Benchmark&#39;)].displayName&quot;</span><span class="w"> </span><span class="se">\</span>
+<a id="__codelineno-4-4" name="__codelineno-4-4" href="#__codelineno-4-4"></a><span class="w">  </span>--output<span class="w"> </span>table
+</code></pre></div>
+<p>Initiativen zuweisen genauso wie einzelne Policies – aber du weist 50+ Policies mit einem Klick zu.</p>
+<hr />
+<h2 id="resource-locks-loschen-verhindern">Resource Locks: Löschen verhindern</h2>
+<p>Resource Locks sind ein anderes Konzept: Sie verhindern bestimmte Aktionen unabhängig von RBAC und Policy.</p>
+<p><strong>Zwei Lock-Typen:</strong></p>
+<table>
+<thead>
+<tr>
+<th>Typ</th>
+<th>Was wird verhindert</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>CanNotDelete</code></td>
+<td>Ressource kann nicht gelöscht werden (aber geändert)</td>
+</tr>
+<tr>
+<td><code>ReadOnly</code></td>
+<td>Ressource kann weder gelöscht noch geändert werden</td>
+</tr>
+</tbody>
+</table>
+<div class="admonition warning">
+<p class="admonition-title">ReadOnly kann unerwartete Probleme verursachen</p>
+<p><code>ReadOnly</code> verhindert auch Operationen die intern Änderungen vornehmen – z.B. kann eine Storage Account mit <code>ReadOnly</code>-Lock keine neuen Blob-Schlüssel generieren. Vorsicht in Produktion.</p>
 </div>
+<h3 id="lock-setzen">Lock setzen</h3>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-5-1" name="__codelineno-5-1" href="#__codelineno-5-1"></a><span class="c1"># Löschen der gesamten Resource Group verhindern</span>
+<a id="__codelineno-5-2" name="__codelineno-5-2" href="#__codelineno-5-2"></a>az<span class="w"> </span>lock<span class="w"> </span>create<span class="w"> </span><span class="se">\</span>
+<a id="__codelineno-5-3" name="__codelineno-5-3" href="#__codelineno-5-3"></a><span class="w">  </span>--name<span class="w"> </span><span class="s2">&quot;protect-rg&quot;</span><span class="w"> </span><span class="se">\</span>
+<a id="__codelineno-5-4" name="__codelineno-5-4" href="#__codelineno-5-4"></a><span class="w">  </span>--resource-group<span class="w"> </span>rg-devops<span class="w"> </span><span class="se">\</span>
+<a id="__codelineno-5-5" name="__codelineno-5-5" href="#__codelineno-5-5"></a><span class="w">  </span>--lock-type<span class="w"> </span>CanNotDelete<span class="w"> </span><span class="se">\</span>
+<a id="__codelineno-5-6" name="__codelineno-5-6" href="#__codelineno-5-6"></a><span class="w">  </span>--notes<span class="w"> </span><span class="s2">&quot;Schutz vor versehentlichem Löschen&quot;</span>
+</code></pre></div>
+<h3 id="lock-im-portal">Lock im Portal</h3>
+<ol>
+<li>Resource Group öffnen</li>
+<li>Links: <strong>Locks</strong></li>
+<li><strong>+ Add</strong> → Lock-Typ wählen → <strong>OK</strong></li>
+</ol>
+<h3 id="lock-loschen">Lock löschen</h3>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-6-1" name="__codelineno-6-1" href="#__codelineno-6-1"></a>az<span class="w"> </span>lock<span class="w"> </span>delete<span class="w"> </span><span class="se">\</span>
+<a id="__codelineno-6-2" name="__codelineno-6-2" href="#__codelineno-6-2"></a><span class="w">  </span>--name<span class="w"> </span><span class="s2">&quot;protect-rg&quot;</span><span class="w"> </span><span class="se">\</span>
+<a id="__codelineno-6-3" name="__codelineno-6-3" href="#__codelineno-6-3"></a><span class="w">  </span>--resource-group<span class="w"> </span>rg-devops
+</code></pre></div>
+<div class="admonition info">
+<p class="admonition-title">Wer kann Locks löschen?</p>
+<p>Locks können nur von Benutzern mit der Rolle <code>Owner</code> oder <code>User Access Administrator</code> (oder der spezifischen Permission <code>Microsoft.Authorization/locks/delete</code>) gelöscht werden – nicht von einfachen Contributors.</p>
+</div>
+<hr />
+<h2 id="challenge">Challenge</h2>
+<div class="admonition question">
+<p class="admonition-title">Challenge: Tagging-Policy</p>
+<p>Erstelle eine Policy die:</p>
+<ul>
+<li>Alle neuen Ressourcen in <code>rg-devops</code> prüft</li>
+<li>Non-compliant meldet (<code>Audit</code>) wenn das Tag <code>environment</code> fehlt</li>
+<li>Weise sie der Resource Group zu</li>
+<li>Erstelle eine Ressource ohne Tag und prüfe den Compliance-Status</li>
+</ul>
+<p>(Tipp: Suche in den eingebauten Policies nach "tag".)</p>
+</div>
+<details class="success">
+<summary>Hinweis</summary>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-7-1" name="__codelineno-7-1" href="#__codelineno-7-1"></a><span class="c1"># Eingebaute Policy-ID für &quot;Require a tag on resources&quot;</span>
+<a id="__codelineno-7-2" name="__codelineno-7-2" href="#__codelineno-7-2"></a>az<span class="w"> </span>policy<span class="w"> </span>definition<span class="w"> </span>list<span class="w"> </span><span class="se">\</span>
+<a id="__codelineno-7-3" name="__codelineno-7-3" href="#__codelineno-7-3"></a><span class="w">  </span>--query<span class="w"> </span><span class="s2">&quot;[?displayName==&#39;Require a tag on resources&#39;].name&quot;</span><span class="w"> </span>-o<span class="w"> </span>tsv
+<a id="__codelineno-7-4" name="__codelineno-7-4" href="#__codelineno-7-4"></a>
+<a id="__codelineno-7-5" name="__codelineno-7-5" href="#__codelineno-7-5"></a><span class="c1"># Dann Assignment erstellen:</span>
+<a id="__codelineno-7-6" name="__codelineno-7-6" href="#__codelineno-7-6"></a>az<span class="w"> </span>policy<span class="w"> </span>assignment<span class="w"> </span>create<span class="w"> </span><span class="se">\</span>
+<a id="__codelineno-7-7" name="__codelineno-7-7" href="#__codelineno-7-7"></a><span class="w">  </span>--name<span class="w"> </span><span class="s2">&quot;require-env-tag&quot;</span><span class="w"> </span><span class="se">\</span>
+<a id="__codelineno-7-8" name="__codelineno-7-8" href="#__codelineno-7-8"></a><span class="w">  </span>--policy<span class="w"> </span><span class="k">$(</span>az<span class="w"> </span>policy<span class="w"> </span>definition<span class="w"> </span>list<span class="w"> </span><span class="se">\</span>
+<a id="__codelineno-7-9" name="__codelineno-7-9" href="#__codelineno-7-9"></a><span class="w">    </span>--query<span class="w"> </span><span class="s2">&quot;[?displayName==&#39;Require a tag on resources&#39;].name&quot;</span><span class="w"> </span>-o<span class="w"> </span>tsv<span class="k">)</span><span class="w"> </span><span class="se">\</span>
+<a id="__codelineno-7-10" name="__codelineno-7-10" href="#__codelineno-7-10"></a><span class="w">  </span>--scope<span class="w"> </span><span class="s2">&quot;/subscriptions/.../resourceGroups/rg-devops&quot;</span><span class="w"> </span><span class="se">\</span>
+<a id="__codelineno-7-11" name="__codelineno-7-11" href="#__codelineno-7-11"></a><span class="w">  </span>--params<span class="w"> </span><span class="s1">&#39;{&quot;tagName&quot;: {&quot;value&quot;: &quot;environment&quot;}}&#39;</span>
+</code></pre></div>
+</details>
+<hr />
+<p>Weiter zu <a href="../modul-39-aufr%C3%A4umen/">Modul 39 – Aufräumen Lernpfad 6</a> →</p>
 
 
 
@@ -2402,7 +2500,7 @@
       <nav class="md-footer__inner md-grid" aria-label="Fußzeile" >
         
           
-          <a href="../modul-24-conditional-access/" class="md-footer__link md-footer__link--prev" aria-label="Zurück: Modul 24 – Conditional Access">
+          <a href="../modul-37-terraform/" class="md-footer__link md-footer__link--prev" aria-label="Zurück: Modul 37 – Terraform">
             <div class="md-footer__button md-icon">
               
               <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
@@ -2412,20 +2510,20 @@
                 Zurück
               </span>
               <div class="md-ellipsis">
-                Modul 24 – Conditional Access
+                Modul 37 – Terraform
               </div>
             </div>
           </a>
         
         
           
-          <a href="../modul-26-docker/" class="md-footer__link md-footer__link--next" aria-label="Weiter: Modul 26 – Docker Grundlagen">
+          <a href="../modul-39-aufr%C3%A4umen/" class="md-footer__link md-footer__link--next" aria-label="Weiter: Modul 39 – Aufräumen">
             <div class="md-footer__title">
               <span class="md-footer__direction">
                 Weiter
               </span>
               <div class="md-ellipsis">
-                Modul 26 – Docker Grundlagen
+                Modul 39 – Aufräumen
               </div>
             </div>
             <div class="md-footer__button md-icon">
