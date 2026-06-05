@@ -42,6 +42,36 @@ echo "ACR: $ACR_NAME"
 
 ### ACI aus ACR-Image starten
 
+#### Im Portal
+
+1. Suche nach **Container instances** → **+ Create**
+2. Aktiviere zuerst den Admin-Zugang der ACR: ACR → **Access keys** → **Admin user: Enabled** → Username und Passwort notieren
+3. Im Container Instances-Formular:
+
+| Feld | Wert |
+|------|------|
+| Resource group | `rg-container` |
+| Container name | `mein-container` |
+| Region | `West Europe` |
+| Image source | `Azure Container Registry` |
+| Registry | deine ACR auswählen |
+| Image | `mein-webserver` |
+| Image tag | `1.0` |
+| OS type | `Linux` |
+| Size | 1 vCPU, 1.5 GiB |
+
+4. Tab **Networking**:
+
+| Feld | Wert |
+|------|------|
+| Networking type | `Public` |
+| DNS name label | `meincontainer12345` (eindeutig in der Region) |
+| Ports | `8080`, Protokoll `TCP` |
+
+5. **Review + create** → **Create**
+
+#### Per CLI (Cloud Shell)
+
 ```bash
 # ACR-Admin aktivieren (für ACI-Authentifizierung)
 az acr update --name $ACR_NAME --admin-enabled true

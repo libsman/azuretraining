@@ -40,6 +40,24 @@ Lokaler Cache                   Andere Standorte / andere Server
 
 ## Schritt 1: Ressourcengruppe und Storage Account
 
+### Im Portal
+
+1. Erstelle die Ressourcengruppe: **Resource groups** → **+ Create** → Name `rg-lp9`, Region `West Europe`
+2. Suche nach **Storage accounts** → **+ Create**
+
+| Feld | Wert |
+|------|------|
+| Resource group | `rg-lp9` |
+| Storage account name | `stalp9XXXXX` (eindeutig, Kleinbuchstaben+Zahlen) |
+| Region | `West Europe` |
+| Performance | `Standard` |
+| Redundancy | `LRS` |
+
+3. Tab **Advanced**: **Large file shares** → **Enabled** (erlaubt bis 100 TiB)
+4. **Review + create** → **Create**
+
+### Per CLI (Cloud Shell)
+
 ```bash
 az group create --name rg-lp9 --location westeurope
 
@@ -64,6 +82,22 @@ echo "Storage Account: $STORAGE"
 
 ## Schritt 2: File Share erstellen
 
+### Im Portal
+
+1. Öffne deinen Storage Account
+2. Links: **Data storage** → **File shares** → **+ File share**
+
+| Feld | Wert |
+|------|------|
+| Name | `company-data` |
+| Provisioned capacity | `5 GiB` |
+| Protocol | `SMB` |
+
+3. **Create** klicken
+4. Die neue Freigabe erscheint in der Liste. Mit **Upload** könntest du direkt Dateien hochladen.
+
+### Per CLI (Cloud Shell)
+
 ```bash
 # File Share erstellen (5 GiB Quota für das Training)
 az storage share-rm create \
@@ -75,8 +109,6 @@ az storage share-rm create \
 
 echo "File Share erstellt: company-data"
 ```
-
-**Im Portal:** Storage Account → Data storage → File shares → `company-data` siehst du jetzt die leere Freigabe. Mit **Upload** kannst du Testdateien hochladen.
 
 ```bash
 # Testdatei in der Cloud Shell erstellen und hochladen

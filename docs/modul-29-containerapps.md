@@ -41,6 +41,22 @@ Einfach ◄───────────────────────
 
 Container Apps laufen in einer **Environment** (Laufzeitumgebung, geteilt über mehrere Container Apps):
 
+### Im Portal
+
+1. Suche nach **Container Apps** → **+ Create**
+2. Im Schritt **Basics**: Resource group `rg-container`, App name und Region auswählen
+3. Im Schritt **Container**: Image-Quelle und Konfiguration angeben
+4. Eine neue **Environment** wird beim ersten Mal automatisch im Assistenten erstellt:
+   - Klicke auf **Create new** neben dem Environment-Feld
+   - Name: `env-container`, Region: `West Europe`
+   - Logs: **Azure Log Analytics** → **Create new** (Portal erstellt automatisch einen Workspace)
+   - **Create** bestätigen
+
+!!! tip "Environment wiederverwenden"
+    Wenn die Environment einmal erstellt ist, wählst du sie bei jeder weiteren Container App einfach aus dem Dropdown aus.
+
+### Per CLI (Cloud Shell)
+
 ```bash
 # Log Analytics Workspace für Logs
 az monitor log-analytics workspace create \
@@ -70,7 +86,42 @@ az containerapp env create \
 
 ## Erste Container App erstellen
 
-### Öffentliches Beispiel-Image (ohne ACR)
+### Im Portal
+
+1. Suche nach **Container Apps** → **+ Create**
+2. Tab **Basics**:
+
+| Feld | Wert |
+|------|------|
+| Resource group | `rg-container` |
+| Container app name | `meine-container-app` |
+| Region | `West Europe` |
+| Container Apps Environment | `env-container` |
+
+3. Tab **Container**:
+
+| Feld | Wert |
+|------|------|
+| Image source | `Docker Hub or other registries` |
+| Image and tag | `mcr.microsoft.com/azuredocs/containerapps-helloworld:latest` |
+
+Für eigene ACR-Images: Image source → **Azure Container Registry** → ACR und Image auswählen.
+
+4. Tab **Ingress** (damit die App öffentlich erreichbar ist):
+
+| Feld | Wert |
+|------|------|
+| Ingress | Aktiviert |
+| Ingress traffic | `Accepting traffic from anywhere` |
+| Target port | `80` |
+
+5. **Review + create** → **Create**
+
+Nach der Erstellung siehst du die App-URL in der Übersichtsseite unter **Application URL**.
+
+### Per CLI (Cloud Shell)
+
+#### Öffentliches Beispiel-Image (ohne ACR)
 
 ```bash
 az containerapp create \
