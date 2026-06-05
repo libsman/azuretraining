@@ -14,7 +14,7 @@ Selbstgeführtes Azure-Training für IT-Profis im Microsoft-Umfeld – Azubis, P
 | LP 4 | 21–25 | Identity & Access (Entra ID, Managed Identity, RBAC, Conditional Access) |
 | LP 5 | 26–32 | Container (Docker, ACR, ACI, Container Apps, AKS) |
 | LP 6 | 33–39 | DevOps & IaC (Azure DevOps, GitHub Actions, ARM, Bicep, Terraform, Policy) |
-| LP 7 | 40–44 | Monitoring & Security (Log Analytics, App Insights, Defender) – geplant |
+| LP 7 | 40–44 | Monitoring & Security (Log Analytics, App Insights, Defender for Cloud, Sentinel) |
 | LP 8 | 45–47 | Abschlussprojekte – geplant |
 
 ## Alle Module
@@ -88,6 +88,16 @@ Selbstgeführtes Azure-Training für IT-Profis im Microsoft-Umfeld – Azubis, P
 | 37 | Terraform: Plattformunabhängiges IaC |
 | 38 | Azure Policy & Resource Locks: Compliance automatisieren |
 | 39 | Aufräumen Lernpfad 6 |
+
+### Lernpfad 7 – Monitoring & Security
+
+| Modul | Thema |
+|-------|-------|
+| 40 | Azure Monitor & Log Analytics: Logs zentral auswerten und KQL |
+| 41 | Application Insights: Telemetrie für Web-Apps |
+| 42 | Microsoft Defender for Cloud: Security Posture und Alerts |
+| 43 | Microsoft Sentinel: SIEM und Incident Response |
+| 44 | Aufräumen Lernpfad 7 |
 
 ## Lokale Vorschau
 

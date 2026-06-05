@@ -91,15 +91,15 @@ Hier findest du eine Übersicht über alle geplanten Lernpfade und Module des Az
 
 ---
 
-## Lernpfad 7 – Monitoring & Security (Module 40–44) 📋
+## Lernpfad 7 – Monitoring & Security (Module 40–44) ✅
 
 | Modul | Thema |
 |-------|-------|
-| Modul 40 | Azure Monitor vertieft: Log Analytics und KQL-Abfragen |
-| Modul 41 | Application Insights: Telemetrie für Web-Apps |
-| Modul 42 | Microsoft Defender for Cloud: Security Posture und Alerts |
-| Modul 43 | Azure Sentinel: SIEM und Security-Events auswerten |
-| Modul 44 | Aufräumen Lernpfad 7 |
+| [Modul 40](modul-40-log-analytics.md) | Azure Monitor & Log Analytics: KQL-Abfragen und Alerts |
+| [Modul 41](modul-41-app-insights.md) | Application Insights: Telemetrie für Web-Apps |
+| [Modul 42](modul-42-defender.md) | Microsoft Defender for Cloud: Security Posture und Alerts |
+| [Modul 43](modul-43-sentinel.md) | Microsoft Sentinel: SIEM und Incident Response |
+| [Modul 44](modul-44-aufräumen.md) | Aufräumen Lernpfad 7 |
 
 ---
 

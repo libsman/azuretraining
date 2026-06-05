@@ -70,6 +70,15 @@ Nach Abschluss von Lernpfad 1 hast du folgendes in Azure selbst gebaut:
 | 🌍 | Plattformübergreifende Infrastruktur verwalten | Terraform |
 | 🔒 | Compliance-Regeln und Sperren erzwingen | Azure Policy |
 
+## Was du in Lernpfad 7 lernst
+
+| | Was | Wo |
+|---|---|---|
+| 📊 | Logs zentral auswerten und KQL-Abfragen schreiben | Log Analytics |
+| 🔭 | Web-App-Telemetrie und Request-Tracking einrichten | Application Insights |
+| 🛡️ | Secure Score verbessern und Security-Empfehlungen umsetzen | Defender for Cloud |
+| 🔍 | Sicherheitsereignisse korrelieren und Incidents untersuchen | Microsoft Sentinel |
+
 ---
 
 ## Übersicht der Module
@@ -116,6 +125,11 @@ Nach Abschluss von Lernpfad 1 hast du folgendes in Azure selbst gebaut:
 | [Modul 37](modul-37-terraform.md) | Terraform: Plattformunabhängiges IaC | 75 Min |
 | [Modul 38](modul-38-policy.md) | Azure Policy & Resource Locks | 45 Min |
 | [Modul 39](modul-39-aufräumen.md) | Aufräumen Lernpfad 6 | 15 Min |
+| [Modul 40](modul-40-log-analytics.md) | Azure Monitor & Log Analytics: Logs zentral auswerten | 75 Min |
+| [Modul 41](modul-41-app-insights.md) | Application Insights: Telemetrie für Web-Apps | 60 Min |
+| [Modul 42](modul-42-defender.md) | Defender for Cloud: Security Posture und Alerts | 45 Min |
+| [Modul 43](modul-43-sentinel.md) | Microsoft Sentinel: SIEM und Incident Response | 75 Min |
+| [Modul 44](modul-44-aufräumen.md) | Aufräumen Lernpfad 7 | 15 Min |
 
 !!! tip "Kein Stress mit der Zeit"
     Die Zeitangaben sind Orientierungshilfen, kein Zwang. Nimm dir so lange wie du brauchst. Wenn du nicht weiterkommst, hilft oft ein Blick in die offizielle [Microsoft Learn Dokumentation](https://learn.microsoft.com/de-de/azure/).

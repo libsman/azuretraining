@@ -102,6 +102,12 @@ nav:
     - Modul 37 – Terraform: modul-37-terraform.md
     - Modul 38 – Azure Policy: modul-38-policy.md
     - Modul 39 – Aufräumen: modul-39-aufräumen.md
+  - Lernpfad 7 – Monitoring & Security:
+    - Modul 40 – Log Analytics & KQL: modul-40-log-analytics.md
+    - Modul 41 – Application Insights: modul-41-app-insights.md
+    - Modul 42 – Defender for Cloud: modul-42-defender.md
+    - Modul 43 – Microsoft Sentinel: modul-43-sentinel.md
+    - Modul 44 – Aufräumen: modul-44-aufräumen.md
 
 extra:
   social:

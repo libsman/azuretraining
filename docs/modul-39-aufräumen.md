@@ -121,4 +121,4 @@ az group delete --name rg-devops --yes --no-wait
 
 ---
 
-Weiter zu **Lernpfad 7 – Monitoring & Security** (in Planung) →
+Weiter zu [Modul 40 – Azure Monitor & Log Analytics](modul-40-log-analytics.md) →
