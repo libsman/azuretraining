@@ -30,6 +30,9 @@ Das Modell hinter Azure Computer Vision wurde von Microsoft mit Hunderten von Mi
 2. Tippe in der Suchleiste **`Computer Vision`** und klicke auf den Dienst (Kategorie: AI + machine learning)
 3. Klicke auf **+ Create**
 
+!!! info "Computer Vision = Azure AI Vision"
+    Microsoft hat den Dienst im Rahmen der **Azure AI services**-Familie in **Azure AI Vision** umbenannt. Im Portal findest du ihn aber weiterhin unter dem Suchbegriff `Computer Vision`. Beide Namen bezeichnen denselben Dienst.
+
 ### Schritt 2: Konfigurieren
 
 | Feld | Wert |
@@ -81,6 +84,9 @@ Bevor wir programmieren, testen wir die KI direkt im Browser.
 Öffne in einem neuen Tab:
 
 **[portal.vision.cognitive.azure.com](https://portal.vision.cognitive.azure.com)**
+
+!!! info "Falls Vision Studio umgeleitet wird"
+    Microsoft integriert Vision Studio zunehmend in **Azure AI Studio** ([ai.azure.com](https://ai.azure.com)). Falls `portal.vision.cognitive.azure.com` auf eine andere Seite weiterleitet, navigiere zu **ai.azure.com** → **Vision** in der linken Navigation, um dieselben Funktionen zu nutzen.
 
 ### Schritt 2: Mit deiner Ressource verbinden
 
@@ -142,7 +148,8 @@ key      = "ERSETZE_MICH_MIT_DEINEM_KEY_1"
 # Sicherheit: trailing slash entfernen falls vorhanden
 endpoint = endpoint.rstrip("/")
 
-# API-URL für Image Analysis
+# API-URL für Image Analysis (v3.2 – stabil und weiterhin unterstützt)
+# Neuere Alternative: /computervision/imageanalysis:analyze?api-version=2024-02-01
 url = f"{endpoint}/vision/v3.2/analyze"
 
 headers = {

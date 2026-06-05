@@ -11,7 +11,7 @@ Du hast in diesem Lernpfad folgende Ressourcen in Azure erstellt – alle in der
 | Computer Vision `cv-aztraining` | Modul 3 | 0 € (Free F0) |
 | Budget Alert, CPU Alert | Modul 4 | 0 € |
 | Web App `webapp-aztraining-XXXX` | Modul 5 | 0 € (Free F1) |
-| Function App `func-aztraining-XXXX` | Modul 6 | 0 € (Consumption) |
+| Function App `func-aztraining-XXXX` | Modul 6 | 0 € (Flex Consumption) |
 
 Die VM kostet ~0,009 €/Stunde solange sie läuft. Da du Auto-Shutdown in Modul 1 aktiviert hast, schaltet sie sich automatisch ab – aber gelöscht ist sie noch nicht. Die anderen Ressourcen sind im Free Tier und kosten nichts, sollten aber trotzdem bereinigt werden.
 
