@@ -13,6 +13,9 @@ Praxis-Einführung in Microsoft Azure für Einsteiger mit Hyper-V / On-Prem Erfa
 | 2 | Storage: Statische Website ohne Server |
 | 3 | Azure KI: Bilderkennung mit Computer Vision |
 | 4 | Monitoring: Kosten, Alerts, Tags |
+| 5 | App Service: Web App ohne VM deployen (PaaS) |
+| 6 | Azure Functions: Serverless Computing |
+| 7 | Aufräumen: Alle Ressourcen löschen |
 
 ## Lokale Vorschau
 
