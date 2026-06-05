@@ -79,6 +79,14 @@ Nach Abschluss von Lernpfad 1 hast du folgendes in Azure selbst gebaut:
 | 🛡️ | Secure Score verbessern und Security-Empfehlungen umsetzen | Defender for Cloud |
 | 🔍 | Sicherheitsereignisse korrelieren und Incidents untersuchen | Microsoft Sentinel |
 
+## Was du in Lernpfad 8 lernst
+
+| | Was | Wo |
+|---|---|---|
+| 🏗️ | Dreischichtige Web-App mit App Service + SQL + Key Vault | Abschlussprojekt 1 |
+| ⚡ | Event-getriebene Architektur mit Functions + Service Bus + Cosmos DB | Abschlussprojekt 2 |
+| 🚀 | Containerisierte App mit vollautomatischer CI/CD-Pipeline | Abschlussprojekt 3 |
+
 ---
 
 ## Übersicht der Module
@@ -130,6 +138,9 @@ Nach Abschluss von Lernpfad 1 hast du folgendes in Azure selbst gebaut:
 | [Modul 42](modul-42-defender.md) | Defender for Cloud: Security Posture und Alerts | 45 Min |
 | [Modul 43](modul-43-sentinel.md) | Microsoft Sentinel: SIEM und Incident Response | 75 Min |
 | [Modul 44](modul-44-aufräumen.md) | Aufräumen Lernpfad 7 | 15 Min |
+| [Modul 45](modul-45-projekt-webapp.md) | Abschlussprojekt 1: Dreischichtige Web-App | 120 Min |
+| [Modul 46](modul-46-projekt-eventdriven.md) | Abschlussprojekt 2: Event-Driven Architektur | 120 Min |
+| [Modul 47](modul-47-projekt-cicd.md) | Abschlussprojekt 3: Container-App mit CI/CD | 120 Min |
 
 !!! tip "Kein Stress mit der Zeit"
     Die Zeitangaben sind Orientierungshilfen, kein Zwang. Nimm dir so lange wie du brauchst. Wenn du nicht weiterkommst, hilft oft ein Blick in die offizielle [Microsoft Learn Dokumentation](https://learn.microsoft.com/de-de/azure/).

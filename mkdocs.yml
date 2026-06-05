@@ -108,6 +108,10 @@ nav:
     - Modul 42 – Defender for Cloud: modul-42-defender.md
     - Modul 43 – Microsoft Sentinel: modul-43-sentinel.md
     - Modul 44 – Aufräumen: modul-44-aufräumen.md
+  - Lernpfad 8 – Abschlussprojekte:
+    - "Modul 45 – Projekt 1: 3-Tier-Web-App": modul-45-projekt-webapp.md
+    - "Modul 46 – Projekt 2: Event-Driven": modul-46-projekt-eventdriven.md
+    - "Modul 47 – Projekt 3: Container + CI/CD": modul-47-projekt-cicd.md
 
 extra:
   social:

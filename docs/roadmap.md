@@ -103,13 +103,13 @@ Hier findest du eine Übersicht über alle geplanten Lernpfade und Module des Az
 
 ---
 
-## Lernpfad 8 – Abschlussprojekte (Module 45–47) 📋
+## Lernpfad 8 – Abschlussprojekte (Module 45–47) ✅
 
 | Modul | Thema |
 |-------|-------|
-| Modul 45 | Abschlussprojekt 1: Dreischichtige Web-App (VM + App Service + SQL + Load Balancer) |
-| Modul 46 | Abschlussprojekt 2: Event-Driven Architektur (Functions + Service Bus + Cosmos DB) |
-| Modul 47 | Abschlussprojekt 3: Container-App mit CI/CD-Pipeline (AKS + ACR + GitHub Actions) |
+| [Modul 45](modul-45-projekt-webapp.md) | Abschlussprojekt 1: Dreischichtige Web-App (App Service + SQL + Key Vault) |
+| [Modul 46](modul-46-projekt-eventdriven.md) | Abschlussprojekt 2: Event-Driven Architektur (Functions + Service Bus + Cosmos DB) |
+| [Modul 47](modul-47-projekt-cicd.md) | Abschlussprojekt 3: Container-App mit CI/CD-Pipeline (ACR + Container Apps + GitHub Actions) |
 
 ---
 

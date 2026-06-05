@@ -15,7 +15,7 @@ Selbstgeführtes Azure-Training für IT-Profis im Microsoft-Umfeld – Azubis, P
 | LP 5 | 26–32 | Container (Docker, ACR, ACI, Container Apps, AKS) |
 | LP 6 | 33–39 | DevOps & IaC (Azure DevOps, GitHub Actions, ARM, Bicep, Terraform, Policy) |
 | LP 7 | 40–44 | Monitoring & Security (Log Analytics, App Insights, Defender for Cloud, Sentinel) |
-| LP 8 | 45–47 | Abschlussprojekte – geplant |
+| LP 8 | 45–47 | Abschlussprojekte (3-Tier-App, Event-Driven, Container + CI/CD) |
 
 ## Alle Module
 
@@ -98,6 +98,14 @@ Selbstgeführtes Azure-Training für IT-Profis im Microsoft-Umfeld – Azubis, P
 | 42 | Microsoft Defender for Cloud: Security Posture und Alerts |
 | 43 | Microsoft Sentinel: SIEM und Incident Response |
 | 44 | Aufräumen Lernpfad 7 |
+
+### Lernpfad 8 – Abschlussprojekte
+
+| Modul | Thema |
+|-------|-------|
+| 45 | Abschlussprojekt 1: Dreischichtige Web-App (App Service + SQL + Key Vault) |
+| 46 | Abschlussprojekt 2: Event-Driven Architektur (Functions + Service Bus + Cosmos DB) |
+| 47 | Abschlussprojekt 3: Container-App mit CI/CD-Pipeline (ACR + Container Apps + GitHub Actions) |
 
 ## Lokale Vorschau
 

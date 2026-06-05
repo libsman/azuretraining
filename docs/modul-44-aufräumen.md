@@ -106,4 +106,4 @@ Das löscht: Log Analytics Workspace, Application Insights, Application Insights
 
 ---
 
-Weiter zu **Lernpfad 8 – Abschlussprojekte** (in Planung) →
+Weiter zu [Modul 45 – Abschlussprojekt 1: Dreischichtige Web-App](modul-45-projekt-webapp.md) →
