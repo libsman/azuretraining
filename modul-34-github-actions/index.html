@@ -1711,6 +1711,34 @@
     </span>
   </a>
   
+    <nav class="md-nav" aria-label="Schritt 1: App Service vorbereiten">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#im-portal" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Im Portal
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#per-cli-cloud-shell" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Per CLI (Cloud Shell)
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
 </li>
         
           <li class="md-nav__item">
@@ -1721,6 +1749,34 @@
       
     </span>
   </a>
+  
+    <nav class="md-nav" aria-label="Schritt 2: Publish Profile als GitHub Secret hinterlegen">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#im-portal_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Im Portal
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#per-cli" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Per CLI
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
   
 </li>
         
@@ -2529,6 +2585,34 @@
     </span>
   </a>
   
+    <nav class="md-nav" aria-label="Schritt 1: App Service vorbereiten">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#im-portal" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Im Portal
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#per-cli-cloud-shell" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Per CLI (Cloud Shell)
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
 </li>
         
           <li class="md-nav__item">
@@ -2539,6 +2623,34 @@
       
     </span>
   </a>
+  
+    <nav class="md-nav" aria-label="Schritt 2: Publish Profile als GitHub Secret hinterlegen">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#im-portal_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Im Portal
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#per-cli" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Per CLI
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
   
 </li>
         
@@ -2771,6 +2883,50 @@
 <hr />
 <h2 id="deployment-auf-azure-app-service">Deployment auf Azure App Service</h2>
 <h3 id="schritt-1-app-service-vorbereiten">Schritt 1: App Service vorbereiten</h3>
+<h4 id="im-portal">Im Portal</h4>
+<ol>
+<li>Suche nach <strong>App Services</strong> → <strong>+ Create</strong> → <strong>Web App</strong></li>
+</ol>
+<table>
+<thead>
+<tr>
+<th>Feld</th>
+<th>Wert</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Resource group</td>
+<td><code>rg-devops</code> (neu erstellen)</td>
+</tr>
+<tr>
+<td>Name</td>
+<td><code>app-devops-XXXXX</code> (eindeutig)</td>
+</tr>
+<tr>
+<td>Runtime stack</td>
+<td><code>Python 3.12</code></td>
+</tr>
+<tr>
+<td>Operating System</td>
+<td><code>Linux</code></td>
+</tr>
+<tr>
+<td>Region</td>
+<td><code>West Europe</code></td>
+</tr>
+<tr>
+<td>Pricing plan</td>
+<td><code>Free F1</code></td>
+</tr>
+</tbody>
+</table>
+<ol>
+<li><strong>Review + create</strong> → <strong>Create</strong></li>
+<li>Den generierten App-Namen notieren (brauchst du später als GitHub Secret)</li>
+<li>Publish Profile herunterladen: Web App → <strong>Overview</strong> → <strong>Get publish profile</strong> (Download-Schaltfläche)</li>
+</ol>
+<h4 id="per-cli-cloud-shell">Per CLI (Cloud Shell)</h4>
 <div class="highlight"><pre><span></span><code><a id="__codelineno-4-1" name="__codelineno-4-1" href="#__codelineno-4-1"></a>az<span class="w"> </span>group<span class="w"> </span>create<span class="w"> </span>--name<span class="w"> </span>rg-devops<span class="w"> </span>--location<span class="w"> </span>westeurope
 <a id="__codelineno-4-2" name="__codelineno-4-2" href="#__codelineno-4-2"></a>
 <a id="__codelineno-4-3" name="__codelineno-4-3" href="#__codelineno-4-3"></a>az<span class="w"> </span>appservice<span class="w"> </span>plan<span class="w"> </span>create<span class="w"> </span><span class="se">\</span>
@@ -2789,6 +2945,12 @@
 <a id="__codelineno-4-16" name="__codelineno-4-16" href="#__codelineno-4-16"></a>az<span class="w"> </span>webapp<span class="w"> </span>list<span class="w"> </span>--resource-group<span class="w"> </span>rg-devops<span class="w"> </span>--query<span class="w"> </span><span class="s2">&quot;[0].name&quot;</span><span class="w"> </span>-o<span class="w"> </span>tsv
 </code></pre></div>
 <h3 id="schritt-2-publish-profile-als-github-secret-hinterlegen">Schritt 2: Publish Profile als GitHub Secret hinterlegen</h3>
+<h4 id="im-portal_1">Im Portal</h4>
+<ol>
+<li>Web App → <strong>Overview</strong> → <strong>Get publish profile</strong> – die XML-Datei wird heruntergeladen</li>
+<li>Öffne die Datei in einem Texteditor und kopiere den gesamten Inhalt</li>
+</ol>
+<h4 id="per-cli">Per CLI</h4>
 <div class="highlight"><pre><span></span><code><a id="__codelineno-5-1" name="__codelineno-5-1" href="#__codelineno-5-1"></a><span class="c1"># Publish Profile herunterladen</span>
 <a id="__codelineno-5-2" name="__codelineno-5-2" href="#__codelineno-5-2"></a>az<span class="w"> </span>webapp<span class="w"> </span>deployment<span class="w"> </span>list-publishing-profiles<span class="w"> </span><span class="se">\</span>
 <a id="__codelineno-5-3" name="__codelineno-5-3" href="#__codelineno-5-3"></a><span class="w">  </span>--name<span class="w"> </span>DEIN-APP-NAME<span class="w"> </span><span class="se">\</span>
