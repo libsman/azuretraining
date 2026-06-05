@@ -10,13 +10,13 @@
       
       
       
-        <link rel="canonical" href="https://libsman.github.io/azuretraining/modul-15-sql/">
+        <link rel="canonical" href="https://libsman.github.io/azuretraining/modul-28-aci/">
       
       
-        <link rel="prev" href="../modul-14-aufr%C3%A4umen/">
+        <link rel="prev" href="../modul-27-acr/">
       
       
-        <link rel="next" href="../modul-16-cosmosdb/">
+        <link rel="next" href="../modul-29-containerapps/">
       
       
         
@@ -27,7 +27,7 @@
     
     
       
-        <title>Modul 15 – Azure SQL Database - Azure Einstiegstraining</title>
+        <title>Modul 28 – Azure Container Instances - Azure Einstiegstraining</title>
       
     
     
@@ -78,7 +78,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#modul-15-azure-sql-database-managed-datenbank-in-der-cloud" class="md-skip">
+        <a href="#modul-28-azure-container-instances-container-ohne-kubernetes" class="md-skip">
           Zum Inhalt
         </a>
       
@@ -114,7 +114,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Modul 15 – Azure SQL Database
+              Modul 28 – Azure Container Instances
             
           </span>
         </div>
@@ -841,20 +841,18 @@
       
   
   
-    
   
   
-  
     
     
     
     
     
-    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5" checked>
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5" >
         
           
           <label class="md-nav__link" for="__nav_5" id="__nav_5_label" tabindex="0">
@@ -875,7 +873,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_5_label" aria-expanded="true">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_5_label" aria-expanded="false">
           <label class="md-nav__title" for="__nav_5">
             <span class="md-nav__icon md-icon"></span>
             
@@ -890,37 +888,10 @@
                 
   
   
-    
   
   
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
-      
-      
-        
-      
-      
-        <label class="md-nav__link md-nav__link--active" for="__toc">
-          
-  
-  
-  <span class="md-ellipsis">
-    
-  
-    Modul 15 – Azure SQL Database
-  
-
-    
-  </span>
-  
-  
-
-          <span class="md-nav__icon md-icon"></span>
-        </label>
-      
-      <a href="./" class="md-nav__link md-nav__link--active">
+    <li class="md-nav__item">
+      <a href="../modul-15-sql/" class="md-nav__link">
         
   
   
@@ -936,192 +907,6 @@
   
 
       </a>
-      
-        
-
-<nav class="md-nav md-nav--secondary" aria-label="Inhaltsverzeichnis">
-  
-  
-  
-    
-  
-  
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      Inhaltsverzeichnis
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#lernziele" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Lernziele
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#hintergrund-datenbanken-in-der-cloud" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Hintergrund: Datenbanken in der Cloud
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#sql-server-und-datenbank-erstellen" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        SQL Server und Datenbank erstellen
-      
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="SQL Server und Datenbank erstellen">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#schritt-1-neue-resource-group" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Schritt 1: Neue Resource Group
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#schritt-2-azure-sql-datenbank-erstellen" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Schritt 2: Azure SQL Datenbank erstellen
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#schritt-3-networking" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Schritt 3: Networking
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#schritt-4-review-create" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Schritt 4: Review + Create
-      
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#erste-abfragen-im-portal" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Erste Abfragen im Portal
-      
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="Erste Abfragen im Portal">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#query-editor-offnen" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Query Editor öffnen
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#tabelle-erstellen-und-befullen" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Tabelle erstellen und befüllen
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#weitere-abfragen" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Weitere Abfragen
-      
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#datenbank-uber-python-abfragen" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Datenbank über Python abfragen
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#automatische-backups-und-point-in-time-restore" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Automatische Backups und Point-in-Time-Restore
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#challenge" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Challenge
-      
-    </span>
-  </a>
-  
-</li>
-      
-    </ul>
-  
-</nav>
-      
     </li>
   
 
@@ -1472,18 +1257,20 @@
       
   
   
+    
   
   
+  
     
     
     
     
     
-    <li class="md-nav__item md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_7" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_7" checked>
         
           
           <label class="md-nav__link" for="__nav_7" id="__nav_7_label" tabindex="0">
@@ -1504,7 +1291,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_7_label" aria-expanded="false">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_7_label" aria-expanded="true">
           <label class="md-nav__title" for="__nav_7">
             <span class="md-nav__icon md-icon"></span>
             
@@ -1575,10 +1362,37 @@
                 
   
   
+    
   
   
-    <li class="md-nav__item">
-      <a href="../modul-28-aci/" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Modul 28 – Azure Container Instances
+  
+
+    
+  </span>
+  
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
         
   
   
@@ -1594,6 +1408,181 @@
   
 
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Inhaltsverzeichnis">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Inhaltsverzeichnis
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#lernziele" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Lernziele
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#hintergrund-container-ohne-server" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Hintergrund: Container ohne Server
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#container-direkt-starten-schnellster-weg" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Container direkt starten (schnellster Weg)
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Container direkt starten (schnellster Weg)">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#aci-aus-acr-image-starten" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        ACI aus ACR-Image starten
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#status-und-url-abrufen" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Status und URL abrufen
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#container-im-portal-verwalten" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Container im Portal verwalten
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Container im Portal verwalten">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#logs-anzeigen" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Logs anzeigen
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#logs-live-verfolgen" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Logs live verfolgen
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#container-neu-starten-und-stoppen" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Container neu starten und stoppen
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#umgebungsvariablen-ubergeben" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Umgebungsvariablen übergeben
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#kosten-verstehen" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Kosten verstehen
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#container-group-mehrere-container-zusammen" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Container Group: Mehrere Container zusammen
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#challenge" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Challenge
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
     </li>
   
 
@@ -1756,10 +1745,10 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#hintergrund-datenbanken-in-der-cloud" class="md-nav__link">
+  <a href="#hintergrund-container-ohne-server" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Hintergrund: Datenbanken in der Cloud
+        Hintergrund: Container ohne Server
       
     </span>
   </a>
@@ -1767,22 +1756,22 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#sql-server-und-datenbank-erstellen" class="md-nav__link">
+  <a href="#container-direkt-starten-schnellster-weg" class="md-nav__link">
     <span class="md-ellipsis">
       
-        SQL Server und Datenbank erstellen
+        Container direkt starten (schnellster Weg)
       
     </span>
   </a>
   
-    <nav class="md-nav" aria-label="SQL Server und Datenbank erstellen">
+    <nav class="md-nav" aria-label="Container direkt starten (schnellster Weg)">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#schritt-1-neue-resource-group" class="md-nav__link">
+  <a href="#aci-aus-acr-image-starten" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Schritt 1: Neue Resource Group
+        ACI aus ACR-Image starten
       
     </span>
   </a>
@@ -1790,32 +1779,10 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#schritt-2-azure-sql-datenbank-erstellen" class="md-nav__link">
+  <a href="#status-und-url-abrufen" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Schritt 2: Azure SQL Datenbank erstellen
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#schritt-3-networking" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Schritt 3: Networking
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#schritt-4-review-create" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Schritt 4: Review + Create
+        Status und URL abrufen
       
     </span>
   </a>
@@ -1828,22 +1795,22 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#erste-abfragen-im-portal" class="md-nav__link">
+  <a href="#container-im-portal-verwalten" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Erste Abfragen im Portal
+        Container im Portal verwalten
       
     </span>
   </a>
   
-    <nav class="md-nav" aria-label="Erste Abfragen im Portal">
+    <nav class="md-nav" aria-label="Container im Portal verwalten">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#query-editor-offnen" class="md-nav__link">
+  <a href="#logs-anzeigen" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Query Editor öffnen
+        Logs anzeigen
       
     </span>
   </a>
@@ -1851,21 +1818,10 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#tabelle-erstellen-und-befullen" class="md-nav__link">
+  <a href="#logs-live-verfolgen" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Tabelle erstellen und befüllen
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#weitere-abfragen" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Weitere Abfragen
+        Logs live verfolgen
       
     </span>
   </a>
@@ -1878,10 +1834,10 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#datenbank-uber-python-abfragen" class="md-nav__link">
+  <a href="#container-neu-starten-und-stoppen" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Datenbank über Python abfragen
+        Container neu starten und stoppen
       
     </span>
   </a>
@@ -1889,10 +1845,32 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#automatische-backups-und-point-in-time-restore" class="md-nav__link">
+  <a href="#umgebungsvariablen-ubergeben" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Automatische Backups und Point-in-Time-Restore
+        Umgebungsvariablen übergeben
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#kosten-verstehen" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Kosten verstehen
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#container-group-mehrere-container-zusammen" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Container Group: Mehrere Container zusammen
       
     </span>
   </a>
@@ -1930,346 +1908,221 @@
   
 
 
-<h1 id="modul-15-azure-sql-database-managed-datenbank-in-der-cloud">Modul 15 – Azure SQL Database: Managed Datenbank in der Cloud</h1>
+<h1 id="modul-28-azure-container-instances-container-ohne-kubernetes">Modul 28 – Azure Container Instances: Container ohne Kubernetes</h1>
 <h2 id="lernziele">Lernziele</h2>
 <p>Nach diesem Modul kannst du:</p>
 <ul>
-<li>Eine Azure SQL Database (Managed Service) erstellen und konfigurieren</li>
-<li>Den Unterschied zwischen Azure SQL, SQL Managed Instance und SQL Server auf VM erklären</li>
-<li>Die Datenbank über das Azure Portal und die Query-Editor-Oberfläche abfragen</li>
-<li>Verbindungsstrings für Python-Anwendungen nutzen</li>
-<li>Firewall-Regeln für den Datenbankzugriff konfigurieren</li>
+<li>Azure Container Instances (ACI) als einfachsten Weg zum Container-Deployment in Azure beschreiben</li>
+<li>Einen Container aus der ACR direkt in ACI starten</li>
+<li>Logs eines laufenden Containers in ACI lesen</li>
+<li>ACI mit Container Apps und AKS vergleichen und sinnvolle Einsatzbereiche nennen</li>
+<li>Kosten von ACI (Abrechnung per Sekunde) erklären</li>
 </ul>
 <hr />
-<h2 id="hintergrund-datenbanken-in-der-cloud">Hintergrund: Datenbanken in der Cloud</h2>
-<p><strong>On-Prem-Vergleich:</strong> Ein SQL-Server on-premises bedeutet: Lizenz kaufen oder verlängern, Windows Server installieren, SQL Server installieren, Patching, Backups konfigurieren, Monitoring einrichten, Storage planen. Azure SQL Database übernimmt das alles – du bekommst eine Datenbank, die sofort fertig ist.</p>
-<p><strong>Azure SQL: Drei Deployment-Optionen im Vergleich</strong></p>
+<h2 id="hintergrund-container-ohne-server">Hintergrund: Container ohne Server</h2>
+<p><strong>On-Prem-Vergleich:</strong> Wenn du on-prem einen Docker-Container betreiben willst, brauchst du einen Host (Server oder VM) mit Docker installiert. Du kümmerst dich um den Host, Updates, Networking.</p>
+<p><strong>Azure Container Instances</strong> nimmt dir das ab: Du sagst "starte diesen Container" – Azure wählt selbst einen Host, startet den Container und du zahlst nur für die tatsächliche Laufzeit (CPU-Sekunden + RAM-GB-Sekunden). Kein Cluster, kein Kubernetes, keine VM-Verwaltung.</p>
+<p><strong>Wann ist ACI geeignet?</strong></p>
 <table>
 <thead>
 <tr>
-<th>Option</th>
-<th>Kontrolle</th>
-<th>Wartung</th>
-<th>Kosten</th>
-<th>Empfehlung</th>
+<th>Szenario</th>
+<th>ACI geeignet?</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td><strong>SQL Database</strong> (PaaS)</td>
-<td>Nur Daten und Schema</td>
-<td>Microsoft</td>
-<td>Ab 0 € (Free)</td>
-<td>✅ Neuanfänger, einfache Apps</td>
+<td>Einmalige Batch-Jobs</td>
+<td>✅ Ja – läuft, fertig, zahlt auf</td>
 </tr>
 <tr>
-<td><strong>SQL Managed Instance</strong></td>
-<td>+ SQL Agent, CLR</td>
-<td>Microsoft</td>
-<td>~300 €/Monat</td>
-<td>Migrations-Szenario on-prem→Azure</td>
+<td>CI/CD-Build-Agent</td>
+<td>✅ Ja</td>
 </tr>
 <tr>
-<td><strong>SQL Server auf VM</strong></td>
-<td>Volles OS + SQL</td>
-<td>Du</td>
-<td>VM-Kosten + Lizenz</td>
-<td>Maximale Kontrolle nötig</td>
+<td>Einfache Web-App für Tests</td>
+<td>✅ Ja</td>
+</tr>
+<tr>
+<td>Produktions-Web-App mit hoher Last</td>
+<td>❌ Nein → Container Apps</td>
+</tr>
+<tr>
+<td>Microservices mit Skalierung</td>
+<td>❌ Nein → Container Apps / AKS</td>
+</tr>
+<tr>
+<td>Stateful Workloads</td>
+<td>❌ Nein → AKS</td>
 </tr>
 </tbody>
 </table>
-<p>Für dieses Training: <strong>SQL Database</strong> – kostenloser Tarif, kein Setup, direkt nutzbar.</p>
-<div class="admonition info">
-<p class="admonition-title">Free Tier für Azure SQL</p>
-<p>Azure SQL Database hat seit 2023 einen echten <strong>Free Tier</strong>: 32 GB Speicher, 100.000 vCore-Sekunden/Monat – ausreichend für Lernprojekte. <strong>Nur eine Free-Database pro Subscription.</strong></p>
-</div>
 <hr />
-<h2 id="sql-server-und-datenbank-erstellen">SQL Server und Datenbank erstellen</h2>
-<p>In Azure SQL ist ein <strong>Server</strong> der logische Container für eine oder mehrere <strong>Databases</strong>. Der Server definiert Region, Admin-Login und Firewall-Regeln.</p>
-<h3 id="schritt-1-neue-resource-group">Schritt 1: Neue Resource Group</h3>
-<ol>
-<li>Navigiere zu <strong>Resource groups</strong> → <strong>+ Create</strong></li>
-</ol>
-<table>
-<thead>
-<tr>
-<th>Feld</th>
-<th>Wert</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>Resource group</td>
-<td><code>rg-datenbanken</code></td>
-</tr>
-<tr>
-<td>Region</td>
-<td><code>West Europe</code></td>
-</tr>
-</tbody>
-</table>
-<h3 id="schritt-2-azure-sql-datenbank-erstellen">Schritt 2: Azure SQL Datenbank erstellen</h3>
-<ol>
-<li>Suche im Portal nach <strong><code>SQL databases</code></strong> → <strong>+ Create</strong></li>
-</ol>
-<p><strong>Basics:</strong></p>
-<table>
-<thead>
-<tr>
-<th>Feld</th>
-<th>Wert</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>Subscription</td>
-<td>deine Subscription</td>
-</tr>
-<tr>
-<td>Resource group</td>
-<td><code>rg-datenbanken</code></td>
-</tr>
-<tr>
-<td>Database name</td>
-<td><code>db-aztraining</code></td>
-</tr>
-<tr>
-<td>Server</td>
-<td><strong>Create new</strong></td>
-</tr>
-</tbody>
-</table>
-<p><strong>Neuen Server erstellen</strong> (erscheint als Seitenbereich):</p>
-<table>
-<thead>
-<tr>
-<th>Feld</th>
-<th>Wert</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>Server name</td>
-<td><code>sql-aztraining-XXXX</code> (weltweit eindeutig)</td>
-</tr>
-<tr>
-<td>Location</td>
-<td><code>West Europe</code></td>
-</tr>
-<tr>
-<td>Authentication method</td>
-<td><code>Use SQL authentication</code></td>
-</tr>
-<tr>
-<td>Server admin login</td>
-<td><code>sqladmin</code></td>
-</tr>
-<tr>
-<td>Password</td>
-<td>Sicheres Passwort (notiere es!)</td>
-</tr>
-</tbody>
-</table>
-<p>Klicke <strong>OK</strong>.</p>
-<p>Zurück im Hauptformular:</p>
-<table>
-<thead>
-<tr>
-<th>Feld</th>
-<th>Wert</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>Want to use SQL elastic pool?</td>
-<td><code>No</code></td>
-</tr>
-<tr>
-<td>Workload environment</td>
-<td><code>Development</code></td>
-</tr>
-<tr>
-<td>Compute + storage</td>
-<td>Klicke <strong>Configure database</strong></td>
-</tr>
-</tbody>
-</table>
-<p><strong>Compute + storage konfigurieren:</strong></p>
-<ol>
-<li>Wähle <strong>General Purpose</strong> → scrollen nach unten</li>
-<li>Wähle <strong>Serverless</strong> als Compute tier</li>
-<li>Aktiviere <strong>Free offer</strong> falls verfügbar (erscheint wenn noch keine Free DB in der Subscription)</li>
-<li>Falls kein Free Tier: wähle <strong>Serverless</strong>, 1 vCore minimum → ~3 €/Monat</li>
-</ol>
-<p>Klicke <strong>Apply</strong> → zurück im Hauptformular.</p>
-<div class="admonition info">
-<p class="admonition-title">Serverless vs. Provisioned</p>
-<ul>
-<li><strong>Serverless</strong>: DB pausiert automatisch nach Inaktivität → 0 Kosten wenn nicht genutzt. Erster Aufruf nach Pause: ~30 Sekunden Aufwärmzeit</li>
-<li><strong>Provisioned</strong>: Läuft immer, sofortige Reaktionszeit – für Produktion</li>
-</ul>
-</div>
-<p><strong>Backup redundancy:</strong> <code>Locally-redundant backup storage</code> (günstiger für Test)</p>
-<h3 id="schritt-3-networking">Schritt 3: Networking</h3>
-<p>Wechsle zum Tab <strong>Networking</strong>:</p>
-<table>
-<thead>
-<tr>
-<th>Feld</th>
-<th>Wert</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>Connectivity method</td>
-<td><code>Public endpoint</code></td>
-</tr>
-<tr>
-<td>Allow Azure services...</td>
-<td><code>Yes</code></td>
-</tr>
-<tr>
-<td>Add current client IP</td>
-<td><code>Yes</code></td>
-</tr>
-</tbody>
-</table>
-<div class="admonition warning">
-<p class="admonition-title">Public Endpoint für dieses Training</p>
-<p>Im Produktionsbetrieb würde man Private Endpoints nutzen (Modul 13). Für dieses Training erlauben wir Public Access mit deiner IP.</p>
-</div>
-<h3 id="schritt-4-review-create">Schritt 4: Review + Create</h3>
-<p><strong>Review + create</strong> → <strong>Create</strong> (Deployment dauert ~2–3 Minuten)</p>
-<hr />
-<h2 id="erste-abfragen-im-portal">Erste Abfragen im Portal</h2>
-<h3 id="query-editor-offnen">Query Editor öffnen</h3>
-<ol>
-<li>Gehe zur erstellten Datenbank <code>db-aztraining</code></li>
-<li>Klicke links im Menü auf <strong>Query editor (preview)</strong></li>
-<li>Melde dich an:</li>
-<li>Login: <code>sqladmin</code></li>
-<li>Password: dein Passwort</li>
-</ol>
-<h3 id="tabelle-erstellen-und-befullen">Tabelle erstellen und befüllen</h3>
-<p>Füge ins Abfragefenster ein und klicke <strong>Run</strong>:</p>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="k">CREATE</span><span class="w"> </span><span class="k">TABLE</span><span class="w"> </span><span class="n">mitarbeiter</span><span class="w"> </span><span class="p">(</span>
-<a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a><span class="w">    </span><span class="n">id</span><span class="w">          </span><span class="nb">INT</span><span class="w"> </span><span class="k">IDENTITY</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span><span class="mi">1</span><span class="p">)</span><span class="w"> </span><span class="k">PRIMARY</span><span class="w"> </span><span class="k">KEY</span><span class="p">,</span>
-<a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a><span class="w">    </span><span class="n">name</span><span class="w">        </span><span class="n">NVARCHAR</span><span class="p">(</span><span class="mi">100</span><span class="p">)</span><span class="w">  </span><span class="k">NOT</span><span class="w"> </span><span class="k">NULL</span><span class="p">,</span>
-<a id="__codelineno-0-4" name="__codelineno-0-4" href="#__codelineno-0-4"></a><span class="w">    </span><span class="n">abteilung</span><span class="w">   </span><span class="n">NVARCHAR</span><span class="p">(</span><span class="mi">50</span><span class="p">),</span>
-<a id="__codelineno-0-5" name="__codelineno-0-5" href="#__codelineno-0-5"></a><span class="w">    </span><span class="n">eingestellt</span><span class="w"> </span><span class="nb">DATE</span><span class="w">           </span><span class="k">NOT</span><span class="w"> </span><span class="k">NULL</span><span class="w"> </span><span class="k">DEFAULT</span><span class="w"> </span><span class="n">GETDATE</span><span class="p">()</span>
-<a id="__codelineno-0-6" name="__codelineno-0-6" href="#__codelineno-0-6"></a><span class="p">);</span>
-<a id="__codelineno-0-7" name="__codelineno-0-7" href="#__codelineno-0-7"></a>
-<a id="__codelineno-0-8" name="__codelineno-0-8" href="#__codelineno-0-8"></a><span class="k">INSERT</span><span class="w"> </span><span class="k">INTO</span><span class="w"> </span><span class="n">mitarbeiter</span><span class="w"> </span><span class="p">(</span><span class="n">name</span><span class="p">,</span><span class="w"> </span><span class="n">abteilung</span><span class="p">,</span><span class="w"> </span><span class="n">eingestellt</span><span class="p">)</span><span class="w"> </span><span class="k">VALUES</span>
-<a id="__codelineno-0-9" name="__codelineno-0-9" href="#__codelineno-0-9"></a><span class="w">    </span><span class="p">(</span><span class="s1">&#39;Anna Müller&#39;</span><span class="p">,</span><span class="w">    </span><span class="s1">&#39;IT-Infrastruktur&#39;</span><span class="p">,</span><span class="w"> </span><span class="s1">&#39;2024-03-01&#39;</span><span class="p">),</span>
-<a id="__codelineno-0-10" name="__codelineno-0-10" href="#__codelineno-0-10"></a><span class="w">    </span><span class="p">(</span><span class="s1">&#39;Bernd Schmidt&#39;</span><span class="p">,</span><span class="w">  </span><span class="s1">&#39;Cloud Operations&#39;</span><span class="p">,</span><span class="w"> </span><span class="s1">&#39;2023-11-15&#39;</span><span class="p">),</span>
-<a id="__codelineno-0-11" name="__codelineno-0-11" href="#__codelineno-0-11"></a><span class="w">    </span><span class="p">(</span><span class="s1">&#39;Clara Weber&#39;</span><span class="p">,</span><span class="w">    </span><span class="s1">&#39;IT-Infrastruktur&#39;</span><span class="p">,</span><span class="w"> </span><span class="s1">&#39;2025-01-10&#39;</span><span class="p">),</span>
-<a id="__codelineno-0-12" name="__codelineno-0-12" href="#__codelineno-0-12"></a><span class="w">    </span><span class="p">(</span><span class="s1">&#39;David Hoffmann&#39;</span><span class="p">,</span><span class="w"> </span><span class="s1">&#39;DevOps&#39;</span><span class="p">,</span><span class="w">           </span><span class="s1">&#39;2024-07-22&#39;</span><span class="p">);</span>
-<a id="__codelineno-0-13" name="__codelineno-0-13" href="#__codelineno-0-13"></a>
-<a id="__codelineno-0-14" name="__codelineno-0-14" href="#__codelineno-0-14"></a><span class="k">SELECT</span><span class="w"> </span><span class="o">*</span><span class="w"> </span><span class="k">FROM</span><span class="w"> </span><span class="n">mitarbeiter</span><span class="w"> </span><span class="k">ORDER</span><span class="w"> </span><span class="k">BY</span><span class="w"> </span><span class="n">eingestellt</span><span class="p">;</span>
+<h2 id="container-direkt-starten-schnellster-weg">Container direkt starten (schnellster Weg)</h2>
+<p>Zuerst das Image aus Modul 27 nutzen. Falls <code>$ACR_NAME</code> nicht mehr gesetzt ist:</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="nv">ACR_NAME</span><span class="o">=</span><span class="k">$(</span>az<span class="w"> </span>acr<span class="w"> </span>list<span class="w"> </span>--resource-group<span class="w"> </span>rg-container<span class="w"> </span>--query<span class="w"> </span><span class="s2">&quot;[0].name&quot;</span><span class="w"> </span>-o<span class="w"> </span>tsv<span class="k">)</span>
+<a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a><span class="nb">echo</span><span class="w"> </span><span class="s2">&quot;ACR: </span><span class="nv">$ACR_NAME</span><span class="s2">&quot;</span>
 </code></pre></div>
-<p>Du siehst die Ergebnistabelle direkt im Browser.</p>
-<h3 id="weitere-abfragen">Weitere Abfragen</h3>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a><span class="c1">-- Mitarbeiter pro Abteilung zählen</span>
-<a id="__codelineno-1-2" name="__codelineno-1-2" href="#__codelineno-1-2"></a><span class="k">SELECT</span><span class="w"> </span><span class="n">abteilung</span><span class="p">,</span><span class="w"> </span><span class="k">COUNT</span><span class="p">(</span><span class="o">*</span><span class="p">)</span><span class="w"> </span><span class="k">AS</span><span class="w"> </span><span class="n">anzahl</span>
-<a id="__codelineno-1-3" name="__codelineno-1-3" href="#__codelineno-1-3"></a><span class="k">FROM</span><span class="w"> </span><span class="n">mitarbeiter</span>
-<a id="__codelineno-1-4" name="__codelineno-1-4" href="#__codelineno-1-4"></a><span class="k">GROUP</span><span class="w"> </span><span class="k">BY</span><span class="w"> </span><span class="n">abteilung</span>
-<a id="__codelineno-1-5" name="__codelineno-1-5" href="#__codelineno-1-5"></a><span class="k">ORDER</span><span class="w"> </span><span class="k">BY</span><span class="w"> </span><span class="n">anzahl</span><span class="w"> </span><span class="k">DESC</span><span class="p">;</span>
+<h3 id="aci-aus-acr-image-starten">ACI aus ACR-Image starten</h3>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a><span class="c1"># ACR-Admin aktivieren (für ACI-Authentifizierung)</span>
+<a id="__codelineno-1-2" name="__codelineno-1-2" href="#__codelineno-1-2"></a>az<span class="w"> </span>acr<span class="w"> </span>update<span class="w"> </span>--name<span class="w"> </span><span class="nv">$ACR_NAME</span><span class="w"> </span>--admin-enabled<span class="w"> </span><span class="nb">true</span>
+<a id="__codelineno-1-3" name="__codelineno-1-3" href="#__codelineno-1-3"></a>
+<a id="__codelineno-1-4" name="__codelineno-1-4" href="#__codelineno-1-4"></a><span class="c1"># Admin-Passwort holen</span>
+<a id="__codelineno-1-5" name="__codelineno-1-5" href="#__codelineno-1-5"></a><span class="nv">ACR_PASS</span><span class="o">=</span><span class="k">$(</span>az<span class="w"> </span>acr<span class="w"> </span>credential<span class="w"> </span>show<span class="w"> </span>--name<span class="w"> </span><span class="nv">$ACR_NAME</span><span class="w"> </span>--query<span class="w"> </span><span class="s2">&quot;passwords[0].value&quot;</span><span class="w"> </span>-o<span class="w"> </span>tsv<span class="k">)</span>
 <a id="__codelineno-1-6" name="__codelineno-1-6" href="#__codelineno-1-6"></a>
-<a id="__codelineno-1-7" name="__codelineno-1-7" href="#__codelineno-1-7"></a><span class="c1">-- Nur IT-Infrastruktur</span>
-<a id="__codelineno-1-8" name="__codelineno-1-8" href="#__codelineno-1-8"></a><span class="k">SELECT</span><span class="w"> </span><span class="n">name</span><span class="p">,</span><span class="w"> </span><span class="n">eingestellt</span>
-<a id="__codelineno-1-9" name="__codelineno-1-9" href="#__codelineno-1-9"></a><span class="k">FROM</span><span class="w"> </span><span class="n">mitarbeiter</span>
-<a id="__codelineno-1-10" name="__codelineno-1-10" href="#__codelineno-1-10"></a><span class="k">WHERE</span><span class="w"> </span><span class="n">abteilung</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s1">&#39;IT-Infrastruktur&#39;</span>
-<a id="__codelineno-1-11" name="__codelineno-1-11" href="#__codelineno-1-11"></a><span class="k">ORDER</span><span class="w"> </span><span class="k">BY</span><span class="w"> </span><span class="n">eingestellt</span><span class="p">;</span>
+<a id="__codelineno-1-7" name="__codelineno-1-7" href="#__codelineno-1-7"></a><span class="c1"># Container starten</span>
+<a id="__codelineno-1-8" name="__codelineno-1-8" href="#__codelineno-1-8"></a>az<span class="w"> </span>container<span class="w"> </span>create<span class="w"> </span><span class="se">\</span>
+<a id="__codelineno-1-9" name="__codelineno-1-9" href="#__codelineno-1-9"></a><span class="w">  </span>--resource-group<span class="w"> </span>rg-container<span class="w"> </span><span class="se">\</span>
+<a id="__codelineno-1-10" name="__codelineno-1-10" href="#__codelineno-1-10"></a><span class="w">  </span>--name<span class="w"> </span>mein-container<span class="w"> </span><span class="se">\</span>
+<a id="__codelineno-1-11" name="__codelineno-1-11" href="#__codelineno-1-11"></a><span class="w">  </span>--image<span class="w"> </span><span class="nv">$ACR_NAME</span>.azurecr.io/mein-webserver:1.0<span class="w"> </span><span class="se">\</span>
+<a id="__codelineno-1-12" name="__codelineno-1-12" href="#__codelineno-1-12"></a><span class="w">  </span>--registry-login-server<span class="w"> </span><span class="nv">$ACR_NAME</span>.azurecr.io<span class="w"> </span><span class="se">\</span>
+<a id="__codelineno-1-13" name="__codelineno-1-13" href="#__codelineno-1-13"></a><span class="w">  </span>--registry-username<span class="w"> </span><span class="nv">$ACR_NAME</span><span class="w"> </span><span class="se">\</span>
+<a id="__codelineno-1-14" name="__codelineno-1-14" href="#__codelineno-1-14"></a><span class="w">  </span>--registry-password<span class="w"> </span><span class="nv">$ACR_PASS</span><span class="w"> </span><span class="se">\</span>
+<a id="__codelineno-1-15" name="__codelineno-1-15" href="#__codelineno-1-15"></a><span class="w">  </span>--ports<span class="w"> </span><span class="m">8080</span><span class="w"> </span><span class="se">\</span>
+<a id="__codelineno-1-16" name="__codelineno-1-16" href="#__codelineno-1-16"></a><span class="w">  </span>--dns-name-label<span class="w"> </span>meincontainer<span class="nv">$RANDOM</span><span class="w"> </span><span class="se">\</span>
+<a id="__codelineno-1-17" name="__codelineno-1-17" href="#__codelineno-1-17"></a><span class="w">  </span>--os-type<span class="w"> </span>Linux<span class="w"> </span><span class="se">\</span>
+<a id="__codelineno-1-18" name="__codelineno-1-18" href="#__codelineno-1-18"></a><span class="w">  </span>--cpu<span class="w"> </span><span class="m">1</span><span class="w"> </span><span class="se">\</span>
+<a id="__codelineno-1-19" name="__codelineno-1-19" href="#__codelineno-1-19"></a><span class="w">  </span>--memory<span class="w"> </span><span class="m">1</span>.5
 </code></pre></div>
+<div class="admonition info">
+<p class="admonition-title">DNS-Name = öffentliche URL</p>
+<p>Der Parameter <code>--dns-name-label</code> erstellt automatisch eine öffentliche URL: <code>{label}.westeurope.azurecontainer.io</code>. Der Name muss in der Region eindeutig sein – deshalb <code>$RANDOM</code> anhängen.</p>
+</div>
+<h3 id="status-und-url-abrufen">Status und URL abrufen</h3>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a>az<span class="w"> </span>container<span class="w"> </span>show<span class="w"> </span><span class="se">\</span>
+<a id="__codelineno-2-2" name="__codelineno-2-2" href="#__codelineno-2-2"></a><span class="w">  </span>--resource-group<span class="w"> </span>rg-container<span class="w"> </span><span class="se">\</span>
+<a id="__codelineno-2-3" name="__codelineno-2-3" href="#__codelineno-2-3"></a><span class="w">  </span>--name<span class="w"> </span>mein-container<span class="w"> </span><span class="se">\</span>
+<a id="__codelineno-2-4" name="__codelineno-2-4" href="#__codelineno-2-4"></a><span class="w">  </span>--query<span class="w"> </span><span class="s2">&quot;{Status:instanceView.state, FQDN:ipAddress.fqdn}&quot;</span><span class="w"> </span><span class="se">\</span>
+<a id="__codelineno-2-5" name="__codelineno-2-5" href="#__codelineno-2-5"></a><span class="w">  </span>--output<span class="w"> </span>table
+</code></pre></div>
+<p>Sobald <code>Status: Running</code> → öffne <code>http://{FQDN}:8080</code> im Browser.</p>
+<hr />
+<h2 id="container-im-portal-verwalten">Container im Portal verwalten</h2>
+<ol>
+<li>Suche nach <strong>Container instances</strong> im Azure Portal</li>
+<li>Klicke auf <code>mein-container</code></li>
+</ol>
+<p>Hier siehst du:
+- <strong>Overview</strong>: Status, IP-Adresse, FQDN, CPU/RAM-Verbrauch
+- <strong>Containers</strong>: Liste der Container in dieser Instanz + <strong>Connect</strong> (Shell-Zugang)
+- <strong>Logs</strong>: Ausgaben des laufenden Containers
+- <strong>Events</strong>: Start, Pull, Fehler</p>
+<h3 id="logs-anzeigen">Logs anzeigen</h3>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a>az<span class="w"> </span>container<span class="w"> </span>logs<span class="w"> </span><span class="se">\</span>
+<a id="__codelineno-3-2" name="__codelineno-3-2" href="#__codelineno-3-2"></a><span class="w">  </span>--resource-group<span class="w"> </span>rg-container<span class="w"> </span><span class="se">\</span>
+<a id="__codelineno-3-3" name="__codelineno-3-3" href="#__codelineno-3-3"></a><span class="w">  </span>--name<span class="w"> </span>mein-container
+</code></pre></div>
+<h3 id="logs-live-verfolgen">Logs live verfolgen</h3>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-4-1" name="__codelineno-4-1" href="#__codelineno-4-1"></a>az<span class="w"> </span>container<span class="w"> </span>attach<span class="w"> </span><span class="se">\</span>
+<a id="__codelineno-4-2" name="__codelineno-4-2" href="#__codelineno-4-2"></a><span class="w">  </span>--resource-group<span class="w"> </span>rg-container<span class="w"> </span><span class="se">\</span>
+<a id="__codelineno-4-3" name="__codelineno-4-3" href="#__codelineno-4-3"></a><span class="w">  </span>--name<span class="w"> </span>mein-container
+</code></pre></div>
+<p>Mit <code>Ctrl+C</code> beenden (der Container läuft weiter).</p>
+<hr />
+<h2 id="container-neu-starten-und-stoppen">Container neu starten und stoppen</h2>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-5-1" name="__codelineno-5-1" href="#__codelineno-5-1"></a><span class="c1"># Container stoppen (Kosten stoppen)</span>
+<a id="__codelineno-5-2" name="__codelineno-5-2" href="#__codelineno-5-2"></a>az<span class="w"> </span>container<span class="w"> </span>stop<span class="w"> </span><span class="se">\</span>
+<a id="__codelineno-5-3" name="__codelineno-5-3" href="#__codelineno-5-3"></a><span class="w">  </span>--resource-group<span class="w"> </span>rg-container<span class="w"> </span><span class="se">\</span>
+<a id="__codelineno-5-4" name="__codelineno-5-4" href="#__codelineno-5-4"></a><span class="w">  </span>--name<span class="w"> </span>mein-container
+<a id="__codelineno-5-5" name="__codelineno-5-5" href="#__codelineno-5-5"></a>
+<a id="__codelineno-5-6" name="__codelineno-5-6" href="#__codelineno-5-6"></a><span class="c1"># Container wieder starten</span>
+<a id="__codelineno-5-7" name="__codelineno-5-7" href="#__codelineno-5-7"></a>az<span class="w"> </span>container<span class="w"> </span>start<span class="w"> </span><span class="se">\</span>
+<a id="__codelineno-5-8" name="__codelineno-5-8" href="#__codelineno-5-8"></a><span class="w">  </span>--resource-group<span class="w"> </span>rg-container<span class="w"> </span><span class="se">\</span>
+<a id="__codelineno-5-9" name="__codelineno-5-9" href="#__codelineno-5-9"></a><span class="w">  </span>--name<span class="w"> </span>mein-container
+<a id="__codelineno-5-10" name="__codelineno-5-10" href="#__codelineno-5-10"></a>
+<a id="__codelineno-5-11" name="__codelineno-5-11" href="#__codelineno-5-11"></a><span class="c1"># Container löschen</span>
+<a id="__codelineno-5-12" name="__codelineno-5-12" href="#__codelineno-5-12"></a>az<span class="w"> </span>container<span class="w"> </span>delete<span class="w"> </span><span class="se">\</span>
+<a id="__codelineno-5-13" name="__codelineno-5-13" href="#__codelineno-5-13"></a><span class="w">  </span>--resource-group<span class="w"> </span>rg-container<span class="w"> </span><span class="se">\</span>
+<a id="__codelineno-5-14" name="__codelineno-5-14" href="#__codelineno-5-14"></a><span class="w">  </span>--name<span class="w"> </span>mein-container<span class="w"> </span><span class="se">\</span>
+<a id="__codelineno-5-15" name="__codelineno-5-15" href="#__codelineno-5-15"></a><span class="w">  </span>--yes
+</code></pre></div>
+<hr />
+<h2 id="umgebungsvariablen-ubergeben">Umgebungsvariablen übergeben</h2>
+<p>Container bekommen ihre Konfiguration über Umgebungsvariablen:</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-6-1" name="__codelineno-6-1" href="#__codelineno-6-1"></a>az<span class="w"> </span>container<span class="w"> </span>create<span class="w"> </span><span class="se">\</span>
+<a id="__codelineno-6-2" name="__codelineno-6-2" href="#__codelineno-6-2"></a><span class="w">  </span>--resource-group<span class="w"> </span>rg-container<span class="w"> </span><span class="se">\</span>
+<a id="__codelineno-6-3" name="__codelineno-6-3" href="#__codelineno-6-3"></a><span class="w">  </span>--name<span class="w"> </span>konfig-container<span class="w"> </span><span class="se">\</span>
+<a id="__codelineno-6-4" name="__codelineno-6-4" href="#__codelineno-6-4"></a><span class="w">  </span>--image<span class="w"> </span>mcr.microsoft.com/azuredocs/aci-helloworld<span class="w"> </span><span class="se">\</span>
+<a id="__codelineno-6-5" name="__codelineno-6-5" href="#__codelineno-6-5"></a><span class="w">  </span>--ports<span class="w"> </span><span class="m">80</span><span class="w"> </span><span class="se">\</span>
+<a id="__codelineno-6-6" name="__codelineno-6-6" href="#__codelineno-6-6"></a><span class="w">  </span>--dns-name-label<span class="w"> </span>konfig<span class="nv">$RANDOM</span><span class="w"> </span><span class="se">\</span>
+<a id="__codelineno-6-7" name="__codelineno-6-7" href="#__codelineno-6-7"></a><span class="w">  </span>--environment-variables<span class="w"> </span><span class="se">\</span>
+<a id="__codelineno-6-8" name="__codelineno-6-8" href="#__codelineno-6-8"></a><span class="w">    </span><span class="nv">APP_ENV</span><span class="o">=</span>production<span class="w"> </span><span class="se">\</span>
+<a id="__codelineno-6-9" name="__codelineno-6-9" href="#__codelineno-6-9"></a><span class="w">    </span><span class="nv">APP_VERSION</span><span class="o">=</span><span class="m">1</span>.2<span class="w"> </span><span class="se">\</span>
+<a id="__codelineno-6-10" name="__codelineno-6-10" href="#__codelineno-6-10"></a><span class="w">  </span>--secure-environment-variables<span class="w"> </span><span class="se">\</span>
+<a id="__codelineno-6-11" name="__codelineno-6-11" href="#__codelineno-6-11"></a><span class="w">    </span><span class="nv">DB_PASSWORD</span><span class="o">=</span>geheim123
+</code></pre></div>
+<div class="admonition warning">
+<p class="admonition-title">Sichere Umgebungsvariablen</p>
+<p><code>--secure-environment-variables</code> verschlüsselt sensible Werte – sie erscheinen nicht in Logs oder Portal. Für echte Secrets: Managed Identity + Key Vault (Modul 22) nutzen statt Passwörter als Env-Variablen.</p>
+</div>
+<hr />
+<h2 id="kosten-verstehen">Kosten verstehen</h2>
+<p>ACI rechnet pro Sekunde ab:</p>
+<table>
+<thead>
+<tr>
+<th>Ressource</th>
+<th>Preis ca.</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1 vCPU pro Sekunde</td>
+<td>0,0000125 €</td>
+</tr>
+<tr>
+<td>1 GB RAM pro Sekunde</td>
+<td>0,0000014 €</td>
+</tr>
+</tbody>
+</table>
+<p>Ein Container mit 1 vCPU + 1,5 GB RAM der <strong>1 Stunde</strong> läuft kostet ca. <strong>0,058 €</strong> – also unter 6 Cent.</p>
 <div class="admonition success">
-<p class="admonition-title">Managed SQL Datenbank läuft!</p>
-<p>Kein SQL Server installiert, kein Betriebssystem konfiguriert. Du schreibst SQL – Azure kümmert sich um den Rest.</p>
+<p class="admonition-title">Ideal für Batch-Jobs</p>
+<p>Ein nächtlicher Batch-Job der 5 Minuten läuft: ca. 0,005 € – also 0,5 Cent. Perfekt für Aufgaben die nicht dauerhaft laufen müssen.</p>
 </div>
 <hr />
-<h2 id="datenbank-uber-python-abfragen">Datenbank über Python abfragen</h2>
-<p>Öffne die Cloud Shell im Portal und installiere das nötige Paket:</p>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a>pip<span class="w"> </span>install<span class="w"> </span>pyodbc<span class="w"> </span>--quiet
+<h2 id="container-group-mehrere-container-zusammen">Container Group: Mehrere Container zusammen</h2>
+<p>ACI unterstützt <strong>Container Groups</strong> – mehrere Container auf einer Instanz (ähnlich wie ein Kubernetes-Pod). Beispiel: App-Container + Logging-Sidecar:</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-7-1" name="__codelineno-7-1" href="#__codelineno-7-1"></a><span class="c1"># Container Group aus YAML-Datei deployen</span>
+<a id="__codelineno-7-2" name="__codelineno-7-2" href="#__codelineno-7-2"></a>az<span class="w"> </span>container<span class="w"> </span>create<span class="w"> </span><span class="se">\</span>
+<a id="__codelineno-7-3" name="__codelineno-7-3" href="#__codelineno-7-3"></a><span class="w">  </span>--resource-group<span class="w"> </span>rg-container<span class="w"> </span><span class="se">\</span>
+<a id="__codelineno-7-4" name="__codelineno-7-4" href="#__codelineno-7-4"></a><span class="w">  </span>--file<span class="w"> </span>container-group.yaml
 </code></pre></div>
-<p>Erstelle eine neue Datei:</p>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a>code<span class="w"> </span>sql_demo.py
-</code></pre></div>
-<p>Füge folgenden Code ein und ersetze die Platzhalter:</p>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-4-1" name="__codelineno-4-1" href="#__codelineno-4-1"></a><span class="kn">import</span><span class="w"> </span><span class="nn">pyodbc</span>
-<a id="__codelineno-4-2" name="__codelineno-4-2" href="#__codelineno-4-2"></a>
-<a id="__codelineno-4-3" name="__codelineno-4-3" href="#__codelineno-4-3"></a><span class="c1"># Verbindungsstring – Werte aus dem Portal kopieren</span>
-<a id="__codelineno-4-4" name="__codelineno-4-4" href="#__codelineno-4-4"></a><span class="n">SERVER</span>   <span class="o">=</span> <span class="s2">&quot;sql-aztraining-XXXX.database.windows.net&quot;</span>
-<a id="__codelineno-4-5" name="__codelineno-4-5" href="#__codelineno-4-5"></a><span class="n">DATABASE</span> <span class="o">=</span> <span class="s2">&quot;db-aztraining&quot;</span>
-<a id="__codelineno-4-6" name="__codelineno-4-6" href="#__codelineno-4-6"></a><span class="n">USERNAME</span> <span class="o">=</span> <span class="s2">&quot;sqladmin&quot;</span>
-<a id="__codelineno-4-7" name="__codelineno-4-7" href="#__codelineno-4-7"></a><span class="n">PASSWORD</span> <span class="o">=</span> <span class="s2">&quot;DEIN_PASSWORT&quot;</span>   <span class="c1"># In Produktion: aus Key Vault (Modul 12)!</span>
-<a id="__codelineno-4-8" name="__codelineno-4-8" href="#__codelineno-4-8"></a>
-<a id="__codelineno-4-9" name="__codelineno-4-9" href="#__codelineno-4-9"></a><span class="n">connection_string</span> <span class="o">=</span> <span class="p">(</span>
-<a id="__codelineno-4-10" name="__codelineno-4-10" href="#__codelineno-4-10"></a>    <span class="sa">f</span><span class="s2">&quot;DRIVER=</span><span class="se">{{</span><span class="s2">ODBC Driver 18 for SQL Server</span><span class="se">}}</span><span class="s2">;&quot;</span>
-<a id="__codelineno-4-11" name="__codelineno-4-11" href="#__codelineno-4-11"></a>    <span class="sa">f</span><span class="s2">&quot;SERVER=</span><span class="si">{</span><span class="n">SERVER</span><span class="si">}</span><span class="s2">;&quot;</span>
-<a id="__codelineno-4-12" name="__codelineno-4-12" href="#__codelineno-4-12"></a>    <span class="sa">f</span><span class="s2">&quot;DATABASE=</span><span class="si">{</span><span class="n">DATABASE</span><span class="si">}</span><span class="s2">;&quot;</span>
-<a id="__codelineno-4-13" name="__codelineno-4-13" href="#__codelineno-4-13"></a>    <span class="sa">f</span><span class="s2">&quot;UID=</span><span class="si">{</span><span class="n">USERNAME</span><span class="si">}</span><span class="s2">;&quot;</span>
-<a id="__codelineno-4-14" name="__codelineno-4-14" href="#__codelineno-4-14"></a>    <span class="sa">f</span><span class="s2">&quot;PWD=</span><span class="si">{</span><span class="n">PASSWORD</span><span class="si">}</span><span class="s2">;&quot;</span>
-<a id="__codelineno-4-15" name="__codelineno-4-15" href="#__codelineno-4-15"></a>    <span class="s2">&quot;Encrypt=yes;TrustServerCertificate=no;&quot;</span>
-<a id="__codelineno-4-16" name="__codelineno-4-16" href="#__codelineno-4-16"></a><span class="p">)</span>
-<a id="__codelineno-4-17" name="__codelineno-4-17" href="#__codelineno-4-17"></a>
-<a id="__codelineno-4-18" name="__codelineno-4-18" href="#__codelineno-4-18"></a><span class="n">conn</span>   <span class="o">=</span> <span class="n">pyodbc</span><span class="o">.</span><span class="n">connect</span><span class="p">(</span><span class="n">connection_string</span><span class="p">)</span>
-<a id="__codelineno-4-19" name="__codelineno-4-19" href="#__codelineno-4-19"></a><span class="n">cursor</span> <span class="o">=</span> <span class="n">conn</span><span class="o">.</span><span class="n">cursor</span><span class="p">()</span>
-<a id="__codelineno-4-20" name="__codelineno-4-20" href="#__codelineno-4-20"></a>
-<a id="__codelineno-4-21" name="__codelineno-4-21" href="#__codelineno-4-21"></a><span class="c1"># Alle Mitarbeiter abfragen</span>
-<a id="__codelineno-4-22" name="__codelineno-4-22" href="#__codelineno-4-22"></a><span class="n">cursor</span><span class="o">.</span><span class="n">execute</span><span class="p">(</span><span class="s2">&quot;SELECT id, name, abteilung, eingestellt FROM mitarbeiter ORDER BY name&quot;</span><span class="p">)</span>
-<a id="__codelineno-4-23" name="__codelineno-4-23" href="#__codelineno-4-23"></a><span class="n">rows</span> <span class="o">=</span> <span class="n">cursor</span><span class="o">.</span><span class="n">fetchall</span><span class="p">()</span>
-<a id="__codelineno-4-24" name="__codelineno-4-24" href="#__codelineno-4-24"></a>
-<a id="__codelineno-4-25" name="__codelineno-4-25" href="#__codelineno-4-25"></a><span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;</span><span class="si">{</span><span class="s1">&#39;ID&#39;</span><span class="si">:</span><span class="s2">&lt;4</span><span class="si">}</span><span class="s2"> </span><span class="si">{</span><span class="s1">&#39;Name&#39;</span><span class="si">:</span><span class="s2">&lt;20</span><span class="si">}</span><span class="s2"> </span><span class="si">{</span><span class="s1">&#39;Abteilung&#39;</span><span class="si">:</span><span class="s2">&lt;20</span><span class="si">}</span><span class="s2"> </span><span class="si">{</span><span class="s1">&#39;Eingestellt&#39;</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
-<a id="__codelineno-4-26" name="__codelineno-4-26" href="#__codelineno-4-26"></a><span class="nb">print</span><span class="p">(</span><span class="s2">&quot;-&quot;</span> <span class="o">*</span> <span class="mi">60</span><span class="p">)</span>
-<a id="__codelineno-4-27" name="__codelineno-4-27" href="#__codelineno-4-27"></a><span class="k">for</span> <span class="n">row</span> <span class="ow">in</span> <span class="n">rows</span><span class="p">:</span>
-<a id="__codelineno-4-28" name="__codelineno-4-28" href="#__codelineno-4-28"></a>    <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;</span><span class="si">{</span><span class="n">row</span><span class="o">.</span><span class="n">id</span><span class="si">:</span><span class="s2">&lt;4</span><span class="si">}</span><span class="s2"> </span><span class="si">{</span><span class="n">row</span><span class="o">.</span><span class="n">name</span><span class="si">:</span><span class="s2">&lt;20</span><span class="si">}</span><span class="s2"> </span><span class="si">{</span><span class="n">row</span><span class="o">.</span><span class="n">abteilung</span><span class="si">:</span><span class="s2">&lt;20</span><span class="si">}</span><span class="s2"> </span><span class="si">{</span><span class="nb">str</span><span class="p">(</span><span class="n">row</span><span class="o">.</span><span class="n">eingestellt</span><span class="p">)</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
-<a id="__codelineno-4-29" name="__codelineno-4-29" href="#__codelineno-4-29"></a>
-<a id="__codelineno-4-30" name="__codelineno-4-30" href="#__codelineno-4-30"></a><span class="c1"># Neuen Eintrag hinzufügen</span>
-<a id="__codelineno-4-31" name="__codelineno-4-31" href="#__codelineno-4-31"></a><span class="n">cursor</span><span class="o">.</span><span class="n">execute</span><span class="p">(</span>
-<a id="__codelineno-4-32" name="__codelineno-4-32" href="#__codelineno-4-32"></a>    <span class="s2">&quot;INSERT INTO mitarbeiter (name, abteilung, eingestellt) VALUES (?, ?, ?)&quot;</span><span class="p">,</span>
-<a id="__codelineno-4-33" name="__codelineno-4-33" href="#__codelineno-4-33"></a>    <span class="p">(</span><span class="s2">&quot;Eva Fischer&quot;</span><span class="p">,</span> <span class="s2">&quot;Cloud Security&quot;</span><span class="p">,</span> <span class="s2">&quot;2026-06-05&quot;</span><span class="p">)</span>
-<a id="__codelineno-4-34" name="__codelineno-4-34" href="#__codelineno-4-34"></a><span class="p">)</span>
-<a id="__codelineno-4-35" name="__codelineno-4-35" href="#__codelineno-4-35"></a><span class="n">conn</span><span class="o">.</span><span class="n">commit</span><span class="p">()</span>
-<a id="__codelineno-4-36" name="__codelineno-4-36" href="#__codelineno-4-36"></a><span class="nb">print</span><span class="p">(</span><span class="s2">&quot;</span><span class="se">\n</span><span class="s2">✅ Neuer Mitarbeiter eingetragen.&quot;</span><span class="p">)</span>
-<a id="__codelineno-4-37" name="__codelineno-4-37" href="#__codelineno-4-37"></a>
-<a id="__codelineno-4-38" name="__codelineno-4-38" href="#__codelineno-4-38"></a><span class="n">cursor</span><span class="o">.</span><span class="n">close</span><span class="p">()</span>
-<a id="__codelineno-4-39" name="__codelineno-4-39" href="#__codelineno-4-39"></a><span class="n">conn</span><span class="o">.</span><span class="n">close</span><span class="p">()</span>
-</code></pre></div>
-<p>Ausführen:</p>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-5-1" name="__codelineno-5-1" href="#__codelineno-5-1"></a>python<span class="w"> </span>sql_demo.py
-</code></pre></div>
-<div class="admonition tip">
-<p class="admonition-title">Verbindungsstring aus dem Portal</p>
-<p><code>db-aztraining</code> → <strong>Connection strings</strong> → Tab <strong>ODBC</strong> – dort findest du den fertigen Connection String mit deinem Server-Namen.</p>
-</div>
-<hr />
-<h2 id="automatische-backups-und-point-in-time-restore">Automatische Backups und Point-in-Time-Restore</h2>
-<p>Azure SQL erstellt automatisch:</p>
-<ul>
-<li><strong>Vollbackup</strong> wöchentlich</li>
-<li><strong>Differenzielles Backup</strong> alle 12 Stunden</li>
-<li><strong>Transaktionslog-Backup</strong> alle 5–10 Minuten</li>
-</ul>
-<p>Das bedeutet: du kannst die Datenbank auf <strong>jede beliebige Minute</strong> der letzten 7 Tage (Standard-Tier) zurücksetzen – ohne eigene Backup-Lösung.</p>
-<p><strong>Wo zu sehen:</strong> <code>db-aztraining</code> → <strong>Restore</strong> oben in der Menüleiste.</p>
+<p>Für dieses Training genügt ein einzelner Container – Container Groups sind Modul 31 (AKS Pods) vorbehalten.</p>
 <hr />
 <h2 id="challenge">Challenge</h2>
 <div class="admonition question">
-<p class="admonition-title">Challenge: Ansicht erstellen</p>
-<p>Erstelle eine SQL-<strong>View</strong> <code>v_it_mitarbeiter</code> die alle Mitarbeiter aus der Abteilung <code>IT-Infrastruktur</code> zurückgibt, sortiert nach Einstellungsdatum. Frage die View anschließend im Query Editor ab.</p>
+<p class="admonition-title">Challenge: Flask-App als ACI deployen</p>
+<p>Starte das <code>flask-app:1.0</code>-Image aus der ACR als Azure Container Instance:</p>
+<ul>
+<li>Port 5000 freigeben</li>
+<li>DNS-Name vergeben</li>
+<li>Mit einer Umgebungsvariable <code>GREETING=Hallo</code> starten</li>
+<li>Überprüfe per CLI ob der Container läuft und rufe die URL auf</li>
+</ul>
 </div>
 <details class="success">
 <summary>Hinweis</summary>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-6-1" name="__codelineno-6-1" href="#__codelineno-6-1"></a><span class="k">CREATE</span><span class="w"> </span><span class="k">VIEW</span><span class="w"> </span><span class="n">v_it_mitarbeiter</span><span class="w"> </span><span class="k">AS</span>
-<a id="__codelineno-6-2" name="__codelineno-6-2" href="#__codelineno-6-2"></a><span class="k">SELECT</span><span class="w"> </span><span class="n">id</span><span class="p">,</span><span class="w"> </span><span class="n">name</span><span class="p">,</span><span class="w"> </span><span class="n">eingestellt</span>
-<a id="__codelineno-6-3" name="__codelineno-6-3" href="#__codelineno-6-3"></a><span class="k">FROM</span><span class="w"> </span><span class="n">mitarbeiter</span>
-<a id="__codelineno-6-4" name="__codelineno-6-4" href="#__codelineno-6-4"></a><span class="k">WHERE</span><span class="w"> </span><span class="n">abteilung</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s1">&#39;IT-Infrastruktur&#39;</span><span class="p">;</span>
-<a id="__codelineno-6-5" name="__codelineno-6-5" href="#__codelineno-6-5"></a>
-<a id="__codelineno-6-6" name="__codelineno-6-6" href="#__codelineno-6-6"></a><span class="c1">-- View abfragen:</span>
-<a id="__codelineno-6-7" name="__codelineno-6-7" href="#__codelineno-6-7"></a><span class="k">SELECT</span><span class="w"> </span><span class="o">*</span><span class="w"> </span><span class="k">FROM</span><span class="w"> </span><span class="n">v_it_mitarbeiter</span><span class="w"> </span><span class="k">ORDER</span><span class="w"> </span><span class="k">BY</span><span class="w"> </span><span class="n">eingestellt</span><span class="p">;</span>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-8-1" name="__codelineno-8-1" href="#__codelineno-8-1"></a>az<span class="w"> </span>container<span class="w"> </span>create<span class="w"> </span><span class="se">\</span>
+<a id="__codelineno-8-2" name="__codelineno-8-2" href="#__codelineno-8-2"></a><span class="w">  </span>--resource-group<span class="w"> </span>rg-container<span class="w"> </span><span class="se">\</span>
+<a id="__codelineno-8-3" name="__codelineno-8-3" href="#__codelineno-8-3"></a><span class="w">  </span>--name<span class="w"> </span>flask-app<span class="w"> </span><span class="se">\</span>
+<a id="__codelineno-8-4" name="__codelineno-8-4" href="#__codelineno-8-4"></a><span class="w">  </span>--image<span class="w"> </span><span class="nv">$ACR_NAME</span>.azurecr.io/flask-app:1.0<span class="w"> </span><span class="se">\</span>
+<a id="__codelineno-8-5" name="__codelineno-8-5" href="#__codelineno-8-5"></a><span class="w">  </span>--registry-login-server<span class="w"> </span><span class="nv">$ACR_NAME</span>.azurecr.io<span class="w"> </span><span class="se">\</span>
+<a id="__codelineno-8-6" name="__codelineno-8-6" href="#__codelineno-8-6"></a><span class="w">  </span>--registry-username<span class="w"> </span><span class="nv">$ACR_NAME</span><span class="w"> </span><span class="se">\</span>
+<a id="__codelineno-8-7" name="__codelineno-8-7" href="#__codelineno-8-7"></a><span class="w">  </span>--registry-password<span class="w"> </span><span class="nv">$ACR_PASS</span><span class="w"> </span><span class="se">\</span>
+<a id="__codelineno-8-8" name="__codelineno-8-8" href="#__codelineno-8-8"></a><span class="w">  </span>--ports<span class="w"> </span><span class="m">5000</span><span class="w"> </span><span class="se">\</span>
+<a id="__codelineno-8-9" name="__codelineno-8-9" href="#__codelineno-8-9"></a><span class="w">  </span>--dns-name-label<span class="w"> </span>flaskapp<span class="nv">$RANDOM</span><span class="w"> </span><span class="se">\</span>
+<a id="__codelineno-8-10" name="__codelineno-8-10" href="#__codelineno-8-10"></a><span class="w">  </span>--environment-variables<span class="w"> </span><span class="nv">GREETING</span><span class="o">=</span>Hallo
+<a id="__codelineno-8-11" name="__codelineno-8-11" href="#__codelineno-8-11"></a>
+<a id="__codelineno-8-12" name="__codelineno-8-12" href="#__codelineno-8-12"></a>az<span class="w"> </span>container<span class="w"> </span>show<span class="w"> </span><span class="se">\</span>
+<a id="__codelineno-8-13" name="__codelineno-8-13" href="#__codelineno-8-13"></a><span class="w">  </span>--resource-group<span class="w"> </span>rg-container<span class="w"> </span><span class="se">\</span>
+<a id="__codelineno-8-14" name="__codelineno-8-14" href="#__codelineno-8-14"></a><span class="w">  </span>--name<span class="w"> </span>flask-app<span class="w"> </span><span class="se">\</span>
+<a id="__codelineno-8-15" name="__codelineno-8-15" href="#__codelineno-8-15"></a><span class="w">  </span>--query<span class="w"> </span><span class="s2">&quot;ipAddress.fqdn&quot;</span><span class="w"> </span>-o<span class="w"> </span>tsv
 </code></pre></div>
 </details>
 <hr />
-<p>Weiter zu <a href="../modul-16-cosmosdb/">Modul 16 – Azure Cosmos DB: NoSQL-Datenbank</a> →</p>
+<p>Weiter zu <a href="../modul-29-containerapps/">Modul 29 – Azure Container Apps</a> →</p>
 
 
 
@@ -2307,7 +2160,7 @@
       <nav class="md-footer__inner md-grid" aria-label="Fußzeile" >
         
           
-          <a href="../modul-14-aufr%C3%A4umen/" class="md-footer__link md-footer__link--prev" aria-label="Zurück: Modul 14 – Aufräumen">
+          <a href="../modul-27-acr/" class="md-footer__link md-footer__link--prev" aria-label="Zurück: Modul 27 – Azure Container Registry">
             <div class="md-footer__button md-icon">
               
               <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
@@ -2317,20 +2170,20 @@
                 Zurück
               </span>
               <div class="md-ellipsis">
-                Modul 14 – Aufräumen
+                Modul 27 – Azure Container Registry
               </div>
             </div>
           </a>
         
         
           
-          <a href="../modul-16-cosmosdb/" class="md-footer__link md-footer__link--next" aria-label="Weiter: Modul 16 – Cosmos DB">
+          <a href="../modul-29-containerapps/" class="md-footer__link md-footer__link--next" aria-label="Weiter: Modul 29 – Container Apps">
             <div class="md-footer__title">
               <span class="md-footer__direction">
                 Weiter
               </span>
               <div class="md-ellipsis">
-                Modul 16 – Cosmos DB
+                Modul 29 – Container Apps
               </div>
             </div>
             <div class="md-footer__button md-icon">

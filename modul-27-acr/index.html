@@ -10,13 +10,13 @@
       
       
       
-        <link rel="canonical" href="https://libsman.github.io/azuretraining/modul-15-sql/">
+        <link rel="canonical" href="https://libsman.github.io/azuretraining/modul-27-acr/">
       
       
-        <link rel="prev" href="../modul-14-aufr%C3%A4umen/">
+        <link rel="prev" href="../modul-26-docker/">
       
       
-        <link rel="next" href="../modul-16-cosmosdb/">
+        <link rel="next" href="../modul-28-aci/">
       
       
         
@@ -27,7 +27,7 @@
     
     
       
-        <title>Modul 15 – Azure SQL Database - Azure Einstiegstraining</title>
+        <title>Modul 27 – Azure Container Registry - Azure Einstiegstraining</title>
       
     
     
@@ -78,7 +78,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#modul-15-azure-sql-database-managed-datenbank-in-der-cloud" class="md-skip">
+        <a href="#modul-27-azure-container-registry-eigene-images-speichern" class="md-skip">
           Zum Inhalt
         </a>
       
@@ -114,7 +114,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Modul 15 – Azure SQL Database
+              Modul 27 – Azure Container Registry
             
           </span>
         </div>
@@ -841,20 +841,18 @@
       
   
   
-    
   
   
-  
     
     
     
     
     
-    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5" checked>
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5" >
         
           
           <label class="md-nav__link" for="__nav_5" id="__nav_5_label" tabindex="0">
@@ -875,7 +873,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_5_label" aria-expanded="true">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_5_label" aria-expanded="false">
           <label class="md-nav__title" for="__nav_5">
             <span class="md-nav__icon md-icon"></span>
             
@@ -890,37 +888,10 @@
                 
   
   
-    
   
   
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
-      
-      
-        
-      
-      
-        <label class="md-nav__link md-nav__link--active" for="__toc">
-          
-  
-  
-  <span class="md-ellipsis">
-    
-  
-    Modul 15 – Azure SQL Database
-  
-
-    
-  </span>
-  
-  
-
-          <span class="md-nav__icon md-icon"></span>
-        </label>
-      
-      <a href="./" class="md-nav__link md-nav__link--active">
+    <li class="md-nav__item">
+      <a href="../modul-15-sql/" class="md-nav__link">
         
   
   
@@ -936,192 +907,6 @@
   
 
       </a>
-      
-        
-
-<nav class="md-nav md-nav--secondary" aria-label="Inhaltsverzeichnis">
-  
-  
-  
-    
-  
-  
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      Inhaltsverzeichnis
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#lernziele" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Lernziele
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#hintergrund-datenbanken-in-der-cloud" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Hintergrund: Datenbanken in der Cloud
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#sql-server-und-datenbank-erstellen" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        SQL Server und Datenbank erstellen
-      
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="SQL Server und Datenbank erstellen">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#schritt-1-neue-resource-group" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Schritt 1: Neue Resource Group
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#schritt-2-azure-sql-datenbank-erstellen" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Schritt 2: Azure SQL Datenbank erstellen
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#schritt-3-networking" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Schritt 3: Networking
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#schritt-4-review-create" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Schritt 4: Review + Create
-      
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#erste-abfragen-im-portal" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Erste Abfragen im Portal
-      
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="Erste Abfragen im Portal">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#query-editor-offnen" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Query Editor öffnen
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#tabelle-erstellen-und-befullen" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Tabelle erstellen und befüllen
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#weitere-abfragen" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Weitere Abfragen
-      
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#datenbank-uber-python-abfragen" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Datenbank über Python abfragen
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#automatische-backups-und-point-in-time-restore" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Automatische Backups und Point-in-Time-Restore
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#challenge" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Challenge
-      
-    </span>
-  </a>
-  
-</li>
-      
-    </ul>
-  
-</nav>
-      
     </li>
   
 
@@ -1472,18 +1257,20 @@
       
   
   
+    
   
   
+  
     
     
     
     
     
-    <li class="md-nav__item md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_7" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_7" checked>
         
           
           <label class="md-nav__link" for="__nav_7" id="__nav_7_label" tabindex="0">
@@ -1504,7 +1291,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_7_label" aria-expanded="false">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_7_label" aria-expanded="true">
           <label class="md-nav__title" for="__nav_7">
             <span class="md-nav__icon md-icon"></span>
             
@@ -1547,10 +1334,37 @@
                 
   
   
+    
   
   
-    <li class="md-nav__item">
-      <a href="../modul-27-acr/" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Modul 27 – Azure Container Registry
+  
+
+    
+  </span>
+  
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
         
   
   
@@ -1566,6 +1380,220 @@
   
 
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Inhaltsverzeichnis">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Inhaltsverzeichnis
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#lernziele" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Lernziele
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#hintergrund-wozu-eine-eigene-registry" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Hintergrund: Wozu eine eigene Registry?
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#resource-group-vorbereiten" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Resource Group vorbereiten
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#azure-container-registry-erstellen" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Azure Container Registry erstellen
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Azure Container Registry erstellen">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#im-azure-portal" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Im Azure Portal
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#per-cli" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Per CLI
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#image-bauen-und-in-acr-pushen" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Image bauen und in ACR pushen
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Image bauen und in ACR pushen">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#methode-1-lokal-bauen-dann-pushen" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Methode 1: Lokal bauen, dann pushen
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#methode-2-direkt-in-acr-bauen-ohne-lokales-docker" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Methode 2: Direkt in ACR bauen (ohne lokales Docker)
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#images-in-der-acr-anzeigen" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Images in der ACR anzeigen
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Images in der ACR anzeigen">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#im-portal" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Im Portal
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#per-cli_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Per CLI
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#image-aus-acr-pullen-und-als-container-starten" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Image aus ACR pullen und als Container starten
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#acr-zugangsdaten-fur-spatere-module" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        ACR-Zugangsdaten (für spätere Module)
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#acr-tasks-automatischer-image-build-bei-git-push" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        ACR Tasks: Automatischer Image-Build bei Git-Push
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#challenge" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Challenge
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
     </li>
   
 
@@ -1756,10 +1784,10 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#hintergrund-datenbanken-in-der-cloud" class="md-nav__link">
+  <a href="#hintergrund-wozu-eine-eigene-registry" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Hintergrund: Datenbanken in der Cloud
+        Hintergrund: Wozu eine eigene Registry?
       
     </span>
   </a>
@@ -1767,22 +1795,33 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#sql-server-und-datenbank-erstellen" class="md-nav__link">
+  <a href="#resource-group-vorbereiten" class="md-nav__link">
     <span class="md-ellipsis">
       
-        SQL Server und Datenbank erstellen
+        Resource Group vorbereiten
       
     </span>
   </a>
   
-    <nav class="md-nav" aria-label="SQL Server und Datenbank erstellen">
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#azure-container-registry-erstellen" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Azure Container Registry erstellen
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Azure Container Registry erstellen">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#schritt-1-neue-resource-group" class="md-nav__link">
+  <a href="#im-azure-portal" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Schritt 1: Neue Resource Group
+        Im Azure Portal
       
     </span>
   </a>
@@ -1790,32 +1829,10 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#schritt-2-azure-sql-datenbank-erstellen" class="md-nav__link">
+  <a href="#per-cli" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Schritt 2: Azure SQL Datenbank erstellen
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#schritt-3-networking" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Schritt 3: Networking
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#schritt-4-review-create" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Schritt 4: Review + Create
+        Per CLI
       
     </span>
   </a>
@@ -1828,22 +1845,22 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#erste-abfragen-im-portal" class="md-nav__link">
+  <a href="#image-bauen-und-in-acr-pushen" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Erste Abfragen im Portal
+        Image bauen und in ACR pushen
       
     </span>
   </a>
   
-    <nav class="md-nav" aria-label="Erste Abfragen im Portal">
+    <nav class="md-nav" aria-label="Image bauen und in ACR pushen">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#query-editor-offnen" class="md-nav__link">
+  <a href="#methode-1-lokal-bauen-dann-pushen" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Query Editor öffnen
+        Methode 1: Lokal bauen, dann pushen
       
     </span>
   </a>
@@ -1851,21 +1868,10 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#tabelle-erstellen-und-befullen" class="md-nav__link">
+  <a href="#methode-2-direkt-in-acr-bauen-ohne-lokales-docker" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Tabelle erstellen und befüllen
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#weitere-abfragen" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Weitere Abfragen
+        Methode 2: Direkt in ACR bauen (ohne lokales Docker)
       
     </span>
   </a>
@@ -1878,10 +1884,49 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#datenbank-uber-python-abfragen" class="md-nav__link">
+  <a href="#images-in-der-acr-anzeigen" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Datenbank über Python abfragen
+        Images in der ACR anzeigen
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Images in der ACR anzeigen">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#im-portal" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Im Portal
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#per-cli_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Per CLI
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#image-aus-acr-pullen-und-als-container-starten" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Image aus ACR pullen und als Container starten
       
     </span>
   </a>
@@ -1889,10 +1934,21 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#automatische-backups-und-point-in-time-restore" class="md-nav__link">
+  <a href="#acr-zugangsdaten-fur-spatere-module" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Automatische Backups und Point-in-Time-Restore
+        ACR-Zugangsdaten (für spätere Module)
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#acr-tasks-automatischer-image-build-bei-git-push" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        ACR Tasks: Automatischer Image-Build bei Git-Push
       
     </span>
   </a>
@@ -1930,65 +1986,67 @@
   
 
 
-<h1 id="modul-15-azure-sql-database-managed-datenbank-in-der-cloud">Modul 15 – Azure SQL Database: Managed Datenbank in der Cloud</h1>
+<h1 id="modul-27-azure-container-registry-eigene-images-speichern">Modul 27 – Azure Container Registry: Eigene Images speichern</h1>
 <h2 id="lernziele">Lernziele</h2>
 <p>Nach diesem Modul kannst du:</p>
 <ul>
-<li>Eine Azure SQL Database (Managed Service) erstellen und konfigurieren</li>
-<li>Den Unterschied zwischen Azure SQL, SQL Managed Instance und SQL Server auf VM erklären</li>
-<li>Die Datenbank über das Azure Portal und die Query-Editor-Oberfläche abfragen</li>
-<li>Verbindungsstrings für Python-Anwendungen nutzen</li>
-<li>Firewall-Regeln für den Datenbankzugriff konfigurieren</li>
+<li>Eine Azure Container Registry (ACR) erstellen</li>
+<li>Ein lokales Docker-Image in die ACR pushen</li>
+<li>Images aus der ACR pullen und als Container starten</li>
+<li>Den Vorteil einer privaten Registry gegenüber Docker Hub erklären</li>
+<li>Images in der ACR verwalten und Tasks (automatische Builds) verstehen</li>
 </ul>
 <hr />
-<h2 id="hintergrund-datenbanken-in-der-cloud">Hintergrund: Datenbanken in der Cloud</h2>
-<p><strong>On-Prem-Vergleich:</strong> Ein SQL-Server on-premises bedeutet: Lizenz kaufen oder verlängern, Windows Server installieren, SQL Server installieren, Patching, Backups konfigurieren, Monitoring einrichten, Storage planen. Azure SQL Database übernimmt das alles – du bekommst eine Datenbank, die sofort fertig ist.</p>
-<p><strong>Azure SQL: Drei Deployment-Optionen im Vergleich</strong></p>
+<h2 id="hintergrund-wozu-eine-eigene-registry">Hintergrund: Wozu eine eigene Registry?</h2>
+<p><strong>On-Prem-Vergleich:</strong> In klassischen Umgebungen gibt es interne NuGet-Feeds, Artifactory oder ein eigenes npm-Repository für interne Pakete – damit nicht jeder einfach externe Pakete verwenden muss und Packages privat bleiben. Die <strong>Azure Container Registry</strong> ist genau das, nur für Docker-Images.</p>
+<p><strong>Warum nicht einfach Docker Hub?</strong></p>
 <table>
 <thead>
 <tr>
-<th>Option</th>
-<th>Kontrolle</th>
-<th>Wartung</th>
-<th>Kosten</th>
-<th>Empfehlung</th>
+<th></th>
+<th>Docker Hub (kostenlos)</th>
+<th>Azure Container Registry</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td><strong>SQL Database</strong> (PaaS)</td>
-<td>Nur Daten und Schema</td>
-<td>Microsoft</td>
-<td>Ab 0 € (Free)</td>
-<td>✅ Neuanfänger, einfache Apps</td>
+<td>Sichtbarkeit</td>
+<td>Öffentlich</td>
+<td>Privat (deine Subscription)</td>
 </tr>
 <tr>
-<td><strong>SQL Managed Instance</strong></td>
-<td>+ SQL Agent, CLR</td>
-<td>Microsoft</td>
-<td>~300 €/Monat</td>
-<td>Migrations-Szenario on-prem→Azure</td>
+<td>Authentifizierung</td>
+<td>Optional</td>
+<td>Entra ID / Admin-Passwort</td>
 </tr>
 <tr>
-<td><strong>SQL Server auf VM</strong></td>
-<td>Volles OS + SQL</td>
-<td>Du</td>
-<td>VM-Kosten + Lizenz</td>
-<td>Maximale Kontrolle nötig</td>
+<td>Integration mit Azure</td>
+<td>Manuell</td>
+<td>Nativ (ACI, Container Apps, AKS)</td>
+</tr>
+<tr>
+<td>Geo-Redundanz</td>
+<td>Nein</td>
+<td>Ja (Premium-Tier)</td>
+</tr>
+<tr>
+<td>Kosten</td>
+<td>0 € (public)</td>
+<td>ab ca. 5 €/Monat (Basic)</td>
 </tr>
 </tbody>
 </table>
-<p>Für dieses Training: <strong>SQL Database</strong> – kostenloser Tarif, kein Setup, direkt nutzbar.</p>
-<div class="admonition info">
-<p class="admonition-title">Free Tier für Azure SQL</p>
-<p>Azure SQL Database hat seit 2023 einen echten <strong>Free Tier</strong>: 32 GB Speicher, 100.000 vCore-Sekunden/Monat – ausreichend für Lernprojekte. <strong>Nur eine Free-Database pro Subscription.</strong></p>
-</div>
 <hr />
-<h2 id="sql-server-und-datenbank-erstellen">SQL Server und Datenbank erstellen</h2>
-<p>In Azure SQL ist ein <strong>Server</strong> der logische Container für eine oder mehrere <strong>Databases</strong>. Der Server definiert Region, Admin-Login und Firewall-Regeln.</p>
-<h3 id="schritt-1-neue-resource-group">Schritt 1: Neue Resource Group</h3>
+<h2 id="resource-group-vorbereiten">Resource Group vorbereiten</h2>
+<p>In Lernpfad 5 verwenden wir <code>rg-container</code>:</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a>az<span class="w"> </span>group<span class="w"> </span>create<span class="w"> </span>--name<span class="w"> </span>rg-container<span class="w"> </span>--location<span class="w"> </span>westeurope
+</code></pre></div>
+<hr />
+<h2 id="azure-container-registry-erstellen">Azure Container Registry erstellen</h2>
+<h3 id="im-azure-portal">Im Azure Portal</h3>
 <ol>
-<li>Navigiere zu <strong>Resource groups</strong> → <strong>+ Create</strong></li>
+<li>Suche nach <strong>Container registries</strong></li>
+<li>Klicke <strong>+ Create</strong></li>
 </ol>
 <table>
 <thead>
@@ -2000,276 +2058,181 @@
 <tbody>
 <tr>
 <td>Resource group</td>
-<td><code>rg-datenbanken</code></td>
+<td><code>rg-container</code></td>
 </tr>
 <tr>
-<td>Region</td>
-<td><code>West Europe</code></td>
-</tr>
-</tbody>
-</table>
-<h3 id="schritt-2-azure-sql-datenbank-erstellen">Schritt 2: Azure SQL Datenbank erstellen</h3>
-<ol>
-<li>Suche im Portal nach <strong><code>SQL databases</code></strong> → <strong>+ Create</strong></li>
-</ol>
-<p><strong>Basics:</strong></p>
-<table>
-<thead>
-<tr>
-<th>Feld</th>
-<th>Wert</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>Subscription</td>
-<td>deine Subscription</td>
-</tr>
-<tr>
-<td>Resource group</td>
-<td><code>rg-datenbanken</code></td>
-</tr>
-<tr>
-<td>Database name</td>
-<td><code>db-aztraining</code></td>
-</tr>
-<tr>
-<td>Server</td>
-<td><strong>Create new</strong></td>
-</tr>
-</tbody>
-</table>
-<p><strong>Neuen Server erstellen</strong> (erscheint als Seitenbereich):</p>
-<table>
-<thead>
-<tr>
-<th>Feld</th>
-<th>Wert</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>Server name</td>
-<td><code>sql-aztraining-XXXX</code> (weltweit eindeutig)</td>
+<td>Registry name</td>
+<td><code>acrtraining{ZUFALLSZAHL}</code> (global eindeutig, nur Kleinbuchstaben+Zahlen)</td>
 </tr>
 <tr>
 <td>Location</td>
 <td><code>West Europe</code></td>
 </tr>
 <tr>
-<td>Authentication method</td>
-<td><code>Use SQL authentication</code></td>
-</tr>
-<tr>
-<td>Server admin login</td>
-<td><code>sqladmin</code></td>
-</tr>
-<tr>
-<td>Password</td>
-<td>Sicheres Passwort (notiere es!)</td>
+<td>SKU</td>
+<td><code>Basic</code></td>
 </tr>
 </tbody>
 </table>
-<p>Klicke <strong>OK</strong>.</p>
-<p>Zurück im Hauptformular:</p>
-<table>
-<thead>
-<tr>
-<th>Feld</th>
-<th>Wert</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>Want to use SQL elastic pool?</td>
-<td><code>No</code></td>
-</tr>
-<tr>
-<td>Workload environment</td>
-<td><code>Development</code></td>
-</tr>
-<tr>
-<td>Compute + storage</td>
-<td>Klicke <strong>Configure database</strong></td>
-</tr>
-</tbody>
-</table>
-<p><strong>Compute + storage konfigurieren:</strong></p>
 <ol>
-<li>Wähle <strong>General Purpose</strong> → scrollen nach unten</li>
-<li>Wähle <strong>Serverless</strong> als Compute tier</li>
-<li>Aktiviere <strong>Free offer</strong> falls verfügbar (erscheint wenn noch keine Free DB in der Subscription)</li>
-<li>Falls kein Free Tier: wähle <strong>Serverless</strong>, 1 vCore minimum → ~3 €/Monat</li>
+<li>Klicke <strong>Review + create</strong> → <strong>Create</strong></li>
 </ol>
-<p>Klicke <strong>Apply</strong> → zurück im Hauptformular.</p>
+<h3 id="per-cli">Per CLI</h3>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a><span class="c1"># Eindeutigen Namen generieren</span>
+<a id="__codelineno-1-2" name="__codelineno-1-2" href="#__codelineno-1-2"></a><span class="nv">ACR_NAME</span><span class="o">=</span><span class="s2">&quot;acrtraining</span><span class="nv">$RANDOM</span><span class="s2">&quot;</span>
+<a id="__codelineno-1-3" name="__codelineno-1-3" href="#__codelineno-1-3"></a><span class="nb">echo</span><span class="w"> </span><span class="s2">&quot;Registry-Name: </span><span class="nv">$ACR_NAME</span><span class="s2">&quot;</span>
+<a id="__codelineno-1-4" name="__codelineno-1-4" href="#__codelineno-1-4"></a>
+<a id="__codelineno-1-5" name="__codelineno-1-5" href="#__codelineno-1-5"></a>az<span class="w"> </span>acr<span class="w"> </span>create<span class="w"> </span><span class="se">\</span>
+<a id="__codelineno-1-6" name="__codelineno-1-6" href="#__codelineno-1-6"></a><span class="w">  </span>--resource-group<span class="w"> </span>rg-container<span class="w"> </span><span class="se">\</span>
+<a id="__codelineno-1-7" name="__codelineno-1-7" href="#__codelineno-1-7"></a><span class="w">  </span>--name<span class="w"> </span><span class="nv">$ACR_NAME</span><span class="w"> </span><span class="se">\</span>
+<a id="__codelineno-1-8" name="__codelineno-1-8" href="#__codelineno-1-8"></a><span class="w">  </span>--sku<span class="w"> </span>Basic
+</code></pre></div>
 <div class="admonition info">
-<p class="admonition-title">Serverless vs. Provisioned</p>
-<ul>
-<li><strong>Serverless</strong>: DB pausiert automatisch nach Inaktivität → 0 Kosten wenn nicht genutzt. Erster Aufruf nach Pause: ~30 Sekunden Aufwärmzeit</li>
-<li><strong>Provisioned</strong>: Läuft immer, sofortige Reaktionszeit – für Produktion</li>
-</ul>
-</div>
-<p><strong>Backup redundancy:</strong> <code>Locally-redundant backup storage</code> (günstiger für Test)</p>
-<h3 id="schritt-3-networking">Schritt 3: Networking</h3>
-<p>Wechsle zum Tab <strong>Networking</strong>:</p>
+<p class="admonition-title">SKU-Übersicht</p>
 <table>
 <thead>
 <tr>
-<th>Feld</th>
-<th>Wert</th>
+<th>SKU</th>
+<th>Speicher</th>
+<th>Features</th>
+<th>Kosten ca.</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td>Connectivity method</td>
-<td><code>Public endpoint</code></td>
+<td>Basic</td>
+<td>10 GB</td>
+<td>Grundfunktionen</td>
+<td>~5 €/Monat</td>
 </tr>
 <tr>
-<td>Allow Azure services...</td>
-<td><code>Yes</code></td>
+<td>Standard</td>
+<td>100 GB</td>
+<td>Webhooks</td>
+<td>~20 €/Monat</td>
 </tr>
 <tr>
-<td>Add current client IP</td>
-<td><code>Yes</code></td>
+<td>Premium</td>
+<td>500 GB</td>
+<td>Geo-Replikation, Private Endpoints</td>
+<td>~55 €/Monat</td>
 </tr>
 </tbody>
 </table>
-<div class="admonition warning">
-<p class="admonition-title">Public Endpoint für dieses Training</p>
-<p>Im Produktionsbetrieb würde man Private Endpoints nutzen (Modul 13). Für dieses Training erlauben wir Public Access mit deiner IP.</p>
+<p>Für das Training reicht <strong>Basic</strong> vollständig aus.</p>
 </div>
-<h3 id="schritt-4-review-create">Schritt 4: Review + Create</h3>
-<p><strong>Review + create</strong> → <strong>Create</strong> (Deployment dauert ~2–3 Minuten)</p>
 <hr />
-<h2 id="erste-abfragen-im-portal">Erste Abfragen im Portal</h2>
-<h3 id="query-editor-offnen">Query Editor öffnen</h3>
+<h2 id="image-bauen-und-in-acr-pushen">Image bauen und in ACR pushen</h2>
+<h3 id="methode-1-lokal-bauen-dann-pushen">Methode 1: Lokal bauen, dann pushen</h3>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a><span class="c1"># In der ACR einloggen (Docker Desktop muss laufen)</span>
+<a id="__codelineno-2-2" name="__codelineno-2-2" href="#__codelineno-2-2"></a>az<span class="w"> </span>acr<span class="w"> </span>login<span class="w"> </span>--name<span class="w"> </span><span class="nv">$ACR_NAME</span>
+<a id="__codelineno-2-3" name="__codelineno-2-3" href="#__codelineno-2-3"></a>
+<a id="__codelineno-2-4" name="__codelineno-2-4" href="#__codelineno-2-4"></a><span class="c1"># Vollständiger Image-Name für ACR</span>
+<a id="__codelineno-2-5" name="__codelineno-2-5" href="#__codelineno-2-5"></a><span class="nv">ACR_IMAGE</span><span class="o">=</span><span class="s2">&quot;</span><span class="nv">$ACR_NAME</span><span class="s2">.azurecr.io/mein-webserver:1.0&quot;</span>
+<a id="__codelineno-2-6" name="__codelineno-2-6" href="#__codelineno-2-6"></a>
+<a id="__codelineno-2-7" name="__codelineno-2-7" href="#__codelineno-2-7"></a><span class="c1"># Lokales Image taggen</span>
+<a id="__codelineno-2-8" name="__codelineno-2-8" href="#__codelineno-2-8"></a>docker<span class="w"> </span>tag<span class="w"> </span>mein-webserver:1.0<span class="w"> </span><span class="nv">$ACR_IMAGE</span>
+<a id="__codelineno-2-9" name="__codelineno-2-9" href="#__codelineno-2-9"></a>
+<a id="__codelineno-2-10" name="__codelineno-2-10" href="#__codelineno-2-10"></a><span class="c1"># In ACR pushen</span>
+<a id="__codelineno-2-11" name="__codelineno-2-11" href="#__codelineno-2-11"></a>docker<span class="w"> </span>push<span class="w"> </span><span class="nv">$ACR_IMAGE</span>
+</code></pre></div>
+<h3 id="methode-2-direkt-in-acr-bauen-ohne-lokales-docker">Methode 2: Direkt in ACR bauen (ohne lokales Docker)</h3>
+<p>Der <strong>ACR Quick Task</strong> baut das Image direkt in der Cloud – kein Docker Desktop nötig:</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a><span class="c1"># Im Verzeichnis mit Dockerfile:</span>
+<a id="__codelineno-3-2" name="__codelineno-3-2" href="#__codelineno-3-2"></a>az<span class="w"> </span>acr<span class="w"> </span>build<span class="w"> </span><span class="se">\</span>
+<a id="__codelineno-3-3" name="__codelineno-3-3" href="#__codelineno-3-3"></a><span class="w">  </span>--registry<span class="w"> </span><span class="nv">$ACR_NAME</span><span class="w"> </span><span class="se">\</span>
+<a id="__codelineno-3-4" name="__codelineno-3-4" href="#__codelineno-3-4"></a><span class="w">  </span>--image<span class="w"> </span>mein-webserver:1.0<span class="w"> </span><span class="se">\</span>
+<a id="__codelineno-3-5" name="__codelineno-3-5" href="#__codelineno-3-5"></a><span class="w">  </span>.
+</code></pre></div>
+<p>Das ist besonders nützlich in CI/CD-Pipelines oder wenn Docker Desktop nicht installiert ist.</p>
+<hr />
+<h2 id="images-in-der-acr-anzeigen">Images in der ACR anzeigen</h2>
+<h3 id="im-portal">Im Portal</h3>
 <ol>
-<li>Gehe zur erstellten Datenbank <code>db-aztraining</code></li>
-<li>Klicke links im Menü auf <strong>Query editor (preview)</strong></li>
-<li>Melde dich an:</li>
-<li>Login: <code>sqladmin</code></li>
-<li>Password: dein Passwort</li>
+<li>Öffne die Container Registry im Azure Portal</li>
+<li>Links: <strong>Repositories</strong> – dort siehst du alle gespeicherten Images</li>
+<li>Klicke auf ein Repository um alle Tags (Versionen) zu sehen</li>
 </ol>
-<h3 id="tabelle-erstellen-und-befullen">Tabelle erstellen und befüllen</h3>
-<p>Füge ins Abfragefenster ein und klicke <strong>Run</strong>:</p>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="k">CREATE</span><span class="w"> </span><span class="k">TABLE</span><span class="w"> </span><span class="n">mitarbeiter</span><span class="w"> </span><span class="p">(</span>
-<a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a><span class="w">    </span><span class="n">id</span><span class="w">          </span><span class="nb">INT</span><span class="w"> </span><span class="k">IDENTITY</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span><span class="mi">1</span><span class="p">)</span><span class="w"> </span><span class="k">PRIMARY</span><span class="w"> </span><span class="k">KEY</span><span class="p">,</span>
-<a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a><span class="w">    </span><span class="n">name</span><span class="w">        </span><span class="n">NVARCHAR</span><span class="p">(</span><span class="mi">100</span><span class="p">)</span><span class="w">  </span><span class="k">NOT</span><span class="w"> </span><span class="k">NULL</span><span class="p">,</span>
-<a id="__codelineno-0-4" name="__codelineno-0-4" href="#__codelineno-0-4"></a><span class="w">    </span><span class="n">abteilung</span><span class="w">   </span><span class="n">NVARCHAR</span><span class="p">(</span><span class="mi">50</span><span class="p">),</span>
-<a id="__codelineno-0-5" name="__codelineno-0-5" href="#__codelineno-0-5"></a><span class="w">    </span><span class="n">eingestellt</span><span class="w"> </span><span class="nb">DATE</span><span class="w">           </span><span class="k">NOT</span><span class="w"> </span><span class="k">NULL</span><span class="w"> </span><span class="k">DEFAULT</span><span class="w"> </span><span class="n">GETDATE</span><span class="p">()</span>
-<a id="__codelineno-0-6" name="__codelineno-0-6" href="#__codelineno-0-6"></a><span class="p">);</span>
-<a id="__codelineno-0-7" name="__codelineno-0-7" href="#__codelineno-0-7"></a>
-<a id="__codelineno-0-8" name="__codelineno-0-8" href="#__codelineno-0-8"></a><span class="k">INSERT</span><span class="w"> </span><span class="k">INTO</span><span class="w"> </span><span class="n">mitarbeiter</span><span class="w"> </span><span class="p">(</span><span class="n">name</span><span class="p">,</span><span class="w"> </span><span class="n">abteilung</span><span class="p">,</span><span class="w"> </span><span class="n">eingestellt</span><span class="p">)</span><span class="w"> </span><span class="k">VALUES</span>
-<a id="__codelineno-0-9" name="__codelineno-0-9" href="#__codelineno-0-9"></a><span class="w">    </span><span class="p">(</span><span class="s1">&#39;Anna Müller&#39;</span><span class="p">,</span><span class="w">    </span><span class="s1">&#39;IT-Infrastruktur&#39;</span><span class="p">,</span><span class="w"> </span><span class="s1">&#39;2024-03-01&#39;</span><span class="p">),</span>
-<a id="__codelineno-0-10" name="__codelineno-0-10" href="#__codelineno-0-10"></a><span class="w">    </span><span class="p">(</span><span class="s1">&#39;Bernd Schmidt&#39;</span><span class="p">,</span><span class="w">  </span><span class="s1">&#39;Cloud Operations&#39;</span><span class="p">,</span><span class="w"> </span><span class="s1">&#39;2023-11-15&#39;</span><span class="p">),</span>
-<a id="__codelineno-0-11" name="__codelineno-0-11" href="#__codelineno-0-11"></a><span class="w">    </span><span class="p">(</span><span class="s1">&#39;Clara Weber&#39;</span><span class="p">,</span><span class="w">    </span><span class="s1">&#39;IT-Infrastruktur&#39;</span><span class="p">,</span><span class="w"> </span><span class="s1">&#39;2025-01-10&#39;</span><span class="p">),</span>
-<a id="__codelineno-0-12" name="__codelineno-0-12" href="#__codelineno-0-12"></a><span class="w">    </span><span class="p">(</span><span class="s1">&#39;David Hoffmann&#39;</span><span class="p">,</span><span class="w"> </span><span class="s1">&#39;DevOps&#39;</span><span class="p">,</span><span class="w">           </span><span class="s1">&#39;2024-07-22&#39;</span><span class="p">);</span>
-<a id="__codelineno-0-13" name="__codelineno-0-13" href="#__codelineno-0-13"></a>
-<a id="__codelineno-0-14" name="__codelineno-0-14" href="#__codelineno-0-14"></a><span class="k">SELECT</span><span class="w"> </span><span class="o">*</span><span class="w"> </span><span class="k">FROM</span><span class="w"> </span><span class="n">mitarbeiter</span><span class="w"> </span><span class="k">ORDER</span><span class="w"> </span><span class="k">BY</span><span class="w"> </span><span class="n">eingestellt</span><span class="p">;</span>
+<h3 id="per-cli_1">Per CLI</h3>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-4-1" name="__codelineno-4-1" href="#__codelineno-4-1"></a><span class="c1"># Alle Repositories auflisten</span>
+<a id="__codelineno-4-2" name="__codelineno-4-2" href="#__codelineno-4-2"></a>az<span class="w"> </span>acr<span class="w"> </span>repository<span class="w"> </span>list<span class="w"> </span>--name<span class="w"> </span><span class="nv">$ACR_NAME</span><span class="w"> </span>--output<span class="w"> </span>table
+<a id="__codelineno-4-3" name="__codelineno-4-3" href="#__codelineno-4-3"></a>
+<a id="__codelineno-4-4" name="__codelineno-4-4" href="#__codelineno-4-4"></a><span class="c1"># Tags eines Repositories anzeigen</span>
+<a id="__codelineno-4-5" name="__codelineno-4-5" href="#__codelineno-4-5"></a>az<span class="w"> </span>acr<span class="w"> </span>repository<span class="w"> </span>show-tags<span class="w"> </span><span class="se">\</span>
+<a id="__codelineno-4-6" name="__codelineno-4-6" href="#__codelineno-4-6"></a><span class="w">  </span>--name<span class="w"> </span><span class="nv">$ACR_NAME</span><span class="w"> </span><span class="se">\</span>
+<a id="__codelineno-4-7" name="__codelineno-4-7" href="#__codelineno-4-7"></a><span class="w">  </span>--repository<span class="w"> </span>mein-webserver<span class="w"> </span><span class="se">\</span>
+<a id="__codelineno-4-8" name="__codelineno-4-8" href="#__codelineno-4-8"></a><span class="w">  </span>--output<span class="w"> </span>table
 </code></pre></div>
-<p>Du siehst die Ergebnistabelle direkt im Browser.</p>
-<h3 id="weitere-abfragen">Weitere Abfragen</h3>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a><span class="c1">-- Mitarbeiter pro Abteilung zählen</span>
-<a id="__codelineno-1-2" name="__codelineno-1-2" href="#__codelineno-1-2"></a><span class="k">SELECT</span><span class="w"> </span><span class="n">abteilung</span><span class="p">,</span><span class="w"> </span><span class="k">COUNT</span><span class="p">(</span><span class="o">*</span><span class="p">)</span><span class="w"> </span><span class="k">AS</span><span class="w"> </span><span class="n">anzahl</span>
-<a id="__codelineno-1-3" name="__codelineno-1-3" href="#__codelineno-1-3"></a><span class="k">FROM</span><span class="w"> </span><span class="n">mitarbeiter</span>
-<a id="__codelineno-1-4" name="__codelineno-1-4" href="#__codelineno-1-4"></a><span class="k">GROUP</span><span class="w"> </span><span class="k">BY</span><span class="w"> </span><span class="n">abteilung</span>
-<a id="__codelineno-1-5" name="__codelineno-1-5" href="#__codelineno-1-5"></a><span class="k">ORDER</span><span class="w"> </span><span class="k">BY</span><span class="w"> </span><span class="n">anzahl</span><span class="w"> </span><span class="k">DESC</span><span class="p">;</span>
-<a id="__codelineno-1-6" name="__codelineno-1-6" href="#__codelineno-1-6"></a>
-<a id="__codelineno-1-7" name="__codelineno-1-7" href="#__codelineno-1-7"></a><span class="c1">-- Nur IT-Infrastruktur</span>
-<a id="__codelineno-1-8" name="__codelineno-1-8" href="#__codelineno-1-8"></a><span class="k">SELECT</span><span class="w"> </span><span class="n">name</span><span class="p">,</span><span class="w"> </span><span class="n">eingestellt</span>
-<a id="__codelineno-1-9" name="__codelineno-1-9" href="#__codelineno-1-9"></a><span class="k">FROM</span><span class="w"> </span><span class="n">mitarbeiter</span>
-<a id="__codelineno-1-10" name="__codelineno-1-10" href="#__codelineno-1-10"></a><span class="k">WHERE</span><span class="w"> </span><span class="n">abteilung</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s1">&#39;IT-Infrastruktur&#39;</span>
-<a id="__codelineno-1-11" name="__codelineno-1-11" href="#__codelineno-1-11"></a><span class="k">ORDER</span><span class="w"> </span><span class="k">BY</span><span class="w"> </span><span class="n">eingestellt</span><span class="p">;</span>
-</code></pre></div>
-<div class="admonition success">
-<p class="admonition-title">Managed SQL Datenbank läuft!</p>
-<p>Kein SQL Server installiert, kein Betriebssystem konfiguriert. Du schreibst SQL – Azure kümmert sich um den Rest.</p>
-</div>
 <hr />
-<h2 id="datenbank-uber-python-abfragen">Datenbank über Python abfragen</h2>
-<p>Öffne die Cloud Shell im Portal und installiere das nötige Paket:</p>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a>pip<span class="w"> </span>install<span class="w"> </span>pyodbc<span class="w"> </span>--quiet
+<h2 id="image-aus-acr-pullen-und-als-container-starten">Image aus ACR pullen und als Container starten</h2>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-5-1" name="__codelineno-5-1" href="#__codelineno-5-1"></a><span class="c1"># Image lokal herunterladen</span>
+<a id="__codelineno-5-2" name="__codelineno-5-2" href="#__codelineno-5-2"></a>docker<span class="w"> </span>pull<span class="w"> </span><span class="nv">$ACR_NAME</span>.azurecr.io/mein-webserver:1.0
+<a id="__codelineno-5-3" name="__codelineno-5-3" href="#__codelineno-5-3"></a>
+<a id="__codelineno-5-4" name="__codelineno-5-4" href="#__codelineno-5-4"></a><span class="c1"># Container starten</span>
+<a id="__codelineno-5-5" name="__codelineno-5-5" href="#__codelineno-5-5"></a>docker<span class="w"> </span>run<span class="w"> </span>-d<span class="w"> </span>-p<span class="w"> </span><span class="m">8080</span>:8080<span class="w"> </span><span class="nv">$ACR_NAME</span>.azurecr.io/mein-webserver:1.0
 </code></pre></div>
-<p>Erstelle eine neue Datei:</p>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a>code<span class="w"> </span>sql_demo.py
+<hr />
+<h2 id="acr-zugangsdaten-fur-spatere-module">ACR-Zugangsdaten (für spätere Module)</h2>
+<p>Andere Azure-Dienste (ACI, Container Apps, AKS) brauchen Zugangsdaten um aus der ACR zu pullen. Es gibt zwei Wege:</p>
+<p><strong>Weg 1 – Admin-Benutzer (einfach, nicht empfohlen für Produktion):</strong></p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-6-1" name="__codelineno-6-1" href="#__codelineno-6-1"></a><span class="c1"># Admin aktivieren</span>
+<a id="__codelineno-6-2" name="__codelineno-6-2" href="#__codelineno-6-2"></a>az<span class="w"> </span>acr<span class="w"> </span>update<span class="w"> </span>--name<span class="w"> </span><span class="nv">$ACR_NAME</span><span class="w"> </span>--admin-enabled<span class="w"> </span><span class="nb">true</span>
+<a id="__codelineno-6-3" name="__codelineno-6-3" href="#__codelineno-6-3"></a>
+<a id="__codelineno-6-4" name="__codelineno-6-4" href="#__codelineno-6-4"></a><span class="c1"># Zugangsdaten anzeigen</span>
+<a id="__codelineno-6-5" name="__codelineno-6-5" href="#__codelineno-6-5"></a>az<span class="w"> </span>acr<span class="w"> </span>credential<span class="w"> </span>show<span class="w"> </span>--name<span class="w"> </span><span class="nv">$ACR_NAME</span>
 </code></pre></div>
-<p>Füge folgenden Code ein und ersetze die Platzhalter:</p>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-4-1" name="__codelineno-4-1" href="#__codelineno-4-1"></a><span class="kn">import</span><span class="w"> </span><span class="nn">pyodbc</span>
-<a id="__codelineno-4-2" name="__codelineno-4-2" href="#__codelineno-4-2"></a>
-<a id="__codelineno-4-3" name="__codelineno-4-3" href="#__codelineno-4-3"></a><span class="c1"># Verbindungsstring – Werte aus dem Portal kopieren</span>
-<a id="__codelineno-4-4" name="__codelineno-4-4" href="#__codelineno-4-4"></a><span class="n">SERVER</span>   <span class="o">=</span> <span class="s2">&quot;sql-aztraining-XXXX.database.windows.net&quot;</span>
-<a id="__codelineno-4-5" name="__codelineno-4-5" href="#__codelineno-4-5"></a><span class="n">DATABASE</span> <span class="o">=</span> <span class="s2">&quot;db-aztraining&quot;</span>
-<a id="__codelineno-4-6" name="__codelineno-4-6" href="#__codelineno-4-6"></a><span class="n">USERNAME</span> <span class="o">=</span> <span class="s2">&quot;sqladmin&quot;</span>
-<a id="__codelineno-4-7" name="__codelineno-4-7" href="#__codelineno-4-7"></a><span class="n">PASSWORD</span> <span class="o">=</span> <span class="s2">&quot;DEIN_PASSWORT&quot;</span>   <span class="c1"># In Produktion: aus Key Vault (Modul 12)!</span>
-<a id="__codelineno-4-8" name="__codelineno-4-8" href="#__codelineno-4-8"></a>
-<a id="__codelineno-4-9" name="__codelineno-4-9" href="#__codelineno-4-9"></a><span class="n">connection_string</span> <span class="o">=</span> <span class="p">(</span>
-<a id="__codelineno-4-10" name="__codelineno-4-10" href="#__codelineno-4-10"></a>    <span class="sa">f</span><span class="s2">&quot;DRIVER=</span><span class="se">{{</span><span class="s2">ODBC Driver 18 for SQL Server</span><span class="se">}}</span><span class="s2">;&quot;</span>
-<a id="__codelineno-4-11" name="__codelineno-4-11" href="#__codelineno-4-11"></a>    <span class="sa">f</span><span class="s2">&quot;SERVER=</span><span class="si">{</span><span class="n">SERVER</span><span class="si">}</span><span class="s2">;&quot;</span>
-<a id="__codelineno-4-12" name="__codelineno-4-12" href="#__codelineno-4-12"></a>    <span class="sa">f</span><span class="s2">&quot;DATABASE=</span><span class="si">{</span><span class="n">DATABASE</span><span class="si">}</span><span class="s2">;&quot;</span>
-<a id="__codelineno-4-13" name="__codelineno-4-13" href="#__codelineno-4-13"></a>    <span class="sa">f</span><span class="s2">&quot;UID=</span><span class="si">{</span><span class="n">USERNAME</span><span class="si">}</span><span class="s2">;&quot;</span>
-<a id="__codelineno-4-14" name="__codelineno-4-14" href="#__codelineno-4-14"></a>    <span class="sa">f</span><span class="s2">&quot;PWD=</span><span class="si">{</span><span class="n">PASSWORD</span><span class="si">}</span><span class="s2">;&quot;</span>
-<a id="__codelineno-4-15" name="__codelineno-4-15" href="#__codelineno-4-15"></a>    <span class="s2">&quot;Encrypt=yes;TrustServerCertificate=no;&quot;</span>
-<a id="__codelineno-4-16" name="__codelineno-4-16" href="#__codelineno-4-16"></a><span class="p">)</span>
-<a id="__codelineno-4-17" name="__codelineno-4-17" href="#__codelineno-4-17"></a>
-<a id="__codelineno-4-18" name="__codelineno-4-18" href="#__codelineno-4-18"></a><span class="n">conn</span>   <span class="o">=</span> <span class="n">pyodbc</span><span class="o">.</span><span class="n">connect</span><span class="p">(</span><span class="n">connection_string</span><span class="p">)</span>
-<a id="__codelineno-4-19" name="__codelineno-4-19" href="#__codelineno-4-19"></a><span class="n">cursor</span> <span class="o">=</span> <span class="n">conn</span><span class="o">.</span><span class="n">cursor</span><span class="p">()</span>
-<a id="__codelineno-4-20" name="__codelineno-4-20" href="#__codelineno-4-20"></a>
-<a id="__codelineno-4-21" name="__codelineno-4-21" href="#__codelineno-4-21"></a><span class="c1"># Alle Mitarbeiter abfragen</span>
-<a id="__codelineno-4-22" name="__codelineno-4-22" href="#__codelineno-4-22"></a><span class="n">cursor</span><span class="o">.</span><span class="n">execute</span><span class="p">(</span><span class="s2">&quot;SELECT id, name, abteilung, eingestellt FROM mitarbeiter ORDER BY name&quot;</span><span class="p">)</span>
-<a id="__codelineno-4-23" name="__codelineno-4-23" href="#__codelineno-4-23"></a><span class="n">rows</span> <span class="o">=</span> <span class="n">cursor</span><span class="o">.</span><span class="n">fetchall</span><span class="p">()</span>
-<a id="__codelineno-4-24" name="__codelineno-4-24" href="#__codelineno-4-24"></a>
-<a id="__codelineno-4-25" name="__codelineno-4-25" href="#__codelineno-4-25"></a><span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;</span><span class="si">{</span><span class="s1">&#39;ID&#39;</span><span class="si">:</span><span class="s2">&lt;4</span><span class="si">}</span><span class="s2"> </span><span class="si">{</span><span class="s1">&#39;Name&#39;</span><span class="si">:</span><span class="s2">&lt;20</span><span class="si">}</span><span class="s2"> </span><span class="si">{</span><span class="s1">&#39;Abteilung&#39;</span><span class="si">:</span><span class="s2">&lt;20</span><span class="si">}</span><span class="s2"> </span><span class="si">{</span><span class="s1">&#39;Eingestellt&#39;</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
-<a id="__codelineno-4-26" name="__codelineno-4-26" href="#__codelineno-4-26"></a><span class="nb">print</span><span class="p">(</span><span class="s2">&quot;-&quot;</span> <span class="o">*</span> <span class="mi">60</span><span class="p">)</span>
-<a id="__codelineno-4-27" name="__codelineno-4-27" href="#__codelineno-4-27"></a><span class="k">for</span> <span class="n">row</span> <span class="ow">in</span> <span class="n">rows</span><span class="p">:</span>
-<a id="__codelineno-4-28" name="__codelineno-4-28" href="#__codelineno-4-28"></a>    <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;</span><span class="si">{</span><span class="n">row</span><span class="o">.</span><span class="n">id</span><span class="si">:</span><span class="s2">&lt;4</span><span class="si">}</span><span class="s2"> </span><span class="si">{</span><span class="n">row</span><span class="o">.</span><span class="n">name</span><span class="si">:</span><span class="s2">&lt;20</span><span class="si">}</span><span class="s2"> </span><span class="si">{</span><span class="n">row</span><span class="o">.</span><span class="n">abteilung</span><span class="si">:</span><span class="s2">&lt;20</span><span class="si">}</span><span class="s2"> </span><span class="si">{</span><span class="nb">str</span><span class="p">(</span><span class="n">row</span><span class="o">.</span><span class="n">eingestellt</span><span class="p">)</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
-<a id="__codelineno-4-29" name="__codelineno-4-29" href="#__codelineno-4-29"></a>
-<a id="__codelineno-4-30" name="__codelineno-4-30" href="#__codelineno-4-30"></a><span class="c1"># Neuen Eintrag hinzufügen</span>
-<a id="__codelineno-4-31" name="__codelineno-4-31" href="#__codelineno-4-31"></a><span class="n">cursor</span><span class="o">.</span><span class="n">execute</span><span class="p">(</span>
-<a id="__codelineno-4-32" name="__codelineno-4-32" href="#__codelineno-4-32"></a>    <span class="s2">&quot;INSERT INTO mitarbeiter (name, abteilung, eingestellt) VALUES (?, ?, ?)&quot;</span><span class="p">,</span>
-<a id="__codelineno-4-33" name="__codelineno-4-33" href="#__codelineno-4-33"></a>    <span class="p">(</span><span class="s2">&quot;Eva Fischer&quot;</span><span class="p">,</span> <span class="s2">&quot;Cloud Security&quot;</span><span class="p">,</span> <span class="s2">&quot;2026-06-05&quot;</span><span class="p">)</span>
-<a id="__codelineno-4-34" name="__codelineno-4-34" href="#__codelineno-4-34"></a><span class="p">)</span>
-<a id="__codelineno-4-35" name="__codelineno-4-35" href="#__codelineno-4-35"></a><span class="n">conn</span><span class="o">.</span><span class="n">commit</span><span class="p">()</span>
-<a id="__codelineno-4-36" name="__codelineno-4-36" href="#__codelineno-4-36"></a><span class="nb">print</span><span class="p">(</span><span class="s2">&quot;</span><span class="se">\n</span><span class="s2">✅ Neuer Mitarbeiter eingetragen.&quot;</span><span class="p">)</span>
-<a id="__codelineno-4-37" name="__codelineno-4-37" href="#__codelineno-4-37"></a>
-<a id="__codelineno-4-38" name="__codelineno-4-38" href="#__codelineno-4-38"></a><span class="n">cursor</span><span class="o">.</span><span class="n">close</span><span class="p">()</span>
-<a id="__codelineno-4-39" name="__codelineno-4-39" href="#__codelineno-4-39"></a><span class="n">conn</span><span class="o">.</span><span class="n">close</span><span class="p">()</span>
+<p><strong>Weg 2 – Managed Identity (empfohlen, Modul 22-Prinzip):</strong></p>
+<p>Ein ACI oder Container Apps bekommt eine Managed Identity, die die Rolle <code>AcrPull</code> auf der ACR hat.</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-7-1" name="__codelineno-7-1" href="#__codelineno-7-1"></a><span class="c1"># AcrPull-Rolle der Managed Identity zuweisen</span>
+<a id="__codelineno-7-2" name="__codelineno-7-2" href="#__codelineno-7-2"></a><span class="nv">ACR_ID</span><span class="o">=</span><span class="k">$(</span>az<span class="w"> </span>acr<span class="w"> </span>show<span class="w"> </span>--name<span class="w"> </span><span class="nv">$ACR_NAME</span><span class="w"> </span>--query<span class="w"> </span>id<span class="w"> </span>-o<span class="w"> </span>tsv<span class="k">)</span>
+<a id="__codelineno-7-3" name="__codelineno-7-3" href="#__codelineno-7-3"></a>az<span class="w"> </span>role<span class="w"> </span>assignment<span class="w"> </span>create<span class="w"> </span><span class="se">\</span>
+<a id="__codelineno-7-4" name="__codelineno-7-4" href="#__codelineno-7-4"></a><span class="w">  </span>--assignee<span class="w"> </span>&lt;MANAGED-IDENTITY-CLIENT-ID&gt;<span class="w"> </span><span class="se">\</span>
+<a id="__codelineno-7-5" name="__codelineno-7-5" href="#__codelineno-7-5"></a><span class="w">  </span>--role<span class="w"> </span>AcrPull<span class="w"> </span><span class="se">\</span>
+<a id="__codelineno-7-6" name="__codelineno-7-6" href="#__codelineno-7-6"></a><span class="w">  </span>--scope<span class="w"> </span><span class="nv">$ACR_ID</span>
 </code></pre></div>
-<p>Ausführen:</p>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-5-1" name="__codelineno-5-1" href="#__codelineno-5-1"></a>python<span class="w"> </span>sql_demo.py
+<hr />
+<h2 id="acr-tasks-automatischer-image-build-bei-git-push">ACR Tasks: Automatischer Image-Build bei Git-Push</h2>
+<p>ACR Tasks bauen Images automatisch neu, wenn sich Code ändert – ein einfaches CI/CD:</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-8-1" name="__codelineno-8-1" href="#__codelineno-8-1"></a>az<span class="w"> </span>acr<span class="w"> </span>task<span class="w"> </span>create<span class="w"> </span><span class="se">\</span>
+<a id="__codelineno-8-2" name="__codelineno-8-2" href="#__codelineno-8-2"></a><span class="w">  </span>--registry<span class="w"> </span><span class="nv">$ACR_NAME</span><span class="w"> </span><span class="se">\</span>
+<a id="__codelineno-8-3" name="__codelineno-8-3" href="#__codelineno-8-3"></a><span class="w">  </span>--name<span class="w"> </span>build-on-commit<span class="w"> </span><span class="se">\</span>
+<a id="__codelineno-8-4" name="__codelineno-8-4" href="#__codelineno-8-4"></a><span class="w">  </span>--image<span class="w"> </span>mein-webserver:<span class="o">{{</span>.Run.ID<span class="o">}}</span><span class="w"> </span><span class="se">\</span>
+<a id="__codelineno-8-5" name="__codelineno-8-5" href="#__codelineno-8-5"></a><span class="w">  </span>--context<span class="w"> </span>https://github.com/DEIN-USER/DEIN-REPO.git<span class="w"> </span><span class="se">\</span>
+<a id="__codelineno-8-6" name="__codelineno-8-6" href="#__codelineno-8-6"></a><span class="w">  </span>--file<span class="w"> </span>Dockerfile<span class="w"> </span><span class="se">\</span>
+<a id="__codelineno-8-7" name="__codelineno-8-7" href="#__codelineno-8-7"></a><span class="w">  </span>--git-access-token<span class="w"> </span>&lt;GITHUB-TOKEN&gt;
 </code></pre></div>
 <div class="admonition tip">
-<p class="admonition-title">Verbindungsstring aus dem Portal</p>
-<p><code>db-aztraining</code> → <strong>Connection strings</strong> → Tab <strong>ODBC</strong> – dort findest du den fertigen Connection String mit deinem Server-Namen.</p>
+<p class="admonition-title">ACR Tasks vs. GitHub Actions</p>
+<p>ACR Tasks sind einfach einzurichten für reine Image-Builds. Für komplexe CI/CD-Pipelines mit Tests und Deployments ist GitHub Actions (Modul 34) mächtiger.</p>
 </div>
-<hr />
-<h2 id="automatische-backups-und-point-in-time-restore">Automatische Backups und Point-in-Time-Restore</h2>
-<p>Azure SQL erstellt automatisch:</p>
-<ul>
-<li><strong>Vollbackup</strong> wöchentlich</li>
-<li><strong>Differenzielles Backup</strong> alle 12 Stunden</li>
-<li><strong>Transaktionslog-Backup</strong> alle 5–10 Minuten</li>
-</ul>
-<p>Das bedeutet: du kannst die Datenbank auf <strong>jede beliebige Minute</strong> der letzten 7 Tage (Standard-Tier) zurücksetzen – ohne eigene Backup-Lösung.</p>
-<p><strong>Wo zu sehen:</strong> <code>db-aztraining</code> → <strong>Restore</strong> oben in der Menüleiste.</p>
 <hr />
 <h2 id="challenge">Challenge</h2>
 <div class="admonition question">
-<p class="admonition-title">Challenge: Ansicht erstellen</p>
-<p>Erstelle eine SQL-<strong>View</strong> <code>v_it_mitarbeiter</code> die alle Mitarbeiter aus der Abteilung <code>IT-Infrastruktur</code> zurückgibt, sortiert nach Einstellungsdatum. Frage die View anschließend im Query Editor ab.</p>
+<p class="admonition-title">Challenge: Flask-App in ACR pushen</p>
+<p>Nimm das Flask-Image aus Modul 26 (oder baue es neu) und:</p>
+<ol>
+<li>Pushe das Image in deine ACR als <code>flask-app:1.0</code></li>
+<li>Lösche das lokale Image: <code>docker rmi flask-app:1.0</code></li>
+<li>Pulle es aus der ACR und starte einen Container davon</li>
+<li>Überprüfe dass <a href="http://localhost:5000">http://localhost:5000</a> immer noch antwortet</li>
+</ol>
 </div>
 <details class="success">
 <summary>Hinweis</summary>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-6-1" name="__codelineno-6-1" href="#__codelineno-6-1"></a><span class="k">CREATE</span><span class="w"> </span><span class="k">VIEW</span><span class="w"> </span><span class="n">v_it_mitarbeiter</span><span class="w"> </span><span class="k">AS</span>
-<a id="__codelineno-6-2" name="__codelineno-6-2" href="#__codelineno-6-2"></a><span class="k">SELECT</span><span class="w"> </span><span class="n">id</span><span class="p">,</span><span class="w"> </span><span class="n">name</span><span class="p">,</span><span class="w"> </span><span class="n">eingestellt</span>
-<a id="__codelineno-6-3" name="__codelineno-6-3" href="#__codelineno-6-3"></a><span class="k">FROM</span><span class="w"> </span><span class="n">mitarbeiter</span>
-<a id="__codelineno-6-4" name="__codelineno-6-4" href="#__codelineno-6-4"></a><span class="k">WHERE</span><span class="w"> </span><span class="n">abteilung</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s1">&#39;IT-Infrastruktur&#39;</span><span class="p">;</span>
-<a id="__codelineno-6-5" name="__codelineno-6-5" href="#__codelineno-6-5"></a>
-<a id="__codelineno-6-6" name="__codelineno-6-6" href="#__codelineno-6-6"></a><span class="c1">-- View abfragen:</span>
-<a id="__codelineno-6-7" name="__codelineno-6-7" href="#__codelineno-6-7"></a><span class="k">SELECT</span><span class="w"> </span><span class="o">*</span><span class="w"> </span><span class="k">FROM</span><span class="w"> </span><span class="n">v_it_mitarbeiter</span><span class="w"> </span><span class="k">ORDER</span><span class="w"> </span><span class="k">BY</span><span class="w"> </span><span class="n">eingestellt</span><span class="p">;</span>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-9-1" name="__codelineno-9-1" href="#__codelineno-9-1"></a><span class="c1"># Image für ACR taggen und pushen</span>
+<a id="__codelineno-9-2" name="__codelineno-9-2" href="#__codelineno-9-2"></a>docker<span class="w"> </span>tag<span class="w"> </span>flask-app:1.0<span class="w"> </span><span class="nv">$ACR_NAME</span>.azurecr.io/flask-app:1.0
+<a id="__codelineno-9-3" name="__codelineno-9-3" href="#__codelineno-9-3"></a>docker<span class="w"> </span>push<span class="w"> </span><span class="nv">$ACR_NAME</span>.azurecr.io/flask-app:1.0
+<a id="__codelineno-9-4" name="__codelineno-9-4" href="#__codelineno-9-4"></a>
+<a id="__codelineno-9-5" name="__codelineno-9-5" href="#__codelineno-9-5"></a><span class="c1"># Lokales Image löschen</span>
+<a id="__codelineno-9-6" name="__codelineno-9-6" href="#__codelineno-9-6"></a>docker<span class="w"> </span>rmi<span class="w"> </span>flask-app:1.0
+<a id="__codelineno-9-7" name="__codelineno-9-7" href="#__codelineno-9-7"></a>
+<a id="__codelineno-9-8" name="__codelineno-9-8" href="#__codelineno-9-8"></a><span class="c1"># Aus ACR pullen und starten</span>
+<a id="__codelineno-9-9" name="__codelineno-9-9" href="#__codelineno-9-9"></a>docker<span class="w"> </span>pull<span class="w"> </span><span class="nv">$ACR_NAME</span>.azurecr.io/flask-app:1.0
+<a id="__codelineno-9-10" name="__codelineno-9-10" href="#__codelineno-9-10"></a>docker<span class="w"> </span>run<span class="w"> </span>-d<span class="w"> </span>-p<span class="w"> </span><span class="m">5000</span>:5000<span class="w"> </span><span class="nv">$ACR_NAME</span>.azurecr.io/flask-app:1.0
 </code></pre></div>
 </details>
 <hr />
-<p>Weiter zu <a href="../modul-16-cosmosdb/">Modul 16 – Azure Cosmos DB: NoSQL-Datenbank</a> →</p>
+<p>Weiter zu <a href="../modul-28-aci/">Modul 28 – Azure Container Instances</a> →</p>
 
 
 
@@ -2307,7 +2270,7 @@
       <nav class="md-footer__inner md-grid" aria-label="Fußzeile" >
         
           
-          <a href="../modul-14-aufr%C3%A4umen/" class="md-footer__link md-footer__link--prev" aria-label="Zurück: Modul 14 – Aufräumen">
+          <a href="../modul-26-docker/" class="md-footer__link md-footer__link--prev" aria-label="Zurück: Modul 26 – Docker Grundlagen">
             <div class="md-footer__button md-icon">
               
               <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
@@ -2317,20 +2280,20 @@
                 Zurück
               </span>
               <div class="md-ellipsis">
-                Modul 14 – Aufräumen
+                Modul 26 – Docker Grundlagen
               </div>
             </div>
           </a>
         
         
           
-          <a href="../modul-16-cosmosdb/" class="md-footer__link md-footer__link--next" aria-label="Weiter: Modul 16 – Cosmos DB">
+          <a href="../modul-28-aci/" class="md-footer__link md-footer__link--next" aria-label="Weiter: Modul 28 – Azure Container Instances">
             <div class="md-footer__title">
               <span class="md-footer__direction">
                 Weiter
               </span>
               <div class="md-ellipsis">
-                Modul 16 – Cosmos DB
+                Modul 28 – Azure Container Instances
               </div>
             </div>
             <div class="md-footer__button md-icon">

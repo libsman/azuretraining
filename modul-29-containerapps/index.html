@@ -10,13 +10,13 @@
       
       
       
-        <link rel="canonical" href="https://libsman.github.io/azuretraining/modul-24-conditional-access/">
+        <link rel="canonical" href="https://libsman.github.io/azuretraining/modul-29-containerapps/">
       
       
-        <link rel="prev" href="../modul-23-rbac/">
+        <link rel="prev" href="../modul-28-aci/">
       
       
-        <link rel="next" href="../modul-25-aufr%C3%A4umen/">
+        <link rel="next" href="../modul-30-aks-ueberblick/">
       
       
         
@@ -27,7 +27,7 @@
     
     
       
-        <title>Modul 24 – Conditional Access - Azure Einstiegstraining</title>
+        <title>Modul 29 – Container Apps - Azure Einstiegstraining</title>
       
     
     
@@ -78,7 +78,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#modul-24-conditional-access-bedingter-zugriff-und-mfa" class="md-skip">
+        <a href="#modul-29-azure-container-apps-serverless-container-mit-autoscaling" class="md-skip">
           Zum Inhalt
         </a>
       
@@ -114,7 +114,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Modul 24 – Conditional Access
+              Modul 29 – Container Apps
             
           </span>
         </div>
@@ -1063,20 +1063,18 @@
       
   
   
-    
   
   
-  
     
     
     
     
     
-    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_6" checked>
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_6" >
         
           
           <label class="md-nav__link" for="__nav_6" id="__nav_6_label" tabindex="0">
@@ -1097,7 +1095,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_6_label" aria-expanded="true">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_6_label" aria-expanded="false">
           <label class="md-nav__title" for="__nav_6">
             <span class="md-nav__icon md-icon"></span>
             
@@ -1196,37 +1194,10 @@
                 
   
   
-    
   
   
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
-      
-      
-        
-      
-      
-        <label class="md-nav__link md-nav__link--active" for="__toc">
-          
-  
-  
-  <span class="md-ellipsis">
-    
-  
-    Modul 24 – Conditional Access
-  
-
-    
-  </span>
-  
-  
-
-          <span class="md-nav__icon md-icon"></span>
-        </label>
-      
-      <a href="./" class="md-nav__link md-nav__link--active">
+    <li class="md-nav__item">
+      <a href="../modul-24-conditional-access/" class="md-nav__link">
         
   
   
@@ -1242,215 +1213,6 @@
   
 
       </a>
-      
-        
-
-<nav class="md-nav md-nav--secondary" aria-label="Inhaltsverzeichnis">
-  
-  
-  
-    
-  
-  
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      Inhaltsverzeichnis
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#lernziele" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Lernziele
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#hintergrund-zero-trust-never-trust-always-verify" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Hintergrund: Zero Trust – "Never Trust, Always Verify"
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#was-ist-conditional-access" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Was ist Conditional Access?
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#security-defaults-mindestschutz-ohne-p1" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Security Defaults: Mindestschutz ohne P1
-      
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="Security Defaults: Mindestschutz ohne P1">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#security-defaults-prufen" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Security Defaults prüfen
-      
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#mfa-fur-benutzer-konfigurieren" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        MFA für Benutzer konfigurieren
-      
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="MFA für Benutzer konfigurieren">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#per-user-mfa-legacy-methode-fur-kleine-tenants" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Per-User MFA (Legacy-Methode, für kleine Tenants)
-      
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#erste-conditional-access-policy-report-only" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Erste Conditional Access-Policy (Report-only)
-      
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="Erste Conditional Access-Policy (Report-only)">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#schritt-1-policy-bereich-offnen" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Schritt 1: Policy-Bereich öffnen
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#schritt-2-neue-policy-erstellen" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Schritt 2: Neue Policy erstellen
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#schritt-3-ergebnis-analysieren" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Schritt 3: Ergebnis analysieren
-      
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#named-locations-trusted-ips-definieren" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Named Locations: Trusted IPs definieren
-      
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="Named Locations: Trusted IPs definieren">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#unternehmens-ip-als-vertrauenswurdig-markieren" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Unternehmens-IP als vertrauenswürdig markieren
-      
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#sign-in-risk-ki-basierter-schutz" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Sign-in Risk: KI-basierter Schutz
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#challenge" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Challenge
-      
-    </span>
-  </a>
-  
-</li>
-      
-    </ul>
-  
-</nav>
-      
     </li>
   
 
@@ -1495,18 +1257,20 @@
       
   
   
+    
   
   
+  
     
     
     
     
     
-    <li class="md-nav__item md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_7" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_7" checked>
         
           
           <label class="md-nav__link" for="__nav_7" id="__nav_7_label" tabindex="0">
@@ -1527,7 +1291,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_7_label" aria-expanded="false">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_7_label" aria-expanded="true">
           <label class="md-nav__title" for="__nav_7">
             <span class="md-nav__icon md-icon"></span>
             
@@ -1626,10 +1390,37 @@
                 
   
   
+    
   
   
-    <li class="md-nav__item">
-      <a href="../modul-29-containerapps/" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Modul 29 – Container Apps
+  
+
+    
+  </span>
+  
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
         
   
   
@@ -1645,6 +1436,209 @@
   
 
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Inhaltsverzeichnis">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Inhaltsverzeichnis
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#lernziele" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Lernziele
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#hintergrund-die-lucke-zwischen-aci-und-aks" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Hintergrund: Die Lücke zwischen ACI und AKS
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#container-apps-environment-erstellen" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Container Apps Environment erstellen
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#erste-container-app-erstellen" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Erste Container App erstellen
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Erste Container App erstellen">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#offentliches-beispiel-image-ohne-acr" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Öffentliches Beispiel-Image (ohne ACR)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#aus-der-eigenen-acr" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Aus der eigenen ACR
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#autoscaling-konfigurieren" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Autoscaling konfigurieren
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Autoscaling konfigurieren">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#im-portal" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Im Portal
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#keda-basierte-regeln-event-driven-scaling" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        KEDA-basierte Regeln (Event-Driven Scaling)
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#revisionen-deployments-ohne-downtime" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Revisionen: Deployments ohne Downtime
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Revisionen: Deployments ohne Downtime">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#neue-revision-deployen" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Neue Revision deployen
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#traffic-split-80-alt-20-neu" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Traffic-Split: 80% alt, 20% neu
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#umgebungsvariablen-und-secrets" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Umgebungsvariablen und Secrets
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#logs-anzeigen" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Logs anzeigen
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#challenge" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Challenge
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
     </li>
   
 
@@ -1779,10 +1773,10 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#hintergrund-zero-trust-never-trust-always-verify" class="md-nav__link">
+  <a href="#hintergrund-die-lucke-zwischen-aci-und-aks" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Hintergrund: Zero Trust – "Never Trust, Always Verify"
+        Hintergrund: Die Lücke zwischen ACI und AKS
       
     </span>
   </a>
@@ -1790,10 +1784,10 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#was-ist-conditional-access" class="md-nav__link">
+  <a href="#container-apps-environment-erstellen" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Was ist Conditional Access?
+        Container Apps Environment erstellen
       
     </span>
   </a>
@@ -1801,22 +1795,33 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#security-defaults-mindestschutz-ohne-p1" class="md-nav__link">
+  <a href="#erste-container-app-erstellen" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Security Defaults: Mindestschutz ohne P1
+        Erste Container App erstellen
       
     </span>
   </a>
   
-    <nav class="md-nav" aria-label="Security Defaults: Mindestschutz ohne P1">
+    <nav class="md-nav" aria-label="Erste Container App erstellen">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#security-defaults-prufen" class="md-nav__link">
+  <a href="#offentliches-beispiel-image-ohne-acr" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Security Defaults prüfen
+        Öffentliches Beispiel-Image (ohne ACR)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#aus-der-eigenen-acr" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Aus der eigenen ACR
       
     </span>
   </a>
@@ -1829,22 +1834,33 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#mfa-fur-benutzer-konfigurieren" class="md-nav__link">
+  <a href="#autoscaling-konfigurieren" class="md-nav__link">
     <span class="md-ellipsis">
       
-        MFA für Benutzer konfigurieren
+        Autoscaling konfigurieren
       
     </span>
   </a>
   
-    <nav class="md-nav" aria-label="MFA für Benutzer konfigurieren">
+    <nav class="md-nav" aria-label="Autoscaling konfigurieren">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#per-user-mfa-legacy-methode-fur-kleine-tenants" class="md-nav__link">
+  <a href="#im-portal" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Per-User MFA (Legacy-Methode, für kleine Tenants)
+        Im Portal
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#keda-basierte-regeln-event-driven-scaling" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        KEDA-basierte Regeln (Event-Driven Scaling)
       
     </span>
   </a>
@@ -1857,22 +1873,22 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#erste-conditional-access-policy-report-only" class="md-nav__link">
+  <a href="#revisionen-deployments-ohne-downtime" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Erste Conditional Access-Policy (Report-only)
+        Revisionen: Deployments ohne Downtime
       
     </span>
   </a>
   
-    <nav class="md-nav" aria-label="Erste Conditional Access-Policy (Report-only)">
+    <nav class="md-nav" aria-label="Revisionen: Deployments ohne Downtime">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#schritt-1-policy-bereich-offnen" class="md-nav__link">
+  <a href="#neue-revision-deployen" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Schritt 1: Policy-Bereich öffnen
+        Neue Revision deployen
       
     </span>
   </a>
@@ -1880,21 +1896,10 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#schritt-2-neue-policy-erstellen" class="md-nav__link">
+  <a href="#traffic-split-80-alt-20-neu" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Schritt 2: Neue Policy erstellen
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#schritt-3-ergebnis-analysieren" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Schritt 3: Ergebnis analysieren
+        Traffic-Split: 80% alt, 20% neu
       
     </span>
   </a>
@@ -1907,38 +1912,21 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#named-locations-trusted-ips-definieren" class="md-nav__link">
+  <a href="#umgebungsvariablen-und-secrets" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Named Locations: Trusted IPs definieren
+        Umgebungsvariablen und Secrets
       
     </span>
   </a>
-  
-    <nav class="md-nav" aria-label="Named Locations: Trusted IPs definieren">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#unternehmens-ip-als-vertrauenswurdig-markieren" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Unternehmens-IP als vertrauenswürdig markieren
-      
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#sign-in-risk-ki-basierter-schutz" class="md-nav__link">
+  <a href="#logs-anzeigen" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Sign-in Risk: KI-basierter Schutz
+        Logs anzeigen
       
     </span>
   </a>
@@ -1976,155 +1964,106 @@
   
 
 
-<h1 id="modul-24-conditional-access-bedingter-zugriff-und-mfa">Modul 24 – Conditional Access: Bedingter Zugriff und MFA</h1>
+<h1 id="modul-29-azure-container-apps-serverless-container-mit-autoscaling">Modul 29 – Azure Container Apps: Serverless Container mit Autoscaling</h1>
 <h2 id="lernziele">Lernziele</h2>
 <p>Nach diesem Modul kannst du:</p>
 <ul>
-<li>Das Konzept von Conditional Access (Zero Trust) erklären</li>
-<li>Den Unterschied zwischen MFA-erzwingen und Conditional Access beschreiben</li>
-<li>Eine einfache Conditional Access-Policy im Portal erstellen und analysieren</li>
-<li>Security Defaults als Mindestschutz für Tenants erklären</li>
-<li>Named Locations und Sign-in Risk als Policy-Bedingungen beschreiben</li>
+<li>Azure Container Apps (ACA) als serverlose Container-Plattform erklären</li>
+<li>Den Unterschied zwischen Container Apps und ACI sowie AKS beschreiben</li>
+<li>Eine Container App aus einem ACR-Image erstellen</li>
+<li>Autoscaling konfigurieren (HTTP-basiert, KEDA-Rules)</li>
+<li>Revisionen und Traffic-Splitting für Canary-Deployments verstehen</li>
+<li>Dapr (Distributed Application Runtime) als optionale Integration kennen</li>
 </ul>
 <hr />
-<h2 id="hintergrund-zero-trust-never-trust-always-verify">Hintergrund: Zero Trust – "Never Trust, Always Verify"</h2>
-<p><strong>On-Prem-Vergleich:</strong> Im klassischen Sicherheitsmodell war das Unternehmensnetzwerk ein "sicheres Inneres" (Büro, VPN) und das Internet "gefährlich außen". Wer im Büronetz war, durfte auf Ressourcen zugreifen. <strong>Zero Trust</strong> dreht das um: Jeder Zugriff wird geprüft – egal ob aus dem Büro, aus dem Homeoffice oder vom Mobilgerät.</p>
-<p>Microsoft beschreibt Zero Trust mit drei Prinzipien:</p>
-<ol>
-<li><strong>Verify explicitly</strong> – Immer authentifizieren und autorisieren, alle verfügbaren Datenpunkte nutzen</li>
-<li><strong>Use least privilege access</strong> – Nur minimale Rechte, Just-in-Time-Zugriff</li>
-<li><strong>Assume breach</strong> – Immer davon ausgehen, dass Angreifer schon im Netz sind → Segmentierung, Monitoring</li>
-</ol>
-<p><strong>Conditional Access</strong> ist das technische Werkzeug dafür in Entra ID.</p>
-<hr />
-<h2 id="was-ist-conditional-access">Was ist Conditional Access?</h2>
-<p>Conditional Access ist ein <strong>Policy-Engine</strong>: "Wenn Bedingung X zutrifft, dann Anforderung Y."</p>
-<p><strong>Bedingungen (Conditions):</strong></p>
-<table>
-<thead>
-<tr>
-<th>Signal</th>
-<th>Beispiel</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>Benutzer / Gruppe</td>
-<td>Nur für Admins</td>
-</tr>
-<tr>
-<td>Anwendung</td>
-<td>Nur beim Zugriff auf Azure Portal</td>
-</tr>
-<tr>
-<td>Standort</td>
-<td>Nur aus Deutschland</td>
-</tr>
-<tr>
-<td>Gerätezustand</td>
-<td>Nur Intune-verwaltete Geräte</td>
-</tr>
-<tr>
-<td>Sign-in Risk</td>
-<td>Wenn Login-Risikolevel "High"</td>
-</tr>
-<tr>
-<td>Client App</td>
-<td>Nur moderne Auth-Clients</td>
-</tr>
-</tbody>
-</table>
-<p><strong>Aktionen (Grant/Block):</strong></p>
+<h2 id="hintergrund-die-lucke-zwischen-aci-und-aks">Hintergrund: Die Lücke zwischen ACI und AKS</h2>
+<p><strong>On-Prem-Vergleich:</strong> Du kennst IIS-Websites die mit Load Balancer auf mehrere Server verteilt werden. In der Cloud gibt es dafür ein modernes Äquivalent: Container Apps nehmen dir die gesamte Kubernetes-Infrastruktur ab und bieten trotzdem Skalierung, Traffic-Steuerung und Service-Discovery.</p>
+<p><strong>Das Container-Spektrum:</strong></p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a>Einfach ◄─────────────────────────────► Komplex
+<a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a>   │                 │                    │
+<a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a>  ACI            Container Apps          AKS
+<a id="__codelineno-0-4" name="__codelineno-0-4" href="#__codelineno-0-4"></a>(Einzel-        (Managed Plattform      (Volles
+<a id="__codelineno-0-5" name="__codelineno-0-5" href="#__codelineno-0-5"></a> Container,      mit Autoscale,          Kubernetes,
+<a id="__codelineno-0-6" name="__codelineno-0-6" href="#__codelineno-0-6"></a> kein Scale)     kein K8s-Wissen)        volle Kontrolle)
+</code></pre></div>
+<p><strong>Wann Container Apps?</strong></p>
 <ul>
-<li>Zugriff blockieren</li>
-<li>Zugriff erlauben wenn MFA bestanden</li>
-<li>Zugriff erlauben wenn Gerät compliant</li>
-<li>Zugriff erlauben wenn Terms of Use akzeptiert</li>
+<li>Web-Apps und APIs die automatisch skalieren sollen</li>
+<li>Microservices die miteinander kommunizieren</li>
+<li>Event-getriebene Container (KEDA: Skalierung nach Queue-Länge, HTTP-Traffic, etc.)</li>
+<li>Du willst kein Kubernetes verwalten, aber mehr als ACI</li>
 </ul>
-<div class="admonition info">
-<p class="admonition-title">Entra ID P1 benötigt</p>
-<p>Conditional Access-Richtlinien benötigen <strong>Microsoft Entra ID P1</strong> (oder P2). In vielen Microsoft 365 Business Premium / E3-Lizenzen ist P1 enthalten. Mit einem reinen Azure Free Account steht nur die grundlegende Version zur Verfügung.</p>
-<p>Für dieses Modul: schaue dir die Oberfläche an und erstelle eine Richtlinie im <strong>Report-only</strong>-Modus (kein Einfluss auf echte Logins).</p>
-</div>
 <hr />
-<h2 id="security-defaults-mindestschutz-ohne-p1">Security Defaults: Mindestschutz ohne P1</h2>
-<p>Falls kein P1 vorhanden ist, bietet Microsoft <strong>Security Defaults</strong> – ein vordefiniertes Sicherheitspaket:</p>
-<ul>
-<li>MFA für alle Admins erzwingen</li>
-<li>MFA für alle Benutzer registrieren</li>
-<li>Ältere Authentifizierungsprotokolle (Legacy Auth) blockieren</li>
-<li>Privilegierte Aktionen immer mit MFA schützen</li>
-</ul>
-<h3 id="security-defaults-prufen">Security Defaults prüfen</h3>
-<ol>
-<li><strong>Microsoft Entra ID</strong> → <strong>Properties</strong> (ganz unten im linken Menü)</li>
-<li>Scrolle nach unten: <strong>Manage Security defaults</strong></li>
-<li>Du siehst ob Security Defaults aktiviert oder deaktiviert sind</li>
-</ol>
-<div class="admonition warning">
-<p class="admonition-title">Security Defaults vs. Conditional Access</p>
-<p>Beides gleichzeitig zu aktivieren ist nicht möglich (bzw. führt zu Konflikten). Wenn du Conditional Access nutzt, deaktivierst du Security Defaults – dafür musst du aber eigene Richtlinien erstellen die denselben Schutz bieten.</p>
-</div>
+<h2 id="container-apps-environment-erstellen">Container Apps Environment erstellen</h2>
+<p>Container Apps laufen in einer <strong>Environment</strong> (Laufzeitumgebung, geteilt über mehrere Container Apps):</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a><span class="c1"># Log Analytics Workspace für Logs</span>
+<a id="__codelineno-1-2" name="__codelineno-1-2" href="#__codelineno-1-2"></a>az<span class="w"> </span>monitor<span class="w"> </span>log-analytics<span class="w"> </span>workspace<span class="w"> </span>create<span class="w"> </span><span class="se">\</span>
+<a id="__codelineno-1-3" name="__codelineno-1-3" href="#__codelineno-1-3"></a><span class="w">  </span>--resource-group<span class="w"> </span>rg-container<span class="w"> </span><span class="se">\</span>
+<a id="__codelineno-1-4" name="__codelineno-1-4" href="#__codelineno-1-4"></a><span class="w">  </span>--workspace-name<span class="w"> </span>log-container
+<a id="__codelineno-1-5" name="__codelineno-1-5" href="#__codelineno-1-5"></a>
+<a id="__codelineno-1-6" name="__codelineno-1-6" href="#__codelineno-1-6"></a><span class="nv">LOG_WORKSPACE_ID</span><span class="o">=</span><span class="k">$(</span>az<span class="w"> </span>monitor<span class="w"> </span>log-analytics<span class="w"> </span>workspace<span class="w"> </span>show<span class="w"> </span><span class="se">\</span>
+<a id="__codelineno-1-7" name="__codelineno-1-7" href="#__codelineno-1-7"></a><span class="w">  </span>--resource-group<span class="w"> </span>rg-container<span class="w"> </span><span class="se">\</span>
+<a id="__codelineno-1-8" name="__codelineno-1-8" href="#__codelineno-1-8"></a><span class="w">  </span>--workspace-name<span class="w"> </span>log-container<span class="w"> </span><span class="se">\</span>
+<a id="__codelineno-1-9" name="__codelineno-1-9" href="#__codelineno-1-9"></a><span class="w">  </span>--query<span class="w"> </span>customerId<span class="w"> </span>-o<span class="w"> </span>tsv<span class="k">)</span>
+<a id="__codelineno-1-10" name="__codelineno-1-10" href="#__codelineno-1-10"></a>
+<a id="__codelineno-1-11" name="__codelineno-1-11" href="#__codelineno-1-11"></a><span class="nv">LOG_WORKSPACE_KEY</span><span class="o">=</span><span class="k">$(</span>az<span class="w"> </span>monitor<span class="w"> </span>log-analytics<span class="w"> </span>workspace<span class="w"> </span>get-shared-keys<span class="w"> </span><span class="se">\</span>
+<a id="__codelineno-1-12" name="__codelineno-1-12" href="#__codelineno-1-12"></a><span class="w">  </span>--resource-group<span class="w"> </span>rg-container<span class="w"> </span><span class="se">\</span>
+<a id="__codelineno-1-13" name="__codelineno-1-13" href="#__codelineno-1-13"></a><span class="w">  </span>--workspace-name<span class="w"> </span>log-container<span class="w"> </span><span class="se">\</span>
+<a id="__codelineno-1-14" name="__codelineno-1-14" href="#__codelineno-1-14"></a><span class="w">  </span>--query<span class="w"> </span>primarySharedKey<span class="w"> </span>-o<span class="w"> </span>tsv<span class="k">)</span>
+<a id="__codelineno-1-15" name="__codelineno-1-15" href="#__codelineno-1-15"></a>
+<a id="__codelineno-1-16" name="__codelineno-1-16" href="#__codelineno-1-16"></a><span class="c1"># Container Apps Environment</span>
+<a id="__codelineno-1-17" name="__codelineno-1-17" href="#__codelineno-1-17"></a>az<span class="w"> </span>containerapp<span class="w"> </span>env<span class="w"> </span>create<span class="w"> </span><span class="se">\</span>
+<a id="__codelineno-1-18" name="__codelineno-1-18" href="#__codelineno-1-18"></a><span class="w">  </span>--name<span class="w"> </span>env-container<span class="w"> </span><span class="se">\</span>
+<a id="__codelineno-1-19" name="__codelineno-1-19" href="#__codelineno-1-19"></a><span class="w">  </span>--resource-group<span class="w"> </span>rg-container<span class="w"> </span><span class="se">\</span>
+<a id="__codelineno-1-20" name="__codelineno-1-20" href="#__codelineno-1-20"></a><span class="w">  </span>--location<span class="w"> </span>westeurope<span class="w"> </span><span class="se">\</span>
+<a id="__codelineno-1-21" name="__codelineno-1-21" href="#__codelineno-1-21"></a><span class="w">  </span>--logs-workspace-id<span class="w"> </span><span class="nv">$LOG_WORKSPACE_ID</span><span class="w"> </span><span class="se">\</span>
+<a id="__codelineno-1-22" name="__codelineno-1-22" href="#__codelineno-1-22"></a><span class="w">  </span>--logs-workspace-key<span class="w"> </span><span class="nv">$LOG_WORKSPACE_KEY</span>
+</code></pre></div>
 <hr />
-<h2 id="mfa-fur-benutzer-konfigurieren">MFA für Benutzer konfigurieren</h2>
-<h3 id="per-user-mfa-legacy-methode-fur-kleine-tenants">Per-User MFA (Legacy-Methode, für kleine Tenants)</h3>
-<ol>
-<li><strong>Microsoft Entra ID</strong> → <strong>Users</strong> → <strong>All users</strong></li>
-<li>Klicke oben auf <strong>Per-user MFA</strong> (Link erscheint im oberen Bereich)</li>
-<li>Du siehst die MFA-Status aller Benutzer: Disabled / Enabled / Enforced</li>
-<li>Wähle einen Benutzer → klicke rechts auf <strong>Enable</strong></li>
-</ol>
-<p>Der Benutzer wird beim nächsten Login aufgefordert MFA einzurichten (Authenticator App, SMS oder Anruf).</p>
-<div class="admonition info">
-<p class="admonition-title">Per-user MFA vs. Conditional Access MFA</p>
-<ul>
-<li><strong>Per-user MFA</strong>: einfach, aber unflexibel – MFA immer, egal von wo oder womit</li>
-<li><strong>Conditional Access MFA</strong>: flexibel – MFA nur unter bestimmten Bedingungen (z.B. nicht im Firmennetz)</li>
-</ul>
-<p>Für neue Deployments: Conditional Access bevorzugen.</p>
-</div>
+<h2 id="erste-container-app-erstellen">Erste Container App erstellen</h2>
+<h3 id="offentliches-beispiel-image-ohne-acr">Öffentliches Beispiel-Image (ohne ACR)</h3>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a>az<span class="w"> </span>containerapp<span class="w"> </span>create<span class="w"> </span><span class="se">\</span>
+<a id="__codelineno-2-2" name="__codelineno-2-2" href="#__codelineno-2-2"></a><span class="w">  </span>--name<span class="w"> </span>meine-container-app<span class="w"> </span><span class="se">\</span>
+<a id="__codelineno-2-3" name="__codelineno-2-3" href="#__codelineno-2-3"></a><span class="w">  </span>--resource-group<span class="w"> </span>rg-container<span class="w"> </span><span class="se">\</span>
+<a id="__codelineno-2-4" name="__codelineno-2-4" href="#__codelineno-2-4"></a><span class="w">  </span>--environment<span class="w"> </span>env-container<span class="w"> </span><span class="se">\</span>
+<a id="__codelineno-2-5" name="__codelineno-2-5" href="#__codelineno-2-5"></a><span class="w">  </span>--image<span class="w"> </span>mcr.microsoft.com/azuredocs/containerapps-helloworld:latest<span class="w"> </span><span class="se">\</span>
+<a id="__codelineno-2-6" name="__codelineno-2-6" href="#__codelineno-2-6"></a><span class="w">  </span>--target-port<span class="w"> </span><span class="m">80</span><span class="w"> </span><span class="se">\</span>
+<a id="__codelineno-2-7" name="__codelineno-2-7" href="#__codelineno-2-7"></a><span class="w">  </span>--ingress<span class="w"> </span>external<span class="w"> </span><span class="se">\</span>
+<a id="__codelineno-2-8" name="__codelineno-2-8" href="#__codelineno-2-8"></a><span class="w">  </span>--min-replicas<span class="w"> </span><span class="m">0</span><span class="w"> </span><span class="se">\</span>
+<a id="__codelineno-2-9" name="__codelineno-2-9" href="#__codelineno-2-9"></a><span class="w">  </span>--max-replicas<span class="w"> </span><span class="m">3</span>
+</code></pre></div>
+<p>Die URL erscheint in der Ausgabe unter <code>properties.configuration.ingress.fqdn</code>.</p>
+<h3 id="aus-der-eigenen-acr">Aus der eigenen ACR</h3>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a><span class="nv">ACR_NAME</span><span class="o">=</span><span class="k">$(</span>az<span class="w"> </span>acr<span class="w"> </span>list<span class="w"> </span>--resource-group<span class="w"> </span>rg-container<span class="w"> </span>--query<span class="w"> </span><span class="s2">&quot;[0].name&quot;</span><span class="w"> </span>-o<span class="w"> </span>tsv<span class="k">)</span>
+<a id="__codelineno-3-2" name="__codelineno-3-2" href="#__codelineno-3-2"></a><span class="nv">ACR_PASS</span><span class="o">=</span><span class="k">$(</span>az<span class="w"> </span>acr<span class="w"> </span>credential<span class="w"> </span>show<span class="w"> </span>--name<span class="w"> </span><span class="nv">$ACR_NAME</span><span class="w"> </span>--query<span class="w"> </span><span class="s2">&quot;passwords[0].value&quot;</span><span class="w"> </span>-o<span class="w"> </span>tsv<span class="k">)</span>
+<a id="__codelineno-3-3" name="__codelineno-3-3" href="#__codelineno-3-3"></a>
+<a id="__codelineno-3-4" name="__codelineno-3-4" href="#__codelineno-3-4"></a>az<span class="w"> </span>containerapp<span class="w"> </span>create<span class="w"> </span><span class="se">\</span>
+<a id="__codelineno-3-5" name="__codelineno-3-5" href="#__codelineno-3-5"></a><span class="w">  </span>--name<span class="w"> </span>flask-container-app<span class="w"> </span><span class="se">\</span>
+<a id="__codelineno-3-6" name="__codelineno-3-6" href="#__codelineno-3-6"></a><span class="w">  </span>--resource-group<span class="w"> </span>rg-container<span class="w"> </span><span class="se">\</span>
+<a id="__codelineno-3-7" name="__codelineno-3-7" href="#__codelineno-3-7"></a><span class="w">  </span>--environment<span class="w"> </span>env-container<span class="w"> </span><span class="se">\</span>
+<a id="__codelineno-3-8" name="__codelineno-3-8" href="#__codelineno-3-8"></a><span class="w">  </span>--image<span class="w"> </span><span class="nv">$ACR_NAME</span>.azurecr.io/flask-app:1.0<span class="w"> </span><span class="se">\</span>
+<a id="__codelineno-3-9" name="__codelineno-3-9" href="#__codelineno-3-9"></a><span class="w">  </span>--registry-server<span class="w"> </span><span class="nv">$ACR_NAME</span>.azurecr.io<span class="w"> </span><span class="se">\</span>
+<a id="__codelineno-3-10" name="__codelineno-3-10" href="#__codelineno-3-10"></a><span class="w">  </span>--registry-username<span class="w"> </span><span class="nv">$ACR_NAME</span><span class="w"> </span><span class="se">\</span>
+<a id="__codelineno-3-11" name="__codelineno-3-11" href="#__codelineno-3-11"></a><span class="w">  </span>--registry-password<span class="w"> </span><span class="nv">$ACR_PASS</span><span class="w"> </span><span class="se">\</span>
+<a id="__codelineno-3-12" name="__codelineno-3-12" href="#__codelineno-3-12"></a><span class="w">  </span>--target-port<span class="w"> </span><span class="m">5000</span><span class="w"> </span><span class="se">\</span>
+<a id="__codelineno-3-13" name="__codelineno-3-13" href="#__codelineno-3-13"></a><span class="w">  </span>--ingress<span class="w"> </span>external<span class="w"> </span><span class="se">\</span>
+<a id="__codelineno-3-14" name="__codelineno-3-14" href="#__codelineno-3-14"></a><span class="w">  </span>--min-replicas<span class="w"> </span><span class="m">1</span><span class="w"> </span><span class="se">\</span>
+<a id="__codelineno-3-15" name="__codelineno-3-15" href="#__codelineno-3-15"></a><span class="w">  </span>--max-replicas<span class="w"> </span><span class="m">5</span>
+</code></pre></div>
+<p>URL abrufen:</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-4-1" name="__codelineno-4-1" href="#__codelineno-4-1"></a>az<span class="w"> </span>containerapp<span class="w"> </span>show<span class="w"> </span><span class="se">\</span>
+<a id="__codelineno-4-2" name="__codelineno-4-2" href="#__codelineno-4-2"></a><span class="w">  </span>--name<span class="w"> </span>flask-container-app<span class="w"> </span><span class="se">\</span>
+<a id="__codelineno-4-3" name="__codelineno-4-3" href="#__codelineno-4-3"></a><span class="w">  </span>--resource-group<span class="w"> </span>rg-container<span class="w"> </span><span class="se">\</span>
+<a id="__codelineno-4-4" name="__codelineno-4-4" href="#__codelineno-4-4"></a><span class="w">  </span>--query<span class="w"> </span><span class="s2">&quot;properties.configuration.ingress.fqdn&quot;</span><span class="w"> </span>-o<span class="w"> </span>tsv
+</code></pre></div>
 <hr />
-<h2 id="erste-conditional-access-policy-report-only">Erste Conditional Access-Policy (Report-only)</h2>
-<h3 id="schritt-1-policy-bereich-offnen">Schritt 1: Policy-Bereich öffnen</h3>
+<h2 id="autoscaling-konfigurieren">Autoscaling konfigurieren</h2>
+<p>Container Apps skaliert automatisch basierend auf Regeln. Standardmäßig: <strong>HTTP-basiertes Scaling</strong>.</p>
+<h3 id="im-portal">Im Portal</h3>
 <ol>
-<li><strong>Microsoft Entra ID</strong> → <strong>Protection</strong> → <strong>Conditional Access</strong></li>
-<li>Tab <strong>Policies</strong></li>
-</ol>
-<p>Du siehst eine Liste der vorhandenen Policies (meist leer in Test-Tenants).</p>
-<h3 id="schritt-2-neue-policy-erstellen">Schritt 2: Neue Policy erstellen</h3>
-<p>Klicke <strong>+ New policy</strong>. Gib der Policy einen Namen: <code>MFA für Azure Portal (Report-only)</code></p>
-<p><strong>Assignments – Users:</strong>
-- Klicke auf <strong>Users</strong> → <strong>Include</strong> → <strong>Select users and groups</strong>
-- Wähle deinen Testbenutzer <code>testuser@...</code> (nicht deinen eigenen Admin-Account – Gefahr der Aussperrung!)</p>
-<p><strong>Assignments – Target resources:</strong>
-- Klicke auf <strong>Target resources</strong> → <strong>Include</strong> → <strong>Select resources</strong>
-- Suche nach <strong><code>Microsoft Azure Management</code></strong> und wähle es aus</p>
-<p>Dies umfasst: Azure Portal, Azure CLI, Azure PowerShell, ARM-API.</p>
-<p><strong>Access controls – Grant:</strong>
-- Klicke auf <strong>Grant</strong>
-- Wähle <strong>Require multifactor authentication</strong>
-- Klicke <strong>Select</strong></p>
-<p><strong>Enable policy:</strong>
-- Stelle sicher: <strong>Report-only</strong> (nicht "On"!)
-- Klicke <strong>Create</strong></p>
-<div class="admonition warning">
-<p class="admonition-title">Report-only ist sicher</p>
-<p>Im <strong>Report-only</strong>-Modus wird die Policy ausgewertet aber nicht durchgesetzt. Du siehst im Sign-in Log was passiert wäre – ohne echte Auswirkungen. Das ist ideal zum Testen.</p>
-</div>
-<h3 id="schritt-3-ergebnis-analysieren">Schritt 3: Ergebnis analysieren</h3>
-<p>Nachdem sich jemand einloggt, kannst du unter <strong>Sign-in logs</strong> sehen was die Policy ausgewertet hat:</p>
-<ol>
-<li><strong>Microsoft Entra ID</strong> → <strong>Monitoring</strong> → <strong>Sign-in logs</strong></li>
-<li>Klicke auf einen Login-Eintrag</li>
-<li>Tab <strong>Conditional Access</strong> – du siehst welche Policies ausgewertet wurden und was das Ergebnis wäre</li>
-</ol>
-<hr />
-<h2 id="named-locations-trusted-ips-definieren">Named Locations: Trusted IPs definieren</h2>
-<p>Conditional Access kann auf Basis des Standorts (IP-Adresse oder GPS-Koordinate) entscheiden.</p>
-<h3 id="unternehmens-ip-als-vertrauenswurdig-markieren">Unternehmens-IP als vertrauenswürdig markieren</h3>
-<ol>
-<li><strong>Microsoft Entra ID</strong> → <strong>Protection</strong> → <strong>Conditional Access</strong> → <strong>Named locations</strong></li>
-<li><strong>+ IP ranges location</strong></li>
+<li>Öffne die Container App im Portal</li>
+<li>Links: <strong>Scale and replicas</strong></li>
+<li>Klicke <strong>+ Add scale rule</strong></li>
 </ol>
 <table>
 <thead>
@@ -2135,72 +2074,123 @@
 </thead>
 <tbody>
 <tr>
-<td>Name</td>
-<td><code>Büro Berlin</code></td>
+<td>Rule name</td>
+<td><code>http-scaling</code></td>
 </tr>
 <tr>
-<td>Mark as trusted location</td>
-<td>✅</td>
+<td>Type</td>
+<td><code>HTTP scaling</code></td>
 </tr>
 <tr>
-<td>IP ranges</td>
-<td>deine externe IP-Adresse (CIDR, z.B. <code>203.0.113.0/24</code>)</td>
+<td>Concurrent requests</td>
+<td><code>10</code></td>
 </tr>
 </tbody>
 </table>
-<p>Jetzt kannst du in einer Conditional Access-Policy sagen: MFA erzwingen, AUSSER wenn der Login von der vertrauenswürdigen Location kommt.</p>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a>WENN:  Benutzer: Alle
-<a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a>       App: Azure Portal
-<a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a>       Standort: NOT &quot;Büro Berlin&quot;
-<a id="__codelineno-0-4" name="__codelineno-0-4" href="#__codelineno-0-4"></a>DANN:  MFA erzwingen
+<p>Das bedeutet: Für je 10 gleichzeitige HTTP-Anfragen wird eine neue Instanz gestartet, bis <code>max-replicas</code> erreicht ist.</p>
+<div class="admonition info">
+<p class="admonition-title">Scale to Zero</p>
+<p>Mit <code>--min-replicas 0</code> skaliert die App auf null wenn keine Anfragen kommen – dann keine Kosten. Beim ersten Request startet sie neu (Cold Start: 1–5 Sekunden). Ideal für dev/test-Umgebungen.</p>
+</div>
+<h3 id="keda-basierte-regeln-event-driven-scaling">KEDA-basierte Regeln (Event-Driven Scaling)</h3>
+<p>Container Apps nutzt intern <strong>KEDA</strong> (Kubernetes Event-Driven Autoscaling) für erweiterte Regeln:</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-5-1" name="__codelineno-5-1" href="#__codelineno-5-1"></a><span class="c1"># Skalierung nach Azure Service Bus Queue-Länge</span>
+<a id="__codelineno-5-2" name="__codelineno-5-2" href="#__codelineno-5-2"></a>az<span class="w"> </span>containerapp<span class="w"> </span>update<span class="w"> </span><span class="se">\</span>
+<a id="__codelineno-5-3" name="__codelineno-5-3" href="#__codelineno-5-3"></a><span class="w">  </span>--name<span class="w"> </span>flask-container-app<span class="w"> </span><span class="se">\</span>
+<a id="__codelineno-5-4" name="__codelineno-5-4" href="#__codelineno-5-4"></a><span class="w">  </span>--resource-group<span class="w"> </span>rg-container<span class="w"> </span><span class="se">\</span>
+<a id="__codelineno-5-5" name="__codelineno-5-5" href="#__codelineno-5-5"></a><span class="w">  </span>--scale-rule-name<span class="w"> </span><span class="s2">&quot;queue-scaling&quot;</span><span class="w"> </span><span class="se">\</span>
+<a id="__codelineno-5-6" name="__codelineno-5-6" href="#__codelineno-5-6"></a><span class="w">  </span>--scale-rule-type<span class="w"> </span><span class="s2">&quot;azure-servicebus&quot;</span><span class="w"> </span><span class="se">\</span>
+<a id="__codelineno-5-7" name="__codelineno-5-7" href="#__codelineno-5-7"></a><span class="w">  </span>--scale-rule-metadata<span class="w"> </span><span class="se">\</span>
+<a id="__codelineno-5-8" name="__codelineno-5-8" href="#__codelineno-5-8"></a><span class="w">    </span><span class="s2">&quot;queueName=meine-queue&quot;</span><span class="w"> </span><span class="se">\</span>
+<a id="__codelineno-5-9" name="__codelineno-5-9" href="#__codelineno-5-9"></a><span class="w">    </span><span class="s2">&quot;messageCount=5&quot;</span><span class="w"> </span><span class="se">\</span>
+<a id="__codelineno-5-10" name="__codelineno-5-10" href="#__codelineno-5-10"></a><span class="w">  </span>--scale-rule-auth<span class="w"> </span><span class="se">\</span>
+<a id="__codelineno-5-11" name="__codelineno-5-11" href="#__codelineno-5-11"></a><span class="w">    </span><span class="s2">&quot;connection=connection-string-secret&quot;</span>
 </code></pre></div>
 <hr />
-<h2 id="sign-in-risk-ki-basierter-schutz">Sign-in Risk: KI-basierter Schutz</h2>
-<p>Entra ID <strong>Identity Protection</strong> (benötigt P2) analysiert jeden Login mit Machine Learning:</p>
-<ul>
-<li>Unbekanntes Gerät</li>
-<li>Ungewöhnlicher Standort</li>
-<li>Login aus zwei Ländern in kurzer Zeit ("impossible travel")</li>
-<li>Credentials in geleakten Datensätzen gefunden</li>
-</ul>
-<p>Das Ergebnis ist ein <strong>Risk Level</strong>: Low / Medium / High</p>
-<p>In einer Conditional Access-Policy:
-<div class="highlight"><pre><span></span><code><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a>WENN: Sign-in risk: High
-<a id="__codelineno-1-2" name="__codelineno-1-2" href="#__codelineno-1-2"></a>DANN: Zugriff blockieren
-</code></pre></div></p>
-<p>Oder:
-<div class="highlight"><pre><span></span><code><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a>WENN: User risk: Medium oder höher
-<a id="__codelineno-2-2" name="__codelineno-2-2" href="#__codelineno-2-2"></a>DANN: Passwort-Reset erzwingen
-</code></pre></div></p>
-<div class="admonition info">
-<p class="admonition-title">Identity Protection – Entra ID P2</p>
-<p>Risk-basiertes Conditional Access benötigt Entra ID P2. Mit P1 nur: Block, MFA, compliant device. Mit P2: zusätzlich Risk Level als Bedingung.</p>
+<h2 id="revisionen-deployments-ohne-downtime">Revisionen: Deployments ohne Downtime</h2>
+<p>Jedes Update einer Container App erstellt eine neue <strong>Revision</strong> – die alte läuft weiter. So kannst du Traffic aufteilen (Canary Deployment):</p>
+<h3 id="neue-revision-deployen">Neue Revision deployen</h3>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-6-1" name="__codelineno-6-1" href="#__codelineno-6-1"></a><span class="c1"># Neues Image deployen (neue Revision)</span>
+<a id="__codelineno-6-2" name="__codelineno-6-2" href="#__codelineno-6-2"></a>az<span class="w"> </span>containerapp<span class="w"> </span>update<span class="w"> </span><span class="se">\</span>
+<a id="__codelineno-6-3" name="__codelineno-6-3" href="#__codelineno-6-3"></a><span class="w">  </span>--name<span class="w"> </span>flask-container-app<span class="w"> </span><span class="se">\</span>
+<a id="__codelineno-6-4" name="__codelineno-6-4" href="#__codelineno-6-4"></a><span class="w">  </span>--resource-group<span class="w"> </span>rg-container<span class="w"> </span><span class="se">\</span>
+<a id="__codelineno-6-5" name="__codelineno-6-5" href="#__codelineno-6-5"></a><span class="w">  </span>--image<span class="w"> </span><span class="nv">$ACR_NAME</span>.azurecr.io/flask-app:2.0
+</code></pre></div>
+<h3 id="traffic-split-80-alt-20-neu">Traffic-Split: 80% alt, 20% neu</h3>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-7-1" name="__codelineno-7-1" href="#__codelineno-7-1"></a><span class="c1"># Multiple Revision Mode aktivieren</span>
+<a id="__codelineno-7-2" name="__codelineno-7-2" href="#__codelineno-7-2"></a>az<span class="w"> </span>containerapp<span class="w"> </span>revision<span class="w"> </span>set-mode<span class="w"> </span><span class="se">\</span>
+<a id="__codelineno-7-3" name="__codelineno-7-3" href="#__codelineno-7-3"></a><span class="w">  </span>--name<span class="w"> </span>flask-container-app<span class="w"> </span><span class="se">\</span>
+<a id="__codelineno-7-4" name="__codelineno-7-4" href="#__codelineno-7-4"></a><span class="w">  </span>--resource-group<span class="w"> </span>rg-container<span class="w"> </span><span class="se">\</span>
+<a id="__codelineno-7-5" name="__codelineno-7-5" href="#__codelineno-7-5"></a><span class="w">  </span>--mode<span class="w"> </span>multiple
+<a id="__codelineno-7-6" name="__codelineno-7-6" href="#__codelineno-7-6"></a>
+<a id="__codelineno-7-7" name="__codelineno-7-7" href="#__codelineno-7-7"></a><span class="c1"># Traffic verteilen</span>
+<a id="__codelineno-7-8" name="__codelineno-7-8" href="#__codelineno-7-8"></a>az<span class="w"> </span>containerapp<span class="w"> </span>ingress<span class="w"> </span>traffic<span class="w"> </span><span class="nb">set</span><span class="w"> </span><span class="se">\</span>
+<a id="__codelineno-7-9" name="__codelineno-7-9" href="#__codelineno-7-9"></a><span class="w">  </span>--name<span class="w"> </span>flask-container-app<span class="w"> </span><span class="se">\</span>
+<a id="__codelineno-7-10" name="__codelineno-7-10" href="#__codelineno-7-10"></a><span class="w">  </span>--resource-group<span class="w"> </span>rg-container<span class="w"> </span><span class="se">\</span>
+<a id="__codelineno-7-11" name="__codelineno-7-11" href="#__codelineno-7-11"></a><span class="w">  </span>--revision-weight<span class="w"> </span><span class="se">\</span>
+<a id="__codelineno-7-12" name="__codelineno-7-12" href="#__codelineno-7-12"></a><span class="w">    </span><span class="nv">latest</span><span class="o">=</span><span class="m">20</span><span class="w"> </span><span class="se">\</span>
+<a id="__codelineno-7-13" name="__codelineno-7-13" href="#__codelineno-7-13"></a><span class="w">    </span>flask-container-app--ALTE-REVISION<span class="o">=</span><span class="m">80</span>
+</code></pre></div>
+<div class="admonition tip">
+<p class="admonition-title">Canary Deployment in der Praxis</p>
+<p>Du rollst Version 2.0 zuerst mit 10% Traffic aus, beobachtest Fehlerraten und Response-Zeiten – wenn alles gut ist, erhöhst du auf 100%. Falls Fehler: Traffic zurück auf 0% für die neue Version.</p>
 </div>
+<hr />
+<h2 id="umgebungsvariablen-und-secrets">Umgebungsvariablen und Secrets</h2>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-8-1" name="__codelineno-8-1" href="#__codelineno-8-1"></a><span class="c1"># Secrets setzen (verschlüsselt gespeichert)</span>
+<a id="__codelineno-8-2" name="__codelineno-8-2" href="#__codelineno-8-2"></a>az<span class="w"> </span>containerapp<span class="w"> </span>secret<span class="w"> </span><span class="nb">set</span><span class="w"> </span><span class="se">\</span>
+<a id="__codelineno-8-3" name="__codelineno-8-3" href="#__codelineno-8-3"></a><span class="w">  </span>--name<span class="w"> </span>flask-container-app<span class="w"> </span><span class="se">\</span>
+<a id="__codelineno-8-4" name="__codelineno-8-4" href="#__codelineno-8-4"></a><span class="w">  </span>--resource-group<span class="w"> </span>rg-container<span class="w"> </span><span class="se">\</span>
+<a id="__codelineno-8-5" name="__codelineno-8-5" href="#__codelineno-8-5"></a><span class="w">  </span>--secrets<span class="w"> </span><span class="s2">&quot;db-password=SuperGeheim123&quot;</span>
+<a id="__codelineno-8-6" name="__codelineno-8-6" href="#__codelineno-8-6"></a>
+<a id="__codelineno-8-7" name="__codelineno-8-7" href="#__codelineno-8-7"></a><span class="c1"># Umgebungsvariable die auf Secret verweist</span>
+<a id="__codelineno-8-8" name="__codelineno-8-8" href="#__codelineno-8-8"></a>az<span class="w"> </span>containerapp<span class="w"> </span>update<span class="w"> </span><span class="se">\</span>
+<a id="__codelineno-8-9" name="__codelineno-8-9" href="#__codelineno-8-9"></a><span class="w">  </span>--name<span class="w"> </span>flask-container-app<span class="w"> </span><span class="se">\</span>
+<a id="__codelineno-8-10" name="__codelineno-8-10" href="#__codelineno-8-10"></a><span class="w">  </span>--resource-group<span class="w"> </span>rg-container<span class="w"> </span><span class="se">\</span>
+<a id="__codelineno-8-11" name="__codelineno-8-11" href="#__codelineno-8-11"></a><span class="w">  </span>--set-env-vars<span class="w"> </span><span class="s2">&quot;DB_PASSWORD=secretref:db-password&quot;</span>
+</code></pre></div>
+<hr />
+<h2 id="logs-anzeigen">Logs anzeigen</h2>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-9-1" name="__codelineno-9-1" href="#__codelineno-9-1"></a><span class="c1"># Live-Logs</span>
+<a id="__codelineno-9-2" name="__codelineno-9-2" href="#__codelineno-9-2"></a>az<span class="w"> </span>containerapp<span class="w"> </span>logs<span class="w"> </span>show<span class="w"> </span><span class="se">\</span>
+<a id="__codelineno-9-3" name="__codelineno-9-3" href="#__codelineno-9-3"></a><span class="w">  </span>--name<span class="w"> </span>flask-container-app<span class="w"> </span><span class="se">\</span>
+<a id="__codelineno-9-4" name="__codelineno-9-4" href="#__codelineno-9-4"></a><span class="w">  </span>--resource-group<span class="w"> </span>rg-container<span class="w"> </span><span class="se">\</span>
+<a id="__codelineno-9-5" name="__codelineno-9-5" href="#__codelineno-9-5"></a><span class="w">  </span>--follow
+</code></pre></div>
+<p>Im Portal: <strong>Log stream</strong> in der linken Navigation.</p>
 <hr />
 <h2 id="challenge">Challenge</h2>
 <div class="admonition question">
-<p class="admonition-title">Challenge: Policy für externe Logins</p>
-<p>Erstelle eine Conditional Access-Policy (Report-only) mit folgender Logik:</p>
+<p class="admonition-title">Challenge: Container App mit Scale-to-Zero</p>
+<p>Erstelle eine Container App aus dem <code>mein-webserver:1.0</code>-Image mit:</p>
 <ul>
-<li><strong>Gilt für</strong>: Alle Benutzer</li>
-<li><strong>Bedingung</strong>: Login NICHT von einer Named Location "Vertrauenswürdige IPs"</li>
-<li><strong>Aktion</strong>: MFA erzwingen</li>
+<li>Port 8080</li>
+<li><code>min-replicas: 0</code>, <code>max-replicas: 3</code></li>
+<li>HTTP-Scaling-Regel: 5 gleichzeitige Anfragen = 1 Instanz</li>
 </ul>
-<p>Erstelle zuerst eine Named Location mit deiner aktuellen IP (findest du unter <a href="https://ifconfig.me">ifconfig.me</a>). Aktiviere die Policy im Report-only-Modus und analysiere im Sign-in Log ob dein eigener Login die Policy ausgelöst hätte.</p>
+<p>Beobachte im Portal wie viele Replicas laufen wenn du die URL mehrfach aufrufst.</p>
 </div>
 <details class="success">
 <summary>Hinweis</summary>
-<ol>
-<li><strong>Named locations</strong> → <strong>+ IP ranges location</strong> → deine IP/32 → Mark as trusted</li>
-<li><strong>New policy</strong> → Users: Alle → Target resources: Azure Management</li>
-<li><strong>Conditions</strong> → <strong>Locations</strong> → Include: Any location / Exclude: deine Named Location</li>
-<li><strong>Grant</strong> → Require MFA</li>
-<li><strong>Report-only</strong> → Create</li>
-</ol>
-<p>Im Sign-in Log siehst du den Status <code>Conditional Access: Report-only: Would not apply</code> (weil du von der trusted IP kommst) oder <code>Would apply</code> (wäre von außen).</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-10-1" name="__codelineno-10-1" href="#__codelineno-10-1"></a>az<span class="w"> </span>containerapp<span class="w"> </span>create<span class="w"> </span><span class="se">\</span>
+<a id="__codelineno-10-2" name="__codelineno-10-2" href="#__codelineno-10-2"></a><span class="w">  </span>--name<span class="w"> </span>webserver-app<span class="w"> </span><span class="se">\</span>
+<a id="__codelineno-10-3" name="__codelineno-10-3" href="#__codelineno-10-3"></a><span class="w">  </span>--resource-group<span class="w"> </span>rg-container<span class="w"> </span><span class="se">\</span>
+<a id="__codelineno-10-4" name="__codelineno-10-4" href="#__codelineno-10-4"></a><span class="w">  </span>--environment<span class="w"> </span>env-container<span class="w"> </span><span class="se">\</span>
+<a id="__codelineno-10-5" name="__codelineno-10-5" href="#__codelineno-10-5"></a><span class="w">  </span>--image<span class="w"> </span><span class="nv">$ACR_NAME</span>.azurecr.io/mein-webserver:1.0<span class="w"> </span><span class="se">\</span>
+<a id="__codelineno-10-6" name="__codelineno-10-6" href="#__codelineno-10-6"></a><span class="w">  </span>--registry-server<span class="w"> </span><span class="nv">$ACR_NAME</span>.azurecr.io<span class="w"> </span><span class="se">\</span>
+<a id="__codelineno-10-7" name="__codelineno-10-7" href="#__codelineno-10-7"></a><span class="w">  </span>--registry-username<span class="w"> </span><span class="nv">$ACR_NAME</span><span class="w"> </span><span class="se">\</span>
+<a id="__codelineno-10-8" name="__codelineno-10-8" href="#__codelineno-10-8"></a><span class="w">  </span>--registry-password<span class="w"> </span><span class="nv">$ACR_PASS</span><span class="w"> </span><span class="se">\</span>
+<a id="__codelineno-10-9" name="__codelineno-10-9" href="#__codelineno-10-9"></a><span class="w">  </span>--target-port<span class="w"> </span><span class="m">8080</span><span class="w"> </span><span class="se">\</span>
+<a id="__codelineno-10-10" name="__codelineno-10-10" href="#__codelineno-10-10"></a><span class="w">  </span>--ingress<span class="w"> </span>external<span class="w"> </span><span class="se">\</span>
+<a id="__codelineno-10-11" name="__codelineno-10-11" href="#__codelineno-10-11"></a><span class="w">  </span>--min-replicas<span class="w"> </span><span class="m">0</span><span class="w"> </span><span class="se">\</span>
+<a id="__codelineno-10-12" name="__codelineno-10-12" href="#__codelineno-10-12"></a><span class="w">  </span>--max-replicas<span class="w"> </span><span class="m">3</span><span class="w"> </span><span class="se">\</span>
+<a id="__codelineno-10-13" name="__codelineno-10-13" href="#__codelineno-10-13"></a><span class="w">  </span>--scale-rule-name<span class="w"> </span><span class="s2">&quot;http&quot;</span><span class="w"> </span><span class="se">\</span>
+<a id="__codelineno-10-14" name="__codelineno-10-14" href="#__codelineno-10-14"></a><span class="w">  </span>--scale-rule-type<span class="w"> </span><span class="s2">&quot;http&quot;</span><span class="w"> </span><span class="se">\</span>
+<a id="__codelineno-10-15" name="__codelineno-10-15" href="#__codelineno-10-15"></a><span class="w">  </span>--scale-rule-http-concurrency<span class="w"> </span><span class="m">5</span>
+</code></pre></div>
 </details>
 <hr />
-<p>Weiter zu <a href="../modul-25-aufr%C3%A4umen/">Modul 25 – Aufräumen Lernpfad 4</a> →</p>
+<p>Weiter zu <a href="../modul-30-aks-ueberblick/">Modul 30 – Azure Kubernetes Service: Überblick und Konzepte</a> →</p>
 
 
 
@@ -2238,7 +2228,7 @@
       <nav class="md-footer__inner md-grid" aria-label="Fußzeile" >
         
           
-          <a href="../modul-23-rbac/" class="md-footer__link md-footer__link--prev" aria-label="Zurück: Modul 23 – RBAC vertieft">
+          <a href="../modul-28-aci/" class="md-footer__link md-footer__link--prev" aria-label="Zurück: Modul 28 – Azure Container Instances">
             <div class="md-footer__button md-icon">
               
               <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
@@ -2248,20 +2238,20 @@
                 Zurück
               </span>
               <div class="md-ellipsis">
-                Modul 23 – RBAC vertieft
+                Modul 28 – Azure Container Instances
               </div>
             </div>
           </a>
         
         
           
-          <a href="../modul-25-aufr%C3%A4umen/" class="md-footer__link md-footer__link--next" aria-label="Weiter: Modul 25 – Aufräumen">
+          <a href="../modul-30-aks-ueberblick/" class="md-footer__link md-footer__link--next" aria-label="Weiter: Modul 30 – AKS Überblick">
             <div class="md-footer__title">
               <span class="md-footer__direction">
                 Weiter
               </span>
               <div class="md-ellipsis">
-                Modul 25 – Aufräumen
+                Modul 30 – AKS Überblick
               </div>
             </div>
             <div class="md-footer__button md-icon">
