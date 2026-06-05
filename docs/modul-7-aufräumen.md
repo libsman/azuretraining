@@ -74,12 +74,17 @@ Das entspricht dem, wofür ein Unternehmen früher eigene Server, Netzwerktechni
 
 ## Was kommt als nächstes?
 
-Falls du mehr über Azure lernen möchtest:
+Das Training geht noch weit weiter – du hast gerade Lernpfad 1 von 8 abgeschlossen! In den nächsten Lernpfaden lernst du:
 
-- [**Microsoft Learn – Azure Fundamentals**](https://learn.microsoft.com/de-de/training/paths/azure-fundamentals/) – kostenloser, interaktiver Kurs direkt von Microsoft
-- [**AZ-900 Zertifizierung**](https://learn.microsoft.com/de-de/certifications/azure-fundamentals/) – die Azure Grundlagenzertifizierung, perfekt für den Einstieg
-- [**Azure Architecture Center**](https://learn.microsoft.com/de-de/azure/architecture/) – wie bauen echte Unternehmen ihre Cloud-Architekturen?
-- [**Azure Pricing Calculator**](https://azure.microsoft.com/de-de/pricing/calculator/) – berechne die Kosten für eigene Architekturen
+| Lernpfad | Themen |
+|----------|--------|
+| [LP 2 – Netzwerk & Sicherheit](modul-8-vnet.md) | VNet, NSG, Bastion, Load Balancer, Key Vault, Private Endpoints |
+| [LP 3 – Datenbanken](modul-15-sql.md) | Azure SQL, Cosmos DB, PostgreSQL, Redis |
+| [LP 4 – Identity & Access](modul-21-entra.md) | Entra ID, Managed Identity, RBAC, Conditional Access |
+| [LP 5 – Container](modul-26-docker.md) | Docker, ACR, ACI, Container Apps, AKS |
+| [LP 6 – DevOps & IaC](modul-33-devops.md) | Azure DevOps, GitHub Actions, ARM, Bicep, Terraform, Policy |
+| [LP 7 – Monitoring & Security](modul-40-log-analytics.md) | Log Analytics, App Insights, Defender for Cloud, Sentinel |
+| [LP 8 – Abschlussprojekte](modul-45-projekt-webapp.md) | 3-Tier-App, Event-Driven, Container + CI/CD |
 
 ---
 

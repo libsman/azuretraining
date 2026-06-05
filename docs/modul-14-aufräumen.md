@@ -72,6 +72,6 @@ Du hast außerdem gelernt: cloud-init für automatisierte VM-Konfiguration, Heal
 
 ## Was kommt als nächstes?
 
-Die weiteren Lernpfade sind in Planung. Auf der [Roadmap](roadmap.md) findest du den aktuellen Stand.
+In Lernpfad 3 tauchen wir in Azure-Datenbankdienste ein – von relationalen Datenbanken über NoSQL bis hin zu Caching.
 
 Weiter zu [Lernpfad 3 – Datenbanken: Modul 15 – Azure SQL Database](modul-15-sql.md) →
