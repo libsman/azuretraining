@@ -10,13 +10,13 @@
       
       
       
-        <link rel="canonical" href="https://libsman.github.io/azuretraining/modul-21-entra/">
+        <link rel="canonical" href="https://libsman.github.io/azuretraining/modul-41-app-insights/">
       
       
-        <link rel="prev" href="../modul-20-aufr%C3%A4umen/">
+        <link rel="prev" href="../modul-40-log-analytics/">
       
       
-        <link rel="next" href="../modul-22-managed-identity/">
+        <link rel="next" href="../modul-42-defender/">
       
       
         
@@ -27,7 +27,7 @@
     
     
       
-        <title>Modul 21 – Microsoft Entra ID - Azure Einstiegstraining</title>
+        <title>Modul 41 – Application Insights - Azure Einstiegstraining</title>
       
     
     
@@ -78,7 +78,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#modul-21-microsoft-entra-id-benutzer-gruppen-und-organisationsstruktur" class="md-skip">
+        <a href="#modul-41-application-insights-telemetrie-fur-web-apps" class="md-skip">
           Zum Inhalt
         </a>
       
@@ -114,7 +114,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Modul 21 – Microsoft Entra ID
+              Modul 41 – Application Insights
             
           </span>
         </div>
@@ -1063,20 +1063,18 @@
       
   
   
-    
   
   
-  
     
     
     
     
     
-    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_6" checked>
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_6" >
         
           
           <label class="md-nav__link" for="__nav_6" id="__nav_6_label" tabindex="0">
@@ -1097,7 +1095,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_6_label" aria-expanded="true">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_6_label" aria-expanded="false">
           <label class="md-nav__title" for="__nav_6">
             <span class="md-nav__icon md-icon"></span>
             
@@ -1112,37 +1110,10 @@
                 
   
   
-    
   
   
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
-      
-      
-        
-      
-      
-        <label class="md-nav__link md-nav__link--active" for="__toc">
-          
-  
-  
-  <span class="md-ellipsis">
-    
-  
-    Modul 21 – Microsoft Entra ID
-  
-
-    
-  </span>
-  
-  
-
-          <span class="md-nav__icon md-icon"></span>
-        </label>
-      
-      <a href="./" class="md-nav__link md-nav__link--active">
+    <li class="md-nav__item">
+      <a href="../modul-21-entra/" class="md-nav__link">
         
   
   
@@ -1158,226 +1129,6 @@
   
 
       </a>
-      
-        
-
-<nav class="md-nav md-nav--secondary" aria-label="Inhaltsverzeichnis">
-  
-  
-  
-    
-  
-  
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      Inhaltsverzeichnis
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#lernziele" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Lernziele
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#hintergrund-active-directory-vs-microsoft-entra-id" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Hintergrund: Active Directory vs. Microsoft Entra ID
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#entra-id-portal-offnen" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Entra ID-Portal öffnen
-      
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="Entra ID-Portal öffnen">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#option-a-uber-das-azure-portal" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Option A: Über das Azure Portal
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#option-b-direktlink" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Option B: Direktlink
-      
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#benutzer-anlegen" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Benutzer anlegen
-      
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="Benutzer anlegen">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#schritt-1-benutzerubersicht-offnen" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Schritt 1: Benutzerübersicht öffnen
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#schritt-2-neuen-benutzer-erstellen" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Schritt 2: Neuen Benutzer erstellen
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#schritt-3-benutzer-anzeigen" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Schritt 3: Benutzer anzeigen
-      
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#gruppen-anlegen-und-mitglieder-zuweisen" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Gruppen anlegen und Mitglieder zuweisen
-      
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="Gruppen anlegen und Mitglieder zuweisen">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#gruppe-erstellen" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Gruppe erstellen
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#dynamische-mitgliedschaft-optional" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Dynamische Mitgliedschaft (optional)
-      
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#gastbenutzer-einladen-b2b" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Gastbenutzer einladen (B2B)
-      
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="Gastbenutzer einladen (B2B)">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#gastbenutzer-hinzufugen" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Gastbenutzer hinzufügen
-      
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#benutzer-in-entra-id-vs-rbac-in-azure" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Benutzer in Entra ID vs. RBAC in Azure
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#challenge" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Challenge
-      
-    </span>
-  </a>
-  
-</li>
-      
-    </ul>
-  
-</nav>
-      
     </li>
   
 
@@ -2006,18 +1757,20 @@
       
   
   
+    
   
   
+  
     
     
     
     
     
-    <li class="md-nav__item md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_9" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_9" checked>
         
           
           <label class="md-nav__link" for="__nav_9" id="__nav_9_label" tabindex="0">
@@ -2038,7 +1791,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_9_label" aria-expanded="false">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_9_label" aria-expanded="true">
           <label class="md-nav__title" for="__nav_9">
             <span class="md-nav__icon md-icon"></span>
             
@@ -2081,10 +1834,37 @@
                 
   
   
+    
   
   
-    <li class="md-nav__item">
-      <a href="../modul-41-app-insights/" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Modul 41 – Application Insights
+  
+
+    
+  </span>
+  
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
         
   
   
@@ -2100,6 +1880,186 @@
   
 
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Inhaltsverzeichnis">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Inhaltsverzeichnis
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#lernziele" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Lernziele
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#hintergrund-warum-application-insights" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Hintergrund: Warum Application Insights?
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#schritt-1-application-insights-ressource-erstellen" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Schritt 1: Application Insights-Ressource erstellen
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#schritt-2-connection-string-holen" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Schritt 2: Connection String holen
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#schritt-3-python-flask-app-instrumentieren" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Schritt 3: Python Flask-App instrumentieren
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#schritt-4-custom-events-und-metrics" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Schritt 4: Custom Events und Metrics
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#schritt-5-application-insights-dashboards-nutzen" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Schritt 5: Application Insights-Dashboards nutzen
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Schritt 5: Application Insights-Dashboards nutzen">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#live-metrics" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Live Metrics
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#failures" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Failures
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#performance" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Performance
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#application-map" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Application Map
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#schritt-6-availability-test-einrichten" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Schritt 6: Availability Test einrichten
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#kql-abfragen-fur-application-insights" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        KQL-Abfragen für Application Insights
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#challenge" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Challenge
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
     </li>
   
 
@@ -2234,10 +2194,10 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#hintergrund-active-directory-vs-microsoft-entra-id" class="md-nav__link">
+  <a href="#hintergrund-warum-application-insights" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Hintergrund: Active Directory vs. Microsoft Entra ID
+        Hintergrund: Warum Application Insights?
       
     </span>
   </a>
@@ -2245,22 +2205,66 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#entra-id-portal-offnen" class="md-nav__link">
+  <a href="#schritt-1-application-insights-ressource-erstellen" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Entra ID-Portal öffnen
+        Schritt 1: Application Insights-Ressource erstellen
       
     </span>
   </a>
   
-    <nav class="md-nav" aria-label="Entra ID-Portal öffnen">
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#schritt-2-connection-string-holen" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Schritt 2: Connection String holen
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#schritt-3-python-flask-app-instrumentieren" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Schritt 3: Python Flask-App instrumentieren
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#schritt-4-custom-events-und-metrics" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Schritt 4: Custom Events und Metrics
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#schritt-5-application-insights-dashboards-nutzen" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Schritt 5: Application Insights-Dashboards nutzen
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Schritt 5: Application Insights-Dashboards nutzen">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#option-a-uber-das-azure-portal" class="md-nav__link">
+  <a href="#live-metrics" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Option A: Über das Azure Portal
+        Live Metrics
       
     </span>
   </a>
@@ -2268,10 +2272,32 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#option-b-direktlink" class="md-nav__link">
+  <a href="#failures" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Option B: Direktlink
+        Failures
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#performance" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Performance
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#application-map" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Application Map
       
     </span>
   </a>
@@ -2284,127 +2310,21 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#benutzer-anlegen" class="md-nav__link">
+  <a href="#schritt-6-availability-test-einrichten" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Benutzer anlegen
+        Schritt 6: Availability Test einrichten
       
     </span>
   </a>
-  
-    <nav class="md-nav" aria-label="Benutzer anlegen">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#schritt-1-benutzerubersicht-offnen" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Schritt 1: Benutzerübersicht öffnen
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#schritt-2-neuen-benutzer-erstellen" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Schritt 2: Neuen Benutzer erstellen
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#schritt-3-benutzer-anzeigen" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Schritt 3: Benutzer anzeigen
-      
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#gruppen-anlegen-und-mitglieder-zuweisen" class="md-nav__link">
+  <a href="#kql-abfragen-fur-application-insights" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Gruppen anlegen und Mitglieder zuweisen
-      
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="Gruppen anlegen und Mitglieder zuweisen">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#gruppe-erstellen" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Gruppe erstellen
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#dynamische-mitgliedschaft-optional" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Dynamische Mitgliedschaft (optional)
-      
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#gastbenutzer-einladen-b2b" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Gastbenutzer einladen (B2B)
-      
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="Gastbenutzer einladen (B2B)">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#gastbenutzer-hinzufugen" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Gastbenutzer hinzufügen
-      
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#benutzer-in-entra-id-vs-rbac-in-azure" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Benutzer in Entra ID vs. RBAC in Azure
+        KQL-Abfragen für Application Insights
       
     </span>
   </a>
@@ -2442,195 +2362,184 @@
   
 
 
-<h1 id="modul-21-microsoft-entra-id-benutzer-gruppen-und-organisationsstruktur">Modul 21 – Microsoft Entra ID: Benutzer, Gruppen und Organisationsstruktur</h1>
+<h1 id="modul-41-application-insights-telemetrie-fur-web-apps">Modul 41 – Application Insights: Telemetrie für Web-Apps</h1>
 <h2 id="lernziele">Lernziele</h2>
 <p>Nach diesem Modul kannst du:</p>
 <ul>
-<li>Den Unterschied zwischen Microsoft Entra ID und Active Directory erklären</li>
-<li>Benutzer und Gruppen im Entra ID-Portal anlegen und verwalten</li>
-<li>Gastbenutzer einladen (B2B-Zusammenarbeit)</li>
-<li>Den Zusammenhang zwischen Entra ID, Azure-Subscription und RBAC verstehen</li>
-<li>Administrative Units als Organisationsstruktur beschreiben</li>
+<li>Application Insights als APM-Lösung (Application Performance Monitoring) erklären</li>
+<li>Eine Application Insights-Ressource erstellen und mit einer Web-App verbinden</li>
+<li>Die wichtigsten Dashboards (Live Metrics, Application Map, Failures) nutzen</li>
+<li>Das Python-SDK in eine Flask-App integrieren</li>
+<li>Custom Events und Custom Metrics senden</li>
+<li>Availability Tests (URL-Pings) einrichten</li>
 </ul>
 <hr />
-<h2 id="hintergrund-active-directory-vs-microsoft-entra-id">Hintergrund: Active Directory vs. Microsoft Entra ID</h2>
-<p><strong>On-Prem-Vergleich:</strong> In fast jedem Windows-Unternehmen gibt es ein <strong>Active Directory (AD)</strong> – den Verzeichnisdienst für Benutzer, Computer, Gruppen und Gruppenrichtlinien. Domäne joinen, Logins über Kerberos, <code>gpupdate /force</code> – das kennt jeder Windows-Admin.</p>
-<p><strong>Microsoft Entra ID</strong> (früher: Azure Active Directory / Azure AD) ist das Cloud-Äquivalent – aber kein direktes Upgrade:</p>
-<table>
-<thead>
-<tr>
-<th></th>
-<th>Active Directory (on-prem)</th>
-<th>Microsoft Entra ID (Cloud)</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>Protokolle</td>
-<td>Kerberos, NTLM, LDAP</td>
-<td>OAuth 2.0, OpenID Connect, SAML</td>
-</tr>
-<tr>
-<td>Domäne</td>
-<td><code>firma.local</code></td>
-<td><code>firma.onmicrosoft.com</code></td>
-</tr>
-<tr>
-<td>Zugriff auf</td>
-<td>Windows-PCs, Server, Fileserver</td>
-<td>Cloud-Apps, Azure, Microsoft 365</td>
-</tr>
-<tr>
-<td>Gruppenrichtlinien</td>
-<td>✅ GPO</td>
-<td>❌ (dafür: Intune/Autopilot)</td>
-</tr>
-<tr>
-<td>Geräteverwaltung</td>
-<td>Domänen-Join</td>
-<td>Entra-Join / Hybrid-Join</td>
-</tr>
-<tr>
-<td>Preis</td>
-<td>Inklusive in Windows Server</td>
-<td>Free-Tier + Premium P1/P2</td>
-</tr>
-</tbody>
-</table>
-<div class="admonition info">
-<p class="admonition-title">Umbenennung: Azure AD → Entra ID</p>
-<p>Microsoft hat 2023 <strong>Azure Active Directory</strong> in <strong>Microsoft Entra ID</strong> umbenannt. Im Portal und in vielen Dokumentationen findest du noch beide Namen – sie bezeichnen denselben Dienst. Die URL <code>aad.portal.azure.com</code> leitet auf das neue Entra ID-Portal weiter.</p>
-</div>
-<p><strong>Was Entra ID für Azure bedeutet:</strong></p>
-<p>Jede Azure-Subscription ist einem Entra ID-Tenant zugeordnet. Wenn du dich am Azure Portal anmeldest, authentifizierst du dich gegen Entra ID. RBAC-Rollen (wer darf was in Azure) werden auf Entra-Identitäten vergeben.</p>
-<hr />
-<h2 id="entra-id-portal-offnen">Entra ID-Portal öffnen</h2>
-<h3 id="option-a-uber-das-azure-portal">Option A: Über das Azure Portal</h3>
-<ol>
-<li>Tippe in der Suchleiste <strong><code>Microsoft Entra ID</code></strong> und klicke auf den Dienst</li>
-<li>Du siehst das Overview-Dashboard deines Tenants</li>
-</ol>
-<h3 id="option-b-direktlink">Option B: Direktlink</h3>
-<p>Öffne <strong><a href="https://entra.microsoft.com">entra.microsoft.com</a></strong> – das eigenständige Entra Admin Center.</p>
-<div class="admonition info">
-<p class="admonition-title">Tenant und Tenantname</p>
-<p>Dein Tenant hat einen eindeutigen Namen: <code>XXXX.onmicrosoft.com</code>. Im Overview unter <strong>Overview</strong> siehst du:
-- <strong>Tenant ID</strong> (UUID, z.B. <code>a1b2c3d4-...</code>)
-- <strong>Primary domain</strong> (z.B. <code>meinefirma.onmicrosoft.com</code>)
-- <strong>Tenant type</strong> (z.B. <code>Microsoft Entra ID</code>)</p>
-</div>
-<hr />
-<h2 id="benutzer-anlegen">Benutzer anlegen</h2>
-<h3 id="schritt-1-benutzerubersicht-offnen">Schritt 1: Benutzerübersicht öffnen</h3>
-<ol>
-<li>Im Entra ID-Portal: links im Menü auf <strong>Users</strong> → <strong>All users</strong></li>
-<li>Du siehst deinen eigenen Account (und ggf. weitere Standard-Accounts)</li>
-</ol>
-<h3 id="schritt-2-neuen-benutzer-erstellen">Schritt 2: Neuen Benutzer erstellen</h3>
-<p>Klicke oben auf <strong>+ New user</strong> → <strong>Create new user</strong>:</p>
-<table>
-<thead>
-<tr>
-<th>Feld</th>
-<th>Wert</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>User principal name</td>
-<td><code>testuser@XXXX.onmicrosoft.com</code></td>
-</tr>
-<tr>
-<td>Display name</td>
-<td><code>Test User</code></td>
-</tr>
-<tr>
-<td>Password</td>
-<td>Auto-generate (notiere das Initialpasswort!)</td>
-</tr>
-</tbody>
-</table>
-<p>Klicke auf <strong>Review + create</strong> → <strong>Create</strong>.</p>
-<div class="admonition info">
-<p class="admonition-title">User Principal Name (UPN)</p>
-<p>Der UPN ist der Benutzername im Cloud-Format: <code>vorname.nachname@domäne.com</code>. Er entspricht der E-Mail-Adresse und wird für alle Azure-Anmeldungen verwendet.</p>
-</div>
-<h3 id="schritt-3-benutzer-anzeigen">Schritt 3: Benutzer anzeigen</h3>
-<ol>
-<li>Gehe zurück zu <strong>All users</strong></li>
-<li>Klicke auf <code>Test User</code> um das Profil zu öffnen</li>
-<li>Schau dir die Tabs an: <strong>Profile</strong>, <strong>Assigned roles</strong>, <strong>Groups</strong>, <strong>Applications</strong>, <strong>Devices</strong></li>
-</ol>
-<hr />
-<h2 id="gruppen-anlegen-und-mitglieder-zuweisen">Gruppen anlegen und Mitglieder zuweisen</h2>
-<p>Gruppen sind in Entra ID (wie im AD) der zentrale Mechanismus um Berechtigungen zu verwalten: du gibst der Gruppe eine Rolle, und alle Mitglieder erben sie automatisch.</p>
-<h3 id="gruppe-erstellen">Gruppe erstellen</h3>
-<ol>
-<li>Links im Menü: <strong>Groups</strong> → <strong>All groups</strong></li>
-<li>Klicke auf <strong>+ New group</strong></li>
-</ol>
-<table>
-<thead>
-<tr>
-<th>Feld</th>
-<th>Wert</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>Group type</td>
-<td><code>Security</code></td>
-</tr>
-<tr>
-<td>Group name</td>
-<td><code>grp-azure-leser</code></td>
-</tr>
-<tr>
-<td>Group description</td>
-<td><code>Lesezugriff auf Azure-Ressourcen</code></td>
-</tr>
-<tr>
-<td>Membership type</td>
-<td><code>Assigned</code></td>
-</tr>
-</tbody>
-</table>
-<p>Klicke auf <strong>No members selected</strong> → Suche nach <code>Test User</code> → Auswählen → <strong>Create</strong>.</p>
-<div class="admonition info">
-<p class="admonition-title">Security vs. Microsoft 365 Gruppen</p>
-<table>
-<thead>
-<tr>
-<th>Typ</th>
-<th>Wofür</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td><strong>Security</strong></td>
-<td>Azure RBAC, Berechtigungen, Conditional Access</td>
-</tr>
-<tr>
-<td><strong>Microsoft 365</strong></td>
-<td>E-Mail-Verteiler, Teams, SharePoint</td>
-</tr>
-</tbody>
-</table>
-<p>Für Azure-Berechtigungen immer <strong>Security</strong> wählen.</p>
-</div>
-<h3 id="dynamische-mitgliedschaft-optional">Dynamische Mitgliedschaft (optional)</h3>
-<p>Statt Mitglieder manuell zuzuweisen, kann Entra ID Gruppen automatisch befüllen:</p>
+<h2 id="hintergrund-warum-application-insights">Hintergrund: Warum Application Insights?</h2>
+<p><strong>On-Prem-Vergleich:</strong> On-Premises weißt du als Admin ob ein Server läuft – aber ob eine Web-App korrekt antwortet, welche Seiten am langsamsten sind oder wo Fehler auftreten, siehst du nur durch mühsames Log-Analyse oder spezialisierte Tools wie New Relic oder Dynatrace.</p>
+<p><strong>Application Insights</strong> ist Microsofts APM-Lösung (Application Performance Monitoring) direkt in Azure. Du instrumentierst deine App mit wenigen Zeilen Code und bekommst:</p>
 <ul>
-<li>Membership type: <strong>Dynamic User</strong></li>
-<li>Regel: <code>user.department -eq "IT"</code></li>
+<li><strong>Request-Tracking</strong>: Jeder HTTP-Request wird aufgezeichnet (Dauer, Status, URL)</li>
+<li><strong>Dependency-Tracking</strong>: Aufrufe zu Datenbanken, APIs, Storage automatisch gemessen</li>
+<li><strong>Exception-Tracking</strong>: Ungefangene Exceptions werden automatisch geloggt</li>
+<li><strong>Live Metrics</strong>: Echtzeit-Dashboard mit aktiven Requests und Fehlern</li>
+<li><strong>Application Map</strong>: Grafische Karte aller Abhängigkeiten</li>
+<li><strong>Availability Tests</strong>: Automatische URL-Pings von mehreren Weltregionen</li>
 </ul>
-<p>Dann werden alle Benutzer mit Abteilung "IT" automatisch Mitglied. (<strong>Benötigt Entra ID P1-Lizenz</strong>)</p>
 <hr />
-<h2 id="gastbenutzer-einladen-b2b">Gastbenutzer einladen (B2B)</h2>
-<p>B2B (Business-to-Business) ist das Entra-Konzept für externe Zusammenarbeit: du lädst jemanden mit seiner eigenen E-Mail-Adresse ein – er bekommt Zugriff auf deine Azure-Ressourcen, braucht keinen Account in deinem Tenant.</p>
-<h3 id="gastbenutzer-hinzufugen">Gastbenutzer hinzufügen</h3>
+<h2 id="schritt-1-application-insights-ressource-erstellen">Schritt 1: Application Insights-Ressource erstellen</h2>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a>az<span class="w"> </span>monitor<span class="w"> </span>app-insights<span class="w"> </span>component<span class="w"> </span>create<span class="w"> </span><span class="se">\</span>
+<a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a><span class="w">  </span>--app<span class="w"> </span>ai-training<span class="w"> </span><span class="se">\</span>
+<a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a><span class="w">  </span>--resource-group<span class="w"> </span>rg-monitoring<span class="w"> </span><span class="se">\</span>
+<a id="__codelineno-0-4" name="__codelineno-0-4" href="#__codelineno-0-4"></a><span class="w">  </span>--location<span class="w"> </span>westeurope<span class="w"> </span><span class="se">\</span>
+<a id="__codelineno-0-5" name="__codelineno-0-5" href="#__codelineno-0-5"></a><span class="w">  </span>--kind<span class="w"> </span>web<span class="w"> </span><span class="se">\</span>
+<a id="__codelineno-0-6" name="__codelineno-0-6" href="#__codelineno-0-6"></a><span class="w">  </span>--workspace<span class="w"> </span><span class="k">$(</span>az<span class="w"> </span>monitor<span class="w"> </span>log-analytics<span class="w"> </span>workspace<span class="w"> </span>show<span class="w"> </span><span class="se">\</span>
+<a id="__codelineno-0-7" name="__codelineno-0-7" href="#__codelineno-0-7"></a><span class="w">    </span>--workspace-name<span class="w"> </span>law-training<span class="w"> </span><span class="se">\</span>
+<a id="__codelineno-0-8" name="__codelineno-0-8" href="#__codelineno-0-8"></a><span class="w">    </span>--resource-group<span class="w"> </span>rg-monitoring<span class="w"> </span><span class="se">\</span>
+<a id="__codelineno-0-9" name="__codelineno-0-9" href="#__codelineno-0-9"></a><span class="w">    </span>--query<span class="w"> </span>id<span class="w"> </span>-o<span class="w"> </span>tsv<span class="k">)</span>
+</code></pre></div>
+<p>Im Portal: Suche nach <strong>Application Insights</strong> → <strong>+ Create</strong></p>
+<table>
+<thead>
+<tr>
+<th>Feld</th>
+<th>Wert</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Resource group</td>
+<td><code>rg-monitoring</code></td>
+</tr>
+<tr>
+<td>Name</td>
+<td><code>ai-training</code></td>
+</tr>
+<tr>
+<td>Region</td>
+<td><code>West Europe</code></td>
+</tr>
+<tr>
+<td>Resource Mode</td>
+<td><code>Workspace-based</code></td>
+</tr>
+<tr>
+<td>Log Analytics Workspace</td>
+<td><code>law-training</code></td>
+</tr>
+</tbody>
+</table>
+<div class="admonition info">
+<p class="admonition-title">Workspace-based Application Insights</p>
+<p>Seit 2021 empfiehlt Microsoft "workspace-based" App Insights. Alle Daten landen im Log Analytics Workspace – du kannst App Insights-Daten und Infrastruktur-Logs in einer einzigen KQL-Abfrage kombinieren.</p>
+</div>
+<hr />
+<h2 id="schritt-2-connection-string-holen">Schritt 2: Connection String holen</h2>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a>az<span class="w"> </span>monitor<span class="w"> </span>app-insights<span class="w"> </span>component<span class="w"> </span>show<span class="w"> </span><span class="se">\</span>
+<a id="__codelineno-1-2" name="__codelineno-1-2" href="#__codelineno-1-2"></a><span class="w">  </span>--app<span class="w"> </span>ai-training<span class="w"> </span><span class="se">\</span>
+<a id="__codelineno-1-3" name="__codelineno-1-3" href="#__codelineno-1-3"></a><span class="w">  </span>--resource-group<span class="w"> </span>rg-monitoring<span class="w"> </span><span class="se">\</span>
+<a id="__codelineno-1-4" name="__codelineno-1-4" href="#__codelineno-1-4"></a><span class="w">  </span>--query<span class="w"> </span>connectionString<span class="w"> </span>-o<span class="w"> </span>tsv
+</code></pre></div>
+<p>Der Connection String sieht so aus:
+<div class="highlight"><pre><span></span><code><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a>InstrumentationKey=xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx;IngestionEndpoint=https://westeurope-5.in.applicationinsights.azure.com/;...
+</code></pre></div></p>
+<p>Speichere ihn in einem Key Vault Secret (empfohlen) oder als Umgebungsvariable.</p>
+<hr />
+<h2 id="schritt-3-python-flask-app-instrumentieren">Schritt 3: Python Flask-App instrumentieren</h2>
+<p>Erstelle eine neue Flask-App in der Cloud Shell:</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a>mkdir<span class="w"> </span>flask-ai-demo<span class="w"> </span><span class="o">&amp;&amp;</span><span class="w"> </span><span class="nb">cd</span><span class="w"> </span>flask-ai-demo
+<a id="__codelineno-3-2" name="__codelineno-3-2" href="#__codelineno-3-2"></a>pip<span class="w"> </span>install<span class="w"> </span>flask<span class="w"> </span>azure-monitor-opentelemetry
+</code></pre></div>
+<p>Erstelle <code>app.py</code>:</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-4-1" name="__codelineno-4-1" href="#__codelineno-4-1"></a><span class="kn">import</span><span class="w"> </span><span class="nn">os</span>
+<a id="__codelineno-4-2" name="__codelineno-4-2" href="#__codelineno-4-2"></a><span class="kn">from</span><span class="w"> </span><span class="nn">flask</span><span class="w"> </span><span class="kn">import</span> <span class="n">Flask</span><span class="p">,</span> <span class="n">jsonify</span><span class="p">,</span> <span class="n">request</span>
+<a id="__codelineno-4-3" name="__codelineno-4-3" href="#__codelineno-4-3"></a><span class="kn">from</span><span class="w"> </span><span class="nn">azure.monitor.opentelemetry</span><span class="w"> </span><span class="kn">import</span> <span class="n">configure_azure_monitor</span>
+<a id="__codelineno-4-4" name="__codelineno-4-4" href="#__codelineno-4-4"></a>
+<a id="__codelineno-4-5" name="__codelineno-4-5" href="#__codelineno-4-5"></a><span class="c1"># Application Insights konfigurieren</span>
+<a id="__codelineno-4-6" name="__codelineno-4-6" href="#__codelineno-4-6"></a><span class="n">configure_azure_monitor</span><span class="p">(</span>
+<a id="__codelineno-4-7" name="__codelineno-4-7" href="#__codelineno-4-7"></a>    <span class="n">connection_string</span><span class="o">=</span><span class="n">os</span><span class="o">.</span><span class="n">environ</span><span class="p">[</span><span class="s2">&quot;APPLICATIONINSIGHTS_CONNECTION_STRING&quot;</span><span class="p">]</span>
+<a id="__codelineno-4-8" name="__codelineno-4-8" href="#__codelineno-4-8"></a><span class="p">)</span>
+<a id="__codelineno-4-9" name="__codelineno-4-9" href="#__codelineno-4-9"></a>
+<a id="__codelineno-4-10" name="__codelineno-4-10" href="#__codelineno-4-10"></a><span class="n">app</span> <span class="o">=</span> <span class="n">Flask</span><span class="p">(</span><span class="vm">__name__</span><span class="p">)</span>
+<a id="__codelineno-4-11" name="__codelineno-4-11" href="#__codelineno-4-11"></a>
+<a id="__codelineno-4-12" name="__codelineno-4-12" href="#__codelineno-4-12"></a><span class="nd">@app</span><span class="o">.</span><span class="n">route</span><span class="p">(</span><span class="s2">&quot;/&quot;</span><span class="p">)</span>
+<a id="__codelineno-4-13" name="__codelineno-4-13" href="#__codelineno-4-13"></a><span class="k">def</span><span class="w"> </span><span class="nf">index</span><span class="p">():</span>
+<a id="__codelineno-4-14" name="__codelineno-4-14" href="#__codelineno-4-14"></a>    <span class="k">return</span> <span class="n">jsonify</span><span class="p">({</span><span class="s2">&quot;status&quot;</span><span class="p">:</span> <span class="s2">&quot;ok&quot;</span><span class="p">,</span> <span class="s2">&quot;message&quot;</span><span class="p">:</span> <span class="s2">&quot;Hello from monitored Flask app!&quot;</span><span class="p">})</span>
+<a id="__codelineno-4-15" name="__codelineno-4-15" href="#__codelineno-4-15"></a>
+<a id="__codelineno-4-16" name="__codelineno-4-16" href="#__codelineno-4-16"></a><span class="nd">@app</span><span class="o">.</span><span class="n">route</span><span class="p">(</span><span class="s2">&quot;/api/items&quot;</span><span class="p">)</span>
+<a id="__codelineno-4-17" name="__codelineno-4-17" href="#__codelineno-4-17"></a><span class="k">def</span><span class="w"> </span><span class="nf">get_items</span><span class="p">():</span>
+<a id="__codelineno-4-18" name="__codelineno-4-18" href="#__codelineno-4-18"></a>    <span class="n">items</span> <span class="o">=</span> <span class="p">[</span><span class="s2">&quot;Azure Monitor&quot;</span><span class="p">,</span> <span class="s2">&quot;Application Insights&quot;</span><span class="p">,</span> <span class="s2">&quot;Log Analytics&quot;</span><span class="p">]</span>
+<a id="__codelineno-4-19" name="__codelineno-4-19" href="#__codelineno-4-19"></a>    <span class="k">return</span> <span class="n">jsonify</span><span class="p">({</span><span class="s2">&quot;items&quot;</span><span class="p">:</span> <span class="n">items</span><span class="p">,</span> <span class="s2">&quot;count&quot;</span><span class="p">:</span> <span class="nb">len</span><span class="p">(</span><span class="n">items</span><span class="p">)})</span>
+<a id="__codelineno-4-20" name="__codelineno-4-20" href="#__codelineno-4-20"></a>
+<a id="__codelineno-4-21" name="__codelineno-4-21" href="#__codelineno-4-21"></a><span class="nd">@app</span><span class="o">.</span><span class="n">route</span><span class="p">(</span><span class="s2">&quot;/api/error&quot;</span><span class="p">)</span>
+<a id="__codelineno-4-22" name="__codelineno-4-22" href="#__codelineno-4-22"></a><span class="k">def</span><span class="w"> </span><span class="nf">trigger_error</span><span class="p">():</span>
+<a id="__codelineno-4-23" name="__codelineno-4-23" href="#__codelineno-4-23"></a>    <span class="k">raise</span> <span class="ne">ValueError</span><span class="p">(</span><span class="s2">&quot;Dies ist ein Test-Fehler für Application Insights&quot;</span><span class="p">)</span>
+<a id="__codelineno-4-24" name="__codelineno-4-24" href="#__codelineno-4-24"></a>
+<a id="__codelineno-4-25" name="__codelineno-4-25" href="#__codelineno-4-25"></a><span class="k">if</span> <span class="vm">__name__</span> <span class="o">==</span> <span class="s2">&quot;__main__&quot;</span><span class="p">:</span>
+<a id="__codelineno-4-26" name="__codelineno-4-26" href="#__codelineno-4-26"></a>    <span class="n">app</span><span class="o">.</span><span class="n">run</span><span class="p">(</span><span class="n">debug</span><span class="o">=</span><span class="kc">False</span><span class="p">,</span> <span class="n">port</span><span class="o">=</span><span class="mi">5000</span><span class="p">)</span>
+</code></pre></div>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-5-1" name="__codelineno-5-1" href="#__codelineno-5-1"></a><span class="nb">export</span><span class="w"> </span><span class="nv">APPLICATIONINSIGHTS_CONNECTION_STRING</span><span class="o">=</span><span class="s2">&quot;DEIN-CONNECTION-STRING&quot;</span>
+<a id="__codelineno-5-2" name="__codelineno-5-2" href="#__codelineno-5-2"></a>python<span class="w"> </span>app.py
+</code></pre></div>
+<p>Mach nun einige Requests mit <code>curl http://localhost:5000/</code> und <code>curl http://localhost:5000/api/items</code> – nach 1–2 Minuten erscheinen sie in Application Insights.</p>
+<hr />
+<h2 id="schritt-4-custom-events-und-metrics">Schritt 4: Custom Events und Metrics</h2>
+<p>Eigene Ereignisse und Metriken senden (für Business-Logik-Tracking):</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-6-1" name="__codelineno-6-1" href="#__codelineno-6-1"></a><span class="kn">import</span><span class="w"> </span><span class="nn">os</span>
+<a id="__codelineno-6-2" name="__codelineno-6-2" href="#__codelineno-6-2"></a><span class="kn">from</span><span class="w"> </span><span class="nn">flask</span><span class="w"> </span><span class="kn">import</span> <span class="n">Flask</span><span class="p">,</span> <span class="n">jsonify</span><span class="p">,</span> <span class="n">request</span>
+<a id="__codelineno-6-3" name="__codelineno-6-3" href="#__codelineno-6-3"></a><span class="kn">from</span><span class="w"> </span><span class="nn">azure.monitor.opentelemetry</span><span class="w"> </span><span class="kn">import</span> <span class="n">configure_azure_monitor</span>
+<a id="__codelineno-6-4" name="__codelineno-6-4" href="#__codelineno-6-4"></a><span class="kn">from</span><span class="w"> </span><span class="nn">opentelemetry</span><span class="w"> </span><span class="kn">import</span> <span class="n">trace</span>
+<a id="__codelineno-6-5" name="__codelineno-6-5" href="#__codelineno-6-5"></a>
+<a id="__codelineno-6-6" name="__codelineno-6-6" href="#__codelineno-6-6"></a><span class="n">configure_azure_monitor</span><span class="p">(</span>
+<a id="__codelineno-6-7" name="__codelineno-6-7" href="#__codelineno-6-7"></a>    <span class="n">connection_string</span><span class="o">=</span><span class="n">os</span><span class="o">.</span><span class="n">environ</span><span class="p">[</span><span class="s2">&quot;APPLICATIONINSIGHTS_CONNECTION_STRING&quot;</span><span class="p">]</span>
+<a id="__codelineno-6-8" name="__codelineno-6-8" href="#__codelineno-6-8"></a><span class="p">)</span>
+<a id="__codelineno-6-9" name="__codelineno-6-9" href="#__codelineno-6-9"></a>
+<a id="__codelineno-6-10" name="__codelineno-6-10" href="#__codelineno-6-10"></a><span class="n">tracer</span> <span class="o">=</span> <span class="n">trace</span><span class="o">.</span><span class="n">get_tracer</span><span class="p">(</span><span class="vm">__name__</span><span class="p">)</span>
+<a id="__codelineno-6-11" name="__codelineno-6-11" href="#__codelineno-6-11"></a><span class="n">app</span> <span class="o">=</span> <span class="n">Flask</span><span class="p">(</span><span class="vm">__name__</span><span class="p">)</span>
+<a id="__codelineno-6-12" name="__codelineno-6-12" href="#__codelineno-6-12"></a>
+<a id="__codelineno-6-13" name="__codelineno-6-13" href="#__codelineno-6-13"></a><span class="nd">@app</span><span class="o">.</span><span class="n">route</span><span class="p">(</span><span class="s2">&quot;/api/purchase&quot;</span><span class="p">)</span>
+<a id="__codelineno-6-14" name="__codelineno-6-14" href="#__codelineno-6-14"></a><span class="k">def</span><span class="w"> </span><span class="nf">purchase</span><span class="p">():</span>
+<a id="__codelineno-6-15" name="__codelineno-6-15" href="#__codelineno-6-15"></a>    <span class="n">item</span> <span class="o">=</span> <span class="n">request</span><span class="o">.</span><span class="n">args</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s2">&quot;item&quot;</span><span class="p">,</span> <span class="s2">&quot;unknown&quot;</span><span class="p">)</span>
+<a id="__codelineno-6-16" name="__codelineno-6-16" href="#__codelineno-6-16"></a>    <span class="n">price</span> <span class="o">=</span> <span class="nb">float</span><span class="p">(</span><span class="n">request</span><span class="o">.</span><span class="n">args</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s2">&quot;price&quot;</span><span class="p">,</span> <span class="mi">0</span><span class="p">))</span>
+<a id="__codelineno-6-17" name="__codelineno-6-17" href="#__codelineno-6-17"></a>
+<a id="__codelineno-6-18" name="__codelineno-6-18" href="#__codelineno-6-18"></a>    <span class="c1"># Custom Span (wird als Dependency in App Map sichtbar)</span>
+<a id="__codelineno-6-19" name="__codelineno-6-19" href="#__codelineno-6-19"></a>    <span class="k">with</span> <span class="n">tracer</span><span class="o">.</span><span class="n">start_as_current_span</span><span class="p">(</span><span class="s2">&quot;process-purchase&quot;</span><span class="p">)</span> <span class="k">as</span> <span class="n">span</span><span class="p">:</span>
+<a id="__codelineno-6-20" name="__codelineno-6-20" href="#__codelineno-6-20"></a>        <span class="n">span</span><span class="o">.</span><span class="n">set_attribute</span><span class="p">(</span><span class="s2">&quot;purchase.item&quot;</span><span class="p">,</span> <span class="n">item</span><span class="p">)</span>
+<a id="__codelineno-6-21" name="__codelineno-6-21" href="#__codelineno-6-21"></a>        <span class="n">span</span><span class="o">.</span><span class="n">set_attribute</span><span class="p">(</span><span class="s2">&quot;purchase.price&quot;</span><span class="p">,</span> <span class="n">price</span><span class="p">)</span>
+<a id="__codelineno-6-22" name="__codelineno-6-22" href="#__codelineno-6-22"></a>        <span class="c1"># Hier würde Datenbankzugriff stattfinden...</span>
+<a id="__codelineno-6-23" name="__codelineno-6-23" href="#__codelineno-6-23"></a>
+<a id="__codelineno-6-24" name="__codelineno-6-24" href="#__codelineno-6-24"></a>    <span class="k">return</span> <span class="n">jsonify</span><span class="p">({</span><span class="s2">&quot;status&quot;</span><span class="p">:</span> <span class="s2">&quot;purchased&quot;</span><span class="p">,</span> <span class="s2">&quot;item&quot;</span><span class="p">:</span> <span class="n">item</span><span class="p">})</span>
+</code></pre></div>
+<hr />
+<h2 id="schritt-5-application-insights-dashboards-nutzen">Schritt 5: Application Insights-Dashboards nutzen</h2>
+<h3 id="live-metrics">Live Metrics</h3>
 <ol>
-<li><strong>Users</strong> → <strong>All users</strong> → <strong>+ New user</strong> → <strong>Invite external user</strong></li>
+<li>Öffne deine Application Insights-Ressource im Portal</li>
+<li>Links: <strong>Live Metrics</strong></li>
+<li>Du siehst in Echtzeit: aktive Verbindungen, eingehende Requests/s, fehlgeschlagene Requests</li>
+</ol>
+<h3 id="failures">Failures</h3>
+<ol>
+<li>Links: <strong>Failures</strong></li>
+<li>Zeigt alle Exceptions, fehlgeschlagene Requests und Dependency-Fehler</li>
+<li>Klicke auf eine Exception → End-to-End Transaction Details (kompletter Call Stack)</li>
+</ol>
+<h3 id="performance">Performance</h3>
+<ol>
+<li>Links: <strong>Performance</strong></li>
+<li>Zeigt Response Times per Endpoint, Abhängigkeitszeiten</li>
+<li>Hilft Bottlenecks zu finden</li>
+</ol>
+<h3 id="application-map">Application Map</h3>
+<ol>
+<li>Links: <strong>Application Map</strong></li>
+<li>Zeigt eine grafische Karte: deine App → alle Abhängigkeiten (DB, API-Calls, Storage)</li>
+<li>Rote Knoten = hohe Fehlerrate</li>
+</ol>
+<hr />
+<h2 id="schritt-6-availability-test-einrichten">Schritt 6: Availability Test einrichten</h2>
+<p>Availability Tests pingen deine URL regelmäßig von 5 Weltregionen:</p>
+<ol>
+<li>Application Insights → <strong>Availability</strong> → <strong>+ Create Standard test</strong></li>
 </ol>
 <table>
 <thead>
@@ -2641,61 +2550,81 @@
 </thead>
 <tbody>
 <tr>
-<td>Email</td>
-<td>eine externe E-Mail-Adresse</td>
+<td>Test name</td>
+<td><code>homepage-ping</code></td>
 </tr>
 <tr>
-<td>Display name</td>
-<td>Name des Gastes</td>
+<td>URL</td>
+<td>URL deiner App (z. B. App Service URL aus LP1)</td>
 </tr>
 <tr>
-<td>Message</td>
-<td>optionale Nachricht in der Einladungsmail</td>
+<td>Test frequency</td>
+<td><code>5 minutes</code></td>
+</tr>
+<tr>
+<td>Test locations</td>
+<td>Mehrere Regionen auswählen</td>
+</tr>
+<tr>
+<td>Success criteria</td>
+<td><code>HTTP status code = 200</code></td>
 </tr>
 </tbody>
 </table>
-<p>Klicke auf <strong>Invite</strong>.</p>
-<p>Der Gast erhält eine E-Mail mit einem Link. Nach Annahme erscheint er in <strong>All users</strong> mit dem Typ <code>#EXT#</code> im UPN, z.B. <code>name_extern.com#EXT#@deinertenant.onmicrosoft.com</code>.</p>
-<div class="admonition tip">
-<p class="admonition-title">Gastbenutzer und Azure-Zugriff</p>
-<p>Gastbenutzer können RBAC-Rollen bekommen wie normale Benutzer. Typisches Szenario: Externe Dienstleister bekommen Leserechte auf eine Resource Group – ohne eigenen Account im Unternehmen.</p>
-</div>
+<ol>
+<li><strong>Create</strong></li>
+</ol>
+<p>Wenn deine App nicht mehr antwortet, bekommst du automatisch eine E-Mail (wenn eine Action Group konfiguriert ist).</p>
 <hr />
-<h2 id="benutzer-in-entra-id-vs-rbac-in-azure">Benutzer in Entra ID vs. RBAC in Azure</h2>
-<p>Ein häufiges Missverständnis: <strong>Entra ID verwaltet Identitäten, RBAC verwaltet Berechtigungen auf Azure-Ressourcen.</strong></p>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a>Entra ID                    Azure RBAC
-<a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a>─────────────────           ─────────────────────────────
-<a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a>Benutzer anlegen     →      Rolle vergeben (wer darf was)
-<a id="__codelineno-0-4" name="__codelineno-0-4" href="#__codelineno-0-4"></a>Gruppen erstellen    →      Gruppe bekommt Rolle auf Scope
-<a id="__codelineno-0-5" name="__codelineno-0-5" href="#__codelineno-0-5"></a>Passwort resettten   →      Kein Einfluss auf Azure-Rechte
+<h2 id="kql-abfragen-fur-application-insights">KQL-Abfragen für Application Insights</h2>
+<p>Im Log Analytics Workspace kannst du App Insights-Daten mit KQL abfragen:</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-7-1" name="__codelineno-7-1" href="#__codelineno-7-1"></a><span class="c">// Alle Requests der letzten Stunde</span>
+<a id="__codelineno-7-2" name="__codelineno-7-2" href="#__codelineno-7-2"></a><span class="n">requests</span>
+<a id="__codelineno-7-3" name="__codelineno-7-3" href="#__codelineno-7-3"></a><span class="p">|</span><span class="w"> </span><span class="k">where</span><span class="w"> </span><span class="n">timestamp</span><span class="w"> </span><span class="p">&gt;</span><span class="w"> </span><span class="n">ago</span><span class="p">(</span><span class="mi">1</span><span class="n">h</span><span class="p">)</span>
+<a id="__codelineno-7-4" name="__codelineno-7-4" href="#__codelineno-7-4"></a><span class="p">|</span><span class="w"> </span><span class="k">project</span><span class="w"> </span><span class="n">timestamp</span><span class="p">,</span><span class="w"> </span><span class="n">name</span><span class="p">,</span><span class="w"> </span><span class="n">duration</span><span class="p">,</span><span class="w"> </span><span class="n">resultCode</span><span class="p">,</span><span class="w"> </span><span class="n">success</span>
+<a id="__codelineno-7-5" name="__codelineno-7-5" href="#__codelineno-7-5"></a><span class="p">|</span><span class="w"> </span><span class="k">order</span><span class="w"> </span><span class="k">by</span><span class="w"> </span><span class="n">timestamp</span><span class="w"> </span><span class="n">desc</span>
+<a id="__codelineno-7-6" name="__codelineno-7-6" href="#__codelineno-7-6"></a>
+<a id="__codelineno-7-7" name="__codelineno-7-7" href="#__codelineno-7-7"></a><span class="c">// Top 5 langsamste Operationen</span>
+<a id="__codelineno-7-8" name="__codelineno-7-8" href="#__codelineno-7-8"></a><span class="n">requests</span>
+<a id="__codelineno-7-9" name="__codelineno-7-9" href="#__codelineno-7-9"></a><span class="p">|</span><span class="w"> </span><span class="k">where</span><span class="w"> </span><span class="n">timestamp</span><span class="w"> </span><span class="p">&gt;</span><span class="w"> </span><span class="n">ago</span><span class="p">(</span><span class="mi">24</span><span class="n">h</span><span class="p">)</span>
+<a id="__codelineno-7-10" name="__codelineno-7-10" href="#__codelineno-7-10"></a><span class="p">|</span><span class="w"> </span><span class="k">summarize</span><span class="w"> </span><span class="n">avg</span><span class="p">(</span><span class="n">duration</span><span class="p">),</span><span class="w"> </span><span class="k">count</span><span class="p">()</span><span class="w"> </span><span class="k">by</span><span class="w"> </span><span class="n">name</span>
+<a id="__codelineno-7-11" name="__codelineno-7-11" href="#__codelineno-7-11"></a><span class="p">|</span><span class="w"> </span><span class="k">top</span><span class="w"> </span><span class="mi">5</span><span class="w"> </span><span class="k">by</span><span class="w"> </span><span class="n">avg_duration</span><span class="w"> </span><span class="n">desc</span>
+<a id="__codelineno-7-12" name="__codelineno-7-12" href="#__codelineno-7-12"></a>
+<a id="__codelineno-7-13" name="__codelineno-7-13" href="#__codelineno-7-13"></a><span class="c">// Exceptions der letzten 24h</span>
+<a id="__codelineno-7-14" name="__codelineno-7-14" href="#__codelineno-7-14"></a><span class="n">exceptions</span>
+<a id="__codelineno-7-15" name="__codelineno-7-15" href="#__codelineno-7-15"></a><span class="p">|</span><span class="w"> </span><span class="k">where</span><span class="w"> </span><span class="n">timestamp</span><span class="w"> </span><span class="p">&gt;</span><span class="w"> </span><span class="n">ago</span><span class="p">(</span><span class="mi">24</span><span class="n">h</span><span class="p">)</span>
+<a id="__codelineno-7-16" name="__codelineno-7-16" href="#__codelineno-7-16"></a><span class="p">|</span><span class="w"> </span><span class="k">project</span><span class="w"> </span><span class="n">timestamp</span><span class="p">,</span><span class="w"> </span><span class="n">type</span><span class="p">,</span><span class="w"> </span><span class="n">outerMessage</span><span class="p">,</span><span class="w"> </span><span class="n">operation_Name</span>
+<a id="__codelineno-7-17" name="__codelineno-7-17" href="#__codelineno-7-17"></a><span class="p">|</span><span class="w"> </span><span class="k">order</span><span class="w"> </span><span class="k">by</span><span class="w"> </span><span class="n">timestamp</span><span class="w"> </span><span class="n">desc</span>
 </code></pre></div>
-<p>Beispiel: Du kannst einen Benutzer in Entra ID anlegen – er hat noch <strong>keinerlei</strong> Zugriff auf Azure. Erst wenn du ihm eine RBAC-Rolle gibst (z.B. <strong>Reader</strong> auf eine Resource Group), kann er etwas sehen.</p>
-<p>Das lernst du im Detail in Modul 23.</p>
 <hr />
 <h2 id="challenge">Challenge</h2>
 <div class="admonition question">
-<p class="admonition-title">Challenge: Gruppe mit RBAC-Rolle</p>
+<p class="admonition-title">Challenge: Slow Query Alert</p>
 <ol>
-<li>Erstelle eine Gruppe <code>grp-rg-aztraining-reader</code></li>
-<li>Füge deinen Testbenutzer <code>testuser@...</code> als Mitglied hinzu</li>
-<li>Navigiere zu einer Resource Group (z.B. <code>rg-aztraining</code> falls noch vorhanden, sonst erstelle eine neue)</li>
-<li>Weise der <strong>Gruppe</strong> (nicht dem einzelnen Benutzer!) die RBAC-Rolle <strong>Reader</strong> zu</li>
-<li>Wo im Portal machst du das?</li>
+<li>Baue die Flask-App lokal oder auf einem App Service auf</li>
+<li>Erstelle einen Alert der auslöst wenn die durchschnittliche Request-Dauer über 1000 ms liegt</li>
+<li>Teste ihn indem du <code>time.sleep(2)</code> in eine Route einfügst</li>
 </ol>
+<p>(Tipp: Alerts → + Create → Alert rule → Signal: "Server response time")</p>
 </div>
 <details class="success">
 <summary>Hinweis</summary>
-<p>RBAC-Rollen werden nicht in Entra ID vergeben, sondern direkt auf der Azure-Ressource:</p>
-<ol>
-<li>Resource Group öffnen → <strong>Access control (IAM)</strong> → <strong>+ Add</strong> → <strong>Add role assignment</strong></li>
-<li>Role: <code>Reader</code></li>
-<li>Members: <strong>Select members</strong> → Suche nach <code>grp-rg-aztraining-reader</code></li>
-<li><strong>Review + assign</strong></li>
-</ol>
-<p>Jetzt hat jedes aktuelle und zukünftige Mitglied dieser Gruppe Leserechte auf die Resource Group.</p>
+<p>In Application Insights: <strong>Alerts</strong> → <strong>+ Create</strong> → <strong>Alert rule</strong> → Signal: <code>Server response time</code> → Threshold: <code>1000</code> ms (Average over 5 minutes).</p>
+<p>Oder per CLI:
+<div class="highlight"><pre><span></span><code><a id="__codelineno-8-1" name="__codelineno-8-1" href="#__codelineno-8-1"></a><span class="nv">AI_ID</span><span class="o">=</span><span class="k">$(</span>az<span class="w"> </span>monitor<span class="w"> </span>app-insights<span class="w"> </span>component<span class="w"> </span>show<span class="w"> </span><span class="se">\</span>
+<a id="__codelineno-8-2" name="__codelineno-8-2" href="#__codelineno-8-2"></a><span class="w">  </span>--app<span class="w"> </span>ai-training<span class="w"> </span>--resource-group<span class="w"> </span>rg-monitoring<span class="w"> </span>--query<span class="w"> </span>id<span class="w"> </span>-o<span class="w"> </span>tsv<span class="k">)</span>
+<a id="__codelineno-8-3" name="__codelineno-8-3" href="#__codelineno-8-3"></a>
+<a id="__codelineno-8-4" name="__codelineno-8-4" href="#__codelineno-8-4"></a>az<span class="w"> </span>monitor<span class="w"> </span>metrics<span class="w"> </span>alert<span class="w"> </span>create<span class="w"> </span><span class="se">\</span>
+<a id="__codelineno-8-5" name="__codelineno-8-5" href="#__codelineno-8-5"></a><span class="w">  </span>--name<span class="w"> </span><span class="s2">&quot;slow-responses&quot;</span><span class="w"> </span><span class="se">\</span>
+<a id="__codelineno-8-6" name="__codelineno-8-6" href="#__codelineno-8-6"></a><span class="w">  </span>--resource-group<span class="w"> </span>rg-monitoring<span class="w"> </span><span class="se">\</span>
+<a id="__codelineno-8-7" name="__codelineno-8-7" href="#__codelineno-8-7"></a><span class="w">  </span>--scopes<span class="w"> </span><span class="nv">$AI_ID</span><span class="w"> </span><span class="se">\</span>
+<a id="__codelineno-8-8" name="__codelineno-8-8" href="#__codelineno-8-8"></a><span class="w">  </span>--condition<span class="w"> </span><span class="s2">&quot;avg requests/duration &gt; 1000&quot;</span><span class="w"> </span><span class="se">\</span>
+<a id="__codelineno-8-9" name="__codelineno-8-9" href="#__codelineno-8-9"></a><span class="w">  </span>--window-size<span class="w"> </span>5m<span class="w"> </span><span class="se">\</span>
+<a id="__codelineno-8-10" name="__codelineno-8-10" href="#__codelineno-8-10"></a><span class="w">  </span>--evaluation-frequency<span class="w"> </span>1m
+</code></pre></div></p>
 </details>
 <hr />
-<p>Weiter zu <a href="../modul-22-managed-identity/">Modul 22 – Managed Identity: Apps ohne Passwörter authentifizieren</a> →</p>
+<p>Weiter zu <a href="../modul-42-defender/">Modul 42 – Microsoft Defender for Cloud: Security Posture und Alerts</a> →</p>
 
 
 
@@ -2733,7 +2662,7 @@
       <nav class="md-footer__inner md-grid" aria-label="Fußzeile" >
         
           
-          <a href="../modul-20-aufr%C3%A4umen/" class="md-footer__link md-footer__link--prev" aria-label="Zurück: Modul 20 – Aufräumen">
+          <a href="../modul-40-log-analytics/" class="md-footer__link md-footer__link--prev" aria-label="Zurück: Modul 40 – Log Analytics &amp; KQL">
             <div class="md-footer__button md-icon">
               
               <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
@@ -2743,20 +2672,20 @@
                 Zurück
               </span>
               <div class="md-ellipsis">
-                Modul 20 – Aufräumen
+                Modul 40 – Log Analytics & KQL
               </div>
             </div>
           </a>
         
         
           
-          <a href="../modul-22-managed-identity/" class="md-footer__link md-footer__link--next" aria-label="Weiter: Modul 22 – Managed Identity">
+          <a href="../modul-42-defender/" class="md-footer__link md-footer__link--next" aria-label="Weiter: Modul 42 – Defender for Cloud">
             <div class="md-footer__title">
               <span class="md-footer__direction">
                 Weiter
               </span>
               <div class="md-ellipsis">
-                Modul 22 – Managed Identity
+                Modul 42 – Defender for Cloud
               </div>
             </div>
             <div class="md-footer__button md-icon">

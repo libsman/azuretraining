@@ -10,13 +10,13 @@
       
       
       
-        <link rel="canonical" href="https://libsman.github.io/azuretraining/modul-21-entra/">
+        <link rel="canonical" href="https://libsman.github.io/azuretraining/modul-43-sentinel/">
       
       
-        <link rel="prev" href="../modul-20-aufr%C3%A4umen/">
+        <link rel="prev" href="../modul-42-defender/">
       
       
-        <link rel="next" href="../modul-22-managed-identity/">
+        <link rel="next" href="../modul-44-aufr%C3%A4umen/">
       
       
         
@@ -27,7 +27,7 @@
     
     
       
-        <title>Modul 21 – Microsoft Entra ID - Azure Einstiegstraining</title>
+        <title>Modul 43 – Microsoft Sentinel - Azure Einstiegstraining</title>
       
     
     
@@ -78,7 +78,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#modul-21-microsoft-entra-id-benutzer-gruppen-und-organisationsstruktur" class="md-skip">
+        <a href="#modul-43-microsoft-sentinel-siem-und-security-events-auswerten" class="md-skip">
           Zum Inhalt
         </a>
       
@@ -114,7 +114,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Modul 21 – Microsoft Entra ID
+              Modul 43 – Microsoft Sentinel
             
           </span>
         </div>
@@ -1063,20 +1063,18 @@
       
   
   
-    
   
   
-  
     
     
     
     
     
-    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_6" checked>
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_6" >
         
           
           <label class="md-nav__link" for="__nav_6" id="__nav_6_label" tabindex="0">
@@ -1097,7 +1095,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_6_label" aria-expanded="true">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_6_label" aria-expanded="false">
           <label class="md-nav__title" for="__nav_6">
             <span class="md-nav__icon md-icon"></span>
             
@@ -1112,37 +1110,10 @@
                 
   
   
-    
   
   
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
-      
-      
-        
-      
-      
-        <label class="md-nav__link md-nav__link--active" for="__toc">
-          
-  
-  
-  <span class="md-ellipsis">
-    
-  
-    Modul 21 – Microsoft Entra ID
-  
-
-    
-  </span>
-  
-  
-
-          <span class="md-nav__icon md-icon"></span>
-        </label>
-      
-      <a href="./" class="md-nav__link md-nav__link--active">
+    <li class="md-nav__item">
+      <a href="../modul-21-entra/" class="md-nav__link">
         
   
   
@@ -1158,226 +1129,6 @@
   
 
       </a>
-      
-        
-
-<nav class="md-nav md-nav--secondary" aria-label="Inhaltsverzeichnis">
-  
-  
-  
-    
-  
-  
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      Inhaltsverzeichnis
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#lernziele" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Lernziele
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#hintergrund-active-directory-vs-microsoft-entra-id" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Hintergrund: Active Directory vs. Microsoft Entra ID
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#entra-id-portal-offnen" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Entra ID-Portal öffnen
-      
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="Entra ID-Portal öffnen">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#option-a-uber-das-azure-portal" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Option A: Über das Azure Portal
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#option-b-direktlink" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Option B: Direktlink
-      
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#benutzer-anlegen" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Benutzer anlegen
-      
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="Benutzer anlegen">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#schritt-1-benutzerubersicht-offnen" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Schritt 1: Benutzerübersicht öffnen
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#schritt-2-neuen-benutzer-erstellen" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Schritt 2: Neuen Benutzer erstellen
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#schritt-3-benutzer-anzeigen" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Schritt 3: Benutzer anzeigen
-      
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#gruppen-anlegen-und-mitglieder-zuweisen" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Gruppen anlegen und Mitglieder zuweisen
-      
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="Gruppen anlegen und Mitglieder zuweisen">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#gruppe-erstellen" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Gruppe erstellen
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#dynamische-mitgliedschaft-optional" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Dynamische Mitgliedschaft (optional)
-      
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#gastbenutzer-einladen-b2b" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Gastbenutzer einladen (B2B)
-      
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="Gastbenutzer einladen (B2B)">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#gastbenutzer-hinzufugen" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Gastbenutzer hinzufügen
-      
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#benutzer-in-entra-id-vs-rbac-in-azure" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Benutzer in Entra ID vs. RBAC in Azure
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#challenge" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Challenge
-      
-    </span>
-  </a>
-  
-</li>
-      
-    </ul>
-  
-</nav>
-      
     </li>
   
 
@@ -2006,18 +1757,20 @@
       
   
   
+    
   
   
+  
     
     
     
     
     
-    <li class="md-nav__item md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_9" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_9" checked>
         
           
           <label class="md-nav__link" for="__nav_9" id="__nav_9_label" tabindex="0">
@@ -2038,7 +1791,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_9_label" aria-expanded="false">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_9_label" aria-expanded="true">
           <label class="md-nav__title" for="__nav_9">
             <span class="md-nav__icon md-icon"></span>
             
@@ -2137,10 +1890,37 @@
                 
   
   
+    
   
   
-    <li class="md-nav__item">
-      <a href="../modul-43-sentinel/" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Modul 43 – Microsoft Sentinel
+  
+
+    
+  </span>
+  
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
         
   
   
@@ -2156,6 +1936,215 @@
   
 
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Inhaltsverzeichnis">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Inhaltsverzeichnis
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#lernziele" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Lernziele
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#hintergrund-was-ist-ein-siem" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Hintergrund: Was ist ein SIEM?
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#schritt-1-microsoft-sentinel-aktivieren" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Schritt 1: Microsoft Sentinel aktivieren
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#schritt-2-data-connectors-einrichten" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Schritt 2: Data Connectors einrichten
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Schritt 2: Data Connectors einrichten">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#azure-activity-connector-aktivieren" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Azure Activity-Connector aktivieren
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#microsoft-entra-id-connector-aktivieren" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Microsoft Entra ID-Connector aktivieren
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#schritt-3-analytics-rules-aktivieren" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Schritt 3: Analytics Rules aktivieren
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Schritt 3: Analytics Rules aktivieren">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#eingebaute-rule-aktivieren" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Eingebaute Rule aktivieren
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#schritt-4-eigene-analytics-rule-schreiben" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Schritt 4: Eigene Analytics Rule schreiben
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#schritt-5-incidents-untersuchen" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Schritt 5: Incidents untersuchen
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Schritt 5: Incidents untersuchen">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#investigation-graph" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Investigation Graph
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#schritt-6-hunting-queries-proaktive-bedrohungssuche" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Schritt 6: Hunting Queries – proaktive Bedrohungssuche
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Schritt 6: Hunting Queries – proaktive Bedrohungssuche">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#eigene-hunting-query-erstellen" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Eigene Hunting Query erstellen
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#schritt-7-soar-automation-mit-playbooks" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Schritt 7: SOAR – Automation mit Playbooks
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#challenge" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Challenge
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
     </li>
   
 
@@ -2234,10 +2223,10 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#hintergrund-active-directory-vs-microsoft-entra-id" class="md-nav__link">
+  <a href="#hintergrund-was-ist-ein-siem" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Hintergrund: Active Directory vs. Microsoft Entra ID
+        Hintergrund: Was ist ein SIEM?
       
     </span>
   </a>
@@ -2245,22 +2234,33 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#entra-id-portal-offnen" class="md-nav__link">
+  <a href="#schritt-1-microsoft-sentinel-aktivieren" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Entra ID-Portal öffnen
+        Schritt 1: Microsoft Sentinel aktivieren
       
     </span>
   </a>
   
-    <nav class="md-nav" aria-label="Entra ID-Portal öffnen">
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#schritt-2-data-connectors-einrichten" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Schritt 2: Data Connectors einrichten
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Schritt 2: Data Connectors einrichten">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#option-a-uber-das-azure-portal" class="md-nav__link">
+  <a href="#azure-activity-connector-aktivieren" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Option A: Über das Azure Portal
+        Azure Activity-Connector aktivieren
       
     </span>
   </a>
@@ -2268,10 +2268,10 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#option-b-direktlink" class="md-nav__link">
+  <a href="#microsoft-entra-id-connector-aktivieren" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Option B: Direktlink
+        Microsoft Entra ID-Connector aktivieren
       
     </span>
   </a>
@@ -2284,44 +2284,22 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#benutzer-anlegen" class="md-nav__link">
+  <a href="#schritt-3-analytics-rules-aktivieren" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Benutzer anlegen
+        Schritt 3: Analytics Rules aktivieren
       
     </span>
   </a>
   
-    <nav class="md-nav" aria-label="Benutzer anlegen">
+    <nav class="md-nav" aria-label="Schritt 3: Analytics Rules aktivieren">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#schritt-1-benutzerubersicht-offnen" class="md-nav__link">
+  <a href="#eingebaute-rule-aktivieren" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Schritt 1: Benutzerübersicht öffnen
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#schritt-2-neuen-benutzer-erstellen" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Schritt 2: Neuen Benutzer erstellen
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#schritt-3-benutzer-anzeigen" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Schritt 3: Benutzer anzeigen
+        Eingebaute Rule aktivieren
       
     </span>
   </a>
@@ -2334,33 +2312,33 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#gruppen-anlegen-und-mitglieder-zuweisen" class="md-nav__link">
+  <a href="#schritt-4-eigene-analytics-rule-schreiben" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Gruppen anlegen und Mitglieder zuweisen
-      
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="Gruppen anlegen und Mitglieder zuweisen">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#gruppe-erstellen" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Gruppe erstellen
+        Schritt 4: Eigene Analytics Rule schreiben
       
     </span>
   </a>
   
 </li>
-        
-          <li class="md-nav__item">
-  <a href="#dynamische-mitgliedschaft-optional" class="md-nav__link">
+      
+        <li class="md-nav__item">
+  <a href="#schritt-5-incidents-untersuchen" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Dynamische Mitgliedschaft (optional)
+        Schritt 5: Incidents untersuchen
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Schritt 5: Incidents untersuchen">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#investigation-graph" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Investigation Graph
       
     </span>
   </a>
@@ -2373,22 +2351,22 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#gastbenutzer-einladen-b2b" class="md-nav__link">
+  <a href="#schritt-6-hunting-queries-proaktive-bedrohungssuche" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Gastbenutzer einladen (B2B)
+        Schritt 6: Hunting Queries – proaktive Bedrohungssuche
       
     </span>
   </a>
   
-    <nav class="md-nav" aria-label="Gastbenutzer einladen (B2B)">
+    <nav class="md-nav" aria-label="Schritt 6: Hunting Queries – proaktive Bedrohungssuche">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#gastbenutzer-hinzufugen" class="md-nav__link">
+  <a href="#eigene-hunting-query-erstellen" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Gastbenutzer hinzufügen
+        Eigene Hunting Query erstellen
       
     </span>
   </a>
@@ -2401,10 +2379,10 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#benutzer-in-entra-id-vs-rbac-in-azure" class="md-nav__link">
+  <a href="#schritt-7-soar-automation-mit-playbooks" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Benutzer in Entra ID vs. RBAC in Azure
+        Schritt 7: SOAR – Automation mit Playbooks
       
     </span>
   </a>
@@ -2442,260 +2420,260 @@
   
 
 
-<h1 id="modul-21-microsoft-entra-id-benutzer-gruppen-und-organisationsstruktur">Modul 21 – Microsoft Entra ID: Benutzer, Gruppen und Organisationsstruktur</h1>
+<h1 id="modul-43-microsoft-sentinel-siem-und-security-events-auswerten">Modul 43 – Microsoft Sentinel: SIEM und Security-Events auswerten</h1>
 <h2 id="lernziele">Lernziele</h2>
 <p>Nach diesem Modul kannst du:</p>
 <ul>
-<li>Den Unterschied zwischen Microsoft Entra ID und Active Directory erklären</li>
-<li>Benutzer und Gruppen im Entra ID-Portal anlegen und verwalten</li>
-<li>Gastbenutzer einladen (B2B-Zusammenarbeit)</li>
-<li>Den Zusammenhang zwischen Entra ID, Azure-Subscription und RBAC verstehen</li>
-<li>Administrative Units als Organisationsstruktur beschreiben</li>
+<li>Microsoft Sentinel als Cloud-SIEM erklären und von Defender for Cloud abgrenzen</li>
+<li>Sentinel auf einem Log Analytics Workspace aktivieren</li>
+<li>Data Connectors für Azure Activity und Microsoft Entra ID einrichten</li>
+<li>Eingebaute Analytics Rules aktivieren um Bedrohungen automatisch zu erkennen</li>
+<li>Incidents untersuchen und im Incident-Dashboard navigieren</li>
+<li>Eine eigene Analytics Rule per KQL schreiben</li>
+<li>Hunting Queries für proaktive Bedrohungssuche nutzen</li>
 </ul>
 <hr />
-<h2 id="hintergrund-active-directory-vs-microsoft-entra-id">Hintergrund: Active Directory vs. Microsoft Entra ID</h2>
-<p><strong>On-Prem-Vergleich:</strong> In fast jedem Windows-Unternehmen gibt es ein <strong>Active Directory (AD)</strong> – den Verzeichnisdienst für Benutzer, Computer, Gruppen und Gruppenrichtlinien. Domäne joinen, Logins über Kerberos, <code>gpupdate /force</code> – das kennt jeder Windows-Admin.</p>
-<p><strong>Microsoft Entra ID</strong> (früher: Azure Active Directory / Azure AD) ist das Cloud-Äquivalent – aber kein direktes Upgrade:</p>
+<h2 id="hintergrund-was-ist-ein-siem">Hintergrund: Was ist ein SIEM?</h2>
+<p><strong>On-Prem-Vergleich:</strong> Große Unternehmen setzen SIEM-Lösungen (Security Information and Event Management) wie <strong>Splunk</strong>, <strong>IBM QRadar</strong> oder <strong>ArcSight</strong> ein. Diese sammeln Logs aus allen Quellen, korrelieren Ereignisse und schlagen Alarm bei verdächtigem Verhalten. Ein klassisches SIEM kostet Millionen €, braucht ein spezialisiertes Team und ist schwierig zu skalieren.</p>
+<p><strong>Microsoft Sentinel</strong> ist ein cloud-natives SIEM das auf dem Log Analytics Workspace aufbaut. Du bezahlst pro GB aufgenommener Daten – kein Server, keine Lizenz, automatisch skalierend.</p>
+<p><strong>Sentinel vs. Defender for Cloud:</strong></p>
 <table>
 <thead>
 <tr>
 <th></th>
-<th>Active Directory (on-prem)</th>
-<th>Microsoft Entra ID (Cloud)</th>
+<th>Defender for Cloud</th>
+<th>Microsoft Sentinel</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td>Protokolle</td>
-<td>Kerberos, NTLM, LDAP</td>
-<td>OAuth 2.0, OpenID Connect, SAML</td>
+<td>Fokus</td>
+<td>Azure-Ressourcen konfigurieren und schützen</td>
+<td>Alle Logs korrelieren, Bedrohungen erkennen</td>
 </tr>
 <tr>
-<td>Domäne</td>
-<td><code>firma.local</code></td>
-<td><code>firma.onmicrosoft.com</code></td>
+<td>Datenquellen</td>
+<td>Azure-Ressourcen</td>
+<td>Azure + On-Premises + AWS + Office 365 + ...</td>
 </tr>
 <tr>
-<td>Zugriff auf</td>
-<td>Windows-PCs, Server, Fileserver</td>
-<td>Cloud-Apps, Azure, Microsoft 365</td>
+<td>Use Case</td>
+<td>"Sind meine Ressourcen sicher konfiguriert?"</td>
+<td>"Werde ich gerade angegriffen?"</td>
 </tr>
 <tr>
-<td>Gruppenrichtlinien</td>
-<td>✅ GPO</td>
-<td>❌ (dafür: Intune/Autopilot)</td>
-</tr>
-<tr>
-<td>Geräteverwaltung</td>
-<td>Domänen-Join</td>
-<td>Entra-Join / Hybrid-Join</td>
-</tr>
-<tr>
-<td>Preis</td>
-<td>Inklusive in Windows Server</td>
-<td>Free-Tier + Premium P1/P2</td>
+<td>SIEM/SOAR</td>
+<td>Nein</td>
+<td>Ja (Incidents, Playbooks, Automation)</td>
 </tr>
 </tbody>
 </table>
 <div class="admonition info">
-<p class="admonition-title">Umbenennung: Azure AD → Entra ID</p>
-<p>Microsoft hat 2023 <strong>Azure Active Directory</strong> in <strong>Microsoft Entra ID</strong> umbenannt. Im Portal und in vielen Dokumentationen findest du noch beide Namen – sie bezeichnen denselben Dienst. Die URL <code>aad.portal.azure.com</code> leitet auf das neue Entra ID-Portal weiter.</p>
-</div>
-<p><strong>Was Entra ID für Azure bedeutet:</strong></p>
-<p>Jede Azure-Subscription ist einem Entra ID-Tenant zugeordnet. Wenn du dich am Azure Portal anmeldest, authentifizierst du dich gegen Entra ID. RBAC-Rollen (wer darf was in Azure) werden auf Entra-Identitäten vergeben.</p>
-<hr />
-<h2 id="entra-id-portal-offnen">Entra ID-Portal öffnen</h2>
-<h3 id="option-a-uber-das-azure-portal">Option A: Über das Azure Portal</h3>
-<ol>
-<li>Tippe in der Suchleiste <strong><code>Microsoft Entra ID</code></strong> und klicke auf den Dienst</li>
-<li>Du siehst das Overview-Dashboard deines Tenants</li>
-</ol>
-<h3 id="option-b-direktlink">Option B: Direktlink</h3>
-<p>Öffne <strong><a href="https://entra.microsoft.com">entra.microsoft.com</a></strong> – das eigenständige Entra Admin Center.</p>
-<div class="admonition info">
-<p class="admonition-title">Tenant und Tenantname</p>
-<p>Dein Tenant hat einen eindeutigen Namen: <code>XXXX.onmicrosoft.com</code>. Im Overview unter <strong>Overview</strong> siehst du:
-- <strong>Tenant ID</strong> (UUID, z.B. <code>a1b2c3d4-...</code>)
-- <strong>Primary domain</strong> (z.B. <code>meinefirma.onmicrosoft.com</code>)
-- <strong>Tenant type</strong> (z.B. <code>Microsoft Entra ID</code>)</p>
+<p class="admonition-title">Kosten von Microsoft Sentinel</p>
+<p>Sentinel berechnet ca. 2,46 €/GB für Daten die über die freien 5 GB des Log Analytics Workspace hinausgehen. Für das Training entstehen kaum Kosten wenn du Azure Activity Logs und Entra ID-Logs einbindest (niedriges Volumen).</p>
 </div>
 <hr />
-<h2 id="benutzer-anlegen">Benutzer anlegen</h2>
-<h3 id="schritt-1-benutzerubersicht-offnen">Schritt 1: Benutzerübersicht öffnen</h3>
+<h2 id="schritt-1-microsoft-sentinel-aktivieren">Schritt 1: Microsoft Sentinel aktivieren</h2>
+<p>Sentinel wird direkt auf einem Log Analytics Workspace aktiviert:</p>
 <ol>
-<li>Im Entra ID-Portal: links im Menü auf <strong>Users</strong> → <strong>All users</strong></li>
-<li>Du siehst deinen eigenen Account (und ggf. weitere Standard-Accounts)</li>
+<li>Suche nach <strong>Microsoft Sentinel</strong> im Portal</li>
+<li><strong>+ Create</strong> → wähle <code>law-training</code> als Workspace</li>
+<li><strong>Add Microsoft Sentinel</strong></li>
 </ol>
-<h3 id="schritt-2-neuen-benutzer-erstellen">Schritt 2: Neuen Benutzer erstellen</h3>
-<p>Klicke oben auf <strong>+ New user</strong> → <strong>Create new user</strong>:</p>
-<table>
-<thead>
-<tr>
-<th>Feld</th>
-<th>Wert</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>User principal name</td>
-<td><code>testuser@XXXX.onmicrosoft.com</code></td>
-</tr>
-<tr>
-<td>Display name</td>
-<td><code>Test User</code></td>
-</tr>
-<tr>
-<td>Password</td>
-<td>Auto-generate (notiere das Initialpasswort!)</td>
-</tr>
-</tbody>
-</table>
-<p>Klicke auf <strong>Review + create</strong> → <strong>Create</strong>.</p>
-<div class="admonition info">
-<p class="admonition-title">User Principal Name (UPN)</p>
-<p>Der UPN ist der Benutzername im Cloud-Format: <code>vorname.nachname@domäne.com</code>. Er entspricht der E-Mail-Adresse und wird für alle Azure-Anmeldungen verwendet.</p>
-</div>
-<h3 id="schritt-3-benutzer-anzeigen">Schritt 3: Benutzer anzeigen</h3>
-<ol>
-<li>Gehe zurück zu <strong>All users</strong></li>
-<li>Klicke auf <code>Test User</code> um das Profil zu öffnen</li>
-<li>Schau dir die Tabs an: <strong>Profile</strong>, <strong>Assigned roles</strong>, <strong>Groups</strong>, <strong>Applications</strong>, <strong>Devices</strong></li>
-</ol>
-<hr />
-<h2 id="gruppen-anlegen-und-mitglieder-zuweisen">Gruppen anlegen und Mitglieder zuweisen</h2>
-<p>Gruppen sind in Entra ID (wie im AD) der zentrale Mechanismus um Berechtigungen zu verwalten: du gibst der Gruppe eine Rolle, und alle Mitglieder erben sie automatisch.</p>
-<h3 id="gruppe-erstellen">Gruppe erstellen</h3>
-<ol>
-<li>Links im Menü: <strong>Groups</strong> → <strong>All groups</strong></li>
-<li>Klicke auf <strong>+ New group</strong></li>
-</ol>
-<table>
-<thead>
-<tr>
-<th>Feld</th>
-<th>Wert</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>Group type</td>
-<td><code>Security</code></td>
-</tr>
-<tr>
-<td>Group name</td>
-<td><code>grp-azure-leser</code></td>
-</tr>
-<tr>
-<td>Group description</td>
-<td><code>Lesezugriff auf Azure-Ressourcen</code></td>
-</tr>
-<tr>
-<td>Membership type</td>
-<td><code>Assigned</code></td>
-</tr>
-</tbody>
-</table>
-<p>Klicke auf <strong>No members selected</strong> → Suche nach <code>Test User</code> → Auswählen → <strong>Create</strong>.</p>
-<div class="admonition info">
-<p class="admonition-title">Security vs. Microsoft 365 Gruppen</p>
-<table>
-<thead>
-<tr>
-<th>Typ</th>
-<th>Wofür</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td><strong>Security</strong></td>
-<td>Azure RBAC, Berechtigungen, Conditional Access</td>
-</tr>
-<tr>
-<td><strong>Microsoft 365</strong></td>
-<td>E-Mail-Verteiler, Teams, SharePoint</td>
-</tr>
-</tbody>
-</table>
-<p>Für Azure-Berechtigungen immer <strong>Security</strong> wählen.</p>
-</div>
-<h3 id="dynamische-mitgliedschaft-optional">Dynamische Mitgliedschaft (optional)</h3>
-<p>Statt Mitglieder manuell zuzuweisen, kann Entra ID Gruppen automatisch befüllen:</p>
-<ul>
-<li>Membership type: <strong>Dynamic User</strong></li>
-<li>Regel: <code>user.department -eq "IT"</code></li>
-</ul>
-<p>Dann werden alle Benutzer mit Abteilung "IT" automatisch Mitglied. (<strong>Benötigt Entra ID P1-Lizenz</strong>)</p>
-<hr />
-<h2 id="gastbenutzer-einladen-b2b">Gastbenutzer einladen (B2B)</h2>
-<p>B2B (Business-to-Business) ist das Entra-Konzept für externe Zusammenarbeit: du lädst jemanden mit seiner eigenen E-Mail-Adresse ein – er bekommt Zugriff auf deine Azure-Ressourcen, braucht keinen Account in deinem Tenant.</p>
-<h3 id="gastbenutzer-hinzufugen">Gastbenutzer hinzufügen</h3>
-<ol>
-<li><strong>Users</strong> → <strong>All users</strong> → <strong>+ New user</strong> → <strong>Invite external user</strong></li>
-</ol>
-<table>
-<thead>
-<tr>
-<th>Feld</th>
-<th>Wert</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>Email</td>
-<td>eine externe E-Mail-Adresse</td>
-</tr>
-<tr>
-<td>Display name</td>
-<td>Name des Gastes</td>
-</tr>
-<tr>
-<td>Message</td>
-<td>optionale Nachricht in der Einladungsmail</td>
-</tr>
-</tbody>
-</table>
-<p>Klicke auf <strong>Invite</strong>.</p>
-<p>Der Gast erhält eine E-Mail mit einem Link. Nach Annahme erscheint er in <strong>All users</strong> mit dem Typ <code>#EXT#</code> im UPN, z.B. <code>name_extern.com#EXT#@deinertenant.onmicrosoft.com</code>.</p>
 <div class="admonition tip">
-<p class="admonition-title">Gastbenutzer und Azure-Zugriff</p>
-<p>Gastbenutzer können RBAC-Rollen bekommen wie normale Benutzer. Typisches Szenario: Externe Dienstleister bekommen Leserechte auf eine Resource Group – ohne eigenen Account im Unternehmen.</p>
+<p class="admonition-title">Bestehenden Workspace nutzen</p>
+<p>Du verwendest den <code>law-training</code>-Workspace aus Modul 40. Alle Logs die du dort bereits konfiguriert hast stehen automatisch in Sentinel zur Verfügung.</p>
 </div>
 <hr />
-<h2 id="benutzer-in-entra-id-vs-rbac-in-azure">Benutzer in Entra ID vs. RBAC in Azure</h2>
-<p>Ein häufiges Missverständnis: <strong>Entra ID verwaltet Identitäten, RBAC verwaltet Berechtigungen auf Azure-Ressourcen.</strong></p>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a>Entra ID                    Azure RBAC
-<a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a>─────────────────           ─────────────────────────────
-<a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a>Benutzer anlegen     →      Rolle vergeben (wer darf was)
-<a id="__codelineno-0-4" name="__codelineno-0-4" href="#__codelineno-0-4"></a>Gruppen erstellen    →      Gruppe bekommt Rolle auf Scope
-<a id="__codelineno-0-5" name="__codelineno-0-5" href="#__codelineno-0-5"></a>Passwort resettten   →      Kein Einfluss auf Azure-Rechte
+<h2 id="schritt-2-data-connectors-einrichten">Schritt 2: Data Connectors einrichten</h2>
+<p>Data Connectors verbinden Datenquellen mit Sentinel:</p>
+<ol>
+<li><strong>Sentinel</strong> → <strong>Data connectors</strong></li>
+<li>Du siehst hunderte verfügbarer Connectors (Azure, AWS, Office 365, Palo Alto, ...)</li>
+</ol>
+<h3 id="azure-activity-connector-aktivieren">Azure Activity-Connector aktivieren</h3>
+<ol>
+<li>Suche nach <strong>Azure Activity</strong> → <strong>Open connector page</strong></li>
+<li>Klicke <strong>Launch Azure Policy Assignment wizard</strong></li>
+<li>Scope: deine Subscription</li>
+<li><strong>Review + create</strong> → <strong>Create</strong></li>
+</ol>
+<h3 id="microsoft-entra-id-connector-aktivieren">Microsoft Entra ID-Connector aktivieren</h3>
+<ol>
+<li>Suche nach <strong>Microsoft Entra ID</strong> → <strong>Open connector page</strong></li>
+<li>Aktiviere <strong>Sign-in Logs</strong> und <strong>Audit Logs</strong></li>
+<li>Klicke <strong>Connect</strong></li>
+</ol>
+<div class="admonition warning">
+<p class="admonition-title">Entra ID Connector benötigt P1/P2 Lizenz für Sign-in Logs</p>
+<p>Sign-in Logs erfordern eine Entra ID P1 oder P2 Lizenz. Mit einem Free Tier Entra ID sind nur Audit Logs verfügbar. Das ist für das Training ausreichend.</p>
+</div>
+<hr />
+<h2 id="schritt-3-analytics-rules-aktivieren">Schritt 3: Analytics Rules aktivieren</h2>
+<p>Analytics Rules überprüfen eingehende Logs und erstellen Incidents wenn Bedingungen zutreffen:</p>
+<ol>
+<li><strong>Sentinel</strong> → <strong>Analytics</strong></li>
+<li>Du siehst zwei Kategorien:</li>
+<li><strong>Rule templates</strong>: Eingebaute Regeln von Microsoft</li>
+<li><strong>Active rules</strong>: Von dir aktivierte Regeln</li>
+</ol>
+<h3 id="eingebaute-rule-aktivieren">Eingebaute Rule aktivieren</h3>
+<ol>
+<li>Klicke auf <strong>Rule templates</strong></li>
+<li>Filter nach <strong>Data source: Azure Activity</strong></li>
+<li>Suche nach <strong>"Suspicious number of resource creation or deployment activities"</strong></li>
+<li>Klicke <strong>Create rule</strong></li>
+</ol>
+<table>
+<thead>
+<tr>
+<th>Feld</th>
+<th>Wert</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Rule name</td>
+<td>(vorausgefüllt)</td>
+</tr>
+<tr>
+<td>Status</td>
+<td><code>Enabled</code></td>
+</tr>
+<tr>
+<td>Query scheduling</td>
+<td><code>Every 5 hours</code></td>
+</tr>
+<tr>
+<td>Lookup data from last</td>
+<td><code>1 day</code></td>
+</tr>
+</tbody>
+</table>
+<ol>
+<li><strong>Next: Automated response</strong> → <strong>Next: Review</strong> → <strong>Create</strong></li>
+</ol>
+<hr />
+<h2 id="schritt-4-eigene-analytics-rule-schreiben">Schritt 4: Eigene Analytics Rule schreiben</h2>
+<p>Erstelle eine eigene KQL-basierte Rule die Incidents erzeugt:</p>
+<ol>
+<li><strong>Analytics</strong> → <strong>+ Create</strong> → <strong>Scheduled query rule</strong></li>
+</ol>
+<table>
+<thead>
+<tr>
+<th>Feld</th>
+<th>Wert</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Name</td>
+<td><code>Mehrere fehlgeschlagene Logins</code></td>
+</tr>
+<tr>
+<td>Description</td>
+<td><code>Alarm wenn 5+ fehlgeschlagene Logins in 10 Minuten</code></td>
+</tr>
+<tr>
+<td>Severity</td>
+<td><code>Medium</code></td>
+</tr>
+</tbody>
+</table>
+<ol>
+<li><strong>Set rule logic</strong> → KQL-Abfrage:</li>
+</ol>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="n">AzureActivity</span>
+<a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a><span class="p">|</span><span class="w"> </span><span class="k">where</span><span class="w"> </span><span class="n">TimeGenerated</span><span class="w"> </span><span class="p">&gt;</span><span class="w"> </span><span class="n">ago</span><span class="p">(</span><span class="mi">10</span><span class="n">m</span><span class="p">)</span>
+<a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a><span class="p">|</span><span class="w"> </span><span class="k">where</span><span class="w"> </span><span class="n">ActivityStatusValue</span><span class="w"> </span><span class="p">==</span><span class="w"> </span><span class="s">&quot;Failure&quot;</span>
+<a id="__codelineno-0-4" name="__codelineno-0-4" href="#__codelineno-0-4"></a><span class="p">|</span><span class="w"> </span><span class="k">where</span><span class="w"> </span><span class="n">OperationNameValue</span><span class="w"> </span><span class="k">contains</span><span class="w"> </span><span class="s">&quot;MICROSOFT.AUTHORIZATION&quot;</span>
+<a id="__codelineno-0-5" name="__codelineno-0-5" href="#__codelineno-0-5"></a><span class="p">|</span><span class="w"> </span><span class="k">summarize</span><span class="w"> </span><span class="n">FailedAttempts</span><span class="w"> </span><span class="p">=</span><span class="w"> </span><span class="k">count</span><span class="p">()</span><span class="w"> </span><span class="k">by</span><span class="w"> </span><span class="n">Caller</span><span class="p">,</span><span class="w"> </span><span class="n">bin</span><span class="p">(</span><span class="n">TimeGenerated</span><span class="p">,</span><span class="w"> </span><span class="mi">10</span><span class="n">m</span><span class="p">)</span>
+<a id="__codelineno-0-6" name="__codelineno-0-6" href="#__codelineno-0-6"></a><span class="p">|</span><span class="w"> </span><span class="k">where</span><span class="w"> </span><span class="n">FailedAttempts</span><span class="w"> </span><span class="p">&gt;=</span><span class="w"> </span><span class="mi">5</span>
+<a id="__codelineno-0-7" name="__codelineno-0-7" href="#__codelineno-0-7"></a><span class="p">|</span><span class="w"> </span><span class="k">project</span><span class="w"> </span><span class="n">TimeGenerated</span><span class="p">,</span><span class="w"> </span><span class="n">Caller</span><span class="p">,</span><span class="w"> </span><span class="n">FailedAttempts</span>
 </code></pre></div>
-<p>Beispiel: Du kannst einen Benutzer in Entra ID anlegen – er hat noch <strong>keinerlei</strong> Zugriff auf Azure. Erst wenn du ihm eine RBAC-Rolle gibst (z.B. <strong>Reader</strong> auf eine Resource Group), kann er etwas sehen.</p>
-<p>Das lernst du im Detail in Modul 23.</p>
+<ol>
+<li><strong>Query scheduling</strong>: Run every <code>5 minutes</code>, Lookup last <code>10 minutes</code></li>
+<li><strong>Alert threshold</strong>: Generate alert when number of query results is <strong>greater than</strong> <code>0</code></li>
+<li><strong>Next: Incident settings</strong> → <strong>Incident creation</strong>: <code>Enabled</code></li>
+<li><strong>Next: Review</strong> → <strong>Create</strong></li>
+</ol>
+<hr />
+<h2 id="schritt-5-incidents-untersuchen">Schritt 5: Incidents untersuchen</h2>
+<p>Wenn eine Analytics Rule auslöst, wird ein <strong>Incident</strong> erstellt:</p>
+<ol>
+<li><strong>Sentinel</strong> → <strong>Incidents</strong></li>
+<li>Jeder Incident hat:</li>
+<li><strong>Severity</strong> und <strong>Status</strong> (New/Active/Closed)</li>
+<li><strong>Entities</strong>: betroffene Benutzer, IPs, Ressourcen</li>
+<li><strong>Evidence</strong>: welche Alerts den Incident ausgelöst haben</li>
+<li>Klicke auf einen Incident → <strong>Investigate</strong></li>
+</ol>
+<h3 id="investigation-graph">Investigation Graph</h3>
+<p>Der Investigation Graph zeigt Zusammenhänge:
+- Welcher Benutzer war betroffen?
+- Von welcher IP kam der Angriff?
+- Welche anderen Aktivitäten gab es von diesem Benutzer?</p>
+<hr />
+<h2 id="schritt-6-hunting-queries-proaktive-bedrohungssuche">Schritt 6: Hunting Queries – proaktive Bedrohungssuche</h2>
+<p>Hunting ist proaktive Suche nach Bedrohungen ohne eine Regel die automatisch auslöst:</p>
+<ol>
+<li><strong>Sentinel</strong> → <strong>Hunting</strong></li>
+<li>Microsoft liefert hunderte vorgefertigte Hunting Queries</li>
+<li>Filter nach <code>Data source: AzureActivity</code></li>
+<li>Klicke auf eine Query → <strong>Run Query</strong></li>
+<li>Interessante Ergebnisse → <strong>Add bookmark</strong> → später als Incident weiterverfolgen</li>
+</ol>
+<h3 id="eigene-hunting-query-erstellen">Eigene Hunting Query erstellen</h3>
+<ol>
+<li><strong>+ New query</strong></li>
+</ol>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a><span class="c">// Ressourcen die in kurzer Zeit erstellt und wieder gelöscht wurden (mögliche Test-Infrastruktur für Angriffe)</span>
+<a id="__codelineno-1-2" name="__codelineno-1-2" href="#__codelineno-1-2"></a><span class="n">AzureActivity</span>
+<a id="__codelineno-1-3" name="__codelineno-1-3" href="#__codelineno-1-3"></a><span class="p">|</span><span class="w"> </span><span class="k">where</span><span class="w"> </span><span class="n">TimeGenerated</span><span class="w"> </span><span class="p">&gt;</span><span class="w"> </span><span class="n">ago</span><span class="p">(</span><span class="mi">24</span><span class="n">h</span><span class="p">)</span>
+<a id="__codelineno-1-4" name="__codelineno-1-4" href="#__codelineno-1-4"></a><span class="p">|</span><span class="w"> </span><span class="k">where</span><span class="w"> </span><span class="n">OperationNameValue</span><span class="w"> </span><span class="n">has_any</span><span class="w"> </span><span class="p">(</span><span class="s">&quot;Microsoft.Resources/deployments/write&quot;</span><span class="p">,</span><span class="w"> </span><span class="s">&quot;Microsoft.Resources/deployments/delete&quot;</span><span class="p">)</span>
+<a id="__codelineno-1-5" name="__codelineno-1-5" href="#__codelineno-1-5"></a><span class="p">|</span><span class="w"> </span><span class="k">summarize</span><span class="w"> </span>
+<a id="__codelineno-1-6" name="__codelineno-1-6" href="#__codelineno-1-6"></a><span class="w">    </span><span class="n">Creates</span><span class="w"> </span><span class="p">=</span><span class="w"> </span><span class="n">countif</span><span class="p">(</span><span class="n">OperationNameValue</span><span class="w"> </span><span class="k">contains</span><span class="w"> </span><span class="s">&quot;write&quot;</span><span class="p">),</span>
+<a id="__codelineno-1-7" name="__codelineno-1-7" href="#__codelineno-1-7"></a><span class="w">    </span><span class="n">Deletes</span><span class="w"> </span><span class="p">=</span><span class="w"> </span><span class="n">countif</span><span class="p">(</span><span class="n">OperationNameValue</span><span class="w"> </span><span class="k">contains</span><span class="w"> </span><span class="s">&quot;delete&quot;</span><span class="p">)</span>
+<a id="__codelineno-1-8" name="__codelineno-1-8" href="#__codelineno-1-8"></a><span class="w">  </span><span class="k">by</span><span class="w"> </span><span class="n">Caller</span><span class="p">,</span><span class="w"> </span><span class="n">ResourceGroup</span>
+<a id="__codelineno-1-9" name="__codelineno-1-9" href="#__codelineno-1-9"></a><span class="p">|</span><span class="w"> </span><span class="k">where</span><span class="w"> </span><span class="n">Creates</span><span class="w"> </span><span class="p">&gt;</span><span class="w"> </span><span class="mi">0</span><span class="w"> </span><span class="k">and</span><span class="w"> </span><span class="n">Deletes</span><span class="w"> </span><span class="p">&gt;</span><span class="w"> </span><span class="mi">0</span>
+<a id="__codelineno-1-10" name="__codelineno-1-10" href="#__codelineno-1-10"></a><span class="p">|</span><span class="w"> </span><span class="k">project</span><span class="w"> </span><span class="n">Caller</span><span class="p">,</span><span class="w"> </span><span class="n">ResourceGroup</span><span class="p">,</span><span class="w"> </span><span class="n">Creates</span><span class="p">,</span><span class="w"> </span><span class="n">Deletes</span>
+</code></pre></div>
+<hr />
+<h2 id="schritt-7-soar-automation-mit-playbooks">Schritt 7: SOAR – Automation mit Playbooks</h2>
+<p><strong>SOAR</strong> (Security Orchestration, Automation and Response) automatisiert die Reaktion auf Incidents. Playbooks sind Azure Logic Apps die automatisch ausgeführt werden:</p>
+<p>Beispiel-Szenario: Wenn ein Incident mit "Brute Force" erkannt wird → automatisch den Benutzer in Entra ID blockieren.</p>
+<ol>
+<li><strong>Sentinel</strong> → <strong>Automation</strong> → <strong>+ Create</strong> → <strong>Automation rule</strong></li>
+<li>Condition: <code>Incident title contains "Brute Force"</code></li>
+<li>Action: <code>Run playbook</code> (vorher ein Logic App Playbook erstellen)</li>
+</ol>
+<div class="admonition tip">
+<p class="admonition-title">Playbook-Vorlagen</p>
+<p>Unter <strong>Playbooks</strong> → <strong>+ Create</strong> → wähle eine Community-Vorlage. Microsoft stellt fertige Playbooks für häufige Szenarien bereit (Benutzer blockieren, Ticket in ServiceNow erstellen, Teams-Nachricht senden).</p>
+</div>
 <hr />
 <h2 id="challenge">Challenge</h2>
 <div class="admonition question">
-<p class="admonition-title">Challenge: Gruppe mit RBAC-Rolle</p>
+<p class="admonition-title">Challenge: Eigene Threat Detection</p>
 <ol>
-<li>Erstelle eine Gruppe <code>grp-rg-aztraining-reader</code></li>
-<li>Füge deinen Testbenutzer <code>testuser@...</code> als Mitglied hinzu</li>
-<li>Navigiere zu einer Resource Group (z.B. <code>rg-aztraining</code> falls noch vorhanden, sonst erstelle eine neue)</li>
-<li>Weise der <strong>Gruppe</strong> (nicht dem einzelnen Benutzer!) die RBAC-Rolle <strong>Reader</strong> zu</li>
-<li>Wo im Portal machst du das?</li>
+<li>Erstelle eine Analytics Rule die auslöst wenn eine neue Resource Group erstellt wird</li>
+<li>Erstelle dann tatsächlich eine Resource Group (<code>rg-test-sentinel</code>) und prüfe ob ein Incident entsteht</li>
+<li>Lösche die Resource Group und schließe den Incident mit Kommentar</li>
 </ol>
 </div>
 <details class="success">
 <summary>Hinweis</summary>
-<p>RBAC-Rollen werden nicht in Entra ID vergeben, sondern direkt auf der Azure-Ressource:</p>
-<ol>
-<li>Resource Group öffnen → <strong>Access control (IAM)</strong> → <strong>+ Add</strong> → <strong>Add role assignment</strong></li>
-<li>Role: <code>Reader</code></li>
-<li>Members: <strong>Select members</strong> → Suche nach <code>grp-rg-aztraining-reader</code></li>
-<li><strong>Review + assign</strong></li>
-</ol>
-<p>Jetzt hat jedes aktuelle und zukünftige Mitglied dieser Gruppe Leserechte auf die Resource Group.</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a><span class="n">AzureActivity</span>
+<a id="__codelineno-2-2" name="__codelineno-2-2" href="#__codelineno-2-2"></a><span class="p">|</span><span class="w"> </span><span class="k">where</span><span class="w"> </span><span class="n">TimeGenerated</span><span class="w"> </span><span class="p">&gt;</span><span class="w"> </span><span class="n">ago</span><span class="p">(</span><span class="mi">5</span><span class="n">m</span><span class="p">)</span>
+<a id="__codelineno-2-3" name="__codelineno-2-3" href="#__codelineno-2-3"></a><span class="p">|</span><span class="w"> </span><span class="k">where</span><span class="w"> </span><span class="n">OperationNameValue</span><span class="w"> </span><span class="p">==</span><span class="w"> </span><span class="s">&quot;MICROSOFT.RESOURCES/SUBSCRIPTIONS/RESOURCEGROUPS/WRITE&quot;</span>
+<a id="__codelineno-2-4" name="__codelineno-2-4" href="#__codelineno-2-4"></a><span class="p">|</span><span class="w"> </span><span class="k">where</span><span class="w"> </span><span class="n">ActivityStatusValue</span><span class="w"> </span><span class="p">==</span><span class="w"> </span><span class="s">&quot;Success&quot;</span>
+<a id="__codelineno-2-5" name="__codelineno-2-5" href="#__codelineno-2-5"></a><span class="p">|</span><span class="w"> </span><span class="k">project</span><span class="w"> </span><span class="n">TimeGenerated</span><span class="p">,</span><span class="w"> </span><span class="n">Caller</span><span class="p">,</span><span class="w"> </span><span class="n">ResourceGroup</span><span class="p">,</span><span class="w"> </span><span class="n">OperationNameValue</span>
+</code></pre></div>
+<p>Schedule: Every <code>5 minutes</code>, Lookup <code>5 minutes</code>, Threshold: <code>&gt; 0</code></p>
 </details>
 <hr />
-<p>Weiter zu <a href="../modul-22-managed-identity/">Modul 22 – Managed Identity: Apps ohne Passwörter authentifizieren</a> →</p>
+<p>Weiter zu <a href="../modul-44-aufr%C3%A4umen/">Modul 44 – Aufräumen Lernpfad 7</a> →</p>
 
 
 
@@ -2733,7 +2711,7 @@
       <nav class="md-footer__inner md-grid" aria-label="Fußzeile" >
         
           
-          <a href="../modul-20-aufr%C3%A4umen/" class="md-footer__link md-footer__link--prev" aria-label="Zurück: Modul 20 – Aufräumen">
+          <a href="../modul-42-defender/" class="md-footer__link md-footer__link--prev" aria-label="Zurück: Modul 42 – Defender for Cloud">
             <div class="md-footer__button md-icon">
               
               <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
@@ -2743,20 +2721,20 @@
                 Zurück
               </span>
               <div class="md-ellipsis">
-                Modul 20 – Aufräumen
+                Modul 42 – Defender for Cloud
               </div>
             </div>
           </a>
         
         
           
-          <a href="../modul-22-managed-identity/" class="md-footer__link md-footer__link--next" aria-label="Weiter: Modul 22 – Managed Identity">
+          <a href="../modul-44-aufr%C3%A4umen/" class="md-footer__link md-footer__link--next" aria-label="Weiter: Modul 44 – Aufräumen">
             <div class="md-footer__title">
               <span class="md-footer__direction">
                 Weiter
               </span>
               <div class="md-ellipsis">
-                Modul 22 – Managed Identity
+                Modul 44 – Aufräumen
               </div>
             </div>
             <div class="md-footer__button md-icon">

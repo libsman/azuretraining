@@ -10,13 +10,13 @@
       
       
       
-        <link rel="canonical" href="https://libsman.github.io/azuretraining/modul-21-entra/">
+        <link rel="canonical" href="https://libsman.github.io/azuretraining/modul-40-log-analytics/">
       
       
-        <link rel="prev" href="../modul-20-aufr%C3%A4umen/">
+        <link rel="prev" href="../modul-39-aufr%C3%A4umen/">
       
       
-        <link rel="next" href="../modul-22-managed-identity/">
+        <link rel="next" href="../modul-41-app-insights/">
       
       
         
@@ -27,7 +27,7 @@
     
     
       
-        <title>Modul 21 – Microsoft Entra ID - Azure Einstiegstraining</title>
+        <title>Modul 40 – Log Analytics & KQL - Azure Einstiegstraining</title>
       
     
     
@@ -78,7 +78,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#modul-21-microsoft-entra-id-benutzer-gruppen-und-organisationsstruktur" class="md-skip">
+        <a href="#modul-40-azure-monitor-log-analytics-logs-zentral-auswerten" class="md-skip">
           Zum Inhalt
         </a>
       
@@ -114,7 +114,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Modul 21 – Microsoft Entra ID
+              Modul 40 – Log Analytics & KQL
             
           </span>
         </div>
@@ -1063,20 +1063,18 @@
       
   
   
-    
   
   
-  
     
     
     
     
     
-    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_6" checked>
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_6" >
         
           
           <label class="md-nav__link" for="__nav_6" id="__nav_6_label" tabindex="0">
@@ -1097,7 +1095,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_6_label" aria-expanded="true">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_6_label" aria-expanded="false">
           <label class="md-nav__title" for="__nav_6">
             <span class="md-nav__icon md-icon"></span>
             
@@ -1112,37 +1110,10 @@
                 
   
   
-    
   
   
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
-      
-      
-        
-      
-      
-        <label class="md-nav__link md-nav__link--active" for="__toc">
-          
-  
-  
-  <span class="md-ellipsis">
-    
-  
-    Modul 21 – Microsoft Entra ID
-  
-
-    
-  </span>
-  
-  
-
-          <span class="md-nav__icon md-icon"></span>
-        </label>
-      
-      <a href="./" class="md-nav__link md-nav__link--active">
+    <li class="md-nav__item">
+      <a href="../modul-21-entra/" class="md-nav__link">
         
   
   
@@ -1158,226 +1129,6 @@
   
 
       </a>
-      
-        
-
-<nav class="md-nav md-nav--secondary" aria-label="Inhaltsverzeichnis">
-  
-  
-  
-    
-  
-  
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      Inhaltsverzeichnis
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#lernziele" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Lernziele
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#hintergrund-active-directory-vs-microsoft-entra-id" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Hintergrund: Active Directory vs. Microsoft Entra ID
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#entra-id-portal-offnen" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Entra ID-Portal öffnen
-      
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="Entra ID-Portal öffnen">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#option-a-uber-das-azure-portal" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Option A: Über das Azure Portal
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#option-b-direktlink" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Option B: Direktlink
-      
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#benutzer-anlegen" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Benutzer anlegen
-      
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="Benutzer anlegen">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#schritt-1-benutzerubersicht-offnen" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Schritt 1: Benutzerübersicht öffnen
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#schritt-2-neuen-benutzer-erstellen" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Schritt 2: Neuen Benutzer erstellen
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#schritt-3-benutzer-anzeigen" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Schritt 3: Benutzer anzeigen
-      
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#gruppen-anlegen-und-mitglieder-zuweisen" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Gruppen anlegen und Mitglieder zuweisen
-      
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="Gruppen anlegen und Mitglieder zuweisen">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#gruppe-erstellen" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Gruppe erstellen
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#dynamische-mitgliedschaft-optional" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Dynamische Mitgliedschaft (optional)
-      
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#gastbenutzer-einladen-b2b" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Gastbenutzer einladen (B2B)
-      
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="Gastbenutzer einladen (B2B)">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#gastbenutzer-hinzufugen" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Gastbenutzer hinzufügen
-      
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#benutzer-in-entra-id-vs-rbac-in-azure" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Benutzer in Entra ID vs. RBAC in Azure
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#challenge" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Challenge
-      
-    </span>
-  </a>
-  
-</li>
-      
-    </ul>
-  
-</nav>
-      
     </li>
   
 
@@ -2006,18 +1757,20 @@
       
   
   
+    
   
   
+  
     
     
     
     
     
-    <li class="md-nav__item md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_9" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_9" checked>
         
           
           <label class="md-nav__link" for="__nav_9" id="__nav_9_label" tabindex="0">
@@ -2038,7 +1791,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_9_label" aria-expanded="false">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_9_label" aria-expanded="true">
           <label class="md-nav__title" for="__nav_9">
             <span class="md-nav__icon md-icon"></span>
             
@@ -2053,10 +1806,37 @@
                 
   
   
+    
   
   
-    <li class="md-nav__item">
-      <a href="../modul-40-log-analytics/" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Modul 40 – Log Analytics & KQL
+  
+
+    
+  </span>
+  
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
         
   
   
@@ -2072,6 +1852,198 @@
   
 
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Inhaltsverzeichnis">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Inhaltsverzeichnis
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#lernziele" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Lernziele
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#hintergrund-von-lokalen-logs-zur-zentralen-plattform" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Hintergrund: Von lokalen Logs zur zentralen Plattform
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#schritt-1-resource-group-und-log-analytics-workspace-erstellen" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Schritt 1: Resource Group und Log Analytics Workspace erstellen
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#schritt-2-diagnose-einstellungen-aktivieren" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Schritt 2: Diagnose-Einstellungen aktivieren
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Schritt 2: Diagnose-Einstellungen aktivieren">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#im-portal" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Im Portal
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#per-cli" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Per CLI
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#schritt-3-kql-kusto-query-language" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Schritt 3: KQL – Kusto Query Language
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Schritt 3: KQL – Kusto Query Language">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#basis-syntax" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Basis-Syntax
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#erste-abfragen-im-portal" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Erste Abfragen im Portal
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#schritt-4-metric-alert-erstellen" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Schritt 4: Metric Alert erstellen
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Schritt 4: Metric Alert erstellen">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#im-portal_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Im Portal
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#schritt-5-log-basierter-alert" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Schritt 5: Log-basierter Alert
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#schritt-6-azure-workbook-erstellen" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Schritt 6: Azure Workbook erstellen
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#challenge" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Challenge
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
     </li>
   
 
@@ -2234,10 +2206,10 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#hintergrund-active-directory-vs-microsoft-entra-id" class="md-nav__link">
+  <a href="#hintergrund-von-lokalen-logs-zur-zentralen-plattform" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Hintergrund: Active Directory vs. Microsoft Entra ID
+        Hintergrund: Von lokalen Logs zur zentralen Plattform
       
     </span>
   </a>
@@ -2245,22 +2217,33 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#entra-id-portal-offnen" class="md-nav__link">
+  <a href="#schritt-1-resource-group-und-log-analytics-workspace-erstellen" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Entra ID-Portal öffnen
+        Schritt 1: Resource Group und Log Analytics Workspace erstellen
       
     </span>
   </a>
   
-    <nav class="md-nav" aria-label="Entra ID-Portal öffnen">
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#schritt-2-diagnose-einstellungen-aktivieren" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Schritt 2: Diagnose-Einstellungen aktivieren
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Schritt 2: Diagnose-Einstellungen aktivieren">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#option-a-uber-das-azure-portal" class="md-nav__link">
+  <a href="#im-portal" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Option A: Über das Azure Portal
+        Im Portal
       
     </span>
   </a>
@@ -2268,10 +2251,10 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#option-b-direktlink" class="md-nav__link">
+  <a href="#per-cli" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Option B: Direktlink
+        Per CLI
       
     </span>
   </a>
@@ -2284,22 +2267,22 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#benutzer-anlegen" class="md-nav__link">
+  <a href="#schritt-3-kql-kusto-query-language" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Benutzer anlegen
+        Schritt 3: KQL – Kusto Query Language
       
     </span>
   </a>
   
-    <nav class="md-nav" aria-label="Benutzer anlegen">
+    <nav class="md-nav" aria-label="Schritt 3: KQL – Kusto Query Language">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#schritt-1-benutzerubersicht-offnen" class="md-nav__link">
+  <a href="#basis-syntax" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Schritt 1: Benutzerübersicht öffnen
+        Basis-Syntax
       
     </span>
   </a>
@@ -2307,21 +2290,10 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#schritt-2-neuen-benutzer-erstellen" class="md-nav__link">
+  <a href="#erste-abfragen-im-portal" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Schritt 2: Neuen Benutzer erstellen
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#schritt-3-benutzer-anzeigen" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Schritt 3: Benutzer anzeigen
+        Erste Abfragen im Portal
       
     </span>
   </a>
@@ -2334,33 +2306,22 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#gruppen-anlegen-und-mitglieder-zuweisen" class="md-nav__link">
+  <a href="#schritt-4-metric-alert-erstellen" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Gruppen anlegen und Mitglieder zuweisen
+        Schritt 4: Metric Alert erstellen
       
     </span>
   </a>
   
-    <nav class="md-nav" aria-label="Gruppen anlegen und Mitglieder zuweisen">
+    <nav class="md-nav" aria-label="Schritt 4: Metric Alert erstellen">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#gruppe-erstellen" class="md-nav__link">
+  <a href="#im-portal_1" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Gruppe erstellen
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#dynamische-mitgliedschaft-optional" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Dynamische Mitgliedschaft (optional)
+        Im Portal
       
     </span>
   </a>
@@ -2373,38 +2334,21 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#gastbenutzer-einladen-b2b" class="md-nav__link">
+  <a href="#schritt-5-log-basierter-alert" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Gastbenutzer einladen (B2B)
+        Schritt 5: Log-basierter Alert
       
     </span>
   </a>
-  
-    <nav class="md-nav" aria-label="Gastbenutzer einladen (B2B)">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#gastbenutzer-hinzufugen" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Gastbenutzer hinzufügen
-      
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#benutzer-in-entra-id-vs-rbac-in-azure" class="md-nav__link">
+  <a href="#schritt-6-azure-workbook-erstellen" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Benutzer in Entra ID vs. RBAC in Azure
+        Schritt 6: Azure Workbook erstellen
       
     </span>
   </a>
@@ -2442,92 +2386,44 @@
   
 
 
-<h1 id="modul-21-microsoft-entra-id-benutzer-gruppen-und-organisationsstruktur">Modul 21 – Microsoft Entra ID: Benutzer, Gruppen und Organisationsstruktur</h1>
+<h1 id="modul-40-azure-monitor-log-analytics-logs-zentral-auswerten">Modul 40 – Azure Monitor &amp; Log Analytics: Logs zentral auswerten</h1>
 <h2 id="lernziele">Lernziele</h2>
 <p>Nach diesem Modul kannst du:</p>
 <ul>
-<li>Den Unterschied zwischen Microsoft Entra ID und Active Directory erklären</li>
-<li>Benutzer und Gruppen im Entra ID-Portal anlegen und verwalten</li>
-<li>Gastbenutzer einladen (B2B-Zusammenarbeit)</li>
-<li>Den Zusammenhang zwischen Entra ID, Azure-Subscription und RBAC verstehen</li>
-<li>Administrative Units als Organisationsstruktur beschreiben</li>
+<li>Azure Monitor als übergeordnete Monitoring-Plattform beschreiben</li>
+<li>Einen Log Analytics Workspace erstellen und Ressourcen damit verbinden</li>
+<li>KQL (Kusto Query Language) für grundlegende Log-Abfragen nutzen</li>
+<li>Diagnose-Einstellungen für VMs und App Services aktivieren</li>
+<li>Metric Alerts und Log-basierte Alerts erstellen</li>
+<li>Azure Workbooks für visuelle Dashboards verwenden</li>
 </ul>
 <hr />
-<h2 id="hintergrund-active-directory-vs-microsoft-entra-id">Hintergrund: Active Directory vs. Microsoft Entra ID</h2>
-<p><strong>On-Prem-Vergleich:</strong> In fast jedem Windows-Unternehmen gibt es ein <strong>Active Directory (AD)</strong> – den Verzeichnisdienst für Benutzer, Computer, Gruppen und Gruppenrichtlinien. Domäne joinen, Logins über Kerberos, <code>gpupdate /force</code> – das kennt jeder Windows-Admin.</p>
-<p><strong>Microsoft Entra ID</strong> (früher: Azure Active Directory / Azure AD) ist das Cloud-Äquivalent – aber kein direktes Upgrade:</p>
-<table>
-<thead>
-<tr>
-<th></th>
-<th>Active Directory (on-prem)</th>
-<th>Microsoft Entra ID (Cloud)</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>Protokolle</td>
-<td>Kerberos, NTLM, LDAP</td>
-<td>OAuth 2.0, OpenID Connect, SAML</td>
-</tr>
-<tr>
-<td>Domäne</td>
-<td><code>firma.local</code></td>
-<td><code>firma.onmicrosoft.com</code></td>
-</tr>
-<tr>
-<td>Zugriff auf</td>
-<td>Windows-PCs, Server, Fileserver</td>
-<td>Cloud-Apps, Azure, Microsoft 365</td>
-</tr>
-<tr>
-<td>Gruppenrichtlinien</td>
-<td>✅ GPO</td>
-<td>❌ (dafür: Intune/Autopilot)</td>
-</tr>
-<tr>
-<td>Geräteverwaltung</td>
-<td>Domänen-Join</td>
-<td>Entra-Join / Hybrid-Join</td>
-</tr>
-<tr>
-<td>Preis</td>
-<td>Inklusive in Windows Server</td>
-<td>Free-Tier + Premium P1/P2</td>
-</tr>
-</tbody>
-</table>
+<h2 id="hintergrund-von-lokalen-logs-zur-zentralen-plattform">Hintergrund: Von lokalen Logs zur zentralen Plattform</h2>
+<p><strong>On-Prem-Vergleich:</strong> On-Premises landen Logs in Windows Event Logs, <code>/var/log/</code> auf Linux oder proprietären SIEM-Systemen wie Splunk oder SCOM. Jeder Server hat seine eigenen Logs – du musst dich per RDP/SSH einloggen um sie anzusehen. Korrelation über mehrere Server ist mühsam.</p>
+<p><strong>Azure Monitor</strong> ist die zentrale Monitoring-Plattform für alles in Azure:</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a>Azure Monitor
+<a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a>├── Metrics       → Zahlen in Echtzeit (CPU %, Request/s, ...)
+<a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a>├── Logs          → Textbasierte Ereignisse → werden in Log Analytics gespeichert
+<a id="__codelineno-0-4" name="__codelineno-0-4" href="#__codelineno-0-4"></a>├── Alerts        → Benachrichtigungen wenn Schwellwerte überschritten werden
+<a id="__codelineno-0-5" name="__codelineno-0-5" href="#__codelineno-0-5"></a>├── Workbooks     → Visuelle Berichte aus Metrics + Logs
+<a id="__codelineno-0-6" name="__codelineno-0-6" href="#__codelineno-0-6"></a>└── Application Insights → Telemetrie für Web-Apps (Modul 41)
+</code></pre></div>
+<p><strong>Log Analytics Workspace</strong> ist die Datenbank für alle Logs. Ressourcen schicken ihre Logs dorthin, du frägst sie mit KQL ab.</p>
 <div class="admonition info">
-<p class="admonition-title">Umbenennung: Azure AD → Entra ID</p>
-<p>Microsoft hat 2023 <strong>Azure Active Directory</strong> in <strong>Microsoft Entra ID</strong> umbenannt. Im Portal und in vielen Dokumentationen findest du noch beide Namen – sie bezeichnen denselben Dienst. Die URL <code>aad.portal.azure.com</code> leitet auf das neue Entra ID-Portal weiter.</p>
-</div>
-<p><strong>Was Entra ID für Azure bedeutet:</strong></p>
-<p>Jede Azure-Subscription ist einem Entra ID-Tenant zugeordnet. Wenn du dich am Azure Portal anmeldest, authentifizierst du dich gegen Entra ID. RBAC-Rollen (wer darf was in Azure) werden auf Entra-Identitäten vergeben.</p>
-<hr />
-<h2 id="entra-id-portal-offnen">Entra ID-Portal öffnen</h2>
-<h3 id="option-a-uber-das-azure-portal">Option A: Über das Azure Portal</h3>
-<ol>
-<li>Tippe in der Suchleiste <strong><code>Microsoft Entra ID</code></strong> und klicke auf den Dienst</li>
-<li>Du siehst das Overview-Dashboard deines Tenants</li>
-</ol>
-<h3 id="option-b-direktlink">Option B: Direktlink</h3>
-<p>Öffne <strong><a href="https://entra.microsoft.com">entra.microsoft.com</a></strong> – das eigenständige Entra Admin Center.</p>
-<div class="admonition info">
-<p class="admonition-title">Tenant und Tenantname</p>
-<p>Dein Tenant hat einen eindeutigen Namen: <code>XXXX.onmicrosoft.com</code>. Im Overview unter <strong>Overview</strong> siehst du:
-- <strong>Tenant ID</strong> (UUID, z.B. <code>a1b2c3d4-...</code>)
-- <strong>Primary domain</strong> (z.B. <code>meinefirma.onmicrosoft.com</code>)
-- <strong>Tenant type</strong> (z.B. <code>Microsoft Entra ID</code>)</p>
+<p class="admonition-title">Kosten von Log Analytics</p>
+<p>Die ersten <strong>5 GB pro Monat</strong> sind kostenlos (Pay-As-You-Go). Danach ca. 2,76 €/GB. Für dieses Training entstehen kaum Kosten wenn du die Ressourcen am Ende löschst.</p>
 </div>
 <hr />
-<h2 id="benutzer-anlegen">Benutzer anlegen</h2>
-<h3 id="schritt-1-benutzerubersicht-offnen">Schritt 1: Benutzerübersicht öffnen</h3>
-<ol>
-<li>Im Entra ID-Portal: links im Menü auf <strong>Users</strong> → <strong>All users</strong></li>
-<li>Du siehst deinen eigenen Account (und ggf. weitere Standard-Accounts)</li>
-</ol>
-<h3 id="schritt-2-neuen-benutzer-erstellen">Schritt 2: Neuen Benutzer erstellen</h3>
-<p>Klicke oben auf <strong>+ New user</strong> → <strong>Create new user</strong>:</p>
+<h2 id="schritt-1-resource-group-und-log-analytics-workspace-erstellen">Schritt 1: Resource Group und Log Analytics Workspace erstellen</h2>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a>az<span class="w"> </span>group<span class="w"> </span>create<span class="w"> </span>--name<span class="w"> </span>rg-monitoring<span class="w"> </span>--location<span class="w"> </span>westeurope
+<a id="__codelineno-1-2" name="__codelineno-1-2" href="#__codelineno-1-2"></a>
+<a id="__codelineno-1-3" name="__codelineno-1-3" href="#__codelineno-1-3"></a>az<span class="w"> </span>monitor<span class="w"> </span>log-analytics<span class="w"> </span>workspace<span class="w"> </span>create<span class="w"> </span><span class="se">\</span>
+<a id="__codelineno-1-4" name="__codelineno-1-4" href="#__codelineno-1-4"></a><span class="w">  </span>--resource-group<span class="w"> </span>rg-monitoring<span class="w"> </span><span class="se">\</span>
+<a id="__codelineno-1-5" name="__codelineno-1-5" href="#__codelineno-1-5"></a><span class="w">  </span>--workspace-name<span class="w"> </span>law-training<span class="w"> </span><span class="se">\</span>
+<a id="__codelineno-1-6" name="__codelineno-1-6" href="#__codelineno-1-6"></a><span class="w">  </span>--location<span class="w"> </span>westeurope<span class="w"> </span><span class="se">\</span>
+<a id="__codelineno-1-7" name="__codelineno-1-7" href="#__codelineno-1-7"></a><span class="w">  </span>--sku<span class="w"> </span>PerGB2018
+</code></pre></div>
+<p>Im Portal: Suche nach <strong>Log Analytics workspaces</strong> → <strong>+ Create</strong></p>
 <table>
 <thead>
 <tr>
@@ -2537,37 +2433,31 @@
 </thead>
 <tbody>
 <tr>
-<td>User principal name</td>
-<td><code>testuser@XXXX.onmicrosoft.com</code></td>
+<td>Resource group</td>
+<td><code>rg-monitoring</code></td>
 </tr>
 <tr>
-<td>Display name</td>
-<td><code>Test User</code></td>
+<td>Name</td>
+<td><code>law-training</code></td>
 </tr>
 <tr>
-<td>Password</td>
-<td>Auto-generate (notiere das Initialpasswort!)</td>
+<td>Region</td>
+<td><code>West Europe</code></td>
+</tr>
+<tr>
+<td>Pricing tier</td>
+<td><code>Pay-as-you-go</code></td>
 </tr>
 </tbody>
 </table>
-<p>Klicke auf <strong>Review + create</strong> → <strong>Create</strong>.</p>
-<div class="admonition info">
-<p class="admonition-title">User Principal Name (UPN)</p>
-<p>Der UPN ist der Benutzername im Cloud-Format: <code>vorname.nachname@domäne.com</code>. Er entspricht der E-Mail-Adresse und wird für alle Azure-Anmeldungen verwendet.</p>
-</div>
-<h3 id="schritt-3-benutzer-anzeigen">Schritt 3: Benutzer anzeigen</h3>
-<ol>
-<li>Gehe zurück zu <strong>All users</strong></li>
-<li>Klicke auf <code>Test User</code> um das Profil zu öffnen</li>
-<li>Schau dir die Tabs an: <strong>Profile</strong>, <strong>Assigned roles</strong>, <strong>Groups</strong>, <strong>Applications</strong>, <strong>Devices</strong></li>
-</ol>
 <hr />
-<h2 id="gruppen-anlegen-und-mitglieder-zuweisen">Gruppen anlegen und Mitglieder zuweisen</h2>
-<p>Gruppen sind in Entra ID (wie im AD) der zentrale Mechanismus um Berechtigungen zu verwalten: du gibst der Gruppe eine Rolle, und alle Mitglieder erben sie automatisch.</p>
-<h3 id="gruppe-erstellen">Gruppe erstellen</h3>
+<h2 id="schritt-2-diagnose-einstellungen-aktivieren">Schritt 2: Diagnose-Einstellungen aktivieren</h2>
+<p>Verbinde eine vorhandene Ressource (z. B. App Service aus LP1) mit dem Workspace:</p>
+<h3 id="im-portal">Im Portal</h3>
 <ol>
-<li>Links im Menü: <strong>Groups</strong> → <strong>All groups</strong></li>
-<li>Klicke auf <strong>+ New group</strong></li>
+<li>Öffne deine App Service-Instanz</li>
+<li>Links: <strong>Diagnostic settings</strong> (unter Monitoring)</li>
+<li><strong>+ Add diagnostic setting</strong></li>
 </ol>
 <table>
 <thead>
@@ -2578,59 +2468,98 @@
 </thead>
 <tbody>
 <tr>
-<td>Group type</td>
-<td><code>Security</code></td>
+<td>Name</td>
+<td><code>appservice-to-law</code></td>
 </tr>
 <tr>
-<td>Group name</td>
-<td><code>grp-azure-leser</code></td>
+<td>AppServiceHTTPLogs</td>
+<td>✅</td>
 </tr>
 <tr>
-<td>Group description</td>
-<td><code>Lesezugriff auf Azure-Ressourcen</code></td>
+<td>AppServiceConsoleLogs</td>
+<td>✅</td>
 </tr>
 <tr>
-<td>Membership type</td>
-<td><code>Assigned</code></td>
+<td>Destination</td>
+<td><code>Send to Log Analytics workspace</code></td>
+</tr>
+<tr>
+<td>Workspace</td>
+<td><code>law-training</code></td>
 </tr>
 </tbody>
 </table>
-<p>Klicke auf <strong>No members selected</strong> → Suche nach <code>Test User</code> → Auswählen → <strong>Create</strong>.</p>
-<div class="admonition info">
-<p class="admonition-title">Security vs. Microsoft 365 Gruppen</p>
-<table>
-<thead>
-<tr>
-<th>Typ</th>
-<th>Wofür</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td><strong>Security</strong></td>
-<td>Azure RBAC, Berechtigungen, Conditional Access</td>
-</tr>
-<tr>
-<td><strong>Microsoft 365</strong></td>
-<td>E-Mail-Verteiler, Teams, SharePoint</td>
-</tr>
-</tbody>
-</table>
-<p>Für Azure-Berechtigungen immer <strong>Security</strong> wählen.</p>
-</div>
-<h3 id="dynamische-mitgliedschaft-optional">Dynamische Mitgliedschaft (optional)</h3>
-<p>Statt Mitglieder manuell zuzuweisen, kann Entra ID Gruppen automatisch befüllen:</p>
-<ul>
-<li>Membership type: <strong>Dynamic User</strong></li>
-<li>Regel: <code>user.department -eq "IT"</code></li>
-</ul>
-<p>Dann werden alle Benutzer mit Abteilung "IT" automatisch Mitglied. (<strong>Benötigt Entra ID P1-Lizenz</strong>)</p>
-<hr />
-<h2 id="gastbenutzer-einladen-b2b">Gastbenutzer einladen (B2B)</h2>
-<p>B2B (Business-to-Business) ist das Entra-Konzept für externe Zusammenarbeit: du lädst jemanden mit seiner eigenen E-Mail-Adresse ein – er bekommt Zugriff auf deine Azure-Ressourcen, braucht keinen Account in deinem Tenant.</p>
-<h3 id="gastbenutzer-hinzufugen">Gastbenutzer hinzufügen</h3>
 <ol>
-<li><strong>Users</strong> → <strong>All users</strong> → <strong>+ New user</strong> → <strong>Invite external user</strong></li>
+<li><strong>Save</strong></li>
+</ol>
+<h3 id="per-cli">Per CLI</h3>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a><span class="nv">APP_ID</span><span class="o">=</span><span class="k">$(</span>az<span class="w"> </span>webapp<span class="w"> </span>show<span class="w"> </span>--name<span class="w"> </span>DEIN-APP-NAME<span class="w"> </span>--resource-group<span class="w"> </span>rg-aztraining<span class="w"> </span>--query<span class="w"> </span>id<span class="w"> </span>-o<span class="w"> </span>tsv<span class="k">)</span>
+<a id="__codelineno-2-2" name="__codelineno-2-2" href="#__codelineno-2-2"></a><span class="nv">LAW_ID</span><span class="o">=</span><span class="k">$(</span>az<span class="w"> </span>monitor<span class="w"> </span>log-analytics<span class="w"> </span>workspace<span class="w"> </span>show<span class="w"> </span><span class="se">\</span>
+<a id="__codelineno-2-3" name="__codelineno-2-3" href="#__codelineno-2-3"></a><span class="w">  </span>--workspace-name<span class="w"> </span>law-training<span class="w"> </span><span class="se">\</span>
+<a id="__codelineno-2-4" name="__codelineno-2-4" href="#__codelineno-2-4"></a><span class="w">  </span>--resource-group<span class="w"> </span>rg-monitoring<span class="w"> </span><span class="se">\</span>
+<a id="__codelineno-2-5" name="__codelineno-2-5" href="#__codelineno-2-5"></a><span class="w">  </span>--query<span class="w"> </span>id<span class="w"> </span>-o<span class="w"> </span>tsv<span class="k">)</span>
+<a id="__codelineno-2-6" name="__codelineno-2-6" href="#__codelineno-2-6"></a>
+<a id="__codelineno-2-7" name="__codelineno-2-7" href="#__codelineno-2-7"></a>az<span class="w"> </span>monitor<span class="w"> </span>diagnostic-settings<span class="w"> </span>create<span class="w"> </span><span class="se">\</span>
+<a id="__codelineno-2-8" name="__codelineno-2-8" href="#__codelineno-2-8"></a><span class="w">  </span>--name<span class="w"> </span><span class="s2">&quot;appservice-to-law&quot;</span><span class="w"> </span><span class="se">\</span>
+<a id="__codelineno-2-9" name="__codelineno-2-9" href="#__codelineno-2-9"></a><span class="w">  </span>--resource<span class="w"> </span><span class="nv">$APP_ID</span><span class="w"> </span><span class="se">\</span>
+<a id="__codelineno-2-10" name="__codelineno-2-10" href="#__codelineno-2-10"></a><span class="w">  </span>--workspace<span class="w"> </span><span class="nv">$LAW_ID</span><span class="w"> </span><span class="se">\</span>
+<a id="__codelineno-2-11" name="__codelineno-2-11" href="#__codelineno-2-11"></a><span class="w">  </span>--logs<span class="w"> </span><span class="s1">&#39;[{&quot;category&quot;:&quot;AppServiceHTTPLogs&quot;,&quot;enabled&quot;:true},{&quot;category&quot;:&quot;AppServiceConsoleLogs&quot;,&quot;enabled&quot;:true}]&#39;</span>
+</code></pre></div>
+<div class="admonition tip">
+<p class="admonition-title">Logs erscheinen nach einigen Minuten</p>
+<p>Nach dem Aktivieren der Diagnose-Einstellungen dauert es 5–15 Minuten bis die ersten Logs im Workspace erscheinen.</p>
+</div>
+<hr />
+<h2 id="schritt-3-kql-kusto-query-language">Schritt 3: KQL – Kusto Query Language</h2>
+<p>KQL ist die Abfragesprache für Log Analytics. Syntax ähnelt SQL aber ist für Zeitreihendaten optimiert.</p>
+<h3 id="basis-syntax">Basis-Syntax</h3>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a><span class="n">TabellenName</span>
+<a id="__codelineno-3-2" name="__codelineno-3-2" href="#__codelineno-3-2"></a><span class="p">|</span><span class="w"> </span><span class="k">where</span><span class="w"> </span><span class="n">Bedingung</span>
+<a id="__codelineno-3-3" name="__codelineno-3-3" href="#__codelineno-3-3"></a><span class="p">|</span><span class="w"> </span><span class="k">project</span><span class="w"> </span><span class="n">Spalte1</span><span class="p">,</span><span class="w"> </span><span class="n">Spalte2</span>
+<a id="__codelineno-3-4" name="__codelineno-3-4" href="#__codelineno-3-4"></a><span class="p">|</span><span class="w"> </span><span class="k">summarize</span><span class="w"> </span><span class="n">Aggregation</span><span class="w"> </span><span class="k">by</span><span class="w"> </span><span class="n">Gruppe</span>
+<a id="__codelineno-3-5" name="__codelineno-3-5" href="#__codelineno-3-5"></a><span class="p">|</span><span class="w"> </span><span class="k">order</span><span class="w"> </span><span class="k">by</span><span class="w"> </span><span class="n">Spalte</span><span class="w"> </span><span class="n">desc</span>
+<a id="__codelineno-3-6" name="__codelineno-3-6" href="#__codelineno-3-6"></a><span class="p">|</span><span class="w"> </span><span class="k">take</span><span class="w"> </span><span class="mi">10</span>
+</code></pre></div>
+<h3 id="erste-abfragen-im-portal">Erste Abfragen im Portal</h3>
+<ol>
+<li>Öffne <strong>Log Analytics workspace</strong> → <strong>Logs</strong></li>
+<li>Schließe das "Queries"-Popup</li>
+<li>Gib folgende Abfragen ein:</li>
+</ol>
+<p><strong>Alle Heartbeat-Signale der letzten Stunde:</strong>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-4-1" name="__codelineno-4-1" href="#__codelineno-4-1"></a><span class="n">Heartbeat</span>
+<a id="__codelineno-4-2" name="__codelineno-4-2" href="#__codelineno-4-2"></a><span class="p">|</span><span class="w"> </span><span class="k">where</span><span class="w"> </span><span class="n">TimeGenerated</span><span class="w"> </span><span class="p">&gt;</span><span class="w"> </span><span class="n">ago</span><span class="p">(</span><span class="mi">1</span><span class="n">h</span><span class="p">)</span>
+<a id="__codelineno-4-3" name="__codelineno-4-3" href="#__codelineno-4-3"></a><span class="p">|</span><span class="w"> </span><span class="k">summarize</span><span class="w"> </span><span class="k">count</span><span class="p">()</span><span class="w"> </span><span class="k">by</span><span class="w"> </span><span class="n">Computer</span><span class="p">,</span><span class="w"> </span><span class="n">OSType</span>
+<a id="__codelineno-4-4" name="__codelineno-4-4" href="#__codelineno-4-4"></a><span class="p">|</span><span class="w"> </span><span class="k">order</span><span class="w"> </span><span class="k">by</span><span class="w"> </span><span class="n">count_</span><span class="w"> </span><span class="n">desc</span>
+</code></pre></div></p>
+<p><strong>HTTP-Fehler der App Service (4xx und 5xx):</strong>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-5-1" name="__codelineno-5-1" href="#__codelineno-5-1"></a><span class="n">AppServiceHTTPLogs</span>
+<a id="__codelineno-5-2" name="__codelineno-5-2" href="#__codelineno-5-2"></a><span class="p">|</span><span class="w"> </span><span class="k">where</span><span class="w"> </span><span class="n">TimeGenerated</span><span class="w"> </span><span class="p">&gt;</span><span class="w"> </span><span class="n">ago</span><span class="p">(</span><span class="mi">24</span><span class="n">h</span><span class="p">)</span>
+<a id="__codelineno-5-3" name="__codelineno-5-3" href="#__codelineno-5-3"></a><span class="p">|</span><span class="w"> </span><span class="k">where</span><span class="w"> </span><span class="n">ScStatus</span><span class="w"> </span><span class="p">&gt;=</span><span class="w"> </span><span class="mi">400</span>
+<a id="__codelineno-5-4" name="__codelineno-5-4" href="#__codelineno-5-4"></a><span class="p">|</span><span class="w"> </span><span class="k">project</span><span class="w"> </span><span class="n">TimeGenerated</span><span class="p">,</span><span class="w"> </span><span class="n">CsMethod</span><span class="p">,</span><span class="w"> </span><span class="n">CsUriStem</span><span class="p">,</span><span class="w"> </span><span class="n">ScStatus</span><span class="p">,</span><span class="w"> </span><span class="n">TimeTaken</span>
+<a id="__codelineno-5-5" name="__codelineno-5-5" href="#__codelineno-5-5"></a><span class="p">|</span><span class="w"> </span><span class="k">order</span><span class="w"> </span><span class="k">by</span><span class="w"> </span><span class="n">TimeGenerated</span><span class="w"> </span><span class="n">desc</span>
+</code></pre></div></p>
+<p><strong>Top 10 langsamste Requests:</strong>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-6-1" name="__codelineno-6-1" href="#__codelineno-6-1"></a><span class="n">AppServiceHTTPLogs</span>
+<a id="__codelineno-6-2" name="__codelineno-6-2" href="#__codelineno-6-2"></a><span class="p">|</span><span class="w"> </span><span class="k">where</span><span class="w"> </span><span class="n">TimeGenerated</span><span class="w"> </span><span class="p">&gt;</span><span class="w"> </span><span class="n">ago</span><span class="p">(</span><span class="mi">1</span><span class="n">h</span><span class="p">)</span>
+<a id="__codelineno-6-3" name="__codelineno-6-3" href="#__codelineno-6-3"></a><span class="p">|</span><span class="w"> </span><span class="k">top</span><span class="w"> </span><span class="mi">10</span><span class="w"> </span><span class="k">by</span><span class="w"> </span><span class="n">TimeTaken</span><span class="w"> </span><span class="n">desc</span>
+<a id="__codelineno-6-4" name="__codelineno-6-4" href="#__codelineno-6-4"></a><span class="p">|</span><span class="w"> </span><span class="k">project</span><span class="w"> </span><span class="n">TimeGenerated</span><span class="p">,</span><span class="w"> </span><span class="n">CsUriStem</span><span class="p">,</span><span class="w"> </span><span class="n">TimeTaken</span><span class="p">,</span><span class="w"> </span><span class="n">ScStatus</span>
+</code></pre></div></p>
+<p><strong>Azure Activity Log – wer hat was in meiner Subscription gemacht:</strong>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-7-1" name="__codelineno-7-1" href="#__codelineno-7-1"></a><span class="n">AzureActivity</span>
+<a id="__codelineno-7-2" name="__codelineno-7-2" href="#__codelineno-7-2"></a><span class="p">|</span><span class="w"> </span><span class="k">where</span><span class="w"> </span><span class="n">TimeGenerated</span><span class="w"> </span><span class="p">&gt;</span><span class="w"> </span><span class="n">ago</span><span class="p">(</span><span class="mi">7</span><span class="n">d</span><span class="p">)</span>
+<a id="__codelineno-7-3" name="__codelineno-7-3" href="#__codelineno-7-3"></a><span class="p">|</span><span class="w"> </span><span class="k">where</span><span class="w"> </span><span class="n">ActivityStatusValue</span><span class="w"> </span><span class="p">==</span><span class="w"> </span><span class="s">&quot;Failure&quot;</span>
+<a id="__codelineno-7-4" name="__codelineno-7-4" href="#__codelineno-7-4"></a><span class="p">|</span><span class="w"> </span><span class="k">project</span><span class="w"> </span><span class="n">TimeGenerated</span><span class="p">,</span><span class="w"> </span><span class="n">Caller</span><span class="p">,</span><span class="w"> </span><span class="n">OperationNameValue</span><span class="p">,</span><span class="w"> </span><span class="n">ResourceGroup</span>
+<a id="__codelineno-7-5" name="__codelineno-7-5" href="#__codelineno-7-5"></a><span class="p">|</span><span class="w"> </span><span class="k">order</span><span class="w"> </span><span class="k">by</span><span class="w"> </span><span class="n">TimeGenerated</span><span class="w"> </span><span class="n">desc</span>
+</code></pre></div></p>
+<hr />
+<h2 id="schritt-4-metric-alert-erstellen">Schritt 4: Metric Alert erstellen</h2>
+<p>Alerts lösen aus wenn eine Metrik einen Schwellwert überschreitet.</p>
+<h3 id="im-portal_1">Im Portal</h3>
+<ol>
+<li>Öffne deine App Service-Instanz</li>
+<li>Links: <strong>Alerts</strong> → <strong>+ Create</strong> → <strong>Alert rule</strong></li>
+<li><strong>Condition</strong>: Klicke <strong>+ Add condition</strong></li>
 </ol>
 <table>
 <thead>
@@ -2640,62 +2569,128 @@
 </tr>
 </thead>
 <tbody>
+<tr>
+<td>Signal</td>
+<td><code>Http 5xx</code></td>
+</tr>
+<tr>
+<td>Operator</td>
+<td><code>Greater than</code></td>
+</tr>
+<tr>
+<td>Threshold value</td>
+<td><code>5</code></td>
+</tr>
+<tr>
+<td>Aggregation</td>
+<td><code>Count</code></td>
+</tr>
+<tr>
+<td>Period</td>
+<td><code>5 minutes</code></td>
+</tr>
+</tbody>
+</table>
+<ol>
+<li><strong>Actions</strong>: Klicke <strong>+ Add action groups</strong> → <strong>+ Create action group</strong></li>
+</ol>
+<table>
+<thead>
+<tr>
+<th>Feld</th>
+<th>Wert</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Action group name</td>
+<td><code>ag-email-training</code></td>
+</tr>
+<tr>
+<td>Notification type</td>
+<td><code>Email</code></td>
+</tr>
 <tr>
 <td>Email</td>
-<td>eine externe E-Mail-Adresse</td>
-</tr>
-<tr>
-<td>Display name</td>
-<td>Name des Gastes</td>
-</tr>
-<tr>
-<td>Message</td>
-<td>optionale Nachricht in der Einladungsmail</td>
+<td>deine E-Mail-Adresse</td>
 </tr>
 </tbody>
 </table>
-<p>Klicke auf <strong>Invite</strong>.</p>
-<p>Der Gast erhält eine E-Mail mit einem Link. Nach Annahme erscheint er in <strong>All users</strong> mit dem Typ <code>#EXT#</code> im UPN, z.B. <code>name_extern.com#EXT#@deinertenant.onmicrosoft.com</code>.</p>
-<div class="admonition tip">
-<p class="admonition-title">Gastbenutzer und Azure-Zugriff</p>
-<p>Gastbenutzer können RBAC-Rollen bekommen wie normale Benutzer. Typisches Szenario: Externe Dienstleister bekommen Leserechte auf eine Resource Group – ohne eigenen Account im Unternehmen.</p>
-</div>
+<ol>
+<li><strong>Alert rule details</strong>:</li>
+</ol>
+<table>
+<thead>
+<tr>
+<th>Feld</th>
+<th>Wert</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Alert rule name</td>
+<td><code>5xx-errors-alert</code></td>
+</tr>
+<tr>
+<td>Severity</td>
+<td><code>2 – Warning</code></td>
+</tr>
+</tbody>
+</table>
 <hr />
-<h2 id="benutzer-in-entra-id-vs-rbac-in-azure">Benutzer in Entra ID vs. RBAC in Azure</h2>
-<p>Ein häufiges Missverständnis: <strong>Entra ID verwaltet Identitäten, RBAC verwaltet Berechtigungen auf Azure-Ressourcen.</strong></p>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a>Entra ID                    Azure RBAC
-<a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a>─────────────────           ─────────────────────────────
-<a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a>Benutzer anlegen     →      Rolle vergeben (wer darf was)
-<a id="__codelineno-0-4" name="__codelineno-0-4" href="#__codelineno-0-4"></a>Gruppen erstellen    →      Gruppe bekommt Rolle auf Scope
-<a id="__codelineno-0-5" name="__codelineno-0-5" href="#__codelineno-0-5"></a>Passwort resettten   →      Kein Einfluss auf Azure-Rechte
+<h2 id="schritt-5-log-basierter-alert">Schritt 5: Log-basierter Alert</h2>
+<p>Alert der auslöst wenn eine KQL-Abfrage Ergebnisse liefert:</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-8-1" name="__codelineno-8-1" href="#__codelineno-8-1"></a><span class="nv">LAW_ID</span><span class="o">=</span><span class="k">$(</span>az<span class="w"> </span>monitor<span class="w"> </span>log-analytics<span class="w"> </span>workspace<span class="w"> </span>show<span class="w"> </span><span class="se">\</span>
+<a id="__codelineno-8-2" name="__codelineno-8-2" href="#__codelineno-8-2"></a><span class="w">  </span>--workspace-name<span class="w"> </span>law-training<span class="w"> </span><span class="se">\</span>
+<a id="__codelineno-8-3" name="__codelineno-8-3" href="#__codelineno-8-3"></a><span class="w">  </span>--resource-group<span class="w"> </span>rg-monitoring<span class="w"> </span><span class="se">\</span>
+<a id="__codelineno-8-4" name="__codelineno-8-4" href="#__codelineno-8-4"></a><span class="w">  </span>--query<span class="w"> </span>id<span class="w"> </span>-o<span class="w"> </span>tsv<span class="k">)</span>
+<a id="__codelineno-8-5" name="__codelineno-8-5" href="#__codelineno-8-5"></a>
+<a id="__codelineno-8-6" name="__codelineno-8-6" href="#__codelineno-8-6"></a>az<span class="w"> </span>monitor<span class="w"> </span>scheduled-query<span class="w"> </span>create<span class="w"> </span><span class="se">\</span>
+<a id="__codelineno-8-7" name="__codelineno-8-7" href="#__codelineno-8-7"></a><span class="w">  </span>--name<span class="w"> </span><span class="s2">&quot;failed-logins-alert&quot;</span><span class="w"> </span><span class="se">\</span>
+<a id="__codelineno-8-8" name="__codelineno-8-8" href="#__codelineno-8-8"></a><span class="w">  </span>--resource-group<span class="w"> </span>rg-monitoring<span class="w"> </span><span class="se">\</span>
+<a id="__codelineno-8-9" name="__codelineno-8-9" href="#__codelineno-8-9"></a><span class="w">  </span>--scopes<span class="w"> </span><span class="nv">$LAW_ID</span><span class="w"> </span><span class="se">\</span>
+<a id="__codelineno-8-10" name="__codelineno-8-10" href="#__codelineno-8-10"></a><span class="w">  </span>--condition-query<span class="w"> </span><span class="s2">&quot;AzureActivity | where ActivityStatusValue == &#39;Failure&#39; | where OperationNameValue contains &#39;signIn&#39;&quot;</span><span class="w"> </span><span class="se">\</span>
+<a id="__codelineno-8-11" name="__codelineno-8-11" href="#__codelineno-8-11"></a><span class="w">  </span>--condition-threshold<span class="w"> </span><span class="m">5</span><span class="w"> </span><span class="se">\</span>
+<a id="__codelineno-8-12" name="__codelineno-8-12" href="#__codelineno-8-12"></a><span class="w">  </span>--condition-time-aggregation<span class="w"> </span><span class="s2">&quot;Count&quot;</span><span class="w"> </span><span class="se">\</span>
+<a id="__codelineno-8-13" name="__codelineno-8-13" href="#__codelineno-8-13"></a><span class="w">  </span>--window-size<span class="w"> </span><span class="s2">&quot;PT5M&quot;</span><span class="w"> </span><span class="se">\</span>
+<a id="__codelineno-8-14" name="__codelineno-8-14" href="#__codelineno-8-14"></a><span class="w">  </span>--evaluation-frequency<span class="w"> </span><span class="s2">&quot;PT5M&quot;</span><span class="w"> </span><span class="se">\</span>
+<a id="__codelineno-8-15" name="__codelineno-8-15" href="#__codelineno-8-15"></a><span class="w">  </span>--severity<span class="w"> </span><span class="m">2</span><span class="w"> </span><span class="se">\</span>
+<a id="__codelineno-8-16" name="__codelineno-8-16" href="#__codelineno-8-16"></a><span class="w">  </span>--description<span class="w"> </span><span class="s2">&quot;Fehlgeschlagene Login-Versuche&quot;</span>
 </code></pre></div>
-<p>Beispiel: Du kannst einen Benutzer in Entra ID anlegen – er hat noch <strong>keinerlei</strong> Zugriff auf Azure. Erst wenn du ihm eine RBAC-Rolle gibst (z.B. <strong>Reader</strong> auf eine Resource Group), kann er etwas sehen.</p>
-<p>Das lernst du im Detail in Modul 23.</p>
+<hr />
+<h2 id="schritt-6-azure-workbook-erstellen">Schritt 6: Azure Workbook erstellen</h2>
+<p>Workbooks sind interaktive Dashboards die Metrics und Logs kombinieren:</p>
+<ol>
+<li>Im Log Analytics Workspace: <strong>Workbooks</strong> → <strong>+ New</strong></li>
+<li>Klicke <strong>+ Add</strong> → <strong>Add query</strong></li>
+<li>Füge eine KQL-Abfrage ein und wähle <strong>Visualization: Bar chart</strong></li>
+<li>Klicke <strong>+ Add</strong> → <strong>Add metric</strong> für einen Echtzeit-Graphen</li>
+<li><strong>Save</strong> → Name vergeben</li>
+</ol>
 <hr />
 <h2 id="challenge">Challenge</h2>
 <div class="admonition question">
-<p class="admonition-title">Challenge: Gruppe mit RBAC-Rolle</p>
-<ol>
-<li>Erstelle eine Gruppe <code>grp-rg-aztraining-reader</code></li>
-<li>Füge deinen Testbenutzer <code>testuser@...</code> als Mitglied hinzu</li>
-<li>Navigiere zu einer Resource Group (z.B. <code>rg-aztraining</code> falls noch vorhanden, sonst erstelle eine neue)</li>
-<li>Weise der <strong>Gruppe</strong> (nicht dem einzelnen Benutzer!) die RBAC-Rolle <strong>Reader</strong> zu</li>
-<li>Wo im Portal machst du das?</li>
-</ol>
+<p class="admonition-title">Challenge: KQL-Abfrage für Ressourcen-Änderungen</p>
+<p>Schreibe eine KQL-Abfrage die folgendes zeigt:</p>
+<ul>
+<li>Alle Ressource-Änderungen in der letzten Woche aus dem Azure Activity Log</li>
+<li>Nur erfolgreiche Operationen (<code>ActivityStatusValue == "Success"</code>)</li>
+<li>Gruppiert nach <code>Caller</code> (wer hat es gemacht) mit der Anzahl der Aktionen</li>
+<li>Sortiert nach Anzahl absteigend</li>
+</ul>
+<p>Erstelle dann einen Alert der auslöst wenn mehr als 20 Ressource-Änderungen in 5 Minuten passieren.</p>
 </div>
 <details class="success">
 <summary>Hinweis</summary>
-<p>RBAC-Rollen werden nicht in Entra ID vergeben, sondern direkt auf der Azure-Ressource:</p>
-<ol>
-<li>Resource Group öffnen → <strong>Access control (IAM)</strong> → <strong>+ Add</strong> → <strong>Add role assignment</strong></li>
-<li>Role: <code>Reader</code></li>
-<li>Members: <strong>Select members</strong> → Suche nach <code>grp-rg-aztraining-reader</code></li>
-<li><strong>Review + assign</strong></li>
-</ol>
-<p>Jetzt hat jedes aktuelle und zukünftige Mitglied dieser Gruppe Leserechte auf die Resource Group.</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-9-1" name="__codelineno-9-1" href="#__codelineno-9-1"></a><span class="n">AzureActivity</span>
+<a id="__codelineno-9-2" name="__codelineno-9-2" href="#__codelineno-9-2"></a><span class="p">|</span><span class="w"> </span><span class="k">where</span><span class="w"> </span><span class="n">TimeGenerated</span><span class="w"> </span><span class="p">&gt;</span><span class="w"> </span><span class="n">ago</span><span class="p">(</span><span class="mi">7</span><span class="n">d</span><span class="p">)</span>
+<a id="__codelineno-9-3" name="__codelineno-9-3" href="#__codelineno-9-3"></a><span class="p">|</span><span class="w"> </span><span class="k">where</span><span class="w"> </span><span class="n">ActivityStatusValue</span><span class="w"> </span><span class="p">==</span><span class="w"> </span><span class="s">&quot;Success&quot;</span>
+<a id="__codelineno-9-4" name="__codelineno-9-4" href="#__codelineno-9-4"></a><span class="p">|</span><span class="w"> </span><span class="k">summarize</span><span class="w"> </span><span class="n">Aktionen</span><span class="w"> </span><span class="p">=</span><span class="w"> </span><span class="k">count</span><span class="p">()</span><span class="w"> </span><span class="k">by</span><span class="w"> </span><span class="n">Caller</span>
+<a id="__codelineno-9-5" name="__codelineno-9-5" href="#__codelineno-9-5"></a><span class="p">|</span><span class="w"> </span><span class="k">order</span><span class="w"> </span><span class="k">by</span><span class="w"> </span><span class="n">Aktionen</span><span class="w"> </span><span class="n">desc</span>
+</code></pre></div>
 </details>
 <hr />
-<p>Weiter zu <a href="../modul-22-managed-identity/">Modul 22 – Managed Identity: Apps ohne Passwörter authentifizieren</a> →</p>
+<p>Weiter zu <a href="../modul-41-app-insights/">Modul 41 – Application Insights: Telemetrie für Web-Apps</a> →</p>
 
 
 
@@ -2733,7 +2728,7 @@
       <nav class="md-footer__inner md-grid" aria-label="Fußzeile" >
         
           
-          <a href="../modul-20-aufr%C3%A4umen/" class="md-footer__link md-footer__link--prev" aria-label="Zurück: Modul 20 – Aufräumen">
+          <a href="../modul-39-aufr%C3%A4umen/" class="md-footer__link md-footer__link--prev" aria-label="Zurück: Modul 39 – Aufräumen">
             <div class="md-footer__button md-icon">
               
               <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
@@ -2743,20 +2738,20 @@
                 Zurück
               </span>
               <div class="md-ellipsis">
-                Modul 20 – Aufräumen
+                Modul 39 – Aufräumen
               </div>
             </div>
           </a>
         
         
           
-          <a href="../modul-22-managed-identity/" class="md-footer__link md-footer__link--next" aria-label="Weiter: Modul 22 – Managed Identity">
+          <a href="../modul-41-app-insights/" class="md-footer__link md-footer__link--next" aria-label="Weiter: Modul 41 – Application Insights">
             <div class="md-footer__title">
               <span class="md-footer__direction">
                 Weiter
               </span>
               <div class="md-ellipsis">
-                Modul 22 – Managed Identity
+                Modul 41 – Application Insights
               </div>
             </div>
             <div class="md-footer__button md-icon">
